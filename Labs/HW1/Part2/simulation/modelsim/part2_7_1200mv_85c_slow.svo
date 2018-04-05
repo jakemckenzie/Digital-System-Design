@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition"
 
-// DATE "04/04/2018 17:18:19"
+// DATE "04/04/2018 18:12:16"
 
 // 
 // Device: Altera EP4CE115F29C7 Package FBGA780
@@ -29,7 +29,7 @@
 
 `timescale 1 ps/ 1 ps
 
-module part2 (
+module Part2 (
 	SW,
 	LEDG,
 	LEDR);
@@ -92,7 +92,7 @@ tri1 devclrn;
 tri1 devpor;
 tri1 devoe;
 // synopsys translate_off
-initial $sdf_annotate("part2_7_1200mv_85c_v_slow.sdo");
+initial $sdf_annotate("Part2_7_1200mv_85c_v_slow.sdo");
 // synopsys translate_on
 
 wire \LEDG[0]~output_o ;

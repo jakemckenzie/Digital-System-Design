@@ -14,7 +14,7 @@ vsim -voptargs="+acc" -t 1ps -lib work Light_testbench
 # Source the wave do file
 #     This should be the file that sets up the signal window for
 #     the module you are testing.
-do light_wave.do
+do Mux_4w_2_to_1_wave.do
 
 # Set the window types
 view wave

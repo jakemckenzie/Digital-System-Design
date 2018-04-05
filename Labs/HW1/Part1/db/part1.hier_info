@@ -1,4 +1,4 @@
-|part1
+|Part1
 SW[0] => LEDR[0].DATAIN
 SW[1] => LEDR[1].DATAIN
 SW[2] => LEDR[2].DATAIN

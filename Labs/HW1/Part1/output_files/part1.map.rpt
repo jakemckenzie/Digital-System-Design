@@ -1,5 +1,5 @@
-Analysis & Synthesis report for part1
-Tue Apr 03 21:50:33 2018
+Analysis & Synthesis report for Part1
+Wed Apr 04 17:58:03 2018
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -43,10 +43,10 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Apr 03 21:50:33 2018       ;
+; Analysis & Synthesis Status        ; Successful - Wed Apr 04 17:58:03 2018       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
-; Revision Name                      ; part1                                       ;
-; Top-level Entity Name              ; part1                                       ;
+; Revision Name                      ; Part1                                       ;
+; Top-level Entity Name              ; Part1                                       ;
 ; Family                             ; Cyclone IV E                                ;
 ; Total logic elements               ; 0                                           ;
 ;     Total combinational functions  ; 0                                           ;
@@ -66,7 +66,7 @@ agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP4CE115F29C7      ;                    ;
-; Top-level entity name                                                      ; part1              ; part1              ;
+; Top-level entity name                                                      ; Part1              ; Part1              ;
 ; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -207,7 +207,7 @@ agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |part1                     ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 36   ; 0            ; |part1              ; part1       ; work         ;
+; |Part1                     ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 36   ; 0            ; |Part1              ; Part1       ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -254,22 +254,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Tue Apr 03 21:50:19 2018
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off part1 -c part1
+    Info: Processing started: Wed Apr 04 17:57:51 2018
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Part1 -c Part1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Warning (12125): Using design file part1.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: part1 File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part1/part1.sv Line: 1
-Info (12127): Elaborating entity "part1" for the top level hierarchy
+    Info (12023): Found entity 1: Part1 File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part1/part1.sv Line: 1
+Info (12127): Elaborating entity "Part1" for the top level hierarchy
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Info (21057): Implemented 36 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 18 input pins
     Info (21059): Implemented 18 output pins
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 599 megabytes
-    Info: Processing ended: Tue Apr 03 21:50:33 2018
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:33
+    Info: Peak virtual memory: 600 megabytes
+    Info: Processing ended: Wed Apr 04 17:58:03 2018
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:28
 
 

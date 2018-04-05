@@ -1,0 +1,6 @@
+module Mux_4w_2_to_1(S,X,Y,m);
+   input S, X, y;
+   output m;
+
+   assign m = (S & Y) | (~S & X);
+   

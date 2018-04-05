@@ -1,4 +1,4 @@
-|part2
+|Part2
 SW[0] => SW[0].IN1
 SW[1] => SW[1].IN1
 SW[2] => SW[2].IN1
@@ -41,7 +41,7 @@ LEDR[16] << SW[16].DB_MAX_OUTPUT_PORT_TYPE
 LEDR[17] << SW[17].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|part2|Mux_4w_2_to_1:MUX
+|Part2|Mux_4w_2_to_1:MUX
 X[0] => m.DATAB
 X[1] => m.DATAB
 X[2] => m.DATAB
