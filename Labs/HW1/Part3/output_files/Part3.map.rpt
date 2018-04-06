@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Part3
-Wed Apr 04 21:54:21 2018
+Fri Apr 06 01:17:11 2018
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -10,7 +10,14 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Post-Synthesis Netlist Statistics for Top Partition
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -37,20 +44,20 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Wed Apr 04 21:54:21 2018           ;
+; Analysis & Synthesis Status        ; Successful - Fri Apr 06 01:17:11 2018       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; Part3                                       ;
 ; Top-level Entity Name              ; Part3                                       ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 9                                           ;
+;     Total combinational functions  ; 9                                           ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 21                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -156,25 +163,147 @@ agreement for further details.
 +----------------------------+-------------+
 
 
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                   ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                         ; Library ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------+---------+
+; part3.sv                         ; yes             ; Auto-Found SystemVerilog HDL File  ; C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part3/part3.sv         ;         ;
+; mux_3w_5_to_1.sv                 ; yes             ; Auto-Found SystemVerilog HDL File  ; C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part3/mux_3w_5_to_1.sv ;         ;
+; mux_5_to_1.sv                    ; yes             ; Auto-Found SystemVerilog HDL File  ; C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part3/mux_5_to_1.sv    ;         ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------+---------+
+
+
++------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                ;
++---------------------------------------------+--------------+
+; Resource                                    ; Usage        ;
++---------------------------------------------+--------------+
+; Estimated Total logic elements              ; 9            ;
+;                                             ;              ;
+; Total combinational functions               ; 9            ;
+; Logic element usage by number of LUT inputs ;              ;
+;     -- 4 input functions                    ; 6            ;
+;     -- 3 input functions                    ; 3            ;
+;     -- <=2 input functions                  ; 0            ;
+;                                             ;              ;
+; Logic elements by mode                      ;              ;
+;     -- normal mode                          ; 9            ;
+;     -- arithmetic mode                      ; 0            ;
+;                                             ;              ;
+; Total registers                             ; 0            ;
+;     -- Dedicated logic registers            ; 0            ;
+;     -- I/O registers                        ; 0            ;
+;                                             ;              ;
+; I/O pins                                    ; 21           ;
+;                                             ;              ;
+; Embedded Multiplier 9-bit elements          ; 0            ;
+;                                             ;              ;
+; Maximum fan-out node                        ; SW[16]~input ;
+; Maximum fan-out                             ; 5            ;
+; Total fan-out                               ; 57           ;
+; Average fan-out                             ; 1.12         ;
++---------------------------------------------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------+---------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                  ; Entity Name   ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------+---------------+--------------+
+; |Part3                     ; 9 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 21   ; 0            ; |Part3                               ; Part3         ; work         ;
+;    |Mux_3w_5_to_1:f|       ; 9 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part3|Mux_3w_5_to_1:f               ; Mux_3w_5_to_1 ; work         ;
+;       |Mux_5_to_1:g1|      ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part3|Mux_3w_5_to_1:f|Mux_5_to_1:g1 ; Mux_5_to_1    ; work         ;
+;       |Mux_5_to_1:g2|      ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part3|Mux_3w_5_to_1:f|Mux_5_to_1:g2 ; Mux_5_to_1    ; work         ;
+;       |Mux_5_to_1:g3|      ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part3|Mux_3w_5_to_1:f|Mux_5_to_1:g3 ; Mux_5_to_1    ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------+---------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
+; 5:1                ; 3 bits    ; 9 LEs         ; 9 LEs                ; 0 LEs                  ; No         ; |Part3|Mux_3w_5_to_1:f|Mux_5_to_1:g1|m ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 21                          ;
+; cycloneiii_lcell_comb ; 9                           ;
+;     normal            ; 9                           ;
+;         3 data inputs ; 3                           ;
+;         4 data inputs ; 6                           ;
+;                       ;                             ;
+; Max LUT depth         ; 3.00                        ;
+; Average LUT depth     ; 2.48                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Wed Apr 04 21:54:09 2018
+    Info: Processing started: Fri Apr 06 01:16:58 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Part3 -c Part3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Warning (12125): Using design file part3.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: Part3 File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part3/part3.sv Line: 1
 Info (12127): Elaborating entity "Part3" for the top level hierarchy
-Warning (12158): Entity "Part3" contains only dangling pins
-Error (12061): Can't synthesize current design -- Top partition does not contain any logic
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 3 warnings
-    Error: Peak virtual memory: 572 megabytes
-    Error: Processing ended: Wed Apr 04 21:54:21 2018
-    Error: Elapsed time: 00:00:12
-    Error: Total CPU time (on all processors): 00:00:28
+Warning (12125): Using design file mux_3w_5_to_1.sv, which is not specified as a design file for the current project, but contains definitions for 2 design units and 2 entities in project
+    Info (12023): Found entity 1: Mux_3w_5_to_1 File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part3/mux_3w_5_to_1.sv Line: 1
+    Info (12023): Found entity 2: Mux_3w_5_to_1_testbench File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part3/mux_3w_5_to_1.sv Line: 12
+Info (12128): Elaborating entity "Mux_3w_5_to_1" for hierarchy "Mux_3w_5_to_1:f" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part3/part3.sv Line: 6
+Warning (12125): Using design file mux_5_to_1.sv, which is not specified as a design file for the current project, but contains definitions for 2 design units and 2 entities in project
+    Info (12023): Found entity 1: Mux_5_to_1 File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part3/mux_5_to_1.sv Line: 1
+    Info (12023): Found entity 2: Mux_5_to_1_testbench File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part3/mux_5_to_1.sv Line: 8
+Warning (10236): Verilog HDL Implicit Net warning at mux_5_to_1.sv(2): created implicit net for "w0" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part3/mux_5_to_1.sv Line: 2
+Warning (10236): Verilog HDL Implicit Net warning at mux_5_to_1.sv(3): created implicit net for "w1" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part3/mux_5_to_1.sv Line: 3
+Warning (10236): Verilog HDL Implicit Net warning at mux_5_to_1.sv(4): created implicit net for "w2" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part3/mux_5_to_1.sv Line: 4
+Info (12128): Elaborating entity "Mux_5_to_1" for hierarchy "Mux_3w_5_to_1:f|Mux_5_to_1:g1" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part3/mux_3w_5_to_1.sv Line: 7
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 30 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 18 input pins
+    Info (21059): Implemented 3 output pins
+    Info (21061): Implemented 9 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 620 megabytes
+    Info: Processing ended: Fri Apr 06 01:17:11 2018
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:30
 
 
