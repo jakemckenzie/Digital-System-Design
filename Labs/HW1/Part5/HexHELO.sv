@@ -1,8 +1,5 @@
-module HexHELO(Hex,C);
-    input  [2:0]C;   // input lines
-    output [0:6]Hex;  // the seven segments
-    
-    always @(*)
+module HexHELO(input [2:0]C,output [0:6]Hex);
+    always_comb
     begin
         case(C)
             2'h0: Hex = 7'h48;
