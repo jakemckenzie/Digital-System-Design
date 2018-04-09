@@ -1,5 +1,5 @@
 Fitter report for Part5
-Fri Apr 06 18:16:43 2018
+Sun Apr 08 17:27:19 2018
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -64,7 +64,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Fri Apr 06 18:16:43 2018       ;
+; Fitter Status                      ; Successful - Sun Apr 08 17:27:19 2018       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; Part5                                       ;
 ; Top-level Entity Name              ; Part5                                       ;
@@ -3248,9 +3248,9 @@ Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part5/output_files/Part5.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 479 warnings
-    Info: Peak virtual memory: 1501 megabytes
-    Info: Processing ended: Fri Apr 06 18:16:44 2018
-    Info: Elapsed time: 00:00:12
+    Info: Peak virtual memory: 1498 megabytes
+    Info: Processing ended: Sun Apr 08 17:27:19 2018
+    Info: Elapsed time: 00:00:18
     Info: Total CPU time (on all processors): 00:00:17
 
 
