@@ -15,7 +15,7 @@ module HexHELO(Hex,C);
     Assign H[0] = C[2] & C[1];
     Assign H[1] = ((~C[2]) & (~C[1]) & (~C[0])) | ((~C[2]) & C[1] & C[0]);
     Assign H[2] = ((~C[2]) & (~C[1]) & (~C[0])) | ((~C[2]) & C[1] & C[0]);
-    Assign H[3] = ((~C[2]) &  & (C[0])) | ((~C[2]) & C[1] );
+    Assign H[3] = ((~C[2]) & (C[0])) | ((~C[2]) & C[1] );
     Assign H[4] = (~C[2]);
     Assign H[5] = (~C[2]);
     Assign H[6] = ((~C[2]) & (~C[1]));
