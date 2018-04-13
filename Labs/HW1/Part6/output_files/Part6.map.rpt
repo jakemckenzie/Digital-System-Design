@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Part6
-Fri Apr 13 14:08:19 2018
+Fri Apr 13 16:44:41 2018
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -10,12 +10,14 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Port Connectivity Checks: "Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_0"
-  6. Port Connectivity Checks: "Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_1"
-  7. Port Connectivity Checks: "Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_2"
-  8. Port Connectivity Checks: "Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_3"
-  9. Port Connectivity Checks: "Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_4"
- 10. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Post-Synthesis Netlist Statistics for Top Partition
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -42,20 +44,20 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Fri Apr 13 14:08:19 2018           ;
+; Analysis & Synthesis Status        ; Successful - Fri Apr 13 16:44:41 2018       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; Part6                                       ;
 ; Top-level Entity Name              ; Part6                                       ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 105                                         ;
+;     Total combinational functions  ; 105                                         ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 74                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -161,90 +163,156 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_0"                                                                                                                                ;
-+-------------+---------+------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port        ; Type    ; Severity         ; Details                                                                                                                                             ;
-+-------------+---------+------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-; mux_input   ; Input   ; Warning          ; Input port expression (1 bits) is smaller than the input port (8 bits) it drives.  Extra input bit(s) "mux_input[7..1]" will be connected to GND.   ;
-; select_bits ; Input   ; Warning          ; Input port expression (1 bits) is smaller than the input port (3 bits) it drives.  Extra input bit(s) "select_bits[2..1]" will be connected to GND. ;
-; z           ; Output  ; Warning          ; Output or bidir port (3 bits) is wider than the port expression (1 bits) it drives; bit(s) "z[2..1]" have no fanouts                                ;
-; <port 3>    ; Unknown ; Critical Warning ; Ordered port position exceeds number of ports declared by the instantiated entity                                                                   ;
-; <port 4>    ; Unknown ; Critical Warning ; Ordered port position exceeds number of ports declared by the instantiated entity                                                                   ;
-; <port 5>    ; Unknown ; Critical Warning ; Ordered port position exceeds number of ports declared by the instantiated entity                                                                   ;
-; <port 6>    ; Unknown ; Critical Warning ; Ordered port position exceeds number of ports declared by the instantiated entity                                                                   ;
-; <port 7>    ; Unknown ; Critical Warning ; Ordered port position exceeds number of ports declared by the instantiated entity                                                                   ;
-; <port 8>    ; Unknown ; Critical Warning ; Ordered port position exceeds number of ports declared by the instantiated entity                                                                   ;
-+-------------+---------+------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                             ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                         ; Library ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------+---------+
+; Part6.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part6/Part6.sv         ;         ;
+; Mux_8_to_1.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part6/Mux_8_to_1.sv    ;         ;
+; Mux_3w_8_to_1.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part6/Mux_3w_8_to_1.sv ;         ;
+; HexHELO.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part6/HexHELO.sv       ;         ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------+---------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_1"                                                                                                                                ;
-+-------------+---------+------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port        ; Type    ; Severity         ; Details                                                                                                                                             ;
-+-------------+---------+------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-; mux_input   ; Input   ; Warning          ; Input port expression (1 bits) is smaller than the input port (8 bits) it drives.  Extra input bit(s) "mux_input[7..1]" will be connected to GND.   ;
-; select_bits ; Input   ; Warning          ; Input port expression (1 bits) is smaller than the input port (3 bits) it drives.  Extra input bit(s) "select_bits[2..1]" will be connected to GND. ;
-; z           ; Output  ; Warning          ; Output or bidir port (3 bits) is wider than the port expression (1 bits) it drives; bit(s) "z[2..1]" have no fanouts                                ;
-; <port 3>    ; Unknown ; Critical Warning ; Ordered port position exceeds number of ports declared by the instantiated entity                                                                   ;
-; <port 4>    ; Unknown ; Critical Warning ; Ordered port position exceeds number of ports declared by the instantiated entity                                                                   ;
-; <port 5>    ; Unknown ; Critical Warning ; Ordered port position exceeds number of ports declared by the instantiated entity                                                                   ;
-; <port 6>    ; Unknown ; Critical Warning ; Ordered port position exceeds number of ports declared by the instantiated entity                                                                   ;
-; <port 7>    ; Unknown ; Critical Warning ; Ordered port position exceeds number of ports declared by the instantiated entity                                                                   ;
-; <port 8>    ; Unknown ; Critical Warning ; Ordered port position exceeds number of ports declared by the instantiated entity                                                                   ;
-+-------------+---------+------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
++------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                ;
++---------------------------------------------+--------------+
+; Resource                                    ; Usage        ;
++---------------------------------------------+--------------+
+; Estimated Total logic elements              ; 105          ;
+;                                             ;              ;
+; Total combinational functions               ; 105          ;
+; Logic element usage by number of LUT inputs ;              ;
+;     -- 4 input functions                    ; 54           ;
+;     -- 3 input functions                    ; 40           ;
+;     -- <=2 input functions                  ; 11           ;
+;                                             ;              ;
+; Logic elements by mode                      ;              ;
+;     -- normal mode                          ; 105          ;
+;     -- arithmetic mode                      ; 0            ;
+;                                             ;              ;
+; Total registers                             ; 0            ;
+;     -- Dedicated logic registers            ; 0            ;
+;     -- I/O registers                        ; 0            ;
+;                                             ;              ;
+; I/O pins                                    ; 74           ;
+;                                             ;              ;
+; Embedded Multiplier 9-bit elements          ; 0            ;
+;                                             ;              ;
+; Maximum fan-out node                        ; SW[17]~input ;
+; Maximum fan-out                             ; 24           ;
+; Total fan-out                               ; 488          ;
+; Average fan-out                             ; 1.93         ;
++---------------------------------------------+--------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_2"                                                                                                                                ;
-+-------------+---------+------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port        ; Type    ; Severity         ; Details                                                                                                                                             ;
-+-------------+---------+------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-; mux_input   ; Input   ; Warning          ; Input port expression (1 bits) is smaller than the input port (8 bits) it drives.  Extra input bit(s) "mux_input[7..1]" will be connected to GND.   ;
-; select_bits ; Input   ; Warning          ; Input port expression (1 bits) is smaller than the input port (3 bits) it drives.  Extra input bit(s) "select_bits[2..1]" will be connected to GND. ;
-; z           ; Output  ; Warning          ; Output or bidir port (3 bits) is wider than the port expression (1 bits) it drives; bit(s) "z[2..1]" have no fanouts                                ;
-; <port 3>    ; Unknown ; Critical Warning ; Ordered port position exceeds number of ports declared by the instantiated entity                                                                   ;
-; <port 4>    ; Unknown ; Critical Warning ; Ordered port position exceeds number of ports declared by the instantiated entity                                                                   ;
-; <port 5>    ; Unknown ; Critical Warning ; Ordered port position exceeds number of ports declared by the instantiated entity                                                                   ;
-; <port 6>    ; Unknown ; Critical Warning ; Ordered port position exceeds number of ports declared by the instantiated entity                                                                   ;
-; <port 7>    ; Unknown ; Critical Warning ; Ordered port position exceeds number of ports declared by the instantiated entity                                                                   ;
-; <port 8>    ; Unknown ; Critical Warning ; Ordered port position exceeds number of ports declared by the instantiated entity                                                                   ;
-+-------------+---------+------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                           ;
++------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------+---------------+--------------+
+; Compilation Hierarchy Node               ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                      ; Entity Name   ; Library Name ;
++------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------+---------------+--------------+
+; |Part6                                   ; 105 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 74   ; 0            ; |Part6                                                                   ; Part6         ; work         ;
+;    |HexHELO:HexHELO_Part6_0|             ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part6|HexHELO:HexHELO_Part6_0                                           ; HexHELO       ; work         ;
+;    |HexHELO:HexHELO_Part6_1|             ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part6|HexHELO:HexHELO_Part6_1                                           ; HexHELO       ; work         ;
+;    |HexHELO:HexHELO_Part6_2|             ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part6|HexHELO:HexHELO_Part6_2                                           ; HexHELO       ; work         ;
+;    |HexHELO:HexHELO_Part6_3|             ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part6|HexHELO:HexHELO_Part6_3                                           ; HexHELO       ; work         ;
+;    |HexHELO:HexHELO_Part6_4|             ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part6|HexHELO:HexHELO_Part6_4                                           ; HexHELO       ; work         ;
+;    |HexHELO:HexHELO_Part6_5|             ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part6|HexHELO:HexHELO_Part6_5                                           ; HexHELO       ; work         ;
+;    |HexHELO:HexHELO_Part6_6|             ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part6|HexHELO:HexHELO_Part6_6                                           ; HexHELO       ; work         ;
+;    |HexHELO:HexHELO_Part6_7|             ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part6|HexHELO:HexHELO_Part6_7                                           ; HexHELO       ; work         ;
+;    |Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_0| ; 7 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_0                               ; Mux_3w_8_to_1 ; work         ;
+;       |Mux_8_to_1:Mux_8_to_1_part6_1|    ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_0|Mux_8_to_1:Mux_8_to_1_part6_1 ; Mux_8_to_1    ; work         ;
+;       |Mux_8_to_1:Mux_8_to_1_part6_2|    ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_0|Mux_8_to_1:Mux_8_to_1_part6_2 ; Mux_8_to_1    ; work         ;
+;       |Mux_8_to_1:Mux_8_to_1_part6_3|    ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_0|Mux_8_to_1:Mux_8_to_1_part6_3 ; Mux_8_to_1    ; work         ;
+;    |Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_1| ; 7 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_1                               ; Mux_3w_8_to_1 ; work         ;
+;       |Mux_8_to_1:Mux_8_to_1_part6_1|    ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_1|Mux_8_to_1:Mux_8_to_1_part6_1 ; Mux_8_to_1    ; work         ;
+;       |Mux_8_to_1:Mux_8_to_1_part6_2|    ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_1|Mux_8_to_1:Mux_8_to_1_part6_2 ; Mux_8_to_1    ; work         ;
+;       |Mux_8_to_1:Mux_8_to_1_part6_3|    ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_1|Mux_8_to_1:Mux_8_to_1_part6_3 ; Mux_8_to_1    ; work         ;
+;    |Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_2| ; 11 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_2                               ; Mux_3w_8_to_1 ; work         ;
+;       |Mux_8_to_1:Mux_8_to_1_part6_1|    ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_2|Mux_8_to_1:Mux_8_to_1_part6_1 ; Mux_8_to_1    ; work         ;
+;       |Mux_8_to_1:Mux_8_to_1_part6_2|    ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_2|Mux_8_to_1:Mux_8_to_1_part6_2 ; Mux_8_to_1    ; work         ;
+;       |Mux_8_to_1:Mux_8_to_1_part6_3|    ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_2|Mux_8_to_1:Mux_8_to_1_part6_3 ; Mux_8_to_1    ; work         ;
+;    |Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_3| ; 10 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_3                               ; Mux_3w_8_to_1 ; work         ;
+;       |Mux_8_to_1:Mux_8_to_1_part6_1|    ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_3|Mux_8_to_1:Mux_8_to_1_part6_1 ; Mux_8_to_1    ; work         ;
+;       |Mux_8_to_1:Mux_8_to_1_part6_2|    ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_3|Mux_8_to_1:Mux_8_to_1_part6_2 ; Mux_8_to_1    ; work         ;
+;       |Mux_8_to_1:Mux_8_to_1_part6_3|    ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_3|Mux_8_to_1:Mux_8_to_1_part6_3 ; Mux_8_to_1    ; work         ;
+;    |Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_4| ; 7 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_4                               ; Mux_3w_8_to_1 ; work         ;
+;       |Mux_8_to_1:Mux_8_to_1_part6_1|    ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_4|Mux_8_to_1:Mux_8_to_1_part6_1 ; Mux_8_to_1    ; work         ;
+;       |Mux_8_to_1:Mux_8_to_1_part6_2|    ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_4|Mux_8_to_1:Mux_8_to_1_part6_2 ; Mux_8_to_1    ; work         ;
+;       |Mux_8_to_1:Mux_8_to_1_part6_3|    ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_4|Mux_8_to_1:Mux_8_to_1_part6_3 ; Mux_8_to_1    ; work         ;
+;    |Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_5| ; 12 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_5                               ; Mux_3w_8_to_1 ; work         ;
+;       |Mux_8_to_1:Mux_8_to_1_part6_1|    ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_5|Mux_8_to_1:Mux_8_to_1_part6_1 ; Mux_8_to_1    ; work         ;
+;       |Mux_8_to_1:Mux_8_to_1_part6_2|    ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_5|Mux_8_to_1:Mux_8_to_1_part6_2 ; Mux_8_to_1    ; work         ;
+;       |Mux_8_to_1:Mux_8_to_1_part6_3|    ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_5|Mux_8_to_1:Mux_8_to_1_part6_3 ; Mux_8_to_1    ; work         ;
+;    |Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_6| ; 11 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_6                               ; Mux_3w_8_to_1 ; work         ;
+;       |Mux_8_to_1:Mux_8_to_1_part6_1|    ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_6|Mux_8_to_1:Mux_8_to_1_part6_1 ; Mux_8_to_1    ; work         ;
+;       |Mux_8_to_1:Mux_8_to_1_part6_2|    ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_6|Mux_8_to_1:Mux_8_to_1_part6_2 ; Mux_8_to_1    ; work         ;
+;       |Mux_8_to_1:Mux_8_to_1_part6_3|    ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_6|Mux_8_to_1:Mux_8_to_1_part6_3 ; Mux_8_to_1    ; work         ;
+;    |Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_7| ; 8 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_7                               ; Mux_3w_8_to_1 ; work         ;
+;       |Mux_8_to_1:Mux_8_to_1_part6_1|    ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_7|Mux_8_to_1:Mux_8_to_1_part6_1 ; Mux_8_to_1    ; work         ;
+;       |Mux_8_to_1:Mux_8_to_1_part6_2|    ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_7|Mux_8_to_1:Mux_8_to_1_part6_2 ; Mux_8_to_1    ; work         ;
+;       |Mux_8_to_1:Mux_8_to_1_part6_3|    ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_7|Mux_8_to_1:Mux_8_to_1_part6_3 ; Mux_8_to_1    ; work         ;
++------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------+---------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_3"                                                                                                                                ;
-+-------------+---------+------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port        ; Type    ; Severity         ; Details                                                                                                                                             ;
-+-------------+---------+------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-; mux_input   ; Input   ; Warning          ; Input port expression (1 bits) is smaller than the input port (8 bits) it drives.  Extra input bit(s) "mux_input[7..1]" will be connected to GND.   ;
-; select_bits ; Input   ; Warning          ; Input port expression (1 bits) is smaller than the input port (3 bits) it drives.  Extra input bit(s) "select_bits[2..1]" will be connected to GND. ;
-; z           ; Output  ; Warning          ; Output or bidir port (3 bits) is wider than the port expression (1 bits) it drives; bit(s) "z[2..1]" have no fanouts                                ;
-; <port 3>    ; Unknown ; Critical Warning ; Ordered port position exceeds number of ports declared by the instantiated entity                                                                   ;
-; <port 4>    ; Unknown ; Critical Warning ; Ordered port position exceeds number of ports declared by the instantiated entity                                                                   ;
-; <port 5>    ; Unknown ; Critical Warning ; Ordered port position exceeds number of ports declared by the instantiated entity                                                                   ;
-; <port 6>    ; Unknown ; Critical Warning ; Ordered port position exceeds number of ports declared by the instantiated entity                                                                   ;
-; <port 7>    ; Unknown ; Critical Warning ; Ordered port position exceeds number of ports declared by the instantiated entity                                                                   ;
-; <port 8>    ; Unknown ; Critical Warning ; Ordered port position exceeds number of ports declared by the instantiated entity                                                                   ;
-+-------------+---------+------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_4"                                                                                                                                ;
-+-------------+---------+------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port        ; Type    ; Severity         ; Details                                                                                                                                             ;
-+-------------+---------+------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-; mux_input   ; Input   ; Warning          ; Input port expression (1 bits) is smaller than the input port (8 bits) it drives.  Extra input bit(s) "mux_input[7..1]" will be connected to GND.   ;
-; select_bits ; Input   ; Warning          ; Input port expression (1 bits) is smaller than the input port (3 bits) it drives.  Extra input bit(s) "select_bits[2..1]" will be connected to GND. ;
-; z           ; Output  ; Warning          ; Output or bidir port (3 bits) is wider than the port expression (1 bits) it drives; bit(s) "z[2..1]" have no fanouts                                ;
-; z           ; Output  ; Info             ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                 ;
-; <port 3>    ; Unknown ; Critical Warning ; Ordered port position exceeds number of ports declared by the instantiated entity                                                                   ;
-; <port 4>    ; Unknown ; Critical Warning ; Ordered port position exceeds number of ports declared by the instantiated entity                                                                   ;
-; <port 5>    ; Unknown ; Critical Warning ; Ordered port position exceeds number of ports declared by the instantiated entity                                                                   ;
-; <port 6>    ; Unknown ; Critical Warning ; Ordered port position exceeds number of ports declared by the instantiated entity                                                                   ;
-; <port 7>    ; Unknown ; Critical Warning ; Ordered port position exceeds number of ports declared by the instantiated entity                                                                   ;
-; <port 8>    ; Unknown ; Critical Warning ; Ordered port position exceeds number of ports declared by the instantiated entity                                                                   ;
-+-------------+---------+------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------+
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_1|Mux_8_to_1:Mux_8_to_1_part6_1|z ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_0|Mux_8_to_1:Mux_8_to_1_part6_1|z ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_4|Mux_8_to_1:Mux_8_to_1_part6_2|z ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_3|Mux_8_to_1:Mux_8_to_1_part6_3|z ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 9 LEs                ; 0 LEs                  ; No         ; |Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_6|Mux_8_to_1:Mux_8_to_1_part6_1|z ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; No         ; |Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_7|Mux_8_to_1:Mux_8_to_1_part6_3|z ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 9 LEs                ; 0 LEs                  ; No         ; |Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_5|Mux_8_to_1:Mux_8_to_1_part6_1|z ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 9 LEs                ; 3 LEs                  ; No         ; |Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_2|Mux_8_to_1:Mux_8_to_1_part6_2|z ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 74                          ;
+; cycloneiii_lcell_comb ; 113                         ;
+;     normal            ; 113                         ;
+;         1 data inputs ; 8                           ;
+;         2 data inputs ; 11                          ;
+;         3 data inputs ; 40                          ;
+;         4 data inputs ; 54                          ;
+;                       ;                             ;
+; Max LUT depth         ; 6.00                        ;
+; Average LUT depth     ; 4.88                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
 
 
 +-------------------------------+
@@ -253,63 +321,33 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Fri Apr 13 14:08:07 2018
+    Info: Processing started: Fri Apr 13 16:44:27 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Part6 -c Part6
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Warning (12125): Using design file part6.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: Part6 File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part6/part6.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file part6.sv
+    Info (12023): Found entity 1: Part6 File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part6/Part6.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux_8_to_1.sv
+    Info (12023): Found entity 1: Mux_8_to_1 File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part6/Mux_8_to_1.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux_3w_8_to_1.sv
+    Info (12023): Found entity 1: Mux_3w_8_to_1 File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part6/Mux_3w_8_to_1.sv Line: 5
+Info (12021): Found 1 design units, including 1 entities, in source file hexhelo.sv
+    Info (12023): Found entity 1: HexHELO File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part6/HexHELO.sv Line: 1
 Info (12127): Elaborating entity "Part6" for the top level hierarchy
-Warning (12125): Using design file mux_3w_8_to_1.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: Mux_3w_8_to_1 File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part6/mux_3w_8_to_1.sv Line: 4
-Info (12128): Elaborating entity "Mux_3w_8_to_1" for hierarchy "Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_4" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part6/part6.sv Line: 5
-Warning (12125): Using design file mux_8_to_1.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: Mux_8_to_1 File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part6/mux_8_to_1.sv Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at mux_8_to_1.sv(2): created implicit net for "wire_0" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part6/mux_8_to_1.sv Line: 2
-Warning (10236): Verilog HDL Implicit Net warning at mux_8_to_1.sv(3): created implicit net for "wire_1" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part6/mux_8_to_1.sv Line: 3
-Warning (10236): Verilog HDL Implicit Net warning at mux_8_to_1.sv(4): created implicit net for "wire_2" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part6/mux_8_to_1.sv Line: 4
-Warning (10236): Verilog HDL Implicit Net warning at mux_8_to_1.sv(5): created implicit net for "wire_3" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part6/mux_8_to_1.sv Line: 5
-Warning (10236): Verilog HDL Implicit Net warning at mux_8_to_1.sv(7): created implicit net for "wire_4" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part6/mux_8_to_1.sv Line: 7
-Warning (10236): Verilog HDL Implicit Net warning at mux_8_to_1.sv(8): created implicit net for "wire_5" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part6/mux_8_to_1.sv Line: 8
-Info (12128): Elaborating entity "Mux_8_to_1" for hierarchy "Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_4|Mux_8_to_1:Mux_8_to_1_part6_1" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part6/mux_3w_8_to_1.sv Line: 5
-Warning (12125): Using design file hexhelo.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: HexHELO File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part6/hexhelo.sv Line: 1
-Info (12128): Elaborating entity "HexHELO" for hierarchy "HexHELO:HexHELO_Part6_4" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part6/part6.sv Line: 6
-Error (12003): Port at position 3 does not exist in macrofunction "Mux_3w_8_to_1_Part6_0" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part6/part6.sv Line: 17
-Error (12003): Port at position 4 does not exist in macrofunction "Mux_3w_8_to_1_Part6_0" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part6/part6.sv Line: 17
-Error (12003): Port at position 5 does not exist in macrofunction "Mux_3w_8_to_1_Part6_0" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part6/part6.sv Line: 17
-Error (12003): Port at position 6 does not exist in macrofunction "Mux_3w_8_to_1_Part6_0" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part6/part6.sv Line: 17
-Error (12003): Port at position 7 does not exist in macrofunction "Mux_3w_8_to_1_Part6_0" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part6/part6.sv Line: 17
-Error (12003): Port at position 8 does not exist in macrofunction "Mux_3w_8_to_1_Part6_0" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part6/part6.sv Line: 17
-Error (12003): Port at position 3 does not exist in macrofunction "Mux_3w_8_to_1_Part6_1" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part6/part6.sv Line: 14
-Error (12003): Port at position 4 does not exist in macrofunction "Mux_3w_8_to_1_Part6_1" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part6/part6.sv Line: 14
-Error (12003): Port at position 5 does not exist in macrofunction "Mux_3w_8_to_1_Part6_1" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part6/part6.sv Line: 14
-Error (12003): Port at position 6 does not exist in macrofunction "Mux_3w_8_to_1_Part6_1" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part6/part6.sv Line: 14
-Error (12003): Port at position 7 does not exist in macrofunction "Mux_3w_8_to_1_Part6_1" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part6/part6.sv Line: 14
-Error (12003): Port at position 8 does not exist in macrofunction "Mux_3w_8_to_1_Part6_1" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part6/part6.sv Line: 14
-Error (12003): Port at position 3 does not exist in macrofunction "Mux_3w_8_to_1_Part6_2" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part6/part6.sv Line: 11
-Error (12003): Port at position 4 does not exist in macrofunction "Mux_3w_8_to_1_Part6_2" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part6/part6.sv Line: 11
-Error (12003): Port at position 5 does not exist in macrofunction "Mux_3w_8_to_1_Part6_2" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part6/part6.sv Line: 11
-Error (12003): Port at position 6 does not exist in macrofunction "Mux_3w_8_to_1_Part6_2" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part6/part6.sv Line: 11
-Error (12003): Port at position 7 does not exist in macrofunction "Mux_3w_8_to_1_Part6_2" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part6/part6.sv Line: 11
-Error (12003): Port at position 8 does not exist in macrofunction "Mux_3w_8_to_1_Part6_2" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part6/part6.sv Line: 11
-Error (12003): Port at position 3 does not exist in macrofunction "Mux_3w_8_to_1_Part6_3" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part6/part6.sv Line: 8
-Error (12003): Port at position 4 does not exist in macrofunction "Mux_3w_8_to_1_Part6_3" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part6/part6.sv Line: 8
-Error (12003): Port at position 5 does not exist in macrofunction "Mux_3w_8_to_1_Part6_3" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part6/part6.sv Line: 8
-Error (12003): Port at position 6 does not exist in macrofunction "Mux_3w_8_to_1_Part6_3" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part6/part6.sv Line: 8
-Error (12003): Port at position 7 does not exist in macrofunction "Mux_3w_8_to_1_Part6_3" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part6/part6.sv Line: 8
-Error (12003): Port at position 8 does not exist in macrofunction "Mux_3w_8_to_1_Part6_3" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part6/part6.sv Line: 8
-Error (12003): Port at position 3 does not exist in macrofunction "Mux_3w_8_to_1_Part6_4" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part6/part6.sv Line: 5
-Error (12003): Port at position 4 does not exist in macrofunction "Mux_3w_8_to_1_Part6_4" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part6/part6.sv Line: 5
-Error (12003): Port at position 5 does not exist in macrofunction "Mux_3w_8_to_1_Part6_4" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part6/part6.sv Line: 5
-Error (12003): Port at position 6 does not exist in macrofunction "Mux_3w_8_to_1_Part6_4" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part6/part6.sv Line: 5
-Error (12003): Port at position 7 does not exist in macrofunction "Mux_3w_8_to_1_Part6_4" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part6/part6.sv Line: 5
-Error (12003): Port at position 8 does not exist in macrofunction "Mux_3w_8_to_1_Part6_4" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part6/part6.sv Line: 5
-Warning (12241): 5 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 30 errors, 12 warnings
-    Error: Peak virtual memory: 569 megabytes
-    Error: Processing ended: Fri Apr 13 14:08:19 2018
-    Error: Elapsed time: 00:00:12
-    Error: Total CPU time (on all processors): 00:00:30
+Info (12128): Elaborating entity "Mux_3w_8_to_1" for hierarchy "Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_7" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part6/Part6.sv Line: 4
+Info (12128): Elaborating entity "Mux_8_to_1" for hierarchy "Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_7|Mux_8_to_1:Mux_8_to_1_part6_1" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part6/Mux_3w_8_to_1.sv Line: 6
+Info (12128): Elaborating entity "HexHELO" for hierarchy "HexHELO:HexHELO_Part6_7" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part6/Part6.sv Line: 13
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 179 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 18 input pins
+    Info (21059): Implemented 56 output pins
+    Info (21061): Implemented 105 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 616 megabytes
+    Info: Processing ended: Fri Apr 13 16:44:41 2018
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:33
 
 
