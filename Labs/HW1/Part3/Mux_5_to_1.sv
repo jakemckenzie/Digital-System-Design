@@ -1,8 +1,13 @@
 module Mux_5_to_1(input S0,S1,S2,u,v,w,x,y,output m);
-   assign w0 = S0 ? v : u;
-   assign w1 = S0 ? x : w;
-   assign w2 = S1 ? w1 : w0;
-   assign m = S2 ? y : w2;
+    logic w0,w1,w2;
+	Mux_2_to_1 t1(v,u,s0,w0);
+    Mux_2_to_1 t2(x,w,s0,w1);
+    Mux_2_to_1 t3(w1,w0,s1,w2);
+    Mux_2_to_1 t4(y,w2,s2,m);
+    //assign w0 = S0 ? v : u;
+    //assign w1 = S0 ? x : w;
+    //assign w2 = S1 ? w1 : w0;
+    //assign m = S2 ? y : w2;
 endmodule // Mux_5_to_1
 
 module Mux_5_to_1_testbench();

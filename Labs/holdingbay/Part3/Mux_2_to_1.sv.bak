@@ -1,0 +1,5 @@
+module Mux_2_to_1(input x,y,s, output o);
+
+    o = s ? x : y;
+
+endmodule

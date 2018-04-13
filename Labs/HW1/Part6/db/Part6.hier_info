@@ -1,0 +1,521 @@
+|Part6
+SW[0] => ~NO_FANOUT~
+SW[1] => ~NO_FANOUT~
+SW[2] => ~NO_FANOUT~
+SW[3] => SW[3].IN5
+SW[4] => SW[4].IN5
+SW[5] => SW[5].IN5
+SW[6] => SW[6].IN10
+SW[7] => SW[7].IN10
+SW[8] => SW[8].IN10
+SW[9] => SW[9].IN5
+SW[10] => SW[10].IN5
+SW[11] => SW[11].IN5
+SW[12] => SW[12].IN5
+SW[13] => SW[13].IN5
+SW[14] => SW[14].IN5
+SW[15] => SW[15].IN5
+SW[16] => SW[16].IN5
+SW[17] => SW[17].IN5
+HEX4[6] << HexHELO:HexHELO_Part6_4.port1
+HEX4[5] << HexHELO:HexHELO_Part6_4.port1
+HEX4[4] << HexHELO:HexHELO_Part6_4.port1
+HEX4[3] << HexHELO:HexHELO_Part6_4.port1
+HEX4[2] << HexHELO:HexHELO_Part6_4.port1
+HEX4[1] << HexHELO:HexHELO_Part6_4.port1
+HEX4[0] << HexHELO:HexHELO_Part6_4.port1
+HEX3[6] << HexHELO:HexHELO_Part6_3.port1
+HEX3[5] << HexHELO:HexHELO_Part6_3.port1
+HEX3[4] << HexHELO:HexHELO_Part6_3.port1
+HEX3[3] << HexHELO:HexHELO_Part6_3.port1
+HEX3[2] << HexHELO:HexHELO_Part6_3.port1
+HEX3[1] << HexHELO:HexHELO_Part6_3.port1
+HEX3[0] << HexHELO:HexHELO_Part6_3.port1
+HEX2[6] << HexHELO:HexHELO_Part6_2.port1
+HEX2[5] << HexHELO:HexHELO_Part6_2.port1
+HEX2[4] << HexHELO:HexHELO_Part6_2.port1
+HEX2[3] << HexHELO:HexHELO_Part6_2.port1
+HEX2[2] << HexHELO:HexHELO_Part6_2.port1
+HEX2[1] << HexHELO:HexHELO_Part6_2.port1
+HEX2[0] << HexHELO:HexHELO_Part6_2.port1
+HEX1[6] << HexHELO:HexHELO_Part6_1.port1
+HEX1[5] << HexHELO:HexHELO_Part6_1.port1
+HEX1[4] << HexHELO:HexHELO_Part6_1.port1
+HEX1[3] << HexHELO:HexHELO_Part6_1.port1
+HEX1[2] << HexHELO:HexHELO_Part6_1.port1
+HEX1[1] << HexHELO:HexHELO_Part6_1.port1
+HEX1[0] << HexHELO:HexHELO_Part6_1.port1
+HEX0[6] << HexHELO:HexHELO_Part6_0.port1
+HEX0[5] << HexHELO:HexHELO_Part6_0.port1
+HEX0[4] << HexHELO:HexHELO_Part6_0.port1
+HEX0[3] << HexHELO:HexHELO_Part6_0.port1
+HEX0[2] << HexHELO:HexHELO_Part6_0.port1
+HEX0[1] << HexHELO:HexHELO_Part6_0.port1
+HEX0[0] << HexHELO:HexHELO_Part6_0.port1
+
+
+|Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_4
+mux_input[0] => mux_input[0].IN3
+mux_input[1] => mux_input[1].IN3
+mux_input[2] => mux_input[2].IN3
+mux_input[3] => mux_input[3].IN3
+mux_input[4] => mux_input[4].IN3
+mux_input[5] => mux_input[5].IN3
+mux_input[6] => mux_input[6].IN3
+mux_input[7] => mux_input[7].IN3
+select_bits[0] => select_bits[0].IN3
+select_bits[1] => select_bits[1].IN3
+select_bits[2] => select_bits[2].IN3
+z[0] <= Mux_8_to_1:Mux_8_to_1_part6_1.port2
+z[1] <= Mux_8_to_1:Mux_8_to_1_part6_2.port2
+z[2] <= Mux_8_to_1:Mux_8_to_1_part6_3.port2
+
+
+|Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_4|Mux_8_to_1:Mux_8_to_1_part6_1
+mux_input[0] => wire_0.DATAA
+mux_input[1] => wire_0.DATAB
+mux_input[2] => wire_1.DATAA
+mux_input[3] => wire_1.DATAB
+mux_input[4] => wire_2.DATAA
+mux_input[5] => wire_2.DATAB
+mux_input[6] => wire_3.DATAA
+mux_input[7] => wire_3.DATAB
+select_bits[0] => wire_0.OUTPUTSELECT
+select_bits[0] => wire_1.OUTPUTSELECT
+select_bits[0] => wire_2.OUTPUTSELECT
+select_bits[0] => wire_3.OUTPUTSELECT
+select_bits[1] => wire_4.OUTPUTSELECT
+select_bits[1] => wire_5.OUTPUTSELECT
+select_bits[2] => z.OUTPUTSELECT
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_4|Mux_8_to_1:Mux_8_to_1_part6_2
+mux_input[0] => wire_0.DATAA
+mux_input[1] => wire_0.DATAB
+mux_input[2] => wire_1.DATAA
+mux_input[3] => wire_1.DATAB
+mux_input[4] => wire_2.DATAA
+mux_input[5] => wire_2.DATAB
+mux_input[6] => wire_3.DATAA
+mux_input[7] => wire_3.DATAB
+select_bits[0] => wire_0.OUTPUTSELECT
+select_bits[0] => wire_1.OUTPUTSELECT
+select_bits[0] => wire_2.OUTPUTSELECT
+select_bits[0] => wire_3.OUTPUTSELECT
+select_bits[1] => wire_4.OUTPUTSELECT
+select_bits[1] => wire_5.OUTPUTSELECT
+select_bits[2] => z.OUTPUTSELECT
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_4|Mux_8_to_1:Mux_8_to_1_part6_3
+mux_input[0] => wire_0.DATAA
+mux_input[1] => wire_0.DATAB
+mux_input[2] => wire_1.DATAA
+mux_input[3] => wire_1.DATAB
+mux_input[4] => wire_2.DATAA
+mux_input[5] => wire_2.DATAB
+mux_input[6] => wire_3.DATAA
+mux_input[7] => wire_3.DATAB
+select_bits[0] => wire_0.OUTPUTSELECT
+select_bits[0] => wire_1.OUTPUTSELECT
+select_bits[0] => wire_2.OUTPUTSELECT
+select_bits[0] => wire_3.OUTPUTSELECT
+select_bits[1] => wire_4.OUTPUTSELECT
+select_bits[1] => wire_5.OUTPUTSELECT
+select_bits[2] => z.OUTPUTSELECT
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part6|HexHELO:HexHELO_Part6_4
+C[0] => Decoder0.IN1
+C[0] => Decoder1.IN2
+C[1] => Decoder1.IN1
+C[1] => Decoder2.IN1
+C[2] => Decoder0.IN0
+C[2] => Decoder1.IN0
+C[2] => Decoder2.IN0
+C[2] => Hex[4].DATAIN
+C[2] => Hex[5].DATAIN
+Hex[6] <= Decoder2.DB_MAX_OUTPUT_PORT_TYPE
+Hex[5] <= C[2].DB_MAX_OUTPUT_PORT_TYPE
+Hex[4] <= C[2].DB_MAX_OUTPUT_PORT_TYPE
+Hex[3] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+Hex[2] <= Hex.DB_MAX_OUTPUT_PORT_TYPE
+Hex[1] <= Hex.DB_MAX_OUTPUT_PORT_TYPE
+Hex[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_3
+mux_input[0] => mux_input[0].IN3
+mux_input[1] => mux_input[1].IN3
+mux_input[2] => mux_input[2].IN3
+mux_input[3] => mux_input[3].IN3
+mux_input[4] => mux_input[4].IN3
+mux_input[5] => mux_input[5].IN3
+mux_input[6] => mux_input[6].IN3
+mux_input[7] => mux_input[7].IN3
+select_bits[0] => select_bits[0].IN3
+select_bits[1] => select_bits[1].IN3
+select_bits[2] => select_bits[2].IN3
+z[0] <= Mux_8_to_1:Mux_8_to_1_part6_1.port2
+z[1] <= Mux_8_to_1:Mux_8_to_1_part6_2.port2
+z[2] <= Mux_8_to_1:Mux_8_to_1_part6_3.port2
+
+
+|Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_3|Mux_8_to_1:Mux_8_to_1_part6_1
+mux_input[0] => wire_0.DATAA
+mux_input[1] => wire_0.DATAB
+mux_input[2] => wire_1.DATAA
+mux_input[3] => wire_1.DATAB
+mux_input[4] => wire_2.DATAA
+mux_input[5] => wire_2.DATAB
+mux_input[6] => wire_3.DATAA
+mux_input[7] => wire_3.DATAB
+select_bits[0] => wire_0.OUTPUTSELECT
+select_bits[0] => wire_1.OUTPUTSELECT
+select_bits[0] => wire_2.OUTPUTSELECT
+select_bits[0] => wire_3.OUTPUTSELECT
+select_bits[1] => wire_4.OUTPUTSELECT
+select_bits[1] => wire_5.OUTPUTSELECT
+select_bits[2] => z.OUTPUTSELECT
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_3|Mux_8_to_1:Mux_8_to_1_part6_2
+mux_input[0] => wire_0.DATAA
+mux_input[1] => wire_0.DATAB
+mux_input[2] => wire_1.DATAA
+mux_input[3] => wire_1.DATAB
+mux_input[4] => wire_2.DATAA
+mux_input[5] => wire_2.DATAB
+mux_input[6] => wire_3.DATAA
+mux_input[7] => wire_3.DATAB
+select_bits[0] => wire_0.OUTPUTSELECT
+select_bits[0] => wire_1.OUTPUTSELECT
+select_bits[0] => wire_2.OUTPUTSELECT
+select_bits[0] => wire_3.OUTPUTSELECT
+select_bits[1] => wire_4.OUTPUTSELECT
+select_bits[1] => wire_5.OUTPUTSELECT
+select_bits[2] => z.OUTPUTSELECT
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_3|Mux_8_to_1:Mux_8_to_1_part6_3
+mux_input[0] => wire_0.DATAA
+mux_input[1] => wire_0.DATAB
+mux_input[2] => wire_1.DATAA
+mux_input[3] => wire_1.DATAB
+mux_input[4] => wire_2.DATAA
+mux_input[5] => wire_2.DATAB
+mux_input[6] => wire_3.DATAA
+mux_input[7] => wire_3.DATAB
+select_bits[0] => wire_0.OUTPUTSELECT
+select_bits[0] => wire_1.OUTPUTSELECT
+select_bits[0] => wire_2.OUTPUTSELECT
+select_bits[0] => wire_3.OUTPUTSELECT
+select_bits[1] => wire_4.OUTPUTSELECT
+select_bits[1] => wire_5.OUTPUTSELECT
+select_bits[2] => z.OUTPUTSELECT
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part6|HexHELO:HexHELO_Part6_3
+C[0] => Decoder0.IN1
+C[0] => Decoder1.IN2
+C[1] => Decoder1.IN1
+C[1] => Decoder2.IN1
+C[2] => Decoder0.IN0
+C[2] => Decoder1.IN0
+C[2] => Decoder2.IN0
+C[2] => Hex[4].DATAIN
+C[2] => Hex[5].DATAIN
+Hex[6] <= Decoder2.DB_MAX_OUTPUT_PORT_TYPE
+Hex[5] <= C[2].DB_MAX_OUTPUT_PORT_TYPE
+Hex[4] <= C[2].DB_MAX_OUTPUT_PORT_TYPE
+Hex[3] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+Hex[2] <= Hex.DB_MAX_OUTPUT_PORT_TYPE
+Hex[1] <= Hex.DB_MAX_OUTPUT_PORT_TYPE
+Hex[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_2
+mux_input[0] => mux_input[0].IN3
+mux_input[1] => mux_input[1].IN3
+mux_input[2] => mux_input[2].IN3
+mux_input[3] => mux_input[3].IN3
+mux_input[4] => mux_input[4].IN3
+mux_input[5] => mux_input[5].IN3
+mux_input[6] => mux_input[6].IN3
+mux_input[7] => mux_input[7].IN3
+select_bits[0] => select_bits[0].IN3
+select_bits[1] => select_bits[1].IN3
+select_bits[2] => select_bits[2].IN3
+z[0] <= Mux_8_to_1:Mux_8_to_1_part6_1.port2
+z[1] <= Mux_8_to_1:Mux_8_to_1_part6_2.port2
+z[2] <= Mux_8_to_1:Mux_8_to_1_part6_3.port2
+
+
+|Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_2|Mux_8_to_1:Mux_8_to_1_part6_1
+mux_input[0] => wire_0.DATAA
+mux_input[1] => wire_0.DATAB
+mux_input[2] => wire_1.DATAA
+mux_input[3] => wire_1.DATAB
+mux_input[4] => wire_2.DATAA
+mux_input[5] => wire_2.DATAB
+mux_input[6] => wire_3.DATAA
+mux_input[7] => wire_3.DATAB
+select_bits[0] => wire_0.OUTPUTSELECT
+select_bits[0] => wire_1.OUTPUTSELECT
+select_bits[0] => wire_2.OUTPUTSELECT
+select_bits[0] => wire_3.OUTPUTSELECT
+select_bits[1] => wire_4.OUTPUTSELECT
+select_bits[1] => wire_5.OUTPUTSELECT
+select_bits[2] => z.OUTPUTSELECT
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_2|Mux_8_to_1:Mux_8_to_1_part6_2
+mux_input[0] => wire_0.DATAA
+mux_input[1] => wire_0.DATAB
+mux_input[2] => wire_1.DATAA
+mux_input[3] => wire_1.DATAB
+mux_input[4] => wire_2.DATAA
+mux_input[5] => wire_2.DATAB
+mux_input[6] => wire_3.DATAA
+mux_input[7] => wire_3.DATAB
+select_bits[0] => wire_0.OUTPUTSELECT
+select_bits[0] => wire_1.OUTPUTSELECT
+select_bits[0] => wire_2.OUTPUTSELECT
+select_bits[0] => wire_3.OUTPUTSELECT
+select_bits[1] => wire_4.OUTPUTSELECT
+select_bits[1] => wire_5.OUTPUTSELECT
+select_bits[2] => z.OUTPUTSELECT
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_2|Mux_8_to_1:Mux_8_to_1_part6_3
+mux_input[0] => wire_0.DATAA
+mux_input[1] => wire_0.DATAB
+mux_input[2] => wire_1.DATAA
+mux_input[3] => wire_1.DATAB
+mux_input[4] => wire_2.DATAA
+mux_input[5] => wire_2.DATAB
+mux_input[6] => wire_3.DATAA
+mux_input[7] => wire_3.DATAB
+select_bits[0] => wire_0.OUTPUTSELECT
+select_bits[0] => wire_1.OUTPUTSELECT
+select_bits[0] => wire_2.OUTPUTSELECT
+select_bits[0] => wire_3.OUTPUTSELECT
+select_bits[1] => wire_4.OUTPUTSELECT
+select_bits[1] => wire_5.OUTPUTSELECT
+select_bits[2] => z.OUTPUTSELECT
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part6|HexHELO:HexHELO_Part6_2
+C[0] => Decoder0.IN1
+C[0] => Decoder1.IN2
+C[1] => Decoder1.IN1
+C[1] => Decoder2.IN1
+C[2] => Decoder0.IN0
+C[2] => Decoder1.IN0
+C[2] => Decoder2.IN0
+C[2] => Hex[4].DATAIN
+C[2] => Hex[5].DATAIN
+Hex[6] <= Decoder2.DB_MAX_OUTPUT_PORT_TYPE
+Hex[5] <= C[2].DB_MAX_OUTPUT_PORT_TYPE
+Hex[4] <= C[2].DB_MAX_OUTPUT_PORT_TYPE
+Hex[3] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+Hex[2] <= Hex.DB_MAX_OUTPUT_PORT_TYPE
+Hex[1] <= Hex.DB_MAX_OUTPUT_PORT_TYPE
+Hex[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_1
+mux_input[0] => mux_input[0].IN3
+mux_input[1] => mux_input[1].IN3
+mux_input[2] => mux_input[2].IN3
+mux_input[3] => mux_input[3].IN3
+mux_input[4] => mux_input[4].IN3
+mux_input[5] => mux_input[5].IN3
+mux_input[6] => mux_input[6].IN3
+mux_input[7] => mux_input[7].IN3
+select_bits[0] => select_bits[0].IN3
+select_bits[1] => select_bits[1].IN3
+select_bits[2] => select_bits[2].IN3
+z[0] <= Mux_8_to_1:Mux_8_to_1_part6_1.port2
+z[1] <= Mux_8_to_1:Mux_8_to_1_part6_2.port2
+z[2] <= Mux_8_to_1:Mux_8_to_1_part6_3.port2
+
+
+|Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_1|Mux_8_to_1:Mux_8_to_1_part6_1
+mux_input[0] => wire_0.DATAA
+mux_input[1] => wire_0.DATAB
+mux_input[2] => wire_1.DATAA
+mux_input[3] => wire_1.DATAB
+mux_input[4] => wire_2.DATAA
+mux_input[5] => wire_2.DATAB
+mux_input[6] => wire_3.DATAA
+mux_input[7] => wire_3.DATAB
+select_bits[0] => wire_0.OUTPUTSELECT
+select_bits[0] => wire_1.OUTPUTSELECT
+select_bits[0] => wire_2.OUTPUTSELECT
+select_bits[0] => wire_3.OUTPUTSELECT
+select_bits[1] => wire_4.OUTPUTSELECT
+select_bits[1] => wire_5.OUTPUTSELECT
+select_bits[2] => z.OUTPUTSELECT
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_1|Mux_8_to_1:Mux_8_to_1_part6_2
+mux_input[0] => wire_0.DATAA
+mux_input[1] => wire_0.DATAB
+mux_input[2] => wire_1.DATAA
+mux_input[3] => wire_1.DATAB
+mux_input[4] => wire_2.DATAA
+mux_input[5] => wire_2.DATAB
+mux_input[6] => wire_3.DATAA
+mux_input[7] => wire_3.DATAB
+select_bits[0] => wire_0.OUTPUTSELECT
+select_bits[0] => wire_1.OUTPUTSELECT
+select_bits[0] => wire_2.OUTPUTSELECT
+select_bits[0] => wire_3.OUTPUTSELECT
+select_bits[1] => wire_4.OUTPUTSELECT
+select_bits[1] => wire_5.OUTPUTSELECT
+select_bits[2] => z.OUTPUTSELECT
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_1|Mux_8_to_1:Mux_8_to_1_part6_3
+mux_input[0] => wire_0.DATAA
+mux_input[1] => wire_0.DATAB
+mux_input[2] => wire_1.DATAA
+mux_input[3] => wire_1.DATAB
+mux_input[4] => wire_2.DATAA
+mux_input[5] => wire_2.DATAB
+mux_input[6] => wire_3.DATAA
+mux_input[7] => wire_3.DATAB
+select_bits[0] => wire_0.OUTPUTSELECT
+select_bits[0] => wire_1.OUTPUTSELECT
+select_bits[0] => wire_2.OUTPUTSELECT
+select_bits[0] => wire_3.OUTPUTSELECT
+select_bits[1] => wire_4.OUTPUTSELECT
+select_bits[1] => wire_5.OUTPUTSELECT
+select_bits[2] => z.OUTPUTSELECT
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part6|HexHELO:HexHELO_Part6_1
+C[0] => Decoder0.IN1
+C[0] => Decoder1.IN2
+C[1] => Decoder1.IN1
+C[1] => Decoder2.IN1
+C[2] => Decoder0.IN0
+C[2] => Decoder1.IN0
+C[2] => Decoder2.IN0
+C[2] => Hex[4].DATAIN
+C[2] => Hex[5].DATAIN
+Hex[6] <= Decoder2.DB_MAX_OUTPUT_PORT_TYPE
+Hex[5] <= C[2].DB_MAX_OUTPUT_PORT_TYPE
+Hex[4] <= C[2].DB_MAX_OUTPUT_PORT_TYPE
+Hex[3] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+Hex[2] <= Hex.DB_MAX_OUTPUT_PORT_TYPE
+Hex[1] <= Hex.DB_MAX_OUTPUT_PORT_TYPE
+Hex[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_0
+mux_input[0] => mux_input[0].IN3
+mux_input[1] => mux_input[1].IN3
+mux_input[2] => mux_input[2].IN3
+mux_input[3] => mux_input[3].IN3
+mux_input[4] => mux_input[4].IN3
+mux_input[5] => mux_input[5].IN3
+mux_input[6] => mux_input[6].IN3
+mux_input[7] => mux_input[7].IN3
+select_bits[0] => select_bits[0].IN3
+select_bits[1] => select_bits[1].IN3
+select_bits[2] => select_bits[2].IN3
+z[0] <= Mux_8_to_1:Mux_8_to_1_part6_1.port2
+z[1] <= Mux_8_to_1:Mux_8_to_1_part6_2.port2
+z[2] <= Mux_8_to_1:Mux_8_to_1_part6_3.port2
+
+
+|Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_0|Mux_8_to_1:Mux_8_to_1_part6_1
+mux_input[0] => wire_0.DATAA
+mux_input[1] => wire_0.DATAB
+mux_input[2] => wire_1.DATAA
+mux_input[3] => wire_1.DATAB
+mux_input[4] => wire_2.DATAA
+mux_input[5] => wire_2.DATAB
+mux_input[6] => wire_3.DATAA
+mux_input[7] => wire_3.DATAB
+select_bits[0] => wire_0.OUTPUTSELECT
+select_bits[0] => wire_1.OUTPUTSELECT
+select_bits[0] => wire_2.OUTPUTSELECT
+select_bits[0] => wire_3.OUTPUTSELECT
+select_bits[1] => wire_4.OUTPUTSELECT
+select_bits[1] => wire_5.OUTPUTSELECT
+select_bits[2] => z.OUTPUTSELECT
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_0|Mux_8_to_1:Mux_8_to_1_part6_2
+mux_input[0] => wire_0.DATAA
+mux_input[1] => wire_0.DATAB
+mux_input[2] => wire_1.DATAA
+mux_input[3] => wire_1.DATAB
+mux_input[4] => wire_2.DATAA
+mux_input[5] => wire_2.DATAB
+mux_input[6] => wire_3.DATAA
+mux_input[7] => wire_3.DATAB
+select_bits[0] => wire_0.OUTPUTSELECT
+select_bits[0] => wire_1.OUTPUTSELECT
+select_bits[0] => wire_2.OUTPUTSELECT
+select_bits[0] => wire_3.OUTPUTSELECT
+select_bits[1] => wire_4.OUTPUTSELECT
+select_bits[1] => wire_5.OUTPUTSELECT
+select_bits[2] => z.OUTPUTSELECT
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_0|Mux_8_to_1:Mux_8_to_1_part6_3
+mux_input[0] => wire_0.DATAA
+mux_input[1] => wire_0.DATAB
+mux_input[2] => wire_1.DATAA
+mux_input[3] => wire_1.DATAB
+mux_input[4] => wire_2.DATAA
+mux_input[5] => wire_2.DATAB
+mux_input[6] => wire_3.DATAA
+mux_input[7] => wire_3.DATAB
+select_bits[0] => wire_0.OUTPUTSELECT
+select_bits[0] => wire_1.OUTPUTSELECT
+select_bits[0] => wire_2.OUTPUTSELECT
+select_bits[0] => wire_3.OUTPUTSELECT
+select_bits[1] => wire_4.OUTPUTSELECT
+select_bits[1] => wire_5.OUTPUTSELECT
+select_bits[2] => z.OUTPUTSELECT
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part6|HexHELO:HexHELO_Part6_0
+C[0] => Decoder0.IN1
+C[0] => Decoder1.IN2
+C[1] => Decoder1.IN1
+C[1] => Decoder2.IN1
+C[2] => Decoder0.IN0
+C[2] => Decoder1.IN0
+C[2] => Decoder2.IN0
+C[2] => Hex[4].DATAIN
+C[2] => Hex[5].DATAIN
+Hex[6] <= Decoder2.DB_MAX_OUTPUT_PORT_TYPE
+Hex[5] <= C[2].DB_MAX_OUTPUT_PORT_TYPE
+Hex[4] <= C[2].DB_MAX_OUTPUT_PORT_TYPE
+Hex[3] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+Hex[2] <= Hex.DB_MAX_OUTPUT_PORT_TYPE
+Hex[1] <= Hex.DB_MAX_OUTPUT_PORT_TYPE
+Hex[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
