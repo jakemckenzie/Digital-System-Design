@@ -10,7 +10,7 @@ cModel Technology
 Z0 dC:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part3
 vMux_3w_5_to_1
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1523644832
+Z2 !s110 1523669542
 !i10b 1
 !s100 AS<96Z:`I6=El7FM4L=Bj0
 IhSZa58A86>gV=GgWKUfgk1
@@ -26,7 +26,7 @@ Z8 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z9 !s108 1523644832.000000
+Z9 !s108 1523669542.000000
 Z10 !s107 ./Mux_3w_5_to_1.sv|
 Z11 !s90 -reportprogress|300|./Mux_3w_5_to_1.sv|
 !i113 1

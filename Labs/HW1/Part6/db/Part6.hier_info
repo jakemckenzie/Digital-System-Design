@@ -17,62 +17,62 @@ SW[14] => SW[14].IN8
 SW[15] => SW[15].IN8
 SW[16] => SW[16].IN8
 SW[17] => SW[17].IN8
-HEX7[6] << HexHELO:HexHELO_Part6_7.port1
-HEX7[5] << HexHELO:HexHELO_Part6_7.port1
-HEX7[4] << HexHELO:HexHELO_Part6_7.port1
-HEX7[3] << HexHELO:HexHELO_Part6_7.port1
-HEX7[2] << HexHELO:HexHELO_Part6_7.port1
-HEX7[1] << HexHELO:HexHELO_Part6_7.port1
-HEX7[0] << HexHELO:HexHELO_Part6_7.port1
-HEX6[6] << HexHELO:HexHELO_Part6_6.port1
-HEX6[5] << HexHELO:HexHELO_Part6_6.port1
-HEX6[4] << HexHELO:HexHELO_Part6_6.port1
-HEX6[3] << HexHELO:HexHELO_Part6_6.port1
-HEX6[2] << HexHELO:HexHELO_Part6_6.port1
-HEX6[1] << HexHELO:HexHELO_Part6_6.port1
-HEX6[0] << HexHELO:HexHELO_Part6_6.port1
-HEX5[6] << HexHELO:HexHELO_Part6_5.port1
-HEX5[5] << HexHELO:HexHELO_Part6_5.port1
-HEX5[4] << HexHELO:HexHELO_Part6_5.port1
-HEX5[3] << HexHELO:HexHELO_Part6_5.port1
-HEX5[2] << HexHELO:HexHELO_Part6_5.port1
-HEX5[1] << HexHELO:HexHELO_Part6_5.port1
-HEX5[0] << HexHELO:HexHELO_Part6_5.port1
-HEX4[6] << HexHELO:HexHELO_Part6_4.port1
-HEX4[5] << HexHELO:HexHELO_Part6_4.port1
-HEX4[4] << HexHELO:HexHELO_Part6_4.port1
-HEX4[3] << HexHELO:HexHELO_Part6_4.port1
-HEX4[2] << HexHELO:HexHELO_Part6_4.port1
-HEX4[1] << HexHELO:HexHELO_Part6_4.port1
-HEX4[0] << HexHELO:HexHELO_Part6_4.port1
-HEX3[6] << HexHELO:HexHELO_Part6_3.port1
-HEX3[5] << HexHELO:HexHELO_Part6_3.port1
-HEX3[4] << HexHELO:HexHELO_Part6_3.port1
-HEX3[3] << HexHELO:HexHELO_Part6_3.port1
-HEX3[2] << HexHELO:HexHELO_Part6_3.port1
-HEX3[1] << HexHELO:HexHELO_Part6_3.port1
-HEX3[0] << HexHELO:HexHELO_Part6_3.port1
-HEX2[6] << HexHELO:HexHELO_Part6_2.port1
-HEX2[5] << HexHELO:HexHELO_Part6_2.port1
-HEX2[4] << HexHELO:HexHELO_Part6_2.port1
-HEX2[3] << HexHELO:HexHELO_Part6_2.port1
-HEX2[2] << HexHELO:HexHELO_Part6_2.port1
-HEX2[1] << HexHELO:HexHELO_Part6_2.port1
-HEX2[0] << HexHELO:HexHELO_Part6_2.port1
-HEX1[6] << HexHELO:HexHELO_Part6_1.port1
-HEX1[5] << HexHELO:HexHELO_Part6_1.port1
-HEX1[4] << HexHELO:HexHELO_Part6_1.port1
-HEX1[3] << HexHELO:HexHELO_Part6_1.port1
-HEX1[2] << HexHELO:HexHELO_Part6_1.port1
-HEX1[1] << HexHELO:HexHELO_Part6_1.port1
-HEX1[0] << HexHELO:HexHELO_Part6_1.port1
-HEX0[6] << HexHELO:HexHELO_Part6_0.port1
-HEX0[5] << HexHELO:HexHELO_Part6_0.port1
-HEX0[4] << HexHELO:HexHELO_Part6_0.port1
-HEX0[3] << HexHELO:HexHELO_Part6_0.port1
-HEX0[2] << HexHELO:HexHELO_Part6_0.port1
-HEX0[1] << HexHELO:HexHELO_Part6_0.port1
-HEX0[0] << HexHELO:HexHELO_Part6_0.port1
+HEX7[6] <= HexHELO:HexHELO_Part6_7.port1
+HEX7[5] <= HexHELO:HexHELO_Part6_7.port1
+HEX7[4] <= HexHELO:HexHELO_Part6_7.port1
+HEX7[3] <= HexHELO:HexHELO_Part6_7.port1
+HEX7[2] <= HexHELO:HexHELO_Part6_7.port1
+HEX7[1] <= HexHELO:HexHELO_Part6_7.port1
+HEX7[0] <= HexHELO:HexHELO_Part6_7.port1
+HEX6[6] <= HexHELO:HexHELO_Part6_6.port1
+HEX6[5] <= HexHELO:HexHELO_Part6_6.port1
+HEX6[4] <= HexHELO:HexHELO_Part6_6.port1
+HEX6[3] <= HexHELO:HexHELO_Part6_6.port1
+HEX6[2] <= HexHELO:HexHELO_Part6_6.port1
+HEX6[1] <= HexHELO:HexHELO_Part6_6.port1
+HEX6[0] <= HexHELO:HexHELO_Part6_6.port1
+HEX5[6] <= HexHELO:HexHELO_Part6_5.port1
+HEX5[5] <= HexHELO:HexHELO_Part6_5.port1
+HEX5[4] <= HexHELO:HexHELO_Part6_5.port1
+HEX5[3] <= HexHELO:HexHELO_Part6_5.port1
+HEX5[2] <= HexHELO:HexHELO_Part6_5.port1
+HEX5[1] <= HexHELO:HexHELO_Part6_5.port1
+HEX5[0] <= HexHELO:HexHELO_Part6_5.port1
+HEX4[6] <= HexHELO:HexHELO_Part6_4.port1
+HEX4[5] <= HexHELO:HexHELO_Part6_4.port1
+HEX4[4] <= HexHELO:HexHELO_Part6_4.port1
+HEX4[3] <= HexHELO:HexHELO_Part6_4.port1
+HEX4[2] <= HexHELO:HexHELO_Part6_4.port1
+HEX4[1] <= HexHELO:HexHELO_Part6_4.port1
+HEX4[0] <= HexHELO:HexHELO_Part6_4.port1
+HEX3[6] <= HexHELO:HexHELO_Part6_3.port1
+HEX3[5] <= HexHELO:HexHELO_Part6_3.port1
+HEX3[4] <= HexHELO:HexHELO_Part6_3.port1
+HEX3[3] <= HexHELO:HexHELO_Part6_3.port1
+HEX3[2] <= HexHELO:HexHELO_Part6_3.port1
+HEX3[1] <= HexHELO:HexHELO_Part6_3.port1
+HEX3[0] <= HexHELO:HexHELO_Part6_3.port1
+HEX2[6] <= HexHELO:HexHELO_Part6_2.port1
+HEX2[5] <= HexHELO:HexHELO_Part6_2.port1
+HEX2[4] <= HexHELO:HexHELO_Part6_2.port1
+HEX2[3] <= HexHELO:HexHELO_Part6_2.port1
+HEX2[2] <= HexHELO:HexHELO_Part6_2.port1
+HEX2[1] <= HexHELO:HexHELO_Part6_2.port1
+HEX2[0] <= HexHELO:HexHELO_Part6_2.port1
+HEX1[6] <= HexHELO:HexHELO_Part6_1.port1
+HEX1[5] <= HexHELO:HexHELO_Part6_1.port1
+HEX1[4] <= HexHELO:HexHELO_Part6_1.port1
+HEX1[3] <= HexHELO:HexHELO_Part6_1.port1
+HEX1[2] <= HexHELO:HexHELO_Part6_1.port1
+HEX1[1] <= HexHELO:HexHELO_Part6_1.port1
+HEX1[0] <= HexHELO:HexHELO_Part6_1.port1
+HEX0[6] <= HexHELO:HexHELO_Part6_0.port1
+HEX0[5] <= HexHELO:HexHELO_Part6_0.port1
+HEX0[4] <= HexHELO:HexHELO_Part6_0.port1
+HEX0[3] <= HexHELO:HexHELO_Part6_0.port1
+HEX0[2] <= HexHELO:HexHELO_Part6_0.port1
+HEX0[1] <= HexHELO:HexHELO_Part6_0.port1
+HEX0[0] <= HexHELO:HexHELO_Part6_0.port1
 
 
 |Part6|Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_7
@@ -121,10 +121,9 @@ BLANK2 => wire_0.DATAB
 BLANK3 => wire_1.DATAA
 H => wire_1.DATAB
 E => wire_2.DATAA
-E => wire_3.DATAB
 L1 => wire_2.DATAB
 L2 => wire_3.DATAA
-O => ~NO_FANOUT~
+O => wire_3.DATAB
 z <= z.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -141,10 +140,9 @@ BLANK2 => wire_0.DATAB
 BLANK3 => wire_1.DATAA
 H => wire_1.DATAB
 E => wire_2.DATAA
-E => wire_3.DATAB
 L1 => wire_2.DATAB
 L2 => wire_3.DATAA
-O => ~NO_FANOUT~
+O => wire_3.DATAB
 z <= z.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -161,10 +159,9 @@ BLANK2 => wire_0.DATAB
 BLANK3 => wire_1.DATAA
 H => wire_1.DATAB
 E => wire_2.DATAA
-E => wire_3.DATAB
 L1 => wire_2.DATAB
 L2 => wire_3.DATAA
-O => ~NO_FANOUT~
+O => wire_3.DATAB
 z <= z.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -214,10 +211,9 @@ BLANK2 => wire_0.DATAB
 BLANK3 => wire_1.DATAA
 H => wire_1.DATAB
 E => wire_2.DATAA
-E => wire_3.DATAB
 L1 => wire_2.DATAB
 L2 => wire_3.DATAA
-O => ~NO_FANOUT~
+O => wire_3.DATAB
 z <= z.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -234,10 +230,9 @@ BLANK2 => wire_0.DATAB
 BLANK3 => wire_1.DATAA
 H => wire_1.DATAB
 E => wire_2.DATAA
-E => wire_3.DATAB
 L1 => wire_2.DATAB
 L2 => wire_3.DATAA
-O => ~NO_FANOUT~
+O => wire_3.DATAB
 z <= z.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -254,10 +249,9 @@ BLANK2 => wire_0.DATAB
 BLANK3 => wire_1.DATAA
 H => wire_1.DATAB
 E => wire_2.DATAA
-E => wire_3.DATAB
 L1 => wire_2.DATAB
 L2 => wire_3.DATAA
-O => ~NO_FANOUT~
+O => wire_3.DATAB
 z <= z.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -307,10 +301,9 @@ BLANK2 => wire_0.DATAB
 BLANK3 => wire_1.DATAA
 H => wire_1.DATAB
 E => wire_2.DATAA
-E => wire_3.DATAB
 L1 => wire_2.DATAB
 L2 => wire_3.DATAA
-O => ~NO_FANOUT~
+O => wire_3.DATAB
 z <= z.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -327,10 +320,9 @@ BLANK2 => wire_0.DATAB
 BLANK3 => wire_1.DATAA
 H => wire_1.DATAB
 E => wire_2.DATAA
-E => wire_3.DATAB
 L1 => wire_2.DATAB
 L2 => wire_3.DATAA
-O => ~NO_FANOUT~
+O => wire_3.DATAB
 z <= z.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -347,10 +339,9 @@ BLANK2 => wire_0.DATAB
 BLANK3 => wire_1.DATAA
 H => wire_1.DATAB
 E => wire_2.DATAA
-E => wire_3.DATAB
 L1 => wire_2.DATAB
 L2 => wire_3.DATAA
-O => ~NO_FANOUT~
+O => wire_3.DATAB
 z <= z.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -400,10 +391,9 @@ BLANK2 => wire_0.DATAB
 BLANK3 => wire_1.DATAA
 H => wire_1.DATAB
 E => wire_2.DATAA
-E => wire_3.DATAB
 L1 => wire_2.DATAB
 L2 => wire_3.DATAA
-O => ~NO_FANOUT~
+O => wire_3.DATAB
 z <= z.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -420,10 +410,9 @@ BLANK2 => wire_0.DATAB
 BLANK3 => wire_1.DATAA
 H => wire_1.DATAB
 E => wire_2.DATAA
-E => wire_3.DATAB
 L1 => wire_2.DATAB
 L2 => wire_3.DATAA
-O => ~NO_FANOUT~
+O => wire_3.DATAB
 z <= z.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -440,10 +429,9 @@ BLANK2 => wire_0.DATAB
 BLANK3 => wire_1.DATAA
 H => wire_1.DATAB
 E => wire_2.DATAA
-E => wire_3.DATAB
 L1 => wire_2.DATAB
 L2 => wire_3.DATAA
-O => ~NO_FANOUT~
+O => wire_3.DATAB
 z <= z.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -493,10 +481,9 @@ BLANK2 => wire_0.DATAB
 BLANK3 => wire_1.DATAA
 H => wire_1.DATAB
 E => wire_2.DATAA
-E => wire_3.DATAB
 L1 => wire_2.DATAB
 L2 => wire_3.DATAA
-O => ~NO_FANOUT~
+O => wire_3.DATAB
 z <= z.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -513,10 +500,9 @@ BLANK2 => wire_0.DATAB
 BLANK3 => wire_1.DATAA
 H => wire_1.DATAB
 E => wire_2.DATAA
-E => wire_3.DATAB
 L1 => wire_2.DATAB
 L2 => wire_3.DATAA
-O => ~NO_FANOUT~
+O => wire_3.DATAB
 z <= z.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -533,10 +519,9 @@ BLANK2 => wire_0.DATAB
 BLANK3 => wire_1.DATAA
 H => wire_1.DATAB
 E => wire_2.DATAA
-E => wire_3.DATAB
 L1 => wire_2.DATAB
 L2 => wire_3.DATAA
-O => ~NO_FANOUT~
+O => wire_3.DATAB
 z <= z.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -586,10 +571,9 @@ BLANK2 => wire_0.DATAB
 BLANK3 => wire_1.DATAA
 H => wire_1.DATAB
 E => wire_2.DATAA
-E => wire_3.DATAB
 L1 => wire_2.DATAB
 L2 => wire_3.DATAA
-O => ~NO_FANOUT~
+O => wire_3.DATAB
 z <= z.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -606,10 +590,9 @@ BLANK2 => wire_0.DATAB
 BLANK3 => wire_1.DATAA
 H => wire_1.DATAB
 E => wire_2.DATAA
-E => wire_3.DATAB
 L1 => wire_2.DATAB
 L2 => wire_3.DATAA
-O => ~NO_FANOUT~
+O => wire_3.DATAB
 z <= z.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -626,10 +609,9 @@ BLANK2 => wire_0.DATAB
 BLANK3 => wire_1.DATAA
 H => wire_1.DATAB
 E => wire_2.DATAA
-E => wire_3.DATAB
 L1 => wire_2.DATAB
 L2 => wire_3.DATAA
-O => ~NO_FANOUT~
+O => wire_3.DATAB
 z <= z.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -679,10 +661,9 @@ BLANK2 => wire_0.DATAB
 BLANK3 => wire_1.DATAA
 H => wire_1.DATAB
 E => wire_2.DATAA
-E => wire_3.DATAB
 L1 => wire_2.DATAB
 L2 => wire_3.DATAA
-O => ~NO_FANOUT~
+O => wire_3.DATAB
 z <= z.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -699,10 +680,9 @@ BLANK2 => wire_0.DATAB
 BLANK3 => wire_1.DATAA
 H => wire_1.DATAB
 E => wire_2.DATAA
-E => wire_3.DATAB
 L1 => wire_2.DATAB
 L2 => wire_3.DATAA
-O => ~NO_FANOUT~
+O => wire_3.DATAB
 z <= z.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -719,10 +699,9 @@ BLANK2 => wire_0.DATAB
 BLANK3 => wire_1.DATAA
 H => wire_1.DATAB
 E => wire_2.DATAA
-E => wire_3.DATAB
 L1 => wire_2.DATAB
 L2 => wire_3.DATAA
-O => ~NO_FANOUT~
+O => wire_3.DATAB
 z <= z.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -772,10 +751,9 @@ BLANK2 => wire_0.DATAB
 BLANK3 => wire_1.DATAA
 H => wire_1.DATAB
 E => wire_2.DATAA
-E => wire_3.DATAB
 L1 => wire_2.DATAB
 L2 => wire_3.DATAA
-O => ~NO_FANOUT~
+O => wire_3.DATAB
 z <= z.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -792,10 +770,9 @@ BLANK2 => wire_0.DATAB
 BLANK3 => wire_1.DATAA
 H => wire_1.DATAB
 E => wire_2.DATAA
-E => wire_3.DATAB
 L1 => wire_2.DATAB
 L2 => wire_3.DATAA
-O => ~NO_FANOUT~
+O => wire_3.DATAB
 z <= z.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -812,10 +789,9 @@ BLANK2 => wire_0.DATAB
 BLANK3 => wire_1.DATAA
 H => wire_1.DATAB
 E => wire_2.DATAA
-E => wire_3.DATAB
 L1 => wire_2.DATAB
 L2 => wire_3.DATAA
-O => ~NO_FANOUT~
+O => wire_3.DATAB
 z <= z.DB_MAX_OUTPUT_PORT_TYPE
 
 

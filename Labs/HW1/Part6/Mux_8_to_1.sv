@@ -4,7 +4,7 @@ module Mux_8_to_1(input select_bit1,select_bit2,select_bit3,BLANK1,BLANK2,BLANK3
     assign wire_0 = select_bit1 ? BLANK2 : BLANK1;
     assign wire_1 = select_bit1 ? H : BLANK3;
     assign wire_2 = select_bit1 ? L1 : E;
-    assign wire_3 = select_bit1 ? E : L2;
+    assign wire_3 = select_bit1 ? O : L2;
 
     assign wire_4 = select_bit2 ? wire_1 : wire_0;
     assign wire_5 = select_bit2 ? wire_3 : wire_2;
