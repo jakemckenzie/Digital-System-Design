@@ -12,31 +12,40 @@ module Mux_8_to_1(input select_bit1,select_bit2,select_bit3,BLANK1,BLANK2,BLANK3
     assign z = select_bit3 ? wire_5 : wire_4;
 endmodule
 
-//module Mux_8_to_1_testbench();
-//    reg [2:0]select_bits
-//    reg [7:0]mux_input;
-//    wire z;
+module Mux_8_to_1_testbench();
+    reg select_bit1,select_bit2,select_bit3,BLANK1,BLANK2,BLANK3,H,E,L1,L2,O;
+    wire z;
  
-//    Mux_8_to_1 DUT(mux_input[7:0],select_bits[2:0]);
-//    initial begin
+    Mux_8_to_1 DUT(select_bit1,select_bit2,select_bit3,BLANK1,BLANK2,BLANK3,H,E,L1,L2,O);
+    initial begin
         //mux_input[0] = 0;mux_input[1] = 0;mux_input[2] = 0;mux_input[3] = 0;
-//        //mux_input[4] = 0;mux_input[5] = 0;mux_input[6] = 0;mux_input[7] = 0;
-//        //https://stackoverflow.com/questions/26207021/how-to-write-a-verilog-testbench-to-loop-through-4-inputs
-//        mux_input[0] = 8'h2;
-//        mux_input[1] = 8'h4;
-//       mux_input[2] = 8'h8;
-//        mux_input[3] = 8'h10;
-//        mux_input[4] = 8'h20;
-//        mux_input[5] = 8'h40;
-//        mux_input[6] = 8'h80;
-//        mux_input[7] = 8'h100;
-//        select_bits = 8'h0;
-//        always_comb begin
-//            for (int i = 0; i < 9; i++) begin
-//               #10;select_bits = i;
-//            end
-//        end
+        //mux_input[4] = 0;mux_input[5] = 0;mux_input[6] = 0;mux_input[7] = 0;
+        //https://stackoverflow.com/questions/26207021/how-to-write-a-verilog-testbench-to-loop-through-4-inputs
+        select_bit3=0;select_bit2=0;select_bit1=0;BLANK1=0;BLANK2=0;BLANK3=0;H=0;E=0;L1=0;L2=0;O=0;#10;
+        select_bit3=0;select_bit2=0;select_bit1=0;BLANK1=1;#10;
+        select_bit3=0;select_bit2=0;select_bit1=0;BLANK1=0;#10;
+
+        select_bit3=0;select_bit2=0;select_bit1=1;BLANK2=1;#10;
+        select_bit3=0;select_bit2=0;select_bit1=1;BLANK2=0;#10;
         
-//    end
+        select_bit3=0;select_bit2=1;select_bit1=0;BLANK3=1;#10;
+        select_bit3=0;select_bit2=1;select_bit1=0;BLANK3=0;#10;
+        
+        select_bit3=0;select_bit2=1;select_bit1=1;H=1;#10;
+        select_bit3=0;select_bit2=1;select_bit1=1;H=0;#10;
+
+        select_bit3=1;select_bit2=0;select_bit1=0;E=1;#10;
+        select_bit3=1;select_bit2=0;select_bit1=0;E=0;#10;
+
+        select_bit3=1;select_bit2=0;select_bit1=1;L1=1;#10;
+        select_bit3=1;select_bit2=0;select_bit1=1;L1=0;#10;
+
+        select_bit3=1;select_bit2=1;select_bit1=0;L2=1;#10;
+        select_bit3=1;select_bit2=1;select_bit1=0;L2=0;#10;
+        
+        select_bit3=1;select_bit2=1;select_bit1=1;O=1;#10;
+        select_bit3=1;select_bit2=1;select_bit1=1;O=0;#10;
+
+    end
  
-// endmodule // Mux_8_to_1_testbench
+ endmodule // Mux_8_to_1_testbench
