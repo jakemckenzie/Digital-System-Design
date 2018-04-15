@@ -1,9 +1,9 @@
 onerror {resume}
 quietly WaveActivateNextPane {} 0
-add wave -noupdate /Light_testbench/HEX1
-add wave -noupdate /Light_testbench/HEX0
-add wave -noupdate /Light_testbench/LEDG
-add wave -noupdate /Light_testbench/SW
+add wave -noupdate /Part2_testbench/HEX1
+add wave -noupdate /Part2_testbench/HEX0
+add wave -noupdate /Part2_testbench/LEDG
+add wave -noupdate /Part2_testbench/SW
 TreeUpdate [SetDefaultTree]
 WaveRestoreCursors {{Cursor 1} {0 ps} 0}
 quietly wave cursor active 0

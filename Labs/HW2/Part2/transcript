@@ -1,42 +1,42 @@
 # Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
-do Decoder_part2_runlab.do
+do Part2_runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:11:06 on Apr 15,2018
-# vlog -reportprogress 300 ./Decoder_part2.sv 
-# -- Compiling module Decoder_part2
-# -- Compiling module Decoder_part2_testbench
+# Start time: 14:57:25 on Apr 15,2018
+# vlog -reportprogress 300 ./Part2.sv 
+# -- Compiling module Part2
+# -- Compiling module Part2_testbench
 # 
 # Top level modules:
-# 	Decoder_part2_testbench
-# End time: 14:11:06 on Apr 15,2018, Elapsed time: 0:00:00
+# 	Part2_testbench
+# End time: 14:57:25 on Apr 15,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work Decoder_part2_testbench 
-# Start time: 14:11:06 on Apr 15,2018
+# vsim -voptargs=""+acc"" -t 1ps -lib work Part2_testbench 
+# Start time: 14:57:25 on Apr 15,2018
 # Loading sv_std.std
-# Loading work.Decoder_part2_testbench
+# Loading work.Part2_testbench
+# Loading work.Part2
 # Loading work.Decoder_part2
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# foo   lambda
-# 1    4f
-# 2    12
-# 3    06
-# 4    4c
-# 5    24
-# 6    20
-# 7    0f
-# 8    00
-# 9    04
-# a    08
-# b    60
-# c    31
-# d    42
-# e    30
-# f    38
-# ** Note: $stop    : ./Decoder_part2.sv(44)
-#    Time: 160 ps  Iteration: 0  Instance: /Decoder_part2_testbench
-# Break in Module Decoder_part2_testbench at ./Decoder_part2.sv line 44
-# End time: 14:11:36 on Apr 15,2018, Elapsed time: 0:00:30
-# Errors: 0, Warnings: 0
+# Sw       HEX1    HEX0    LEDG
+# 0        01      01      0
+# 1        01      4f      1
+# 2        01      12      2
+# 3        01      06      3
+# 4        01      4c      4
+# 5        01      24      5
+# 6        01      20      6
+# 7        01      0f      7
+# 8        01      00      8
+# 9        01      04      9
+# a        4f      01      a
+# b        4f      4f      b
+# c        4f      12      c
+# d        4f      06      d
+# e        4f      4c      e
+# f        4f      24      f
+# ** Note: $stop    : ./Part2.sv(96)
+#    Time: 160 ps  Iteration: 0  Instance: /Part2_testbench
+# Break in Module Part2_testbench at ./Part2.sv line 96

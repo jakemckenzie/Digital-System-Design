@@ -1,6 +1,6 @@
-module Part2(input [3:0]SW, output [0:6]HEX1,HEX0, output logic [3:0]LEDG);
+module Part2(input [3:0]SW, output logic [0:6]HEX1,HEX0, output [3:0]LEDG);
     assign LEDG = SW;
-	 wire [3:0]psi,phi;
+	logic [3:0]psi,phi;
     Decoder_part2 Decoder_part2_1(psi[3:0],HEX1[0:6]); Decoder_part2 Decoder_part2_2(phi[3:0],HEX0[0:6]);
     
     always_comb//https://stackoverflow.com/questions/47735552/updating-multiple-variables-in-case-statement
@@ -75,23 +75,25 @@ module Part2(input [3:0]SW, output [0:6]HEX1,HEX0, output logic [3:0]LEDG);
 endmodule
 
 module Part2_testbench();
-    logic SW;
+    logic [3:0]SW;
     logic [0:6]HEX1,HEX0;
     logic [3:0]LEDG;
     integer i;
-    Decoder_part2 DUT(SW,HEX1,HEX0,LEDG);
-
-    //always (*)
+    Part2 DUT(SW,HEX1,HEX0,LEDG);
     initial
     begin
-        $display("Sw       HEX1        HEX0        LEDG");
+        $display("SW       HEX1    HEX0    LEDG");
+    end
+    //always @(SW)
+    initial
+    begin
         for(i = 0;i < 16;i++) 
         begin 
-            SW = i;#10;
             $monitor("%h        %h      %h      %h",SW,HEX1,HEX0,LEDG);
+            SW = i;#10;
             assert(SW == LEDG);
         end
-        $stop
+        $stop;
     end
 endmodule
 
