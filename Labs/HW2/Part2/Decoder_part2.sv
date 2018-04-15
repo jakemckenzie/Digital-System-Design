@@ -22,3 +22,19 @@ module Decoder_part2(input [3:0]foo, output [0:6]lambda);
         endcase    
     end
 endmodule
+
+module Decoder_part2_testbench();
+    reg [3:0]foo;
+    wire [0:6]lambda;
+    integer i;
+    Decoder_part2 DUT(foo,lambda);
+
+    always_comb
+    begin
+        for(i = 0;i < 16;i++) 
+        begin 
+            foo <= i;#10;
+        end
+    end
+endmodule
+

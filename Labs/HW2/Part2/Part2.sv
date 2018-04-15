@@ -3,7 +3,7 @@ module Part2(input [3:0]SW, output [0:6]HEX1,HEX0, output [3:0]LEDG);
 	 wire [3:0]psi,phi;
     Decoder_part2 Decoder_part2_1(psi[3:0],HEX1[0:6]); Decoder_part2 Decoder_part2_2(phi[3:0],HEX0[0:6]);
     
-    always_comb
+    always_comb//https://stackoverflow.com/questions/47735552/updating-multiple-variables-in-case-statement
     begin
         case(SW)//input [3:0]foo, output [0:6]lambda
             4'h0: begin
@@ -71,6 +71,23 @@ module Part2(input [3:0]SW, output [0:6]HEX1,HEX0, output [3:0]LEDG);
                 phi = 4'h5;//15
             end
         endcase
+    end
+endmodule
+
+module Part2_testbench();
+    reg SW;
+    wire [0:6]HEX1,HEX0;
+    wire [3:0]LEDG;
+    integer i;
+    Decoder_part2 DUT(SW,HEX1,HEX0,LEDG);
+
+    always_comb
+    initial begin
+        $monitor(SW,HEX1,HEX0,LEDG);
+        for(i = 0;i < 16;i++) 
+        begin 
+            SW <= i;#10;
+        end
     end
 endmodule
 
