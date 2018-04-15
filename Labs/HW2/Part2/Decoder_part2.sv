@@ -1,4 +1,4 @@
-module Decoder_part2(input [3:0]foo, output [0:6]lambda);
+module Decoder_part2(input [3:0]foo, output logic [0:6]lambda);
     always_comb
     begin
         case(foo)
@@ -24,18 +24,26 @@ module Decoder_part2(input [3:0]foo, output [0:6]lambda);
 endmodule
 
 module Decoder_part2_testbench();
-    reg [3:0]foo;
-    wire [0:6]lambda;
-    integer i;
+    logic [3:0]foo;
+    logic [0:6]lambda;
+    var i;
     Decoder_part2 DUT(foo,lambda);
 
-    always_comb
-    begin
-        $monitor(foo,lambda);
+    //always_comb
+    initial begin
         for(i = 0;i < 16;i++) 
         begin 
             foo = i;#10;
+            assert(foo == lambda);
         end
+        $stop;
+    end
+
+    initial begin
+        $display("foo   lambda");
+        $monitor("%h    %h",foo,lambda);
     end
 endmodule
+
+
 
