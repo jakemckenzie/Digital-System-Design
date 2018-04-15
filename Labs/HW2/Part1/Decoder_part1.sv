@@ -9,7 +9,7 @@ module Decoder_part1(input [3:0]foo, output [0:6]lambda);
             4'h4: lambda = 7'h4C;   //4
             4'h5: lambda = 7'h24;   //5
             4'h6: lambda = 7'h20;   //6
-            4'h7: lambda = 7'h07;   //7
+            4'h7: lambda = 7'h0F;   //7
             4'h8: lambda = 7'h00;   //8
             4'h9: lambda = 7'h04;   //9
             4'hA: lambda = 7'h08;   //A
