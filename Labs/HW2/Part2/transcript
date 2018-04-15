@@ -2,17 +2,17 @@
 do Part2_runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:57:25 on Apr 15,2018
+# Start time: 15:47:30 on Apr 15,2018
 # vlog -reportprogress 300 ./Part2.sv 
 # -- Compiling module Part2
 # -- Compiling module Part2_testbench
 # 
 # Top level modules:
 # 	Part2_testbench
-# End time: 14:57:25 on Apr 15,2018, Elapsed time: 0:00:00
+# End time: 15:47:30 on Apr 15,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -voptargs=""+acc"" -t 1ps -lib work Part2_testbench 
-# Start time: 14:57:25 on Apr 15,2018
+# Start time: 15:47:30 on Apr 15,2018
 # Loading sv_std.std
 # Loading work.Part2_testbench
 # Loading work.Part2
@@ -20,7 +20,7 @@ do Part2_runlab.do
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# Sw       HEX1    HEX0    LEDG
+# SW       HEX1    HEX0    LEDG
 # 0        01      01      0
 # 1        01      4f      1
 # 2        01      12      2
@@ -37,6 +37,6 @@ do Part2_runlab.do
 # d        4f      06      d
 # e        4f      4c      e
 # f        4f      24      f
-# ** Note: $stop    : ./Part2.sv(96)
+# ** Note: $stop    : ./Part2.sv(113)
 #    Time: 160 ps  Iteration: 0  Instance: /Part2_testbench
-# Break in Module Part2_testbench at ./Part2.sv line 96
+# Break in Module Part2_testbench at ./Part2.sv line 113
