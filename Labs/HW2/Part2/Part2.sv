@@ -1,4 +1,4 @@
-module Part2(input [3:0]SW, output [0:6]HEX1,HEX0, output [3:0]LEDG);
+module Part2(input [3:0]SW, output [0:6]HEX1,HEX0, output logic [3:0]LEDG);
     assign LEDG = SW;
 	 wire [3:0]psi,phi;
     Decoder_part2 Decoder_part2_1(psi[3:0],HEX1[0:6]); Decoder_part2 Decoder_part2_2(phi[3:0],HEX0[0:6]);
@@ -75,19 +75,23 @@ module Part2(input [3:0]SW, output [0:6]HEX1,HEX0, output [3:0]LEDG);
 endmodule
 
 module Part2_testbench();
-    reg SW;
-    wire [0:6]HEX1,HEX0;
-    wire [3:0]LEDG;
+    logic SW;
+    logic [0:6]HEX1,HEX0;
+    logic [3:0]LEDG;
     integer i;
     Decoder_part2 DUT(SW,HEX1,HEX0,LEDG);
 
-    always (*)
+    //always (*)
+    initial
     begin
-        $monitor(SW,HEX1,HEX0,LEDG);
+        $display("Sw       HEX1        HEX0        LEDG");
         for(i = 0;i < 16;i++) 
         begin 
-            SW <= i;#10;
+            SW = i;#10;
+            $monitor("%h        %h      %h      %h",SW,HEX1,HEX0,LEDG);
+            assert(SW == LEDG);
         end
+        $stop
     end
 endmodule
 
