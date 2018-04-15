@@ -82,7 +82,7 @@ module Part2_testbench();
     Decoder_part2 DUT(SW,HEX1,HEX0,LEDG);
 
     always_comb
-    initial begin
+    begin
         $monitor(SW,HEX1,HEX0,LEDG);
         for(i = 0;i < 16;i++) 
         begin 
