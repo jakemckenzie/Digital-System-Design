@@ -31,9 +31,10 @@ module Decoder_part2_testbench();
 
     always_comb
     begin
+        $monitor(foo,lambda);
         for(i = 0;i < 16;i++) 
         begin 
-            foo <= i;#10;
+            foo = i;#10;
         end
     end
 endmodule
