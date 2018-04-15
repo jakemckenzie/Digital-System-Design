@@ -23,4 +23,6 @@ module Part2(input [3:0]SW, output [0:6]HEX1,HEX0, output [3:0]LEDG);
             4'hE: psi = 4'h1;phi = 4'h4;    //14
             4'hF: psi = 4'h1;phi = 4'h5;    //15
             default psi = 4'hF;phi = 4'hF;  //default signal is no display
+        endcase
+    end
 endmodule
