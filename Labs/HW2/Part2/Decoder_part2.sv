@@ -1,4 +1,4 @@
-odule Decoder_part2(input [3:0]foo, output [0:6]lambda);
+module Decoder_part2(input [3:0]foo, output [0:6]lambda);
     always_comb
     begin
         case(foo)
