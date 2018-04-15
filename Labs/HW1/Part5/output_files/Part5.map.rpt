@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Part5
-Fri Apr 13 19:10:36 2018
+Sat Apr 14 18:34:36 2018
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -44,7 +44,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Apr 13 19:10:36 2018       ;
+; Analysis & Synthesis Status        ; Successful - Sat Apr 14 18:34:36 2018       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; Part5                                       ;
 ; Top-level Entity Name              ; Part5                                       ;
@@ -163,16 +163,16 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                   ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                         ; Library ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------+---------+
-; part5.sv                         ; yes             ; Auto-Found SystemVerilog HDL File  ; C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part5/part5.sv         ;         ;
-; mux_3w_5_to_1.sv                 ; yes             ; Auto-Found SystemVerilog HDL File  ; C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part5/mux_3w_5_to_1.sv ;         ;
-; mux_5_to_1.sv                    ; yes             ; Auto-Found SystemVerilog HDL File  ; C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part5/mux_5_to_1.sv    ;         ;
-; hexhelo.sv                       ; yes             ; Auto-Found SystemVerilog HDL File  ; C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part5/hexhelo.sv       ;         ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                         ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                               ; Library ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------+---------+
+; part5.sv                         ; yes             ; Auto-Found SystemVerilog HDL File  ; C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Part5/part5.sv         ;         ;
+; mux_3w_5_to_1.sv                 ; yes             ; Auto-Found SystemVerilog HDL File  ; C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Part5/mux_3w_5_to_1.sv ;         ;
+; mux_5_to_1.sv                    ; yes             ; Auto-Found SystemVerilog HDL File  ; C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Part5/mux_5_to_1.sv    ;         ;
+; hexhelo.sv                       ; yes             ; Auto-Found SystemVerilog HDL File  ; C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Part5/hexhelo.sv       ;         ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------+---------+
 
 
 +------------------------------------------------------------+
@@ -303,42 +303,42 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Fri Apr 13 19:10:21 2018
+    Info: Processing started: Sat Apr 14 18:34:22 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Part5 -c Part5
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Warning (12125): Using design file part5.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: Part5 File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part5/part5.sv Line: 1
+    Info (12023): Found entity 1: Part5 File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Part5/part5.sv Line: 1
 Info (12127): Elaborating entity "Part5" for the top level hierarchy
 Warning (12125): Using design file mux_3w_5_to_1.sv, which is not specified as a design file for the current project, but contains definitions for 2 design units and 2 entities in project
-    Info (12023): Found entity 1: Mux_3w_5_to_1 File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part5/mux_3w_5_to_1.sv Line: 1
-    Info (12023): Found entity 2: Mux_3w_5_to_1_testbench File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part5/mux_3w_5_to_1.sv Line: 7
-Info (12128): Elaborating entity "Mux_3w_5_to_1" for hierarchy "Mux_3w_5_to_1:Mux_3w_5_to_1_Part5_4" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part5/part5.sv Line: 5
+    Info (12023): Found entity 1: Mux_3w_5_to_1 File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Part5/mux_3w_5_to_1.sv Line: 1
+    Info (12023): Found entity 2: Mux_3w_5_to_1_testbench File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Part5/mux_3w_5_to_1.sv Line: 7
+Info (12128): Elaborating entity "Mux_3w_5_to_1" for hierarchy "Mux_3w_5_to_1:Mux_3w_5_to_1_Part5_4" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Part5/part5.sv Line: 5
 Warning (12125): Using design file mux_5_to_1.sv, which is not specified as a design file for the current project, but contains definitions for 2 design units and 2 entities in project
-    Info (12023): Found entity 1: Mux_5_to_1 File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part5/mux_5_to_1.sv Line: 1
-    Info (12023): Found entity 2: Mux_5_to_1_testbench File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part5/mux_5_to_1.sv Line: 8
-Warning (10236): Verilog HDL Implicit Net warning at mux_5_to_1.sv(2): created implicit net for "w0" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part5/mux_5_to_1.sv Line: 2
-Warning (10236): Verilog HDL Implicit Net warning at mux_5_to_1.sv(3): created implicit net for "w1" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part5/mux_5_to_1.sv Line: 3
-Warning (10236): Verilog HDL Implicit Net warning at mux_5_to_1.sv(4): created implicit net for "w2" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part5/mux_5_to_1.sv Line: 4
-Info (12128): Elaborating entity "Mux_5_to_1" for hierarchy "Mux_3w_5_to_1:Mux_3w_5_to_1_Part5_4|Mux_5_to_1:Mux_5_to_1_part5_1" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part5/mux_3w_5_to_1.sv Line: 2
+    Info (12023): Found entity 1: Mux_5_to_1 File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Part5/mux_5_to_1.sv Line: 1
+    Info (12023): Found entity 2: Mux_5_to_1_testbench File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Part5/mux_5_to_1.sv Line: 8
+Warning (10236): Verilog HDL Implicit Net warning at mux_5_to_1.sv(2): created implicit net for "w0" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Part5/mux_5_to_1.sv Line: 2
+Warning (10236): Verilog HDL Implicit Net warning at mux_5_to_1.sv(3): created implicit net for "w1" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Part5/mux_5_to_1.sv Line: 3
+Warning (10236): Verilog HDL Implicit Net warning at mux_5_to_1.sv(4): created implicit net for "w2" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Part5/mux_5_to_1.sv Line: 4
+Info (12128): Elaborating entity "Mux_5_to_1" for hierarchy "Mux_3w_5_to_1:Mux_3w_5_to_1_Part5_4|Mux_5_to_1:Mux_5_to_1_part5_1" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Part5/mux_3w_5_to_1.sv Line: 2
 Warning (12125): Using design file hexhelo.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: HexHELO File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part5/hexhelo.sv Line: 1
-Info (12128): Elaborating entity "HexHELO" for hierarchy "HexHELO:HexHELO_Part5_4" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part5/part5.sv Line: 6
+    Info (12023): Found entity 1: HexHELO File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Part5/hexhelo.sv Line: 1
+Info (12128): Elaborating entity "HexHELO" for hierarchy "HexHELO:HexHELO_Part5_4" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Part5/part5.sv Line: 6
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 3 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "SW[0]" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part5/part5.sv Line: 1
-    Warning (15610): No output dependent on input pin "SW[1]" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part5/part5.sv Line: 1
-    Warning (15610): No output dependent on input pin "SW[2]" File: C:/Users/Epimetheus/Documents/Digital Systems Design/Labs/HW1/Part5/part5.sv Line: 1
+    Warning (15610): No output dependent on input pin "SW[0]" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Part5/part5.sv Line: 1
+    Warning (15610): No output dependent on input pin "SW[1]" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Part5/part5.sv Line: 1
+    Warning (15610): No output dependent on input pin "SW[2]" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Part5/part5.sv Line: 1
 Info (21057): Implemented 112 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 18 input pins
     Info (21059): Implemented 35 output pins
     Info (21061): Implemented 59 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
-    Info: Peak virtual memory: 618 megabytes
-    Info: Processing ended: Fri Apr 13 19:10:36 2018
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:33
+    Info: Peak virtual memory: 623 megabytes
+    Info: Processing ended: Sat Apr 14 18:34:36 2018
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:32
 
 
