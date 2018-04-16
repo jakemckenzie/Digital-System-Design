@@ -1,0 +1,4 @@
+module HexHELO(Hex,C);
+    input  [2:0] C;   // input lines
+    output [0:6]Hex;  // the seven segments 
+endmodule

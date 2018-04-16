@@ -1,0 +1,99 @@
+TCES 330
+HW Exercise 1
+4/12/2016
+
+Student: %0
+**********************************************
+
+Notes for Part1:
+  Code Comments: 
+    Headers: -2
+    Code body: -1
+    User Instructions: -4
+  Code Structure: 
+    Indents: 
+    Use of modules:
+  Verilog Code Design: 
+    Warnings and Errors:
+    Other:
+  Project Verification: 
+    Netlist Views:
+    DE2 Verification:
+
+Notes for Part2:
+  Code Comments: 
+    Headers:
+    Code body:
+    User Instructions:
+  Code Structure: 
+    Indents: 
+    Use of modules:
+  Verilog Code Design: 
+    Warnings and Errors:
+    Other:
+  Project Verification: 
+    Netlist Views:
+    DE2 Verification:
+
+Notes for Part3:
+  Code Comments: 
+    Headers:
+    Code body:
+    User Instructions:
+  Code Structure: 
+    Indents: 
+    Use of modules:
+  Verilog Code Design: 
+    Warnings and Errors:
+    Other:
+  Project Verification: 
+    Netlist Views:
+    DE2 Verification:
+
+Notes for Part4:
+  Code Comments: 
+    Headers:
+    Code body:
+    User Instructions:
+  Code Structure: 
+    Indents: 
+    Use of modules:
+  Verilog Code Design: 
+    Warnings and Errors:
+    Other:
+  Project Verification: 
+    Netlist Views:
+    DE2 Verification:
+
+Notes for Part5:
+  Code Comments: 
+    Headers:
+    Code body:
+    User Instructions:
+  Code Structure: 
+    Indents: 
+    Use of modules:
+  Verilog Code Design: 
+    Warnings and Errors:
+    Other:
+  Project Verification: 
+    Netlist Views:
+    DE2 Verification:
+
+Notes for Part6:
+  Code Comments: 
+    Headers:
+    Code body:
+    User Instructions:
+  Code Structure: 
+    Indents: 
+    Use of modules:
+  Verilog Code Design: 
+    Warnings and Errors:
+    Other:
+  Project Verification: 
+    Netlist Views:
+    DE2 Verification:
+
+
+Total Score:

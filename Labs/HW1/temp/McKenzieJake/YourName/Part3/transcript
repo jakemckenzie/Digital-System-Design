@@ -1,0 +1,29 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:32:22 on Apr 13,2018
+# vlog -reportprogress 300 ./Mux_3w_5_to_1.sv 
+# -- Compiling module Mux_3w_5_to_1
+# -- Compiling module Mux_3w_5_to_1_testbench
+# 
+# Top level modules:
+# 	Mux_3w_5_to_1_testbench
+# End time: 18:32:22 on Apr 13,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work Mux_3w_5_to_1_testbench 
+# Start time: 18:32:22 on Apr 13,2018
+# Loading sv_std.std
+# Loading work.Mux_3w_5_to_1_testbench
+# Loading work.Mux_3w_5_to_1
+# Loading work.Mux_5_to_1
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Epimetheus  Hostname: EPIMETHEUS-PC  Pr# End time: 18:47:00 on Apr 13,2018, Elapsed time: 0:15:49
+# Errors: 0, Warnings: 0
+ Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftj1qemi
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# End time: 18:46:56 on Apr 13,2018, Elapsed time: 0:14:34
+# Errors: 0, Warnings: 2
