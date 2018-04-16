@@ -1,6 +1,0 @@
-module Mux_5_to_1(input S0,S1,S2,u,v,w,x,y,output m);
-   assign w0 = S0 ? v : u;
-   assign w1 = S0 ? x : w;
-   assign w2 = S1 ? w1 : w0;
-   assign m = S2 ? w2 : y;
-endmodule // Mux_5_to_1
