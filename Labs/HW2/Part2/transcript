@@ -40,3 +40,5 @@ do Part2_runlab.do
 # ** Note: $stop    : ./Part2.sv(113)
 #    Time: 160 ps  Iteration: 0  Instance: /Part2_testbench
 # Break in Module Part2_testbench at ./Part2.sv line 113
+# End time: 23:47:57 on Apr 15,2018, Elapsed time: 8:00:27
+# Errors: 0, Warnings: 0
