@@ -4,8 +4,10 @@
 //  a 4 input signal and output a 7 segment signal for a hex based clock UI. Originally, due to how open
 //  ended the assignment was written I used a simple case statment to set the display but then redid it
 //  using boolean algebra as to follow the assignment specifications.
-
-module HexHELO(input logic [2:0]C,output logic [0:6]Hex);
+//
+//	 For this part I reversed the order of my inputs needed to be so I flipped the order of the switches but
+//	 kept this part correct.
+module HexHELO(input [2:0]C,output [0:6]Hex);
     //always_comb
     //begin
     //    case(C)
@@ -17,12 +19,13 @@ module HexHELO(input logic [2:0]C,output logic [0:6]Hex);
     //    endcase    
     //end
 	 //logic [0:6]H;
-    assign Hex[0] = C[2] & C[1];
-    assign Hex[1] = ((~C[2]) & (~C[1]) & (~C[0])) | ((~C[2]) & C[1] & C[0]);
-    assign Hex[2] = ((~C[2]) & (~C[1]) & (~C[0])) | ((~C[2]) & C[1] & C[0]);
-    assign Hex[3] = ((~C[2]) & (C[0])) | ((~C[2]) & C[1] );
-    assign Hex[4] = (~C[2]);
-    assign Hex[5] = (~C[2]);
-    assign Hex[6] = ((~C[2]) & (~C[1]));
+	 //C = C[2] B = C[1] A = C[0]
+    assign Hex[0] = (~C[2]) | C[0];
+    assign Hex[1] = C[0] | (C[1] ^ C[2]);
+    assign Hex[2] = C[0] | (C[1] ^ C[2]);
+    assign Hex[3] = C[0] | ((~C[1]) & (~C[2]));
+    assign Hex[4] = C[0];
+    assign Hex[5] = C[0];
+    assign Hex[6] = C[0] | C[1];
 	 //Hex = H;
 endmodule

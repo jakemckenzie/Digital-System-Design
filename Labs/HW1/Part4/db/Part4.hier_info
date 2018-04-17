@@ -1,34 +1,33 @@
 |Part4
-SW[15] => SW[15].IN1
-SW[16] => SW[16].IN1
 SW[17] => SW[17].IN1
-HEX0[6] << HexHELO:n.port0
-HEX0[5] << HexHELO:n.port0
-HEX0[4] << HexHELO:n.port0
-HEX0[3] << HexHELO:n.port0
-HEX0[2] << HexHELO:n.port0
-HEX0[1] << HexHELO:n.port0
-HEX0[0] << HexHELO:n.port0
+SW[16] => SW[16].IN1
+SW[15] => SW[15].IN1
+HEX0[6] <= HexHELO:n.port1
+HEX0[5] <= HexHELO:n.port1
+HEX0[4] <= HexHELO:n.port1
+HEX0[3] <= HexHELO:n.port1
+HEX0[2] <= HexHELO:n.port1
+HEX0[1] <= HexHELO:n.port1
+HEX0[0] <= HexHELO:n.port1
 
 
 |Part4|HexHELO:n
-C[0] => Hex.IN1
 C[0] => Hex.IN0
 C[0] => Hex.IN1
+C[0] => Hex.IN1
+C[0] => Hex.IN1
+C[0] => Hex.IN0
+C[0] => Hex[4].DATAIN
+C[0] => Hex[5].DATAIN
 C[1] => Hex.IN0
+C[1] => Hex.IN1
 C[1] => Hex.IN0
-C[1] => Hex.IN0
-C[1] => Hex.IN0
 C[2] => Hex.IN1
 C[2] => Hex.IN1
 C[2] => Hex.IN1
-C[2] => Hex.IN1
-C[2] => Hex[4].DATAIN
-C[2] => Hex.IN1
-C[2] => Hex[5].DATAIN
 Hex[6] <= Hex.DB_MAX_OUTPUT_PORT_TYPE
-Hex[5] <= C[2].DB_MAX_OUTPUT_PORT_TYPE
-Hex[4] <= C[2].DB_MAX_OUTPUT_PORT_TYPE
+Hex[5] <= C[0].DB_MAX_OUTPUT_PORT_TYPE
+Hex[4] <= C[0].DB_MAX_OUTPUT_PORT_TYPE
 Hex[3] <= Hex.DB_MAX_OUTPUT_PORT_TYPE
 Hex[2] <= Hex.DB_MAX_OUTPUT_PORT_TYPE
 Hex[1] <= Hex.DB_MAX_OUTPUT_PORT_TYPE

@@ -7,6 +7,6 @@
 //  There are 2^7 possible states that the seven segment display can be in, allowing it to output all arabic
 //  numerals and many latin characters, including A-F allowing seven segment displays to be used for hexidecimal
 //  numbering systems. 
-module Part4(input [17:15]SW,output [0:6]HEX0);
-    HexHELO n(HEX0,SW);
+module Part4(input [15:17]SW,output [0:6]HEX0);
+    HexHELO n(SW,HEX0);
 endmodule

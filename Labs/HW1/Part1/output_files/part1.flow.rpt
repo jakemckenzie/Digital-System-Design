@@ -1,5 +1,5 @@
 Flow report for Part1
-Mon Apr 16 10:40:39 2018
+Mon Apr 16 15:13:48 2018
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -41,22 +41,22 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Mon Apr 16 10:40:38 2018       ;
+; Flow Status                        ; Successful - Mon Apr 16 15:13:48 2018       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; Part1                                       ;
 ; Top-level Entity Name              ; Part1                                       ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 0                                           ;
-;     Total combinational functions  ; 0                                           ;
-;     Dedicated logic registers      ; 0                                           ;
+; Total logic elements               ; 0 / 114,480 ( 0 % )                         ;
+;     Total combinational functions  ; 0 / 114,480 ( 0 % )                         ;
+;     Dedicated logic registers      ; 0 / 114,480 ( 0 % )                         ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 36                                          ;
+; Total pins                         ; 36 / 529 ( 7 % )                            ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
+; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                       ;
+; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                             ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                               ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -65,7 +65,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/16/2018 10:40:21 ;
+; Start date & time ; 04/16/2018 15:13:11 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Part1               ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 268883477199238.152390042119356        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 268883477199238.152391679115716        ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                      ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)        ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
@@ -90,29 +90,41 @@ agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                        ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:15     ; 1.0                     ; 591 MB              ; 00:00:29                           ;
-; Total                ; 00:00:15     ; --                      ; --                  ; 00:00:29                           ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:11     ; 1.0                     ; 588 MB              ; 00:00:29                           ;
+; Fitter                    ; 00:00:12     ; 1.0                     ; 1498 MB             ; 00:00:19                           ;
+; Assembler                 ; 00:00:04     ; 1.0                     ; 557 MB              ; 00:00:04                           ;
+; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 696 MB              ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 513 MB              ; 00:00:01                           ;
+; Total                     ; 00:00:31     ; --                      ; --                  ; 00:00:55                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+-----------------------------------------------------------------------------------+
-; Flow OS Summary                                                                   ;
-+----------------------+------------------+-----------+------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
-+----------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis ; Epimetheus-PC    ; Windows 7 ; 6.1        ; x86_64         ;
-+----------------------+------------------+-----------+------------+----------------+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; Epimetheus-PC    ; Windows 7 ; 6.1        ; x86_64         ;
+; Fitter                    ; Epimetheus-PC    ; Windows 7 ; 6.1        ; x86_64         ;
+; Assembler                 ; Epimetheus-PC    ; Windows 7 ; 6.1        ; x86_64         ;
+; TimeQuest Timing Analyzer ; Epimetheus-PC    ; Windows 7 ; 6.1        ; x86_64         ;
+; EDA Netlist Writer        ; Epimetheus-PC    ; Windows 7 ; 6.1        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off Part1 -c Part1
+quartus_fit --read_settings_files=off --write_settings_files=off Part1 -c Part1
+quartus_asm --read_settings_files=off --write_settings_files=off Part1 -c Part1
+quartus_sta Part1 -c Part1
+quartus_eda --read_settings_files=off --write_settings_files=off Part1 -c Part1
 
 
 
