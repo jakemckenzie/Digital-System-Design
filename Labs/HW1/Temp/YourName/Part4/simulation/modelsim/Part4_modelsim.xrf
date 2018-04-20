@@ -1,7 +1,7 @@
 vendor_name = ModelSim
-source_file = 1, C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Part4/Part4.sv
-source_file = 1, C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Part4/HexHELO.sv
-source_file = 1, C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Part4/db/Part4.cbx.xml
+source_file = 1, C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Temp/YourName/Part4/Part4.sv
+source_file = 1, C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Temp/YourName/Part4/HexHELO.sv
+source_file = 1, C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Temp/YourName/Part4/db/Part4.cbx.xml
 design_name = Part4
 instance = comp, \HEX0[6]~output , HEX0[6]~output, Part4, 1
 instance = comp, \HEX0[5]~output , HEX0[5]~output, Part4, 1

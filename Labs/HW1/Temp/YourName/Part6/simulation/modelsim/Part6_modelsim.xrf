@@ -1,9 +1,9 @@
 vendor_name = ModelSim
-source_file = 1, C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Part6/Mux_8_to_1.sv
-source_file = 1, C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Part6/Part6.sv
-source_file = 1, C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Part6/Mux_3w_8_to_1.sv
-source_file = 1, C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Part6/HexHELO.sv
-source_file = 1, C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Part6/db/Part6.cbx.xml
+source_file = 1, C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Temp/YourName/Part6/Mux_8_to_1.sv
+source_file = 1, C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Temp/YourName/Part6/Part6.sv
+source_file = 1, C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Temp/YourName/Part6/Mux_3w_8_to_1.sv
+source_file = 1, C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Temp/YourName/Part6/HexHELO.sv
+source_file = 1, C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Temp/YourName/Part6/db/Part6.cbx.xml
 design_name = Part6
 instance = comp, \HEX7[6]~output , HEX7[6]~output, Part6, 1
 instance = comp, \HEX7[5]~output , HEX7[5]~output, Part6, 1

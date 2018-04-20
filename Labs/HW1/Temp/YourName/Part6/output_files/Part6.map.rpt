@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Part6
-Mon Apr 16 17:27:47 2018
+Thu Apr 19 21:42:19 2018
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -44,7 +44,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Apr 16 17:27:47 2018       ;
+; Analysis & Synthesis Status        ; Successful - Thu Apr 19 21:42:19 2018       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; Part6                                       ;
 ; Top-level Entity Name              ; Part6                                       ;
@@ -163,16 +163,16 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                   ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                               ; Library ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------+---------+
-; Mux_8_to_1.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Part6/Mux_8_to_1.sv    ;         ;
-; Part6.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Part6/Part6.sv         ;         ;
-; Mux_3w_8_to_1.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Part6/Mux_3w_8_to_1.sv ;         ;
-; HexHELO.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Part6/HexHELO.sv       ;         ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                 ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                             ; Library ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------+---------+
+; Mux_8_to_1.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Temp/YourName/Part6/Mux_8_to_1.sv    ;         ;
+; Part6.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Temp/YourName/Part6/Part6.sv         ;         ;
+; Mux_3w_8_to_1.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Temp/YourName/Part6/Mux_3w_8_to_1.sv ;         ;
+; HexHELO.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Temp/YourName/Part6/HexHELO.sv       ;         ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------+---------+
 
 
 +------------------------------------------------------------+
@@ -315,24 +315,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Mon Apr 16 17:27:34 2018
+    Info: Processing started: Thu Apr 19 21:42:05 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Part6 -c Part6
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 2 entities, in source file mux_8_to_1.sv
-    Info (12023): Found entity 1: Mux_8_to_1 File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Part6/Mux_8_to_1.sv Line: 5
-    Info (12023): Found entity 2: Mux_8_to_1_testbench File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Part6/Mux_8_to_1.sv Line: 22
+    Info (12023): Found entity 1: Mux_8_to_1 File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Temp/YourName/Part6/Mux_8_to_1.sv Line: 5
+    Info (12023): Found entity 2: Mux_8_to_1_testbench File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Temp/YourName/Part6/Mux_8_to_1.sv Line: 22
 Info (12021): Found 1 design units, including 1 entities, in source file part6.sv
-    Info (12023): Found entity 1: Part6 File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Part6/Part6.sv Line: 5
+    Info (12023): Found entity 1: Part6 File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Temp/YourName/Part6/Part6.sv Line: 5
 Info (12021): Found 2 design units, including 2 entities, in source file mux_3w_8_to_1.sv
-    Info (12023): Found entity 1: Mux_3w_8_to_1 File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Part6/Mux_3w_8_to_1.sv Line: 4
-    Info (12023): Found entity 2: Mux_3w_8_to_1_testbench File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Part6/Mux_3w_8_to_1.sv Line: 10
+    Info (12023): Found entity 1: Mux_3w_8_to_1 File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Temp/YourName/Part6/Mux_3w_8_to_1.sv Line: 4
+    Info (12023): Found entity 2: Mux_3w_8_to_1_testbench File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Temp/YourName/Part6/Mux_3w_8_to_1.sv Line: 10
 Info (12021): Found 1 design units, including 1 entities, in source file hexhelo.sv
-    Info (12023): Found entity 1: HexHELO File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Part6/HexHELO.sv Line: 7
+    Info (12023): Found entity 1: HexHELO File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Temp/YourName/Part6/HexHELO.sv Line: 7
 Info (12127): Elaborating entity "Part6" for the top level hierarchy
-Info (12128): Elaborating entity "Mux_3w_8_to_1" for hierarchy "Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_7" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Part6/Part6.sv Line: 8
-Info (12128): Elaborating entity "Mux_8_to_1" for hierarchy "Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_7|Mux_8_to_1:Mux_8_to_1_part6_1" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Part6/Mux_3w_8_to_1.sv Line: 5
-Info (12128): Elaborating entity "HexHELO" for hierarchy "HexHELO:HexHELO_Part6_7" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Part6/Part6.sv Line: 17
+Info (12128): Elaborating entity "Mux_3w_8_to_1" for hierarchy "Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_7" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Temp/YourName/Part6/Part6.sv Line: 8
+Info (12128): Elaborating entity "Mux_8_to_1" for hierarchy "Mux_3w_8_to_1:Mux_3w_8_to_1_Part6_7|Mux_8_to_1:Mux_8_to_1_part6_1" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Temp/YourName/Part6/Mux_3w_8_to_1.sv Line: 5
+Info (12128): Elaborating entity "HexHELO" for hierarchy "HexHELO:HexHELO_Part6_7" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW1/Temp/YourName/Part6/Part6.sv Line: 17
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -342,8 +342,8 @@ Info (21057): Implemented 169 device resources after synthesis - the final resou
     Info (21061): Implemented 95 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 624 megabytes
-    Info: Processing ended: Mon Apr 16 17:27:47 2018
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:29
+    Info: Processing ended: Thu Apr 19 21:42:19 2018
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:33
 
 

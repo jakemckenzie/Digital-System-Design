@@ -2,13 +2,13 @@
 SW[17] => SW[17].IN1
 SW[16] => SW[16].IN1
 SW[15] => SW[15].IN1
-HEX0[6] <= HexHELO:n.port1
-HEX0[5] <= HexHELO:n.port1
-HEX0[4] <= HexHELO:n.port1
-HEX0[3] <= HexHELO:n.port1
-HEX0[2] <= HexHELO:n.port1
-HEX0[1] <= HexHELO:n.port1
-HEX0[0] <= HexHELO:n.port1
+HEX0[6] << HexHELO:n.port1
+HEX0[5] << HexHELO:n.port1
+HEX0[4] << HexHELO:n.port1
+HEX0[3] << HexHELO:n.port1
+HEX0[2] << HexHELO:n.port1
+HEX0[1] << HexHELO:n.port1
+HEX0[0] << HexHELO:n.port1
 
 
 |Part4|HexHELO:n
