@@ -1,6 +1,6 @@
 vendor_name = ModelSim
 source_file = 1, C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part3/Decoder_part2.sv
-source_file = 1, C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part3/Part2.sv
+source_file = 1, Part2.sv
 source_file = 1, C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part3/FourBitAdder.sv
 source_file = 1, C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part3/FullAdder.sv
 source_file = 1, C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part3/Part3.sv
