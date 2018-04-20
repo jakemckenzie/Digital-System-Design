@@ -1,0 +1,185 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+do FullAdder_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:03:24 on Apr 19,2018
+# vlog -reportprogress 300 ./FullAdder.sv 
+# -- Compiling module FullAdder
+# -- Compiling module FullAdder_testbench
+# 
+# Top level modules:
+# 	FullAdder_testbench
+# End time: 19:03:24 on Apr 19,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work FullAdder_testbench 
+# Start time: 19:03:25 on Apr 19,2018
+# Loading sv_std.std
+# Loading work.FullAdder_testbench
+# Loading work.FullAdder
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# a:b:ci    s:c0
+# 001    01
+# 010    01
+# 011    10
+# 100    01
+# 101    10
+# 110    10
+# 111    11
+# 111    11
+do FullAdder_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:07:38 on Apr 19,2018
+# vlog -reportprogress 300 ./FullAdder.sv 
+# -- Compiling module FullAdder
+# -- Compiling module FullAdder_testbench
+# 
+# Top level modules:
+# 	FullAdder_testbench
+# End time: 19:07:38 on Apr 19,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 19:07:40 on Apr 19,2018, Elapsed time: 0:04:15
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work FullAdder_testbench 
+# Start time: 19:07:40 on Apr 19,2018
+# Loading sv_std.std
+# Loading work.FullAdder_testbench
+# Loading work.FullAdder
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# a:b:ci    s:c0
+# 000    00
+# 001    01
+# 010    01
+# 011    10
+# 100    01
+# 101    10
+# 110    10
+# 111    11
+do FullAdder_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:08:27 on Apr 19,2018
+# vlog -reportprogress 300 ./FullAdder.sv 
+# -- Compiling module FullAdder
+# -- Compiling module FullAdder_testbench
+# 
+# Top level modules:
+# 	FullAdder_testbench
+# End time: 19:08:27 on Apr 19,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 19:08:28 on Apr 19,2018, Elapsed time: 0:00:48
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work FullAdder_testbench 
+# Start time: 19:08:28 on Apr 19,2018
+# Loading sv_std.std
+# Loading work.FullAdder_testbench
+# Loading work.FullAdder
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# a:b:ci    s:c0
+# 000,,,00
+# 001,,,01
+# 010,,,01
+# 011,,,10
+# 100,,,01
+# 101,,,10
+# 110,,,10
+# 111,,,11
+do FullAdder_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:08:45 on Apr 19,2018
+# vlog -reportprogress 300 ./FullAdder.sv 
+# -- Compiling module FullAdder
+# -- Compiling module FullAdder_testbench
+# 
+# Top level modules:
+# 	FullAdder_testbench
+# End time: 19:08:45 on Apr 19,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 19:08:46 on Apr 19,2018, Elapsed time: 0:00:18
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work FullAdder_testbench 
+# Start time: 19:08:46 on Apr 19,2018
+# Loading sv_std.std
+# Loading work.FullAdder_testbench
+# Loading work.FullAdder
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# a:b:ci    s:c0
+# 000    00
+# 001    01
+# 010    01
+# 011    10
+# 100    01
+# 101    10
+# 110    10
+# 111    11
+do FullAdder_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:08:56 on Apr 19,2018
+# vlog -reportprogress 300 ./FullAdder.sv 
+# -- Compiling module FullAdder
+# -- Compiling module FullAdder_testbench
+# 
+# Top level modules:
+# 	FullAdder_testbench
+# End time: 19:08:57 on Apr 19,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 19:08:58 on Apr 19,2018, Elapsed time: 0:00:12
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work FullAdder_testbench 
+# Start time: 19:08:58 on Apr 19,2018
+# Loading sv_std.std
+# Loading work.FullAdder_testbench
+# Loading work.FullAdder
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# a:b:ci    s:c0
+# 000      00
+# 001      01
+# 010      01
+# 011      10
+# 100      01
+# 101      10
+# 110      10
+# 111      11
+do FullAdder_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:09:09 on Apr 19,2018
+# vlog -reportprogress 300 ./FullAdder.sv 
+# -- Compiling module FullAdder
+# -- Compiling module FullAdder_testbench
+# 
+# Top level modules:
+# 	FullAdder_testbench
+# End time: 19:09:09 on Apr 19,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 19:09:10 on Apr 19,2018, Elapsed time: 0:00:12
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work FullAdder_testbench 
+# Start time: 19:09:11 on Apr 19,2018
+# Loading sv_std.std
+# Loading work.FullAdder_testbench
+# Loading work.FullAdder
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# a:b:ci    s:c0
+# 000       00
+# 001       01
+# 010       01
+# 011       10
+# 100       01
+# 101       10
+# 110       10
+# 111       11

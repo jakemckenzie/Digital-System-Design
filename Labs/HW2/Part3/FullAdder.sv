@@ -1,25 +1,35 @@
-module FullAdder(input logic [2:0]in,output logic [1:0]out);
-    assign out[0] = in[0] ^ in[1] ^ in[2];
-    assign out[1] = (in[0] ^ in[1]) ? in[2] : in[1];
+module FullAdder(input logic vec_in_ci,vec_in_b,vec_in_a output logic vec_out_s,vec_out_c0);
+    assign vec_out_s = vec_in_b ^ vec_in_a ^ vec_in_ci;
+    assign vec_out_c0 = (vec_in_b ^ vec_in_a) ? vec_in_ci : vec_in[1];
 endmodule
 
 module FullAdder_testbench();
-    logic [2:0]in;
-    logic [1:0]out;
-    integer i;
+    logic vec_in_ci,vec_in_a,vecin_b,vec_out_s,vec_out_c0;
+    integer i,j,k;
 
-    FullAdder DUT(in, out);
+    FullAdder DUT(vec_in_ci,vec_in_a,vecin_b,vec_out_s,vec_out_c0);
     initial 
     begin
-        $display("a:b:ci    s:c0");    
+        $display("b:a:ci    s:c0");    
     end
 
     initial 
     begin
-        for(i = 0; i < 8; i++)
+        vec_in_b = 0;vec_in_a = 0;vec_in_ci = 0;vec_out_c0 = 0;vec_out_s = 0;
+        for(i = 0; i < 2; i++)
         begin
-            in = i;#10;
-            $monitor("%b    %b",in,out);
+            $monitor("%b%b%b       %b%b%b",vec_in_b,vec_in_a,vec_in_ci,vec_out_c0,vec_out_s);
+            vec_in_b = i;#10;
+            for(j = 0; j < 2; j++)
+            begin
+                $monitor("%b%b%b       %b%b%b",vec_in_b,vec_in_a,vec_in_ci,vec_out_c0,vec_out_s);
+                vec_in_a = j;#10;
+                for(k = 0; k < 2; k++)
+                begin
+                    $monitor("%b%b%b       %b%b%b",vec_in_b,vec_in_a,vec_in_ci,vec_out_c0,vec_out_s);
+                    vec_in_c0 = k;#10;
+                end
+            end
         end
     end
 endmodule
