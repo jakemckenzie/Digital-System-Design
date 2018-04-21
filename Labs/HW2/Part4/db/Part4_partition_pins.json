@@ -60,6 +60,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "HEX1[6]",
+					"strict" : false
+				},
+				{
 					"name" : "HEX1[5]",
 					"strict" : false
 				},
@@ -69,6 +73,10 @@
 				},
 				{
 					"name" : "HEX1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX1[2]",
 					"strict" : false
 				},
 				{
@@ -140,7 +148,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "LEDG[7]",
+					"name" : "LEDG[8]",
 					"strict" : false
 				},
 				{

@@ -22,20 +22,20 @@ HEX4[3] << BCD_Decoder:Decoder_for_display4.port1
 HEX4[2] << BCD_Decoder:Decoder_for_display4.port1
 HEX4[1] << BCD_Decoder:Decoder_for_display4.port1
 HEX4[0] << BCD_Decoder:Decoder_for_display4.port1
-HEX1[6] << BCD_Decoder:Decoder_for_display1.port1
-HEX1[5] << BCD_Decoder:Decoder_for_display1.port1
-HEX1[4] << BCD_Decoder:Decoder_for_display1.port1
-HEX1[3] << BCD_Decoder:Decoder_for_display1.port1
-HEX1[2] << BCD_Decoder:Decoder_for_display1.port1
-HEX1[1] << BCD_Decoder:Decoder_for_display1.port1
-HEX1[0] << BCD_Decoder:Decoder_for_display1.port1
-HEX0[6] << BCD_Decoder:Decoder_for_display0.port1
-HEX0[5] << BCD_Decoder:Decoder_for_display0.port1
-HEX0[4] << BCD_Decoder:Decoder_for_display0.port1
-HEX0[3] << BCD_Decoder:Decoder_for_display0.port1
-HEX0[2] << BCD_Decoder:Decoder_for_display0.port1
-HEX0[1] << BCD_Decoder:Decoder_for_display0.port1
-HEX0[0] << BCD_Decoder:Decoder_for_display0.port1
+HEX1[6] << BCD_Decoder_Decimal:Decoder_for_display.port1
+HEX1[5] << BCD_Decoder_Decimal:Decoder_for_display.port1
+HEX1[4] << BCD_Decoder_Decimal:Decoder_for_display.port1
+HEX1[3] << BCD_Decoder_Decimal:Decoder_for_display.port1
+HEX1[2] << BCD_Decoder_Decimal:Decoder_for_display.port1
+HEX1[1] << BCD_Decoder_Decimal:Decoder_for_display.port1
+HEX1[0] << BCD_Decoder_Decimal:Decoder_for_display.port1
+HEX0[6] << BCD_Decoder_Decimal:Decoder_for_display.port2
+HEX0[5] << BCD_Decoder_Decimal:Decoder_for_display.port2
+HEX0[4] << BCD_Decoder_Decimal:Decoder_for_display.port2
+HEX0[3] << BCD_Decoder_Decimal:Decoder_for_display.port2
+HEX0[2] << BCD_Decoder_Decimal:Decoder_for_display.port2
+HEX0[1] << BCD_Decoder_Decimal:Decoder_for_display.port2
+HEX0[0] << BCD_Decoder_Decimal:Decoder_for_display.port2
 LEDR[0] << SW[0].DB_MAX_OUTPUT_PORT_TYPE
 LEDR[1] << SW[1].DB_MAX_OUTPUT_PORT_TYPE
 LEDR[2] << SW[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -45,14 +45,7 @@ LEDR[5] << SW[5].DB_MAX_OUTPUT_PORT_TYPE
 LEDR[6] << SW[6].DB_MAX_OUTPUT_PORT_TYPE
 LEDR[7] << SW[7].DB_MAX_OUTPUT_PORT_TYPE
 LEDR[8] << SW[8].DB_MAX_OUTPUT_PORT_TYPE
-LEDG[0] << <GND>
-LEDG[1] << <GND>
-LEDG[2] << <GND>
-LEDG[3] << <GND>
-LEDG[4] << <GND>
-LEDG[5] << <GND>
-LEDG[6] << <GND>
-LEDG[7] << LEDG.DB_MAX_OUTPUT_PORT_TYPE
+LEDG[8] << LEDG.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Part4|BCD_FourBitAdder:BCD_FBA
@@ -112,7 +105,40 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 c0 <= c0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Part4|BCD_Decoder:Decoder_for_display0
+|Part4|BCD_Decoder_Decimal:Decoder_for_display
+vec_to_display[0] => Decoder0.IN7
+vec_to_display[0] => Decoder1.IN7
+vec_to_display[1] => Decoder0.IN6
+vec_to_display[1] => Decoder1.IN6
+vec_to_display[2] => Decoder0.IN5
+vec_to_display[2] => Decoder1.IN5
+vec_to_display[3] => Decoder0.IN4
+vec_to_display[3] => Decoder1.IN4
+vec_to_display[4] => Decoder0.IN3
+vec_to_display[4] => Decoder1.IN3
+vec_to_display[5] => Decoder0.IN2
+vec_to_display[5] => Decoder1.IN2
+vec_to_display[6] => Decoder0.IN1
+vec_to_display[6] => Decoder1.IN1
+vec_to_display[7] => Decoder0.IN0
+vec_to_display[7] => Decoder1.IN0
+vec_HEX1[6] <= BCD_Decoder:BCD_For_HEX_Display1.port1
+vec_HEX1[5] <= BCD_Decoder:BCD_For_HEX_Display1.port1
+vec_HEX1[4] <= BCD_Decoder:BCD_For_HEX_Display1.port1
+vec_HEX1[3] <= BCD_Decoder:BCD_For_HEX_Display1.port1
+vec_HEX1[2] <= BCD_Decoder:BCD_For_HEX_Display1.port1
+vec_HEX1[1] <= BCD_Decoder:BCD_For_HEX_Display1.port1
+vec_HEX1[0] <= BCD_Decoder:BCD_For_HEX_Display1.port1
+vec_HEX0[6] <= BCD_Decoder:BCD_For_HEX_Display0.port1
+vec_HEX0[5] <= BCD_Decoder:BCD_For_HEX_Display0.port1
+vec_HEX0[4] <= BCD_Decoder:BCD_For_HEX_Display0.port1
+vec_HEX0[3] <= BCD_Decoder:BCD_For_HEX_Display0.port1
+vec_HEX0[2] <= BCD_Decoder:BCD_For_HEX_Display0.port1
+vec_HEX0[1] <= BCD_Decoder:BCD_For_HEX_Display0.port1
+vec_HEX0[0] <= BCD_Decoder:BCD_For_HEX_Display0.port1
+
+
+|Part4|BCD_Decoder_Decimal:Decoder_for_display|BCD_Decoder:BCD_For_HEX_Display1
 foo[0] => Decoder0.IN3
 foo[1] => Decoder0.IN2
 foo[2] => Decoder0.IN1
@@ -126,7 +152,7 @@ lambda[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
 lambda[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Part4|BCD_Decoder:Decoder_for_display1
+|Part4|BCD_Decoder_Decimal:Decoder_for_display|BCD_Decoder:BCD_For_HEX_Display0
 foo[0] => Decoder0.IN3
 foo[1] => Decoder0.IN2
 foo[2] => Decoder0.IN1

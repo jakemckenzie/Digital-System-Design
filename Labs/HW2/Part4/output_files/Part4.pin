@@ -421,11 +421,11 @@ HEX0[2]                      : E17       : output : 2.5 V             :         
 LEDR[5]                      : E18       : output : 2.5 V             :         : 7         : Y              
 LEDR[2]                      : E19       : output : 2.5 V             :         : 7         : Y              
 VCCIO7                       : E20       : power  :                   : 2.5V    : 7         :                
-LEDG[0]                      : E21       : output : 2.5 V             :         : 7         : Y              
-LEDG[1]                      : E22       : output : 2.5 V             :         : 7         : Y              
+RESERVED_INPUT               : E21       :        :                   :         : 7         :                
+RESERVED_INPUT               : E22       :        :                   :         : 7         :                
 VCCIO7                       : E23       : power  :                   : 2.5V    : 7         :                
-LEDG[3]                      : E24       : output : 2.5 V             :         : 7         : Y              
-LEDG[2]                      : E25       : output : 2.5 V             :         : 7         : Y              
+RESERVED_INPUT               : E24       :        :                   :         : 7         :                
+RESERVED_INPUT               : E25       :        :                   :         : 7         :                
 RESERVED_INPUT               : E26       :        :                   :         : 6         :                
 RESERVED_INPUT               : E27       :        :                   :         : 6         :                
 RESERVED_INPUT               : E28       :        :                   :         : 6         :                
@@ -445,7 +445,7 @@ GND                          : F13       : gnd    :                   :         
 RESERVED_INPUT               : F14       :        :                   :         : 8         :                
 RESERVED_INPUT               : F15       :        :                   :         : 7         :                
 GND                          : F16       : gnd    :                   :         :           :                
-RESERVED_INPUT               : F17       :        :                   :         : 7         :                
+LEDG[8]                      : F17       : output : 2.5 V             :         : 7         : Y              
 LEDR[4]                      : F18       : output : 2.5 V             :         : 7         : Y              
 LEDR[1]                      : F19       : output : 2.5 V             :         : 7         : Y              
 GND                          : F20       : gnd    :                   :         :           :                
@@ -476,9 +476,9 @@ RESERVED_INPUT               : G16       :        :                   :         
 RESERVED_INPUT               : G17       :        :                   :         : 7         :                
 HEX0[0]                      : G18       : output : 2.5 V             :         : 7         : Y              
 LEDR[0]                      : G19       : output : 2.5 V             :         : 7         : Y              
-LEDG[5]                      : G20       : output : 2.5 V             :         : 7         : Y              
-LEDG[7]                      : G21       : output : 2.5 V             :         : 7         : Y              
-LEDG[6]                      : G22       : output : 2.5 V             :         : 7         : Y              
+RESERVED_INPUT               : G20       :        :                   :         : 7         :                
+RESERVED_INPUT               : G21       :        :                   :         : 7         :                
+RESERVED_INPUT               : G22       :        :                   :         : 7         :                
 RESERVED_INPUT               : G23       :        :                   :         : 6         :                
 RESERVED_INPUT               : G24       :        :                   :         : 6         :                
 RESERVED_INPUT               : G25       :        :                   :         : 6         :                
@@ -505,7 +505,7 @@ RESERVED_INPUT               : H17       :        :                   :         
 VCCIO7                       : H18       : power  :                   : 2.5V    : 7         :                
 LEDR[7]                      : H19       : output : 2.5 V             :         : 7         : Y              
 GNDA2                        : H20       : gnd    :                   :         :           :                
-LEDG[4]                      : H21       : output : 2.5 V             :         : 7         : Y              
+RESERVED_INPUT               : H21       :        :                   :         : 7         :                
 HEX0[6]                      : H22       : output : 2.5 V             :         : 6         : Y              
 RESERVED_INPUT               : H23       :        :                   :         : 6         :                
 RESERVED_INPUT               : H24       :        :                   :         : 6         :                

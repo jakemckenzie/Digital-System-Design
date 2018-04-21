@@ -1,5 +1,5 @@
 Fitter report for Part4
-Fri Apr 20 23:36:13 2018
+Sat Apr 21 13:56:50 2018
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -64,18 +64,18 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Fri Apr 20 23:36:13 2018       ;
+; Fitter Status                      ; Successful - Sat Apr 21 13:56:50 2018       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; Part4                                       ;
 ; Top-level Entity Name              ; Part4                                       ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 33 / 114,480 ( < 1 % )                      ;
-;     Total combinational functions  ; 33 / 114,480 ( < 1 % )                      ;
+; Total logic elements               ; 41 / 114,480 ( < 1 % )                      ;
+;     Total combinational functions  ; 41 / 114,480 ( < 1 % )                      ;
 ;     Dedicated logic registers      ; 0 / 114,480 ( 0 % )                         ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 54 / 529 ( 10 % )                           ;
+; Total pins                         ; 47 / 529 ( 9 % )                            ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                       ;
 ; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                             ;
@@ -487,7 +487,14 @@ agreement for further details.
 ; Location     ;                ;              ; LCD_ON           ; PIN_L5        ; QSF Assignment ;
 ; Location     ;                ;              ; LCD_RS           ; PIN_M2        ; QSF Assignment ;
 ; Location     ;                ;              ; LCD_RW           ; PIN_M1        ; QSF Assignment ;
-; Location     ;                ;              ; LEDG[8]          ; PIN_F17       ; QSF Assignment ;
+; Location     ;                ;              ; LEDG[0]          ; PIN_E21       ; QSF Assignment ;
+; Location     ;                ;              ; LEDG[1]          ; PIN_E22       ; QSF Assignment ;
+; Location     ;                ;              ; LEDG[2]          ; PIN_E25       ; QSF Assignment ;
+; Location     ;                ;              ; LEDG[3]          ; PIN_E24       ; QSF Assignment ;
+; Location     ;                ;              ; LEDG[4]          ; PIN_H21       ; QSF Assignment ;
+; Location     ;                ;              ; LEDG[5]          ; PIN_G20       ; QSF Assignment ;
+; Location     ;                ;              ; LEDG[6]          ; PIN_G22       ; QSF Assignment ;
+; Location     ;                ;              ; LEDG[7]          ; PIN_G21       ; QSF Assignment ;
 ; Location     ;                ;              ; LEDR[10]         ; PIN_J15       ; QSF Assignment ;
 ; Location     ;                ;              ; LEDR[11]         ; PIN_H16       ; QSF Assignment ;
 ; Location     ;                ;              ; LEDR[12]         ; PIN_J16       ; QSF Assignment ;
@@ -958,7 +965,14 @@ agreement for further details.
 ; I/O Standard ; Part4          ;              ; LCD_ON           ; 3.3-V LVTTL   ; QSF Assignment ;
 ; I/O Standard ; Part4          ;              ; LCD_RS           ; 3.3-V LVTTL   ; QSF Assignment ;
 ; I/O Standard ; Part4          ;              ; LCD_RW           ; 3.3-V LVTTL   ; QSF Assignment ;
-; I/O Standard ; Part4          ;              ; LEDG[8]          ; 2.5 V         ; QSF Assignment ;
+; I/O Standard ; Part4          ;              ; LEDG[0]          ; 2.5 V         ; QSF Assignment ;
+; I/O Standard ; Part4          ;              ; LEDG[1]          ; 2.5 V         ; QSF Assignment ;
+; I/O Standard ; Part4          ;              ; LEDG[2]          ; 2.5 V         ; QSF Assignment ;
+; I/O Standard ; Part4          ;              ; LEDG[3]          ; 2.5 V         ; QSF Assignment ;
+; I/O Standard ; Part4          ;              ; LEDG[4]          ; 2.5 V         ; QSF Assignment ;
+; I/O Standard ; Part4          ;              ; LEDG[5]          ; 2.5 V         ; QSF Assignment ;
+; I/O Standard ; Part4          ;              ; LEDG[6]          ; 2.5 V         ; QSF Assignment ;
+; I/O Standard ; Part4          ;              ; LEDG[7]          ; 2.5 V         ; QSF Assignment ;
 ; I/O Standard ; Part4          ;              ; LEDR[10]         ; 2.5 V         ; QSF Assignment ;
 ; I/O Standard ; Part4          ;              ; LEDR[11]         ; 2.5 V         ; QSF Assignment ;
 ; I/O Standard ; Part4          ;              ; LEDR[12]         ; 2.5 V         ; QSF Assignment ;
@@ -1115,8 +1129,8 @@ agreement for further details.
 ; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+--------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                    ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 152 ) ; 0.00 % ( 0 / 152 )         ; 0.00 % ( 0 / 152 )       ;
-;     -- Achieved     ; 0.00 % ( 0 / 152 ) ; 0.00 % ( 0 / 152 )         ; 0.00 % ( 0 / 152 )       ;
+;     -- Requested    ; 0.00 % ( 0 / 146 ) ; 0.00 % ( 0 / 146 )         ; 0.00 % ( 0 / 146 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 146 ) ; 0.00 % ( 0 / 146 )         ; 0.00 % ( 0 / 146 )       ;
 ;                     ;                    ;                            ;                          ;
 ; Routing (by net)    ;                    ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -1139,7 +1153,7 @@ agreement for further details.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 142 )    ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 136 )    ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 10 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -1155,28 +1169,28 @@ The pin-out file can be found in C:/Users/Epimetheus/Documents/GitHub/Digital-Sy
 +---------------------------------------------+------------------------+
 ; Resource                                    ; Usage                  ;
 +---------------------------------------------+------------------------+
-; Total logic elements                        ; 33 / 114,480 ( < 1 % ) ;
-;     -- Combinational with no register       ; 33                     ;
+; Total logic elements                        ; 41 / 114,480 ( < 1 % ) ;
+;     -- Combinational with no register       ; 41                     ;
 ;     -- Register only                        ; 0                      ;
 ;     -- Combinational with a register        ; 0                      ;
 ;                                             ;                        ;
 ; Logic element usage by number of LUT inputs ;                        ;
-;     -- 4 input functions                    ; 25                     ;
+;     -- 4 input functions                    ; 30                     ;
 ;     -- 3 input functions                    ; 6                      ;
-;     -- <=2 input functions                  ; 2                      ;
+;     -- <=2 input functions                  ; 5                      ;
 ;     -- Register only                        ; 0                      ;
 ;                                             ;                        ;
 ; Logic elements by mode                      ;                        ;
-;     -- normal mode                          ; 33                     ;
+;     -- normal mode                          ; 41                     ;
 ;     -- arithmetic mode                      ; 0                      ;
 ;                                             ;                        ;
 ; Total registers*                            ; 0 / 117,053 ( 0 % )    ;
 ;     -- Dedicated logic registers            ; 0 / 114,480 ( 0 % )    ;
 ;     -- I/O registers                        ; 0 / 2,573 ( 0 % )      ;
 ;                                             ;                        ;
-; Total LABs:  partially or completely used   ; 3 / 7,155 ( < 1 % )    ;
+; Total LABs:  partially or completely used   ; 4 / 7,155 ( < 1 % )    ;
 ; Virtual pins                                ; 0                      ;
-; I/O pins                                    ; 54 / 529 ( 10 % )      ;
+; I/O pins                                    ; 47 / 529 ( 9 % )       ;
 ;     -- Clock pins                           ; 0 / 7 ( 0 % )          ;
 ;     -- Dedicated input pins                 ; 0 / 9 ( 0 % )          ;
 ;                                             ;                        ;
@@ -1193,11 +1207,11 @@ The pin-out file can be found in C:/Users/Epimetheus/Documents/GitHub/Digital-Sy
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )          ;
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )          ;
 ; Average interconnect usage (total/H/V)      ; 0.1% / 0.1% / 0.1%     ;
-; Peak interconnect usage (total/H/V)         ; 1.0% / 0.9% / 1.0%     ;
+; Peak interconnect usage (total/H/V)         ; 0.8% / 0.9% / 0.9%     ;
 ; Maximum fan-out                             ; 12                     ;
 ; Highest non-global fan-out                  ; 12                     ;
-; Total fan-out                               ; 216                    ;
-; Average fan-out                             ; 1.43                   ;
+; Total fan-out                               ; 237                    ;
+; Average fan-out                             ; 1.63                   ;
 +---------------------------------------------+------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -1210,29 +1224,29 @@ The pin-out file can be found in C:/Users/Epimetheus/Documents/GitHub/Digital-Sy
 +---------------------------------------------+-----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                   ; Low                            ;
 ;                                             ;                       ;                                ;
-; Total logic elements                        ; 33 / 114480 ( < 1 % ) ; 0 / 114480 ( 0 % )             ;
-;     -- Combinational with no register       ; 33                    ; 0                              ;
+; Total logic elements                        ; 41 / 114480 ( < 1 % ) ; 0 / 114480 ( 0 % )             ;
+;     -- Combinational with no register       ; 41                    ; 0                              ;
 ;     -- Register only                        ; 0                     ; 0                              ;
 ;     -- Combinational with a register        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic element usage by number of LUT inputs ;                       ;                                ;
-;     -- 4 input functions                    ; 25                    ; 0                              ;
+;     -- 4 input functions                    ; 30                    ; 0                              ;
 ;     -- 3 input functions                    ; 6                     ; 0                              ;
-;     -- <=2 input functions                  ; 2                     ; 0                              ;
+;     -- <=2 input functions                  ; 5                     ; 0                              ;
 ;     -- Register only                        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic elements by mode                      ;                       ;                                ;
-;     -- normal mode                          ; 33                    ; 0                              ;
+;     -- normal mode                          ; 41                    ; 0                              ;
 ;     -- arithmetic mode                      ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Total registers                             ; 0                     ; 0                              ;
 ;     -- Dedicated logic registers            ; 0 / 114480 ( 0 % )    ; 0 / 114480 ( 0 % )             ;
 ;     -- I/O registers                        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
-; Total LABs:  partially or completely used   ; 3 / 7155 ( < 1 % )    ; 0 / 7155 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 4 / 7155 ( < 1 % )    ; 0 / 7155 ( 0 % )               ;
 ;                                             ;                       ;                                ;
 ; Virtual pins                                ; 0                     ; 0                              ;
-; I/O pins                                    ; 54                    ; 0                              ;
+; I/O pins                                    ; 47                    ; 0                              ;
 ; Embedded Multiplier 9-bit elements          ; 0 / 532 ( 0 % )       ; 0 / 532 ( 0 % )                ;
 ; Total memory bits                           ; 0                     ; 0                              ;
 ; Total RAM block bits                        ; 0                     ; 0                              ;
@@ -1244,7 +1258,7 @@ The pin-out file can be found in C:/Users/Epimetheus/Documents/GitHub/Digital-Sy
 ;     -- Registered Output Connections        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Internal Connections                        ;                       ;                                ;
-;     -- Total Connections                    ; 211                   ; 5                              ;
+;     -- Total Connections                    ; 232                   ; 5                              ;
 ;     -- Registered Connections               ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; External Connections                        ;                       ;                                ;
@@ -1253,7 +1267,7 @@ The pin-out file can be found in C:/Users/Epimetheus/Documents/GitHub/Digital-Sy
 ;                                             ;                       ;                                ;
 ; Partition Interface                         ;                       ;                                ;
 ;     -- Input Ports                          ; 9                     ; 0                              ;
-;     -- Output Ports                         ; 45                    ; 0                              ;
+;     -- Output Ports                         ; 38                    ; 0                              ;
 ;     -- Bidir Ports                          ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Registered Ports                            ;                       ;                                ;
@@ -1280,11 +1294,11 @@ The pin-out file can be found in C:/Users/Epimetheus/Documents/GitHub/Digital-Sy
 ; SW[0] ; AB28  ; 5        ; 115          ; 17           ; 0            ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; SW[1] ; AC28  ; 5        ; 115          ; 14           ; 0            ; 12                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; SW[2] ; AC27  ; 5        ; 115          ; 15           ; 7            ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; SW[3] ; AD27  ; 5        ; 115          ; 13           ; 7            ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; SW[3] ; AD27  ; 5        ; 115          ; 13           ; 7            ; 12                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; SW[4] ; AB27  ; 5        ; 115          ; 18           ; 7            ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; SW[5] ; AC26  ; 5        ; 115          ; 11           ; 7            ; 12                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; SW[6] ; AD26  ; 5        ; 115          ; 10           ; 0            ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; SW[7] ; AB26  ; 5        ; 115          ; 15           ; 0            ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; SW[7] ; AB26  ; 5        ; 115          ; 15           ; 0            ; 12                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; SW[8] ; AC25  ; 5        ; 115          ; 4            ; 21           ; 3                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 +-------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 
@@ -1322,14 +1336,7 @@ The pin-out file can be found in C:/Users/Epimetheus/Documents/GitHub/Digital-Sy
 ; HEX6[4] ; AB15  ; 4        ; 67           ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                               ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; HEX6[5] ; AA15  ; 4        ; 67           ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                               ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; HEX6[6] ; AC17  ; 4        ; 74           ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                               ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; LEDG[0] ; E21   ; 7        ; 107          ; 73           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; LEDG[1] ; E22   ; 7        ; 111          ; 73           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; LEDG[2] ; E25   ; 7        ; 83           ; 73           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; LEDG[3] ; E24   ; 7        ; 85           ; 73           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; LEDG[4] ; H21   ; 7        ; 72           ; 73           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; LEDG[5] ; G20   ; 7        ; 74           ; 73           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; LEDG[6] ; G22   ; 7        ; 72           ; 73           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; LEDG[7] ; G21   ; 7        ; 74           ; 73           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; LEDG[8] ; F17   ; 7        ; 67           ; 73           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; LEDR[0] ; G19   ; 7        ; 69           ; 73           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; LEDR[1] ; F19   ; 7        ; 94           ; 73           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; LEDR[2] ; E19   ; 7        ; 94           ; 73           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
@@ -1374,7 +1381,7 @@ The pin-out file can be found in C:/Users/Epimetheus/Documents/GitHub/Digital-Sy
 ; 4        ; 14 / 71 ( 20 % ) ; 3.3V          ; --           ;
 ; 5        ; 15 / 65 ( 23 % ) ; 2.5V          ; --           ;
 ; 6        ; 6 / 58 ( 10 % )  ; 2.5V          ; --           ;
-; 7        ; 20 / 72 ( 28 % ) ; 2.5V          ; --           ;
+; 7        ; 13 / 72 ( 18 % ) ; 2.5V          ; --           ;
 ; 8        ; 0 / 71 ( 0 % )   ; 2.5V          ; --           ;
 +----------+------------------+---------------+--------------+
 
@@ -1736,11 +1743,11 @@ The pin-out file can be found in C:/Users/Epimetheus/Documents/GitHub/Digital-Sy
 ; E18      ; 427        ; 7        ; LEDR[5]                                                   ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; E19      ; 421        ; 7        ; LEDR[2]                                                   ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; E20      ;            ; 7        ; VCCIO7                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; E21      ; 407        ; 7        ; LEDG[0]                                                   ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
-; E22      ; 403        ; 7        ; LEDG[1]                                                   ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
+; E21      ; 407        ; 7        ; RESERVED_INPUT                                            ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; E22      ; 403        ; 7        ; RESERVED_INPUT                                            ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; E23      ;            ; 7        ; VCCIO7                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; E24      ; 433        ; 7        ; LEDG[3]                                                   ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
-; E25      ; 434        ; 7        ; LEDG[2]                                                   ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
+; E24      ; 433        ; 7        ; RESERVED_INPUT                                            ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; E25      ; 434        ; 7        ; RESERVED_INPUT                                            ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; E26      ; 378        ; 6        ; RESERVED_INPUT                                            ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; E27      ; 375        ; 6        ; RESERVED_INPUT                                            ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; E28      ; 374        ; 6        ; RESERVED_INPUT                                            ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -1760,7 +1767,7 @@ The pin-out file can be found in C:/Users/Epimetheus/Documents/GitHub/Digital-Sy
 ; F14      ; 485        ; 8        ; RESERVED_INPUT                                            ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; F15      ; 466        ; 7        ; RESERVED_INPUT                                            ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; F16      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; F17      ; 455        ; 7        ; RESERVED_INPUT                                            ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; F17      ; 455        ; 7        ; LEDG[8]                                                   ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; F18      ; 428        ; 7        ; LEDR[4]                                                   ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; F19      ; 420        ; 7        ; LEDR[1]                                                   ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; F20      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -1791,9 +1798,9 @@ The pin-out file can be found in C:/Users/Epimetheus/Documents/GitHub/Digital-Sy
 ; G17      ; 437        ; 7        ; RESERVED_INPUT                                            ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; G18      ; 452        ; 7        ; HEX0[0]                                                   ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; G19      ; 451        ; 7        ; LEDR[0]                                                   ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
-; G20      ; 444        ; 7        ; LEDG[5]                                                   ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
-; G21      ; 445        ; 7        ; LEDG[7]                                                   ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
-; G22      ; 449        ; 7        ; LEDG[6]                                                   ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
+; G20      ; 444        ; 7        ; RESERVED_INPUT                                            ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; G21      ; 445        ; 7        ; RESERVED_INPUT                                            ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; G22      ; 449        ; 7        ; RESERVED_INPUT                                            ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; G23      ; 398        ; 6        ; RESERVED_INPUT                                            ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; G24      ; 397        ; 6        ; RESERVED_INPUT                                            ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; G25      ; 393        ; 6        ; RESERVED_INPUT                                            ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -1820,7 +1827,7 @@ The pin-out file can be found in C:/Users/Epimetheus/Documents/GitHub/Digital-Sy
 ; H18      ;            ; 7        ; VCCIO7                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; H19      ; 446        ; 7        ; LEDR[7]                                                   ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; H20      ;            ;          ; GNDA2                                                     ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; H21      ; 448        ; 7        ; LEDG[4]                                                   ; output ; 2.5 V        ;         ; Column I/O ; Y               ; no       ; Off          ;
+; H21      ; 448        ; 7        ; RESERVED_INPUT                                            ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; H22      ; 399        ; 6        ; HEX0[6]                                                   ; output ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; H23      ; 391        ; 6        ; RESERVED_INPUT                                            ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; H24      ; 390        ; 6        ; RESERVED_INPUT                                            ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -2210,32 +2217,27 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; LEDR[6]  ; Missing drive strength and slew rate ;
 ; LEDR[7]  ; Missing drive strength and slew rate ;
 ; LEDR[8]  ; Missing drive strength and slew rate ;
-; LEDG[0]  ; Missing drive strength and slew rate ;
-; LEDG[1]  ; Missing drive strength and slew rate ;
-; LEDG[2]  ; Missing drive strength and slew rate ;
-; LEDG[3]  ; Missing drive strength and slew rate ;
-; LEDG[4]  ; Missing drive strength and slew rate ;
-; LEDG[5]  ; Missing drive strength and slew rate ;
-; LEDG[6]  ; Missing drive strength and slew rate ;
-; LEDG[7]  ; Missing drive strength and slew rate ;
+; LEDG[8]  ; Missing drive strength and slew rate ;
 +----------+--------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                   ;
-+---------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------+------------------+--------------+
-; Compilation Hierarchy Node            ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                           ; Entity Name      ; Library Name ;
-+---------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------+------------------+--------------+
-; |Part4                                ; 33 (3)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 54   ; 0            ; 33 (3)       ; 0 (0)             ; 0 (0)            ; |Part4                                        ; Part4            ; work         ;
-;    |BCD_Decoder:Decoder_for_display0| ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; |Part4|BCD_Decoder:Decoder_for_display0       ; BCD_Decoder      ; work         ;
-;    |BCD_Decoder:Decoder_for_display4| ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; |Part4|BCD_Decoder:Decoder_for_display4       ; BCD_Decoder      ; work         ;
-;    |BCD_Decoder:Decoder_for_display6| ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; |Part4|BCD_Decoder:Decoder_for_display6       ; BCD_Decoder      ; work         ;
-;    |BCD_FourBitAdder:BCD_FBA|         ; 9 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 9 (0)        ; 0 (0)             ; 0 (0)            ; |Part4|BCD_FourBitAdder:BCD_FBA               ; BCD_FourBitAdder ; work         ;
-;       |BCD_Adder:FA1|                 ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |Part4|BCD_FourBitAdder:BCD_FBA|BCD_Adder:FA1 ; BCD_Adder        ; work         ;
-;       |BCD_Adder:FA2|                 ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |Part4|BCD_FourBitAdder:BCD_FBA|BCD_Adder:FA2 ; BCD_Adder        ; work         ;
-;       |BCD_Adder:FA3|                 ; 4 (4)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; |Part4|BCD_FourBitAdder:BCD_FBA|BCD_Adder:FA3 ; BCD_Adder        ; work         ;
-;       |BCD_Adder:FA4|                 ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |Part4|BCD_FourBitAdder:BCD_FBA|BCD_Adder:FA4 ; BCD_Adder        ; work         ;
-+---------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------+------------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                               ;
++----------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------------------------------------------------------------------+---------------------+--------------+
+; Compilation Hierarchy Node                   ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                             ; Entity Name         ; Library Name ;
++----------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------------------------------------------------------------------+---------------------+--------------+
+; |Part4                                       ; 41 (3)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 47   ; 0            ; 41 (3)       ; 0 (0)             ; 0 (0)            ; |Part4                                                                          ; Part4               ; work         ;
+;    |BCD_Decoder:Decoder_for_display4|        ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; |Part4|BCD_Decoder:Decoder_for_display4                                         ; BCD_Decoder         ; work         ;
+;    |BCD_Decoder:Decoder_for_display6|        ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; |Part4|BCD_Decoder:Decoder_for_display6                                         ; BCD_Decoder         ; work         ;
+;    |BCD_Decoder_Decimal:Decoder_for_display| ; 15 (5)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 15 (5)       ; 0 (0)             ; 0 (0)            ; |Part4|BCD_Decoder_Decimal:Decoder_for_display                                  ; BCD_Decoder_Decimal ; work         ;
+;       |BCD_Decoder:BCD_For_HEX_Display0|     ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; |Part4|BCD_Decoder_Decimal:Decoder_for_display|BCD_Decoder:BCD_For_HEX_Display0 ; BCD_Decoder         ; work         ;
+;       |BCD_Decoder:BCD_For_HEX_Display1|     ; 3 (3)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; |Part4|BCD_Decoder_Decimal:Decoder_for_display|BCD_Decoder:BCD_For_HEX_Display1 ; BCD_Decoder         ; work         ;
+;    |BCD_FourBitAdder:BCD_FBA|                ; 9 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 9 (0)        ; 0 (0)             ; 0 (0)            ; |Part4|BCD_FourBitAdder:BCD_FBA                                                 ; BCD_FourBitAdder    ; work         ;
+;       |BCD_Adder:FA1|                        ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |Part4|BCD_FourBitAdder:BCD_FBA|BCD_Adder:FA1                                   ; BCD_Adder           ; work         ;
+;       |BCD_Adder:FA2|                        ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |Part4|BCD_FourBitAdder:BCD_FBA|BCD_Adder:FA2                                   ; BCD_Adder           ; work         ;
+;       |BCD_Adder:FA3|                        ; 4 (4)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; |Part4|BCD_FourBitAdder:BCD_FBA|BCD_Adder:FA3                                   ; BCD_Adder           ; work         ;
+;       |BCD_Adder:FA4|                        ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |Part4|BCD_FourBitAdder:BCD_FBA|BCD_Adder:FA4                                   ; BCD_Adder           ; work         ;
++----------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -2281,14 +2283,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; LEDR[6] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; LEDR[7] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; LEDR[8] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; LEDG[0] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; LEDG[1] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; LEDG[2] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; LEDG[3] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; LEDG[4] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; LEDG[5] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; LEDG[6] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; LEDG[7] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; LEDG[8] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; SW[4]   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; SW[5]   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; SW[6]   ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
@@ -2301,114 +2296,116 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------+----------+---------------+---------------+-----------------------+-----+------+
 
 
-+----------------------------------------------------------------------------------+
-; Pad To Core Delay Chain Fanout                                                   ;
-+----------------------------------------------------+-------------------+---------+
-; Source Pin / Fanout                                ; Pad To Core Index ; Setting ;
-+----------------------------------------------------+-------------------+---------+
-; SW[4]                                              ;                   ;         ;
-;      - BCD_Decoder:Decoder_for_display6|WideOr6~0  ; 0                 ; 6       ;
-;      - BCD_Decoder:Decoder_for_display6|WideOr5~0  ; 0                 ; 6       ;
-;      - BCD_Decoder:Decoder_for_display6|WideOr4~0  ; 0                 ; 6       ;
-;      - BCD_Decoder:Decoder_for_display6|WideOr3~0  ; 0                 ; 6       ;
-;      - BCD_Decoder:Decoder_for_display6|WideOr2~0  ; 0                 ; 6       ;
-;      - BCD_Decoder:Decoder_for_display6|WideOr1~0  ; 0                 ; 6       ;
-;      - BCD_Decoder:Decoder_for_display6|WideOr0~0  ; 0                 ; 6       ;
-;      - BCD_FourBitAdder:BCD_FBA|BCD_Adder:FA1|c0~0 ; 0                 ; 6       ;
-;      - BCD_FourBitAdder:BCD_FBA|BCD_Adder:FA1|s    ; 0                 ; 6       ;
-;      - LEDG~1                                      ; 0                 ; 6       ;
-;      - LEDR[4]~output                              ; 0                 ; 6       ;
-; SW[5]                                              ;                   ;         ;
-;      - BCD_Decoder:Decoder_for_display6|WideOr6~0  ; 0                 ; 6       ;
-;      - BCD_Decoder:Decoder_for_display6|WideOr5~0  ; 0                 ; 6       ;
-;      - BCD_Decoder:Decoder_for_display6|WideOr4~0  ; 0                 ; 6       ;
-;      - BCD_Decoder:Decoder_for_display6|WideOr3~0  ; 0                 ; 6       ;
-;      - BCD_Decoder:Decoder_for_display6|WideOr2~0  ; 0                 ; 6       ;
-;      - BCD_Decoder:Decoder_for_display6|WideOr1~0  ; 0                 ; 6       ;
-;      - BCD_Decoder:Decoder_for_display6|WideOr0~0  ; 0                 ; 6       ;
-;      - BCD_FourBitAdder:BCD_FBA|BCD_Adder:FA3|c0~2 ; 0                 ; 6       ;
-;      - BCD_FourBitAdder:BCD_FBA|BCD_Adder:FA2|s    ; 0                 ; 6       ;
-;      - BCD_FourBitAdder:BCD_FBA|BCD_Adder:FA3|s    ; 0                 ; 6       ;
-;      - LEDG~1                                      ; 0                 ; 6       ;
-;      - LEDR[5]~output                              ; 0                 ; 6       ;
-; SW[6]                                              ;                   ;         ;
-;      - BCD_Decoder:Decoder_for_display6|WideOr6~0  ; 1                 ; 6       ;
-;      - BCD_Decoder:Decoder_for_display6|WideOr5~0  ; 1                 ; 6       ;
-;      - BCD_Decoder:Decoder_for_display6|WideOr4~0  ; 1                 ; 6       ;
-;      - BCD_Decoder:Decoder_for_display6|WideOr3~0  ; 1                 ; 6       ;
-;      - BCD_Decoder:Decoder_for_display6|WideOr2~0  ; 1                 ; 6       ;
-;      - BCD_Decoder:Decoder_for_display6|WideOr1~0  ; 1                 ; 6       ;
-;      - BCD_Decoder:Decoder_for_display6|WideOr0~0  ; 1                 ; 6       ;
-;      - BCD_FourBitAdder:BCD_FBA|BCD_Adder:FA3|s~0  ; 1                 ; 6       ;
-;      - LEDG~1                                      ; 1                 ; 6       ;
-;      - BCD_FourBitAdder:BCD_FBA|BCD_Adder:FA3|c0~3 ; 1                 ; 6       ;
-;      - LEDR[6]~output                              ; 1                 ; 6       ;
-; SW[7]                                              ;                   ;         ;
-;      - BCD_Decoder:Decoder_for_display6|WideOr6~0  ; 0                 ; 6       ;
-;      - BCD_Decoder:Decoder_for_display6|WideOr5~0  ; 0                 ; 6       ;
-;      - BCD_Decoder:Decoder_for_display6|WideOr4~0  ; 0                 ; 6       ;
-;      - BCD_Decoder:Decoder_for_display6|WideOr3~0  ; 0                 ; 6       ;
-;      - BCD_Decoder:Decoder_for_display6|WideOr2~0  ; 0                 ; 6       ;
-;      - BCD_Decoder:Decoder_for_display6|WideOr1~0  ; 0                 ; 6       ;
-;      - BCD_Decoder:Decoder_for_display6|WideOr0~0  ; 0                 ; 6       ;
-;      - BCD_FourBitAdder:BCD_FBA|BCD_Adder:FA4|c0~0 ; 0                 ; 6       ;
-;      - BCD_FourBitAdder:BCD_FBA|BCD_Adder:FA4|s    ; 0                 ; 6       ;
-;      - LEDG~1                                      ; 0                 ; 6       ;
-;      - LEDR[7]~output                              ; 0                 ; 6       ;
-; SW[0]                                              ;                   ;         ;
-;      - BCD_Decoder:Decoder_for_display4|WideOr6~0  ; 0                 ; 6       ;
-;      - BCD_Decoder:Decoder_for_display4|WideOr5~0  ; 0                 ; 6       ;
-;      - BCD_Decoder:Decoder_for_display4|WideOr4~0  ; 0                 ; 6       ;
-;      - BCD_Decoder:Decoder_for_display4|WideOr3~0  ; 0                 ; 6       ;
-;      - BCD_Decoder:Decoder_for_display4|WideOr2~0  ; 0                 ; 6       ;
-;      - BCD_Decoder:Decoder_for_display4|WideOr1~0  ; 0                 ; 6       ;
-;      - BCD_Decoder:Decoder_for_display4|WideOr0~0  ; 0                 ; 6       ;
-;      - BCD_FourBitAdder:BCD_FBA|BCD_Adder:FA1|c0~0 ; 0                 ; 6       ;
-;      - BCD_FourBitAdder:BCD_FBA|BCD_Adder:FA1|s    ; 0                 ; 6       ;
-;      - LEDG~0                                      ; 0                 ; 6       ;
-;      - LEDR[0]~output                              ; 0                 ; 6       ;
-; SW[1]                                              ;                   ;         ;
-;      - BCD_Decoder:Decoder_for_display4|WideOr6~0  ; 0                 ; 6       ;
-;      - BCD_Decoder:Decoder_for_display4|WideOr5~0  ; 0                 ; 6       ;
-;      - BCD_Decoder:Decoder_for_display4|WideOr4~0  ; 0                 ; 6       ;
-;      - BCD_Decoder:Decoder_for_display4|WideOr3~0  ; 0                 ; 6       ;
-;      - BCD_Decoder:Decoder_for_display4|WideOr2~0  ; 0                 ; 6       ;
-;      - BCD_Decoder:Decoder_for_display4|WideOr1~0  ; 0                 ; 6       ;
-;      - BCD_Decoder:Decoder_for_display4|WideOr0~0  ; 0                 ; 6       ;
-;      - BCD_FourBitAdder:BCD_FBA|BCD_Adder:FA3|c0~2 ; 0                 ; 6       ;
-;      - BCD_FourBitAdder:BCD_FBA|BCD_Adder:FA2|s    ; 0                 ; 6       ;
-;      - BCD_FourBitAdder:BCD_FBA|BCD_Adder:FA3|s    ; 0                 ; 6       ;
-;      - LEDG~0                                      ; 0                 ; 6       ;
-;      - LEDR[1]~output                              ; 0                 ; 6       ;
-; SW[2]                                              ;                   ;         ;
-;      - BCD_Decoder:Decoder_for_display4|WideOr6~0  ; 1                 ; 6       ;
-;      - BCD_Decoder:Decoder_for_display4|WideOr5~0  ; 1                 ; 6       ;
-;      - BCD_Decoder:Decoder_for_display4|WideOr4~0  ; 1                 ; 6       ;
-;      - BCD_Decoder:Decoder_for_display4|WideOr3~0  ; 1                 ; 6       ;
-;      - BCD_Decoder:Decoder_for_display4|WideOr2~0  ; 1                 ; 6       ;
-;      - BCD_Decoder:Decoder_for_display4|WideOr1~0  ; 1                 ; 6       ;
-;      - BCD_Decoder:Decoder_for_display4|WideOr0~0  ; 1                 ; 6       ;
-;      - BCD_FourBitAdder:BCD_FBA|BCD_Adder:FA3|s~0  ; 1                 ; 6       ;
-;      - LEDG~0                                      ; 1                 ; 6       ;
-;      - BCD_FourBitAdder:BCD_FBA|BCD_Adder:FA3|c0~3 ; 1                 ; 6       ;
-;      - LEDR[2]~output                              ; 1                 ; 6       ;
-; SW[3]                                              ;                   ;         ;
-;      - BCD_Decoder:Decoder_for_display4|WideOr6~0  ; 1                 ; 6       ;
-;      - BCD_Decoder:Decoder_for_display4|WideOr5~0  ; 1                 ; 6       ;
-;      - BCD_Decoder:Decoder_for_display4|WideOr4~0  ; 1                 ; 6       ;
-;      - BCD_Decoder:Decoder_for_display4|WideOr3~0  ; 1                 ; 6       ;
-;      - BCD_Decoder:Decoder_for_display4|WideOr2~0  ; 1                 ; 6       ;
-;      - BCD_Decoder:Decoder_for_display4|WideOr1~0  ; 1                 ; 6       ;
-;      - BCD_Decoder:Decoder_for_display4|WideOr0~0  ; 1                 ; 6       ;
-;      - BCD_FourBitAdder:BCD_FBA|BCD_Adder:FA4|c0~0 ; 1                 ; 6       ;
-;      - BCD_FourBitAdder:BCD_FBA|BCD_Adder:FA4|s    ; 1                 ; 6       ;
-;      - LEDG~0                                      ; 1                 ; 6       ;
-;      - LEDR[3]~output                              ; 1                 ; 6       ;
-; SW[8]                                              ;                   ;         ;
-;      - BCD_FourBitAdder:BCD_FBA|BCD_Adder:FA1|c0~0 ; 0                 ; 6       ;
-;      - BCD_FourBitAdder:BCD_FBA|BCD_Adder:FA1|s    ; 0                 ; 6       ;
-;      - LEDR[8]~output                              ; 0                 ; 6       ;
-+----------------------------------------------------+-------------------+---------+
++----------------------------------------------------------------------------------------+
+; Pad To Core Delay Chain Fanout                                                         ;
++----------------------------------------------------------+-------------------+---------+
+; Source Pin / Fanout                                      ; Pad To Core Index ; Setting ;
++----------------------------------------------------------+-------------------+---------+
+; SW[4]                                                    ;                   ;         ;
+;      - BCD_Decoder:Decoder_for_display6|WideOr6~0        ; 0                 ; 6       ;
+;      - BCD_Decoder:Decoder_for_display6|WideOr5~0        ; 0                 ; 6       ;
+;      - BCD_Decoder:Decoder_for_display6|WideOr4~0        ; 0                 ; 6       ;
+;      - BCD_Decoder:Decoder_for_display6|WideOr3~0        ; 0                 ; 6       ;
+;      - BCD_Decoder:Decoder_for_display6|WideOr2~0        ; 0                 ; 6       ;
+;      - BCD_Decoder:Decoder_for_display6|WideOr1~0        ; 0                 ; 6       ;
+;      - BCD_Decoder:Decoder_for_display6|WideOr0~0        ; 0                 ; 6       ;
+;      - BCD_FourBitAdder:BCD_FBA|BCD_Adder:FA1|c0~0       ; 0                 ; 6       ;
+;      - BCD_FourBitAdder:BCD_FBA|BCD_Adder:FA1|s          ; 0                 ; 6       ;
+;      - LEDG~1                                            ; 0                 ; 6       ;
+;      - LEDR[4]~output                                    ; 0                 ; 6       ;
+; SW[5]                                                    ;                   ;         ;
+;      - BCD_Decoder:Decoder_for_display6|WideOr6~0        ; 0                 ; 6       ;
+;      - BCD_Decoder:Decoder_for_display6|WideOr5~0        ; 0                 ; 6       ;
+;      - BCD_Decoder:Decoder_for_display6|WideOr4~0        ; 0                 ; 6       ;
+;      - BCD_Decoder:Decoder_for_display6|WideOr3~0        ; 0                 ; 6       ;
+;      - BCD_Decoder:Decoder_for_display6|WideOr2~0        ; 0                 ; 6       ;
+;      - BCD_Decoder:Decoder_for_display6|WideOr1~0        ; 0                 ; 6       ;
+;      - BCD_Decoder:Decoder_for_display6|WideOr0~0        ; 0                 ; 6       ;
+;      - BCD_FourBitAdder:BCD_FBA|BCD_Adder:FA3|c0~2       ; 0                 ; 6       ;
+;      - BCD_FourBitAdder:BCD_FBA|BCD_Adder:FA3|s          ; 0                 ; 6       ;
+;      - BCD_FourBitAdder:BCD_FBA|BCD_Adder:FA2|s          ; 0                 ; 6       ;
+;      - LEDG~1                                            ; 0                 ; 6       ;
+;      - LEDR[5]~output                                    ; 0                 ; 6       ;
+; SW[6]                                                    ;                   ;         ;
+;      - BCD_Decoder:Decoder_for_display6|WideOr6~0        ; 1                 ; 6       ;
+;      - BCD_Decoder:Decoder_for_display6|WideOr5~0        ; 1                 ; 6       ;
+;      - BCD_Decoder:Decoder_for_display6|WideOr4~0        ; 1                 ; 6       ;
+;      - BCD_Decoder:Decoder_for_display6|WideOr3~0        ; 1                 ; 6       ;
+;      - BCD_Decoder:Decoder_for_display6|WideOr2~0        ; 1                 ; 6       ;
+;      - BCD_Decoder:Decoder_for_display6|WideOr1~0        ; 1                 ; 6       ;
+;      - BCD_Decoder:Decoder_for_display6|WideOr0~0        ; 1                 ; 6       ;
+;      - BCD_FourBitAdder:BCD_FBA|BCD_Adder:FA3|s~0        ; 1                 ; 6       ;
+;      - LEDG~1                                            ; 1                 ; 6       ;
+;      - BCD_FourBitAdder:BCD_FBA|BCD_Adder:FA3|c0~3       ; 1                 ; 6       ;
+;      - LEDR[6]~output                                    ; 1                 ; 6       ;
+; SW[7]                                                    ;                   ;         ;
+;      - BCD_Decoder:Decoder_for_display6|WideOr6~0        ; 0                 ; 6       ;
+;      - BCD_Decoder:Decoder_for_display6|WideOr5~0        ; 0                 ; 6       ;
+;      - BCD_Decoder:Decoder_for_display6|WideOr4~0        ; 0                 ; 6       ;
+;      - BCD_Decoder:Decoder_for_display6|WideOr3~0        ; 0                 ; 6       ;
+;      - BCD_Decoder:Decoder_for_display6|WideOr2~0        ; 0                 ; 6       ;
+;      - BCD_Decoder:Decoder_for_display6|WideOr1~0        ; 0                 ; 6       ;
+;      - BCD_Decoder:Decoder_for_display6|WideOr0~0        ; 0                 ; 6       ;
+;      - BCD_Decoder_Decimal:Decoder_for_display|WideOr0~0 ; 0                 ; 6       ;
+;      - BCD_FourBitAdder:BCD_FBA|BCD_Adder:FA4|s          ; 0                 ; 6       ;
+;      - BCD_FourBitAdder:BCD_FBA|BCD_Adder:FA4|c0~0       ; 0                 ; 6       ;
+;      - LEDG~1                                            ; 0                 ; 6       ;
+;      - LEDR[7]~output                                    ; 0                 ; 6       ;
+; SW[0]                                                    ;                   ;         ;
+;      - BCD_Decoder:Decoder_for_display4|WideOr6~0        ; 0                 ; 6       ;
+;      - BCD_Decoder:Decoder_for_display4|WideOr5~0        ; 0                 ; 6       ;
+;      - BCD_Decoder:Decoder_for_display4|WideOr4~0        ; 0                 ; 6       ;
+;      - BCD_Decoder:Decoder_for_display4|WideOr3~0        ; 0                 ; 6       ;
+;      - BCD_Decoder:Decoder_for_display4|WideOr2~0        ; 0                 ; 6       ;
+;      - BCD_Decoder:Decoder_for_display4|WideOr1~0        ; 0                 ; 6       ;
+;      - BCD_Decoder:Decoder_for_display4|WideOr0~0        ; 0                 ; 6       ;
+;      - BCD_FourBitAdder:BCD_FBA|BCD_Adder:FA1|c0~0       ; 0                 ; 6       ;
+;      - BCD_FourBitAdder:BCD_FBA|BCD_Adder:FA1|s          ; 0                 ; 6       ;
+;      - LEDG~0                                            ; 0                 ; 6       ;
+;      - LEDR[0]~output                                    ; 0                 ; 6       ;
+; SW[1]                                                    ;                   ;         ;
+;      - BCD_Decoder:Decoder_for_display4|WideOr6~0        ; 0                 ; 6       ;
+;      - BCD_Decoder:Decoder_for_display4|WideOr5~0        ; 0                 ; 6       ;
+;      - BCD_Decoder:Decoder_for_display4|WideOr4~0        ; 0                 ; 6       ;
+;      - BCD_Decoder:Decoder_for_display4|WideOr3~0        ; 0                 ; 6       ;
+;      - BCD_Decoder:Decoder_for_display4|WideOr2~0        ; 0                 ; 6       ;
+;      - BCD_Decoder:Decoder_for_display4|WideOr1~0        ; 0                 ; 6       ;
+;      - BCD_Decoder:Decoder_for_display4|WideOr0~0        ; 0                 ; 6       ;
+;      - BCD_FourBitAdder:BCD_FBA|BCD_Adder:FA3|c0~2       ; 0                 ; 6       ;
+;      - BCD_FourBitAdder:BCD_FBA|BCD_Adder:FA3|s          ; 0                 ; 6       ;
+;      - BCD_FourBitAdder:BCD_FBA|BCD_Adder:FA2|s          ; 0                 ; 6       ;
+;      - LEDG~0                                            ; 0                 ; 6       ;
+;      - LEDR[1]~output                                    ; 0                 ; 6       ;
+; SW[2]                                                    ;                   ;         ;
+;      - BCD_Decoder:Decoder_for_display4|WideOr6~0        ; 1                 ; 6       ;
+;      - BCD_Decoder:Decoder_for_display4|WideOr5~0        ; 1                 ; 6       ;
+;      - BCD_Decoder:Decoder_for_display4|WideOr4~0        ; 1                 ; 6       ;
+;      - BCD_Decoder:Decoder_for_display4|WideOr3~0        ; 1                 ; 6       ;
+;      - BCD_Decoder:Decoder_for_display4|WideOr2~0        ; 1                 ; 6       ;
+;      - BCD_Decoder:Decoder_for_display4|WideOr1~0        ; 1                 ; 6       ;
+;      - BCD_Decoder:Decoder_for_display4|WideOr0~0        ; 1                 ; 6       ;
+;      - BCD_FourBitAdder:BCD_FBA|BCD_Adder:FA3|s~0        ; 1                 ; 6       ;
+;      - LEDG~0                                            ; 1                 ; 6       ;
+;      - BCD_FourBitAdder:BCD_FBA|BCD_Adder:FA3|c0~3       ; 1                 ; 6       ;
+;      - LEDR[2]~output                                    ; 1                 ; 6       ;
+; SW[3]                                                    ;                   ;         ;
+;      - BCD_Decoder:Decoder_for_display4|WideOr6~0        ; 1                 ; 6       ;
+;      - BCD_Decoder:Decoder_for_display4|WideOr5~0        ; 1                 ; 6       ;
+;      - BCD_Decoder:Decoder_for_display4|WideOr4~0        ; 1                 ; 6       ;
+;      - BCD_Decoder:Decoder_for_display4|WideOr3~0        ; 1                 ; 6       ;
+;      - BCD_Decoder:Decoder_for_display4|WideOr2~0        ; 1                 ; 6       ;
+;      - BCD_Decoder:Decoder_for_display4|WideOr1~0        ; 1                 ; 6       ;
+;      - BCD_Decoder:Decoder_for_display4|WideOr0~0        ; 1                 ; 6       ;
+;      - BCD_Decoder_Decimal:Decoder_for_display|WideOr0~0 ; 1                 ; 6       ;
+;      - BCD_FourBitAdder:BCD_FBA|BCD_Adder:FA4|s          ; 1                 ; 6       ;
+;      - BCD_FourBitAdder:BCD_FBA|BCD_Adder:FA4|c0~0       ; 1                 ; 6       ;
+;      - LEDG~0                                            ; 1                 ; 6       ;
+;      - LEDR[3]~output                                    ; 1                 ; 6       ;
+; SW[8]                                                    ;                   ;         ;
+;      - BCD_FourBitAdder:BCD_FBA|BCD_Adder:FA1|c0~0       ; 0                 ; 6       ;
+;      - BCD_FourBitAdder:BCD_FBA|BCD_Adder:FA1|s          ; 0                 ; 6       ;
+;      - LEDR[8]~output                                    ; 0                 ; 6       ;
++----------------------------------------------------------+-------------------+---------+
 
 
 +-------------------------------------------------+
@@ -2416,97 +2413,99 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-------------------------+
 ; Routing Resource Type ; Usage                   ;
 +-----------------------+-------------------------+
-; Block interconnects   ; 54 / 342,891 ( < 1 % )  ;
-; C16 interconnects     ; 52 / 10,120 ( < 1 % )   ;
-; C4 interconnects      ; 118 / 209,544 ( < 1 % ) ;
-; Direct links          ; 2 / 342,891 ( < 1 % )   ;
+; Block interconnects   ; 62 / 342,891 ( < 1 % )  ;
+; C16 interconnects     ; 56 / 10,120 ( < 1 % )   ;
+; C4 interconnects      ; 107 / 209,544 ( < 1 % ) ;
+; Direct links          ; 0 / 342,891 ( 0 % )     ;
 ; Global clocks         ; 0 / 20 ( 0 % )          ;
-; Local interconnects   ; 4 / 119,088 ( < 1 % )   ;
+; Local interconnects   ; 10 / 119,088 ( < 1 % )  ;
 ; R24 interconnects     ; 37 / 9,963 ( < 1 % )    ;
-; R4 interconnects      ; 71 / 289,782 ( < 1 % )  ;
+; R4 interconnects      ; 83 / 289,782 ( < 1 % )  ;
 +-----------------------+-------------------------+
 
 
 +---------------------------------------------------------------------------+
 ; LAB Logic Elements                                                        ;
 +---------------------------------------------+-----------------------------+
-; Number of Logic Elements  (Average = 11.00) ; Number of LABs  (Total = 3) ;
+; Number of Logic Elements  (Average = 10.25) ; Number of LABs  (Total = 4) ;
 +---------------------------------------------+-----------------------------+
-; 1                                           ; 0                           ;
+; 1                                           ; 1                           ;
 ; 2                                           ; 0                           ;
 ; 3                                           ; 0                           ;
 ; 4                                           ; 0                           ;
 ; 5                                           ; 0                           ;
 ; 6                                           ; 0                           ;
-; 7                                           ; 1                           ;
-; 8                                           ; 0                           ;
+; 7                                           ; 0                           ;
+; 8                                           ; 1                           ;
 ; 9                                           ; 0                           ;
-; 10                                          ; 1                           ;
+; 10                                          ; 0                           ;
 ; 11                                          ; 0                           ;
 ; 12                                          ; 0                           ;
 ; 13                                          ; 0                           ;
 ; 14                                          ; 0                           ;
 ; 15                                          ; 0                           ;
-; 16                                          ; 1                           ;
+; 16                                          ; 2                           ;
 +---------------------------------------------+-----------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                        ;
 +----------------------------------------------+-----------------------------+
-; Number of Signals Sourced  (Average = 11.00) ; Number of LABs  (Total = 3) ;
+; Number of Signals Sourced  (Average = 10.25) ; Number of LABs  (Total = 4) ;
 +----------------------------------------------+-----------------------------+
 ; 0                                            ; 0                           ;
-; 1                                            ; 0                           ;
+; 1                                            ; 1                           ;
 ; 2                                            ; 0                           ;
 ; 3                                            ; 0                           ;
 ; 4                                            ; 0                           ;
 ; 5                                            ; 0                           ;
 ; 6                                            ; 0                           ;
-; 7                                            ; 1                           ;
-; 8                                            ; 0                           ;
+; 7                                            ; 0                           ;
+; 8                                            ; 1                           ;
 ; 9                                            ; 0                           ;
-; 10                                           ; 1                           ;
+; 10                                           ; 0                           ;
 ; 11                                           ; 0                           ;
 ; 12                                           ; 0                           ;
 ; 13                                           ; 0                           ;
 ; 14                                           ; 0                           ;
 ; 15                                           ; 0                           ;
-; 16                                           ; 1                           ;
+; 16                                           ; 2                           ;
 +----------------------------------------------+-----------------------------+
 
 
 +-------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                       ;
 +-------------------------------------------------+-----------------------------+
-; Number of Signals Sourced Out  (Average = 9.67) ; Number of LABs  (Total = 3) ;
+; Number of Signals Sourced Out  (Average = 8.75) ; Number of LABs  (Total = 4) ;
 +-------------------------------------------------+-----------------------------+
 ; 0                                               ; 0                           ;
-; 1                                               ; 0                           ;
+; 1                                               ; 1                           ;
 ; 2                                               ; 0                           ;
 ; 3                                               ; 0                           ;
 ; 4                                               ; 0                           ;
 ; 5                                               ; 0                           ;
 ; 6                                               ; 0                           ;
-; 7                                               ; 1                           ;
-; 8                                               ; 0                           ;
+; 7                                               ; 0                           ;
+; 8                                               ; 1                           ;
 ; 9                                               ; 0                           ;
-; 10                                              ; 1                           ;
+; 10                                              ; 0                           ;
 ; 11                                              ; 0                           ;
 ; 12                                              ; 1                           ;
+; 13                                              ; 0                           ;
+; 14                                              ; 1                           ;
 +-------------------------------------------------+-----------------------------+
 
 
 +---------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                       ;
 +---------------------------------------------+-----------------------------+
-; Number of Distinct Inputs  (Average = 6.33) ; Number of LABs  (Total = 3) ;
+; Number of Distinct Inputs  (Average = 5.75) ; Number of LABs  (Total = 4) ;
 +---------------------------------------------+-----------------------------+
 ; 0                                           ; 0                           ;
 ; 1                                           ; 0                           ;
 ; 2                                           ; 0                           ;
 ; 3                                           ; 0                           ;
-; 4                                           ; 1                           ;
+; 4                                           ; 2                           ;
 ; 5                                           ; 0                           ;
 ; 6                                           ; 1                           ;
 ; 7                                           ; 0                           ;
@@ -2572,9 +2571,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
 ; Pin/Rules          ; IO_000001 ; IO_000002    ; IO_000003 ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007 ; IO_000008    ; IO_000009 ; IO_000010 ; IO_000011    ; IO_000012    ; IO_000013    ; IO_000014    ; IO_000015    ; IO_000018    ; IO_000019    ; IO_000020    ; IO_000021    ; IO_000022    ; IO_000023    ; IO_000024    ; IO_000026    ; IO_000027    ; IO_000045    ; IO_000046    ; IO_000047    ; IO_000033 ; IO_000034    ; IO_000042    ;
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
-; Total Pass         ; 54        ; 0            ; 54        ; 0            ; 0            ; 54        ; 54        ; 0            ; 54        ; 54        ; 0            ; 31           ; 0            ; 0            ; 9            ; 0            ; 31           ; 9            ; 0            ; 0            ; 0            ; 31           ; 0            ; 0            ; 0            ; 0            ; 0            ; 54        ; 0            ; 0            ;
+; Total Pass         ; 47        ; 0            ; 47        ; 0            ; 0            ; 47        ; 47        ; 0            ; 47        ; 47        ; 0            ; 24           ; 0            ; 0            ; 9            ; 0            ; 24           ; 9            ; 0            ; 0            ; 0            ; 24           ; 0            ; 0            ; 0            ; 0            ; 0            ; 47        ; 0            ; 0            ;
 ; Total Unchecked    ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
-; Total Inapplicable ; 0         ; 54           ; 0         ; 54           ; 54           ; 0         ; 0         ; 54           ; 0         ; 0         ; 54           ; 23           ; 54           ; 54           ; 45           ; 54           ; 23           ; 45           ; 54           ; 54           ; 54           ; 23           ; 54           ; 54           ; 54           ; 54           ; 54           ; 0         ; 54           ; 54           ;
+; Total Inapplicable ; 0         ; 47           ; 0         ; 47           ; 47           ; 0         ; 0         ; 47           ; 0         ; 0         ; 47           ; 23           ; 47           ; 47           ; 38           ; 47           ; 23           ; 38           ; 47           ; 47           ; 47           ; 23           ; 47           ; 47           ; 47           ; 47           ; 47           ; 0         ; 47           ; 47           ;
 ; Total Fail         ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
 ; HEX6[6]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; HEX6[5]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
@@ -2613,14 +2612,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; LEDR[6]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; LEDR[7]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; LEDR[8]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; LEDG[0]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; LEDG[1]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; LEDG[2]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; LEDG[3]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; LEDG[4]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; LEDG[5]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; LEDG[6]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; LEDG[7]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; LEDG[8]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[4]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[5]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[6]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
@@ -3030,7 +3022,14 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "LCD_ON" is assigned to location or region, but does not exist in design
     Warning (15706): Node "LCD_RS" is assigned to location or region, but does not exist in design
     Warning (15706): Node "LCD_RW" is assigned to location or region, but does not exist in design
-    Warning (15706): Node "LEDG[8]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "LEDG[0]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "LEDG[1]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "LEDG[2]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "LEDG[3]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "LEDG[4]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "LEDG[5]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "LEDG[6]" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "LEDG[7]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "LEDR[10]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "LEDR[11]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "LEDR[12]" is assigned to location or region, but does not exist in design
@@ -3184,15 +3183,15 @@ Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:00
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
     Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X81_Y0 to location X91_Y11
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.06 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
+Info (11888): Total time spent on timing analysis during the Fitter is 0.04 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -3200,11 +3199,11 @@ Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part4/output_files/Part4.fit.smsg
-Info: Quartus Prime Fitter was successful. 0 errors, 478 warnings
-    Info: Peak virtual memory: 1504 megabytes
-    Info: Processing ended: Fri Apr 20 23:36:14 2018
+Info: Quartus Prime Fitter was successful. 0 errors, 485 warnings
+    Info: Peak virtual memory: 1502 megabytes
+    Info: Processing ended: Sat Apr 21 13:56:50 2018
     Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:21
+    Info: Total CPU time (on all processors): 00:00:23
 
 
 +----------------------------+
