@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Part4
-Sat Apr 21 14:23:34 2018
+Sat Apr 21 15:55:42 2018
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -14,10 +14,9 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Port Connectivity Checks: "BCD_Decoder_Decimal:Decoder_for_display|BCD_Decoder:BCD_For_HEX_Display1"
- 10. Post-Synthesis Netlist Statistics for Top Partition
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
+  9. Post-Synthesis Netlist Statistics for Top Partition
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
 
 
 
@@ -44,13 +43,13 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Apr 21 14:23:34 2018       ;
+; Analysis & Synthesis Status        ; Successful - Sat Apr 21 15:55:42 2018       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; Part4                                       ;
 ; Top-level Entity Name              ; Part4                                       ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 41                                          ;
-;     Total combinational functions  ; 41                                          ;
+; Total logic elements               ; 42                                          ;
+;     Total combinational functions  ; 42                                          ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
 ; Total pins                         ; 47                                          ;
@@ -181,16 +180,16 @@ agreement for further details.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 41          ;
+; Estimated Total logic elements              ; 42          ;
 ;                                             ;             ;
-; Total combinational functions               ; 41          ;
+; Total combinational functions               ; 42          ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 30          ;
-;     -- 3 input functions                    ; 6           ;
+;     -- 4 input functions                    ; 33          ;
+;     -- 3 input functions                    ; 4           ;
 ;     -- <=2 input functions                  ; 5           ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 41          ;
+;     -- normal mode                          ; 42          ;
 ;     -- arithmetic mode                      ; 0           ;
 ;                                             ;             ;
 ; Total registers                             ; 0           ;
@@ -201,10 +200,10 @@ agreement for further details.
 ;                                             ;             ;
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ;                                             ;             ;
-; Maximum fan-out node                        ; SW[5]~input ;
-; Maximum fan-out                             ; 12          ;
-; Total fan-out                               ; 232         ;
-; Average fan-out                             ; 1.72        ;
+; Maximum fan-out node                        ; SW[7]~input ;
+; Maximum fan-out                             ; 13          ;
+; Total fan-out                               ; 238         ;
+; Average fan-out                             ; 1.75        ;
 +---------------------------------------------+-------------+
 
 
@@ -213,17 +212,16 @@ agreement for further details.
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                             ; Entity Name         ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------+---------------------+--------------+
-; |Part4                                       ; 41 (3)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 47   ; 0            ; |Part4                                                                          ; Part4               ; work         ;
+; |Part4                                       ; 42 (3)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 47   ; 0            ; |Part4                                                                          ; Part4               ; work         ;
 ;    |BCD_Decoder:Decoder_for_display4|        ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part4|BCD_Decoder:Decoder_for_display4                                         ; BCD_Decoder         ; work         ;
 ;    |BCD_Decoder:Decoder_for_display6|        ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part4|BCD_Decoder:Decoder_for_display6                                         ; BCD_Decoder         ; work         ;
-;    |BCD_Decoder_Decimal:Decoder_for_display| ; 15 (5)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part4|BCD_Decoder_Decimal:Decoder_for_display                                  ; BCD_Decoder_Decimal ; work         ;
+;    |BCD_Decoder_Decimal:Decoder_for_display| ; 18 (8)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part4|BCD_Decoder_Decimal:Decoder_for_display                                  ; BCD_Decoder_Decimal ; work         ;
 ;       |BCD_Decoder:BCD_For_HEX_Display0|     ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part4|BCD_Decoder_Decimal:Decoder_for_display|BCD_Decoder:BCD_For_HEX_Display0 ; BCD_Decoder         ; work         ;
 ;       |BCD_Decoder:BCD_For_HEX_Display1|     ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part4|BCD_Decoder_Decimal:Decoder_for_display|BCD_Decoder:BCD_For_HEX_Display1 ; BCD_Decoder         ; work         ;
-;    |BCD_FourBitAdder:BCD_FBA|                ; 9 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part4|BCD_FourBitAdder:BCD_FBA                                                 ; BCD_FourBitAdder    ; work         ;
+;    |BCD_FourBitAdder:BCD_FBA|                ; 7 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part4|BCD_FourBitAdder:BCD_FBA                                                 ; BCD_FourBitAdder    ; work         ;
 ;       |BCD_Adder:FA1|                        ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part4|BCD_FourBitAdder:BCD_FBA|BCD_Adder:FA1                                   ; BCD_Adder           ; work         ;
 ;       |BCD_Adder:FA2|                        ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part4|BCD_FourBitAdder:BCD_FBA|BCD_Adder:FA2                                   ; BCD_Adder           ; work         ;
 ;       |BCD_Adder:FA3|                        ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part4|BCD_FourBitAdder:BCD_FBA|BCD_Adder:FA3                                   ; BCD_Adder           ; work         ;
-;       |BCD_Adder:FA4|                        ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part4|BCD_FourBitAdder:BCD_FBA|BCD_Adder:FA4                                   ; BCD_Adder           ; work         ;
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -243,31 +241,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "BCD_Decoder_Decimal:Decoder_for_display|BCD_Decoder:BCD_For_HEX_Display1" ;
-+-----------+-------+----------+-----------------------------------------------------------------------+
-; Port      ; Type  ; Severity ; Details                                                               ;
-+-----------+-------+----------+-----------------------------------------------------------------------+
-; foo[3..2] ; Input ; Info     ; Stuck at GND                                                          ;
-+-----------+-------+----------+-----------------------------------------------------------------------+
-
-
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 47                          ;
-; cycloneiii_lcell_comb ; 47                          ;
-;     normal            ; 47                          ;
+; cycloneiii_lcell_comb ; 50                          ;
+;     normal            ; 50                          ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 5                           ;
+;         1 data inputs ; 7                           ;
 ;         2 data inputs ; 5                           ;
-;         3 data inputs ; 6                           ;
-;         4 data inputs ; 30                          ;
+;         3 data inputs ; 4                           ;
+;         4 data inputs ; 33                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 7.00                        ;
-; Average LUT depth     ; 4.54                        ;
+; Average LUT depth     ; 4.63                        ;
 +-----------------------+-----------------------------+
 
 
@@ -286,7 +275,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Sat Apr 21 14:23:19 2018
+    Info: Processing started: Sat Apr 21 15:55:28 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Part4 -c Part4
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -312,14 +301,14 @@ Warning (13024): Output pins are stuck at VCC or GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 88 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 89 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 9 input pins
     Info (21059): Implemented 38 output pins
-    Info (21061): Implemented 41 logic cells
+    Info (21061): Implemented 42 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 623 megabytes
-    Info: Processing ended: Sat Apr 21 14:23:34 2018
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:36
+    Info: Peak virtual memory: 624 megabytes
+    Info: Processing ended: Sat Apr 21 15:55:42 2018
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:33
 
 
