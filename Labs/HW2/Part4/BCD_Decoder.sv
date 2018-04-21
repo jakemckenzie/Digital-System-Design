@@ -12,12 +12,12 @@ module BCD_Decoder(input [3:0]foo, output logic [0:6]lambda);
             4'h7: lambda = 7'h0F;   //7
             4'h8: lambda = 7'h00;   //8
             4'h9: lambda = 7'h04;   //9
-            4'hA: lambda = 7'h7F;   //BLANK
-            4'hB: lambda = 7'h7F;   //BLANK
-            4'hC: lambda = 7'h7F;   //BLANK
-            4'hD: lambda = 7'h7F;   //BLANK
-            4'hE: lambda = 7'h7F;   //BLANK
-            4'hF: lambda = 7'h7F;   //BLANK
+            4'hA: lambda = 7'h08;   //A
+            4'hB: lambda = 7'h60;   //B
+            4'hC: lambda = 7'h31;   //C
+            4'hD: lambda = 7'h42;   //D
+            4'hE: lambda = 7'h30;   //E
+            4'hF: lambda = 7'h38;   //E
             default: lambda = 7'h7F;//default signal is no display
         endcase    
     end
