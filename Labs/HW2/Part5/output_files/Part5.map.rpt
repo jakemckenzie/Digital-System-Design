@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Part5
-Sat Apr 21 14:41:31 2018
+Sat Apr 21 16:42:16 2018
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -10,7 +10,14 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Port Connectivity Checks: "BCD2_Decoder_Decimal:Decoder2_for_display|BCD2_Decoder:BCD_For_HEX_Display2"
+ 10. Post-Synthesis Netlist Statistics for Top Partition
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -37,20 +44,20 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Sat Apr 21 14:41:31 2018           ;
+; Analysis & Synthesis Status        ; Successful - Sat Apr 21 16:42:16 2018       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; Part5                                       ;
 ; Top-level Entity Name              ; Part5                                       ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 110                                         ;
+;     Total combinational functions  ; 110                                         ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 84                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -156,13 +163,137 @@ agreement for further details.
 +----------------------------+-------------+
 
 
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                          ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                      ; Library ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------+---------+
+; Part5.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/Part5.sv                ;         ;
+; BCD2_Decoder.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/BCD2_Decoder.sv         ;         ;
+; BCD2_FourBitAdder.sv             ; yes             ; User SystemVerilog HDL File  ; C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/BCD2_FourBitAdder.sv    ;         ;
+; BCD2_Adder.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/BCD2_Adder.sv           ;         ;
+; BCD2_Decoder_Decimal.sv          ; yes             ; User SystemVerilog HDL File  ; C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/BCD2_Decoder_Decimal.sv ;         ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimated Total logic elements              ; 110         ;
+;                                             ;             ;
+; Total combinational functions               ; 110         ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 81          ;
+;     -- 3 input functions                    ; 25          ;
+;     -- <=2 input functions                  ; 4           ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 110         ;
+;     -- arithmetic mode                      ; 0           ;
+;                                             ;             ;
+; Total registers                             ; 0           ;
+;     -- Dedicated logic registers            ; 0           ;
+;     -- I/O registers                        ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 84          ;
+;                                             ;             ;
+; Embedded Multiplier 9-bit elements          ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; SW[5]~input ;
+; Maximum fan-out                             ; 13          ;
+; Total fan-out                               ; 558         ;
+; Average fan-out                             ; 2.01        ;
++---------------------------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                  ;
++------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------+----------------------+--------------+
+; Compilation Hierarchy Node                     ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                ; Entity Name          ; Library Name ;
++------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------+----------------------+--------------+
+; |Part5                                         ; 110 (5)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 84   ; 0            ; |Part5                                                                             ; Part5                ; work         ;
+;    |BCD2_Decoder:Decoder2_for_display4|        ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part5|BCD2_Decoder:Decoder2_for_display4                                          ; BCD2_Decoder         ; work         ;
+;    |BCD2_Decoder:Decoder2_for_display5|        ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part5|BCD2_Decoder:Decoder2_for_display5                                          ; BCD2_Decoder         ; work         ;
+;    |BCD2_Decoder:Decoder2_for_display6|        ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part5|BCD2_Decoder:Decoder2_for_display6                                          ; BCD2_Decoder         ; work         ;
+;    |BCD2_Decoder:Decoder2_for_display7|        ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part5|BCD2_Decoder:Decoder2_for_display7                                          ; BCD2_Decoder         ; work         ;
+;    |BCD2_Decoder_Decimal:Decoder2_for_display| ; 60 (39)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part5|BCD2_Decoder_Decimal:Decoder2_for_display                                   ; BCD2_Decoder_Decimal ; work         ;
+;       |BCD2_Decoder:BCD_For_HEX_Display0|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part5|BCD2_Decoder_Decimal:Decoder2_for_display|BCD2_Decoder:BCD_For_HEX_Display0 ; BCD2_Decoder         ; work         ;
+;       |BCD2_Decoder:BCD_For_HEX_Display1|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part5|BCD2_Decoder_Decimal:Decoder2_for_display|BCD2_Decoder:BCD_For_HEX_Display1 ; BCD2_Decoder         ; work         ;
+;       |BCD2_Decoder:BCD_For_HEX_Display2|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part5|BCD2_Decoder_Decimal:Decoder2_for_display|BCD2_Decoder:BCD_For_HEX_Display2 ; BCD2_Decoder         ; work         ;
+;    |BCD2_FourBitAdder:BCD2_FBA1|               ; 9 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part5|BCD2_FourBitAdder:BCD2_FBA1                                                 ; BCD2_FourBitAdder    ; work         ;
+;       |BCD2_Adder:FA1|                         ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part5|BCD2_FourBitAdder:BCD2_FBA1|BCD2_Adder:FA1                                  ; BCD2_Adder           ; work         ;
+;       |BCD2_Adder:FA2|                         ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part5|BCD2_FourBitAdder:BCD2_FBA1|BCD2_Adder:FA2                                  ; BCD2_Adder           ; work         ;
+;       |BCD2_Adder:FA3|                         ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part5|BCD2_FourBitAdder:BCD2_FBA1|BCD2_Adder:FA3                                  ; BCD2_Adder           ; work         ;
+;       |BCD2_Adder:FA4|                         ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part5|BCD2_FourBitAdder:BCD2_FBA1|BCD2_Adder:FA4                                  ; BCD2_Adder           ; work         ;
+;    |BCD2_FourBitAdder:BCD2_FBA2|               ; 8 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part5|BCD2_FourBitAdder:BCD2_FBA2                                                 ; BCD2_FourBitAdder    ; work         ;
+;       |BCD2_Adder:FA1|                         ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part5|BCD2_FourBitAdder:BCD2_FBA2|BCD2_Adder:FA1                                  ; BCD2_Adder           ; work         ;
+;       |BCD2_Adder:FA2|                         ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part5|BCD2_FourBitAdder:BCD2_FBA2|BCD2_Adder:FA2                                  ; BCD2_Adder           ; work         ;
+;       |BCD2_Adder:FA3|                         ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part5|BCD2_FourBitAdder:BCD2_FBA2|BCD2_Adder:FA3                                  ; BCD2_Adder           ; work         ;
+;       |BCD2_Adder:FA4|                         ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part5|BCD2_FourBitAdder:BCD2_FBA2|BCD2_Adder:FA4                                  ; BCD2_Adder           ; work         ;
++------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------+----------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "BCD2_Decoder_Decimal:Decoder2_for_display|BCD2_Decoder:BCD_For_HEX_Display2" ;
++--------+-------+----------+-----------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                     ;
++--------+-------+----------+-----------------------------------------------------------------------------+
+; foo[3] ; Input ; Info     ; Stuck at GND                                                                ;
++--------+-------+----------+-----------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 84                          ;
+; cycloneiii_lcell_comb ; 119                         ;
+;     normal            ; 119                         ;
+;         1 data inputs ; 9                           ;
+;         2 data inputs ; 4                           ;
+;         3 data inputs ; 25                          ;
+;         4 data inputs ; 81                          ;
+;                       ;                             ;
+; Max LUT depth         ; 15.00                       ;
+; Average LUT depth     ; 10.45                       ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Sat Apr 21 14:41:18 2018
+    Info: Processing started: Sat Apr 21 16:42:02 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Part5 -c Part5
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -170,8 +301,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file part5.s
     Info (12023): Found entity 1: Part5 File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/Part5.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file bcd2_decoder.sv
     Info (12023): Found entity 1: BCD2_Decoder File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/BCD2_Decoder.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file bcd2_for_hex_display.sv
-    Info (12023): Found entity 1: BCD2_For_HEX_Display File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/BCD2_For_HEX_Display.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file bcd2_fourbitadder.sv
     Info (12023): Found entity 1: BCD2_FourBitAdder File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/BCD2_FourBitAdder.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file bcd2_adder.sv
@@ -179,16 +308,21 @@ Info (12021): Found 1 design units, including 1 entities, in source file bcd2_ad
 Info (12021): Found 1 design units, including 1 entities, in source file bcd2_decoder_decimal.sv
     Info (12023): Found entity 1: BCD2_Decoder_Decimal File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/BCD2_Decoder_Decimal.sv Line: 1
 Info (12127): Elaborating entity "Part5" for the top level hierarchy
-Warning (10034): Output port "HEX7" at Part5.sv(1) has no driver File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/Part5.sv Line: 1
-Warning (10034): Output port "HEX5" at Part5.sv(1) has no driver File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/Part5.sv Line: 1
-Error (12006): Node instance "BCD_FBA" instantiates undefined entity "BCD_FourBitAdder". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/Part5.sv Line: 6
-Error (12006): Node instance "Decoder_for_display" instantiates undefined entity "BCD_Decoder_Decimal". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/Part5.sv Line: 9
-Error (12006): Node instance "Decoder_for_display4" instantiates undefined entity "BCD_Decoder". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/Part5.sv Line: 10
-Error (12006): Node instance "Decoder_for_display6" instantiates undefined entity "BCD_Decoder". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/Part5.sv Line: 11
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 4 errors, 3 warnings
-    Error: Peak virtual memory: 571 megabytes
-    Error: Processing ended: Sat Apr 21 14:41:31 2018
-    Error: Elapsed time: 00:00:13
-    Error: Total CPU time (on all processors): 00:00:33
+Info (12128): Elaborating entity "BCD2_FourBitAdder" for hierarchy "BCD2_FourBitAdder:BCD2_FBA1" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/Part5.sv Line: 7
+Info (12128): Elaborating entity "BCD2_Adder" for hierarchy "BCD2_FourBitAdder:BCD2_FBA1|BCD2_Adder:FA1" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/BCD2_FourBitAdder.sv Line: 6
+Info (12128): Elaborating entity "BCD2_Decoder_Decimal" for hierarchy "BCD2_Decoder_Decimal:Decoder2_for_display" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/Part5.sv Line: 11
+Info (12128): Elaborating entity "BCD2_Decoder" for hierarchy "BCD2_Decoder_Decimal:Decoder2_for_display|BCD2_Decoder:BCD_For_HEX_Display2" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/BCD2_Decoder_Decimal.sv Line: 3
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 194 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 17 input pins
+    Info (21059): Implemented 67 output pins
+    Info (21061): Implemented 110 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 624 megabytes
+    Info: Processing ended: Sat Apr 21 16:42:16 2018
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:31
 
 
