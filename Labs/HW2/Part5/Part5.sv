@@ -13,8 +13,8 @@ module Part5(input logic [16:0]SW,output logic [0:6]HEX7,HEX6,HEX5,HEX4,HEX2,HEX
     //BCD_Decoder Decoder_for_display4(vec_to_decimal[7:4],HEX1);
     //BCD_Decoder Decoder_for_display4(vec_to_decimal[11:8],HEX2);
     BCD2_Decoder Decoder2_for_display4(SW[3:0],HEX4);
-    BCD2_Decoder Decoder2_for_display5(SW[7:4],HEX5);
-    BCD2_Decoder Decoder2_for_display6(SW[11:8],HEX6);
+    BCD2_Decoder Decoder2_for_display5(SW[11:8],HEX5);
+    BCD2_Decoder Decoder2_for_display6(SW[7:4],HEX6);
 	BCD2_Decoder Decoder2_for_display7(SW[15:12],HEX7);
 	always_comb
 	begin

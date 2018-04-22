@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Part5
-Sat Apr 21 16:42:16 2018
+Sat Apr 21 18:40:21 2018
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -44,7 +44,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Apr 21 16:42:16 2018       ;
+; Analysis & Synthesis Status        ; Successful - Sat Apr 21 18:40:21 2018       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; Part5                                       ;
 ; Top-level Entity Name              ; Part5                                       ;
@@ -176,36 +176,36 @@ agreement for further details.
 +----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary               ;
-+---------------------------------------------+-------------+
-; Resource                                    ; Usage       ;
-+---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 110         ;
-;                                             ;             ;
-; Total combinational functions               ; 110         ;
-; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 81          ;
-;     -- 3 input functions                    ; 25          ;
-;     -- <=2 input functions                  ; 4           ;
-;                                             ;             ;
-; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 110         ;
-;     -- arithmetic mode                      ; 0           ;
-;                                             ;             ;
-; Total registers                             ; 0           ;
-;     -- Dedicated logic registers            ; 0           ;
-;     -- I/O registers                        ; 0           ;
-;                                             ;             ;
-; I/O pins                                    ; 84          ;
-;                                             ;             ;
-; Embedded Multiplier 9-bit elements          ; 0           ;
-;                                             ;             ;
-; Maximum fan-out node                        ; SW[5]~input ;
-; Maximum fan-out                             ; 13          ;
-; Total fan-out                               ; 558         ;
-; Average fan-out                             ; 2.01        ;
-+---------------------------------------------+-------------+
++------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                ;
++---------------------------------------------+--------------+
+; Resource                                    ; Usage        ;
++---------------------------------------------+--------------+
+; Estimated Total logic elements              ; 110          ;
+;                                             ;              ;
+; Total combinational functions               ; 110          ;
+; Logic element usage by number of LUT inputs ;              ;
+;     -- 4 input functions                    ; 79           ;
+;     -- 3 input functions                    ; 26           ;
+;     -- <=2 input functions                  ; 5            ;
+;                                             ;              ;
+; Logic elements by mode                      ;              ;
+;     -- normal mode                          ; 110          ;
+;     -- arithmetic mode                      ; 0            ;
+;                                             ;              ;
+; Total registers                             ; 0            ;
+;     -- Dedicated logic registers            ; 0            ;
+;     -- I/O registers                        ; 0            ;
+;                                             ;              ;
+; I/O pins                                    ; 84           ;
+;                                             ;              ;
+; Embedded Multiplier 9-bit elements          ; 0            ;
+;                                             ;              ;
+; Maximum fan-out node                        ; SW[15]~input ;
+; Maximum fan-out                             ; 12           ;
+; Total fan-out                               ; 555          ;
+; Average fan-out                             ; 2.00         ;
++---------------------------------------------+--------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -266,15 +266,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 84                          ;
-; cycloneiii_lcell_comb ; 119                         ;
-;     normal            ; 119                         ;
-;         1 data inputs ; 9                           ;
-;         2 data inputs ; 4                           ;
-;         3 data inputs ; 25                          ;
-;         4 data inputs ; 81                          ;
+; cycloneiii_lcell_comb ; 117                         ;
+;     normal            ; 117                         ;
+;         1 data inputs ; 7                           ;
+;         2 data inputs ; 5                           ;
+;         3 data inputs ; 26                          ;
+;         4 data inputs ; 79                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 15.00                       ;
-; Average LUT depth     ; 10.45                       ;
+; Max LUT depth         ; 16.00                       ;
+; Average LUT depth     ; 10.96                       ;
 +-----------------------+-----------------------------+
 
 
@@ -293,7 +293,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Sat Apr 21 16:42:02 2018
+    Info: Processing started: Sat Apr 21 18:40:06 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Part5 -c Part5
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -320,9 +320,9 @@ Info (21057): Implemented 194 device resources after synthesis - the final resou
     Info (21059): Implemented 67 output pins
     Info (21061): Implemented 110 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 624 megabytes
-    Info: Processing ended: Sat Apr 21 16:42:16 2018
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:31
+    Info: Peak virtual memory: 623 megabytes
+    Info: Processing ended: Sat Apr 21 18:40:21 2018
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:33
 
 
