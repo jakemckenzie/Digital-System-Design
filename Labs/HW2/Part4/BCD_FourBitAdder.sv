@@ -35,7 +35,7 @@ module BCD_FourBitAdder_testbench();
                 begin
                     $monitor("%h%h%h       %h%h",vec_in_b,vec_in_a,ci,c_out,vec_out_s);
                     ci = k;#10;
-                    assert(ci + vec_in_b + vec_in_a == 2*vec_out_s + 2*c_out);
+                    assert(ci + vec_in_b + vec_in_a == i + j + k);
                 end
             end
         end
