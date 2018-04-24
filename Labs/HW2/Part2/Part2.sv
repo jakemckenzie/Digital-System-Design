@@ -108,6 +108,7 @@ module Part2_testbench();
         begin
             $monitor("%h        %h      %h      %h",SW,HEX1,HEX0,LEDG);
             SW = i;#10;
+            //assert(SW == 10 * HEX0 + HEX1);
             assert(SW == LEDG);
         end
         $stop;

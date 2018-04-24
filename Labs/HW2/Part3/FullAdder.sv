@@ -27,7 +27,8 @@ module FullAdder_testbench();
                 for(k = 0; k < 2; k++)
                 begin
                     $monitor("%b%b%b       %b%b%b",b,a,ci,c0,s);
-                    c0 = k;#10;
+                    ci = k;#10;
+                    assert(ci + b + a == s + c0 * 2);
                 end
             end
         end
