@@ -1,5 +1,5 @@
 Fitter report for Part4
-Sat Apr 21 15:55:57 2018
+Mon Apr 23 23:15:02 2018
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -64,7 +64,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Sat Apr 21 15:55:57 2018       ;
+; Fitter Status                      ; Successful - Mon Apr 23 23:15:02 2018       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; Part4                                       ;
 ; Top-level Entity Name              ; Part4                                       ;
@@ -3187,7 +3187,7 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
 Info (11888): Total time spent on timing analysis during the Fitter is 0.05 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
@@ -3197,10 +3197,10 @@ Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part4/output_files/Part4.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 485 warnings
-    Info: Peak virtual memory: 1504 megabytes
-    Info: Processing ended: Sat Apr 21 15:55:58 2018
+    Info: Peak virtual memory: 1498 megabytes
+    Info: Processing ended: Mon Apr 23 23:15:03 2018
     Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:21
+    Info: Total CPU time (on all processors): 00:00:20
 
 
 +----------------------------+
