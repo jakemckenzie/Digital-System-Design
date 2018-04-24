@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for Part5
-Sat Apr 21 18:40:48 2018
+Mon Apr 23 21:41:59 2018
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -96,7 +96,7 @@ agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.3%      ;
+;     Processors 2-4         ;   0.5%      ;
 +----------------------------+-------------+
 
 
@@ -328,14 +328,14 @@ No synchronizer chains to report.
 ; SW[13]                  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; SW[14]                  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; SW[15]                  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; SW[4]                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; SW[5]                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; SW[6]                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; SW[7]                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; SW[8]                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; SW[9]                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; SW[10]                  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; SW[11]                  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; SW[4]                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; SW[5]                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; SW[6]                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; SW[7]                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; SW[0]                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; SW[1]                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; SW[2]                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
@@ -816,7 +816,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Sat Apr 21 18:40:45 2018
+    Info: Processing started: Mon Apr 23 21:41:56 2018
 Info: Command: quartus_sta Part5 -c Part5
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -864,8 +864,8 @@ Info (332140): No Minimum Pulse Width paths to report
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 705 megabytes
-    Info: Processing ended: Sat Apr 21 18:40:48 2018
+    Info: Peak virtual memory: 701 megabytes
+    Info: Processing ended: Mon Apr 23 21:41:59 2018
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 

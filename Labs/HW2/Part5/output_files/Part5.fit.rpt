@@ -1,5 +1,5 @@
 Fitter report for Part5
-Sat Apr 21 18:40:37 2018
+Mon Apr 23 21:41:48 2018
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -64,7 +64,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Sat Apr 21 18:40:36 2018       ;
+; Fitter Status                      ; Successful - Mon Apr 23 21:41:48 2018       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; Part5                                       ;
 ; Top-level Entity Name              ; Part5                                       ;
@@ -156,7 +156,7 @@ agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.1%      ;
+;     Processors 2-4         ;   0.2%      ;
 +----------------------------+-------------+
 
 
@@ -1134,7 +1134,7 @@ The pin-out file can be found in C:/Users/Epimetheus/Documents/GitHub/Digital-Sy
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )           ;
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )           ;
 ; Average interconnect usage (total/H/V)      ; 0.2% / 0.1% / 0.2%      ;
-; Peak interconnect usage (total/H/V)         ; 1.6% / 1.7% / 1.5%      ;
+; Peak interconnect usage (total/H/V)         ; 1.6% / 1.5% / 1.8%      ;
 ; Maximum fan-out                             ; 12                      ;
 ; Highest non-global fan-out                  ; 12                      ;
 ; Total fan-out                               ; 560                     ;
@@ -1220,7 +1220,7 @@ The pin-out file can be found in C:/Users/Epimetheus/Documents/GitHub/Digital-Sy
 +--------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 ; SW[0]  ; AB28  ; 5        ; 115          ; 17           ; 0            ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; SW[10] ; AC24  ; 5        ; 115          ; 4            ; 14           ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; SW[11] ; AB24  ; 5        ; 115          ; 5            ; 14           ; 12                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; SW[11] ; AB24  ; 5        ; 115          ; 5            ; 14           ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; SW[12] ; AB23  ; 5        ; 115          ; 7            ; 14           ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; SW[13] ; AA24  ; 5        ; 115          ; 9            ; 21           ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; SW[14] ; AA23  ; 5        ; 115          ; 10           ; 7            ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
@@ -1230,11 +1230,11 @@ The pin-out file can be found in C:/Users/Epimetheus/Documents/GitHub/Digital-Sy
 ; SW[2]  ; AC27  ; 5        ; 115          ; 15           ; 7            ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; SW[3]  ; AD27  ; 5        ; 115          ; 13           ; 7            ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; SW[4]  ; AB27  ; 5        ; 115          ; 18           ; 7            ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; SW[5]  ; AC26  ; 5        ; 115          ; 11           ; 7            ; 12                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; SW[5]  ; AC26  ; 5        ; 115          ; 11           ; 7            ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; SW[6]  ; AD26  ; 5        ; 115          ; 10           ; 0            ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; SW[7]  ; AB26  ; 5        ; 115          ; 15           ; 0            ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; SW[7]  ; AB26  ; 5        ; 115          ; 15           ; 0            ; 12                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; SW[8]  ; AC25  ; 5        ; 115          ; 4            ; 21           ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; SW[9]  ; AB25  ; 5        ; 115          ; 16           ; 7            ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; SW[9]  ; AB25  ; 5        ; 115          ; 16           ; 7            ; 12                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 +--------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 
 
@@ -2318,14 +2318,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; SW[13]   ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; SW[14]   ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; SW[15]   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; SW[4]    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; SW[5]    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; SW[6]    ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
-; SW[7]    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; SW[8]    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; SW[9]    ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; SW[10]   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; SW[11]   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; SW[4]    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; SW[5]    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; SW[6]    ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; SW[7]    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; SW[0]    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; SW[1]    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; SW[2]    ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
@@ -2388,7 +2388,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - BCD2_Decoder_Decimal:Decoder2_for_display|LessThan3~0 ; 0                 ; 6       ;
 ;      - LEDG~0                                                ; 0                 ; 6       ;
 ;      - LEDR[15]~output                                       ; 0                 ; 6       ;
-; SW[4]                                                        ;                   ;         ;
+; SW[8]                                                        ;                   ;         ;
 ;      - BCD2_Decoder:Decoder2_for_display6|WideOr6~0          ; 0                 ; 6       ;
 ;      - BCD2_Decoder:Decoder2_for_display6|WideOr5~0          ; 0                 ; 6       ;
 ;      - BCD2_Decoder:Decoder2_for_display6|WideOr4~0          ; 0                 ; 6       ;
@@ -2398,22 +2398,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - BCD2_Decoder:Decoder2_for_display6|WideOr0~0          ; 0                 ; 6       ;
 ;      - BCD2_FourBitAdder:BCD2_FBA1|BCD2_Adder:FA1|c0~0       ; 0                 ; 6       ;
 ;      - BCD2_FourBitAdder:BCD2_FBA1|BCD2_Adder:FA1|s          ; 0                 ; 6       ;
-;      - LEDG~3                                                ; 0                 ; 6       ;
-;      - LEDR[4]~output                                        ; 0                 ; 6       ;
-; SW[5]                                                        ;                   ;         ;
-;      - BCD2_Decoder:Decoder2_for_display6|WideOr6~0          ; 0                 ; 6       ;
-;      - BCD2_Decoder:Decoder2_for_display6|WideOr5~0          ; 0                 ; 6       ;
-;      - BCD2_Decoder:Decoder2_for_display6|WideOr4~0          ; 0                 ; 6       ;
-;      - BCD2_Decoder:Decoder2_for_display6|WideOr3~0          ; 0                 ; 6       ;
-;      - BCD2_Decoder:Decoder2_for_display6|WideOr2~0          ; 0                 ; 6       ;
-;      - BCD2_Decoder:Decoder2_for_display6|WideOr1~0          ; 0                 ; 6       ;
-;      - BCD2_Decoder:Decoder2_for_display6|WideOr0~0          ; 0                 ; 6       ;
-;      - BCD2_FourBitAdder:BCD2_FBA1|BCD2_Adder:FA3|c0~0       ; 0                 ; 6       ;
-;      - BCD2_FourBitAdder:BCD2_FBA1|BCD2_Adder:FA3|s          ; 0                 ; 6       ;
-;      - BCD2_FourBitAdder:BCD2_FBA1|BCD2_Adder:FA2|s~0        ; 0                 ; 6       ;
-;      - LEDG~3                                                ; 0                 ; 6       ;
-;      - LEDR[5]~output                                        ; 0                 ; 6       ;
-; SW[6]                                                        ;                   ;         ;
+;      - LEDG~1                                                ; 0                 ; 6       ;
+;      - LEDR[8]~output                                        ; 0                 ; 6       ;
+; SW[9]                                                        ;                   ;         ;
 ;      - BCD2_Decoder:Decoder2_for_display6|WideOr6~0          ; 1                 ; 6       ;
 ;      - BCD2_Decoder:Decoder2_for_display6|WideOr5~0          ; 1                 ; 6       ;
 ;      - BCD2_Decoder:Decoder2_for_display6|WideOr4~0          ; 1                 ; 6       ;
@@ -2421,11 +2408,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - BCD2_Decoder:Decoder2_for_display6|WideOr2~0          ; 1                 ; 6       ;
 ;      - BCD2_Decoder:Decoder2_for_display6|WideOr1~0          ; 1                 ; 6       ;
 ;      - BCD2_Decoder:Decoder2_for_display6|WideOr0~0          ; 1                 ; 6       ;
-;      - BCD2_FourBitAdder:BCD2_FBA1|BCD2_Adder:FA3|s~0        ; 1                 ; 6       ;
-;      - BCD2_FourBitAdder:BCD2_FBA1|BCD2_Adder:FA3|c0~1       ; 1                 ; 6       ;
-;      - LEDG~3                                                ; 1                 ; 6       ;
-;      - LEDR[6]~output                                        ; 1                 ; 6       ;
-; SW[7]                                                        ;                   ;         ;
+;      - BCD2_FourBitAdder:BCD2_FBA1|BCD2_Adder:FA3|c0~0       ; 1                 ; 6       ;
+;      - BCD2_FourBitAdder:BCD2_FBA1|BCD2_Adder:FA3|s          ; 1                 ; 6       ;
+;      - BCD2_FourBitAdder:BCD2_FBA1|BCD2_Adder:FA2|s~0        ; 1                 ; 6       ;
+;      - LEDG~1                                                ; 1                 ; 6       ;
+;      - LEDR[9]~output                                        ; 1                 ; 6       ;
+; SW[10]                                                       ;                   ;         ;
+;      - BCD2_Decoder:Decoder2_for_display6|WideOr6~0          ; 0                 ; 6       ;
+;      - BCD2_Decoder:Decoder2_for_display6|WideOr5~0          ; 0                 ; 6       ;
+;      - BCD2_Decoder:Decoder2_for_display6|WideOr4~0          ; 0                 ; 6       ;
+;      - BCD2_Decoder:Decoder2_for_display6|WideOr3~0          ; 0                 ; 6       ;
+;      - BCD2_Decoder:Decoder2_for_display6|WideOr2~0          ; 0                 ; 6       ;
+;      - BCD2_Decoder:Decoder2_for_display6|WideOr1~0          ; 0                 ; 6       ;
+;      - BCD2_Decoder:Decoder2_for_display6|WideOr0~0          ; 0                 ; 6       ;
+;      - BCD2_FourBitAdder:BCD2_FBA1|BCD2_Adder:FA3|s~0        ; 0                 ; 6       ;
+;      - BCD2_FourBitAdder:BCD2_FBA1|BCD2_Adder:FA3|c0~1       ; 0                 ; 6       ;
+;      - LEDG~1                                                ; 0                 ; 6       ;
+;      - LEDR[10]~output                                       ; 0                 ; 6       ;
+; SW[11]                                                       ;                   ;         ;
 ;      - BCD2_Decoder:Decoder2_for_display6|WideOr6~0          ; 0                 ; 6       ;
 ;      - BCD2_Decoder:Decoder2_for_display6|WideOr5~0          ; 0                 ; 6       ;
 ;      - BCD2_Decoder:Decoder2_for_display6|WideOr4~0          ; 0                 ; 6       ;
@@ -2435,9 +2435,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - BCD2_Decoder:Decoder2_for_display6|WideOr0~0          ; 0                 ; 6       ;
 ;      - BCD2_FourBitAdder:BCD2_FBA1|BCD2_Adder:FA4|c0~0       ; 0                 ; 6       ;
 ;      - BCD2_FourBitAdder:BCD2_FBA1|BCD2_Adder:FA4|s          ; 0                 ; 6       ;
-;      - LEDG~3                                                ; 0                 ; 6       ;
-;      - LEDR[7]~output                                        ; 0                 ; 6       ;
-; SW[8]                                                        ;                   ;         ;
+;      - LEDG~1                                                ; 0                 ; 6       ;
+;      - LEDR[11]~output                                       ; 0                 ; 6       ;
+; SW[4]                                                        ;                   ;         ;
 ;      - BCD2_Decoder:Decoder2_for_display5|WideOr6~0          ; 0                 ; 6       ;
 ;      - BCD2_Decoder:Decoder2_for_display5|WideOr5~0          ; 0                 ; 6       ;
 ;      - BCD2_Decoder:Decoder2_for_display5|WideOr4~0          ; 0                 ; 6       ;
@@ -2447,21 +2447,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - BCD2_Decoder:Decoder2_for_display5|WideOr0~0          ; 0                 ; 6       ;
 ;      - BCD2_FourBitAdder:BCD2_FBA2|BCD2_Adder:FA1|c0~0       ; 0                 ; 6       ;
 ;      - BCD2_FourBitAdder:BCD2_FBA2|BCD2_Adder:FA1|s          ; 0                 ; 6       ;
-;      - LEDG~1                                                ; 0                 ; 6       ;
-;      - LEDR[8]~output                                        ; 0                 ; 6       ;
-; SW[9]                                                        ;                   ;         ;
-;      - BCD2_Decoder:Decoder2_for_display5|WideOr6~0          ; 1                 ; 6       ;
-;      - BCD2_Decoder:Decoder2_for_display5|WideOr5~0          ; 1                 ; 6       ;
-;      - BCD2_Decoder:Decoder2_for_display5|WideOr4~0          ; 1                 ; 6       ;
-;      - BCD2_Decoder:Decoder2_for_display5|WideOr3~0          ; 1                 ; 6       ;
-;      - BCD2_Decoder:Decoder2_for_display5|WideOr2~0          ; 1                 ; 6       ;
-;      - BCD2_Decoder:Decoder2_for_display5|WideOr1~0          ; 1                 ; 6       ;
-;      - BCD2_Decoder:Decoder2_for_display5|WideOr0~0          ; 1                 ; 6       ;
-;      - BCD2_FourBitAdder:BCD2_FBA2|BCD2_Adder:FA2|s          ; 1                 ; 6       ;
-;      - BCD2_FourBitAdder:BCD2_FBA2|BCD2_Adder:FA2|c0~0       ; 1                 ; 6       ;
-;      - LEDG~1                                                ; 1                 ; 6       ;
-;      - LEDR[9]~output                                        ; 1                 ; 6       ;
-; SW[10]                                                       ;                   ;         ;
+;      - LEDG~3                                                ; 0                 ; 6       ;
+;      - LEDR[4]~output                                        ; 0                 ; 6       ;
+; SW[5]                                                        ;                   ;         ;
 ;      - BCD2_Decoder:Decoder2_for_display5|WideOr6~0          ; 0                 ; 6       ;
 ;      - BCD2_Decoder:Decoder2_for_display5|WideOr5~0          ; 0                 ; 6       ;
 ;      - BCD2_Decoder:Decoder2_for_display5|WideOr4~0          ; 0                 ; 6       ;
@@ -2469,11 +2457,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - BCD2_Decoder:Decoder2_for_display5|WideOr2~0          ; 0                 ; 6       ;
 ;      - BCD2_Decoder:Decoder2_for_display5|WideOr1~0          ; 0                 ; 6       ;
 ;      - BCD2_Decoder:Decoder2_for_display5|WideOr0~0          ; 0                 ; 6       ;
-;      - BCD2_FourBitAdder:BCD2_FBA2|BCD2_Adder:FA3|c0~0       ; 0                 ; 6       ;
-;      - BCD2_FourBitAdder:BCD2_FBA2|BCD2_Adder:FA3|s          ; 0                 ; 6       ;
-;      - LEDG~1                                                ; 0                 ; 6       ;
-;      - LEDR[10]~output                                       ; 0                 ; 6       ;
-; SW[11]                                                       ;                   ;         ;
+;      - BCD2_FourBitAdder:BCD2_FBA2|BCD2_Adder:FA2|s          ; 0                 ; 6       ;
+;      - BCD2_FourBitAdder:BCD2_FBA2|BCD2_Adder:FA2|c0~0       ; 0                 ; 6       ;
+;      - LEDG~3                                                ; 0                 ; 6       ;
+;      - LEDR[5]~output                                        ; 0                 ; 6       ;
+; SW[6]                                                        ;                   ;         ;
+;      - BCD2_Decoder:Decoder2_for_display5|WideOr6~0          ; 1                 ; 6       ;
+;      - BCD2_Decoder:Decoder2_for_display5|WideOr5~0          ; 1                 ; 6       ;
+;      - BCD2_Decoder:Decoder2_for_display5|WideOr4~0          ; 1                 ; 6       ;
+;      - BCD2_Decoder:Decoder2_for_display5|WideOr3~0          ; 1                 ; 6       ;
+;      - BCD2_Decoder:Decoder2_for_display5|WideOr2~0          ; 1                 ; 6       ;
+;      - BCD2_Decoder:Decoder2_for_display5|WideOr1~0          ; 1                 ; 6       ;
+;      - BCD2_Decoder:Decoder2_for_display5|WideOr0~0          ; 1                 ; 6       ;
+;      - BCD2_FourBitAdder:BCD2_FBA2|BCD2_Adder:FA3|c0~0       ; 1                 ; 6       ;
+;      - BCD2_FourBitAdder:BCD2_FBA2|BCD2_Adder:FA3|s          ; 1                 ; 6       ;
+;      - LEDG~3                                                ; 1                 ; 6       ;
+;      - LEDR[6]~output                                        ; 1                 ; 6       ;
+; SW[7]                                                        ;                   ;         ;
 ;      - BCD2_Decoder:Decoder2_for_display5|WideOr6~0          ; 0                 ; 6       ;
 ;      - BCD2_Decoder:Decoder2_for_display5|WideOr5~0          ; 0                 ; 6       ;
 ;      - BCD2_Decoder:Decoder2_for_display5|WideOr4~0          ; 0                 ; 6       ;
@@ -2484,8 +2484,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - BCD2_FourBitAdder:BCD2_FBA2|BCD2_Adder:FA4|s          ; 0                 ; 6       ;
 ;      - BCD2_FourBitAdder:BCD2_FBA2|BCD2_Adder:FA4|c0~0       ; 0                 ; 6       ;
 ;      - BCD2_Decoder_Decimal:Decoder2_for_display|LessThan3~0 ; 0                 ; 6       ;
-;      - LEDG~1                                                ; 0                 ; 6       ;
-;      - LEDR[11]~output                                       ; 0                 ; 6       ;
+;      - LEDG~3                                                ; 0                 ; 6       ;
+;      - LEDR[7]~output                                        ; 0                 ; 6       ;
 ; SW[0]                                                        ;                   ;         ;
 ;      - BCD2_Decoder:Decoder2_for_display4|WideOr6~0          ; 0                 ; 6       ;
 ;      - BCD2_Decoder:Decoder2_for_display4|WideOr5~0          ; 0                 ; 6       ;
@@ -2547,14 +2547,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-------------------------+
 ; Routing Resource Type ; Usage                   ;
 +-----------------------+-------------------------+
-; Block interconnects   ; 129 / 342,891 ( < 1 % ) ;
-; C16 interconnects     ; 91 / 10,120 ( < 1 % )   ;
-; C4 interconnects      ; 188 / 209,544 ( < 1 % ) ;
-; Direct links          ; 7 / 342,891 ( < 1 % )   ;
+; Block interconnects   ; 131 / 342,891 ( < 1 % ) ;
+; C16 interconnects     ; 96 / 10,120 ( < 1 % )   ;
+; C4 interconnects      ; 191 / 209,544 ( < 1 % ) ;
+; Direct links          ; 8 / 342,891 ( < 1 % )   ;
 ; Global clocks         ; 0 / 20 ( 0 % )          ;
-; Local interconnects   ; 30 / 119,088 ( < 1 % )  ;
-; R24 interconnects     ; 66 / 9,963 ( < 1 % )    ;
-; R4 interconnects      ; 125 / 289,782 ( < 1 % ) ;
+; Local interconnects   ; 28 / 119,088 ( < 1 % )  ;
+; R24 interconnects     ; 59 / 9,963 ( < 1 % )    ;
+; R4 interconnects      ; 127 / 289,782 ( < 1 % ) ;
 +-----------------------+-------------------------+
 
 
@@ -2570,12 +2570,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 5                                           ; 0                            ;
 ; 6                                           ; 0                            ;
 ; 7                                           ; 2                            ;
-; 8                                           ; 2                            ;
-; 9                                           ; 1                            ;
+; 8                                           ; 3                            ;
+; 9                                           ; 0                            ;
 ; 10                                          ; 0                            ;
 ; 11                                          ; 0                            ;
-; 12                                          ; 1                            ;
-; 13                                          ; 1                            ;
+; 12                                          ; 0                            ;
+; 13                                          ; 2                            ;
 ; 14                                          ; 0                            ;
 ; 15                                          ; 2                            ;
 ; 16                                          ; 1                            ;
@@ -2595,12 +2595,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 5                                            ; 0                            ;
 ; 6                                            ; 0                            ;
 ; 7                                            ; 2                            ;
-; 8                                            ; 2                            ;
-; 9                                            ; 1                            ;
+; 8                                            ; 3                            ;
+; 9                                            ; 0                            ;
 ; 10                                           ; 0                            ;
 ; 11                                           ; 0                            ;
-; 12                                           ; 1                            ;
-; 13                                           ; 1                            ;
+; 12                                           ; 0                            ;
+; 13                                           ; 2                            ;
 ; 14                                           ; 0                            ;
 ; 15                                           ; 2                            ;
 ; 16                                           ; 1                            ;
@@ -2638,12 +2638,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 1                                           ; 0                            ;
 ; 2                                           ; 0                            ;
 ; 3                                           ; 1                            ;
-; 4                                           ; 2                            ;
+; 4                                           ; 3                            ;
 ; 5                                           ; 1                            ;
 ; 6                                           ; 1                            ;
-; 7                                           ; 4                            ;
+; 7                                           ; 2                            ;
 ; 8                                           ; 0                            ;
 ; 9                                           ; 1                            ;
+; 10                                          ; 1                            ;
 +---------------------------------------------+------------------------------+
 
 
@@ -2779,14 +2780,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; SW[13]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[14]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[15]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; SW[4]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; SW[5]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; SW[6]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; SW[7]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[8]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[9]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[10]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[11]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; SW[4]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; SW[5]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; SW[6]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; SW[7]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[0]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[1]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[2]              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
@@ -3324,7 +3325,7 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.05 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.06 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -3333,8 +3334,8 @@ Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/output_files/Part5.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 448 warnings
-    Info: Peak virtual memory: 1510 megabytes
-    Info: Processing ended: Sat Apr 21 18:40:37 2018
+    Info: Peak virtual memory: 1507 megabytes
+    Info: Processing ended: Mon Apr 23 21:41:49 2018
     Info: Elapsed time: 00:00:15
     Info: Total CPU time (on all processors): 00:00:21
 
