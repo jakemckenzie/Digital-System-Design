@@ -11,8 +11,8 @@ module Part4(input logic [8:0]SW,output logic [0:6]HEX6,HEX4,HEX1,HEX0,output lo
 	BCD_Decoder Decoder_for_display6(SW[7:4],HEX6);
 	always_comb
 	begin
-		if(SW[7:4] > 4'h8) LEDG[8] = 1'b1;
-		else if(SW[3:0] > 4'h8) LEDG[8] = 1'b1;
+		if(SW[7:4] > 4'h9) LEDG[8] = 1'b1;
+		else if(SW[3:0] > 4'h9) LEDG[8] = 1'b1;
 		else LEDG[8] = 1'b0;
 	end
 endmodule

@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition"
 
-// DATE "04/23/2018 21:42:01"
+// DATE "04/24/2018 18:34:45"
 
 // 
 // Device: Altera EP4CE115F29C7 Package FBGA780
@@ -3221,60 +3221,60 @@ defparam \Decoder2_for_display|BCD_For_HEX_Display0|WideOr0~0 .sum_lutc_input = 
 // Location: LCCOMB_X82_Y3_N22
 cycloneive_lcell_comb \LEDG~3 (
 // Equation(s):
-// \LEDG~3_combout  = (\SW[7]~input_o  & ((\SW[5]~input_o ) # ((\SW[6]~input_o ) # (\SW[4]~input_o ))))
+// \LEDG~3_combout  = (\SW[7]~input_o  & ((\SW[6]~input_o ) # (\SW[5]~input_o )))
 
-	.dataa(\SW[5]~input_o ),
+	.dataa(gnd),
 	.datab(\SW[6]~input_o ),
 	.datac(\SW[7]~input_o ),
-	.datad(\SW[4]~input_o ),
+	.datad(\SW[5]~input_o ),
 	.cin(gnd),
 	.combout(\LEDG~3_combout ),
 	.cout());
 // synopsys translate_off
-defparam \LEDG~3 .lut_mask = 16'hF0E0;
+defparam \LEDG~3 .lut_mask = 16'hF0C0;
 defparam \LEDG~3 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X83_Y1_N30
 cycloneive_lcell_comb \LEDG~2 (
 // Equation(s):
-// \LEDG~2_combout  = (\SW[3]~input_o  & ((\SW[2]~input_o ) # ((\SW[1]~input_o ) # (\SW[0]~input_o ))))
+// \LEDG~2_combout  = (\SW[3]~input_o  & ((\SW[1]~input_o ) # (\SW[2]~input_o )))
 
 	.dataa(\SW[3]~input_o ),
-	.datab(\SW[2]~input_o ),
+	.datab(gnd),
 	.datac(\SW[1]~input_o ),
-	.datad(\SW[0]~input_o ),
+	.datad(\SW[2]~input_o ),
 	.cin(gnd),
 	.combout(\LEDG~2_combout ),
 	.cout());
 // synopsys translate_off
-defparam \LEDG~2 .lut_mask = 16'hAAA8;
+defparam \LEDG~2 .lut_mask = 16'hAAA0;
 defparam \LEDG~2 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X68_Y3_N22
 cycloneive_lcell_comb \LEDG~0 (
 // Equation(s):
-// \LEDG~0_combout  = (\SW[15]~input_o  & ((\SW[13]~input_o ) # ((\SW[12]~input_o ) # (\SW[14]~input_o ))))
+// \LEDG~0_combout  = (\SW[15]~input_o  & ((\SW[13]~input_o ) # (\SW[14]~input_o )))
 
 	.dataa(\SW[13]~input_o ),
-	.datab(\SW[15]~input_o ),
-	.datac(\SW[12]~input_o ),
+	.datab(gnd),
+	.datac(\SW[15]~input_o ),
 	.datad(\SW[14]~input_o ),
 	.cin(gnd),
 	.combout(\LEDG~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \LEDG~0 .lut_mask = 16'hCCC8;
+defparam \LEDG~0 .lut_mask = 16'hF0A0;
 defparam \LEDG~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X89_Y4_N30
 cycloneive_lcell_comb \LEDG~1 (
 // Equation(s):
-// \LEDG~1_combout  = (\SW[11]~input_o  & ((\SW[8]~input_o ) # ((\SW[10]~input_o ) # (\SW[9]~input_o ))))
+// \LEDG~1_combout  = (\SW[11]~input_o  & ((\SW[10]~input_o ) # (\SW[9]~input_o )))
 
-	.dataa(\SW[8]~input_o ),
+	.dataa(gnd),
 	.datab(\SW[10]~input_o ),
 	.datac(\SW[11]~input_o ),
 	.datad(\SW[9]~input_o ),
@@ -3282,7 +3282,7 @@ cycloneive_lcell_comb \LEDG~1 (
 	.combout(\LEDG~1_combout ),
 	.cout());
 // synopsys translate_off
-defparam \LEDG~1 .lut_mask = 16'hF0E0;
+defparam \LEDG~1 .lut_mask = 16'hF0C0;
 defparam \LEDG~1 .sum_lutc_input = "datac";
 // synopsys translate_on
 

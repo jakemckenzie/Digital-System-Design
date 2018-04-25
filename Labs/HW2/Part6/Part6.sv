@@ -19,10 +19,10 @@ module Part6(input logic [15:0]SW,output logic [0:6]HEX7,HEX6,HEX5,HEX4,HEX2,HEX
     
     always_comb
 	begin
-		if(SW[7:4] > 4'h8) LEDG[8] = 1'b1;
-		else if(SW[3:0] > 4'h8) LEDG[8] = 1'b1;
-		else if(SW[11:8] > 4'h8) LEDG[8] = 1'b1;
-		else if(SW[15:12] > 4'h8) LEDG[8] = 1'b1;
+		if(SW[7:4] > 4'h9) LEDG[8] = 1'b1;
+		else if(SW[3:0] > 4'h9) LEDG[8] = 1'b1;
+		else if(SW[11:8] > 4'h9) LEDG[8] = 1'b1;
+		else if(SW[15:12] > 4'h9) LEDG[8] = 1'b1;
 		else LEDG[8] = 1'b0;
 	end
 

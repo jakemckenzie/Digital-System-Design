@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Part5
-Mon Apr 23 21:41:33 2018
+Tue Apr 24 18:34:17 2018
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -44,7 +44,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Apr 23 21:41:33 2018       ;
+; Analysis & Synthesis Status        ; Successful - Tue Apr 24 18:34:17 2018       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; Part5                                       ;
 ; Top-level Entity Name              ; Part5                                       ;
@@ -185,8 +185,8 @@ agreement for further details.
 ;                                             ;              ;
 ; Total combinational functions               ; 110          ;
 ; Logic element usage by number of LUT inputs ;              ;
-;     -- 4 input functions                    ; 79           ;
-;     -- 3 input functions                    ; 26           ;
+;     -- 4 input functions                    ; 75           ;
+;     -- 3 input functions                    ; 30           ;
 ;     -- <=2 input functions                  ; 5            ;
 ;                                             ;              ;
 ; Logic elements by mode                      ;              ;
@@ -203,8 +203,8 @@ agreement for further details.
 ;                                             ;              ;
 ; Maximum fan-out node                        ; SW[15]~input ;
 ; Maximum fan-out                             ; 12           ;
-; Total fan-out                               ; 555          ;
-; Average fan-out                             ; 2.00         ;
+; Total fan-out                               ; 551          ;
+; Average fan-out                             ; 1.98         ;
 +---------------------------------------------+--------------+
 
 
@@ -270,8 +270,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;     normal            ; 117                         ;
 ;         1 data inputs ; 7                           ;
 ;         2 data inputs ; 5                           ;
-;         3 data inputs ; 26                          ;
-;         4 data inputs ; 79                          ;
+;         3 data inputs ; 30                          ;
+;         4 data inputs ; 75                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 16.00                       ;
 ; Average LUT depth     ; 10.96                       ;
@@ -293,7 +293,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Mon Apr 23 21:41:19 2018
+    Info: Processing started: Tue Apr 24 18:34:03 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Part5 -c Part5
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -301,12 +301,16 @@ Info (12021): Found 1 design units, including 1 entities, in source file part5.s
     Info (12023): Found entity 1: Part5 File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/Part5.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file bcd2_decoder.sv
     Info (12023): Found entity 1: BCD2_Decoder File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/BCD2_Decoder.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file bcd2_fourbitadder.sv
+Info (12021): Found 2 design units, including 2 entities, in source file bcd2_fourbitadder.sv
     Info (12023): Found entity 1: BCD2_FourBitAdder File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/BCD2_FourBitAdder.sv Line: 2
-Info (12021): Found 1 design units, including 1 entities, in source file bcd2_adder.sv
+    Info (12023): Found entity 2: BCD2_FourBitAdder_testbench File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/BCD2_FourBitAdder.sv Line: 13
+Info (12021): Found 2 design units, including 2 entities, in source file bcd2_adder.sv
     Info (12023): Found entity 1: BCD2_Adder File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/BCD2_Adder.sv Line: 1
+    Info (12023): Found entity 2: BCD2_Adder_testbench File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/BCD2_Adder.sv Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file bcd2_decoder_decimal.sv
     Info (12023): Found entity 1: BCD2_Decoder_Decimal File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/BCD2_Decoder_Decimal.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file bcd2_eightbitadder.sv
+    Info (12023): Found entity 1: BCD2_EightBitAdder File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/BCD2_EightBitAdder.sv Line: 2
 Info (12127): Elaborating entity "Part5" for the top level hierarchy
 Info (12128): Elaborating entity "BCD2_FourBitAdder" for hierarchy "BCD2_FourBitAdder:BCD2_FBA1" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/Part5.sv Line: 7
 Info (12128): Elaborating entity "BCD2_Adder" for hierarchy "BCD2_FourBitAdder:BCD2_FBA1|BCD2_Adder:FA1" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/BCD2_FourBitAdder.sv Line: 6
@@ -320,9 +324,9 @@ Info (21057): Implemented 194 device resources after synthesis - the final resou
     Info (21059): Implemented 67 output pins
     Info (21061): Implemented 110 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 623 megabytes
-    Info: Processing ended: Mon Apr 23 21:41:33 2018
-    Info: Elapsed time: 00:00:14
+    Info: Peak virtual memory: 622 megabytes
+    Info: Processing ended: Tue Apr 24 18:34:18 2018
+    Info: Elapsed time: 00:00:15
     Info: Total CPU time (on all processors): 00:00:31
 
 

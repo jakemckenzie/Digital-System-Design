@@ -1,5 +1,5 @@
 Fitter report for Part5
-Mon Apr 23 21:41:48 2018
+Tue Apr 24 18:34:32 2018
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -64,7 +64,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Mon Apr 23 21:41:48 2018       ;
+; Fitter Status                      ; Successful - Tue Apr 24 18:34:32 2018       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; Part5                                       ;
 ; Top-level Entity Name              ; Part5                                       ;
@@ -156,7 +156,7 @@ agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.2%      ;
+;     Processors 2-4         ;   0.1%      ;
 +----------------------------+-------------+
 
 
@@ -1102,8 +1102,8 @@ The pin-out file can be found in C:/Users/Epimetheus/Documents/GitHub/Digital-Sy
 ;     -- Combinational with a register        ; 0                       ;
 ;                                             ;                         ;
 ; Logic element usage by number of LUT inputs ;                         ;
-;     -- 4 input functions                    ; 79                      ;
-;     -- 3 input functions                    ; 26                      ;
+;     -- 4 input functions                    ; 75                      ;
+;     -- 3 input functions                    ; 30                      ;
 ;     -- <=2 input functions                  ; 5                       ;
 ;     -- Register only                        ; 0                       ;
 ;                                             ;                         ;
@@ -1137,8 +1137,8 @@ The pin-out file can be found in C:/Users/Epimetheus/Documents/GitHub/Digital-Sy
 ; Peak interconnect usage (total/H/V)         ; 1.6% / 1.5% / 1.8%      ;
 ; Maximum fan-out                             ; 12                      ;
 ; Highest non-global fan-out                  ; 12                      ;
-; Total fan-out                               ; 560                     ;
-; Average fan-out                             ; 1.94                    ;
+; Total fan-out                               ; 556                     ;
+; Average fan-out                             ; 1.93                    ;
 +---------------------------------------------+-------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -1157,8 +1157,8 @@ The pin-out file can be found in C:/Users/Epimetheus/Documents/GitHub/Digital-Sy
 ;     -- Combinational with a register        ; 0                      ; 0                              ;
 ;                                             ;                        ;                                ;
 ; Logic element usage by number of LUT inputs ;                        ;                                ;
-;     -- 4 input functions                    ; 79                     ; 0                              ;
-;     -- 3 input functions                    ; 26                     ; 0                              ;
+;     -- 4 input functions                    ; 75                     ; 0                              ;
+;     -- 3 input functions                    ; 30                     ; 0                              ;
 ;     -- <=2 input functions                  ; 5                      ; 0                              ;
 ;     -- Register only                        ; 0                      ; 0                              ;
 ;                                             ;                        ;                                ;
@@ -1185,7 +1185,7 @@ The pin-out file can be found in C:/Users/Epimetheus/Documents/GitHub/Digital-Sy
 ;     -- Registered Output Connections        ; 0                      ; 0                              ;
 ;                                             ;                        ;                                ;
 ; Internal Connections                        ;                        ;                                ;
-;     -- Total Connections                    ; 555                    ; 5                              ;
+;     -- Total Connections                    ; 551                    ; 5                              ;
 ;     -- Registered Connections               ; 0                      ; 0                              ;
 ;                                             ;                        ;                                ;
 ; External Connections                        ;                        ;                                ;
@@ -1218,10 +1218,10 @@ The pin-out file can be found in C:/Users/Epimetheus/Documents/GitHub/Digital-Sy
 +--------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 ; Name   ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +--------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
-; SW[0]  ; AB28  ; 5        ; 115          ; 17           ; 0            ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; SW[0]  ; AB28  ; 5        ; 115          ; 17           ; 0            ; 10                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; SW[10] ; AC24  ; 5        ; 115          ; 4            ; 14           ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; SW[11] ; AB24  ; 5        ; 115          ; 5            ; 14           ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; SW[12] ; AB23  ; 5        ; 115          ; 7            ; 14           ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; SW[12] ; AB23  ; 5        ; 115          ; 7            ; 14           ; 10                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; SW[13] ; AA24  ; 5        ; 115          ; 9            ; 21           ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; SW[14] ; AA23  ; 5        ; 115          ; 10           ; 7            ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; SW[15] ; AA22  ; 5        ; 115          ; 6            ; 14           ; 12                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
@@ -1229,11 +1229,11 @@ The pin-out file can be found in C:/Users/Epimetheus/Documents/GitHub/Digital-Sy
 ; SW[1]  ; AC28  ; 5        ; 115          ; 14           ; 0            ; 12                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; SW[2]  ; AC27  ; 5        ; 115          ; 15           ; 7            ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; SW[3]  ; AD27  ; 5        ; 115          ; 13           ; 7            ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; SW[4]  ; AB27  ; 5        ; 115          ; 18           ; 7            ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; SW[4]  ; AB27  ; 5        ; 115          ; 18           ; 7            ; 10                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; SW[5]  ; AC26  ; 5        ; 115          ; 11           ; 7            ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; SW[6]  ; AD26  ; 5        ; 115          ; 10           ; 0            ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; SW[7]  ; AB26  ; 5        ; 115          ; 15           ; 0            ; 12                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; SW[8]  ; AC25  ; 5        ; 115          ; 4            ; 21           ; 11                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; SW[8]  ; AC25  ; 5        ; 115          ; 4            ; 21           ; 10                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; SW[9]  ; AB25  ; 5        ; 115          ; 16           ; 7            ; 12                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 +--------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 
@@ -2349,7 +2349,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - BCD2_Decoder:Decoder2_for_display7|WideOr0~0          ; 0                 ; 6       ;
 ;      - BCD2_FourBitAdder:BCD2_FBA2|BCD2_Adder:FA1|c0~0       ; 0                 ; 6       ;
 ;      - BCD2_FourBitAdder:BCD2_FBA2|BCD2_Adder:FA1|s          ; 0                 ; 6       ;
-;      - LEDG~0                                                ; 0                 ; 6       ;
 ;      - LEDR[12]~output                                       ; 0                 ; 6       ;
 ; SW[13]                                                       ;                   ;         ;
 ;      - BCD2_Decoder:Decoder2_for_display7|WideOr6~0          ; 1                 ; 6       ;
@@ -2398,7 +2397,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - BCD2_Decoder:Decoder2_for_display6|WideOr0~0          ; 0                 ; 6       ;
 ;      - BCD2_FourBitAdder:BCD2_FBA1|BCD2_Adder:FA1|c0~0       ; 0                 ; 6       ;
 ;      - BCD2_FourBitAdder:BCD2_FBA1|BCD2_Adder:FA1|s          ; 0                 ; 6       ;
-;      - LEDG~1                                                ; 0                 ; 6       ;
 ;      - LEDR[8]~output                                        ; 0                 ; 6       ;
 ; SW[9]                                                        ;                   ;         ;
 ;      - BCD2_Decoder:Decoder2_for_display6|WideOr6~0          ; 1                 ; 6       ;
@@ -2447,7 +2445,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - BCD2_Decoder:Decoder2_for_display5|WideOr0~0          ; 0                 ; 6       ;
 ;      - BCD2_FourBitAdder:BCD2_FBA2|BCD2_Adder:FA1|c0~0       ; 0                 ; 6       ;
 ;      - BCD2_FourBitAdder:BCD2_FBA2|BCD2_Adder:FA1|s          ; 0                 ; 6       ;
-;      - LEDG~3                                                ; 0                 ; 6       ;
 ;      - LEDR[4]~output                                        ; 0                 ; 6       ;
 ; SW[5]                                                        ;                   ;         ;
 ;      - BCD2_Decoder:Decoder2_for_display5|WideOr6~0          ; 0                 ; 6       ;
@@ -2496,7 +2493,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - BCD2_Decoder:Decoder2_for_display4|WideOr0~0          ; 0                 ; 6       ;
 ;      - BCD2_FourBitAdder:BCD2_FBA1|BCD2_Adder:FA1|c0~0       ; 0                 ; 6       ;
 ;      - BCD2_FourBitAdder:BCD2_FBA1|BCD2_Adder:FA1|s          ; 0                 ; 6       ;
-;      - LEDG~2                                                ; 0                 ; 6       ;
 ;      - LEDR[0]~output                                        ; 0                 ; 6       ;
 ; SW[1]                                                        ;                   ;         ;
 ;      - BCD2_Decoder:Decoder2_for_display4|WideOr6~0          ; 0                 ; 6       ;
@@ -3330,13 +3326,13 @@ Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/output_files/Part5.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 448 warnings
     Info: Peak virtual memory: 1507 megabytes
-    Info: Processing ended: Mon Apr 23 21:41:49 2018
-    Info: Elapsed time: 00:00:15
+    Info: Processing ended: Tue Apr 24 18:34:33 2018
+    Info: Elapsed time: 00:00:14
     Info: Total CPU time (on all processors): 00:00:21
 
 

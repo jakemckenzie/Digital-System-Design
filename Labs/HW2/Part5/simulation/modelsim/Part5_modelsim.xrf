@@ -4,6 +4,7 @@ source_file = 1, C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs
 source_file = 1, C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/BCD2_FourBitAdder.sv
 source_file = 1, C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/BCD2_Adder.sv
 source_file = 1, C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/BCD2_Decoder_Decimal.sv
+source_file = 1, C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/BCD2_EightBitAdder.sv
 source_file = 1, C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/db/Part5.cbx.xml
 design_name = Part5
 instance = comp, \HEX7[6]~output , HEX7[6]~output, Part5, 1
