@@ -1,0 +1,154 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5
+vBCD2_Adder
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1524696947
+!i10b 1
+!s100 Efdo]3mBE^MI_JE]j;Diz3
+I@185?>`1Al:Y6gYbiO@@82
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 BCD2_Adder_sv_unit
+S1
+R0
+Z5 w1524696934
+Z6 8./BCD2_Adder.sv
+Z7 F./BCD2_Adder.sv
+L0 1
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1524696947.000000
+Z10 !s107 ./BCD2_Adder.sv|
+Z11 !s90 -reportprogress|300|./BCD2_Adder.sv|
+!i113 1
+Z12 tCvgOpt 0
+n@b@c@d2_@adder
+vBCD2_Adder_testbench
+R1
+R2
+!i10b 1
+!s100 _V4]Y<TAmFk_9m`]O0mNK1
+I=ci_aJJTj_@[ol8X3:>zj2
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 6
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+n@b@c@d2_@adder_testbench
+vBCD2_EightBitAdder
+R1
+Z13 !s110 1524700272
+!i10b 1
+!s100 `jM5lRf6<kYELRMT`;n3H2
+I?e659zKBVFD__X]RcJL>[2
+R3
+Z14 !s105 BCD2_EightBitAdder_sv_unit
+S1
+R0
+Z15 w1524700229
+Z16 8./BCD2_EightBitAdder.sv
+Z17 F./BCD2_EightBitAdder.sv
+L0 2
+R8
+r1
+!s85 0
+31
+Z18 !s108 1524700272.000000
+Z19 !s107 ./BCD2_EightBitAdder.sv|
+Z20 !s90 -reportprogress|300|./BCD2_EightBitAdder.sv|
+!i113 1
+R12
+n@b@c@d2_@eight@bit@adder
+vBCD2_EightBitAdder_testbench
+R1
+R13
+!i10b 1
+!s100 l0Oo35PFbkY<8hd9aZE3z1
+ICe4;EbGGeUW^cKMHPIlSW2
+R3
+R14
+S1
+R0
+R15
+R16
+R17
+L0 7
+R8
+r1
+!s85 0
+31
+R18
+R19
+R20
+!i113 1
+R12
+n@b@c@d2_@eight@bit@adder_testbench
+vBCD2_FourBitAdder
+R1
+Z21 !s110 1524697547
+!i10b 1
+!s100 nh>6bLTnPiGnRiU>ZgMjU0
+ICCBMk61T<HGnj3VYK_BU03
+R3
+Z22 !s105 BCD2_FourBitAdder_sv_unit
+S1
+R0
+Z23 w1524697542
+Z24 8./BCD2_FourBitAdder.sv
+Z25 F./BCD2_FourBitAdder.sv
+L0 2
+R8
+r1
+!s85 0
+31
+Z26 !s108 1524697547.000000
+Z27 !s107 ./BCD2_FourBitAdder.sv|
+Z28 !s90 -reportprogress|300|./BCD2_FourBitAdder.sv|
+!i113 1
+R12
+n@b@c@d2_@four@bit@adder
+vBCD2_FourBitAdder_testbench
+R1
+R21
+!i10b 1
+!s100 kSJDP^lM`JHCS>PB3Wk:H1
+IMOiWdlICb0E7WZ5fzch^e2
+R3
+R22
+S1
+R0
+R23
+R24
+R25
+L0 13
+R8
+r1
+!s85 0
+31
+R26
+R27
+R28
+!i113 1
+R12
+n@b@c@d2_@four@bit@adder_testbench

@@ -23,7 +23,7 @@ module BCD2_FourBitAdder_testbench();
 
     initial 
     begin
-        vec_in_b = 4'h0;vec_in_a = 4'h0;ci = 4'h0;c_out = 4'h0;vec_out_s = 4'h0;
+        vec_in_b = 4'h0;vec_in_a = 4'h0;ci = 4'h0;
         for(i = 0; i < 16; i++)
         begin
             $monitor("%h%h%h       %h%h",vec_in_b,vec_in_a,ci,c_out,vec_out_s);
@@ -36,7 +36,7 @@ module BCD2_FourBitAdder_testbench();
                 begin
                     $monitor("%h%h%h       %h%h",vec_in_b,vec_in_a,ci,c_out,vec_out_s);
                     ci = k;#10;
-                    assert(ci + vec_in_b + vec_in_a == i + j + k);
+                    assert(c_out * 16 + vec_out_s  == i + j + k);
                 end
             end
         end

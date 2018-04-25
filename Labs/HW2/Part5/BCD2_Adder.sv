@@ -15,7 +15,7 @@ module BCD2_Adder_testbench();
 
     initial 
     begin
-        b = 0;a = 0;ci = 0;c0 = 0;s = 0;
+        b = 0;a = 0;ci = 0;
         for(i = 0; i < 2; i++)
         begin
             $monitor("%b%b%b       %b%b",b,a,ci,c0,s);
@@ -28,7 +28,7 @@ module BCD2_Adder_testbench();
                 begin
                     $monitor("%b%b%b       %b%b",b,a,ci,c0,s);
                     ci = k;#10;
-                    assert(ci + b + a == s + c0 * 2);
+                    assert(i + j + k== s + c0 * 2);
                 end
             end
         end
