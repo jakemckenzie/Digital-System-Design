@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for Part6
-Mon Apr 23 21:25:36 2018
+Thu Apr 26 22:09:01 2018
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -96,7 +96,7 @@ agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.5%      ;
+;     Processors 2-4         ;   0.4%      ;
 +----------------------------+-------------+
 
 
@@ -603,9 +603,9 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 16    ; 16   ;
-; Unconstrained Input Port Paths  ; 480   ; 480  ;
-; Unconstrained Output Ports      ; 66    ; 66   ;
-; Unconstrained Output Port Paths ; 480   ; 480  ;
+; Unconstrained Input Port Paths  ; 464   ; 464  ;
+; Unconstrained Output Ports      ; 65    ; 65   ;
+; Unconstrained Output Port Paths ; 464   ; 464  ;
 +---------------------------------+-------+------+
 
 
@@ -687,7 +687,6 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; HEX7[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; HEX7[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; HEX7[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; LEDG[8]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; LEDR[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; LEDR[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; LEDR[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
@@ -785,7 +784,6 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; HEX7[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; HEX7[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; HEX7[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; LEDG[8]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; LEDR[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; LEDR[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; LEDR[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
@@ -811,7 +809,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Mon Apr 23 21:25:33 2018
+    Info: Processing started: Thu Apr 26 22:08:59 2018
 Info: Command: quartus_sta Part6 -c Part6
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -859,9 +857,9 @@ Info (332140): No Minimum Pulse Width paths to report
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 697 megabytes
-    Info: Processing ended: Mon Apr 23 21:25:36 2018
-    Info: Elapsed time: 00:00:03
+    Info: Peak virtual memory: 698 megabytes
+    Info: Processing ended: Thu Apr 26 22:09:01 2018
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:03
 
 

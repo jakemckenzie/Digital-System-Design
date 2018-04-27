@@ -1,5 +1,5 @@
 Flow report for Part5
-Tue Apr 24 18:34:46 2018
+Thu Apr 26 22:08:00 2018
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Tue Apr 24 18:34:46 2018       ;
+; Flow Status                        ; Successful - Thu Apr 26 22:08:00 2018       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; Part5                                       ;
 ; Top-level Entity Name              ; Part5                                       ;
@@ -65,7 +65,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/24/2018 18:34:04 ;
+; Start date & time ; 04/26/2018 22:07:21 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Part5               ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 268883477199238.152462004443640        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 268883477199238.152480564133812        ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                      ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)        ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
@@ -97,12 +97,12 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:14     ; 1.0                     ; 622 MB              ; 00:00:30                           ;
-; Fitter                    ; 00:00:13     ; 1.0                     ; 1507 MB             ; 00:00:20                           ;
+; Analysis & Synthesis      ; 00:00:13     ; 1.0                     ; 624 MB              ; 00:00:28                           ;
+; Fitter                    ; 00:00:13     ; 1.0                     ; 1510 MB             ; 00:00:19                           ;
 ; Assembler                 ; 00:00:05     ; 1.0                     ; 560 MB              ; 00:00:04                           ;
-; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 699 MB              ; 00:00:03                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 519 MB              ; 00:00:02                           ;
-; Total                     ; 00:00:37     ; --                      ; --                  ; 00:00:59                           ;
+; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 698 MB              ; 00:00:03                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 519 MB              ; 00:00:01                           ;
+; Total                     ; 00:00:35     ; --                      ; --                  ; 00:00:55                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Part5
-Tue Apr 24 18:34:17 2018
+Thu Apr 26 22:07:34 2018
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -44,7 +44,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Apr 24 18:34:17 2018       ;
+; Analysis & Synthesis Status        ; Successful - Thu Apr 26 22:07:34 2018       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; Part5                                       ;
 ; Top-level Entity Name              ; Part5                                       ;
@@ -293,29 +293,28 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Tue Apr 24 18:34:03 2018
+    Info: Processing started: Thu Apr 26 22:07:20 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Part5 -c Part5
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file part5.sv
-    Info (12023): Found entity 1: Part5 File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/Part5.sv Line: 1
+    Info (12023): Found entity 1: Part5 File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/Part5.sv Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file bcd2_decoder.sv
-    Info (12023): Found entity 1: BCD2_Decoder File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/BCD2_Decoder.sv Line: 1
+    Info (12023): Found entity 1: BCD2_Decoder File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/BCD2_Decoder.sv Line: 23
 Info (12021): Found 2 design units, including 2 entities, in source file bcd2_fourbitadder.sv
-    Info (12023): Found entity 1: BCD2_FourBitAdder File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/BCD2_FourBitAdder.sv Line: 2
-    Info (12023): Found entity 2: BCD2_FourBitAdder_testbench File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/BCD2_FourBitAdder.sv Line: 13
+    Info (12023): Found entity 1: BCD2_FourBitAdder File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/BCD2_FourBitAdder.sv Line: 9
+    Info (12023): Found entity 2: BCD2_FourBitAdder_testbench File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/BCD2_FourBitAdder.sv Line: 18
 Info (12021): Found 2 design units, including 2 entities, in source file bcd2_adder.sv
-    Info (12023): Found entity 1: BCD2_Adder File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/BCD2_Adder.sv Line: 1
-    Info (12023): Found entity 2: BCD2_Adder_testbench File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/BCD2_Adder.sv Line: 6
+    Info (12023): Found entity 1: BCD2_Adder File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/BCD2_Adder.sv Line: 6
+    Info (12023): Found entity 2: BCD2_Adder_testbench File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/BCD2_Adder.sv Line: 13
 Info (12021): Found 1 design units, including 1 entities, in source file bcd2_decoder_decimal.sv
-    Info (12023): Found entity 1: BCD2_Decoder_Decimal File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/BCD2_Decoder_Decimal.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file bcd2_eightbitadder.sv
-    Info (12023): Found entity 1: BCD2_EightBitAdder File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/BCD2_EightBitAdder.sv Line: 2
+    Info (12023): Found entity 1: BCD2_Decoder_Decimal File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/BCD2_Decoder_Decimal.sv Line: 8
+Warning (12019): Can't analyze file -- file BCD2_EightBitAdder.sv is missing
 Info (12127): Elaborating entity "Part5" for the top level hierarchy
-Info (12128): Elaborating entity "BCD2_FourBitAdder" for hierarchy "BCD2_FourBitAdder:BCD2_FBA1" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/Part5.sv Line: 7
-Info (12128): Elaborating entity "BCD2_Adder" for hierarchy "BCD2_FourBitAdder:BCD2_FBA1|BCD2_Adder:FA1" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/BCD2_FourBitAdder.sv Line: 6
-Info (12128): Elaborating entity "BCD2_Decoder_Decimal" for hierarchy "BCD2_Decoder_Decimal:Decoder2_for_display" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/Part5.sv Line: 11
-Info (12128): Elaborating entity "BCD2_Decoder" for hierarchy "BCD2_Decoder_Decimal:Decoder2_for_display|BCD2_Decoder:BCD_For_HEX_Display2" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/BCD2_Decoder_Decimal.sv Line: 3
+Info (12128): Elaborating entity "BCD2_FourBitAdder" for hierarchy "BCD2_FourBitAdder:BCD2_FBA1" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/Part5.sv Line: 14
+Info (12128): Elaborating entity "BCD2_Adder" for hierarchy "BCD2_FourBitAdder:BCD2_FBA1|BCD2_Adder:FA1" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/BCD2_FourBitAdder.sv Line: 11
+Info (12128): Elaborating entity "BCD2_Decoder_Decimal" for hierarchy "BCD2_Decoder_Decimal:Decoder2_for_display" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/Part5.sv Line: 16
+Info (12128): Elaborating entity "BCD2_Decoder" for hierarchy "BCD2_Decoder_Decimal:Decoder2_for_display|BCD2_Decoder:BCD_For_HEX_Display2" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part5/BCD2_Decoder_Decimal.sv Line: 10
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -323,10 +322,10 @@ Info (21057): Implemented 194 device resources after synthesis - the final resou
     Info (21058): Implemented 17 input pins
     Info (21059): Implemented 67 output pins
     Info (21061): Implemented 110 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 622 megabytes
-    Info: Processing ended: Tue Apr 24 18:34:18 2018
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:31
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 624 megabytes
+    Info: Processing ended: Thu Apr 26 22:07:34 2018
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:29
 
 

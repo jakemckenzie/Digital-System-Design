@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Part6
-Mon Apr 23 21:25:11 2018
+Thu Apr 26 22:08:37 2018
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -44,13 +44,13 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Apr 23 21:25:11 2018       ;
+; Analysis & Synthesis Status        ; Successful - Thu Apr 26 22:08:37 2018       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; Part6                                       ;
 ; Top-level Entity Name              ; Part6                                       ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 106                                         ;
-;     Total combinational functions  ; 106                                         ;
+; Total logic elements               ; 101                                         ;
+;     Total combinational functions  ; 101                                         ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
 ; Total pins                         ; 83                                          ;
@@ -180,16 +180,16 @@ agreement for further details.
 +---------------------------------------------+--------------------------+
 ; Resource                                    ; Usage                    ;
 +---------------------------------------------+--------------------------+
-; Estimated Total logic elements              ; 106                      ;
+; Estimated Total logic elements              ; 101                      ;
 ;                                             ;                          ;
-; Total combinational functions               ; 106                      ;
+; Total combinational functions               ; 101                      ;
 ; Logic element usage by number of LUT inputs ;                          ;
-;     -- 4 input functions                    ; 81                       ;
+;     -- 4 input functions                    ; 76                       ;
 ;     -- 3 input functions                    ; 20                       ;
 ;     -- <=2 input functions                  ; 5                        ;
 ;                                             ;                          ;
 ; Logic elements by mode                      ;                          ;
-;     -- normal mode                          ; 97                       ;
+;     -- normal mode                          ; 92                       ;
 ;     -- arithmetic mode                      ; 9                        ;
 ;                                             ;                          ;
 ; Total registers                             ; 0                        ;
@@ -202,8 +202,8 @@ agreement for further details.
 ;                                             ;                          ;
 ; Maximum fan-out node                        ; BCD_Add2:bcd_add2|Add1~6 ;
 ; Maximum fan-out                             ; 11                       ;
-; Total fan-out                               ; 539                      ;
-; Average fan-out                             ; 1.98                     ;
+; Total fan-out                               ; 518                      ;
+; Average fan-out                             ; 1.94                     ;
 +---------------------------------------------+--------------------------+
 
 
@@ -212,7 +212,7 @@ agreement for further details.
 +------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------+----------------------+--------------+
 ; Compilation Hierarchy Node                     ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                ; Entity Name          ; Library Name ;
 +------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------+----------------------+--------------+
-; |Part6                                         ; 106 (5)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 83   ; 0            ; |Part6                                                                             ; Part6                ; work         ;
+; |Part6                                         ; 101 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 83   ; 0            ; |Part6                                                                             ; Part6                ; work         ;
 ;    |BCD3_Decoder:Decoder3_for_display4|        ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part6|BCD3_Decoder:Decoder3_for_display4                                          ; BCD3_Decoder         ; work         ;
 ;    |BCD3_Decoder:Decoder3_for_display5|        ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part6|BCD3_Decoder:Decoder3_for_display5                                          ; BCD3_Decoder         ; work         ;
 ;    |BCD3_Decoder:Decoder3_for_display6|        ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part6|BCD3_Decoder:Decoder3_for_display6                                          ; BCD3_Decoder         ; work         ;
@@ -256,18 +256,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 83                          ;
-; cycloneiii_lcell_comb ; 114                         ;
+; cycloneiii_lcell_comb ; 109                         ;
 ;     arith             ; 9                           ;
 ;         3 data inputs ; 9                           ;
-;     normal            ; 105                         ;
+;     normal            ; 100                         ;
 ;         0 data inputs ; 3                           ;
 ;         1 data inputs ; 7                           ;
 ;         2 data inputs ; 3                           ;
 ;         3 data inputs ; 11                          ;
-;         4 data inputs ; 81                          ;
+;         4 data inputs ; 76                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 12.80                       ;
-; Average LUT depth     ; 8.69                        ;
+; Average LUT depth     ; 8.94                        ;
 +-----------------------+-----------------------------+
 
 
@@ -276,7 +276,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -286,39 +286,42 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Mon Apr 23 21:24:56 2018
+    Info: Processing started: Thu Apr 26 22:08:23 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Part6 -c Part6
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file part6.sv
-    Info (12023): Found entity 1: Part6 File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part6/Part6.sv Line: 1
+    Info (12023): Found entity 1: Part6 File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part6/Part6.sv Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file bcd3_decoder_decimal.sv
-    Info (12023): Found entity 1: BCD3_Decoder_Decimal File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part6/BCD3_Decoder_Decimal.sv Line: 1
+    Info (12023): Found entity 1: BCD3_Decoder_Decimal File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part6/BCD3_Decoder_Decimal.sv Line: 8
 Info (12021): Found 1 design units, including 1 entities, in source file bcd3_decoder.sv
-    Info (12023): Found entity 1: BCD3_Decoder File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part6/BCD3_Decoder.sv Line: 1
+    Info (12023): Found entity 1: BCD3_Decoder File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part6/BCD3_Decoder.sv Line: 23
 Info (12021): Found 1 design units, including 1 entities, in source file bcd3_for_hex_display.sv
-    Info (12023): Found entity 1: BCD3_For_HEX_Display File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part6/BCD3_For_HEX_Display.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file bcd_add2.sv
-    Info (12023): Found entity 1: BCD_Add2 File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part6/BCD_Add2.sv Line: 1
+    Info (12023): Found entity 1: BCD3_For_HEX_Display File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part6/BCD3_For_HEX_Display.sv Line: 23
+Info (12021): Found 2 design units, including 2 entities, in source file bcd_add2.sv
+    Info (12023): Found entity 1: BCD_Add2 File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part6/BCD_Add2.sv Line: 3
+    Info (12023): Found entity 2: BCD_Add2_testbench File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part6/BCD_Add2.sv Line: 39
 Info (12127): Elaborating entity "Part6" for the top level hierarchy
-Info (12128): Elaborating entity "BCD_Add2" for hierarchy "BCD_Add2:bcd_add2" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part6/Part6.sv Line: 12
-Warning (10230): Verilog HDL assignment warning at BCD_Add2.sv(19): truncated value with size 5 to match size of target (4) File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part6/BCD_Add2.sv Line: 19
-Warning (10230): Verilog HDL assignment warning at BCD_Add2.sv(32): truncated value with size 5 to match size of target (4) File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part6/BCD_Add2.sv Line: 32
-Info (12128): Elaborating entity "BCD3_Decoder_Decimal" for hierarchy "BCD3_Decoder_Decimal:Decoder3_for_display" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part6/Part6.sv Line: 13
-Info (12128): Elaborating entity "BCD3_Decoder" for hierarchy "BCD3_Decoder_Decimal:Decoder3_for_display|BCD3_Decoder:BCD_For_HEX_Display2" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part6/BCD3_Decoder_Decimal.sv Line: 3
+Warning (10034): Output port "LEDG[8]" at Part6.sv(6) has no driver File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part6/Part6.sv Line: 6
+Info (12128): Elaborating entity "BCD_Add2" for hierarchy "BCD_Add2:bcd_add2" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part6/Part6.sv Line: 14
+Warning (10230): Verilog HDL assignment warning at BCD_Add2.sv(21): truncated value with size 5 to match size of target (4) File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part6/BCD_Add2.sv Line: 21
+Warning (10230): Verilog HDL assignment warning at BCD_Add2.sv(34): truncated value with size 5 to match size of target (4) File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part6/BCD_Add2.sv Line: 34
+Info (12128): Elaborating entity "BCD3_Decoder_Decimal" for hierarchy "BCD3_Decoder_Decimal:Decoder3_for_display" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part6/Part6.sv Line: 15
+Info (12128): Elaborating entity "BCD3_Decoder" for hierarchy "BCD3_Decoder_Decimal:Decoder3_for_display|BCD3_Decoder:BCD_For_HEX_Display2" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part6/BCD3_Decoder_Decimal.sv Line: 10
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "LEDR[16]" is stuck at GND File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part6/Part6.sv Line: 1
+    Warning (13410): Pin "LEDR[16]" is stuck at GND File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part6/Part6.sv Line: 6
+    Warning (13410): Pin "LEDG[8]" is stuck at GND File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part6/Part6.sv Line: 6
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 189 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 184 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 16 input pins
     Info (21059): Implemented 67 output pins
-    Info (21061): Implemented 106 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 622 megabytes
-    Info: Processing ended: Mon Apr 23 21:25:11 2018
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:33
+    Info (21061): Implemented 101 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 624 megabytes
+    Info: Processing ended: Thu Apr 26 22:08:37 2018
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:30
 
 
