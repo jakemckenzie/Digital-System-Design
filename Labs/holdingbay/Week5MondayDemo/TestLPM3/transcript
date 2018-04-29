@@ -1,0 +1,669 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+do runrtl.do
+# 
+# Get rid of current work lib
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# 
+# Create work library and map it to 'work'
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Modifying C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/modelsim.ini
+# 
+# Compile Verilog
+#     All Verilog files that are part of this design should have
+#     their own "vlog" line below.
+# vlog -work work +acc "./TestLPM3.sv"
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:07:00 on Apr 23,2018
+# vlog -reportprogress 300 -work work "+acc" ./TestLPM3.sv 
+# -- Compiling module TestLPM3
+# -- Compiling module TestLPM3_testbench
+# 
+# Top level modules:
+# 	TestLPM3_testbench
+# End time: 11:07:00 on Apr 23,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -work work +acc "./AlteraAdder.v"
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:07:00 on Apr 23,2018
+# vlog -reportprogress 300 -work work "+acc" ./AlteraAdder.v 
+# -- Compiling module AlteraAdder
+# 
+# Top level modules:
+# 	AlteraAdder
+# End time: 11:07:00 on Apr 23,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# Call vsim to invoke simulator
+#     Make sure the last item on the line is the name of the
+#     testbench module you want to execute.
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc" -fsmdebug  TestLPM3_testbench
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" -fsmdebug TestLPM3_testbench 
+# Start time: 11:07:01 on Apr 23,2018
+# Loading sv_std.std
+# Loading work.TestLPM3_testbench
+# Loading work.TestLPM3
+# Loading work.AlteraAdder
+# Loading lpm_ver.lpm_add_sub
+# 
+# Set the window types
+# view wave
+# .main_pane.wave.interior.cs.body.pw.wf
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# 
+# Run the simulation
+# run -all
+# ** Error: Assertion error.
+#    Time: 0 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 42
+#                    0  41912   3110  1   45023
+# ** Error: Assertion error.
+#    Time: 10 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 46
+#                   10  41912   3110  0   45022
+# ** Error: Assertion error.
+#    Time: 20 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 51
+#                   20  47462  58294  0  105756
+# ** Error: Assertion error.
+#    Time: 30 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 55
+#                   30  47462  58294  1  105757
+# ** Error: Assertion error.
+#    Time: 40 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 42
+#                   40   2246  28230  1   30477
+# ** Error: Assertion error.
+#    Time: 50 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 46
+#                   50   2246  28230  0   30476
+# ** Error: Assertion error.
+#    Time: 60 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 51
+#                   60   3954  62254  0   66208
+# ** Error: Assertion error.
+#    Time: 70 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 55
+#                   70   3954  62254  1   66209
+# ** Error: Assertion error.
+#    Time: 80 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 42
+#                   80  17511  21818  1   39330
+# ** Error: Assertion error.
+#    Time: 90 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 46
+#                   90  17511  21818  0   39329
+# ** Error: Assertion error.
+#    Time: 100 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 51
+#                  100   7274  53684  0   60958
+# ** Error: Assertion error.
+#    Time: 110 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 55
+#                  110   7274  53684  1   60959
+# ** Error: Assertion error.
+#    Time: 120 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 42
+#                  120  64111   6742  1   70854
+# ** Error: Assertion error.
+#    Time: 130 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 46
+#                  130  64111   6742  0   70853
+# ** Error: Assertion error.
+#    Time: 140 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 51
+#                  140  13877  30676  0   44553
+# ** Error: Assertion error.
+#    Time: 150 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 55
+#                  150  13877  30676  1   44554
+# ** Error: Assertion error.
+#    Time: 160 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 42
+#                  160  16558  33149  1   49708
+# ** Error: Assertion error.
+#    Time: 170 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 46
+#                  170  16558  33149  0   49707
+# ** Error: Assertion error.
+#    Time: 180 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 51
+#                  180  47067   3589  0   50656
+# ** Error: Assertion error.
+#    Time: 190 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 55
+#                  190  47067   3589  1   50657
+# ** Error: Assertion error.
+#    Time: 200 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 42
+#                  200  34531  33568  1   68100
+# ** Error: Assertion error.
+#    Time: 210 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 46
+#                  210  34531  33568  0   68099
+# ** Error: Assertion error.
+#    Time: 220 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 51
+#                  220  26085  30469  0   56554
+# ** Error: Assertion error.
+#    Time: 230 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 55
+#                  230  26085  30469  1   56555
+# ** Error: Assertion error.
+#    Time: 240 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 42
+#                  240  36133   7913  1   44047
+# ** Error: Assertion error.
+#    Time: 250 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 46
+#                  250  36133   7913  0   44046
+# ** Error: Assertion error.
+#    Time: 260 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 51
+#                  260   9309  40330  0   49639
+# ** Error: Assertion error.
+#    Time: 270 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 55
+#                  270   9309  40330  1   49640
+# ** Error: Assertion error.
+#    Time: 280 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 42
+#                  280   8536  18827  1   27364
+# ** Error: Assertion error.
+#    Time: 290 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 46
+#                  290   8536  18827  0   27363
+# ** Error: Assertion error.
+#    Time: 300 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 51
+#                  300  53590  37833  0   91423
+# ** Error: Assertion error.
+#    Time: 310 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 55
+#                  310  53590  37833  1   91424
+# ** Error: Assertion error.
+#    Time: 320 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 42
+#                  320  29369  45376  1   74746
+# ** Error: Assertion error.
+#    Time: 330 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 46
+#                  330  29369  45376  0   74745
+# ** Error: Assertion error.
+#    Time: 340 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 51
+#                  340  55168  48654  0  103822
+# ** Error: Assertion error.
+#    Time: 350 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 55
+#                  350  55168  48654  1  103823
+# ** Error: Assertion error.
+#    Time: 360 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 42
+#                  360  51412  59790  1  111203
+# ** Error: Assertion error.
+#    Time: 370 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 46
+#                  370  51412  59790  0  111202
+# ** Error: Assertion error.
+#    Time: 380 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 51
+#                  380  25792   6551  0   32343
+# ** Error: Assertion error.
+#    Time: 390 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 55
+#                  390  25792   6551  1   32344
+# ** Error: Assertion error.
+#    Time: 400 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 42
+#                  400  37157  56263  1   93421
+# ** Error: Assertion error.
+#    Time: 410 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 46
+#                  410  37157  56263  0   93420
+# ** Error: Assertion error.
+#    Time: 420 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 51
+#                  420  29272  63825  0   93097
+# ** Error: Assertion error.
+#    Time: 430 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 55
+#                  430  29272  63825  1   93098
+# ** Error: Assertion error.
+#    Time: 440 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 42
+#                  440  51506  56867  1  108374
+# ** Error: Assertion error.
+#    Time: 450 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 46
+#                  450  51506  56867  0  108373
+# ** Error: Assertion error.
+#    Time: 460 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 51
+#                  460  54100    435  0   54535
+# ** Error: Assertion error.
+#    Time: 470 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 55
+#                  470  54100    435  1   54536
+# ** Error: Assertion error.
+#    Time: 480 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 42
+#                  480  22106   6886  1   28993
+# ** Error: Assertion error.
+#    Time: 490 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 46
+#                  490  22106   6886  0   28992
+# ** Error: Assertion error.
+#    Time: 500 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 51
+#                  500  62966  12901  0   75867
+# ** Error: Assertion error.
+#    Time: 510 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 55
+#                  510  62966  12901  1   75868
+# ** Error: Assertion error.
+#    Time: 520 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 42
+#                  520   5610  23311  1   28922
+# ** Error: Assertion error.
+#    Time: 530 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 46
+#                  530   5610  23311  0   28921
+# ** Error: Assertion error.
+#    Time: 540 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 51
+#                  540   4335  42052  0   46387
+# ** Error: Assertion error.
+#    Time: 550 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 55
+#                  550   4335  42052  1   46388
+# ** Error: Assertion error.
+#    Time: 560 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 42
+#                  560  24009   4299  1   28309
+# ** Error: Assertion error.
+#    Time: 570 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 46
+#                  570  24009   4299  0   28308
+# ** Error: Assertion error.
+#    Time: 580 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 51
+#                  580  49991  31431  0   81422
+# ** Error: Assertion error.
+#    Time: 590 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 55
+#                  590  49991  31431  1   81423
+# ** Error: Assertion error.
+#    Time: 600 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 42
+#                  600  54770  39905  1   94676
+# ** Error: Assertion error.
+#    Time: 610 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 46
+#                  610  54770  39905  0   94675
+# ** Error: Assertion error.
+#    Time: 620 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 51
+#                  620  21381  54064  0   75445
+# ** Error: Assertion error.
+#    Time: 630 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 55
+#                  630  21381  54064  1   75446
+# ** Error: Assertion error.
+#    Time: 640 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 42
+#                  640   8822  18717  1   27540
+# ** Error: Assertion error.
+#    Time: 650 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 46
+#                  650   8822  18717  0   27539
+# ** Error: Assertion error.
+#    Time: 660 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 51
+#                  660  17874  59158  0   77032
+# ** Error: Assertion error.
+#    Time: 670 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 55
+#                  670  17874  59158  1   77033
+# ** Error: Assertion error.
+#    Time: 680 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 42
+#                  680   3803   4928  1    8732
+# ** Error: Assertion error.
+#    Time: 690 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 46
+#                  690   3803   4928  0    8731
+# ** Error: Assertion error.
+#    Time: 700 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 51
+#                  700  51893  12945  0   64838
+# ** Error: Assertion error.
+#    Time: 710 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 55
+#                  710  51893  12945  1   64839
+# ** Error: Assertion error.
+#    Time: 720 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 42
+#                  720  40819   4256  1   45076
+# ** Error: Assertion error.
+#    Time: 730 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 46
+#                  730  40819   4256  0   45075
+# ** Error: Assertion error.
+#    Time: 740 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 51
+#                  740  32087   7197  0   39284
+# ** Error: Assertion error.
+#    Time: 750 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 55
+#                  750  32087   7197  1   39285
+# ** Error: Assertion error.
+#    Time: 760 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 42
+#                  760  41940   8157  1   50098
+# ** Error: Assertion error.
+#    Time: 770 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 46
+#                  770  41940   8157  0   50097
+# ** Error: Assertion error.
+#    Time: 780 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 51
+#                  780  41370  53380  0   94750
+# ** Error: Assertion error.
+#    Time: 790 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 55
+#                  790  41370  53380  1   94751
+# ** Error: Assertion error.
+#    Time: 800 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 42
+#                  800  19383  48265  1   67649
+# ** Error: Assertion error.
+#    Time: 810 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 46
+#                  810  19383  48265  0   67648
+# ** Error: Assertion error.
+#    Time: 820 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 51
+#                  820  39178  31445  0   70623
+# ** Error: Assertion error.
+#    Time: 830 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 55
+#                  830  39178  31445  1   70624
+# ** Error: Assertion error.
+#    Time: 840 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 42
+#                  840   3326  15948  1   19275
+# ** Error: Assertion error.
+#    Time: 850 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 46
+#                  850   3326  15948  0   19274
+# ** Error: Assertion error.
+#    Time: 860 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 51
+#                  860  36350   6851  0   43201
+# ** Error: Assertion error.
+#    Time: 870 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 55
+#                  870  36350   6851  1   43202
+# ** Error: Assertion error.
+#    Time: 880 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 42
+#                  880  61320   7612  1   68933
+# ** Error: Assertion error.
+#    Time: 890 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 46
+#                  890  61320   7612  0   68932
+# ** Error: Assertion error.
+#    Time: 900 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 51
+#                  900  17819  47859  0   65678
+# ** Error: Assertion error.
+#    Time: 910 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 55
+#                  910  17819  47859  1   65679
+# ** Error: Assertion error.
+#    Time: 920 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 42
+#                  920  60975  17847  1   78823
+# ** Error: Assertion error.
+#    Time: 930 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 46
+#                  930  60975  17847  0   78822
+# ** Error: Assertion error.
+#    Time: 940 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 51
+#                  940  53515  15079  0   68594
+# ** Error: Assertion error.
+#    Time: 950 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 55
+#                  950  53515  15079  1   68595
+# ** Error: Assertion error.
+#    Time: 960 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 42
+#                  960  44288  18697  1   62986
+# ** Error: Assertion error.
+#    Time: 970 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 46
+#                  970  44288  18697  0   62985
+# ** Error: Assertion error.
+#    Time: 980 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 51
+#                  980  41578  15041  0   56619
+# ** Error: Assertion error.
+#    Time: 990 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 55
+#                  990  41578  15041  1   56620
+# ** Error: Assertion error.
+#    Time: 1 ns  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 42
+#                 1000   7684  44896  1   52581
+# ** Error: Assertion error.
+#    Time: 1010 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 46
+#                 1010   7684  44896  0   52580
+# ** Error: Assertion error.
+#    Time: 1020 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 51
+#                 1020  17327  50543  0   67870
+# ** Error: Assertion error.
+#    Time: 1030 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 55
+#                 1030  17327  50543  1   67871
+# ** Error: Assertion error.
+#    Time: 1040 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 42
+#                 1040  39237  59341  1   98579
+# ** Error: Assertion error.
+#    Time: 1050 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 46
+#                 1050  39237  59341  0   98578
+# ** Error: Assertion error.
+#    Time: 1060 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 51
+#                 1060  30572  16080  0   46652
+# ** Error: Assertion error.
+#    Time: 1070 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 55
+#                 1070  30572  16080  1   46653
+# ** Error: Assertion error.
+#    Time: 1080 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 42
+#                 1080  16553  52732  1   69286
+# ** Error: Assertion error.
+#    Time: 1090 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 46
+#                 1090  16553  52732  0   69285
+# ** Error: Assertion error.
+#    Time: 1100 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 51
+#                 1100  49893  28839  0   78732
+# ** Error: Assertion error.
+#    Time: 1110 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 55
+#                 1110  49893  28839  1   78733
+# ** Error: Assertion error.
+#    Time: 1120 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 42
+#                 1120  16443  55486  1   71930
+# ** Error: Assertion error.
+#    Time: 1130 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 46
+#                 1130  16443  55486  0   71929
+# ** Error: Assertion error.
+#    Time: 1140 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 51
+#                 1140  31393   9605  0   40998
+# ** Error: Assertion error.
+#    Time: 1150 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 55
+#                 1150  31393   9605  1   40999
+# ** Error: Assertion error.
+#    Time: 1160 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 42
+#                 1160  12174  57248  1   69423
+# ** Error: Assertion error.
+#    Time: 1170 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 46
+#                 1170  12174  57248  0   69422
+# ** Error: Assertion error.
+#    Time: 1180 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 51
+#                 1180  24853  36864  0   61717
+# ** Error: Assertion error.
+#    Time: 1190 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 55
+#                 1190  24853  36864  1   61718
+# ** Error: Assertion error.
+#    Time: 1200 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 42
+#                 1200  47556  46987  1   94544
+# ** Error: Assertion error.
+#    Time: 1210 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 46
+#                 1210  47556  46987  0   94543
+# ** Error: Assertion error.
+#    Time: 1220 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 51
+#                 1220  45224  26301  0   71525
+# ** Error: Assertion error.
+#    Time: 1230 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 55
+#                 1230  45224  26301  1   71526
+# ** Error: Assertion error.
+#    Time: 1240 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 42
+#                 1240  27244  60285  1   87530
+# ** Error: Assertion error.
+#    Time: 1250 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 46
+#                 1250  27244  60285  0   87529
+# ** Error: Assertion error.
+#    Time: 1260 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 51
+#                 1260   5803  53674  0   59477
+# ** Error: Assertion error.
+#    Time: 1270 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 55
+#                 1270   5803  53674  1   59478
+# ** Error: Assertion error.
+#    Time: 1280 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 42
+#                 1280  21857   6834  1   28692
+# ** Error: Assertion error.
+#    Time: 1290 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 46
+#                 1290  21857   6834  0   28691
+# ** Error: Assertion error.
+#    Time: 1300 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 51
+#                 1300  20822  59974  0   80796
+# ** Error: Assertion error.
+#    Time: 1310 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 55
+#                 1310  20822  59974  1   80797
+# ** Error: Assertion error.
+#    Time: 1320 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 42
+#                 1320  14548   8929  1   23478
+# ** Error: Assertion error.
+#    Time: 1330 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 46
+#                 1330  14548   8929  0   23477
+# ** Error: Assertion error.
+#    Time: 1340 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 51
+#                 1340  61396  62497  0  123893
+# ** Error: Assertion error.
+#    Time: 1350 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 55
+#                 1350  61396  62497  1  123894
+# ** Error: Assertion error.
+#    Time: 1360 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 42
+#                 1360  63840  22377  1   86218
+# ** Error: Assertion error.
+#    Time: 1370 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 46
+#                 1370  63840  22377  0   86217
+# ** Error: Assertion error.
+#    Time: 1380 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 51
+#                 1380  46598  30708  0   77306
+# ** Error: Assertion error.
+#    Time: 1390 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 55
+#                 1390  46598  30708  1   77307
+# ** Error: Assertion error.
+#    Time: 1400 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 42
+#                 1400  13950  38090  1   52041
+# ** Error: Assertion error.
+#    Time: 1410 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 46
+#                 1410  13950  38090  0   52040
+# ** Error: Assertion error.
+#    Time: 1420 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 51
+#                 1420  29224   2051  0   31275
+# ** Error: Assertion error.
+#    Time: 1430 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 55
+#                 1430  29224   2051  1   31276
+# ** Error: Assertion error.
+#    Time: 1440 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 42
+#                 1440  28079  54252  1   82332
+# ** Error: Assertion error.
+#    Time: 1450 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 46
+#                 1450  28079  54252  0   82331
+# ** Error: Assertion error.
+#    Time: 1460 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 51
+#                 1460  17278  25670  0   42948
+# ** Error: Assertion error.
+#    Time: 1470 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 55
+#                 1470  17278  25670  1   42949
+# ** Error: Assertion error.
+#    Time: 1480 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 42
+#                 1480  22856  26309  1   49166
+# ** Error: Assertion error.
+#    Time: 1490 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 46
+#                 1490  22856  26309  0   49165
+# ** Error: Assertion error.
+#    Time: 1500 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 51
+#                 1500  38910  59044  0   97954
+# ** Error: Assertion error.
+#    Time: 1510 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 55
+#                 1510  38910  59044  1   97955
+# ** Error: Assertion error.
+#    Time: 1520 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 42
+#                 1520  48501  61453  1  109955
+# ** Error: Assertion error.
+#    Time: 1530 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 46
+#                 1530  48501  61453  0  109954
+# ** Error: Assertion error.
+#    Time: 1540 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 51
+#                 1540  38518  11389  0   49907
+# ** Error: Assertion error.
+#    Time: 1550 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 55
+#                 1550  38518  11389  1   49908
+# ** Error: Assertion error.
+#    Time: 1560 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 42
+#                 1560  44319  44537  1   88857
+# ** Error: Assertion error.
+#    Time: 1570 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 46
+#                 1570  44319  44537  0   88856
+# ** Error: Assertion error.
+#    Time: 1580 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 51
+#                 1580  37497  51745  0   89242
+# ** Error: Assertion error.
+#    Time: 1590 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 55
+#                 1590  37497  51745  1   89243
+# ** Error: Assertion error.
+#    Time: 1600 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 42
+#                 1600  10349  60125  1   70475
+# ** Error: Assertion error.
+#    Time: 1610 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 46
+#                 1610  10349  60125  0   70474
+# ** Error: Assertion error.
+#    Time: 1620 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 51
+#                 1620   8911  17393  0   26304
+# ** Error: Assertion error.
+#    Time: 1630 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 55
+#                 1630   8911  17393  1   26305
+# ** Error: Assertion error.
+#    Time: 1640 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 42
+#                 1640  52837  42394  1   95232
+# ** Error: Assertion error.
+#    Time: 1650 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 46
+#                 1650  52837  42394  0   95231
+# ** Error: Assertion error.
+#    Time: 1660 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 51
+#                 1660  24432  23464  0   47896
+# ** Error: Assertion error.
+#    Time: 1670 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 55
+#                 1670  24432  23464  1   47897
+# ** Error: Assertion error.
+#    Time: 1680 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 42
+#                 1680  38774   9198  1   47973
+# ** Error: Assertion error.
+#    Time: 1690 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 46
+#                 1690  38774   9198  0   47972
+# ** Error: Assertion error.
+#    Time: 1700 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 51
+#                 1700  47540  20760  0   68300
+# ** Error: Assertion error.
+#    Time: 1710 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 55
+#                 1710  47540  20760  1   68301
+# ** Error: Assertion error.
+#    Time: 1720 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 42
+#                 1720  39505  57980  1   97486
+# ** Error: Assertion error.
+#    Time: 1730 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 46
+#                 1730  39505  57980  0   97485
+# ** Error: Assertion error.
+#    Time: 1740 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 51
+#                 1740  29517   9409  0   38926
+# ** Error: Assertion error.
+#    Time: 1750 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 55
+#                 1750  29517   9409  1   38927
+# ** Error: Assertion error.
+#    Time: 1760 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 42
+#                 1760  28343   2630  1   30974
+# ** Error: Assertion error.
+#    Time: 1770 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 46
+#                 1770  28343   2630  0   30973
+# ** Error: Assertion error.
+#    Time: 1780 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 51
+#                 1780  42736  31015  0   73751
+# ** Error: Assertion error.
+#    Time: 1790 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 55
+#                 1790  42736  31015  1   73752
+# ** Error: Assertion error.
+#    Time: 1800 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 42
+#                 1800  24947  10044  1   34992
+# ** Error: Assertion error.
+#    Time: 1810 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 46
+#                 1810  24947  10044  0   34991
+# ** Error: Assertion error.
+#    Time: 1820 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 51
+#                 1820  64662  57032  0  121694
+# ** Error: Assertion error.
+#    Time: 1830 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 55
+#                 1830  64662  57032  1  121695
+# ** Error: Assertion error.
+#    Time: 1840 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 42
+#                 1840  34626  29990  1   64617
+# ** Error: Assertion error.
+#    Time: 1850 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 46
+#                 1850  34626  29990  0   64616
+# ** Error: Assertion error.
+#    Time: 1860 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 51
+#                 1860  23097  43891  0   66988
+# ** Error: Assertion error.
+#    Time: 1870 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 55
+#                 1870  23097  43891  1   66989
+# ** Error: Assertion error.
+#    Time: 1880 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 42
+#                 1880  22447    436  1   22884
+# ** Error: Assertion error.
+#    Time: 1890 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 46
+#                 1890  22447    436  0   22883
+# ** Error: Assertion error.
+#    Time: 1900 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 51
+#                 1900   8551  24776  0   33327
+# ** Error: Assertion error.
+#    Time: 1910 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 55
+#                 1910   8551  24776  1   33328
+# ** Error: Assertion error.
+#    Time: 1920 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 42
+#                 1920  53227  13394  1   66622
+# ** Error: Assertion error.
+#    Time: 1930 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 46
+#                 1930  53227  13394  0   66621
+# ** Error: Assertion error.
+#    Time: 1940 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 51
+#                 1940  55690  38222  0   93912
+# ** Error: Assertion error.
+#    Time: 1950 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 55
+#                 1950  55690  38222  1   93913
+# ** Error: Assertion error.
+#    Time: 1960 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 42
+#                 1960  55340  32223  1   87564
+# ** Error: Assertion error.
+#    Time: 1970 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 46
+#                 1970  55340  32223  0   87563
+# ** Error: Assertion error.
+#    Time: 1980 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 51
+#                 1980   6855  19601  0   26456
+# ** Error: Assertion error.
+#    Time: 1990 ps  Scope: TestLPM3_testbench File: ./TestLPM3.sv Line: 55
+#                 1990   6855  19601  1   26457
+# ** Note: $stop    : ./TestLPM3.sv(58)
+#    Time: 2 ns  Iteration: 0  Instance: /TestLPM3_testbench
+# Break in Module TestLPM3_testbench at ./TestLPM3.sv line 58
+# 
+# End
+# End time: 11:19:14 on Apr 23,2018, Elapsed time: 0:12:13
+# Errors: 200, Warnings: 0

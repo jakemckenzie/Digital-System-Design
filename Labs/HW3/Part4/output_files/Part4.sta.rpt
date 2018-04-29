@@ -1,0 +1,1189 @@
+TimeQuest Timing Analyzer report for Part4
+Sat Apr 28 21:59:50 2018
+Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow 1200mV 85C Model Fmax Summary
+  6. Timing Closure Recommendations
+  7. Slow 1200mV 85C Model Setup Summary
+  8. Slow 1200mV 85C Model Hold Summary
+  9. Slow 1200mV 85C Model Recovery Summary
+ 10. Slow 1200mV 85C Model Removal Summary
+ 11. Slow 1200mV 85C Model Minimum Pulse Width Summary
+ 12. Slow 1200mV 85C Model Setup: 'CLOCK_50'
+ 13. Slow 1200mV 85C Model Hold: 'CLOCK_50'
+ 14. Slow 1200mV 85C Model Metastability Summary
+ 15. Slow 1200mV 0C Model Fmax Summary
+ 16. Slow 1200mV 0C Model Setup Summary
+ 17. Slow 1200mV 0C Model Hold Summary
+ 18. Slow 1200mV 0C Model Recovery Summary
+ 19. Slow 1200mV 0C Model Removal Summary
+ 20. Slow 1200mV 0C Model Minimum Pulse Width Summary
+ 21. Slow 1200mV 0C Model Setup: 'CLOCK_50'
+ 22. Slow 1200mV 0C Model Hold: 'CLOCK_50'
+ 23. Slow 1200mV 0C Model Metastability Summary
+ 24. Fast 1200mV 0C Model Setup Summary
+ 25. Fast 1200mV 0C Model Hold Summary
+ 26. Fast 1200mV 0C Model Recovery Summary
+ 27. Fast 1200mV 0C Model Removal Summary
+ 28. Fast 1200mV 0C Model Minimum Pulse Width Summary
+ 29. Fast 1200mV 0C Model Setup: 'CLOCK_50'
+ 30. Fast 1200mV 0C Model Hold: 'CLOCK_50'
+ 31. Fast 1200mV 0C Model Metastability Summary
+ 32. Multicorner Timing Analysis Summary
+ 33. Board Trace Model Assignments
+ 34. Input Transition Times
+ 35. Signal Integrity Metrics (Slow 1200mv 0c Model)
+ 36. Signal Integrity Metrics (Slow 1200mv 85c Model)
+ 37. Signal Integrity Metrics (Fast 1200mv 0c Model)
+ 38. Setup Transfers
+ 39. Hold Transfers
+ 40. Report TCCS
+ 41. Report RSKM
+ 42. Unconstrained Paths Summary
+ 43. Clock Status Summary
+ 44. Unconstrained Output Ports
+ 45. Unconstrained Output Ports
+ 46. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-----------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                           ;
++-----------------------+-----------------------------------------------------+
+; Quartus Prime Version ; Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
+; Timing Analyzer       ; TimeQuest                                           ;
+; Revision Name         ; Part4                                               ;
+; Device Family         ; Cyclone IV E                                        ;
+; Device Name           ; EP4CE115F29C7                                       ;
+; Timing Models         ; Final                                               ;
+; Delay Model           ; Combined                                            ;
+; Rise/Fall Delays      ; Enabled                                             ;
++-----------------------+-----------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.01        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.2%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                               ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets      ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------+
+; CLOCK_50   ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { CLOCK_50 } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Fmax Summary                                                                        ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note                                                          ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; 259.27 MHz ; 250.0 MHz       ; CLOCK_50   ; limit due to minimum period restriction (max I/O toggle rate) ;
++------------+-----------------+------------+---------------------------------------------------------------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
+----------------------------------
+; Timing Closure Recommendations ;
+----------------------------------
+HTML report is unavailable in plain text report export.
+
+
++-------------------------------------+
+; Slow 1200mV 85C Model Setup Summary ;
++----------+--------+-----------------+
+; Clock    ; Slack  ; End Point TNS   ;
++----------+--------+-----------------+
+; CLOCK_50 ; -2.857 ; -76.029         ;
++----------+--------+-----------------+
+
+
++------------------------------------+
+; Slow 1200mV 85C Model Hold Summary ;
++----------+-------+-----------------+
+; Clock    ; Slack ; End Point TNS   ;
++----------+-------+-----------------+
+; CLOCK_50 ; 0.404 ; 0.000           ;
++----------+-------+-----------------+
+
+
+------------------------------------------
+; Slow 1200mV 85C Model Recovery Summary ;
+------------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Slow 1200mV 85C Model Removal Summary ;
+-----------------------------------------
+No paths to report.
+
+
++---------------------------------------------------+
+; Slow 1200mV 85C Model Minimum Pulse Width Summary ;
++----------+--------+-------------------------------+
+; Clock    ; Slack  ; End Point TNS                 ;
++----------+--------+-------------------------------+
+; CLOCK_50 ; -3.000 ; -41.550                       ;
++----------+--------+-------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Setup: 'CLOCK_50'                                                                                    ;
++--------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node            ; To Node              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
+; -2.857 ; cntFourBit:FBC|R[19] ; cntFourBit:FBC|R[24] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.509     ; 3.346      ;
+; -2.857 ; cntFourBit:FBC|R[19] ; cntFourBit:FBC|R[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.509     ; 3.346      ;
+; -2.857 ; cntFourBit:FBC|R[19] ; cntFourBit:FBC|R[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.509     ; 3.346      ;
+; -2.857 ; cntFourBit:FBC|R[19] ; cntFourBit:FBC|R[18] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.509     ; 3.346      ;
+; -2.857 ; cntFourBit:FBC|R[19] ; cntFourBit:FBC|R[17] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.509     ; 3.346      ;
+; -2.857 ; cntFourBit:FBC|R[19] ; cntFourBit:FBC|R[13] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.509     ; 3.346      ;
+; -2.857 ; cntFourBit:FBC|R[19] ; cntFourBit:FBC|R[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.509     ; 3.346      ;
+; -2.857 ; cntFourBit:FBC|R[19] ; cntFourBit:FBC|R[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.509     ; 3.346      ;
+; -2.801 ; cntFourBit:FBC|R[9]  ; cntFourBit:FBC|R[24] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.083     ; 3.716      ;
+; -2.801 ; cntFourBit:FBC|R[9]  ; cntFourBit:FBC|R[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.083     ; 3.716      ;
+; -2.801 ; cntFourBit:FBC|R[9]  ; cntFourBit:FBC|R[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.083     ; 3.716      ;
+; -2.801 ; cntFourBit:FBC|R[9]  ; cntFourBit:FBC|R[18] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.083     ; 3.716      ;
+; -2.801 ; cntFourBit:FBC|R[9]  ; cntFourBit:FBC|R[17] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.083     ; 3.716      ;
+; -2.801 ; cntFourBit:FBC|R[9]  ; cntFourBit:FBC|R[13] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.083     ; 3.716      ;
+; -2.801 ; cntFourBit:FBC|R[9]  ; cntFourBit:FBC|R[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.083     ; 3.716      ;
+; -2.801 ; cntFourBit:FBC|R[9]  ; cntFourBit:FBC|R[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.083     ; 3.716      ;
+; -2.801 ; cntFourBit:FBC|R[22] ; cntFourBit:FBC|R[24] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.509     ; 3.290      ;
+; -2.801 ; cntFourBit:FBC|R[22] ; cntFourBit:FBC|R[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.509     ; 3.290      ;
+; -2.801 ; cntFourBit:FBC|R[22] ; cntFourBit:FBC|R[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.509     ; 3.290      ;
+; -2.801 ; cntFourBit:FBC|R[22] ; cntFourBit:FBC|R[18] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.509     ; 3.290      ;
+; -2.801 ; cntFourBit:FBC|R[22] ; cntFourBit:FBC|R[17] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.509     ; 3.290      ;
+; -2.801 ; cntFourBit:FBC|R[22] ; cntFourBit:FBC|R[13] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.509     ; 3.290      ;
+; -2.801 ; cntFourBit:FBC|R[22] ; cntFourBit:FBC|R[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.509     ; 3.290      ;
+; -2.801 ; cntFourBit:FBC|R[22] ; cntFourBit:FBC|R[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.509     ; 3.290      ;
+; -2.753 ; cntFourBit:FBC|R[23] ; cntFourBit:FBC|R[24] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.509     ; 3.242      ;
+; -2.753 ; cntFourBit:FBC|R[23] ; cntFourBit:FBC|R[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.509     ; 3.242      ;
+; -2.753 ; cntFourBit:FBC|R[23] ; cntFourBit:FBC|R[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.509     ; 3.242      ;
+; -2.753 ; cntFourBit:FBC|R[23] ; cntFourBit:FBC|R[18] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.509     ; 3.242      ;
+; -2.753 ; cntFourBit:FBC|R[23] ; cntFourBit:FBC|R[17] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.509     ; 3.242      ;
+; -2.753 ; cntFourBit:FBC|R[23] ; cntFourBit:FBC|R[13] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.509     ; 3.242      ;
+; -2.753 ; cntFourBit:FBC|R[23] ; cntFourBit:FBC|R[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.509     ; 3.242      ;
+; -2.753 ; cntFourBit:FBC|R[23] ; cntFourBit:FBC|R[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.509     ; 3.242      ;
+; -2.741 ; cntFourBit:FBC|R[16] ; cntFourBit:FBC|R[24] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.509     ; 3.230      ;
+; -2.741 ; cntFourBit:FBC|R[16] ; cntFourBit:FBC|R[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.509     ; 3.230      ;
+; -2.741 ; cntFourBit:FBC|R[16] ; cntFourBit:FBC|R[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.509     ; 3.230      ;
+; -2.741 ; cntFourBit:FBC|R[16] ; cntFourBit:FBC|R[18] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.509     ; 3.230      ;
+; -2.741 ; cntFourBit:FBC|R[16] ; cntFourBit:FBC|R[17] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.509     ; 3.230      ;
+; -2.741 ; cntFourBit:FBC|R[16] ; cntFourBit:FBC|R[13] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.509     ; 3.230      ;
+; -2.741 ; cntFourBit:FBC|R[16] ; cntFourBit:FBC|R[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.509     ; 3.230      ;
+; -2.741 ; cntFourBit:FBC|R[16] ; cntFourBit:FBC|R[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.509     ; 3.230      ;
+; -2.713 ; cntFourBit:FBC|R[19] ; cntFourBit:FBC|Q[0]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.504     ; 3.207      ;
+; -2.713 ; cntFourBit:FBC|R[19] ; cntFourBit:FBC|Q[3]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.504     ; 3.207      ;
+; -2.713 ; cntFourBit:FBC|R[19] ; cntFourBit:FBC|Q[2]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.504     ; 3.207      ;
+; -2.713 ; cntFourBit:FBC|R[19] ; cntFourBit:FBC|Q[1]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.504     ; 3.207      ;
+; -2.691 ; cntFourBit:FBC|R[18] ; cntFourBit:FBC|R[24] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 3.611      ;
+; -2.691 ; cntFourBit:FBC|R[18] ; cntFourBit:FBC|R[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 3.611      ;
+; -2.691 ; cntFourBit:FBC|R[18] ; cntFourBit:FBC|R[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 3.611      ;
+; -2.691 ; cntFourBit:FBC|R[18] ; cntFourBit:FBC|R[18] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 3.611      ;
+; -2.691 ; cntFourBit:FBC|R[18] ; cntFourBit:FBC|R[17] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 3.611      ;
+; -2.691 ; cntFourBit:FBC|R[18] ; cntFourBit:FBC|R[13] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 3.611      ;
+; -2.691 ; cntFourBit:FBC|R[18] ; cntFourBit:FBC|R[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 3.611      ;
+; -2.691 ; cntFourBit:FBC|R[18] ; cntFourBit:FBC|R[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 3.611      ;
+; -2.669 ; cntFourBit:FBC|R[17] ; cntFourBit:FBC|R[24] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 3.589      ;
+; -2.669 ; cntFourBit:FBC|R[17] ; cntFourBit:FBC|R[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 3.589      ;
+; -2.669 ; cntFourBit:FBC|R[17] ; cntFourBit:FBC|R[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 3.589      ;
+; -2.669 ; cntFourBit:FBC|R[17] ; cntFourBit:FBC|R[18] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 3.589      ;
+; -2.669 ; cntFourBit:FBC|R[17] ; cntFourBit:FBC|R[17] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 3.589      ;
+; -2.669 ; cntFourBit:FBC|R[17] ; cntFourBit:FBC|R[13] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 3.589      ;
+; -2.669 ; cntFourBit:FBC|R[17] ; cntFourBit:FBC|R[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 3.589      ;
+; -2.669 ; cntFourBit:FBC|R[17] ; cntFourBit:FBC|R[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 3.589      ;
+; -2.657 ; cntFourBit:FBC|R[22] ; cntFourBit:FBC|Q[0]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.504     ; 3.151      ;
+; -2.657 ; cntFourBit:FBC|R[22] ; cntFourBit:FBC|Q[3]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.504     ; 3.151      ;
+; -2.657 ; cntFourBit:FBC|R[22] ; cntFourBit:FBC|Q[2]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.504     ; 3.151      ;
+; -2.657 ; cntFourBit:FBC|R[22] ; cntFourBit:FBC|Q[1]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.504     ; 3.151      ;
+; -2.656 ; cntFourBit:FBC|R[15] ; cntFourBit:FBC|R[24] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 3.576      ;
+; -2.656 ; cntFourBit:FBC|R[15] ; cntFourBit:FBC|R[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 3.576      ;
+; -2.656 ; cntFourBit:FBC|R[15] ; cntFourBit:FBC|R[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 3.576      ;
+; -2.656 ; cntFourBit:FBC|R[15] ; cntFourBit:FBC|R[18] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 3.576      ;
+; -2.656 ; cntFourBit:FBC|R[15] ; cntFourBit:FBC|R[17] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 3.576      ;
+; -2.656 ; cntFourBit:FBC|R[15] ; cntFourBit:FBC|R[13] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 3.576      ;
+; -2.656 ; cntFourBit:FBC|R[15] ; cntFourBit:FBC|R[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 3.576      ;
+; -2.656 ; cntFourBit:FBC|R[15] ; cntFourBit:FBC|R[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 3.576      ;
+; -2.650 ; cntFourBit:FBC|R[9]  ; cntFourBit:FBC|Q[0]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 3.570      ;
+; -2.650 ; cntFourBit:FBC|R[9]  ; cntFourBit:FBC|Q[3]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 3.570      ;
+; -2.650 ; cntFourBit:FBC|R[9]  ; cntFourBit:FBC|Q[2]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 3.570      ;
+; -2.650 ; cntFourBit:FBC|R[9]  ; cntFourBit:FBC|Q[1]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 3.570      ;
+; -2.628 ; cntFourBit:FBC|R[8]  ; cntFourBit:FBC|R[24] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.083     ; 3.543      ;
+; -2.628 ; cntFourBit:FBC|R[8]  ; cntFourBit:FBC|R[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.083     ; 3.543      ;
+; -2.628 ; cntFourBit:FBC|R[8]  ; cntFourBit:FBC|R[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.083     ; 3.543      ;
+; -2.628 ; cntFourBit:FBC|R[8]  ; cntFourBit:FBC|R[18] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.083     ; 3.543      ;
+; -2.628 ; cntFourBit:FBC|R[8]  ; cntFourBit:FBC|R[17] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.083     ; 3.543      ;
+; -2.628 ; cntFourBit:FBC|R[8]  ; cntFourBit:FBC|R[13] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.083     ; 3.543      ;
+; -2.628 ; cntFourBit:FBC|R[8]  ; cntFourBit:FBC|R[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.083     ; 3.543      ;
+; -2.628 ; cntFourBit:FBC|R[8]  ; cntFourBit:FBC|R[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.083     ; 3.543      ;
+; -2.609 ; cntFourBit:FBC|R[23] ; cntFourBit:FBC|Q[0]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.504     ; 3.103      ;
+; -2.609 ; cntFourBit:FBC|R[23] ; cntFourBit:FBC|Q[3]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.504     ; 3.103      ;
+; -2.609 ; cntFourBit:FBC|R[23] ; cntFourBit:FBC|Q[2]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.504     ; 3.103      ;
+; -2.609 ; cntFourBit:FBC|R[23] ; cntFourBit:FBC|Q[1]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.504     ; 3.103      ;
+; -2.597 ; cntFourBit:FBC|R[16] ; cntFourBit:FBC|Q[0]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.504     ; 3.091      ;
+; -2.597 ; cntFourBit:FBC|R[16] ; cntFourBit:FBC|Q[3]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.504     ; 3.091      ;
+; -2.597 ; cntFourBit:FBC|R[16] ; cntFourBit:FBC|Q[2]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.504     ; 3.091      ;
+; -2.597 ; cntFourBit:FBC|R[16] ; cntFourBit:FBC|Q[1]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.504     ; 3.091      ;
+; -2.547 ; cntFourBit:FBC|R[18] ; cntFourBit:FBC|Q[0]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.073     ; 3.472      ;
+; -2.547 ; cntFourBit:FBC|R[18] ; cntFourBit:FBC|Q[3]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.073     ; 3.472      ;
+; -2.547 ; cntFourBit:FBC|R[18] ; cntFourBit:FBC|Q[2]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.073     ; 3.472      ;
+; -2.547 ; cntFourBit:FBC|R[18] ; cntFourBit:FBC|Q[1]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.073     ; 3.472      ;
+; -2.542 ; cntFourBit:FBC|R[20] ; cntFourBit:FBC|R[24] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 3.462      ;
+; -2.542 ; cntFourBit:FBC|R[20] ; cntFourBit:FBC|R[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 3.462      ;
+; -2.542 ; cntFourBit:FBC|R[20] ; cntFourBit:FBC|R[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 3.462      ;
+; -2.542 ; cntFourBit:FBC|R[20] ; cntFourBit:FBC|R[18] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 3.462      ;
++--------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Hold: 'CLOCK_50'                                                                                    ;
++-------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node            ; To Node              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
+; 0.404 ; cntFourBit:FBC|Q[3]  ; cntFourBit:FBC|Q[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.669      ;
+; 0.404 ; cntFourBit:FBC|Q[2]  ; cntFourBit:FBC|Q[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.669      ;
+; 0.404 ; cntFourBit:FBC|Q[1]  ; cntFourBit:FBC|Q[1]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.669      ;
+; 0.409 ; cntFourBit:FBC|Q[0]  ; cntFourBit:FBC|Q[0]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.674      ;
+; 0.426 ; cntFourBit:FBC|R[25] ; cntFourBit:FBC|R[25] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.096      ; 0.708      ;
+; 0.480 ; cntFourBit:FBC|Q[2]  ; cntFourBit:FBC|Q[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.745      ;
+; 0.490 ; cntFourBit:FBC|Q[0]  ; cntFourBit:FBC|Q[1]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.755      ;
+; 0.491 ; cntFourBit:FBC|Q[1]  ; cntFourBit:FBC|Q[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.756      ;
+; 0.491 ; cntFourBit:FBC|Q[1]  ; cntFourBit:FBC|Q[0]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.756      ;
+; 0.525 ; cntFourBit:FBC|R[5]  ; cntFourBit:FBC|R[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.509      ; 1.220      ;
+; 0.543 ; cntFourBit:FBC|R[4]  ; cntFourBit:FBC|R[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.509      ; 1.238      ;
+; 0.546 ; cntFourBit:FBC|R[15] ; cntFourBit:FBC|R[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.509      ; 1.241      ;
+; 0.548 ; cntFourBit:FBC|R[21] ; cntFourBit:FBC|R[22] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.509      ; 1.243      ;
+; 0.555 ; cntFourBit:FBC|R[10] ; cntFourBit:FBC|R[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.509      ; 1.250      ;
+; 0.563 ; cntFourBit:FBC|R[14] ; cntFourBit:FBC|R[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.509      ; 1.258      ;
+; 0.623 ; cntFourBit:FBC|R[6]  ; cntFourBit:FBC|R[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.096      ; 0.905      ;
+; 0.633 ; cntFourBit:FBC|R[22] ; cntFourBit:FBC|R[22] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.096      ; 0.915      ;
+; 0.635 ; cntFourBit:FBC|R[3]  ; cntFourBit:FBC|R[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.900      ;
+; 0.637 ; cntFourBit:FBC|R[1]  ; cntFourBit:FBC|R[1]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.902      ;
+; 0.637 ; cntFourBit:FBC|R[2]  ; cntFourBit:FBC|R[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.902      ;
+; 0.638 ; cntFourBit:FBC|R[5]  ; cntFourBit:FBC|R[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.903      ;
+; 0.641 ; cntFourBit:FBC|R[4]  ; cntFourBit:FBC|R[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.906      ;
+; 0.641 ; cntFourBit:FBC|R[11] ; cntFourBit:FBC|R[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.096      ; 0.923      ;
+; 0.643 ; cntFourBit:FBC|R[12] ; cntFourBit:FBC|R[12] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.908      ;
+; 0.644 ; cntFourBit:FBC|R[23] ; cntFourBit:FBC|R[23] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.096      ; 0.926      ;
+; 0.649 ; cntFourBit:FBC|R[3]  ; cntFourBit:FBC|R[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.509      ; 1.344      ;
+; 0.655 ; cntFourBit:FBC|R[0]  ; cntFourBit:FBC|R[0]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.920      ;
+; 0.658 ; cntFourBit:FBC|R[10] ; cntFourBit:FBC|R[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.923      ;
+; 0.659 ; cntFourBit:FBC|R[7]  ; cntFourBit:FBC|R[7]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.924      ;
+; 0.659 ; cntFourBit:FBC|R[8]  ; cntFourBit:FBC|R[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.924      ;
+; 0.659 ; cntFourBit:FBC|R[9]  ; cntFourBit:FBC|R[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.924      ;
+; 0.659 ; cntFourBit:FBC|R[13] ; cntFourBit:FBC|R[13] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.078      ; 0.923      ;
+; 0.660 ; cntFourBit:FBC|R[15] ; cntFourBit:FBC|R[15] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.078      ; 0.924      ;
+; 0.662 ; cntFourBit:FBC|R[21] ; cntFourBit:FBC|R[21] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.078      ; 0.926      ;
+; 0.662 ; cntFourBit:FBC|R[14] ; cntFourBit:FBC|R[14] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.078      ; 0.926      ;
+; 0.665 ; cntFourBit:FBC|R[2]  ; cntFourBit:FBC|R[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.509      ; 1.360      ;
+; 0.667 ; cntFourBit:FBC|R[9]  ; cntFourBit:FBC|R[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.509      ; 1.362      ;
+; 0.669 ; cntFourBit:FBC|R[21] ; cntFourBit:FBC|R[23] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.509      ; 1.364      ;
+; 0.671 ; cntFourBit:FBC|R[13] ; cntFourBit:FBC|R[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.509      ; 1.366      ;
+; 0.675 ; cntFourBit:FBC|R[12] ; cntFourBit:FBC|R[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.505      ; 1.366      ;
+; 0.682 ; cntFourBit:FBC|R[8]  ; cntFourBit:FBC|R[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.509      ; 1.377      ;
+; 0.708 ; cntFourBit:FBC|Q[1]  ; cntFourBit:FBC|Q[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.973      ;
+; 0.708 ; cntFourBit:FBC|Q[0]  ; cntFourBit:FBC|Q[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.973      ;
+; 0.725 ; cntFourBit:FBC|Q[0]  ; cntFourBit:FBC|Q[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.990      ;
+; 0.727 ; cntFourBit:FBC|R[18] ; cntFourBit:FBC|R[19] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.509      ; 1.422      ;
+; 0.727 ; cntFourBit:FBC|Q[3]  ; cntFourBit:FBC|Q[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.992      ;
+; 0.729 ; cntFourBit:FBC|R[20] ; cntFourBit:FBC|R[22] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.509      ; 1.424      ;
+; 0.736 ; cntFourBit:FBC|Q[3]  ; cntFourBit:FBC|Q[0]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 1.001      ;
+; 0.739 ; cntFourBit:FBC|Q[3]  ; cntFourBit:FBC|Q[1]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 1.004      ;
+; 0.776 ; cntFourBit:FBC|R[1]  ; cntFourBit:FBC|R[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.509      ; 1.471      ;
+; 0.790 ; cntFourBit:FBC|R[0]  ; cntFourBit:FBC|R[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.509      ; 1.485      ;
+; 0.793 ; cntFourBit:FBC|R[7]  ; cntFourBit:FBC|R[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.509      ; 1.488      ;
+; 0.793 ; cntFourBit:FBC|R[15] ; cntFourBit:FBC|R[19] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.509      ; 1.488      ;
+; 0.795 ; cntFourBit:FBC|R[21] ; cntFourBit:FBC|R[25] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.509      ; 1.490      ;
+; 0.803 ; cntFourBit:FBC|R[19] ; cntFourBit:FBC|R[19] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.096      ; 1.085      ;
+; 0.806 ; cntFourBit:FBC|Q[2]  ; cntFourBit:FBC|Q[0]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 1.071      ;
+; 0.810 ; cntFourBit:FBC|R[14] ; cntFourBit:FBC|R[19] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.509      ; 1.505      ;
+; 0.813 ; cntFourBit:FBC|R[16] ; cntFourBit:FBC|R[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.096      ; 1.095      ;
+; 0.816 ; cntFourBit:FBC|R[10] ; cntFourBit:FBC|R[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.505      ; 1.507      ;
+; 0.817 ; cntFourBit:FBC|R[17] ; cntFourBit:FBC|R[17] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.078      ; 1.081      ;
+; 0.820 ; cntFourBit:FBC|R[17] ; cntFourBit:FBC|R[19] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.509      ; 1.515      ;
+; 0.828 ; cntFourBit:FBC|R[20] ; cntFourBit:FBC|R[20] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.078      ; 1.092      ;
+; 0.832 ; cntFourBit:FBC|R[18] ; cntFourBit:FBC|R[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.078      ; 1.096      ;
+; 0.850 ; cntFourBit:FBC|R[20] ; cntFourBit:FBC|R[23] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.509      ; 1.545      ;
+; 0.859 ; cntFourBit:FBC|R[18] ; cntFourBit:FBC|R[22] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.509      ; 1.554      ;
+; 0.898 ; cntFourBit:FBC|R[5]  ; cntFourBit:FBC|R[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.509      ; 1.593      ;
+; 0.916 ; cntFourBit:FBC|R[4]  ; cntFourBit:FBC|R[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.509      ; 1.611      ;
+; 0.918 ; cntFourBit:FBC|R[13] ; cntFourBit:FBC|R[19] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.509      ; 1.613      ;
+; 0.922 ; cntFourBit:FBC|R[12] ; cntFourBit:FBC|R[19] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.505      ; 1.613      ;
+; 0.924 ; cntFourBit:FBC|R[15] ; cntFourBit:FBC|R[22] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.509      ; 1.619      ;
+; 0.928 ; cntFourBit:FBC|R[9]  ; cntFourBit:FBC|R[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.505      ; 1.619      ;
+; 0.934 ; cntFourBit:FBC|R[24] ; cntFourBit:FBC|R[25] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.509      ; 1.629      ;
+; 0.941 ; cntFourBit:FBC|R[14] ; cntFourBit:FBC|R[22] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.509      ; 1.636      ;
+; 0.943 ; cntFourBit:FBC|R[8]  ; cntFourBit:FBC|R[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.505      ; 1.634      ;
+; 0.953 ; cntFourBit:FBC|R[3]  ; cntFourBit:FBC|R[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 1.218      ;
+; 0.954 ; cntFourBit:FBC|R[1]  ; cntFourBit:FBC|R[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 1.219      ;
+; 0.956 ; cntFourBit:FBC|R[17] ; cntFourBit:FBC|R[22] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.509      ; 1.651      ;
+; 0.960 ; cntFourBit:FBC|R[22] ; cntFourBit:FBC|R[23] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.096      ; 1.242      ;
+; 0.963 ; cntFourBit:FBC|R[0]  ; cntFourBit:FBC|R[1]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 1.228      ;
+; 0.964 ; cntFourBit:FBC|R[2]  ; cntFourBit:FBC|R[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 1.229      ;
+; 0.968 ; cntFourBit:FBC|R[4]  ; cntFourBit:FBC|R[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 1.233      ;
+; 0.968 ; cntFourBit:FBC|R[0]  ; cntFourBit:FBC|R[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 1.233      ;
+; 0.969 ; cntFourBit:FBC|R[2]  ; cntFourBit:FBC|R[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 1.234      ;
+; 0.975 ; cntFourBit:FBC|R[12] ; cntFourBit:FBC|R[13] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.074      ; 1.235      ;
+; 0.976 ; cntFourBit:FBC|R[9]  ; cntFourBit:FBC|R[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 1.241      ;
+; 0.976 ; cntFourBit:FBC|R[7]  ; cntFourBit:FBC|R[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 1.241      ;
+; 0.976 ; cntFourBit:FBC|R[13] ; cntFourBit:FBC|R[14] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.078      ; 1.240      ;
+; 0.976 ; cntFourBit:FBC|R[20] ; cntFourBit:FBC|R[25] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.509      ; 1.671      ;
+; 0.979 ; cntFourBit:FBC|R[18] ; cntFourBit:FBC|R[23] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.509      ; 1.674      ;
+; 0.980 ; cntFourBit:FBC|R[12] ; cntFourBit:FBC|R[14] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.074      ; 1.240      ;
+; 0.986 ; cntFourBit:FBC|R[8]  ; cntFourBit:FBC|R[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 1.251      ;
+; 0.989 ; cntFourBit:FBC|R[14] ; cntFourBit:FBC|R[15] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.078      ; 1.253      ;
+; 0.990 ; cntFourBit:FBC|R[10] ; cntFourBit:FBC|R[12] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 1.255      ;
+; 0.991 ; cntFourBit:FBC|R[8]  ; cntFourBit:FBC|R[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 1.256      ;
+; 1.022 ; cntFourBit:FBC|R[3]  ; cntFourBit:FBC|R[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.509      ; 1.717      ;
+; 1.038 ; cntFourBit:FBC|R[24] ; cntFourBit:FBC|R[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.078      ; 1.302      ;
+; 1.038 ; cntFourBit:FBC|R[2]  ; cntFourBit:FBC|R[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.509      ; 1.733      ;
+; 1.045 ; cntFourBit:FBC|R[15] ; cntFourBit:FBC|R[23] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.509      ; 1.740      ;
+; 1.049 ; cntFourBit:FBC|R[13] ; cntFourBit:FBC|R[22] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.509      ; 1.744      ;
+; 1.053 ; cntFourBit:FBC|R[12] ; cntFourBit:FBC|R[22] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.505      ; 1.744      ;
++-------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
+
+
+-----------------------------------------------
+; Slow 1200mV 85C Model Metastability Summary ;
+-----------------------------------------------
+No synchronizer chains to report.
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Fmax Summary                                                                         ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note                                                          ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; 282.81 MHz ; 250.0 MHz       ; CLOCK_50   ; limit due to minimum period restriction (max I/O toggle rate) ;
++------------+-----------------+------------+---------------------------------------------------------------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++------------------------------------+
+; Slow 1200mV 0C Model Setup Summary ;
++----------+--------+----------------+
+; Clock    ; Slack  ; End Point TNS  ;
++----------+--------+----------------+
+; CLOCK_50 ; -2.536 ; -67.355        ;
++----------+--------+----------------+
+
+
++-----------------------------------+
+; Slow 1200mV 0C Model Hold Summary ;
++----------+-------+----------------+
+; Clock    ; Slack ; End Point TNS  ;
++----------+-------+----------------+
+; CLOCK_50 ; 0.355 ; 0.000          ;
++----------+-------+----------------+
+
+
+-----------------------------------------
+; Slow 1200mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Slow 1200mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
++--------------------------------------------------+
+; Slow 1200mV 0C Model Minimum Pulse Width Summary ;
++----------+--------+------------------------------+
+; Clock    ; Slack  ; End Point TNS                ;
++----------+--------+------------------------------+
+; CLOCK_50 ; -3.000 ; -41.550                      ;
++----------+--------+------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Setup: 'CLOCK_50'                                                                                     ;
++--------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node            ; To Node              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
+; -2.536 ; cntFourBit:FBC|R[19] ; cntFourBit:FBC|R[24] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.466     ; 3.069      ;
+; -2.536 ; cntFourBit:FBC|R[19] ; cntFourBit:FBC|R[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.466     ; 3.069      ;
+; -2.536 ; cntFourBit:FBC|R[19] ; cntFourBit:FBC|R[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.466     ; 3.069      ;
+; -2.536 ; cntFourBit:FBC|R[19] ; cntFourBit:FBC|R[18] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.466     ; 3.069      ;
+; -2.536 ; cntFourBit:FBC|R[19] ; cntFourBit:FBC|R[17] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.466     ; 3.069      ;
+; -2.536 ; cntFourBit:FBC|R[19] ; cntFourBit:FBC|R[13] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.466     ; 3.069      ;
+; -2.536 ; cntFourBit:FBC|R[19] ; cntFourBit:FBC|R[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.466     ; 3.069      ;
+; -2.536 ; cntFourBit:FBC|R[19] ; cntFourBit:FBC|R[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.466     ; 3.069      ;
+; -2.517 ; cntFourBit:FBC|R[9]  ; cntFourBit:FBC|R[24] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.076     ; 3.440      ;
+; -2.517 ; cntFourBit:FBC|R[9]  ; cntFourBit:FBC|R[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.076     ; 3.440      ;
+; -2.517 ; cntFourBit:FBC|R[9]  ; cntFourBit:FBC|R[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.076     ; 3.440      ;
+; -2.517 ; cntFourBit:FBC|R[9]  ; cntFourBit:FBC|R[18] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.076     ; 3.440      ;
+; -2.517 ; cntFourBit:FBC|R[9]  ; cntFourBit:FBC|R[17] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.076     ; 3.440      ;
+; -2.517 ; cntFourBit:FBC|R[9]  ; cntFourBit:FBC|R[13] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.076     ; 3.440      ;
+; -2.517 ; cntFourBit:FBC|R[9]  ; cntFourBit:FBC|R[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.076     ; 3.440      ;
+; -2.517 ; cntFourBit:FBC|R[9]  ; cntFourBit:FBC|R[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.076     ; 3.440      ;
+; -2.474 ; cntFourBit:FBC|R[22] ; cntFourBit:FBC|R[24] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.466     ; 3.007      ;
+; -2.474 ; cntFourBit:FBC|R[22] ; cntFourBit:FBC|R[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.466     ; 3.007      ;
+; -2.474 ; cntFourBit:FBC|R[22] ; cntFourBit:FBC|R[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.466     ; 3.007      ;
+; -2.474 ; cntFourBit:FBC|R[22] ; cntFourBit:FBC|R[18] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.466     ; 3.007      ;
+; -2.474 ; cntFourBit:FBC|R[22] ; cntFourBit:FBC|R[17] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.466     ; 3.007      ;
+; -2.474 ; cntFourBit:FBC|R[22] ; cntFourBit:FBC|R[13] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.466     ; 3.007      ;
+; -2.474 ; cntFourBit:FBC|R[22] ; cntFourBit:FBC|R[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.466     ; 3.007      ;
+; -2.474 ; cntFourBit:FBC|R[22] ; cntFourBit:FBC|R[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.466     ; 3.007      ;
+; -2.435 ; cntFourBit:FBC|R[23] ; cntFourBit:FBC|R[24] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.466     ; 2.968      ;
+; -2.435 ; cntFourBit:FBC|R[23] ; cntFourBit:FBC|R[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.466     ; 2.968      ;
+; -2.435 ; cntFourBit:FBC|R[23] ; cntFourBit:FBC|R[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.466     ; 2.968      ;
+; -2.435 ; cntFourBit:FBC|R[23] ; cntFourBit:FBC|R[18] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.466     ; 2.968      ;
+; -2.435 ; cntFourBit:FBC|R[23] ; cntFourBit:FBC|R[17] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.466     ; 2.968      ;
+; -2.435 ; cntFourBit:FBC|R[23] ; cntFourBit:FBC|R[13] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.466     ; 2.968      ;
+; -2.435 ; cntFourBit:FBC|R[23] ; cntFourBit:FBC|R[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.466     ; 2.968      ;
+; -2.435 ; cntFourBit:FBC|R[23] ; cntFourBit:FBC|R[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.466     ; 2.968      ;
+; -2.433 ; cntFourBit:FBC|R[16] ; cntFourBit:FBC|R[24] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.466     ; 2.966      ;
+; -2.433 ; cntFourBit:FBC|R[16] ; cntFourBit:FBC|R[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.466     ; 2.966      ;
+; -2.433 ; cntFourBit:FBC|R[16] ; cntFourBit:FBC|R[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.466     ; 2.966      ;
+; -2.433 ; cntFourBit:FBC|R[16] ; cntFourBit:FBC|R[18] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.466     ; 2.966      ;
+; -2.433 ; cntFourBit:FBC|R[16] ; cntFourBit:FBC|R[17] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.466     ; 2.966      ;
+; -2.433 ; cntFourBit:FBC|R[16] ; cntFourBit:FBC|R[13] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.466     ; 2.966      ;
+; -2.433 ; cntFourBit:FBC|R[16] ; cntFourBit:FBC|R[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.466     ; 2.966      ;
+; -2.433 ; cntFourBit:FBC|R[16] ; cntFourBit:FBC|R[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.466     ; 2.966      ;
+; -2.401 ; cntFourBit:FBC|R[19] ; cntFourBit:FBC|Q[0]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.460     ; 2.940      ;
+; -2.401 ; cntFourBit:FBC|R[19] ; cntFourBit:FBC|Q[3]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.460     ; 2.940      ;
+; -2.401 ; cntFourBit:FBC|R[19] ; cntFourBit:FBC|Q[2]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.460     ; 2.940      ;
+; -2.401 ; cntFourBit:FBC|R[19] ; cntFourBit:FBC|Q[1]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.460     ; 2.940      ;
+; -2.376 ; cntFourBit:FBC|R[18] ; cntFourBit:FBC|R[24] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 3.305      ;
+; -2.376 ; cntFourBit:FBC|R[18] ; cntFourBit:FBC|R[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 3.305      ;
+; -2.376 ; cntFourBit:FBC|R[18] ; cntFourBit:FBC|R[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 3.305      ;
+; -2.376 ; cntFourBit:FBC|R[18] ; cntFourBit:FBC|R[18] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 3.305      ;
+; -2.376 ; cntFourBit:FBC|R[18] ; cntFourBit:FBC|R[17] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 3.305      ;
+; -2.376 ; cntFourBit:FBC|R[18] ; cntFourBit:FBC|R[13] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 3.305      ;
+; -2.376 ; cntFourBit:FBC|R[18] ; cntFourBit:FBC|R[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 3.305      ;
+; -2.376 ; cntFourBit:FBC|R[18] ; cntFourBit:FBC|R[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 3.305      ;
+; -2.371 ; cntFourBit:FBC|R[9]  ; cntFourBit:FBC|Q[0]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 3.300      ;
+; -2.371 ; cntFourBit:FBC|R[9]  ; cntFourBit:FBC|Q[3]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 3.300      ;
+; -2.371 ; cntFourBit:FBC|R[9]  ; cntFourBit:FBC|Q[2]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 3.300      ;
+; -2.371 ; cntFourBit:FBC|R[9]  ; cntFourBit:FBC|Q[1]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 3.300      ;
+; -2.366 ; cntFourBit:FBC|R[15] ; cntFourBit:FBC|R[24] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 3.295      ;
+; -2.366 ; cntFourBit:FBC|R[15] ; cntFourBit:FBC|R[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 3.295      ;
+; -2.366 ; cntFourBit:FBC|R[15] ; cntFourBit:FBC|R[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 3.295      ;
+; -2.366 ; cntFourBit:FBC|R[15] ; cntFourBit:FBC|R[18] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 3.295      ;
+; -2.366 ; cntFourBit:FBC|R[15] ; cntFourBit:FBC|R[17] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 3.295      ;
+; -2.366 ; cntFourBit:FBC|R[15] ; cntFourBit:FBC|R[13] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 3.295      ;
+; -2.366 ; cntFourBit:FBC|R[15] ; cntFourBit:FBC|R[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 3.295      ;
+; -2.366 ; cntFourBit:FBC|R[15] ; cntFourBit:FBC|R[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 3.295      ;
+; -2.356 ; cntFourBit:FBC|R[17] ; cntFourBit:FBC|R[24] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 3.285      ;
+; -2.356 ; cntFourBit:FBC|R[17] ; cntFourBit:FBC|R[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 3.285      ;
+; -2.356 ; cntFourBit:FBC|R[17] ; cntFourBit:FBC|R[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 3.285      ;
+; -2.356 ; cntFourBit:FBC|R[17] ; cntFourBit:FBC|R[18] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 3.285      ;
+; -2.356 ; cntFourBit:FBC|R[17] ; cntFourBit:FBC|R[17] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 3.285      ;
+; -2.356 ; cntFourBit:FBC|R[17] ; cntFourBit:FBC|R[13] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 3.285      ;
+; -2.356 ; cntFourBit:FBC|R[17] ; cntFourBit:FBC|R[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 3.285      ;
+; -2.356 ; cntFourBit:FBC|R[17] ; cntFourBit:FBC|R[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 3.285      ;
+; -2.347 ; cntFourBit:FBC|R[8]  ; cntFourBit:FBC|R[24] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.076     ; 3.270      ;
+; -2.347 ; cntFourBit:FBC|R[8]  ; cntFourBit:FBC|R[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.076     ; 3.270      ;
+; -2.347 ; cntFourBit:FBC|R[8]  ; cntFourBit:FBC|R[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.076     ; 3.270      ;
+; -2.347 ; cntFourBit:FBC|R[8]  ; cntFourBit:FBC|R[18] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.076     ; 3.270      ;
+; -2.347 ; cntFourBit:FBC|R[8]  ; cntFourBit:FBC|R[17] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.076     ; 3.270      ;
+; -2.347 ; cntFourBit:FBC|R[8]  ; cntFourBit:FBC|R[13] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.076     ; 3.270      ;
+; -2.347 ; cntFourBit:FBC|R[8]  ; cntFourBit:FBC|R[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.076     ; 3.270      ;
+; -2.347 ; cntFourBit:FBC|R[8]  ; cntFourBit:FBC|R[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.076     ; 3.270      ;
+; -2.339 ; cntFourBit:FBC|R[22] ; cntFourBit:FBC|Q[0]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.460     ; 2.878      ;
+; -2.339 ; cntFourBit:FBC|R[22] ; cntFourBit:FBC|Q[3]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.460     ; 2.878      ;
+; -2.339 ; cntFourBit:FBC|R[22] ; cntFourBit:FBC|Q[2]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.460     ; 2.878      ;
+; -2.339 ; cntFourBit:FBC|R[22] ; cntFourBit:FBC|Q[1]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.460     ; 2.878      ;
+; -2.300 ; cntFourBit:FBC|R[23] ; cntFourBit:FBC|Q[0]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.460     ; 2.839      ;
+; -2.300 ; cntFourBit:FBC|R[23] ; cntFourBit:FBC|Q[3]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.460     ; 2.839      ;
+; -2.300 ; cntFourBit:FBC|R[23] ; cntFourBit:FBC|Q[2]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.460     ; 2.839      ;
+; -2.300 ; cntFourBit:FBC|R[23] ; cntFourBit:FBC|Q[1]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.460     ; 2.839      ;
+; -2.298 ; cntFourBit:FBC|R[16] ; cntFourBit:FBC|Q[0]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.460     ; 2.837      ;
+; -2.298 ; cntFourBit:FBC|R[16] ; cntFourBit:FBC|Q[3]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.460     ; 2.837      ;
+; -2.298 ; cntFourBit:FBC|R[16] ; cntFourBit:FBC|Q[2]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.460     ; 2.837      ;
+; -2.298 ; cntFourBit:FBC|R[16] ; cntFourBit:FBC|Q[1]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.460     ; 2.837      ;
+; -2.262 ; cntFourBit:FBC|R[14] ; cntFourBit:FBC|R[24] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 3.191      ;
+; -2.262 ; cntFourBit:FBC|R[14] ; cntFourBit:FBC|R[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 3.191      ;
+; -2.262 ; cntFourBit:FBC|R[14] ; cntFourBit:FBC|R[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 3.191      ;
+; -2.262 ; cntFourBit:FBC|R[14] ; cntFourBit:FBC|R[18] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 3.191      ;
+; -2.262 ; cntFourBit:FBC|R[14] ; cntFourBit:FBC|R[17] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 3.191      ;
+; -2.262 ; cntFourBit:FBC|R[14] ; cntFourBit:FBC|R[13] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 3.191      ;
+; -2.262 ; cntFourBit:FBC|R[14] ; cntFourBit:FBC|R[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 3.191      ;
+; -2.262 ; cntFourBit:FBC|R[14] ; cntFourBit:FBC|R[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 3.191      ;
++--------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Hold: 'CLOCK_50'                                                                                     ;
++-------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node            ; To Node              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
+; 0.355 ; cntFourBit:FBC|Q[3]  ; cntFourBit:FBC|Q[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.597      ;
+; 0.355 ; cntFourBit:FBC|Q[2]  ; cntFourBit:FBC|Q[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.597      ;
+; 0.355 ; cntFourBit:FBC|Q[1]  ; cntFourBit:FBC|Q[1]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.597      ;
+; 0.366 ; cntFourBit:FBC|Q[0]  ; cntFourBit:FBC|Q[0]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.608      ;
+; 0.386 ; cntFourBit:FBC|R[25] ; cntFourBit:FBC|R[25] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.086      ; 0.643      ;
+; 0.432 ; cntFourBit:FBC|Q[2]  ; cntFourBit:FBC|Q[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.674      ;
+; 0.442 ; cntFourBit:FBC|Q[0]  ; cntFourBit:FBC|Q[1]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.684      ;
+; 0.451 ; cntFourBit:FBC|Q[1]  ; cntFourBit:FBC|Q[0]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.693      ;
+; 0.452 ; cntFourBit:FBC|Q[1]  ; cntFourBit:FBC|Q[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.694      ;
+; 0.475 ; cntFourBit:FBC|R[5]  ; cntFourBit:FBC|R[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.467      ; 1.113      ;
+; 0.489 ; cntFourBit:FBC|R[4]  ; cntFourBit:FBC|R[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.467      ; 1.127      ;
+; 0.492 ; cntFourBit:FBC|R[10] ; cntFourBit:FBC|R[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.467      ; 1.130      ;
+; 0.495 ; cntFourBit:FBC|R[15] ; cntFourBit:FBC|R[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.466      ; 1.132      ;
+; 0.497 ; cntFourBit:FBC|R[21] ; cntFourBit:FBC|R[22] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.466      ; 1.134      ;
+; 0.509 ; cntFourBit:FBC|R[14] ; cntFourBit:FBC|R[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.466      ; 1.146      ;
+; 0.570 ; cntFourBit:FBC|R[6]  ; cntFourBit:FBC|R[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.087      ; 0.828      ;
+; 0.579 ; cntFourBit:FBC|R[22] ; cntFourBit:FBC|R[22] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.086      ; 0.836      ;
+; 0.580 ; cntFourBit:FBC|R[3]  ; cntFourBit:FBC|R[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.822      ;
+; 0.580 ; cntFourBit:FBC|R[3]  ; cntFourBit:FBC|R[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.467      ; 1.218      ;
+; 0.581 ; cntFourBit:FBC|R[2]  ; cntFourBit:FBC|R[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.823      ;
+; 0.583 ; cntFourBit:FBC|R[1]  ; cntFourBit:FBC|R[1]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.825      ;
+; 0.584 ; cntFourBit:FBC|R[5]  ; cntFourBit:FBC|R[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.826      ;
+; 0.586 ; cntFourBit:FBC|R[4]  ; cntFourBit:FBC|R[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.828      ;
+; 0.586 ; cntFourBit:FBC|R[11] ; cntFourBit:FBC|R[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.087      ; 0.844      ;
+; 0.587 ; cntFourBit:FBC|R[12] ; cntFourBit:FBC|R[12] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.829      ;
+; 0.590 ; cntFourBit:FBC|R[23] ; cntFourBit:FBC|R[23] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.086      ; 0.847      ;
+; 0.593 ; cntFourBit:FBC|R[9]  ; cntFourBit:FBC|R[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.467      ; 1.231      ;
+; 0.594 ; cntFourBit:FBC|R[2]  ; cntFourBit:FBC|R[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.467      ; 1.232      ;
+; 0.596 ; cntFourBit:FBC|R[21] ; cntFourBit:FBC|R[23] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.466      ; 1.233      ;
+; 0.599 ; cntFourBit:FBC|R[0]  ; cntFourBit:FBC|R[0]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.841      ;
+; 0.600 ; cntFourBit:FBC|R[10] ; cntFourBit:FBC|R[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.842      ;
+; 0.601 ; cntFourBit:FBC|R[8]  ; cntFourBit:FBC|R[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.843      ;
+; 0.603 ; cntFourBit:FBC|R[7]  ; cntFourBit:FBC|R[7]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.845      ;
+; 0.603 ; cntFourBit:FBC|R[9]  ; cntFourBit:FBC|R[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.845      ;
+; 0.603 ; cntFourBit:FBC|R[13] ; cntFourBit:FBC|R[13] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.070      ; 0.844      ;
+; 0.603 ; cntFourBit:FBC|R[8]  ; cntFourBit:FBC|R[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.467      ; 1.241      ;
+; 0.604 ; cntFourBit:FBC|R[15] ; cntFourBit:FBC|R[15] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.070      ; 0.845      ;
+; 0.604 ; cntFourBit:FBC|R[13] ; cntFourBit:FBC|R[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.466      ; 1.241      ;
+; 0.606 ; cntFourBit:FBC|R[21] ; cntFourBit:FBC|R[21] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.070      ; 0.847      ;
+; 0.606 ; cntFourBit:FBC|R[14] ; cntFourBit:FBC|R[14] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.070      ; 0.847      ;
+; 0.606 ; cntFourBit:FBC|R[12] ; cntFourBit:FBC|R[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.461      ; 1.238      ;
+; 0.637 ; cntFourBit:FBC|R[18] ; cntFourBit:FBC|R[19] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.466      ; 1.274      ;
+; 0.646 ; cntFourBit:FBC|Q[0]  ; cntFourBit:FBC|Q[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.888      ;
+; 0.654 ; cntFourBit:FBC|Q[1]  ; cntFourBit:FBC|Q[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.896      ;
+; 0.663 ; cntFourBit:FBC|Q[0]  ; cntFourBit:FBC|Q[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.905      ;
+; 0.665 ; cntFourBit:FBC|Q[3]  ; cntFourBit:FBC|Q[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.907      ;
+; 0.669 ; cntFourBit:FBC|R[20] ; cntFourBit:FBC|R[22] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.466      ; 1.306      ;
+; 0.672 ; cntFourBit:FBC|Q[3]  ; cntFourBit:FBC|Q[0]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.914      ;
+; 0.676 ; cntFourBit:FBC|Q[3]  ; cntFourBit:FBC|Q[1]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.918      ;
+; 0.694 ; cntFourBit:FBC|R[1]  ; cntFourBit:FBC|R[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.467      ; 1.332      ;
+; 0.703 ; cntFourBit:FBC|R[7]  ; cntFourBit:FBC|R[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.467      ; 1.341      ;
+; 0.703 ; cntFourBit:FBC|R[0]  ; cntFourBit:FBC|R[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.467      ; 1.341      ;
+; 0.704 ; cntFourBit:FBC|R[15] ; cntFourBit:FBC|R[19] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.466      ; 1.341      ;
+; 0.706 ; cntFourBit:FBC|R[21] ; cntFourBit:FBC|R[25] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.466      ; 1.343      ;
+; 0.718 ; cntFourBit:FBC|R[14] ; cntFourBit:FBC|R[19] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.466      ; 1.355      ;
+; 0.721 ; cntFourBit:FBC|R[17] ; cntFourBit:FBC|R[19] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.466      ; 1.358      ;
+; 0.729 ; cntFourBit:FBC|Q[2]  ; cntFourBit:FBC|Q[0]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.971      ;
+; 0.729 ; cntFourBit:FBC|R[10] ; cntFourBit:FBC|R[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.461      ; 1.361      ;
+; 0.748 ; cntFourBit:FBC|R[19] ; cntFourBit:FBC|R[19] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.086      ; 1.005      ;
+; 0.753 ; cntFourBit:FBC|R[16] ; cntFourBit:FBC|R[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.086      ; 1.010      ;
+; 0.759 ; cntFourBit:FBC|R[20] ; cntFourBit:FBC|R[23] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.466      ; 1.396      ;
+; 0.760 ; cntFourBit:FBC|R[17] ; cntFourBit:FBC|R[17] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.070      ; 1.001      ;
+; 0.766 ; cntFourBit:FBC|R[20] ; cntFourBit:FBC|R[20] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.070      ; 1.007      ;
+; 0.769 ; cntFourBit:FBC|R[18] ; cntFourBit:FBC|R[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.070      ; 1.010      ;
+; 0.784 ; cntFourBit:FBC|R[18] ; cntFourBit:FBC|R[22] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.466      ; 1.421      ;
+; 0.794 ; cntFourBit:FBC|R[5]  ; cntFourBit:FBC|R[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.467      ; 1.432      ;
+; 0.808 ; cntFourBit:FBC|R[4]  ; cntFourBit:FBC|R[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.467      ; 1.446      ;
+; 0.813 ; cntFourBit:FBC|R[13] ; cntFourBit:FBC|R[19] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.466      ; 1.450      ;
+; 0.815 ; cntFourBit:FBC|R[12] ; cntFourBit:FBC|R[19] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.461      ; 1.447      ;
+; 0.822 ; cntFourBit:FBC|R[24] ; cntFourBit:FBC|R[25] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.466      ; 1.459      ;
+; 0.825 ; cntFourBit:FBC|R[15] ; cntFourBit:FBC|R[22] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.466      ; 1.462      ;
+; 0.830 ; cntFourBit:FBC|R[9]  ; cntFourBit:FBC|R[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.461      ; 1.462      ;
+; 0.839 ; cntFourBit:FBC|R[14] ; cntFourBit:FBC|R[22] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.466      ; 1.476      ;
+; 0.840 ; cntFourBit:FBC|R[8]  ; cntFourBit:FBC|R[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.461      ; 1.472      ;
+; 0.857 ; cntFourBit:FBC|R[18] ; cntFourBit:FBC|R[23] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.466      ; 1.494      ;
+; 0.866 ; cntFourBit:FBC|R[3]  ; cntFourBit:FBC|R[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.108      ;
+; 0.867 ; cntFourBit:FBC|R[22] ; cntFourBit:FBC|R[23] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.086      ; 1.124      ;
+; 0.868 ; cntFourBit:FBC|R[0]  ; cntFourBit:FBC|R[1]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.110      ;
+; 0.869 ; cntFourBit:FBC|R[2]  ; cntFourBit:FBC|R[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.111      ;
+; 0.869 ; cntFourBit:FBC|R[20] ; cntFourBit:FBC|R[25] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.466      ; 1.506      ;
+; 0.870 ; cntFourBit:FBC|R[1]  ; cntFourBit:FBC|R[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.112      ;
+; 0.870 ; cntFourBit:FBC|R[17] ; cntFourBit:FBC|R[22] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.466      ; 1.507      ;
+; 0.874 ; cntFourBit:FBC|R[4]  ; cntFourBit:FBC|R[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.116      ;
+; 0.879 ; cntFourBit:FBC|R[0]  ; cntFourBit:FBC|R[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.121      ;
+; 0.880 ; cntFourBit:FBC|R[2]  ; cntFourBit:FBC|R[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.122      ;
+; 0.881 ; cntFourBit:FBC|R[12] ; cntFourBit:FBC|R[13] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.065      ; 1.117      ;
+; 0.889 ; cntFourBit:FBC|R[8]  ; cntFourBit:FBC|R[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.131      ;
+; 0.890 ; cntFourBit:FBC|R[9]  ; cntFourBit:FBC|R[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.132      ;
+; 0.890 ; cntFourBit:FBC|R[7]  ; cntFourBit:FBC|R[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.132      ;
+; 0.890 ; cntFourBit:FBC|R[13] ; cntFourBit:FBC|R[14] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.070      ; 1.131      ;
+; 0.892 ; cntFourBit:FBC|R[12] ; cntFourBit:FBC|R[14] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.065      ; 1.128      ;
+; 0.894 ; cntFourBit:FBC|R[14] ; cntFourBit:FBC|R[15] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.070      ; 1.135      ;
+; 0.899 ; cntFourBit:FBC|R[10] ; cntFourBit:FBC|R[12] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.141      ;
+; 0.899 ; cntFourBit:FBC|R[3]  ; cntFourBit:FBC|R[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.467      ; 1.537      ;
+; 0.900 ; cntFourBit:FBC|R[8]  ; cntFourBit:FBC|R[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.142      ;
+; 0.913 ; cntFourBit:FBC|R[2]  ; cntFourBit:FBC|R[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.467      ; 1.551      ;
+; 0.924 ; cntFourBit:FBC|R[15] ; cntFourBit:FBC|R[23] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.466      ; 1.561      ;
+; 0.934 ; cntFourBit:FBC|R[13] ; cntFourBit:FBC|R[22] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.466      ; 1.571      ;
+; 0.936 ; cntFourBit:FBC|R[12] ; cntFourBit:FBC|R[22] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.461      ; 1.568      ;
+; 0.938 ; cntFourBit:FBC|R[10] ; cntFourBit:FBC|R[19] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.461      ; 1.570      ;
++-------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
+
+
+----------------------------------------------
+; Slow 1200mV 0C Model Metastability Summary ;
+----------------------------------------------
+No synchronizer chains to report.
+
+
++------------------------------------+
+; Fast 1200mV 0C Model Setup Summary ;
++----------+--------+----------------+
+; Clock    ; Slack  ; End Point TNS  ;
++----------+--------+----------------+
+; CLOCK_50 ; -0.826 ; -19.917        ;
++----------+--------+----------------+
+
+
++-----------------------------------+
+; Fast 1200mV 0C Model Hold Summary ;
++----------+-------+----------------+
+; Clock    ; Slack ; End Point TNS  ;
++----------+-------+----------------+
+; CLOCK_50 ; 0.183 ; 0.000          ;
++----------+-------+----------------+
+
+
+-----------------------------------------
+; Fast 1200mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Fast 1200mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
++--------------------------------------------------+
+; Fast 1200mV 0C Model Minimum Pulse Width Summary ;
++----------+--------+------------------------------+
+; Clock    ; Slack  ; End Point TNS                ;
++----------+--------+------------------------------+
+; CLOCK_50 ; -3.000 ; -42.067                      ;
++----------+--------+------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Setup: 'CLOCK_50'                                                                                     ;
++--------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node            ; To Node              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
+; -0.826 ; cntFourBit:FBC|R[19] ; cntFourBit:FBC|R[24] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.242     ; 1.571      ;
+; -0.826 ; cntFourBit:FBC|R[19] ; cntFourBit:FBC|R[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.242     ; 1.571      ;
+; -0.826 ; cntFourBit:FBC|R[19] ; cntFourBit:FBC|R[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.242     ; 1.571      ;
+; -0.826 ; cntFourBit:FBC|R[19] ; cntFourBit:FBC|R[18] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.242     ; 1.571      ;
+; -0.826 ; cntFourBit:FBC|R[19] ; cntFourBit:FBC|R[17] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.242     ; 1.571      ;
+; -0.826 ; cntFourBit:FBC|R[19] ; cntFourBit:FBC|R[13] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.242     ; 1.571      ;
+; -0.826 ; cntFourBit:FBC|R[19] ; cntFourBit:FBC|R[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.242     ; 1.571      ;
+; -0.826 ; cntFourBit:FBC|R[19] ; cntFourBit:FBC|R[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.242     ; 1.571      ;
+; -0.825 ; cntFourBit:FBC|R[22] ; cntFourBit:FBC|R[24] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.242     ; 1.570      ;
+; -0.825 ; cntFourBit:FBC|R[22] ; cntFourBit:FBC|R[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.242     ; 1.570      ;
+; -0.825 ; cntFourBit:FBC|R[22] ; cntFourBit:FBC|R[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.242     ; 1.570      ;
+; -0.825 ; cntFourBit:FBC|R[22] ; cntFourBit:FBC|R[18] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.242     ; 1.570      ;
+; -0.825 ; cntFourBit:FBC|R[22] ; cntFourBit:FBC|R[17] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.242     ; 1.570      ;
+; -0.825 ; cntFourBit:FBC|R[22] ; cntFourBit:FBC|R[13] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.242     ; 1.570      ;
+; -0.825 ; cntFourBit:FBC|R[22] ; cntFourBit:FBC|R[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.242     ; 1.570      ;
+; -0.825 ; cntFourBit:FBC|R[22] ; cntFourBit:FBC|R[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.242     ; 1.570      ;
+; -0.810 ; cntFourBit:FBC|R[9]  ; cntFourBit:FBC|R[24] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.044     ; 1.753      ;
+; -0.810 ; cntFourBit:FBC|R[9]  ; cntFourBit:FBC|R[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.044     ; 1.753      ;
+; -0.810 ; cntFourBit:FBC|R[9]  ; cntFourBit:FBC|R[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.044     ; 1.753      ;
+; -0.810 ; cntFourBit:FBC|R[9]  ; cntFourBit:FBC|R[18] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.044     ; 1.753      ;
+; -0.810 ; cntFourBit:FBC|R[9]  ; cntFourBit:FBC|R[17] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.044     ; 1.753      ;
+; -0.810 ; cntFourBit:FBC|R[9]  ; cntFourBit:FBC|R[13] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.044     ; 1.753      ;
+; -0.810 ; cntFourBit:FBC|R[9]  ; cntFourBit:FBC|R[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.044     ; 1.753      ;
+; -0.810 ; cntFourBit:FBC|R[9]  ; cntFourBit:FBC|R[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.044     ; 1.753      ;
+; -0.793 ; cntFourBit:FBC|R[23] ; cntFourBit:FBC|R[24] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.242     ; 1.538      ;
+; -0.793 ; cntFourBit:FBC|R[23] ; cntFourBit:FBC|R[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.242     ; 1.538      ;
+; -0.793 ; cntFourBit:FBC|R[23] ; cntFourBit:FBC|R[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.242     ; 1.538      ;
+; -0.793 ; cntFourBit:FBC|R[23] ; cntFourBit:FBC|R[18] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.242     ; 1.538      ;
+; -0.793 ; cntFourBit:FBC|R[23] ; cntFourBit:FBC|R[17] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.242     ; 1.538      ;
+; -0.793 ; cntFourBit:FBC|R[23] ; cntFourBit:FBC|R[13] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.242     ; 1.538      ;
+; -0.793 ; cntFourBit:FBC|R[23] ; cntFourBit:FBC|R[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.242     ; 1.538      ;
+; -0.793 ; cntFourBit:FBC|R[23] ; cntFourBit:FBC|R[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.242     ; 1.538      ;
+; -0.771 ; cntFourBit:FBC|R[16] ; cntFourBit:FBC|R[24] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.242     ; 1.516      ;
+; -0.771 ; cntFourBit:FBC|R[16] ; cntFourBit:FBC|R[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.242     ; 1.516      ;
+; -0.771 ; cntFourBit:FBC|R[16] ; cntFourBit:FBC|R[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.242     ; 1.516      ;
+; -0.771 ; cntFourBit:FBC|R[16] ; cntFourBit:FBC|R[18] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.242     ; 1.516      ;
+; -0.771 ; cntFourBit:FBC|R[16] ; cntFourBit:FBC|R[17] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.242     ; 1.516      ;
+; -0.771 ; cntFourBit:FBC|R[16] ; cntFourBit:FBC|R[13] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.242     ; 1.516      ;
+; -0.771 ; cntFourBit:FBC|R[16] ; cntFourBit:FBC|R[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.242     ; 1.516      ;
+; -0.771 ; cntFourBit:FBC|R[16] ; cntFourBit:FBC|R[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.242     ; 1.516      ;
+; -0.760 ; cntFourBit:FBC|R[18] ; cntFourBit:FBC|R[24] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.040     ; 1.707      ;
+; -0.760 ; cntFourBit:FBC|R[18] ; cntFourBit:FBC|R[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.040     ; 1.707      ;
+; -0.760 ; cntFourBit:FBC|R[18] ; cntFourBit:FBC|R[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.040     ; 1.707      ;
+; -0.760 ; cntFourBit:FBC|R[18] ; cntFourBit:FBC|R[18] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.040     ; 1.707      ;
+; -0.760 ; cntFourBit:FBC|R[18] ; cntFourBit:FBC|R[17] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.040     ; 1.707      ;
+; -0.760 ; cntFourBit:FBC|R[18] ; cntFourBit:FBC|R[13] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.040     ; 1.707      ;
+; -0.760 ; cntFourBit:FBC|R[18] ; cntFourBit:FBC|R[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.040     ; 1.707      ;
+; -0.760 ; cntFourBit:FBC|R[18] ; cntFourBit:FBC|R[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.040     ; 1.707      ;
+; -0.759 ; cntFourBit:FBC|R[19] ; cntFourBit:FBC|Q[0]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.237     ; 1.509      ;
+; -0.759 ; cntFourBit:FBC|R[19] ; cntFourBit:FBC|Q[3]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.237     ; 1.509      ;
+; -0.759 ; cntFourBit:FBC|R[19] ; cntFourBit:FBC|Q[2]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.237     ; 1.509      ;
+; -0.759 ; cntFourBit:FBC|R[19] ; cntFourBit:FBC|Q[1]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.237     ; 1.509      ;
+; -0.758 ; cntFourBit:FBC|R[22] ; cntFourBit:FBC|Q[0]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.237     ; 1.508      ;
+; -0.758 ; cntFourBit:FBC|R[22] ; cntFourBit:FBC|Q[3]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.237     ; 1.508      ;
+; -0.758 ; cntFourBit:FBC|R[22] ; cntFourBit:FBC|Q[2]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.237     ; 1.508      ;
+; -0.758 ; cntFourBit:FBC|R[22] ; cntFourBit:FBC|Q[1]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.237     ; 1.508      ;
+; -0.746 ; cntFourBit:FBC|R[17] ; cntFourBit:FBC|R[24] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.040     ; 1.693      ;
+; -0.746 ; cntFourBit:FBC|R[17] ; cntFourBit:FBC|R[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.040     ; 1.693      ;
+; -0.746 ; cntFourBit:FBC|R[17] ; cntFourBit:FBC|R[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.040     ; 1.693      ;
+; -0.746 ; cntFourBit:FBC|R[17] ; cntFourBit:FBC|R[18] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.040     ; 1.693      ;
+; -0.746 ; cntFourBit:FBC|R[17] ; cntFourBit:FBC|R[17] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.040     ; 1.693      ;
+; -0.746 ; cntFourBit:FBC|R[17] ; cntFourBit:FBC|R[13] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.040     ; 1.693      ;
+; -0.746 ; cntFourBit:FBC|R[17] ; cntFourBit:FBC|R[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.040     ; 1.693      ;
+; -0.746 ; cntFourBit:FBC|R[17] ; cntFourBit:FBC|R[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.040     ; 1.693      ;
+; -0.743 ; cntFourBit:FBC|R[9]  ; cntFourBit:FBC|Q[0]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.039     ; 1.691      ;
+; -0.743 ; cntFourBit:FBC|R[9]  ; cntFourBit:FBC|Q[3]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.039     ; 1.691      ;
+; -0.743 ; cntFourBit:FBC|R[9]  ; cntFourBit:FBC|Q[2]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.039     ; 1.691      ;
+; -0.743 ; cntFourBit:FBC|R[9]  ; cntFourBit:FBC|Q[1]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.039     ; 1.691      ;
+; -0.740 ; cntFourBit:FBC|R[15] ; cntFourBit:FBC|R[24] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.040     ; 1.687      ;
+; -0.740 ; cntFourBit:FBC|R[15] ; cntFourBit:FBC|R[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.040     ; 1.687      ;
+; -0.740 ; cntFourBit:FBC|R[15] ; cntFourBit:FBC|R[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.040     ; 1.687      ;
+; -0.740 ; cntFourBit:FBC|R[15] ; cntFourBit:FBC|R[18] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.040     ; 1.687      ;
+; -0.740 ; cntFourBit:FBC|R[15] ; cntFourBit:FBC|R[17] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.040     ; 1.687      ;
+; -0.740 ; cntFourBit:FBC|R[15] ; cntFourBit:FBC|R[13] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.040     ; 1.687      ;
+; -0.740 ; cntFourBit:FBC|R[15] ; cntFourBit:FBC|R[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.040     ; 1.687      ;
+; -0.740 ; cntFourBit:FBC|R[15] ; cntFourBit:FBC|R[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.040     ; 1.687      ;
+; -0.726 ; cntFourBit:FBC|R[23] ; cntFourBit:FBC|Q[0]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.237     ; 1.476      ;
+; -0.726 ; cntFourBit:FBC|R[23] ; cntFourBit:FBC|Q[3]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.237     ; 1.476      ;
+; -0.726 ; cntFourBit:FBC|R[23] ; cntFourBit:FBC|Q[2]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.237     ; 1.476      ;
+; -0.726 ; cntFourBit:FBC|R[23] ; cntFourBit:FBC|Q[1]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.237     ; 1.476      ;
+; -0.719 ; cntFourBit:FBC|R[8]  ; cntFourBit:FBC|R[24] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.044     ; 1.662      ;
+; -0.719 ; cntFourBit:FBC|R[8]  ; cntFourBit:FBC|R[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.044     ; 1.662      ;
+; -0.719 ; cntFourBit:FBC|R[8]  ; cntFourBit:FBC|R[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.044     ; 1.662      ;
+; -0.719 ; cntFourBit:FBC|R[8]  ; cntFourBit:FBC|R[18] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.044     ; 1.662      ;
+; -0.719 ; cntFourBit:FBC|R[8]  ; cntFourBit:FBC|R[17] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.044     ; 1.662      ;
+; -0.719 ; cntFourBit:FBC|R[8]  ; cntFourBit:FBC|R[13] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.044     ; 1.662      ;
+; -0.719 ; cntFourBit:FBC|R[8]  ; cntFourBit:FBC|R[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.044     ; 1.662      ;
+; -0.719 ; cntFourBit:FBC|R[8]  ; cntFourBit:FBC|R[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.044     ; 1.662      ;
+; -0.704 ; cntFourBit:FBC|R[16] ; cntFourBit:FBC|Q[0]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.237     ; 1.454      ;
+; -0.704 ; cntFourBit:FBC|R[16] ; cntFourBit:FBC|Q[3]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.237     ; 1.454      ;
+; -0.704 ; cntFourBit:FBC|R[16] ; cntFourBit:FBC|Q[2]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.237     ; 1.454      ;
+; -0.704 ; cntFourBit:FBC|R[16] ; cntFourBit:FBC|Q[1]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.237     ; 1.454      ;
+; -0.702 ; cntFourBit:FBC|R[14] ; cntFourBit:FBC|R[24] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.040     ; 1.649      ;
+; -0.702 ; cntFourBit:FBC|R[14] ; cntFourBit:FBC|R[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.040     ; 1.649      ;
+; -0.702 ; cntFourBit:FBC|R[14] ; cntFourBit:FBC|R[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.040     ; 1.649      ;
+; -0.702 ; cntFourBit:FBC|R[14] ; cntFourBit:FBC|R[18] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.040     ; 1.649      ;
+; -0.702 ; cntFourBit:FBC|R[14] ; cntFourBit:FBC|R[17] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.040     ; 1.649      ;
+; -0.702 ; cntFourBit:FBC|R[14] ; cntFourBit:FBC|R[13] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.040     ; 1.649      ;
+; -0.702 ; cntFourBit:FBC|R[14] ; cntFourBit:FBC|R[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.040     ; 1.649      ;
+; -0.702 ; cntFourBit:FBC|R[14] ; cntFourBit:FBC|R[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.040     ; 1.649      ;
++--------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Hold: 'CLOCK_50'                                                                                     ;
++-------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node            ; To Node              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
+; 0.183 ; cntFourBit:FBC|Q[3]  ; cntFourBit:FBC|Q[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.307      ;
+; 0.183 ; cntFourBit:FBC|Q[2]  ; cntFourBit:FBC|Q[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.307      ;
+; 0.183 ; cntFourBit:FBC|Q[1]  ; cntFourBit:FBC|Q[1]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.307      ;
+; 0.190 ; cntFourBit:FBC|Q[0]  ; cntFourBit:FBC|Q[0]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.314      ;
+; 0.193 ; cntFourBit:FBC|R[25] ; cntFourBit:FBC|R[25] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.048      ; 0.325      ;
+; 0.223 ; cntFourBit:FBC|Q[2]  ; cntFourBit:FBC|Q[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.347      ;
+; 0.227 ; cntFourBit:FBC|Q[0]  ; cntFourBit:FBC|Q[1]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.351      ;
+; 0.234 ; cntFourBit:FBC|Q[1]  ; cntFourBit:FBC|Q[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.358      ;
+; 0.236 ; cntFourBit:FBC|R[5]  ; cntFourBit:FBC|R[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.243      ; 0.563      ;
+; 0.237 ; cntFourBit:FBC|Q[1]  ; cntFourBit:FBC|Q[0]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.361      ;
+; 0.249 ; cntFourBit:FBC|R[21] ; cntFourBit:FBC|R[22] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.242      ; 0.575      ;
+; 0.249 ; cntFourBit:FBC|R[15] ; cntFourBit:FBC|R[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.242      ; 0.575      ;
+; 0.249 ; cntFourBit:FBC|R[4]  ; cntFourBit:FBC|R[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.243      ; 0.576      ;
+; 0.256 ; cntFourBit:FBC|R[10] ; cntFourBit:FBC|R[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.243      ; 0.583      ;
+; 0.261 ; cntFourBit:FBC|R[14] ; cntFourBit:FBC|R[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.242      ; 0.587      ;
+; 0.282 ; cntFourBit:FBC|R[6]  ; cntFourBit:FBC|R[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.049      ; 0.415      ;
+; 0.289 ; cntFourBit:FBC|R[3]  ; cntFourBit:FBC|R[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.413      ;
+; 0.289 ; cntFourBit:FBC|R[22] ; cntFourBit:FBC|R[22] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.048      ; 0.421      ;
+; 0.290 ; cntFourBit:FBC|R[1]  ; cntFourBit:FBC|R[1]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.414      ;
+; 0.290 ; cntFourBit:FBC|R[2]  ; cntFourBit:FBC|R[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.414      ;
+; 0.290 ; cntFourBit:FBC|R[5]  ; cntFourBit:FBC|R[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.414      ;
+; 0.291 ; cntFourBit:FBC|R[4]  ; cntFourBit:FBC|R[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.415      ;
+; 0.292 ; cntFourBit:FBC|R[11] ; cntFourBit:FBC|R[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.049      ; 0.425      ;
+; 0.293 ; cntFourBit:FBC|R[12] ; cntFourBit:FBC|R[12] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.417      ;
+; 0.295 ; cntFourBit:FBC|R[23] ; cntFourBit:FBC|R[23] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.048      ; 0.427      ;
+; 0.299 ; cntFourBit:FBC|R[0]  ; cntFourBit:FBC|R[0]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.423      ;
+; 0.301 ; cntFourBit:FBC|R[10] ; cntFourBit:FBC|R[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.425      ;
+; 0.301 ; cntFourBit:FBC|R[13] ; cntFourBit:FBC|R[13] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.425      ;
+; 0.301 ; cntFourBit:FBC|R[3]  ; cntFourBit:FBC|R[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.243      ; 0.628      ;
+; 0.302 ; cntFourBit:FBC|R[21] ; cntFourBit:FBC|R[21] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.426      ;
+; 0.302 ; cntFourBit:FBC|R[7]  ; cntFourBit:FBC|R[7]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.426      ;
+; 0.302 ; cntFourBit:FBC|R[8]  ; cntFourBit:FBC|R[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.426      ;
+; 0.302 ; cntFourBit:FBC|R[9]  ; cntFourBit:FBC|R[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.426      ;
+; 0.302 ; cntFourBit:FBC|R[14] ; cntFourBit:FBC|R[14] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.426      ;
+; 0.302 ; cntFourBit:FBC|R[15] ; cntFourBit:FBC|R[15] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.426      ;
+; 0.311 ; cntFourBit:FBC|R[9]  ; cntFourBit:FBC|R[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.243      ; 0.638      ;
+; 0.312 ; cntFourBit:FBC|R[21] ; cntFourBit:FBC|R[23] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.242      ; 0.638      ;
+; 0.314 ; cntFourBit:FBC|R[13] ; cntFourBit:FBC|R[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.242      ; 0.640      ;
+; 0.314 ; cntFourBit:FBC|R[2]  ; cntFourBit:FBC|R[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.243      ; 0.641      ;
+; 0.322 ; cntFourBit:FBC|R[12] ; cntFourBit:FBC|R[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.238      ; 0.644      ;
+; 0.323 ; cntFourBit:FBC|R[8]  ; cntFourBit:FBC|R[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.243      ; 0.650      ;
+; 0.328 ; cntFourBit:FBC|R[18] ; cntFourBit:FBC|R[19] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.242      ; 0.654      ;
+; 0.328 ; cntFourBit:FBC|Q[0]  ; cntFourBit:FBC|Q[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.452      ;
+; 0.329 ; cntFourBit:FBC|R[20] ; cntFourBit:FBC|R[22] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.242      ; 0.655      ;
+; 0.333 ; cntFourBit:FBC|Q[0]  ; cntFourBit:FBC|Q[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.457      ;
+; 0.336 ; cntFourBit:FBC|Q[1]  ; cntFourBit:FBC|Q[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.460      ;
+; 0.341 ; cntFourBit:FBC|Q[3]  ; cntFourBit:FBC|Q[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.465      ;
+; 0.344 ; cntFourBit:FBC|Q[3]  ; cntFourBit:FBC|Q[0]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.468      ;
+; 0.348 ; cntFourBit:FBC|Q[3]  ; cntFourBit:FBC|Q[1]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.472      ;
+; 0.361 ; cntFourBit:FBC|R[19] ; cntFourBit:FBC|R[19] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.048      ; 0.493      ;
+; 0.363 ; cntFourBit:FBC|R[16] ; cntFourBit:FBC|R[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.048      ; 0.495      ;
+; 0.367 ; cntFourBit:FBC|R[17] ; cntFourBit:FBC|R[17] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.491      ;
+; 0.368 ; cntFourBit:FBC|R[1]  ; cntFourBit:FBC|R[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.243      ; 0.695      ;
+; 0.370 ; cntFourBit:FBC|R[20] ; cntFourBit:FBC|R[20] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.494      ;
+; 0.372 ; cntFourBit:FBC|R[18] ; cntFourBit:FBC|R[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.496      ;
+; 0.377 ; cntFourBit:FBC|R[7]  ; cntFourBit:FBC|R[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.243      ; 0.704      ;
+; 0.377 ; cntFourBit:FBC|R[17] ; cntFourBit:FBC|R[19] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.242      ; 0.703      ;
+; 0.378 ; cntFourBit:FBC|R[21] ; cntFourBit:FBC|R[25] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.242      ; 0.704      ;
+; 0.378 ; cntFourBit:FBC|Q[2]  ; cntFourBit:FBC|Q[0]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.502      ;
+; 0.378 ; cntFourBit:FBC|R[15] ; cntFourBit:FBC|R[19] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.242      ; 0.704      ;
+; 0.380 ; cntFourBit:FBC|R[0]  ; cntFourBit:FBC|R[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.243      ; 0.707      ;
+; 0.390 ; cntFourBit:FBC|R[14] ; cntFourBit:FBC|R[19] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.242      ; 0.716      ;
+; 0.392 ; cntFourBit:FBC|R[20] ; cntFourBit:FBC|R[23] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.242      ; 0.718      ;
+; 0.396 ; cntFourBit:FBC|R[10] ; cntFourBit:FBC|R[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.238      ; 0.718      ;
+; 0.397 ; cntFourBit:FBC|R[18] ; cntFourBit:FBC|R[22] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.242      ; 0.723      ;
+; 0.422 ; cntFourBit:FBC|R[24] ; cntFourBit:FBC|R[25] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.242      ; 0.748      ;
+; 0.431 ; cntFourBit:FBC|R[5]  ; cntFourBit:FBC|R[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.243      ; 0.758      ;
+; 0.438 ; cntFourBit:FBC|R[3]  ; cntFourBit:FBC|R[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.562      ;
+; 0.439 ; cntFourBit:FBC|R[1]  ; cntFourBit:FBC|R[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.563      ;
+; 0.443 ; cntFourBit:FBC|R[13] ; cntFourBit:FBC|R[19] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.242      ; 0.769      ;
+; 0.444 ; cntFourBit:FBC|R[4]  ; cntFourBit:FBC|R[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.243      ; 0.771      ;
+; 0.446 ; cntFourBit:FBC|R[17] ; cntFourBit:FBC|R[22] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.242      ; 0.772      ;
+; 0.447 ; cntFourBit:FBC|R[22] ; cntFourBit:FBC|R[23] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.048      ; 0.579      ;
+; 0.447 ; cntFourBit:FBC|R[15] ; cntFourBit:FBC|R[22] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.242      ; 0.773      ;
+; 0.448 ; cntFourBit:FBC|R[2]  ; cntFourBit:FBC|R[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.572      ;
+; 0.448 ; cntFourBit:FBC|R[0]  ; cntFourBit:FBC|R[1]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.572      ;
+; 0.449 ; cntFourBit:FBC|R[4]  ; cntFourBit:FBC|R[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.573      ;
+; 0.450 ; cntFourBit:FBC|R[13] ; cntFourBit:FBC|R[14] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.574      ;
+; 0.451 ; cntFourBit:FBC|R[9]  ; cntFourBit:FBC|R[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.575      ;
+; 0.451 ; cntFourBit:FBC|R[7]  ; cntFourBit:FBC|R[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.575      ;
+; 0.451 ; cntFourBit:FBC|R[9]  ; cntFourBit:FBC|R[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.238      ; 0.773      ;
+; 0.451 ; cntFourBit:FBC|R[2]  ; cntFourBit:FBC|R[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.575      ;
+; 0.451 ; cntFourBit:FBC|R[0]  ; cntFourBit:FBC|R[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.575      ;
+; 0.451 ; cntFourBit:FBC|R[12] ; cntFourBit:FBC|R[19] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.238      ; 0.773      ;
+; 0.455 ; cntFourBit:FBC|R[12] ; cntFourBit:FBC|R[13] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.036      ; 0.575      ;
+; 0.458 ; cntFourBit:FBC|R[20] ; cntFourBit:FBC|R[25] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.242      ; 0.784      ;
+; 0.458 ; cntFourBit:FBC|R[12] ; cntFourBit:FBC|R[14] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.036      ; 0.578      ;
+; 0.459 ; cntFourBit:FBC|R[14] ; cntFourBit:FBC|R[22] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.242      ; 0.785      ;
+; 0.460 ; cntFourBit:FBC|R[8]  ; cntFourBit:FBC|R[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.584      ;
+; 0.460 ; cntFourBit:FBC|R[14] ; cntFourBit:FBC|R[15] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.584      ;
+; 0.460 ; cntFourBit:FBC|R[18] ; cntFourBit:FBC|R[23] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.242      ; 0.786      ;
+; 0.462 ; cntFourBit:FBC|R[10] ; cntFourBit:FBC|R[12] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.586      ;
+; 0.463 ; cntFourBit:FBC|R[8]  ; cntFourBit:FBC|R[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.587      ;
+; 0.463 ; cntFourBit:FBC|R[8]  ; cntFourBit:FBC|R[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.238      ; 0.785      ;
+; 0.466 ; cntFourBit:FBC|R[24] ; cntFourBit:FBC|R[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.590      ;
+; 0.496 ; cntFourBit:FBC|R[3]  ; cntFourBit:FBC|R[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.243      ; 0.823      ;
+; 0.501 ; cntFourBit:FBC|R[3]  ; cntFourBit:FBC|R[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.625      ;
+; 0.502 ; cntFourBit:FBC|R[5]  ; cntFourBit:FBC|R[7]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.626      ;
+; 0.502 ; cntFourBit:FBC|R[1]  ; cntFourBit:FBC|R[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.626      ;
+; 0.505 ; cntFourBit:FBC|R[5]  ; cntFourBit:FBC|R[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.629      ;
++-------+----------------------+----------------------+--------------+-------------+--------------+------------+------------+
+
+
+----------------------------------------------
+; Fast 1200mV 0C Model Metastability Summary ;
+----------------------------------------------
+No synchronizer chains to report.
+
+
++-------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                           ;
++------------------+---------+-------+----------+---------+---------------------+
+; Clock            ; Setup   ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+---------+-------+----------+---------+---------------------+
+; Worst-case Slack ; -2.857  ; 0.183 ; N/A      ; N/A     ; -3.000              ;
+;  CLOCK_50        ; -2.857  ; 0.183 ; N/A      ; N/A     ; -3.000              ;
+; Design-wide TNS  ; -76.029 ; 0.0   ; 0.0      ; 0.0     ; -42.067             ;
+;  CLOCK_50        ; -76.029 ; 0.000 ; N/A      ; N/A     ; -42.067             ;
++------------------+---------+-------+----------+---------+---------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Board Trace Model Assignments                                                                                                                                                                                                                                                                                                                                                                                    ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; Pin           ; I/O Standard ; Near Tline Length ; Near Tline L per Length ; Near Tline C per Length ; Near Series R ; Near Differential R ; Near Pull-up R ; Near Pull-down R ; Near C ; Far Tline Length ; Far Tline L per Length ; Far Tline C per Length ; Far Series R ; Far Pull-up R ; Far Pull-down R ; Far C ; Termination Voltage ; Far Differential R ; EBD File Name ; EBD Signal Name ; EBD Far-end ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; HEX0[6]       ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; HEX0[5]       ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; HEX0[4]       ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; HEX0[3]       ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; HEX0[2]       ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; HEX0[1]       ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; HEX0[0]       ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ~ALTERA_nCEO~ ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+
+
++----------------------------------------------------------------------------+
+; Input Transition Times                                                     ;
++-------------------------+--------------+-----------------+-----------------+
+; Pin                     ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
++-------------------------+--------------+-----------------+-----------------+
+; SW[0]                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; SW[1]                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; CLOCK_50                ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
+; ~ALTERA_ASDO_DATA1~     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_FLASH_nCE_nCSO~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_DATA0~          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
++-------------------------+--------------+-----------------+-----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1200mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; HEX0[6]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.07e-09 V                   ; 2.38 V              ; -0.0144 V           ; 0.227 V                              ; 0.024 V                              ; 3.14e-10 s                  ; 3.39e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.07e-09 V                  ; 2.38 V             ; -0.0144 V          ; 0.227 V                             ; 0.024 V                             ; 3.14e-10 s                 ; 3.39e-10 s                 ; Yes                       ; Yes                       ;
+; HEX0[5]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.07e-09 V                   ; 2.33 V              ; -0.00496 V          ; 0.223 V                              ; 0.086 V                              ; 2.9e-09 s                   ; 2.73e-09 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.07e-09 V                  ; 2.33 V             ; -0.00496 V         ; 0.223 V                             ; 0.086 V                             ; 2.9e-09 s                  ; 2.73e-09 s                 ; Yes                       ; Yes                       ;
+; HEX0[4]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.07e-09 V                   ; 2.38 V              ; -0.0144 V           ; 0.227 V                              ; 0.024 V                              ; 3.14e-10 s                  ; 3.39e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.07e-09 V                  ; 2.38 V             ; -0.0144 V          ; 0.227 V                             ; 0.024 V                             ; 3.14e-10 s                 ; 3.39e-10 s                 ; Yes                       ; Yes                       ;
+; HEX0[3]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.07e-09 V                   ; 2.38 V              ; -0.0144 V           ; 0.227 V                              ; 0.024 V                              ; 3.14e-10 s                  ; 3.39e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.07e-09 V                  ; 2.38 V             ; -0.0144 V          ; 0.227 V                             ; 0.024 V                             ; 3.14e-10 s                 ; 3.39e-10 s                 ; Yes                       ; Yes                       ;
+; HEX0[2]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.49e-09 V                   ; 2.38 V              ; -0.00552 V          ; 0.096 V                              ; 0.019 V                              ; 4.18e-10 s                  ; 3.59e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 4.49e-09 V                  ; 2.38 V             ; -0.00552 V         ; 0.096 V                             ; 0.019 V                             ; 4.18e-10 s                 ; 3.59e-10 s                 ; No                        ; Yes                       ;
+; HEX0[1]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.49e-09 V                   ; 2.33 V              ; -0.00467 V          ; 0.226 V                              ; 0.087 V                              ; 2.91e-09 s                  ; 2.74e-09 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 4.49e-09 V                  ; 2.33 V             ; -0.00467 V         ; 0.226 V                             ; 0.087 V                             ; 2.91e-09 s                 ; 2.74e-09 s                 ; Yes                       ; Yes                       ;
+; HEX0[0]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.49e-09 V                   ; 2.38 V              ; -0.00552 V          ; 0.096 V                              ; 0.019 V                              ; 4.18e-10 s                  ; 3.59e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 4.49e-09 V                  ; 2.38 V             ; -0.00552 V         ; 0.096 V                             ; 0.019 V                             ; 4.18e-10 s                 ; 3.59e-10 s                 ; No                        ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.67e-09 V                   ; 2.38 V              ; -0.0485 V           ; 0.167 V                              ; 0.096 V                              ; 2.95e-10 s                  ; 2.73e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 2.67e-09 V                  ; 2.38 V             ; -0.0485 V          ; 0.167 V                             ; 0.096 V                             ; 2.95e-10 s                 ; 2.73e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_nCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.18e-09 V                   ; 2.38 V              ; -0.00483 V          ; 0.152 V                              ; 0.012 V                              ; 4.81e-10 s                  ; 6.29e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 4.18e-09 V                  ; 2.38 V             ; -0.00483 V         ; 0.152 V                             ; 0.012 V                             ; 4.81e-10 s                 ; 6.29e-10 s                 ; Yes                       ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1200mv 85c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; HEX0[6]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.67e-07 V                   ; 2.36 V              ; -0.00552 V          ; 0.11 V                               ; 0.007 V                              ; 4.54e-10 s                  ; 4.35e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 4.67e-07 V                  ; 2.36 V             ; -0.00552 V         ; 0.11 V                              ; 0.007 V                             ; 4.54e-10 s                 ; 4.35e-10 s                 ; Yes                       ; Yes                       ;
+; HEX0[5]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.67e-07 V                   ; 2.33 V              ; -0.00269 V          ; 0.13 V                               ; 0.055 V                              ; 3.54e-09 s                  ; 3.29e-09 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 4.67e-07 V                  ; 2.33 V             ; -0.00269 V         ; 0.13 V                              ; 0.055 V                             ; 3.54e-09 s                 ; 3.29e-09 s                 ; Yes                       ; Yes                       ;
+; HEX0[4]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.67e-07 V                   ; 2.36 V              ; -0.00552 V          ; 0.11 V                               ; 0.007 V                              ; 4.54e-10 s                  ; 4.35e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 4.67e-07 V                  ; 2.36 V             ; -0.00552 V         ; 0.11 V                              ; 0.007 V                             ; 4.54e-10 s                 ; 4.35e-10 s                 ; Yes                       ; Yes                       ;
+; HEX0[3]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.67e-07 V                   ; 2.36 V              ; -0.00552 V          ; 0.11 V                               ; 0.007 V                              ; 4.54e-10 s                  ; 4.35e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 4.67e-07 V                  ; 2.36 V             ; -0.00552 V         ; 0.11 V                              ; 0.007 V                             ; 4.54e-10 s                 ; 4.35e-10 s                 ; Yes                       ; Yes                       ;
+; HEX0[2]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 6.92e-07 V                   ; 2.35 V              ; -0.00996 V          ; 0.121 V                              ; 0.03 V                               ; 4.64e-10 s                  ; 4.47e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 6.92e-07 V                  ; 2.35 V             ; -0.00996 V         ; 0.121 V                             ; 0.03 V                              ; 4.64e-10 s                 ; 4.47e-10 s                 ; Yes                       ; Yes                       ;
+; HEX0[1]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 6.92e-07 V                   ; 2.33 V              ; -0.00265 V          ; 0.133 V                              ; 0.056 V                              ; 3.55e-09 s                  ; 3.31e-09 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 6.92e-07 V                  ; 2.33 V             ; -0.00265 V         ; 0.133 V                             ; 0.056 V                             ; 3.55e-09 s                 ; 3.31e-09 s                 ; Yes                       ; Yes                       ;
+; HEX0[0]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 6.92e-07 V                   ; 2.35 V              ; -0.00996 V          ; 0.121 V                              ; 0.03 V                               ; 4.64e-10 s                  ; 4.47e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 6.92e-07 V                  ; 2.35 V             ; -0.00996 V         ; 0.121 V                             ; 0.03 V                              ; 4.64e-10 s                 ; 4.47e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.75e-07 V                   ; 2.35 V              ; -0.0109 V           ; 0.084 V                              ; 0.027 V                              ; 4.31e-10 s                  ; 3.61e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.75e-07 V                  ; 2.35 V             ; -0.0109 V          ; 0.084 V                             ; 0.027 V                             ; 4.31e-10 s                 ; 3.61e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_nCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 6.15e-07 V                   ; 2.35 V              ; -0.00712 V          ; 0.093 V                              ; 0.02 V                               ; 6.21e-10 s                  ; 7.9e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 6.15e-07 V                  ; 2.35 V             ; -0.00712 V         ; 0.093 V                             ; 0.02 V                              ; 6.21e-10 s                 ; 7.9e-10 s                  ; Yes                       ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Fast 1200mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; HEX0[6]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.74e-08 V                   ; 2.73 V              ; -0.0384 V           ; 0.169 V                              ; 0.089 V                              ; 2.7e-10 s                   ; 2.62e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 2.74e-08 V                  ; 2.73 V             ; -0.0384 V          ; 0.169 V                             ; 0.089 V                             ; 2.7e-10 s                  ; 2.62e-10 s                 ; Yes                       ; Yes                       ;
+; HEX0[5]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.74e-08 V                   ; 2.64 V              ; -0.0117 V           ; 0.202 V                              ; 0.176 V                              ; 2.38e-09 s                  ; 2.22e-09 s                  ; No                         ; Yes                        ; 2.62 V                      ; 2.74e-08 V                  ; 2.64 V             ; -0.0117 V          ; 0.202 V                             ; 0.176 V                             ; 2.38e-09 s                 ; 2.22e-09 s                 ; No                        ; Yes                       ;
+; HEX0[4]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.74e-08 V                   ; 2.73 V              ; -0.0384 V           ; 0.169 V                              ; 0.089 V                              ; 2.7e-10 s                   ; 2.62e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 2.74e-08 V                  ; 2.73 V             ; -0.0384 V          ; 0.169 V                             ; 0.089 V                             ; 2.7e-10 s                  ; 2.62e-10 s                 ; Yes                       ; Yes                       ;
+; HEX0[3]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.74e-08 V                   ; 2.73 V              ; -0.0384 V           ; 0.169 V                              ; 0.089 V                              ; 2.7e-10 s                   ; 2.62e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 2.74e-08 V                  ; 2.73 V             ; -0.0384 V          ; 0.169 V                             ; 0.089 V                             ; 2.7e-10 s                  ; 2.62e-10 s                 ; Yes                       ; Yes                       ;
+; HEX0[2]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
+; HEX0[1]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.64 V              ; -0.0113 V           ; 0.208 V                              ; 0.179 V                              ; 2.38e-09 s                  ; 2.23e-09 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.64 V             ; -0.0113 V          ; 0.208 V                             ; 0.179 V                             ; 2.38e-09 s                 ; 2.23e-09 s                 ; No                        ; Yes                       ;
+; HEX0[0]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.22e-08 V                   ; 2.74 V              ; -0.06 V             ; 0.158 V                              ; 0.08 V                               ; 2.68e-10 s                  ; 2.19e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 2.22e-08 V                  ; 2.74 V             ; -0.06 V            ; 0.158 V                             ; 0.08 V                              ; 2.68e-10 s                 ; 2.19e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_nCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.54e-08 V                   ; 2.7 V               ; -0.00943 V          ; 0.276 V                              ; 0.035 V                              ; 3.19e-10 s                  ; 4.99e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 3.54e-08 V                  ; 2.7 V              ; -0.00943 V         ; 0.276 V                             ; 0.035 V                             ; 3.19e-10 s                 ; 4.99e-10 s                 ; No                        ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; CLOCK_50   ; CLOCK_50 ; 996      ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; CLOCK_50   ; CLOCK_50 ; 996      ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths Summary                    ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 0     ; 0    ;
+; Unconstrained Input Port Paths  ; 0     ; 0    ;
+; Unconstrained Output Ports      ; 7     ; 7    ;
+; Unconstrained Output Port Paths ; 28    ; 28   ;
++---------------------------------+-------+------+
+
+
++------------------------------------------+
+; Clock Status Summary                     ;
++----------+----------+------+-------------+
+; Target   ; Clock    ; Type ; Status      ;
++----------+----------+------+-------------+
+; CLOCK_50 ; CLOCK_50 ; Base ; Constrained ;
++----------+----------+------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; HEX0[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; HEX0[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime TimeQuest Timing Analyzer
+    Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+    Info: Processing started: Sat Apr 28 21:59:47 2018
+Info: Command: quartus_sta Part4 -c Part4
+Info: qsta_default_script.tcl version: #1
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'Part4.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name CLOCK_50 CLOCK_50
+Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow 1200mV 85C Model
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
+Info (332146): Worst-case setup slack is -2.857
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -2.857             -76.029 CLOCK_50 
+Info (332146): Worst-case hold slack is 0.404
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.404               0.000 CLOCK_50 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -3.000
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.000             -41.550 CLOCK_50 
+Info: Analyzing Slow 1200mV 0C Model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
+Info (332146): Worst-case setup slack is -2.536
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -2.536             -67.355 CLOCK_50 
+Info (332146): Worst-case hold slack is 0.355
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.355               0.000 CLOCK_50 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -3.000
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.000             -41.550 CLOCK_50 
+Info: Analyzing Fast 1200mV 0C Model
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
+Info (332146): Worst-case setup slack is -0.826
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.826             -19.917 CLOCK_50 
+Info (332146): Worst-case hold slack is 0.183
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.183               0.000 CLOCK_50 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -3.000
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.000             -42.067 CLOCK_50 
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 697 megabytes
+    Info: Processing ended: Sat Apr 28 21:59:50 2018
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
+
+
