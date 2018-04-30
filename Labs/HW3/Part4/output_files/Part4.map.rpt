@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Part4
-Sat Apr 28 21:59:24 2018
+Sun Apr 29 14:14:47 2018
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -44,7 +44,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Apr 28 21:59:23 2018       ;
+; Analysis & Synthesis Status        ; Successful - Sun Apr 29 14:14:47 2018       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; Part4                                       ;
 ; Top-level Entity Name              ; Part4                                       ;
@@ -282,34 +282,35 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Sat Apr 28 21:59:09 2018
+    Info: Processing started: Sun Apr 29 14:14:33 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Part4 -c Part4
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file part4.sv
-    Info (12023): Found entity 1: Part4 File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW3/Part4/Part4.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file cntfourbit.sv
-    Info (12023): Found entity 1: cntFourBit File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW3/Part4/cntFourBit.sv Line: 1
+    Info (12023): Found entity 1: Part4 File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW3/Part4/Part4.sv Line: 4
+Info (12021): Found 2 design units, including 2 entities, in source file cntfourbit.sv
+    Info (12023): Found entity 1: cntFourBit File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW3/Part4/cntFourBit.sv Line: 8
+    Info (12023): Found entity 2: cntFourBit_testbench File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW3/Part4/cntFourBit.sv Line: 23
 Info (12021): Found 2 design units, including 2 entities, in source file hexdisplay.sv
     Info (12023): Found entity 1: hexDisplay File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW3/Part4/hexDisplay.sv Line: 23
     Info (12023): Found entity 2: hexDisplay_testbench File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW3/Part4/hexDisplay.sv Line: 51
 Info (12127): Elaborating entity "Part4" for the top level hierarchy
-Info (12128): Elaborating entity "cntFourBit" for hierarchy "cntFourBit:FBC" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW3/Part4/Part4.sv Line: 3
-Info (12128): Elaborating entity "hexDisplay" for hierarchy "hexDisplay:HD" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW3/Part4/Part4.sv Line: 4
+Info (12128): Elaborating entity "cntFourBit" for hierarchy "cntFourBit:FBC" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW3/Part4/Part4.sv Line: 6
+Info (12128): Elaborating entity "hexDisplay" for hierarchy "hexDisplay:HD" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW3/Part4/Part4.sv Line: 7
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 2 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "SW[0]" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW3/Part4/Part4.sv Line: 1
-    Warning (15610): No output dependent on input pin "SW[1]" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW3/Part4/Part4.sv Line: 1
+    Warning (15610): No output dependent on input pin "SW[0]" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW3/Part4/Part4.sv Line: 4
+    Warning (15610): No output dependent on input pin "SW[1]" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW3/Part4/Part4.sv Line: 4
 Info (21057): Implemented 54 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 7 output pins
     Info (21061): Implemented 44 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 634 megabytes
-    Info: Processing ended: Sat Apr 28 21:59:24 2018
-    Info: Elapsed time: 00:00:15
+    Info: Peak virtual memory: 636 megabytes
+    Info: Processing ended: Sun Apr 29 14:14:47 2018
+    Info: Elapsed time: 00:00:14
     Info: Total CPU time (on all processors): 00:00:31
 
 

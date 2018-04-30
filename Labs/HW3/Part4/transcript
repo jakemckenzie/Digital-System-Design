@@ -1,0 +1,323 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:50:57 on Apr 29,2018
+# vlog -reportprogress 300 ./cntFourBit.sv 
+# -- Compiling module cntFourBit
+# -- Compiling module cntFourBit_testbench
+# 
+# Top level modules:
+# 	cntFourBit_testbench
+# End time: 13:50:57 on Apr 29,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work cntFourBit_testbench 
+# Start time: 13:50:57 on Apr 29,2018
+# Loading sv_std.std
+# Loading work.cntFourBit_testbench
+# Loading work.cntFourBit
+# ** Warning: (vsim-3015) ./cntFourBit.sv(27): [PCDPC] - Port size (4) does not match connection size (1) for port 'D'. The port definition is at: ./cntFourBit.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /cntFourBit_testbench/DUT File: ./cntFourBit.sv
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+#  x	          0
+#  x	          1
+#  x	          2
+#  x	          3
+#  x	          4
+#  x	          5
+#  x	          6
+#  x	          7
+#  x	          8
+#  x	          9
+#  x	         10
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:52:01 on Apr 29,2018
+# vlog -reportprogress 300 ./cntFourBit.sv 
+# -- Compiling module cntFourBit
+# -- Compiling module cntFourBit_testbench
+# 
+# Top level modules:
+# 	cntFourBit_testbench
+# End time: 13:52:01 on Apr 29,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:52:02 on Apr 29,2018, Elapsed time: 0:01:05
+# Errors: 0, Warnings: 1
+# vsim -voptargs=""+acc"" -t 1ps -lib work cntFourBit_testbench 
+# Start time: 13:52:02 on Apr 29,2018
+# Loading sv_std.std
+# Loading work.cntFourBit_testbench
+# Loading work.cntFourBit
+# ** Warning: (vsim-3015) ./cntFourBit.sv(27): [PCDPC] - Port size (4) does not match connection size (1) for port 'D'. The port definition is at: ./cntFourBit.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /cntFourBit_testbench/DUT File: ./cntFourBit.sv
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+#  x	          0
+#  x	          1
+#  x	          2
+#  x	          3
+#  x	          4
+#  x	          5
+#  x	          6
+#  x	          7
+#  x	          8
+#  x	          9
+#  x	         10
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:53:35 on Apr 29,2018
+# vlog -reportprogress 300 ./cntFourBit.sv 
+# -- Compiling module cntFourBit
+# -- Compiling module cntFourBit_testbench
+# 
+# Top level modules:
+# 	cntFourBit_testbench
+# End time: 13:53:35 on Apr 29,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:53:36 on Apr 29,2018, Elapsed time: 0:01:34
+# Errors: 0, Warnings: 1
+# vsim -voptargs=""+acc"" -t 1ps -lib work cntFourBit_testbench 
+# Start time: 13:53:36 on Apr 29,2018
+# Loading sv_std.std
+# Loading work.cntFourBit_testbench
+# Loading work.cntFourBit
+# ** Warning: (vsim-3015) ./cntFourBit.sv(27): [PCDPC] - Port size (4) does not match connection size (1) for port 'D'. The port definition is at: ./cntFourBit.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /cntFourBit_testbench/DUT File: ./cntFourBit.sv
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+#  x	          0
+#  x	          1
+#  x	          2
+#  x	          3
+#  x	          4
+#  x	          5
+#  x	          6
+#  x	          7
+#  x	          8
+#  x	          9
+#  x	         10
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:55:08 on Apr 29,2018
+# vlog -reportprogress 300 ./cntFourBit.sv 
+# -- Compiling module cntFourBit
+# -- Compiling module cntFourBit_testbench
+# 
+# Top level modules:
+# 	cntFourBit_testbench
+# End time: 13:55:08 on Apr 29,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:55:09 on Apr 29,2018, Elapsed time: 0:01:33
+# Errors: 0, Warnings: 1
+# vsim -voptargs=""+acc"" -t 1ps -lib work cntFourBit_testbench 
+# Start time: 13:55:09 on Apr 29,2018
+# Loading sv_std.std
+# Loading work.cntFourBit_testbench
+# Loading work.cntFourBit
+# ** Warning: (vsim-3015) ./cntFourBit.sv(27): [PCDPC] - Port size (4) does not match connection size (1) for port 'D'. The port definition is at: ./cntFourBit.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /cntFourBit_testbench/DUT File: ./cntFourBit.sv
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+#  x	          0
+#  x	          1
+#  x	          2
+#  x	          3
+#  x	          4
+#  x	          5
+#  x	          6
+#  x	          7
+#  x	          8
+#  x	          9
+#  x	         10
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:06:42 on Apr 29,2018
+# vlog -reportprogress 300 ./cntFourBit.sv 
+# -- Compiling module cntFourBit
+# -- Compiling module cntFourBit_testbench
+# 
+# Top level modules:
+# 	cntFourBit_testbench
+# End time: 14:06:42 on Apr 29,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 14:06:42 on Apr 29,2018, Elapsed time: 0:11:33
+# Errors: 0, Warnings: 1
+# vsim -voptargs=""+acc"" -t 1ps -lib work cntFourBit_testbench 
+# Start time: 14:06:43 on Apr 29,2018
+# Loading sv_std.std
+# Loading work.cntFourBit_testbench
+# Loading work.cntFourBit
+# ** Warning: (vsim-3015) ./cntFourBit.sv(27): [PCDPC] - Port size (4) does not match connection size (1) for port 'D'. The port definition is at: ./cntFourBit.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /cntFourBit_testbench/DUT File: ./cntFourBit.sv
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+#  x	          0
+#  x	          1
+#  x	          2
+#  x	          3
+#  x	          4
+#  x	          5
+#  x	          6
+#  x	          7
+#  x	          8
+#  x	          9
+#  x	         10
+# Error opening C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW3/Part4/(vsim-3015) ./cntFourBit.sv
+# Path name 'C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW3/Part4/(vsim-3015) ./cntFourBit.sv' doesn't exist.
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:08:55 on Apr 29,2018
+# vlog -reportprogress 300 ./cntFourBit.sv 
+# -- Compiling module cntFourBit
+# -- Compiling module cntFourBit_testbench
+# 
+# Top level modules:
+# 	cntFourBit_testbench
+# End time: 14:08:55 on Apr 29,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 14:08:56 on Apr 29,2018, Elapsed time: 0:02:13
+# Errors: 1, Warnings: 1
+# vsim -voptargs=""+acc"" -t 1ps -lib work cntFourBit_testbench 
+# Start time: 14:08:56 on Apr 29,2018
+# Loading sv_std.std
+# Loading work.cntFourBit_testbench
+# Loading work.cntFourBit
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+#  x	          0
+#  x	          1
+#  x	          2
+#  x	          3
+#  x	          4
+#  x	          5
+#  x	          6
+#  x	          7
+#  x	          8
+#  x	          9
+#  x	         10
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:10:27 on Apr 29,2018
+# vlog -reportprogress 300 ./cntFourBit.sv 
+# -- Compiling module cntFourBit
+# -- Compiling module cntFourBit_testbench
+# ** Error: (vlog-13069) ./cntFourBit.sv(26): near "logic": syntax error, unexpected "SystemVerilog keyword 'logic'", expecting ';' or ','.
+# End time: 14:10:27 on Apr 29,2018, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 7
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./cntFourBit.sv""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:10:38 on Apr 29,2018
+# vlog -reportprogress 300 ./cntFourBit.sv 
+# -- Compiling module cntFourBit
+# -- Compiling module cntFourBit_testbench
+# 
+# Top level modules:
+# 	cntFourBit_testbench
+# End time: 14:10:38 on Apr 29,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 14:10:39 on Apr 29,2018, Elapsed time: 0:01:43
+# Errors: 4, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work cntFourBit_testbench 
+# Start time: 14:10:39 on Apr 29,2018
+# Loading sv_std.std
+# Loading work.cntFourBit_testbench
+# Loading work.cntFourBit
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+#  x	          0
+#  x	          1
+#  x	          2
+#  x	          3
+#  x	          4
+#  x	          5
+#  x	          6
+#  x	          7
+#  x	          8
+#  x	          9
+#  x	         10
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:11:24 on Apr 29,2018
+# vlog -reportprogress 300 ./cntFourBit.sv 
+# -- Compiling module cntFourBit
+# -- Compiling module cntFourBit_testbench
+# 
+# Top level modules:
+# 	cntFourBit_testbench
+# End time: 14:11:24 on Apr 29,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 14:11:25 on Apr 29,2018, Elapsed time: 0:00:46
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work cntFourBit_testbench 
+# Start time: 14:11:25 on Apr 29,2018
+# Loading sv_std.std
+# Loading work.cntFourBit_testbench
+# Loading work.cntFourBit
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+#  x	          0
+#  x	          1
+#  x	          2
+#  x	          3
+#  x	          4
+#  x	          5
+#  x	          6
+#  x	          7
+#  x	          8
+#  x	          9
+#  x	         10
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:19:25 on Apr 29,2018
+# vlog -reportprogress 300 ./cntFourBit.sv 
+# -- Compiling module cntFourBit
+# -- Compiling module cntFourBit_testbench
+# 
+# Top level modules:
+# 	cntFourBit_testbench
+# End time: 23:19:25 on Apr 29,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 23:19:26 on Apr 29,2018, Elapsed time: 9:08:01
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work cntFourBit_testbench 
+# Start time: 23:19:27 on Apr 29,2018
+# Loading sv_std.std
+# Loading work.cntFourBit_testbench
+# Loading work.cntFourBit
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+#  x	          0
+#  x	          1
+#  x	          2
+#  x	          3
+#  x	          4
+#  x	          5
+#  x	          6
+#  x	          7
+#  x	          8
+#  x	          9
+#  x	         10
