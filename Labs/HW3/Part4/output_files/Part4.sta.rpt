@@ -1,0 +1,1389 @@
+TimeQuest Timing Analyzer report for Part4
+Sat May 05 14:50:18 2018
+Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow 1200mV 85C Model Fmax Summary
+  6. Timing Closure Recommendations
+  7. Slow 1200mV 85C Model Setup Summary
+  8. Slow 1200mV 85C Model Hold Summary
+  9. Slow 1200mV 85C Model Recovery Summary
+ 10. Slow 1200mV 85C Model Removal Summary
+ 11. Slow 1200mV 85C Model Minimum Pulse Width Summary
+ 12. Slow 1200mV 85C Model Setup: 'CLOCK_50'
+ 13. Slow 1200mV 85C Model Setup: 'MHzCLock:MHC|Out'
+ 14. Slow 1200mV 85C Model Hold: 'MHzCLock:MHC|Out'
+ 15. Slow 1200mV 85C Model Hold: 'CLOCK_50'
+ 16. Slow 1200mV 85C Model Metastability Summary
+ 17. Slow 1200mV 0C Model Fmax Summary
+ 18. Slow 1200mV 0C Model Setup Summary
+ 19. Slow 1200mV 0C Model Hold Summary
+ 20. Slow 1200mV 0C Model Recovery Summary
+ 21. Slow 1200mV 0C Model Removal Summary
+ 22. Slow 1200mV 0C Model Minimum Pulse Width Summary
+ 23. Slow 1200mV 0C Model Setup: 'CLOCK_50'
+ 24. Slow 1200mV 0C Model Setup: 'MHzCLock:MHC|Out'
+ 25. Slow 1200mV 0C Model Hold: 'MHzCLock:MHC|Out'
+ 26. Slow 1200mV 0C Model Hold: 'CLOCK_50'
+ 27. Slow 1200mV 0C Model Metastability Summary
+ 28. Fast 1200mV 0C Model Setup Summary
+ 29. Fast 1200mV 0C Model Hold Summary
+ 30. Fast 1200mV 0C Model Recovery Summary
+ 31. Fast 1200mV 0C Model Removal Summary
+ 32. Fast 1200mV 0C Model Minimum Pulse Width Summary
+ 33. Fast 1200mV 0C Model Setup: 'CLOCK_50'
+ 34. Fast 1200mV 0C Model Setup: 'MHzCLock:MHC|Out'
+ 35. Fast 1200mV 0C Model Hold: 'MHzCLock:MHC|Out'
+ 36. Fast 1200mV 0C Model Hold: 'CLOCK_50'
+ 37. Fast 1200mV 0C Model Metastability Summary
+ 38. Multicorner Timing Analysis Summary
+ 39. Board Trace Model Assignments
+ 40. Input Transition Times
+ 41. Signal Integrity Metrics (Slow 1200mv 0c Model)
+ 42. Signal Integrity Metrics (Slow 1200mv 85c Model)
+ 43. Signal Integrity Metrics (Fast 1200mv 0c Model)
+ 44. Setup Transfers
+ 45. Hold Transfers
+ 46. Report TCCS
+ 47. Report RSKM
+ 48. Unconstrained Paths Summary
+ 49. Clock Status Summary
+ 50. Unconstrained Input Ports
+ 51. Unconstrained Output Ports
+ 52. Unconstrained Input Ports
+ 53. Unconstrained Output Ports
+ 54. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-----------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                           ;
++-----------------------+-----------------------------------------------------+
+; Quartus Prime Version ; Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
+; Timing Analyzer       ; TimeQuest                                           ;
+; Revision Name         ; Part4                                               ;
+; Device Family         ; Cyclone IV E                                        ;
+; Device Name           ; EP4CE115F29C7                                       ;
+; Timing Models         ; Final                                               ;
+; Delay Model           ; Combined                                            ;
+; Rise/Fall Delays      ; Enabled                                             ;
++-----------------------+-----------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.01        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.4%      ;
+;     Processors 3-4         ;   0.3%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                             ;
++------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------------+
+; Clock Name       ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets              ;
++------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------------+
+; CLOCK_50         ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { CLOCK_50 }         ;
+; MHzCLock:MHC|Out ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { MHzCLock:MHC|Out } ;
++------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Fmax Summary                                                                              ;
++------------+-----------------+------------------+---------------------------------------------------------------+
+; Fmax       ; Restricted Fmax ; Clock Name       ; Note                                                          ;
++------------+-----------------+------------------+---------------------------------------------------------------+
+; 282.73 MHz ; 250.0 MHz       ; CLOCK_50         ; limit due to minimum period restriction (max I/O toggle rate) ;
+; 499.25 MHz ; 437.64 MHz      ; MHzCLock:MHC|Out ; limit due to minimum period restriction (tmin)                ;
++------------+-----------------+------------------+---------------------------------------------------------------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
+----------------------------------
+; Timing Closure Recommendations ;
+----------------------------------
+HTML report is unavailable in plain text report export.
+
+
++-------------------------------------------+
+; Slow 1200mV 85C Model Setup Summary       ;
++------------------+--------+---------------+
+; Clock            ; Slack  ; End Point TNS ;
++------------------+--------+---------------+
+; CLOCK_50         ; -2.537 ; -44.609       ;
+; MHzCLock:MHC|Out ; -1.003 ; -3.383        ;
++------------------+--------+---------------+
+
+
++------------------------------------------+
+; Slow 1200mV 85C Model Hold Summary       ;
++------------------+-------+---------------+
+; Clock            ; Slack ; End Point TNS ;
++------------------+-------+---------------+
+; MHzCLock:MHC|Out ; 0.403 ; 0.000         ;
+; CLOCK_50         ; 0.556 ; 0.000         ;
++------------------+-------+---------------+
+
+
+------------------------------------------
+; Slow 1200mV 85C Model Recovery Summary ;
+------------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Slow 1200mV 85C Model Removal Summary ;
+-----------------------------------------
+No paths to report.
+
+
++---------------------------------------------------+
+; Slow 1200mV 85C Model Minimum Pulse Width Summary ;
++------------------+--------+-----------------------+
+; Clock            ; Slack  ; End Point TNS         ;
++------------------+--------+-----------------------+
+; CLOCK_50         ; -3.000 ; -37.695               ;
+; MHzCLock:MHC|Out ; -1.285 ; -5.140                ;
++------------------+--------+-----------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Setup: 'CLOCK_50'                                                                                ;
++--------+--------------------+--------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node          ; To Node            ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+--------------------+--------------------+--------------+-------------+--------------+------------+------------+
+; -2.537 ; MHzCLock:MHC|Q[1]  ; MHzCLock:MHC|Q[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 3.457      ;
+; -2.534 ; MHzCLock:MHC|Q[7]  ; MHzCLock:MHC|Q[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.082     ; 3.450      ;
+; -2.462 ; MHzCLock:MHC|Q[0]  ; MHzCLock:MHC|Q[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 3.382      ;
+; -2.438 ; MHzCLock:MHC|Q[11] ; MHzCLock:MHC|Out   ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 3.358      ;
+; -2.404 ; MHzCLock:MHC|Q[0]  ; MHzCLock:MHC|Q[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.339      ; 3.741      ;
+; -2.402 ; MHzCLock:MHC|Q[3]  ; MHzCLock:MHC|Q[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 3.322      ;
+; -2.383 ; MHzCLock:MHC|Q[11] ; MHzCLock:MHC|Q[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 3.303      ;
+; -2.383 ; MHzCLock:MHC|Q[11] ; MHzCLock:MHC|Q[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 3.303      ;
+; -2.375 ; MHzCLock:MHC|Q[1]  ; MHzCLock:MHC|Q[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.339      ; 3.712      ;
+; -2.372 ; MHzCLock:MHC|Q[7]  ; MHzCLock:MHC|Q[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.335      ; 3.705      ;
+; -2.358 ; MHzCLock:MHC|Q[25] ; MHzCLock:MHC|Out   ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.512     ; 2.844      ;
+; -2.339 ; MHzCLock:MHC|Q[7]  ; MHzCLock:MHC|Out   ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.082     ; 3.255      ;
+; -2.318 ; MHzCLock:MHC|Q[2]  ; MHzCLock:MHC|Q[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 3.238      ;
+; -2.303 ; MHzCLock:MHC|Q[25] ; MHzCLock:MHC|Q[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.512     ; 2.789      ;
+; -2.303 ; MHzCLock:MHC|Q[25] ; MHzCLock:MHC|Q[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.512     ; 2.789      ;
+; -2.290 ; MHzCLock:MHC|Q[1]  ; MHzCLock:MHC|Q[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.339      ; 3.627      ;
+; -2.290 ; MHzCLock:MHC|Q[7]  ; MHzCLock:MHC|Q[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.082     ; 3.206      ;
+; -2.287 ; MHzCLock:MHC|Q[7]  ; MHzCLock:MHC|Q[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.335      ; 3.620      ;
+; -2.283 ; MHzCLock:MHC|Q[1]  ; MHzCLock:MHC|Q[22] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.339      ; 3.620      ;
+; -2.280 ; MHzCLock:MHC|Q[7]  ; MHzCLock:MHC|Q[22] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.335      ; 3.613      ;
+; -2.271 ; MHzCLock:MHC|Q[5]  ; MHzCLock:MHC|Q[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 3.191      ;
+; -2.258 ; MHzCLock:MHC|Q[2]  ; MHzCLock:MHC|Q[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.339      ; 3.595      ;
+; -2.248 ; MHzCLock:MHC|Q[9]  ; MHzCLock:MHC|Out   ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 3.168      ;
+; -2.240 ; MHzCLock:MHC|Q[3]  ; MHzCLock:MHC|Q[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.339      ; 3.577      ;
+; -2.239 ; MHzCLock:MHC|Q[0]  ; MHzCLock:MHC|Q[25] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.335      ; 3.572      ;
+; -2.215 ; MHzCLock:MHC|Q[0]  ; MHzCLock:MHC|Q[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.339      ; 3.552      ;
+; -2.209 ; MHzCLock:MHC|Q[11] ; MHzCLock:MHC|Q[25] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.335      ; 3.542      ;
+; -2.208 ; MHzCLock:MHC|Q[0]  ; MHzCLock:MHC|Q[22] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.339      ; 3.545      ;
+; -2.206 ; MHzCLock:MHC|Q[14] ; MHzCLock:MHC|Out   ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.516     ; 2.688      ;
+; -2.205 ; MHzCLock:MHC|Q[16] ; MHzCLock:MHC|Out   ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.081     ; 3.122      ;
+; -2.196 ; MHzCLock:MHC|Q[1]  ; MHzCLock:MHC|Q[25] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.335      ; 3.529      ;
+; -2.193 ; MHzCLock:MHC|Q[9]  ; MHzCLock:MHC|Q[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 3.113      ;
+; -2.193 ; MHzCLock:MHC|Q[9]  ; MHzCLock:MHC|Q[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 3.113      ;
+; -2.193 ; MHzCLock:MHC|Q[7]  ; MHzCLock:MHC|Q[25] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.331      ; 3.522      ;
+; -2.182 ; MHzCLock:MHC|Q[4]  ; MHzCLock:MHC|Q[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 3.102      ;
+; -2.181 ; MHzCLock:MHC|Q[0]  ; MHzCLock:MHC|Q[19] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.335      ; 3.514      ;
+; -2.169 ; MHzCLock:MHC|Q[11] ; MHzCLock:MHC|Q[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.339      ; 3.506      ;
+; -2.168 ; MHzCLock:MHC|Q[13] ; MHzCLock:MHC|Q[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.099     ; 3.067      ;
+; -2.155 ; MHzCLock:MHC|Q[3]  ; MHzCLock:MHC|Q[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.339      ; 3.492      ;
+; -2.152 ; MHzCLock:MHC|Q[1]  ; MHzCLock:MHC|Q[19] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.335      ; 3.485      ;
+; -2.151 ; MHzCLock:MHC|Q[14] ; MHzCLock:MHC|Q[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.516     ; 2.633      ;
+; -2.151 ; MHzCLock:MHC|Q[14] ; MHzCLock:MHC|Q[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.516     ; 2.633      ;
+; -2.150 ; MHzCLock:MHC|Q[16] ; MHzCLock:MHC|Q[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.081     ; 3.067      ;
+; -2.150 ; MHzCLock:MHC|Q[16] ; MHzCLock:MHC|Q[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.081     ; 3.067      ;
+; -2.149 ; MHzCLock:MHC|Q[7]  ; MHzCLock:MHC|Q[19] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.331      ; 3.478      ;
+; -2.148 ; MHzCLock:MHC|Q[3]  ; MHzCLock:MHC|Q[22] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.339      ; 3.485      ;
+; -2.139 ; MHzCLock:MHC|Q[0]  ; MHzCLock:MHC|Q[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.339      ; 3.476      ;
+; -2.138 ; MHzCLock:MHC|Q[12] ; MHzCLock:MHC|Q[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.335      ; 3.471      ;
+; -2.131 ; MHzCLock:MHC|Q[14] ; MHzCLock:MHC|Q[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.099     ; 3.030      ;
+; -2.131 ; MHzCLock:MHC|Q[4]  ; MHzCLock:MHC|Q[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.339      ; 3.468      ;
+; -2.130 ; MHzCLock:MHC|Q[15] ; MHzCLock:MHC|Out   ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.516     ; 2.612      ;
+; -2.129 ; MHzCLock:MHC|Q[25] ; MHzCLock:MHC|Q[25] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.099     ; 3.028      ;
+; -2.128 ; MHzCLock:MHC|Q[3]  ; MHzCLock:MHC|Out   ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 3.048      ;
+; -2.116 ; MHzCLock:MHC|Q[1]  ; MHzCLock:MHC|Out   ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 3.036      ;
+; -2.109 ; MHzCLock:MHC|Q[5]  ; MHzCLock:MHC|Q[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.339      ; 3.446      ;
+; -2.093 ; MHzCLock:MHC|Q[2]  ; MHzCLock:MHC|Q[25] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.335      ; 3.426      ;
+; -2.089 ; MHzCLock:MHC|Q[25] ; MHzCLock:MHC|Q[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.095     ; 2.992      ;
+; -2.085 ; MHzCLock:MHC|Q[8]  ; MHzCLock:MHC|Out   ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 3.005      ;
+; -2.083 ; MHzCLock:MHC|Q[13] ; MHzCLock:MHC|Q[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.099     ; 2.982      ;
+; -2.079 ; MHzCLock:MHC|Q[1]  ; MHzCLock:MHC|Q[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.339      ; 3.416      ;
+; -2.076 ; MHzCLock:MHC|Q[13] ; MHzCLock:MHC|Q[22] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.099     ; 2.975      ;
+; -2.076 ; MHzCLock:MHC|Q[7]  ; MHzCLock:MHC|Q[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.335      ; 3.409      ;
+; -2.075 ; MHzCLock:MHC|Q[15] ; MHzCLock:MHC|Q[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.516     ; 2.557      ;
+; -2.075 ; MHzCLock:MHC|Q[15] ; MHzCLock:MHC|Q[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.516     ; 2.557      ;
+; -2.073 ; MHzCLock:MHC|Q[3]  ; MHzCLock:MHC|Q[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 2.993      ;
+; -2.071 ; MHzCLock:MHC|Q[2]  ; MHzCLock:MHC|Q[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.339      ; 3.408      ;
+; -2.066 ; MHzCLock:MHC|Q[6]  ; MHzCLock:MHC|Out   ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 2.986      ;
+; -2.064 ; MHzCLock:MHC|Q[2]  ; MHzCLock:MHC|Q[22] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.339      ; 3.401      ;
+; -2.061 ; MHzCLock:MHC|Q[3]  ; MHzCLock:MHC|Q[25] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.335      ; 3.394      ;
+; -2.061 ; MHzCLock:MHC|Q[1]  ; MHzCLock:MHC|Q[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 2.981      ;
+; -2.053 ; MHzCLock:MHC|Q[8]  ; MHzCLock:MHC|Q[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 2.973      ;
+; -2.053 ; MHzCLock:MHC|Q[8]  ; MHzCLock:MHC|Q[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 2.973      ;
+; -2.051 ; MHzCLock:MHC|Q[6]  ; MHzCLock:MHC|Q[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 2.971      ;
+; -2.035 ; MHzCLock:MHC|Q[2]  ; MHzCLock:MHC|Q[19] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.335      ; 3.368      ;
+; -2.034 ; MHzCLock:MHC|Q[15] ; MHzCLock:MHC|Q[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.099     ; 2.933      ;
+; -2.024 ; MHzCLock:MHC|Q[5]  ; MHzCLock:MHC|Q[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.339      ; 3.361      ;
+; -2.019 ; MHzCLock:MHC|Q[9]  ; MHzCLock:MHC|Q[25] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.335      ; 3.352      ;
+; -2.017 ; MHzCLock:MHC|Q[5]  ; MHzCLock:MHC|Q[22] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.339      ; 3.354      ;
+; -2.017 ; MHzCLock:MHC|Q[3]  ; MHzCLock:MHC|Q[19] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.335      ; 3.350      ;
+; -2.012 ; MHzCLock:MHC|Q[4]  ; MHzCLock:MHC|Out   ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 2.932      ;
+; -2.011 ; MHzCLock:MHC|Q[6]  ; MHzCLock:MHC|Q[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 2.931      ;
+; -1.999 ; MHzCLock:MHC|Q[6]  ; MHzCLock:MHC|Q[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.339      ; 3.336      ;
+; -1.996 ; MHzCLock:MHC|Q[24] ; MHzCLock:MHC|Out   ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.512     ; 2.482      ;
+; -1.993 ; MHzCLock:MHC|Q[2]  ; MHzCLock:MHC|Q[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.339      ; 3.330      ;
+; -1.989 ; MHzCLock:MHC|Q[13] ; MHzCLock:MHC|Q[25] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.103     ; 2.884      ;
+; -1.979 ; MHzCLock:MHC|Q[9]  ; MHzCLock:MHC|Q[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.339      ; 3.316      ;
+; -1.978 ; MHzCLock:MHC|Q[16] ; MHzCLock:MHC|Q[25] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.332      ; 3.308      ;
+; -1.977 ; MHzCLock:MHC|Q[14] ; MHzCLock:MHC|Q[25] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.103     ; 2.872      ;
+; -1.973 ; MHzCLock:MHC|Q[12] ; MHzCLock:MHC|Q[25] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.331      ; 3.302      ;
+; -1.966 ; MHzCLock:MHC|Q[11] ; MHzCLock:MHC|Q[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.339      ; 3.303      ;
+; -1.966 ; MHzCLock:MHC|Q[11] ; MHzCLock:MHC|Q[22] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.339      ; 3.303      ;
+; -1.966 ; MHzCLock:MHC|Q[4]  ; MHzCLock:MHC|Q[25] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.335      ; 3.299      ;
+; -1.966 ; MHzCLock:MHC|Q[13] ; MHzCLock:MHC|Out   ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.516     ; 2.448      ;
+; -1.966 ; MHzCLock:MHC|Q[11] ; MHzCLock:MHC|Q[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.339      ; 3.303      ;
+; -1.965 ; MHzCLock:MHC|Q[11] ; MHzCLock:MHC|Q[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.339      ; 3.302      ;
+; -1.957 ; MHzCLock:MHC|Q[4]  ; MHzCLock:MHC|Q[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 2.877      ;
+; -1.949 ; MHzCLock:MHC|Q[15] ; MHzCLock:MHC|Q[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.099     ; 2.848      ;
+; -1.945 ; MHzCLock:MHC|Q[13] ; MHzCLock:MHC|Q[19] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.103     ; 2.840      ;
+; -1.944 ; MHzCLock:MHC|Q[3]  ; MHzCLock:MHC|Q[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.339      ; 3.281      ;
+; -1.942 ; MHzCLock:MHC|Q[15] ; MHzCLock:MHC|Q[22] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.099     ; 2.841      ;
++--------+--------------------+--------------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Setup: 'MHzCLock:MHC|Out'                                                                                   ;
++--------+---------------------+---------------------+------------------+------------------+--------------+------------+------------+
+; Slack  ; From Node           ; To Node             ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------+---------------------+------------------+------------------+--------------+------------+------------+
+; -1.003 ; cntFourBit:FBC|Q[0] ; cntFourBit:FBC|Q[1] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 1.000        ; -0.080     ; 1.921      ;
+; -0.988 ; cntFourBit:FBC|Q[1] ; cntFourBit:FBC|Q[3] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 1.000        ; -0.080     ; 1.906      ;
+; -0.888 ; cntFourBit:FBC|Q[0] ; cntFourBit:FBC|Q[3] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 1.000        ; -0.080     ; 1.806      ;
+; -0.807 ; cntFourBit:FBC|Q[2] ; cntFourBit:FBC|Q[3] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 1.000        ; -0.080     ; 1.725      ;
+; -0.755 ; cntFourBit:FBC|Q[2] ; cntFourBit:FBC|Q[1] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 1.000        ; -0.080     ; 1.673      ;
+; -0.739 ; cntFourBit:FBC|Q[3] ; cntFourBit:FBC|Q[0] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 1.000        ; -0.080     ; 1.657      ;
+; -0.653 ; cntFourBit:FBC|Q[1] ; cntFourBit:FBC|Q[2] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 1.000        ; -0.080     ; 1.571      ;
+; -0.644 ; cntFourBit:FBC|Q[0] ; cntFourBit:FBC|Q[0] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 1.000        ; -0.080     ; 1.562      ;
+; -0.638 ; cntFourBit:FBC|Q[1] ; cntFourBit:FBC|Q[1] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 1.000        ; -0.080     ; 1.556      ;
+; -0.586 ; cntFourBit:FBC|Q[0] ; cntFourBit:FBC|Q[2] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 1.000        ; -0.080     ; 1.504      ;
+; -0.489 ; cntFourBit:FBC|Q[2] ; cntFourBit:FBC|Q[2] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 1.000        ; -0.080     ; 1.407      ;
+; -0.463 ; cntFourBit:FBC|Q[3] ; cntFourBit:FBC|Q[1] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 1.000        ; -0.080     ; 1.381      ;
+; -0.396 ; cntFourBit:FBC|Q[2] ; cntFourBit:FBC|Q[0] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 1.000        ; -0.080     ; 1.314      ;
+; -0.279 ; cntFourBit:FBC|Q[1] ; cntFourBit:FBC|Q[0] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 1.000        ; -0.080     ; 1.197      ;
+; -0.100 ; cntFourBit:FBC|Q[3] ; cntFourBit:FBC|Q[2] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 1.000        ; -0.080     ; 1.018      ;
+; 0.153  ; cntFourBit:FBC|Q[3] ; cntFourBit:FBC|Q[3] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 1.000        ; -0.080     ; 0.765      ;
++--------+---------------------+---------------------+------------------+------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Hold: 'MHzCLock:MHC|Out'                                                                                   ;
++-------+---------------------+---------------------+------------------+------------------+--------------+------------+------------+
+; Slack ; From Node           ; To Node             ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------+---------------------+------------------+------------------+--------------+------------+------------+
+; 0.403 ; cntFourBit:FBC|Q[0] ; cntFourBit:FBC|Q[0] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 0.000        ; 0.080      ; 0.669      ;
+; 0.403 ; cntFourBit:FBC|Q[1] ; cntFourBit:FBC|Q[1] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 0.000        ; 0.080      ; 0.669      ;
+; 0.403 ; cntFourBit:FBC|Q[3] ; cntFourBit:FBC|Q[3] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 0.000        ; 0.080      ; 0.669      ;
+; 0.613 ; cntFourBit:FBC|Q[3] ; cntFourBit:FBC|Q[2] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 0.000        ; 0.080      ; 0.879      ;
+; 0.802 ; cntFourBit:FBC|Q[1] ; cntFourBit:FBC|Q[3] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 0.000        ; 0.080      ; 1.068      ;
+; 0.805 ; cntFourBit:FBC|Q[1] ; cntFourBit:FBC|Q[0] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 0.000        ; 0.080      ; 1.071      ;
+; 0.924 ; cntFourBit:FBC|Q[2] ; cntFourBit:FBC|Q[3] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 0.000        ; 0.080      ; 1.190      ;
+; 0.927 ; cntFourBit:FBC|Q[2] ; cntFourBit:FBC|Q[0] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 0.000        ; 0.080      ; 1.193      ;
+; 0.952 ; cntFourBit:FBC|Q[3] ; cntFourBit:FBC|Q[1] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 0.000        ; 0.080      ; 1.218      ;
+; 1.012 ; cntFourBit:FBC|Q[2] ; cntFourBit:FBC|Q[2] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 0.000        ; 0.080      ; 1.278      ;
+; 1.067 ; cntFourBit:FBC|Q[0] ; cntFourBit:FBC|Q[2] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 0.000        ; 0.080      ; 1.333      ;
+; 1.093 ; cntFourBit:FBC|Q[0] ; cntFourBit:FBC|Q[1] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 0.000        ; 0.080      ; 1.359      ;
+; 1.144 ; cntFourBit:FBC|Q[0] ; cntFourBit:FBC|Q[3] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 0.000        ; 0.080      ; 1.410      ;
+; 1.145 ; cntFourBit:FBC|Q[1] ; cntFourBit:FBC|Q[2] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 0.000        ; 0.080      ; 1.411      ;
+; 1.236 ; cntFourBit:FBC|Q[3] ; cntFourBit:FBC|Q[0] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 0.000        ; 0.080      ; 1.502      ;
+; 1.266 ; cntFourBit:FBC|Q[2] ; cntFourBit:FBC|Q[1] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 0.000        ; 0.080      ; 1.532      ;
++-------+---------------------+---------------------+------------------+------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Hold: 'CLOCK_50'                                                                                ;
++-------+--------------------+--------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node          ; To Node            ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+--------------------+--------------------+--------------+-------------+--------------+------------+------------+
+; 0.556 ; MHzCLock:MHC|Q[16] ; MHzCLock:MHC|Q[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.513      ; 1.255      ;
+; 0.639 ; MHzCLock:MHC|Q[18] ; MHzCLock:MHC|Q[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.099      ; 0.924      ;
+; 0.640 ; MHzCLock:MHC|Q[24] ; MHzCLock:MHC|Q[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.099      ; 0.925      ;
+; 0.640 ; MHzCLock:MHC|Q[3]  ; MHzCLock:MHC|Q[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 0.908      ;
+; 0.641 ; MHzCLock:MHC|Q[8]  ; MHzCLock:MHC|Q[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 0.909      ;
+; 0.641 ; MHzCLock:MHC|Q[2]  ; MHzCLock:MHC|Q[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 0.909      ;
+; 0.642 ; MHzCLock:MHC|Q[5]  ; MHzCLock:MHC|Q[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 0.910      ;
+; 0.642 ; MHzCLock:MHC|Q[1]  ; MHzCLock:MHC|Q[1]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 0.910      ;
+; 0.645 ; MHzCLock:MHC|Q[6]  ; MHzCLock:MHC|Q[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 0.913      ;
+; 0.645 ; MHzCLock:MHC|Q[4]  ; MHzCLock:MHC|Q[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 0.913      ;
+; 0.655 ; MHzCLock:MHC|Q[16] ; MHzCLock:MHC|Q[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 0.923      ;
+; 0.655 ; MHzCLock:MHC|Q[11] ; MHzCLock:MHC|Q[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 0.923      ;
+; 0.655 ; MHzCLock:MHC|Q[10] ; MHzCLock:MHC|Q[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 0.923      ;
+; 0.656 ; MHzCLock:MHC|Q[9]  ; MHzCLock:MHC|Q[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 0.924      ;
+; 0.674 ; MHzCLock:MHC|Q[0]  ; MHzCLock:MHC|Q[0]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 0.942      ;
+; 0.916 ; MHzCLock:MHC|Q[11] ; MHzCLock:MHC|Q[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.516      ; 1.618      ;
+; 0.931 ; MHzCLock:MHC|Q[10] ; MHzCLock:MHC|Q[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.516      ; 1.633      ;
+; 0.934 ; MHzCLock:MHC|Q[16] ; MHzCLock:MHC|Q[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.513      ; 1.633      ;
+; 0.957 ; MHzCLock:MHC|Q[17] ; MHzCLock:MHC|Q[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.099      ; 1.242      ;
+; 0.958 ; MHzCLock:MHC|Q[3]  ; MHzCLock:MHC|Q[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.226      ;
+; 0.959 ; MHzCLock:MHC|Q[1]  ; MHzCLock:MHC|Q[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.227      ;
+; 0.959 ; MHzCLock:MHC|Q[5]  ; MHzCLock:MHC|Q[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.227      ;
+; 0.968 ; MHzCLock:MHC|Q[2]  ; MHzCLock:MHC|Q[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.236      ;
+; 0.968 ; MHzCLock:MHC|Q[8]  ; MHzCLock:MHC|Q[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.236      ;
+; 0.972 ; MHzCLock:MHC|Q[4]  ; MHzCLock:MHC|Q[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.240      ;
+; 0.973 ; MHzCLock:MHC|Q[9]  ; MHzCLock:MHC|Q[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.241      ;
+; 0.973 ; MHzCLock:MHC|Q[2]  ; MHzCLock:MHC|Q[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.241      ;
+; 0.973 ; MHzCLock:MHC|Q[8]  ; MHzCLock:MHC|Q[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.241      ;
+; 0.977 ; MHzCLock:MHC|Q[6]  ; MHzCLock:MHC|Q[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.245      ;
+; 0.977 ; MHzCLock:MHC|Q[4]  ; MHzCLock:MHC|Q[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.245      ;
+; 0.982 ; MHzCLock:MHC|Q[0]  ; MHzCLock:MHC|Q[1]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.250      ;
+; 0.982 ; MHzCLock:MHC|Q[10] ; MHzCLock:MHC|Q[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.250      ;
+; 0.983 ; MHzCLock:MHC|Q[25] ; MHzCLock:MHC|Q[25] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.099      ; 1.268      ;
+; 0.987 ; MHzCLock:MHC|Q[0]  ; MHzCLock:MHC|Q[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.255      ;
+; 1.029 ; MHzCLock:MHC|Q[16] ; MHzCLock:MHC|Q[17] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.513      ; 1.728      ;
+; 1.043 ; MHzCLock:MHC|Q[9]  ; MHzCLock:MHC|Q[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.516      ; 1.745      ;
+; 1.043 ; MHzCLock:MHC|Q[8]  ; MHzCLock:MHC|Q[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.516      ; 1.745      ;
+; 1.079 ; MHzCLock:MHC|Q[3]  ; MHzCLock:MHC|Q[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.347      ;
+; 1.080 ; MHzCLock:MHC|Q[1]  ; MHzCLock:MHC|Q[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.348      ;
+; 1.084 ; MHzCLock:MHC|Q[3]  ; MHzCLock:MHC|Q[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.352      ;
+; 1.085 ; MHzCLock:MHC|Q[1]  ; MHzCLock:MHC|Q[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.353      ;
+; 1.085 ; MHzCLock:MHC|Q[5]  ; MHzCLock:MHC|Q[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.353      ;
+; 1.094 ; MHzCLock:MHC|Q[9]  ; MHzCLock:MHC|Q[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.362      ;
+; 1.094 ; MHzCLock:MHC|Q[2]  ; MHzCLock:MHC|Q[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.362      ;
+; 1.094 ; MHzCLock:MHC|Q[8]  ; MHzCLock:MHC|Q[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.362      ;
+; 1.098 ; MHzCLock:MHC|Q[6]  ; MHzCLock:MHC|Q[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.366      ;
+; 1.099 ; MHzCLock:MHC|Q[2]  ; MHzCLock:MHC|Q[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.367      ;
+; 1.103 ; MHzCLock:MHC|Q[6]  ; MHzCLock:MHC|Q[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.371      ;
+; 1.103 ; MHzCLock:MHC|Q[4]  ; MHzCLock:MHC|Q[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.371      ;
+; 1.108 ; MHzCLock:MHC|Q[0]  ; MHzCLock:MHC|Q[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.376      ;
+; 1.112 ; MHzCLock:MHC|Q[17] ; MHzCLock:MHC|Q[17] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.099      ; 1.397      ;
+; 1.113 ; MHzCLock:MHC|Q[0]  ; MHzCLock:MHC|Q[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.381      ;
+; 1.124 ; MHzCLock:MHC|Q[23] ; MHzCLock:MHC|Q[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.095      ; 1.405      ;
+; 1.173 ; MHzCLock:MHC|Q[11] ; MHzCLock:MHC|Q[14] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.520      ; 1.879      ;
+; 1.173 ; MHzCLock:MHC|Q[6]  ; MHzCLock:MHC|Q[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.516      ; 1.875      ;
+; 1.176 ; MHzCLock:MHC|Q[22] ; MHzCLock:MHC|Q[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.095      ; 1.457      ;
+; 1.188 ; MHzCLock:MHC|Q[10] ; MHzCLock:MHC|Q[14] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.520      ; 1.894      ;
+; 1.206 ; MHzCLock:MHC|Q[1]  ; MHzCLock:MHC|Q[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.474      ;
+; 1.206 ; MHzCLock:MHC|Q[5]  ; MHzCLock:MHC|Q[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.474      ;
+; 1.209 ; MHzCLock:MHC|Q[19] ; MHzCLock:MHC|Q[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.099      ; 1.494      ;
+; 1.210 ; MHzCLock:MHC|Q[3]  ; MHzCLock:MHC|Q[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.478      ;
+; 1.211 ; MHzCLock:MHC|Q[1]  ; MHzCLock:MHC|Q[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.479      ;
+; 1.211 ; MHzCLock:MHC|Q[5]  ; MHzCLock:MHC|Q[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.479      ;
+; 1.221 ; MHzCLock:MHC|Q[11] ; MHzCLock:MHC|Q[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.085      ; 1.492      ;
+; 1.223 ; MHzCLock:MHC|Q[18] ; MHzCLock:MHC|Q[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.099      ; 1.508      ;
+; 1.224 ; MHzCLock:MHC|Q[6]  ; MHzCLock:MHC|Q[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.492      ;
+; 1.224 ; MHzCLock:MHC|Q[4]  ; MHzCLock:MHC|Q[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.492      ;
+; 1.225 ; MHzCLock:MHC|Q[2]  ; MHzCLock:MHC|Q[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.493      ;
+; 1.229 ; MHzCLock:MHC|Q[4]  ; MHzCLock:MHC|Q[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.497      ;
+; 1.234 ; MHzCLock:MHC|Q[0]  ; MHzCLock:MHC|Q[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.502      ;
+; 1.236 ; MHzCLock:MHC|Q[10] ; MHzCLock:MHC|Q[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.085      ; 1.507      ;
+; 1.237 ; MHzCLock:MHC|Q[19] ; MHzCLock:MHC|Q[19] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.099      ; 1.522      ;
+; 1.239 ; MHzCLock:MHC|Q[15] ; MHzCLock:MHC|Q[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.095      ; 1.520      ;
+; 1.239 ; MHzCLock:MHC|Q[0]  ; MHzCLock:MHC|Q[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.507      ;
+; 1.260 ; MHzCLock:MHC|Q[20] ; MHzCLock:MHC|Q[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.095      ; 1.541      ;
+; 1.279 ; MHzCLock:MHC|Q[16] ; MHzCLock:MHC|Q[19] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.513      ; 1.978      ;
+; 1.281 ; MHzCLock:MHC|Q[16] ; MHzCLock:MHC|Q[21] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.517      ; 1.984      ;
+; 1.281 ; MHzCLock:MHC|Q[5]  ; MHzCLock:MHC|Q[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.516      ; 1.983      ;
+; 1.286 ; MHzCLock:MHC|Q[21] ; MHzCLock:MHC|Q[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.095      ; 1.567      ;
+; 1.292 ; MHzCLock:MHC|Q[11] ; MHzCLock:MHC|Q[15] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.520      ; 1.998      ;
+; 1.294 ; MHzCLock:MHC|Q[11] ; MHzCLock:MHC|Q[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.516      ; 1.996      ;
+; 1.299 ; MHzCLock:MHC|Q[4]  ; MHzCLock:MHC|Q[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.516      ; 2.001      ;
+; 1.300 ; MHzCLock:MHC|Q[9]  ; MHzCLock:MHC|Q[14] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.520      ; 2.006      ;
+; 1.300 ; MHzCLock:MHC|Q[8]  ; MHzCLock:MHC|Q[14] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.520      ; 2.006      ;
+; 1.303 ; MHzCLock:MHC|Q[14] ; MHzCLock:MHC|Q[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.095      ; 1.584      ;
+; 1.305 ; MHzCLock:MHC|Q[24] ; MHzCLock:MHC|Q[25] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.099      ; 1.590      ;
+; 1.307 ; MHzCLock:MHC|Q[10] ; MHzCLock:MHC|Q[15] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.520      ; 2.013      ;
+; 1.309 ; MHzCLock:MHC|Q[12] ; MHzCLock:MHC|Q[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.512      ; 2.007      ;
+; 1.309 ; MHzCLock:MHC|Q[10] ; MHzCLock:MHC|Q[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.516      ; 2.011      ;
+; 1.327 ; MHzCLock:MHC|Q[15] ; MHzCLock:MHC|Q[15] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.099      ; 1.612      ;
+; 1.328 ; MHzCLock:MHC|Q[11] ; MHzCLock:MHC|Q[13] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.520      ; 2.034      ;
+; 1.331 ; MHzCLock:MHC|Q[3]  ; MHzCLock:MHC|Q[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.599      ;
+; 1.332 ; MHzCLock:MHC|Q[5]  ; MHzCLock:MHC|Q[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.600      ;
+; 1.335 ; MHzCLock:MHC|Q[17] ; MHzCLock:MHC|Q[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.099      ; 1.620      ;
+; 1.336 ; MHzCLock:MHC|Q[3]  ; MHzCLock:MHC|Q[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.604      ;
+; 1.337 ; MHzCLock:MHC|Q[1]  ; MHzCLock:MHC|Q[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.605      ;
+; 1.338 ; MHzCLock:MHC|Q[16] ; MHzCLock:MHC|Q[22] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.517      ; 2.041      ;
+; 1.341 ; MHzCLock:MHC|Q[21] ; MHzCLock:MHC|Q[21] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.099      ; 1.626      ;
+; 1.343 ; MHzCLock:MHC|Q[10] ; MHzCLock:MHC|Q[13] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.520      ; 2.049      ;
+; 1.345 ; MHzCLock:MHC|Q[16] ; MHzCLock:MHC|Q[20] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.517      ; 2.048      ;
++-------+--------------------+--------------------+--------------+-------------+--------------+------------+------------+
+
+
+-----------------------------------------------
+; Slow 1200mV 85C Model Metastability Summary ;
+-----------------------------------------------
+No synchronizer chains to report.
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Fmax Summary                                                                               ;
++------------+-----------------+------------------+---------------------------------------------------------------+
+; Fmax       ; Restricted Fmax ; Clock Name       ; Note                                                          ;
++------------+-----------------+------------------+---------------------------------------------------------------+
+; 311.43 MHz ; 250.0 MHz       ; CLOCK_50         ; limit due to minimum period restriction (max I/O toggle rate) ;
+; 549.15 MHz ; 437.64 MHz      ; MHzCLock:MHC|Out ; limit due to minimum period restriction (tmin)                ;
++------------+-----------------+------------------+---------------------------------------------------------------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++-------------------------------------------+
+; Slow 1200mV 0C Model Setup Summary        ;
++------------------+--------+---------------+
+; Clock            ; Slack  ; End Point TNS ;
++------------------+--------+---------------+
+; CLOCK_50         ; -2.211 ; -37.473       ;
+; MHzCLock:MHC|Out ; -0.821 ; -2.659        ;
++------------------+--------+---------------+
+
+
++------------------------------------------+
+; Slow 1200mV 0C Model Hold Summary        ;
++------------------+-------+---------------+
+; Clock            ; Slack ; End Point TNS ;
++------------------+-------+---------------+
+; MHzCLock:MHC|Out ; 0.354 ; 0.000         ;
+; CLOCK_50         ; 0.503 ; 0.000         ;
++------------------+-------+---------------+
+
+
+-----------------------------------------
+; Slow 1200mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Slow 1200mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
++--------------------------------------------------+
+; Slow 1200mV 0C Model Minimum Pulse Width Summary ;
++------------------+--------+----------------------+
+; Clock            ; Slack  ; End Point TNS        ;
++------------------+--------+----------------------+
+; CLOCK_50         ; -3.000 ; -37.695              ;
+; MHzCLock:MHC|Out ; -1.285 ; -5.140               ;
++------------------+--------+----------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Setup: 'CLOCK_50'                                                                                 ;
++--------+--------------------+--------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node          ; To Node            ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+--------------------+--------------------+--------------+-------------+--------------+------------+------------+
+; -2.211 ; MHzCLock:MHC|Q[1]  ; MHzCLock:MHC|Q[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.069     ; 3.141      ;
+; -2.207 ; MHzCLock:MHC|Q[7]  ; MHzCLock:MHC|Q[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.074     ; 3.132      ;
+; -2.146 ; MHzCLock:MHC|Q[0]  ; MHzCLock:MHC|Q[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.069     ; 3.076      ;
+; -2.144 ; MHzCLock:MHC|Q[11] ; MHzCLock:MHC|Out   ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.069     ; 3.074      ;
+; -2.094 ; MHzCLock:MHC|Q[11] ; MHzCLock:MHC|Q[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.069     ; 3.024      ;
+; -2.094 ; MHzCLock:MHC|Q[11] ; MHzCLock:MHC|Q[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.069     ; 3.024      ;
+; -2.093 ; MHzCLock:MHC|Q[3]  ; MHzCLock:MHC|Q[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.069     ; 3.023      ;
+; -2.055 ; MHzCLock:MHC|Q[0]  ; MHzCLock:MHC|Q[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.313      ; 3.367      ;
+; -2.041 ; MHzCLock:MHC|Q[7]  ; MHzCLock:MHC|Out   ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.074     ; 2.966      ;
+; -2.020 ; MHzCLock:MHC|Q[2]  ; MHzCLock:MHC|Q[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.069     ; 2.950      ;
+; -2.017 ; MHzCLock:MHC|Q[25] ; MHzCLock:MHC|Out   ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.467     ; 2.549      ;
+; -2.006 ; MHzCLock:MHC|Q[7]  ; MHzCLock:MHC|Q[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.074     ; 2.931      ;
+; -1.995 ; MHzCLock:MHC|Q[7]  ; MHzCLock:MHC|Q[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.308      ; 3.302      ;
+; -1.979 ; MHzCLock:MHC|Q[1]  ; MHzCLock:MHC|Q[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.313      ; 3.291      ;
+; -1.978 ; MHzCLock:MHC|Q[5]  ; MHzCLock:MHC|Q[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.069     ; 2.908      ;
+; -1.972 ; MHzCLock:MHC|Q[9]  ; MHzCLock:MHC|Out   ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.069     ; 2.902      ;
+; -1.967 ; MHzCLock:MHC|Q[25] ; MHzCLock:MHC|Q[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.467     ; 2.499      ;
+; -1.967 ; MHzCLock:MHC|Q[25] ; MHzCLock:MHC|Q[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.467     ; 2.499      ;
+; -1.951 ; MHzCLock:MHC|Q[1]  ; MHzCLock:MHC|Q[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.313      ; 3.263      ;
+; -1.947 ; MHzCLock:MHC|Q[7]  ; MHzCLock:MHC|Q[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.308      ; 3.254      ;
+; -1.937 ; MHzCLock:MHC|Q[1]  ; MHzCLock:MHC|Q[22] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.313      ; 3.249      ;
+; -1.933 ; MHzCLock:MHC|Q[7]  ; MHzCLock:MHC|Q[22] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.308      ; 3.240      ;
+; -1.927 ; MHzCLock:MHC|Q[16] ; MHzCLock:MHC|Out   ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.073     ; 2.853      ;
+; -1.926 ; MHzCLock:MHC|Q[2]  ; MHzCLock:MHC|Q[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.313      ; 3.238      ;
+; -1.922 ; MHzCLock:MHC|Q[9]  ; MHzCLock:MHC|Q[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.069     ; 2.852      ;
+; -1.922 ; MHzCLock:MHC|Q[9]  ; MHzCLock:MHC|Q[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.069     ; 2.852      ;
+; -1.921 ; MHzCLock:MHC|Q[11] ; MHzCLock:MHC|Q[25] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.309      ; 3.229      ;
+; -1.899 ; MHzCLock:MHC|Q[4]  ; MHzCLock:MHC|Q[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.069     ; 2.829      ;
+; -1.895 ; MHzCLock:MHC|Q[7]  ; MHzCLock:MHC|Q[25] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.304      ; 3.198      ;
+; -1.891 ; MHzCLock:MHC|Q[14] ; MHzCLock:MHC|Out   ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.471     ; 2.419      ;
+; -1.888 ; MHzCLock:MHC|Q[0]  ; MHzCLock:MHC|Q[25] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.309      ; 3.196      ;
+; -1.886 ; MHzCLock:MHC|Q[11] ; MHzCLock:MHC|Q[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.313      ; 3.198      ;
+; -1.886 ; MHzCLock:MHC|Q[0]  ; MHzCLock:MHC|Q[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.313      ; 3.198      ;
+; -1.877 ; MHzCLock:MHC|Q[16] ; MHzCLock:MHC|Q[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.073     ; 2.803      ;
+; -1.877 ; MHzCLock:MHC|Q[16] ; MHzCLock:MHC|Q[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.073     ; 2.803      ;
+; -1.872 ; MHzCLock:MHC|Q[0]  ; MHzCLock:MHC|Q[22] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.313      ; 3.184      ;
+; -1.861 ; MHzCLock:MHC|Q[3]  ; MHzCLock:MHC|Q[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.313      ; 3.173      ;
+; -1.858 ; MHzCLock:MHC|Q[12] ; MHzCLock:MHC|Q[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.308      ; 3.165      ;
+; -1.853 ; MHzCLock:MHC|Q[14] ; MHzCLock:MHC|Q[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.089     ; 2.763      ;
+; -1.841 ; MHzCLock:MHC|Q[14] ; MHzCLock:MHC|Q[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.471     ; 2.369      ;
+; -1.841 ; MHzCLock:MHC|Q[14] ; MHzCLock:MHC|Q[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.471     ; 2.369      ;
+; -1.833 ; MHzCLock:MHC|Q[3]  ; MHzCLock:MHC|Q[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.313      ; 3.145      ;
+; -1.829 ; MHzCLock:MHC|Q[8]  ; MHzCLock:MHC|Out   ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.069     ; 2.759      ;
+; -1.828 ; MHzCLock:MHC|Q[15] ; MHzCLock:MHC|Out   ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.471     ; 2.356      ;
+; -1.823 ; MHzCLock:MHC|Q[0]  ; MHzCLock:MHC|Q[19] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.309      ; 3.131      ;
+; -1.820 ; MHzCLock:MHC|Q[1]  ; MHzCLock:MHC|Q[25] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.309      ; 3.128      ;
+; -1.819 ; MHzCLock:MHC|Q[0]  ; MHzCLock:MHC|Q[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.313      ; 3.131      ;
+; -1.819 ; MHzCLock:MHC|Q[3]  ; MHzCLock:MHC|Q[22] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.313      ; 3.131      ;
+; -1.815 ; MHzCLock:MHC|Q[4]  ; MHzCLock:MHC|Q[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.313      ; 3.127      ;
+; -1.814 ; MHzCLock:MHC|Q[13] ; MHzCLock:MHC|Q[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.089     ; 2.724      ;
+; -1.810 ; MHzCLock:MHC|Q[1]  ; MHzCLock:MHC|Out   ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.069     ; 2.740      ;
+; -1.807 ; MHzCLock:MHC|Q[3]  ; MHzCLock:MHC|Out   ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.069     ; 2.737      ;
+; -1.802 ; MHzCLock:MHC|Q[25] ; MHzCLock:MHC|Q[25] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.089     ; 2.712      ;
+; -1.794 ; MHzCLock:MHC|Q[8]  ; MHzCLock:MHC|Q[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.069     ; 2.724      ;
+; -1.794 ; MHzCLock:MHC|Q[8]  ; MHzCLock:MHC|Q[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.069     ; 2.724      ;
+; -1.786 ; MHzCLock:MHC|Q[13] ; MHzCLock:MHC|Q[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.089     ; 2.696      ;
+; -1.785 ; MHzCLock:MHC|Q[1]  ; MHzCLock:MHC|Q[19] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.309      ; 3.093      ;
+; -1.784 ; MHzCLock:MHC|Q[6]  ; MHzCLock:MHC|Q[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.069     ; 2.714      ;
+; -1.781 ; MHzCLock:MHC|Q[7]  ; MHzCLock:MHC|Q[19] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.304      ; 3.084      ;
+; -1.778 ; MHzCLock:MHC|Q[15] ; MHzCLock:MHC|Q[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.471     ; 2.306      ;
+; -1.778 ; MHzCLock:MHC|Q[15] ; MHzCLock:MHC|Q[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.471     ; 2.306      ;
+; -1.775 ; MHzCLock:MHC|Q[1]  ; MHzCLock:MHC|Q[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.069     ; 2.705      ;
+; -1.772 ; MHzCLock:MHC|Q[13] ; MHzCLock:MHC|Q[22] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.089     ; 2.682      ;
+; -1.772 ; MHzCLock:MHC|Q[3]  ; MHzCLock:MHC|Q[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.069     ; 2.702      ;
+; -1.760 ; MHzCLock:MHC|Q[2]  ; MHzCLock:MHC|Q[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.313      ; 3.072      ;
+; -1.759 ; MHzCLock:MHC|Q[2]  ; MHzCLock:MHC|Q[25] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.309      ; 3.067      ;
+; -1.759 ; MHzCLock:MHC|Q[25] ; MHzCLock:MHC|Q[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.085     ; 2.673      ;
+; -1.759 ; MHzCLock:MHC|Q[7]  ; MHzCLock:MHC|Q[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.308      ; 3.066      ;
+; -1.753 ; MHzCLock:MHC|Q[6]  ; MHzCLock:MHC|Out   ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.069     ; 2.683      ;
+; -1.749 ; MHzCLock:MHC|Q[9]  ; MHzCLock:MHC|Q[25] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.309      ; 3.057      ;
+; -1.746 ; MHzCLock:MHC|Q[5]  ; MHzCLock:MHC|Q[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.313      ; 3.058      ;
+; -1.746 ; MHzCLock:MHC|Q[2]  ; MHzCLock:MHC|Q[22] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.313      ; 3.058      ;
+; -1.739 ; MHzCLock:MHC|Q[24] ; MHzCLock:MHC|Out   ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.467     ; 2.271      ;
+; -1.735 ; MHzCLock:MHC|Q[1]  ; MHzCLock:MHC|Q[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.313      ; 3.047      ;
+; -1.727 ; MHzCLock:MHC|Q[4]  ; MHzCLock:MHC|Out   ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.069     ; 2.657      ;
+; -1.718 ; MHzCLock:MHC|Q[5]  ; MHzCLock:MHC|Q[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.313      ; 3.030      ;
+; -1.714 ; MHzCLock:MHC|Q[9]  ; MHzCLock:MHC|Q[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.313      ; 3.026      ;
+; -1.712 ; MHzCLock:MHC|Q[11] ; MHzCLock:MHC|Q[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.313      ; 3.024      ;
+; -1.712 ; MHzCLock:MHC|Q[11] ; MHzCLock:MHC|Q[22] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.313      ; 3.024      ;
+; -1.712 ; MHzCLock:MHC|Q[11] ; MHzCLock:MHC|Q[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.313      ; 3.024      ;
+; -1.711 ; MHzCLock:MHC|Q[11] ; MHzCLock:MHC|Q[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.313      ; 3.023      ;
+; -1.706 ; MHzCLock:MHC|Q[6]  ; MHzCLock:MHC|Q[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.069     ; 2.636      ;
+; -1.704 ; MHzCLock:MHC|Q[5]  ; MHzCLock:MHC|Q[22] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.313      ; 3.016      ;
+; -1.704 ; MHzCLock:MHC|Q[16] ; MHzCLock:MHC|Q[25] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.305      ; 3.008      ;
+; -1.702 ; MHzCLock:MHC|Q[3]  ; MHzCLock:MHC|Q[25] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.309      ; 3.010      ;
+; -1.699 ; MHzCLock:MHC|Q[6]  ; MHzCLock:MHC|Q[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.313      ; 3.011      ;
+; -1.697 ; MHzCLock:MHC|Q[15] ; MHzCLock:MHC|Q[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.089     ; 2.607      ;
+; -1.694 ; MHzCLock:MHC|Q[2]  ; MHzCLock:MHC|Q[19] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.309      ; 3.002      ;
+; -1.692 ; MHzCLock:MHC|Q[4]  ; MHzCLock:MHC|Q[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.069     ; 2.622      ;
+; -1.691 ; MHzCLock:MHC|Q[12] ; MHzCLock:MHC|Q[25] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.304      ; 2.994      ;
+; -1.690 ; MHzCLock:MHC|Q[2]  ; MHzCLock:MHC|Q[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.313      ; 3.002      ;
+; -1.689 ; MHzCLock:MHC|Q[24] ; MHzCLock:MHC|Q[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.467     ; 2.221      ;
+; -1.689 ; MHzCLock:MHC|Q[24] ; MHzCLock:MHC|Q[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.467     ; 2.221      ;
+; -1.686 ; MHzCLock:MHC|Q[14] ; MHzCLock:MHC|Q[25] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.093     ; 2.592      ;
+; -1.683 ; MHzCLock:MHC|Q[8]  ; MHzCLock:MHC|Q[25] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.309      ; 2.991      ;
+; -1.682 ; MHzCLock:MHC|Q[11] ; MHzCLock:MHC|Q[17] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.309      ; 2.990      ;
+; -1.681 ; MHzCLock:MHC|Q[11] ; MHzCLock:MHC|Q[19] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.309      ; 2.989      ;
+; -1.678 ; MHzCLock:MHC|Q[13] ; MHzCLock:MHC|Out   ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.471     ; 2.206      ;
+; -1.669 ; MHzCLock:MHC|Q[15] ; MHzCLock:MHC|Q[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.089     ; 2.579      ;
+; -1.669 ; MHzCLock:MHC|Q[16] ; MHzCLock:MHC|Q[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.309      ; 2.977      ;
++--------+--------------------+--------------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Setup: 'MHzCLock:MHC|Out'                                                                                    ;
++--------+---------------------+---------------------+------------------+------------------+--------------+------------+------------+
+; Slack  ; From Node           ; To Node             ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------+---------------------+------------------+------------------+--------------+------------+------------+
+; -0.821 ; cntFourBit:FBC|Q[0] ; cntFourBit:FBC|Q[1] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 1.000        ; -0.072     ; 1.748      ;
+; -0.776 ; cntFourBit:FBC|Q[1] ; cntFourBit:FBC|Q[3] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 1.000        ; -0.072     ; 1.703      ;
+; -0.690 ; cntFourBit:FBC|Q[0] ; cntFourBit:FBC|Q[3] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 1.000        ; -0.072     ; 1.617      ;
+; -0.616 ; cntFourBit:FBC|Q[2] ; cntFourBit:FBC|Q[3] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 1.000        ; -0.072     ; 1.543      ;
+; -0.609 ; cntFourBit:FBC|Q[2] ; cntFourBit:FBC|Q[1] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 1.000        ; -0.072     ; 1.536      ;
+; -0.584 ; cntFourBit:FBC|Q[3] ; cntFourBit:FBC|Q[0] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 1.000        ; -0.072     ; 1.511      ;
+; -0.499 ; cntFourBit:FBC|Q[1] ; cntFourBit:FBC|Q[1] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 1.000        ; -0.072     ; 1.426      ;
+; -0.488 ; cntFourBit:FBC|Q[0] ; cntFourBit:FBC|Q[0] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 1.000        ; -0.072     ; 1.415      ;
+; -0.478 ; cntFourBit:FBC|Q[1] ; cntFourBit:FBC|Q[2] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 1.000        ; -0.072     ; 1.405      ;
+; -0.422 ; cntFourBit:FBC|Q[0] ; cntFourBit:FBC|Q[2] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 1.000        ; -0.072     ; 1.349      ;
+; -0.350 ; cntFourBit:FBC|Q[2] ; cntFourBit:FBC|Q[2] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 1.000        ; -0.072     ; 1.277      ;
+; -0.331 ; cntFourBit:FBC|Q[3] ; cntFourBit:FBC|Q[1] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 1.000        ; -0.072     ; 1.258      ;
+; -0.276 ; cntFourBit:FBC|Q[2] ; cntFourBit:FBC|Q[0] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 1.000        ; -0.072     ; 1.203      ;
+; -0.166 ; cntFourBit:FBC|Q[1] ; cntFourBit:FBC|Q[0] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 1.000        ; -0.072     ; 1.093      ;
+; 0.006  ; cntFourBit:FBC|Q[3] ; cntFourBit:FBC|Q[2] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 1.000        ; -0.072     ; 0.921      ;
+; 0.244  ; cntFourBit:FBC|Q[3] ; cntFourBit:FBC|Q[3] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 1.000        ; -0.072     ; 0.683      ;
++--------+---------------------+---------------------+------------------+------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Hold: 'MHzCLock:MHC|Out'                                                                                    ;
++-------+---------------------+---------------------+------------------+------------------+--------------+------------+------------+
+; Slack ; From Node           ; To Node             ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------+---------------------+------------------+------------------+--------------+------------+------------+
+; 0.354 ; cntFourBit:FBC|Q[0] ; cntFourBit:FBC|Q[0] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 0.000        ; 0.072      ; 0.597      ;
+; 0.354 ; cntFourBit:FBC|Q[1] ; cntFourBit:FBC|Q[1] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 0.000        ; 0.072      ; 0.597      ;
+; 0.354 ; cntFourBit:FBC|Q[3] ; cntFourBit:FBC|Q[3] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 0.000        ; 0.072      ; 0.597      ;
+; 0.553 ; cntFourBit:FBC|Q[3] ; cntFourBit:FBC|Q[2] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 0.000        ; 0.072      ; 0.796      ;
+; 0.723 ; cntFourBit:FBC|Q[1] ; cntFourBit:FBC|Q[3] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 0.000        ; 0.072      ; 0.966      ;
+; 0.726 ; cntFourBit:FBC|Q[1] ; cntFourBit:FBC|Q[0] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 0.000        ; 0.072      ; 0.969      ;
+; 0.834 ; cntFourBit:FBC|Q[2] ; cntFourBit:FBC|Q[3] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 0.000        ; 0.072      ; 1.077      ;
+; 0.837 ; cntFourBit:FBC|Q[2] ; cntFourBit:FBC|Q[0] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 0.000        ; 0.072      ; 1.080      ;
+; 0.858 ; cntFourBit:FBC|Q[3] ; cntFourBit:FBC|Q[1] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 0.000        ; 0.072      ; 1.101      ;
+; 0.926 ; cntFourBit:FBC|Q[2] ; cntFourBit:FBC|Q[2] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 0.000        ; 0.072      ; 1.169      ;
+; 0.965 ; cntFourBit:FBC|Q[0] ; cntFourBit:FBC|Q[2] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 0.000        ; 0.072      ; 1.208      ;
+; 1.028 ; cntFourBit:FBC|Q[0] ; cntFourBit:FBC|Q[1] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 0.000        ; 0.072      ; 1.271      ;
+; 1.034 ; cntFourBit:FBC|Q[0] ; cntFourBit:FBC|Q[3] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 0.000        ; 0.072      ; 1.277      ;
+; 1.044 ; cntFourBit:FBC|Q[1] ; cntFourBit:FBC|Q[2] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 0.000        ; 0.072      ; 1.287      ;
+; 1.113 ; cntFourBit:FBC|Q[3] ; cntFourBit:FBC|Q[0] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 0.000        ; 0.072      ; 1.356      ;
+; 1.141 ; cntFourBit:FBC|Q[2] ; cntFourBit:FBC|Q[1] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 0.000        ; 0.072      ; 1.384      ;
++-------+---------------------+---------------------+------------------+------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Hold: 'CLOCK_50'                                                                                 ;
++-------+--------------------+--------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node          ; To Node            ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+--------------------+--------------------+--------------+-------------+--------------+------------+------------+
+; 0.503 ; MHzCLock:MHC|Q[16] ; MHzCLock:MHC|Q[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.468      ; 1.142      ;
+; 0.583 ; MHzCLock:MHC|Q[18] ; MHzCLock:MHC|Q[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.089      ; 0.843      ;
+; 0.584 ; MHzCLock:MHC|Q[24] ; MHzCLock:MHC|Q[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.089      ; 0.844      ;
+; 0.586 ; MHzCLock:MHC|Q[8]  ; MHzCLock:MHC|Q[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.830      ;
+; 0.586 ; MHzCLock:MHC|Q[3]  ; MHzCLock:MHC|Q[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.830      ;
+; 0.586 ; MHzCLock:MHC|Q[2]  ; MHzCLock:MHC|Q[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.830      ;
+; 0.588 ; MHzCLock:MHC|Q[5]  ; MHzCLock:MHC|Q[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.832      ;
+; 0.588 ; MHzCLock:MHC|Q[1]  ; MHzCLock:MHC|Q[1]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.832      ;
+; 0.590 ; MHzCLock:MHC|Q[6]  ; MHzCLock:MHC|Q[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.834      ;
+; 0.590 ; MHzCLock:MHC|Q[4]  ; MHzCLock:MHC|Q[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.834      ;
+; 0.598 ; MHzCLock:MHC|Q[16] ; MHzCLock:MHC|Q[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.074      ; 0.843      ;
+; 0.598 ; MHzCLock:MHC|Q[10] ; MHzCLock:MHC|Q[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.842      ;
+; 0.600 ; MHzCLock:MHC|Q[11] ; MHzCLock:MHC|Q[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.844      ;
+; 0.601 ; MHzCLock:MHC|Q[9]  ; MHzCLock:MHC|Q[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.845      ;
+; 0.617 ; MHzCLock:MHC|Q[0]  ; MHzCLock:MHC|Q[0]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.861      ;
+; 0.819 ; MHzCLock:MHC|Q[11] ; MHzCLock:MHC|Q[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.471      ; 1.461      ;
+; 0.829 ; MHzCLock:MHC|Q[10] ; MHzCLock:MHC|Q[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.471      ; 1.471      ;
+; 0.833 ; MHzCLock:MHC|Q[16] ; MHzCLock:MHC|Q[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.468      ; 1.472      ;
+; 0.870 ; MHzCLock:MHC|Q[17] ; MHzCLock:MHC|Q[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.089      ; 1.130      ;
+; 0.872 ; MHzCLock:MHC|Q[3]  ; MHzCLock:MHC|Q[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.116      ;
+; 0.874 ; MHzCLock:MHC|Q[2]  ; MHzCLock:MHC|Q[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.118      ;
+; 0.874 ; MHzCLock:MHC|Q[8]  ; MHzCLock:MHC|Q[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.118      ;
+; 0.875 ; MHzCLock:MHC|Q[1]  ; MHzCLock:MHC|Q[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.119      ;
+; 0.875 ; MHzCLock:MHC|Q[5]  ; MHzCLock:MHC|Q[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.119      ;
+; 0.878 ; MHzCLock:MHC|Q[4]  ; MHzCLock:MHC|Q[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.122      ;
+; 0.885 ; MHzCLock:MHC|Q[8]  ; MHzCLock:MHC|Q[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.129      ;
+; 0.885 ; MHzCLock:MHC|Q[2]  ; MHzCLock:MHC|Q[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.129      ;
+; 0.886 ; MHzCLock:MHC|Q[0]  ; MHzCLock:MHC|Q[1]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.130      ;
+; 0.886 ; MHzCLock:MHC|Q[10] ; MHzCLock:MHC|Q[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.130      ;
+; 0.888 ; MHzCLock:MHC|Q[9]  ; MHzCLock:MHC|Q[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.132      ;
+; 0.889 ; MHzCLock:MHC|Q[6]  ; MHzCLock:MHC|Q[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.133      ;
+; 0.889 ; MHzCLock:MHC|Q[4]  ; MHzCLock:MHC|Q[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.133      ;
+; 0.897 ; MHzCLock:MHC|Q[0]  ; MHzCLock:MHC|Q[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.141      ;
+; 0.902 ; MHzCLock:MHC|Q[25] ; MHzCLock:MHC|Q[25] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.089      ; 1.162      ;
+; 0.927 ; MHzCLock:MHC|Q[8]  ; MHzCLock:MHC|Q[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.471      ; 1.569      ;
+; 0.930 ; MHzCLock:MHC|Q[9]  ; MHzCLock:MHC|Q[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.471      ; 1.572      ;
+; 0.938 ; MHzCLock:MHC|Q[16] ; MHzCLock:MHC|Q[17] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.468      ; 1.577      ;
+; 0.971 ; MHzCLock:MHC|Q[3]  ; MHzCLock:MHC|Q[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.215      ;
+; 0.974 ; MHzCLock:MHC|Q[1]  ; MHzCLock:MHC|Q[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.218      ;
+; 0.982 ; MHzCLock:MHC|Q[3]  ; MHzCLock:MHC|Q[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.226      ;
+; 0.984 ; MHzCLock:MHC|Q[8]  ; MHzCLock:MHC|Q[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.228      ;
+; 0.984 ; MHzCLock:MHC|Q[2]  ; MHzCLock:MHC|Q[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.228      ;
+; 0.985 ; MHzCLock:MHC|Q[1]  ; MHzCLock:MHC|Q[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.229      ;
+; 0.985 ; MHzCLock:MHC|Q[5]  ; MHzCLock:MHC|Q[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.229      ;
+; 0.987 ; MHzCLock:MHC|Q[9]  ; MHzCLock:MHC|Q[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.231      ;
+; 0.988 ; MHzCLock:MHC|Q[6]  ; MHzCLock:MHC|Q[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.232      ;
+; 0.995 ; MHzCLock:MHC|Q[2]  ; MHzCLock:MHC|Q[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.239      ;
+; 0.996 ; MHzCLock:MHC|Q[0]  ; MHzCLock:MHC|Q[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.240      ;
+; 0.999 ; MHzCLock:MHC|Q[6]  ; MHzCLock:MHC|Q[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.243      ;
+; 0.999 ; MHzCLock:MHC|Q[4]  ; MHzCLock:MHC|Q[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.243      ;
+; 1.007 ; MHzCLock:MHC|Q[0]  ; MHzCLock:MHC|Q[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.251      ;
+; 1.019 ; MHzCLock:MHC|Q[17] ; MHzCLock:MHC|Q[17] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.089      ; 1.279      ;
+; 1.038 ; MHzCLock:MHC|Q[23] ; MHzCLock:MHC|Q[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.085      ; 1.294      ;
+; 1.041 ; MHzCLock:MHC|Q[6]  ; MHzCLock:MHC|Q[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.471      ; 1.683      ;
+; 1.049 ; MHzCLock:MHC|Q[11] ; MHzCLock:MHC|Q[14] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.475      ; 1.695      ;
+; 1.059 ; MHzCLock:MHC|Q[10] ; MHzCLock:MHC|Q[14] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.475      ; 1.705      ;
+; 1.084 ; MHzCLock:MHC|Q[22] ; MHzCLock:MHC|Q[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.085      ; 1.340      ;
+; 1.084 ; MHzCLock:MHC|Q[1]  ; MHzCLock:MHC|Q[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.328      ;
+; 1.084 ; MHzCLock:MHC|Q[5]  ; MHzCLock:MHC|Q[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.328      ;
+; 1.092 ; MHzCLock:MHC|Q[3]  ; MHzCLock:MHC|Q[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.336      ;
+; 1.093 ; MHzCLock:MHC|Q[19] ; MHzCLock:MHC|Q[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.089      ; 1.353      ;
+; 1.095 ; MHzCLock:MHC|Q[1]  ; MHzCLock:MHC|Q[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.339      ;
+; 1.095 ; MHzCLock:MHC|Q[5]  ; MHzCLock:MHC|Q[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.339      ;
+; 1.098 ; MHzCLock:MHC|Q[6]  ; MHzCLock:MHC|Q[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.342      ;
+; 1.098 ; MHzCLock:MHC|Q[4]  ; MHzCLock:MHC|Q[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.342      ;
+; 1.102 ; MHzCLock:MHC|Q[18] ; MHzCLock:MHC|Q[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.089      ; 1.362      ;
+; 1.103 ; MHzCLock:MHC|Q[11] ; MHzCLock:MHC|Q[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.077      ; 1.351      ;
+; 1.105 ; MHzCLock:MHC|Q[2]  ; MHzCLock:MHC|Q[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.349      ;
+; 1.106 ; MHzCLock:MHC|Q[0]  ; MHzCLock:MHC|Q[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.350      ;
+; 1.109 ; MHzCLock:MHC|Q[4]  ; MHzCLock:MHC|Q[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.353      ;
+; 1.113 ; MHzCLock:MHC|Q[10] ; MHzCLock:MHC|Q[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.077      ; 1.361      ;
+; 1.117 ; MHzCLock:MHC|Q[0]  ; MHzCLock:MHC|Q[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.361      ;
+; 1.132 ; MHzCLock:MHC|Q[19] ; MHzCLock:MHC|Q[19] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.089      ; 1.392      ;
+; 1.135 ; MHzCLock:MHC|Q[16] ; MHzCLock:MHC|Q[21] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.472      ; 1.778      ;
+; 1.136 ; MHzCLock:MHC|Q[15] ; MHzCLock:MHC|Q[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.085      ; 1.392      ;
+; 1.137 ; MHzCLock:MHC|Q[5]  ; MHzCLock:MHC|Q[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.471      ; 1.779      ;
+; 1.147 ; MHzCLock:MHC|Q[11] ; MHzCLock:MHC|Q[15] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.475      ; 1.793      ;
+; 1.149 ; MHzCLock:MHC|Q[11] ; MHzCLock:MHC|Q[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.471      ; 1.791      ;
+; 1.151 ; MHzCLock:MHC|Q[4]  ; MHzCLock:MHC|Q[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.471      ; 1.793      ;
+; 1.153 ; MHzCLock:MHC|Q[20] ; MHzCLock:MHC|Q[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.085      ; 1.409      ;
+; 1.157 ; MHzCLock:MHC|Q[8]  ; MHzCLock:MHC|Q[14] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.475      ; 1.803      ;
+; 1.157 ; MHzCLock:MHC|Q[10] ; MHzCLock:MHC|Q[15] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.475      ; 1.803      ;
+; 1.159 ; MHzCLock:MHC|Q[16] ; MHzCLock:MHC|Q[19] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.468      ; 1.798      ;
+; 1.159 ; MHzCLock:MHC|Q[10] ; MHzCLock:MHC|Q[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.471      ; 1.801      ;
+; 1.160 ; MHzCLock:MHC|Q[9]  ; MHzCLock:MHC|Q[14] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.475      ; 1.806      ;
+; 1.176 ; MHzCLock:MHC|Q[24] ; MHzCLock:MHC|Q[25] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.089      ; 1.436      ;
+; 1.180 ; MHzCLock:MHC|Q[21] ; MHzCLock:MHC|Q[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.085      ; 1.436      ;
+; 1.185 ; MHzCLock:MHC|Q[11] ; MHzCLock:MHC|Q[13] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.475      ; 1.831      ;
+; 1.186 ; MHzCLock:MHC|Q[16] ; MHzCLock:MHC|Q[22] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.472      ; 1.829      ;
+; 1.191 ; MHzCLock:MHC|Q[3]  ; MHzCLock:MHC|Q[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.435      ;
+; 1.194 ; MHzCLock:MHC|Q[5]  ; MHzCLock:MHC|Q[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.438      ;
+; 1.195 ; MHzCLock:MHC|Q[14] ; MHzCLock:MHC|Q[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.085      ; 1.451      ;
+; 1.195 ; MHzCLock:MHC|Q[10] ; MHzCLock:MHC|Q[13] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.475      ; 1.841      ;
+; 1.197 ; MHzCLock:MHC|Q[12] ; MHzCLock:MHC|Q[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.467      ; 1.835      ;
+; 1.200 ; MHzCLock:MHC|Q[17] ; MHzCLock:MHC|Q[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.089      ; 1.460      ;
+; 1.202 ; MHzCLock:MHC|Q[3]  ; MHzCLock:MHC|Q[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.446      ;
+; 1.204 ; MHzCLock:MHC|Q[15] ; MHzCLock:MHC|Q[15] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.089      ; 1.464      ;
+; 1.204 ; MHzCLock:MHC|Q[2]  ; MHzCLock:MHC|Q[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.448      ;
+; 1.205 ; MHzCLock:MHC|Q[1]  ; MHzCLock:MHC|Q[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.449      ;
+; 1.208 ; MHzCLock:MHC|Q[4]  ; MHzCLock:MHC|Q[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.452      ;
++-------+--------------------+--------------------+--------------+-------------+--------------+------------+------------+
+
+
+----------------------------------------------
+; Slow 1200mV 0C Model Metastability Summary ;
+----------------------------------------------
+No synchronizer chains to report.
+
+
++-------------------------------------------+
+; Fast 1200mV 0C Model Setup Summary        ;
++------------------+--------+---------------+
+; Clock            ; Slack  ; End Point TNS ;
++------------------+--------+---------------+
+; CLOCK_50         ; -0.740 ; -8.999        ;
+; MHzCLock:MHC|Out ; 0.021  ; 0.000         ;
++------------------+--------+---------------+
+
+
++------------------------------------------+
+; Fast 1200mV 0C Model Hold Summary        ;
++------------------+-------+---------------+
+; Clock            ; Slack ; End Point TNS ;
++------------------+-------+---------------+
+; MHzCLock:MHC|Out ; 0.181 ; 0.000         ;
+; CLOCK_50         ; 0.257 ; 0.000         ;
++------------------+-------+---------------+
+
+
+-----------------------------------------
+; Fast 1200mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Fast 1200mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
++--------------------------------------------------+
+; Fast 1200mV 0C Model Minimum Pulse Width Summary ;
++------------------+--------+----------------------+
+; Clock            ; Slack  ; End Point TNS        ;
++------------------+--------+----------------------+
+; CLOCK_50         ; -3.000 ; -38.432              ;
+; MHzCLock:MHC|Out ; -1.000 ; -4.000               ;
++------------------+--------+----------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Setup: 'CLOCK_50'                                                                                 ;
++--------+--------------------+--------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node          ; To Node            ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+--------------------+--------------------+--------------+-------------+--------------+------------+------------+
+; -0.740 ; MHzCLock:MHC|Q[7]  ; MHzCLock:MHC|Q[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.043     ; 1.684      ;
+; -0.733 ; MHzCLock:MHC|Q[1]  ; MHzCLock:MHC|Q[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.039     ; 1.681      ;
+; -0.703 ; MHzCLock:MHC|Q[7]  ; MHzCLock:MHC|Q[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.154      ; 1.844      ;
+; -0.696 ; MHzCLock:MHC|Q[1]  ; MHzCLock:MHC|Q[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.158      ; 1.841      ;
+; -0.689 ; MHzCLock:MHC|Q[0]  ; MHzCLock:MHC|Q[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.039     ; 1.637      ;
+; -0.687 ; MHzCLock:MHC|Q[0]  ; MHzCLock:MHC|Q[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.158      ; 1.832      ;
+; -0.661 ; MHzCLock:MHC|Q[3]  ; MHzCLock:MHC|Q[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.039     ; 1.609      ;
+; -0.647 ; MHzCLock:MHC|Q[7]  ; MHzCLock:MHC|Q[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.154      ; 1.788      ;
+; -0.640 ; MHzCLock:MHC|Q[1]  ; MHzCLock:MHC|Q[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.158      ; 1.785      ;
+; -0.638 ; MHzCLock:MHC|Q[7]  ; MHzCLock:MHC|Q[22] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.154      ; 1.779      ;
+; -0.635 ; MHzCLock:MHC|Q[25] ; MHzCLock:MHC|Out   ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.246     ; 1.376      ;
+; -0.631 ; MHzCLock:MHC|Q[1]  ; MHzCLock:MHC|Q[22] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.158      ; 1.776      ;
+; -0.624 ; MHzCLock:MHC|Q[3]  ; MHzCLock:MHC|Q[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.158      ; 1.769      ;
+; -0.623 ; MHzCLock:MHC|Q[11] ; MHzCLock:MHC|Out   ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.039     ; 1.571      ;
+; -0.618 ; MHzCLock:MHC|Q[25] ; MHzCLock:MHC|Q[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.246     ; 1.359      ;
+; -0.617 ; MHzCLock:MHC|Q[25] ; MHzCLock:MHC|Q[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.246     ; 1.358      ;
+; -0.616 ; MHzCLock:MHC|Q[7]  ; MHzCLock:MHC|Q[25] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.152      ; 1.755      ;
+; -0.615 ; MHzCLock:MHC|Q[2]  ; MHzCLock:MHC|Q[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.039     ; 1.563      ;
+; -0.612 ; MHzCLock:MHC|Q[2]  ; MHzCLock:MHC|Q[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.158      ; 1.757      ;
+; -0.609 ; MHzCLock:MHC|Q[11] ; MHzCLock:MHC|Q[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.039     ; 1.557      ;
+; -0.609 ; MHzCLock:MHC|Q[1]  ; MHzCLock:MHC|Q[25] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.156      ; 1.752      ;
+; -0.608 ; MHzCLock:MHC|Q[11] ; MHzCLock:MHC|Q[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.039     ; 1.556      ;
+; -0.600 ; MHzCLock:MHC|Q[0]  ; MHzCLock:MHC|Q[25] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.156      ; 1.743      ;
+; -0.596 ; MHzCLock:MHC|Q[5]  ; MHzCLock:MHC|Q[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.039     ; 1.544      ;
+; -0.596 ; MHzCLock:MHC|Q[0]  ; MHzCLock:MHC|Q[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.158      ; 1.741      ;
+; -0.593 ; MHzCLock:MHC|Q[7]  ; MHzCLock:MHC|Out   ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.043     ; 1.537      ;
+; -0.587 ; MHzCLock:MHC|Q[0]  ; MHzCLock:MHC|Q[22] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.158      ; 1.732      ;
+; -0.583 ; MHzCLock:MHC|Q[7]  ; MHzCLock:MHC|Q[19] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.152      ; 1.722      ;
+; -0.576 ; MHzCLock:MHC|Q[7]  ; MHzCLock:MHC|Q[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.043     ; 1.520      ;
+; -0.576 ; MHzCLock:MHC|Q[1]  ; MHzCLock:MHC|Q[19] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.156      ; 1.719      ;
+; -0.574 ; MHzCLock:MHC|Q[13] ; MHzCLock:MHC|Q[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.050     ; 1.511      ;
+; -0.568 ; MHzCLock:MHC|Q[3]  ; MHzCLock:MHC|Q[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.158      ; 1.713      ;
+; -0.567 ; MHzCLock:MHC|Q[0]  ; MHzCLock:MHC|Q[19] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.156      ; 1.710      ;
+; -0.560 ; MHzCLock:MHC|Q[7]  ; MHzCLock:MHC|Q[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.154      ; 1.701      ;
+; -0.559 ; MHzCLock:MHC|Q[5]  ; MHzCLock:MHC|Q[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.158      ; 1.704      ;
+; -0.559 ; MHzCLock:MHC|Q[3]  ; MHzCLock:MHC|Q[22] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.158      ; 1.704      ;
+; -0.553 ; MHzCLock:MHC|Q[1]  ; MHzCLock:MHC|Q[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.158      ; 1.698      ;
+; -0.552 ; MHzCLock:MHC|Q[25] ; MHzCLock:MHC|Q[25] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.051     ; 1.488      ;
+; -0.549 ; MHzCLock:MHC|Q[4]  ; MHzCLock:MHC|Q[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.039     ; 1.497      ;
+; -0.547 ; MHzCLock:MHC|Q[14] ; MHzCLock:MHC|Out   ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.247     ; 1.287      ;
+; -0.546 ; MHzCLock:MHC|Q[3]  ; MHzCLock:MHC|Out   ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.039     ; 1.494      ;
+; -0.544 ; MHzCLock:MHC|Q[4]  ; MHzCLock:MHC|Q[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.158      ; 1.689      ;
+; -0.544 ; MHzCLock:MHC|Q[0]  ; MHzCLock:MHC|Q[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.158      ; 1.689      ;
+; -0.542 ; MHzCLock:MHC|Q[1]  ; MHzCLock:MHC|Out   ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.039     ; 1.490      ;
+; -0.540 ; MHzCLock:MHC|Q[11] ; MHzCLock:MHC|Q[25] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.156      ; 1.683      ;
+; -0.537 ; MHzCLock:MHC|Q[3]  ; MHzCLock:MHC|Q[25] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.156      ; 1.680      ;
+; -0.536 ; MHzCLock:MHC|Q[9]  ; MHzCLock:MHC|Out   ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.039     ; 1.484      ;
+; -0.533 ; MHzCLock:MHC|Q[25] ; MHzCLock:MHC|Q[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.049     ; 1.471      ;
+; -0.530 ; MHzCLock:MHC|Q[14] ; MHzCLock:MHC|Q[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.247     ; 1.270      ;
+; -0.529 ; MHzCLock:MHC|Q[3]  ; MHzCLock:MHC|Q[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.039     ; 1.477      ;
+; -0.529 ; MHzCLock:MHC|Q[14] ; MHzCLock:MHC|Q[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.247     ; 1.269      ;
+; -0.525 ; MHzCLock:MHC|Q[2]  ; MHzCLock:MHC|Q[25] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.156      ; 1.668      ;
+; -0.525 ; MHzCLock:MHC|Q[1]  ; MHzCLock:MHC|Q[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.039     ; 1.473      ;
+; -0.522 ; MHzCLock:MHC|Q[2]  ; MHzCLock:MHC|Q[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.158      ; 1.667      ;
+; -0.521 ; MHzCLock:MHC|Q[11] ; MHzCLock:MHC|Q[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.158      ; 1.666      ;
+; -0.520 ; MHzCLock:MHC|Q[16] ; MHzCLock:MHC|Out   ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 1.465      ;
+; -0.519 ; MHzCLock:MHC|Q[9]  ; MHzCLock:MHC|Q[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.039     ; 1.467      ;
+; -0.518 ; MHzCLock:MHC|Q[13] ; MHzCLock:MHC|Q[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.050     ; 1.455      ;
+; -0.518 ; MHzCLock:MHC|Q[9]  ; MHzCLock:MHC|Q[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.039     ; 1.466      ;
+; -0.513 ; MHzCLock:MHC|Q[2]  ; MHzCLock:MHC|Q[22] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.158      ; 1.658      ;
+; -0.512 ; MHzCLock:MHC|Q[12] ; MHzCLock:MHC|Q[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.154      ; 1.653      ;
+; -0.509 ; MHzCLock:MHC|Q[13] ; MHzCLock:MHC|Q[22] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.050     ; 1.446      ;
+; -0.508 ; MHzCLock:MHC|Q[15] ; MHzCLock:MHC|Out   ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.247     ; 1.248      ;
+; -0.506 ; MHzCLock:MHC|Q[15] ; MHzCLock:MHC|Q[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.050     ; 1.443      ;
+; -0.504 ; MHzCLock:MHC|Q[14] ; MHzCLock:MHC|Q[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.050     ; 1.441      ;
+; -0.504 ; MHzCLock:MHC|Q[16] ; MHzCLock:MHC|Q[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 1.449      ;
+; -0.504 ; MHzCLock:MHC|Q[3]  ; MHzCLock:MHC|Q[19] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.156      ; 1.647      ;
+; -0.503 ; MHzCLock:MHC|Q[5]  ; MHzCLock:MHC|Q[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.158      ; 1.648      ;
+; -0.503 ; MHzCLock:MHC|Q[16] ; MHzCLock:MHC|Q[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 1.448      ;
+; -0.495 ; MHzCLock:MHC|Q[6]  ; MHzCLock:MHC|Out   ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.039     ; 1.443      ;
+; -0.494 ; MHzCLock:MHC|Q[5]  ; MHzCLock:MHC|Q[22] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.158      ; 1.639      ;
+; -0.492 ; MHzCLock:MHC|Q[2]  ; MHzCLock:MHC|Q[19] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.156      ; 1.635      ;
+; -0.491 ; MHzCLock:MHC|Q[15] ; MHzCLock:MHC|Q[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.247     ; 1.231      ;
+; -0.490 ; MHzCLock:MHC|Q[15] ; MHzCLock:MHC|Q[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.247     ; 1.230      ;
+; -0.487 ; MHzCLock:MHC|Q[13] ; MHzCLock:MHC|Q[25] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.052     ; 1.422      ;
+; -0.481 ; MHzCLock:MHC|Q[6]  ; MHzCLock:MHC|Q[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.039     ; 1.429      ;
+; -0.481 ; MHzCLock:MHC|Q[3]  ; MHzCLock:MHC|Q[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.158      ; 1.626      ;
+; -0.481 ; MHzCLock:MHC|Q[4]  ; MHzCLock:MHC|Out   ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.039     ; 1.429      ;
+; -0.478 ; MHzCLock:MHC|Q[6]  ; MHzCLock:MHC|Q[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.039     ; 1.426      ;
+; -0.476 ; MHzCLock:MHC|Q[6]  ; MHzCLock:MHC|Q[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.158      ; 1.621      ;
+; -0.472 ; MHzCLock:MHC|Q[5]  ; MHzCLock:MHC|Q[25] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.156      ; 1.615      ;
+; -0.469 ; MHzCLock:MHC|Q[2]  ; MHzCLock:MHC|Q[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.158      ; 1.614      ;
+; -0.464 ; MHzCLock:MHC|Q[8]  ; MHzCLock:MHC|Out   ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.039     ; 1.412      ;
+; -0.464 ; MHzCLock:MHC|Q[14] ; MHzCLock:MHC|Q[25] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.052     ; 1.399      ;
+; -0.464 ; MHzCLock:MHC|Q[4]  ; MHzCLock:MHC|Q[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.039     ; 1.412      ;
+; -0.457 ; MHzCLock:MHC|Q[4]  ; MHzCLock:MHC|Q[25] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.156      ; 1.600      ;
+; -0.456 ; MHzCLock:MHC|Q[4]  ; MHzCLock:MHC|Q[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.158      ; 1.601      ;
+; -0.454 ; MHzCLock:MHC|Q[13] ; MHzCLock:MHC|Q[19] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.052     ; 1.389      ;
+; -0.453 ; MHzCLock:MHC|Q[9]  ; MHzCLock:MHC|Q[25] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.156      ; 1.596      ;
+; -0.452 ; MHzCLock:MHC|Q[0]  ; MHzCLock:MHC|Out   ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.039     ; 1.400      ;
+; -0.450 ; MHzCLock:MHC|Q[15] ; MHzCLock:MHC|Q[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.050     ; 1.387      ;
+; -0.450 ; MHzCLock:MHC|Q[12] ; MHzCLock:MHC|Q[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.154      ; 1.591      ;
+; -0.447 ; MHzCLock:MHC|Q[4]  ; MHzCLock:MHC|Q[22] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.158      ; 1.592      ;
+; -0.447 ; MHzCLock:MHC|Q[8]  ; MHzCLock:MHC|Q[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.039     ; 1.395      ;
+; -0.446 ; MHzCLock:MHC|Q[8]  ; MHzCLock:MHC|Q[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.039     ; 1.394      ;
+; -0.442 ; MHzCLock:MHC|Q[7]  ; MHzCLock:MHC|Q[24] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.152      ; 1.581      ;
+; -0.441 ; MHzCLock:MHC|Q[15] ; MHzCLock:MHC|Q[22] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.050     ; 1.378      ;
+; -0.441 ; MHzCLock:MHC|Q[12] ; MHzCLock:MHC|Q[22] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.154      ; 1.582      ;
+; -0.439 ; MHzCLock:MHC|Q[5]  ; MHzCLock:MHC|Q[19] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.156      ; 1.582      ;
+; -0.437 ; MHzCLock:MHC|Q[16] ; MHzCLock:MHC|Q[25] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.153      ; 1.577      ;
++--------+--------------------+--------------------+--------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Setup: 'MHzCLock:MHC|Out'                                                                                   ;
++-------+---------------------+---------------------+------------------+------------------+--------------+------------+------------+
+; Slack ; From Node           ; To Node             ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------+---------------------+------------------+------------------+--------------+------------+------------+
+; 0.021 ; cntFourBit:FBC|Q[1] ; cntFourBit:FBC|Q[3] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 1.000        ; -0.042     ; 0.924      ;
+; 0.045 ; cntFourBit:FBC|Q[0] ; cntFourBit:FBC|Q[1] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 1.000        ; -0.042     ; 0.900      ;
+; 0.066 ; cntFourBit:FBC|Q[0] ; cntFourBit:FBC|Q[3] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 1.000        ; -0.042     ; 0.879      ;
+; 0.104 ; cntFourBit:FBC|Q[2] ; cntFourBit:FBC|Q[3] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 1.000        ; -0.042     ; 0.841      ;
+; 0.165 ; cntFourBit:FBC|Q[3] ; cntFourBit:FBC|Q[0] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 1.000        ; -0.042     ; 0.780      ;
+; 0.179 ; cntFourBit:FBC|Q[2] ; cntFourBit:FBC|Q[1] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 1.000        ; -0.042     ; 0.766      ;
+; 0.182 ; cntFourBit:FBC|Q[1] ; cntFourBit:FBC|Q[2] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 1.000        ; -0.042     ; 0.763      ;
+; 0.204 ; cntFourBit:FBC|Q[0] ; cntFourBit:FBC|Q[0] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 1.000        ; -0.042     ; 0.741      ;
+; 0.220 ; cntFourBit:FBC|Q[0] ; cntFourBit:FBC|Q[2] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 1.000        ; -0.042     ; 0.725      ;
+; 0.236 ; cntFourBit:FBC|Q[1] ; cntFourBit:FBC|Q[1] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 1.000        ; -0.042     ; 0.709      ;
+; 0.264 ; cntFourBit:FBC|Q[2] ; cntFourBit:FBC|Q[2] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 1.000        ; -0.042     ; 0.681      ;
+; 0.303 ; cntFourBit:FBC|Q[3] ; cntFourBit:FBC|Q[1] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 1.000        ; -0.042     ; 0.642      ;
+; 0.344 ; cntFourBit:FBC|Q[2] ; cntFourBit:FBC|Q[0] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 1.000        ; -0.042     ; 0.601      ;
+; 0.395 ; cntFourBit:FBC|Q[1] ; cntFourBit:FBC|Q[0] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 1.000        ; -0.042     ; 0.550      ;
+; 0.467 ; cntFourBit:FBC|Q[3] ; cntFourBit:FBC|Q[2] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 1.000        ; -0.042     ; 0.478      ;
+; 0.586 ; cntFourBit:FBC|Q[3] ; cntFourBit:FBC|Q[3] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 1.000        ; -0.042     ; 0.359      ;
++-------+---------------------+---------------------+------------------+------------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Hold: 'MHzCLock:MHC|Out'                                                                                    ;
++-------+---------------------+---------------------+------------------+------------------+--------------+------------+------------+
+; Slack ; From Node           ; To Node             ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------+---------------------+------------------+------------------+--------------+------------+------------+
+; 0.181 ; cntFourBit:FBC|Q[0] ; cntFourBit:FBC|Q[0] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 0.000        ; 0.042      ; 0.307      ;
+; 0.181 ; cntFourBit:FBC|Q[1] ; cntFourBit:FBC|Q[1] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 0.000        ; 0.042      ; 0.307      ;
+; 0.181 ; cntFourBit:FBC|Q[3] ; cntFourBit:FBC|Q[3] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 0.000        ; 0.042      ; 0.307      ;
+; 0.285 ; cntFourBit:FBC|Q[3] ; cntFourBit:FBC|Q[2] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 0.000        ; 0.042      ; 0.411      ;
+; 0.381 ; cntFourBit:FBC|Q[1] ; cntFourBit:FBC|Q[3] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 0.000        ; 0.042      ; 0.507      ;
+; 0.383 ; cntFourBit:FBC|Q[1] ; cntFourBit:FBC|Q[0] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 0.000        ; 0.042      ; 0.509      ;
+; 0.435 ; cntFourBit:FBC|Q[2] ; cntFourBit:FBC|Q[3] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 0.000        ; 0.042      ; 0.561      ;
+; 0.437 ; cntFourBit:FBC|Q[2] ; cntFourBit:FBC|Q[0] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 0.000        ; 0.042      ; 0.563      ;
+; 0.451 ; cntFourBit:FBC|Q[3] ; cntFourBit:FBC|Q[1] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 0.000        ; 0.042      ; 0.577      ;
+; 0.454 ; cntFourBit:FBC|Q[2] ; cntFourBit:FBC|Q[2] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 0.000        ; 0.042      ; 0.580      ;
+; 0.485 ; cntFourBit:FBC|Q[0] ; cntFourBit:FBC|Q[2] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 0.000        ; 0.042      ; 0.611      ;
+; 0.499 ; cntFourBit:FBC|Q[0] ; cntFourBit:FBC|Q[1] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 0.000        ; 0.042      ; 0.625      ;
+; 0.519 ; cntFourBit:FBC|Q[1] ; cntFourBit:FBC|Q[2] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 0.000        ; 0.042      ; 0.645      ;
+; 0.543 ; cntFourBit:FBC|Q[0] ; cntFourBit:FBC|Q[3] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 0.000        ; 0.042      ; 0.669      ;
+; 0.590 ; cntFourBit:FBC|Q[3] ; cntFourBit:FBC|Q[0] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 0.000        ; 0.042      ; 0.716      ;
+; 0.602 ; cntFourBit:FBC|Q[2] ; cntFourBit:FBC|Q[1] ; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 0.000        ; 0.042      ; 0.728      ;
++-------+---------------------+---------------------+------------------+------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Hold: 'CLOCK_50'                                                                                 ;
++-------+--------------------+--------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node          ; To Node            ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+--------------------+--------------------+--------------+-------------+--------------+------------+------------+
+; 0.257 ; MHzCLock:MHC|Q[16] ; MHzCLock:MHC|Q[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.246      ; 0.587      ;
+; 0.291 ; MHzCLock:MHC|Q[24] ; MHzCLock:MHC|Q[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.051      ; 0.426      ;
+; 0.291 ; MHzCLock:MHC|Q[5]  ; MHzCLock:MHC|Q[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.418      ;
+; 0.291 ; MHzCLock:MHC|Q[3]  ; MHzCLock:MHC|Q[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.418      ;
+; 0.291 ; MHzCLock:MHC|Q[2]  ; MHzCLock:MHC|Q[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.418      ;
+; 0.291 ; MHzCLock:MHC|Q[18] ; MHzCLock:MHC|Q[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.051      ; 0.426      ;
+; 0.292 ; MHzCLock:MHC|Q[8]  ; MHzCLock:MHC|Q[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.419      ;
+; 0.292 ; MHzCLock:MHC|Q[1]  ; MHzCLock:MHC|Q[1]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.419      ;
+; 0.293 ; MHzCLock:MHC|Q[6]  ; MHzCLock:MHC|Q[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.420      ;
+; 0.293 ; MHzCLock:MHC|Q[4]  ; MHzCLock:MHC|Q[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.420      ;
+; 0.298 ; MHzCLock:MHC|Q[11] ; MHzCLock:MHC|Q[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.425      ;
+; 0.298 ; MHzCLock:MHC|Q[10] ; MHzCLock:MHC|Q[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.425      ;
+; 0.299 ; MHzCLock:MHC|Q[9]  ; MHzCLock:MHC|Q[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.426      ;
+; 0.300 ; MHzCLock:MHC|Q[16] ; MHzCLock:MHC|Q[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.426      ;
+; 0.307 ; MHzCLock:MHC|Q[0]  ; MHzCLock:MHC|Q[0]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.434      ;
+; 0.438 ; MHzCLock:MHC|Q[11] ; MHzCLock:MHC|Q[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.250      ; 0.772      ;
+; 0.440 ; MHzCLock:MHC|Q[5]  ; MHzCLock:MHC|Q[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.567      ;
+; 0.440 ; MHzCLock:MHC|Q[3]  ; MHzCLock:MHC|Q[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.567      ;
+; 0.441 ; MHzCLock:MHC|Q[25] ; MHzCLock:MHC|Q[25] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.051      ; 0.576      ;
+; 0.441 ; MHzCLock:MHC|Q[17] ; MHzCLock:MHC|Q[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.051      ; 0.576      ;
+; 0.441 ; MHzCLock:MHC|Q[1]  ; MHzCLock:MHC|Q[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.568      ;
+; 0.448 ; MHzCLock:MHC|Q[9]  ; MHzCLock:MHC|Q[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.575      ;
+; 0.449 ; MHzCLock:MHC|Q[2]  ; MHzCLock:MHC|Q[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.576      ;
+; 0.450 ; MHzCLock:MHC|Q[8]  ; MHzCLock:MHC|Q[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.577      ;
+; 0.450 ; MHzCLock:MHC|Q[10] ; MHzCLock:MHC|Q[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.250      ; 0.784      ;
+; 0.451 ; MHzCLock:MHC|Q[4]  ; MHzCLock:MHC|Q[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.578      ;
+; 0.452 ; MHzCLock:MHC|Q[2]  ; MHzCLock:MHC|Q[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.579      ;
+; 0.453 ; MHzCLock:MHC|Q[8]  ; MHzCLock:MHC|Q[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.580      ;
+; 0.454 ; MHzCLock:MHC|Q[6]  ; MHzCLock:MHC|Q[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.581      ;
+; 0.454 ; MHzCLock:MHC|Q[4]  ; MHzCLock:MHC|Q[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.581      ;
+; 0.455 ; MHzCLock:MHC|Q[16] ; MHzCLock:MHC|Q[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.246      ; 0.785      ;
+; 0.456 ; MHzCLock:MHC|Q[0]  ; MHzCLock:MHC|Q[1]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.583      ;
+; 0.456 ; MHzCLock:MHC|Q[10] ; MHzCLock:MHC|Q[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.583      ;
+; 0.459 ; MHzCLock:MHC|Q[0]  ; MHzCLock:MHC|Q[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.586      ;
+; 0.467 ; MHzCLock:MHC|Q[16] ; MHzCLock:MHC|Q[17] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.246      ; 0.797      ;
+; 0.503 ; MHzCLock:MHC|Q[3]  ; MHzCLock:MHC|Q[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.630      ;
+; 0.504 ; MHzCLock:MHC|Q[1]  ; MHzCLock:MHC|Q[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.631      ;
+; 0.505 ; MHzCLock:MHC|Q[9]  ; MHzCLock:MHC|Q[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.250      ; 0.839      ;
+; 0.505 ; MHzCLock:MHC|Q[17] ; MHzCLock:MHC|Q[17] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.051      ; 0.640      ;
+; 0.506 ; MHzCLock:MHC|Q[5]  ; MHzCLock:MHC|Q[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.633      ;
+; 0.506 ; MHzCLock:MHC|Q[3]  ; MHzCLock:MHC|Q[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.633      ;
+; 0.507 ; MHzCLock:MHC|Q[1]  ; MHzCLock:MHC|Q[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.634      ;
+; 0.509 ; MHzCLock:MHC|Q[23] ; MHzCLock:MHC|Q[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.049      ; 0.642      ;
+; 0.510 ; MHzCLock:MHC|Q[8]  ; MHzCLock:MHC|Q[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.250      ; 0.844      ;
+; 0.511 ; MHzCLock:MHC|Q[9]  ; MHzCLock:MHC|Q[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.638      ;
+; 0.515 ; MHzCLock:MHC|Q[2]  ; MHzCLock:MHC|Q[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.642      ;
+; 0.516 ; MHzCLock:MHC|Q[8]  ; MHzCLock:MHC|Q[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.643      ;
+; 0.517 ; MHzCLock:MHC|Q[6]  ; MHzCLock:MHC|Q[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.644      ;
+; 0.518 ; MHzCLock:MHC|Q[2]  ; MHzCLock:MHC|Q[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.645      ;
+; 0.520 ; MHzCLock:MHC|Q[6]  ; MHzCLock:MHC|Q[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.647      ;
+; 0.520 ; MHzCLock:MHC|Q[4]  ; MHzCLock:MHC|Q[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.647      ;
+; 0.522 ; MHzCLock:MHC|Q[0]  ; MHzCLock:MHC|Q[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.649      ;
+; 0.525 ; MHzCLock:MHC|Q[0]  ; MHzCLock:MHC|Q[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.652      ;
+; 0.529 ; MHzCLock:MHC|Q[11] ; MHzCLock:MHC|Q[14] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.251      ; 0.864      ;
+; 0.536 ; MHzCLock:MHC|Q[22] ; MHzCLock:MHC|Q[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.049      ; 0.669      ;
+; 0.541 ; MHzCLock:MHC|Q[10] ; MHzCLock:MHC|Q[14] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.251      ; 0.876      ;
+; 0.568 ; MHzCLock:MHC|Q[19] ; MHzCLock:MHC|Q[19] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.051      ; 0.703      ;
+; 0.569 ; MHzCLock:MHC|Q[5]  ; MHzCLock:MHC|Q[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.696      ;
+; 0.570 ; MHzCLock:MHC|Q[1]  ; MHzCLock:MHC|Q[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.697      ;
+; 0.572 ; MHzCLock:MHC|Q[15] ; MHzCLock:MHC|Q[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.049      ; 0.705      ;
+; 0.572 ; MHzCLock:MHC|Q[5]  ; MHzCLock:MHC|Q[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.699      ;
+; 0.572 ; MHzCLock:MHC|Q[3]  ; MHzCLock:MHC|Q[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.699      ;
+; 0.573 ; MHzCLock:MHC|Q[1]  ; MHzCLock:MHC|Q[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.700      ;
+; 0.574 ; MHzCLock:MHC|Q[19] ; MHzCLock:MHC|Q[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.051      ; 0.709      ;
+; 0.576 ; MHzCLock:MHC|Q[11] ; MHzCLock:MHC|Q[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.046      ; 0.706      ;
+; 0.577 ; MHzCLock:MHC|Q[6]  ; MHzCLock:MHC|Q[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.250      ; 0.911      ;
+; 0.583 ; MHzCLock:MHC|Q[6]  ; MHzCLock:MHC|Q[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.710      ;
+; 0.583 ; MHzCLock:MHC|Q[4]  ; MHzCLock:MHC|Q[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.710      ;
+; 0.584 ; MHzCLock:MHC|Q[18] ; MHzCLock:MHC|Q[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.051      ; 0.719      ;
+; 0.584 ; MHzCLock:MHC|Q[2]  ; MHzCLock:MHC|Q[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.711      ;
+; 0.586 ; MHzCLock:MHC|Q[15] ; MHzCLock:MHC|Q[15] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.050      ; 0.720      ;
+; 0.586 ; MHzCLock:MHC|Q[20] ; MHzCLock:MHC|Q[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.049      ; 0.719      ;
+; 0.586 ; MHzCLock:MHC|Q[4]  ; MHzCLock:MHC|Q[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.713      ;
+; 0.588 ; MHzCLock:MHC|Q[0]  ; MHzCLock:MHC|Q[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.715      ;
+; 0.588 ; MHzCLock:MHC|Q[10] ; MHzCLock:MHC|Q[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.046      ; 0.718      ;
+; 0.589 ; MHzCLock:MHC|Q[21] ; MHzCLock:MHC|Q[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.049      ; 0.722      ;
+; 0.591 ; MHzCLock:MHC|Q[0]  ; MHzCLock:MHC|Q[6]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.718      ;
+; 0.593 ; MHzCLock:MHC|Q[21] ; MHzCLock:MHC|Q[21] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.050      ; 0.727      ;
+; 0.595 ; MHzCLock:MHC|Q[16] ; MHzCLock:MHC|Q[19] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.246      ; 0.925      ;
+; 0.596 ; MHzCLock:MHC|Q[11] ; MHzCLock:MHC|Q[13] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.251      ; 0.931      ;
+; 0.596 ; MHzCLock:MHC|Q[9]  ; MHzCLock:MHC|Q[14] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.251      ; 0.931      ;
+; 0.598 ; MHzCLock:MHC|Q[14] ; MHzCLock:MHC|Q[14] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.050      ; 0.732      ;
+; 0.598 ; MHzCLock:MHC|Q[11] ; MHzCLock:MHC|Q[15] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.251      ; 0.933      ;
+; 0.600 ; MHzCLock:MHC|Q[24] ; MHzCLock:MHC|Q[25] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.051      ; 0.735      ;
+; 0.601 ; MHzCLock:MHC|Q[8]  ; MHzCLock:MHC|Q[14] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.251      ; 0.936      ;
+; 0.602 ; MHzCLock:MHC|Q[14] ; MHzCLock:MHC|Q[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.049      ; 0.735      ;
+; 0.604 ; MHzCLock:MHC|Q[22] ; MHzCLock:MHC|Q[22] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.050      ; 0.738      ;
+; 0.605 ; MHzCLock:MHC|Q[16] ; MHzCLock:MHC|Q[21] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.247      ; 0.936      ;
+; 0.608 ; MHzCLock:MHC|Q[10] ; MHzCLock:MHC|Q[13] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.251      ; 0.943      ;
+; 0.609 ; MHzCLock:MHC|Q[12] ; MHzCLock:MHC|Q[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.246      ; 0.939      ;
+; 0.610 ; MHzCLock:MHC|Q[10] ; MHzCLock:MHC|Q[15] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.251      ; 0.945      ;
+; 0.614 ; MHzCLock:MHC|Q[16] ; MHzCLock:MHC|Q[20] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.247      ; 0.945      ;
+; 0.618 ; MHzCLock:MHC|Q[16] ; MHzCLock:MHC|Q[22] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.247      ; 0.949      ;
+; 0.629 ; MHzCLock:MHC|Q[5]  ; MHzCLock:MHC|Q[18] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.250      ; 0.963      ;
+; 0.632 ; MHzCLock:MHC|Q[7]  ; MHzCLock:MHC|Q[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.039      ; 0.755      ;
+; 0.635 ; MHzCLock:MHC|Q[5]  ; MHzCLock:MHC|Q[11] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.762      ;
+; 0.635 ; MHzCLock:MHC|Q[3]  ; MHzCLock:MHC|Q[9]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.762      ;
+; 0.636 ; MHzCLock:MHC|Q[11] ; MHzCLock:MHC|Q[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.250      ; 0.970      ;
+; 0.638 ; MHzCLock:MHC|Q[3]  ; MHzCLock:MHC|Q[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.765      ;
+; 0.639 ; MHzCLock:MHC|Q[23] ; MHzCLock:MHC|Q[23] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.050      ; 0.773      ;
++-------+--------------------+--------------------+--------------+-------------+--------------+------------+------------+
+
+
+----------------------------------------------
+; Fast 1200mV 0C Model Metastability Summary ;
+----------------------------------------------
+No synchronizer chains to report.
+
+
++--------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                            ;
++-------------------+---------+-------+----------+---------+---------------------+
+; Clock             ; Setup   ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++-------------------+---------+-------+----------+---------+---------------------+
+; Worst-case Slack  ; -2.537  ; 0.181 ; N/A      ; N/A     ; -3.000              ;
+;  CLOCK_50         ; -2.537  ; 0.257 ; N/A      ; N/A     ; -3.000              ;
+;  MHzCLock:MHC|Out ; -1.003  ; 0.181 ; N/A      ; N/A     ; -1.285              ;
+; Design-wide TNS   ; -47.992 ; 0.0   ; 0.0      ; 0.0     ; -42.835             ;
+;  CLOCK_50         ; -44.609 ; 0.000 ; N/A      ; N/A     ; -38.432             ;
+;  MHzCLock:MHC|Out ; -3.383  ; 0.000 ; N/A      ; N/A     ; -5.140              ;
++-------------------+---------+-------+----------+---------+---------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Board Trace Model Assignments                                                                                                                                                                                                                                                                                                                                                                                    ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; Pin           ; I/O Standard ; Near Tline Length ; Near Tline L per Length ; Near Tline C per Length ; Near Series R ; Near Differential R ; Near Pull-up R ; Near Pull-down R ; Near C ; Far Tline Length ; Far Tline L per Length ; Far Tline C per Length ; Far Series R ; Far Pull-up R ; Far Pull-down R ; Far C ; Termination Voltage ; Far Differential R ; EBD File Name ; EBD Signal Name ; EBD Far-end ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; HEX0[6]       ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; HEX0[5]       ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; HEX0[4]       ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; HEX0[3]       ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; HEX0[2]       ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; HEX0[1]       ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; HEX0[0]       ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ~ALTERA_nCEO~ ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+
+
++----------------------------------------------------------------------------+
+; Input Transition Times                                                     ;
++-------------------------+--------------+-----------------+-----------------+
+; Pin                     ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
++-------------------------+--------------+-----------------+-----------------+
+; SW[1]                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; SW[0]                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; CLOCK_50                ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
+; ~ALTERA_ASDO_DATA1~     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_FLASH_nCE_nCSO~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_DATA0~          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
++-------------------------+--------------+-----------------+-----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1200mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; HEX0[6]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.07e-09 V                   ; 2.38 V              ; -0.0144 V           ; 0.227 V                              ; 0.024 V                              ; 3.14e-10 s                  ; 3.39e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.07e-09 V                  ; 2.38 V             ; -0.0144 V          ; 0.227 V                             ; 0.024 V                             ; 3.14e-10 s                 ; 3.39e-10 s                 ; Yes                       ; Yes                       ;
+; HEX0[5]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.07e-09 V                   ; 2.33 V              ; -0.00496 V          ; 0.223 V                              ; 0.086 V                              ; 2.9e-09 s                   ; 2.73e-09 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.07e-09 V                  ; 2.33 V             ; -0.00496 V         ; 0.223 V                             ; 0.086 V                             ; 2.9e-09 s                  ; 2.73e-09 s                 ; Yes                       ; Yes                       ;
+; HEX0[4]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.07e-09 V                   ; 2.38 V              ; -0.0144 V           ; 0.227 V                              ; 0.024 V                              ; 3.14e-10 s                  ; 3.39e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.07e-09 V                  ; 2.38 V             ; -0.0144 V          ; 0.227 V                             ; 0.024 V                             ; 3.14e-10 s                 ; 3.39e-10 s                 ; Yes                       ; Yes                       ;
+; HEX0[3]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.07e-09 V                   ; 2.38 V              ; -0.0144 V           ; 0.227 V                              ; 0.024 V                              ; 3.14e-10 s                  ; 3.39e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.07e-09 V                  ; 2.38 V             ; -0.0144 V          ; 0.227 V                             ; 0.024 V                             ; 3.14e-10 s                 ; 3.39e-10 s                 ; Yes                       ; Yes                       ;
+; HEX0[2]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.49e-09 V                   ; 2.38 V              ; -0.00552 V          ; 0.096 V                              ; 0.019 V                              ; 4.18e-10 s                  ; 3.59e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 4.49e-09 V                  ; 2.38 V             ; -0.00552 V         ; 0.096 V                             ; 0.019 V                             ; 4.18e-10 s                 ; 3.59e-10 s                 ; No                        ; Yes                       ;
+; HEX0[1]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.49e-09 V                   ; 2.33 V              ; -0.00467 V          ; 0.226 V                              ; 0.087 V                              ; 2.91e-09 s                  ; 2.74e-09 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 4.49e-09 V                  ; 2.33 V             ; -0.00467 V         ; 0.226 V                             ; 0.087 V                             ; 2.91e-09 s                 ; 2.74e-09 s                 ; Yes                       ; Yes                       ;
+; HEX0[0]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.49e-09 V                   ; 2.38 V              ; -0.00552 V          ; 0.096 V                              ; 0.019 V                              ; 4.18e-10 s                  ; 3.59e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 4.49e-09 V                  ; 2.38 V             ; -0.00552 V         ; 0.096 V                             ; 0.019 V                             ; 4.18e-10 s                 ; 3.59e-10 s                 ; No                        ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.67e-09 V                   ; 2.38 V              ; -0.0485 V           ; 0.167 V                              ; 0.096 V                              ; 2.95e-10 s                  ; 2.73e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 2.67e-09 V                  ; 2.38 V             ; -0.0485 V          ; 0.167 V                             ; 0.096 V                             ; 2.95e-10 s                 ; 2.73e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_nCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.18e-09 V                   ; 2.38 V              ; -0.00483 V          ; 0.152 V                              ; 0.012 V                              ; 4.81e-10 s                  ; 6.29e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 4.18e-09 V                  ; 2.38 V             ; -0.00483 V         ; 0.152 V                             ; 0.012 V                             ; 4.81e-10 s                 ; 6.29e-10 s                 ; Yes                       ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1200mv 85c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; HEX0[6]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.67e-07 V                   ; 2.36 V              ; -0.00552 V          ; 0.11 V                               ; 0.007 V                              ; 4.54e-10 s                  ; 4.35e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 4.67e-07 V                  ; 2.36 V             ; -0.00552 V         ; 0.11 V                              ; 0.007 V                             ; 4.54e-10 s                 ; 4.35e-10 s                 ; Yes                       ; Yes                       ;
+; HEX0[5]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.67e-07 V                   ; 2.33 V              ; -0.00269 V          ; 0.13 V                               ; 0.055 V                              ; 3.54e-09 s                  ; 3.29e-09 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 4.67e-07 V                  ; 2.33 V             ; -0.00269 V         ; 0.13 V                              ; 0.055 V                             ; 3.54e-09 s                 ; 3.29e-09 s                 ; Yes                       ; Yes                       ;
+; HEX0[4]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.67e-07 V                   ; 2.36 V              ; -0.00552 V          ; 0.11 V                               ; 0.007 V                              ; 4.54e-10 s                  ; 4.35e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 4.67e-07 V                  ; 2.36 V             ; -0.00552 V         ; 0.11 V                              ; 0.007 V                             ; 4.54e-10 s                 ; 4.35e-10 s                 ; Yes                       ; Yes                       ;
+; HEX0[3]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 4.67e-07 V                   ; 2.36 V              ; -0.00552 V          ; 0.11 V                               ; 0.007 V                              ; 4.54e-10 s                  ; 4.35e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 4.67e-07 V                  ; 2.36 V             ; -0.00552 V         ; 0.11 V                              ; 0.007 V                             ; 4.54e-10 s                 ; 4.35e-10 s                 ; Yes                       ; Yes                       ;
+; HEX0[2]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 6.92e-07 V                   ; 2.35 V              ; -0.00996 V          ; 0.121 V                              ; 0.03 V                               ; 4.64e-10 s                  ; 4.47e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 6.92e-07 V                  ; 2.35 V             ; -0.00996 V         ; 0.121 V                             ; 0.03 V                              ; 4.64e-10 s                 ; 4.47e-10 s                 ; Yes                       ; Yes                       ;
+; HEX0[1]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 6.92e-07 V                   ; 2.33 V              ; -0.00265 V          ; 0.133 V                              ; 0.056 V                              ; 3.55e-09 s                  ; 3.31e-09 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 6.92e-07 V                  ; 2.33 V             ; -0.00265 V         ; 0.133 V                             ; 0.056 V                             ; 3.55e-09 s                 ; 3.31e-09 s                 ; Yes                       ; Yes                       ;
+; HEX0[0]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 6.92e-07 V                   ; 2.35 V              ; -0.00996 V          ; 0.121 V                              ; 0.03 V                               ; 4.64e-10 s                  ; 4.47e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 6.92e-07 V                  ; 2.35 V             ; -0.00996 V         ; 0.121 V                             ; 0.03 V                              ; 4.64e-10 s                 ; 4.47e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.75e-07 V                   ; 2.35 V              ; -0.0109 V           ; 0.084 V                              ; 0.027 V                              ; 4.31e-10 s                  ; 3.61e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.75e-07 V                  ; 2.35 V             ; -0.0109 V          ; 0.084 V                             ; 0.027 V                             ; 4.31e-10 s                 ; 3.61e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_nCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 6.15e-07 V                   ; 2.35 V              ; -0.00712 V          ; 0.093 V                              ; 0.02 V                               ; 6.21e-10 s                  ; 7.9e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 6.15e-07 V                  ; 2.35 V             ; -0.00712 V         ; 0.093 V                             ; 0.02 V                              ; 6.21e-10 s                 ; 7.9e-10 s                  ; Yes                       ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Fast 1200mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; HEX0[6]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.74e-08 V                   ; 2.73 V              ; -0.0384 V           ; 0.169 V                              ; 0.089 V                              ; 2.7e-10 s                   ; 2.62e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 2.74e-08 V                  ; 2.73 V             ; -0.0384 V          ; 0.169 V                             ; 0.089 V                             ; 2.7e-10 s                  ; 2.62e-10 s                 ; Yes                       ; Yes                       ;
+; HEX0[5]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.74e-08 V                   ; 2.64 V              ; -0.0117 V           ; 0.202 V                              ; 0.176 V                              ; 2.38e-09 s                  ; 2.22e-09 s                  ; No                         ; Yes                        ; 2.62 V                      ; 2.74e-08 V                  ; 2.64 V             ; -0.0117 V          ; 0.202 V                             ; 0.176 V                             ; 2.38e-09 s                 ; 2.22e-09 s                 ; No                        ; Yes                       ;
+; HEX0[4]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.74e-08 V                   ; 2.73 V              ; -0.0384 V           ; 0.169 V                              ; 0.089 V                              ; 2.7e-10 s                   ; 2.62e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 2.74e-08 V                  ; 2.73 V             ; -0.0384 V          ; 0.169 V                             ; 0.089 V                             ; 2.7e-10 s                  ; 2.62e-10 s                 ; Yes                       ; Yes                       ;
+; HEX0[3]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.74e-08 V                   ; 2.73 V              ; -0.0384 V           ; 0.169 V                              ; 0.089 V                              ; 2.7e-10 s                   ; 2.62e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 2.74e-08 V                  ; 2.73 V             ; -0.0384 V          ; 0.169 V                             ; 0.089 V                             ; 2.7e-10 s                  ; 2.62e-10 s                 ; Yes                       ; Yes                       ;
+; HEX0[2]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
+; HEX0[1]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.64 V              ; -0.0113 V           ; 0.208 V                              ; 0.179 V                              ; 2.38e-09 s                  ; 2.23e-09 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.64 V             ; -0.0113 V          ; 0.208 V                             ; 0.179 V                             ; 2.38e-09 s                 ; 2.23e-09 s                 ; No                        ; Yes                       ;
+; HEX0[0]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.22e-08 V                   ; 2.74 V              ; -0.06 V             ; 0.158 V                              ; 0.08 V                               ; 2.68e-10 s                  ; 2.19e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 2.22e-08 V                  ; 2.74 V             ; -0.06 V            ; 0.158 V                             ; 0.08 V                              ; 2.68e-10 s                 ; 2.19e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_nCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.54e-08 V                   ; 2.7 V               ; -0.00943 V          ; 0.276 V                              ; 0.035 V                              ; 3.19e-10 s                  ; 4.99e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 3.54e-08 V                  ; 2.7 V              ; -0.00943 V         ; 0.276 V                             ; 0.035 V                             ; 3.19e-10 s                 ; 4.99e-10 s                 ; No                        ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++---------------------------------------------------------------------------------+
+; Setup Transfers                                                                 ;
++------------------+------------------+----------+----------+----------+----------+
+; From Clock       ; To Clock         ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------------+------------------+----------+----------+----------+----------+
+; CLOCK_50         ; CLOCK_50         ; 689      ; 0        ; 0        ; 0        ;
+; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 22       ; 0        ; 0        ; 0        ;
++------------------+------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++---------------------------------------------------------------------------------+
+; Hold Transfers                                                                  ;
++------------------+------------------+----------+----------+----------+----------+
+; From Clock       ; To Clock         ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------------+------------------+----------+----------+----------+----------+
+; CLOCK_50         ; CLOCK_50         ; 689      ; 0        ; 0        ; 0        ;
+; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; 22       ; 0        ; 0        ; 0        ;
++------------------+------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths Summary                    ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 2     ; 2    ;
+; Unconstrained Input Port Paths  ; 8     ; 8    ;
+; Unconstrained Output Ports      ; 7     ; 7    ;
+; Unconstrained Output Port Paths ; 28    ; 28   ;
++---------------------------------+-------+------+
+
+
++----------------------------------------------------------+
+; Clock Status Summary                                     ;
++------------------+------------------+------+-------------+
+; Target           ; Clock            ; Type ; Status      ;
++------------------+------------------+------+-------------+
+; CLOCK_50         ; CLOCK_50         ; Base ; Constrained ;
+; MHzCLock:MHC|Out ; MHzCLock:MHC|Out ; Base ; Constrained ;
++------------------+------------------+------+-------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; SW[0]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SW[1]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; HEX0[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; SW[0]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SW[1]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; HEX0[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[3]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; HEX0[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime TimeQuest Timing Analyzer
+    Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+    Info: Processing started: Sat May 05 14:50:15 2018
+Info: Command: quartus_sta Part4 -c Part4
+Info: qsta_default_script.tcl version: #1
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'Part4.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name CLOCK_50 CLOCK_50
+    Info (332105): create_clock -period 1.000 -name MHzCLock:MHC|Out MHzCLock:MHC|Out
+Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow 1200mV 85C Model
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
+Info (332146): Worst-case setup slack is -2.537
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -2.537             -44.609 CLOCK_50 
+    Info (332119):    -1.003              -3.383 MHzCLock:MHC|Out 
+Info (332146): Worst-case hold slack is 0.403
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.403               0.000 MHzCLock:MHC|Out 
+    Info (332119):     0.556               0.000 CLOCK_50 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -3.000
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.000             -37.695 CLOCK_50 
+    Info (332119):    -1.285              -5.140 MHzCLock:MHC|Out 
+Info: Analyzing Slow 1200mV 0C Model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
+Info (332146): Worst-case setup slack is -2.211
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -2.211             -37.473 CLOCK_50 
+    Info (332119):    -0.821              -2.659 MHzCLock:MHC|Out 
+Info (332146): Worst-case hold slack is 0.354
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.354               0.000 MHzCLock:MHC|Out 
+    Info (332119):     0.503               0.000 CLOCK_50 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -3.000
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.000             -37.695 CLOCK_50 
+    Info (332119):    -1.285              -5.140 MHzCLock:MHC|Out 
+Info: Analyzing Fast 1200mV 0C Model
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
+Info (332146): Worst-case setup slack is -0.740
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.740              -8.999 CLOCK_50 
+    Info (332119):     0.021               0.000 MHzCLock:MHC|Out 
+Info (332146): Worst-case hold slack is 0.181
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.181               0.000 MHzCLock:MHC|Out 
+    Info (332119):     0.257               0.000 CLOCK_50 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -3.000
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.000             -38.432 CLOCK_50 
+    Info (332119):    -1.000              -4.000 MHzCLock:MHC|Out 
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 697 megabytes
+    Info: Processing ended: Sat May 05 14:50:18 2018
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
+
+

@@ -1,0 +1,100 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+do TFF1_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:32:16 on May 05,2018
+# vlog -reportprogress 300 ./TFF1.sv 
+# -- Compiling module TFF1
+# -- Compiling module TFF1_testbench
+# 
+# Top level modules:
+# 	TFF1_testbench
+# End time: 14:32:16 on May 05,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work TFF1_testbench 
+# Start time: 14:32:16 on May 05,2018
+# Loading sv_std.std
+# Loading work.TFF1_testbench
+# Loading work.TFF1
+# ** Fatal: (vsim-3365) ./TFF1.sv(27): Too many port connections. Expected 4, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /TFF1_testbench/DUT File: ./TFF1.sv
+# FATAL ERROR while loading design
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./TFF1_runlab.do PAUSED at line 12
+do TFF1_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:33:39 on May 05,2018
+# vlog -reportprogress 300 ./TFF1.sv 
+# -- Compiling module TFF1
+# -- Compiling module TFF1_testbench
+# 
+# Top level modules:
+# 	TFF1_testbench
+# End time: 14:33:39 on May 05,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work TFF1_testbench 
+# Start time: 14:32:16 on May 05,2018
+# Loading sv_std.std
+# Loading work.TFF1_testbench
+# Loading work.TFF1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./TFF1.sv(46)
+#    Time: 553 ns  Iteration: 0  Instance: /TFF1_testbench
+# Break in Module TFF1_testbench at ./TFF1.sv line 46
+do TFF1_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:34:07 on May 05,2018
+# vlog -reportprogress 300 ./TFF1.sv 
+# -- Compiling module TFF1
+# -- Compiling module TFF1_testbench
+# 
+# Top level modules:
+# 	TFF1_testbench
+# End time: 14:34:07 on May 05,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 14:34:11 on May 05,2018, Elapsed time: 0:01:55
+# Errors: 1, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work TFF1_testbench 
+# Start time: 14:34:11 on May 05,2018
+# Loading sv_std.std
+# Loading work.TFF1_testbench
+# Loading work.TFF1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./TFF1.sv(46)
+#    Time: 553 ns  Iteration: 0  Instance: /TFF1_testbench
+# Break in Module TFF1_testbench at ./TFF1.sv line 46
+do TFF1_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:35:19 on May 05,2018
+# vlog -reportprogress 300 ./TFF1.sv 
+# -- Compiling module TFF1
+# -- Compiling module TFF1_testbench
+# 
+# Top level modules:
+# 	TFF1_testbench
+# End time: 14:35:20 on May 05,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 14:35:23 on May 05,2018, Elapsed time: 0:01:12
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work TFF1_testbench 
+# Start time: 14:35:23 on May 05,2018
+# Loading sv_std.std
+# Loading work.TFF1_testbench
+# Loading work.TFF1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./TFF1.sv(45)
+#    Time: 553 ns  Iteration: 0  Instance: /TFF1_testbench
+# Break in Module TFF1_testbench at ./TFF1.sv line 45
+# End time: 14:40:12 on May 05,2018, Elapsed time: 0:04:49
+# Errors: 0, Warnings: 0

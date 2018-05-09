@@ -1,0 +1,6 @@
+module cntFourBit(input logic CLK,CLR,T,output logic [3:0]Q);
+    always_ff @(posedge CLK)
+	 begin
+		Q <= (CLR ? (T ? (Q + 16'h1): Q) : 16'h0);
+    end
+endmodule

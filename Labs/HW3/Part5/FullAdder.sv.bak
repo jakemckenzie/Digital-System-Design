@@ -1,0 +1,7 @@
+module FullAdder(input logic [2:0]a,b,input logic ci, output logic s);
+    wire [2:0] co;  // Is the wire correct here? I created this off something I saw.
+
+    Adder ADD1(a[0],b[0],ci,s[0],co[0]);
+    Adder ADD2(a[1],b[1],co[0],s[1],co[1]);
+    Adder ADD3(a[2],b[2],co[1],s[2],co[2]);
+endmodule
