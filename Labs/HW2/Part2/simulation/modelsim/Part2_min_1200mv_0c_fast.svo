@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition"
 
-// DATE "04/26/2018 19:12:18"
+// DATE "05/04/2018 10:09:14"
 
 // 
 // Device: Altera EP4CE115F29C7 Package FBGA780
@@ -34,10 +34,10 @@ module Part2 (
 	HEX1,
 	HEX0,
 	LEDG);
-input 	logic [3:0] SW ;
-output 	logic [0:6] HEX1 ;
-output 	logic [0:6] HEX0 ;
-output 	logic [3:0] LEDG ;
+input 	[3:0] SW;
+output 	[0:6] HEX1;
+output 	[0:6] HEX0;
+output 	[3:0] LEDG;
 
 // Design Ports Information
 // HEX1[6]	=>  Location: PIN_U24,	 I/O Standard: 2.5 V,	 Current Strength: Default

@@ -45,7 +45,7 @@ module KHzCLock_testbench;
 	end
 	
 	initial begin
-	  #2_000_100 $stop;
+	  #2_000_000_100 $stop;
 	end
 
 endmodule
