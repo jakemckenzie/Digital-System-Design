@@ -2,6 +2,9 @@
 //In this module I create a finite state machine, that
 //cycles between 0 and 8. When 4 or 8 are reached the output
 //z is set to high.
+//For the One-Hot step I do not know how to interpret the table
+//that was output. For A the state appears to be reset but for all
+//other states the state appears to be set to itself.
 module Part1FSM(input logic Clock, w, Reset, output logic [3:0]y,output logic z);
     logic [3:0]CurrentState, NextState;
     localparam A = 4'h0,
