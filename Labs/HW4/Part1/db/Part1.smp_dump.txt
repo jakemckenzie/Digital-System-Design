@@ -1,0 +1,12 @@
+
+State Machine - |Part1|Part1FSM:FSM|CurrentState
+Name CurrentState~7 CurrentState~6 CurrentState~5 CurrentState~4 
+CurrentState.A 0 0 0 0 
+CurrentState.B 0 0 0 1 
+CurrentState.C 0 0 1 0 
+CurrentState.D 0 0 1 1 
+CurrentState.E 0 1 0 0 
+CurrentState.F 0 1 0 1 
+CurrentState.G 0 1 1 0 
+CurrentState.H 0 1 1 1 
+CurrentState.I 1 0 0 0 

@@ -1,0 +1,58 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW4/Part1
+vPart1FSM
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1526072252
+!i10b 1
+!s100 6IFT2if<O5NOjQ8Q`2_Qk3
+I1=YS;LVi5h?MO?@64IJYV2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 Part1FSM_sv_unit
+S1
+R0
+Z5 w1526072247
+Z6 8./Part1FSM.sv
+Z7 F./Part1FSM.sv
+L0 1
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1526072252.000000
+Z10 !s107 ./Part1FSM.sv|
+Z11 !s90 -reportprogress|300|./Part1FSM.sv|
+!i113 1
+Z12 tCvgOpt 0
+n@part1@f@s@m
+vPart1FSM_testbench
+R1
+R2
+!i10b 1
+!s100 ^Obcf?J6565<eem[A4Q[Y2
+I0FTX_<k1AOPlLH;kgA4RG0
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 73
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+n@part1@f@s@m_testbench

@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for Part5
-Sat May 05 15:13:13 2018
+Fri May 11 10:06:39 2018
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -105,7 +105,7 @@ agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.4%      ;
+;     Processors 2-4         ;   0.3%      ;
 +----------------------------+-------------+
 
 
@@ -114,7 +114,7 @@ agreement for further details.
 +---------------+--------+--------------------------+
 ; SDC File Path ; Status ; Read at                  ;
 +---------------+--------+--------------------------+
-; Part5.out.sdc ; OK     ; Sat May 05 15:13:12 2018 ;
+; Part5.out.sdc ; OK     ; Fri May 11 10:06:37 2018 ;
 +---------------+--------+--------------------------+
 
 
@@ -1436,7 +1436,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Sat May 05 15:13:10 2018
+    Info: Processing started: Fri May 11 10:06:36 2018
 Info: Command: quartus_sta Part5 -c Part5
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -1507,8 +1507,8 @@ Info (332146): Worst-case minimum pulse width slack is 9.267
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 10 warnings
-    Info: Peak virtual memory: 702 megabytes
-    Info: Processing ended: Sat May 05 15:13:13 2018
+    Info: Peak virtual memory: 699 megabytes
+    Info: Processing ended: Fri May 11 10:06:39 2018
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 
