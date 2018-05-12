@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Part1
-Fri May 11 15:50:17 2018
+Fri May 11 20:40:17 2018
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -13,12 +13,11 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. State Machine - |Part1|Part1FSM:FSM|CurrentState
-  9. Registers Removed During Synthesis
- 10. General Register Statistics
- 11. Post-Synthesis Netlist Statistics for Top Partition
- 12. Elapsed Time Per Partition
- 13. Analysis & Synthesis Messages
+  8. General Register Statistics
+  9. Inverted Register Statistics
+ 10. Post-Synthesis Netlist Statistics for Top Partition
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -45,15 +44,15 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri May 11 15:50:17 2018       ;
+; Analysis & Synthesis Status        ; Successful - Fri May 11 20:40:17 2018       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; Part1                                       ;
 ; Top-level Entity Name              ; Part1                                       ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 21                                          ;
-;     Total combinational functions  ; 21                                          ;
-;     Dedicated logic registers      ; 8                                           ;
-; Total registers                    ; 8                                           ;
+; Total logic elements               ; 24                                          ;
+;     Total combinational functions  ; 23                                          ;
+;     Dedicated logic registers      ; 9                                           ;
+; Total registers                    ; 9                                           ;
 ; Total pins                         ; 13                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -176,36 +175,36 @@ agreement for further details.
 +----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary               ;
-+---------------------------------------------+-------------+
-; Resource                                    ; Usage       ;
-+---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 21          ;
-;                                             ;             ;
-; Total combinational functions               ; 21          ;
-; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 6           ;
-;     -- 3 input functions                    ; 8           ;
-;     -- <=2 input functions                  ; 7           ;
-;                                             ;             ;
-; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 21          ;
-;     -- arithmetic mode                      ; 0           ;
-;                                             ;             ;
-; Total registers                             ; 8           ;
-;     -- Dedicated logic registers            ; 8           ;
-;     -- I/O registers                        ; 0           ;
-;                                             ;             ;
-; I/O pins                                    ; 13          ;
-;                                             ;             ;
-; Embedded Multiplier 9-bit elements          ; 0           ;
-;                                             ;             ;
-; Maximum fan-out node                        ; SW[0]~input ;
-; Maximum fan-out                             ; 9           ;
-; Total fan-out                               ; 109         ;
-; Average fan-out                             ; 1.98        ;
-+---------------------------------------------+-------------+
++-----------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                     ;
++---------------------------------------------+-------------------+
+; Resource                                    ; Usage             ;
++---------------------------------------------+-------------------+
+; Estimated Total logic elements              ; 24                ;
+;                                             ;                   ;
+; Total combinational functions               ; 23                ;
+; Logic element usage by number of LUT inputs ;                   ;
+;     -- 4 input functions                    ; 14                ;
+;     -- 3 input functions                    ; 2                 ;
+;     -- <=2 input functions                  ; 7                 ;
+;                                             ;                   ;
+; Logic elements by mode                      ;                   ;
+;     -- normal mode                          ; 23                ;
+;     -- arithmetic mode                      ; 0                 ;
+;                                             ;                   ;
+; Total registers                             ; 9                 ;
+;     -- Dedicated logic registers            ; 9                 ;
+;     -- I/O registers                        ; 0                 ;
+;                                             ;                   ;
+; I/O pins                                    ; 13                ;
+;                                             ;                   ;
+; Embedded Multiplier 9-bit elements          ; 0                 ;
+;                                             ;                   ;
+; Maximum fan-out node                        ; Part1FSM:FSM|y[3] ;
+; Maximum fan-out                             ; 10                ;
+; Total fan-out                               ; 125               ;
+; Average fan-out                             ; 2.16              ;
++---------------------------------------------+-------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -213,42 +212,11 @@ agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name  ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------+-------------+--------------+
-; |Part1                     ; 21 (0)              ; 8 (0)                     ; 0           ; 0            ; 0       ; 0         ; 13   ; 0            ; |Part1               ; Part1       ; work         ;
-;    |Part1FSM:FSM|          ; 14 (14)             ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part1|Part1FSM:FSM  ; Part1FSM    ; work         ;
+; |Part1                     ; 23 (0)              ; 9 (0)                     ; 0           ; 0            ; 0       ; 0         ; 13   ; 0            ; |Part1               ; Part1       ; work         ;
+;    |Part1FSM:FSM|          ; 16 (16)             ; 9 (9)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part1|Part1FSM:FSM  ; Part1FSM    ; work         ;
 ;    |hexDisplay:HD|         ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part1|hexDisplay:HD ; hexDisplay  ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-Encoding Type:  One-Hot
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |Part1|Part1FSM:FSM|CurrentState                                                                                                                        ;
-+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+
-; Name           ; CurrentState.H ; CurrentState.G ; CurrentState.F ; CurrentState.E ; CurrentState.D ; CurrentState.C ; CurrentState.B ; CurrentState.A ; CurrentState.I ;
-+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+
-; CurrentState.A ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ;
-; CurrentState.B ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 1              ; 0              ;
-; CurrentState.C ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ; 1              ; 0              ;
-; CurrentState.D ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ; 0              ; 1              ; 0              ;
-; CurrentState.E ; 0              ; 0              ; 0              ; 1              ; 0              ; 0              ; 0              ; 1              ; 0              ;
-; CurrentState.F ; 0              ; 0              ; 1              ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ;
-; CurrentState.G ; 0              ; 1              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ;
-; CurrentState.H ; 1              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 0              ;
-; CurrentState.I ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 0              ; 1              ; 1              ;
-+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+
-
-
-+------------------------------------------------------------+
-; Registers Removed During Synthesis                         ;
-+---------------------------------------+--------------------+
-; Register name                         ; Reason for Removal ;
-+---------------------------------------+--------------------+
-; Part1FSM:FSM|CurrentState.A           ; Lost fanout        ;
-; Part1FSM:FSM|CurrentState~4           ; Lost fanout        ;
-; Part1FSM:FSM|CurrentState~5           ; Lost fanout        ;
-; Part1FSM:FSM|CurrentState~6           ; Lost fanout        ;
-; Total Number of Removed Registers = 4 ;                    ;
-+---------------------------------------+--------------------+
 
 
 +------------------------------------------------------+
@@ -256,14 +224,24 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 8     ;
+; Total registers                              ; 9     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 8     ;
+; Number of registers using Asynchronous Clear ; 9     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; Part1FSM:FSM|CurrentState~8            ; 2       ;
+; Total number of inverted registers = 1 ;         ;
++----------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -272,17 +250,17 @@ Encoding Type:  One-Hot
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 13                          ;
-; cycloneiii_ff         ; 8                           ;
-;     CLR               ; 8                           ;
-; cycloneiii_lcell_comb ; 23                          ;
-;     normal            ; 23                          ;
-;         1 data inputs ; 2                           ;
+; cycloneiii_ff         ; 9                           ;
+;     CLR               ; 9                           ;
+; cycloneiii_lcell_comb ; 24                          ;
+;     normal            ; 24                          ;
+;         1 data inputs ; 1                           ;
 ;         2 data inputs ; 7                           ;
-;         3 data inputs ; 8                           ;
-;         4 data inputs ; 6                           ;
+;         3 data inputs ; 2                           ;
+;         4 data inputs ; 14                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 2.09                        ;
+; Average LUT depth     ; 2.06                        ;
 +-----------------------+-----------------------------+
 
 
@@ -301,13 +279,13 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Fri May 11 15:50:03 2018
+    Info: Processing started: Fri May 11 20:40:02 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Part1 -c Part1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 2 entities, in source file part1fsm.sv
-    Info (12023): Found entity 1: Part1FSM File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW4/Part1/Part1FSM.sv Line: 5
-    Info (12023): Found entity 2: Part1FSM_testbench File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW4/Part1/Part1FSM.sv Line: 78
+    Info (12023): Found entity 1: Part1FSM File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW4/Part1/Part1FSM.sv Line: 8
+    Info (12023): Found entity 2: Part1FSM_testbench File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW4/Part1/Part1FSM.sv Line: 71
 Info (12021): Found 1 design units, including 1 entities, in source file part1.sv
     Info (12023): Found entity 1: Part1 File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW4/Part1/Part1.sv Line: 4
 Info (12021): Found 2 design units, including 2 entities, in source file hexdisplay.sv
@@ -316,18 +294,19 @@ Info (12021): Found 2 design units, including 2 entities, in source file hexdisp
 Info (12127): Elaborating entity "Part1" for the top level hierarchy
 Info (12128): Elaborating entity "Part1FSM" for hierarchy "Part1FSM:FSM" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW4/Part1/Part1.sv Line: 7
 Info (12128): Elaborating entity "hexDisplay" for hierarchy "hexDisplay:HD" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW4/Part1/Part1.sv Line: 8
+Info (13000): Registers with preset signals will power-up high
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 4 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 34 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 37 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 10 output pins
-    Info (21061): Implemented 21 logic cells
+    Info (21061): Implemented 24 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 633 megabytes
-    Info: Processing ended: Fri May 11 15:50:17 2018
-    Info: Elapsed time: 00:00:14
+    Info: Peak virtual memory: 634 megabytes
+    Info: Processing ended: Fri May 11 20:40:17 2018
+    Info: Elapsed time: 00:00:15
     Info: Total CPU time (on all processors): 00:00:32
 
 

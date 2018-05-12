@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for Part1
-Fri May 11 15:50:42 2018
+Fri May 11 20:40:43 2018
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -105,9 +105,8 @@ agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.3%      ;
-;     Processor 3            ;   0.2%      ;
-;     Processor 4            ;   0.2%      ;
+;     Processor 2            ;   0.4%      ;
+;     Processors 3-4         ;   0.2%      ;
 +----------------------------+-------------+
 
 
@@ -116,7 +115,7 @@ agreement for further details.
 +---------------+--------+--------------------------+
 ; SDC File Path ; Status ; Read at                  ;
 +---------------+--------+--------------------------+
-; Part1.out.sdc ; OK     ; Fri May 11 15:50:41 2018 ;
+; Part1.out.sdc ; OK     ; Fri May 11 20:40:41 2018 ;
 +---------------+--------+--------------------------+
 
 
@@ -129,13 +128,13 @@ agreement for further details.
 +-------------+------+--------+-----------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------+
 
 
-+------------------------------------------------------------------------------------------------------------+
-; Slow 1200mV 85C Model Fmax Summary                                                                         ;
-+------------+-----------------+-------------+---------------------------------------------------------------+
-; Fmax       ; Restricted Fmax ; Clock Name  ; Note                                                          ;
-+------------+-----------------+-------------+---------------------------------------------------------------+
-; 321.03 MHz ; 250.0 MHz       ; SystemClock ; limit due to minimum period restriction (max I/O toggle rate) ;
-+------------+-----------------+-------------+---------------------------------------------------------------+
++---------------------------------------------------+
+; Slow 1200mV 85C Model Fmax Summary                ;
++------------+-----------------+-------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name  ; Note ;
++------------+-----------------+-------------+------+
+; 203.05 MHz ; 203.05 MHz      ; SystemClock ;      ;
++------------+-----------------+-------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
@@ -150,7 +149,7 @@ HTML report is unavailable in plain text report export.
 +-------------+-------+---------------+
 ; Clock       ; Slack ; End Point TNS ;
 +-------------+-------+---------------+
-; SystemClock ; 6.885 ; 0.000         ;
+; SystemClock ; 5.075 ; 0.000         ;
 +-------------+-------+---------------+
 
 
@@ -159,7 +158,7 @@ HTML report is unavailable in plain text report export.
 +-------------+-------+---------------+
 ; Clock       ; Slack ; End Point TNS ;
 +-------------+-------+---------------+
-; SystemClock ; 0.440 ; 0.000         ;
+; SystemClock ; 0.514 ; 0.000         ;
 +-------------+-------+---------------+
 
 
@@ -180,7 +179,7 @@ No paths to report.
 +-------------+-------+-----------------------------+
 ; Clock       ; Slack ; End Point TNS               ;
 +-------------+-------+-----------------------------+
-; SystemClock ; 4.763 ; 0.000                       ;
+; SystemClock ; 4.737 ; 0.000                       ;
 +-------------+-------+-----------------------------+
 
 
@@ -189,22 +188,32 @@ No paths to report.
 +-------+-----------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                   ; To Node                     ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+-----------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
-; 6.885 ; Part1FSM:FSM|CurrentState.G ; Part1FSM:FSM|CurrentState.F ; SystemClock  ; SystemClock ; 10.000       ; -0.048     ; 2.085      ;
-; 6.973 ; Part1FSM:FSM|CurrentState.B ; Part1FSM:FSM|CurrentState.B ; SystemClock  ; SystemClock ; 10.000       ; -0.048     ; 1.997      ;
-; 7.119 ; Part1FSM:FSM|CurrentState.D ; Part1FSM:FSM|CurrentState.B ; SystemClock  ; SystemClock ; 10.000       ; -0.048     ; 1.851      ;
-; 7.139 ; Part1FSM:FSM|CurrentState.E ; Part1FSM:FSM|CurrentState.B ; SystemClock  ; SystemClock ; 10.000       ; -0.048     ; 1.831      ;
-; 7.228 ; Part1FSM:FSM|CurrentState.H ; Part1FSM:FSM|CurrentState.F ; SystemClock  ; SystemClock ; 10.000       ; -0.048     ; 1.742      ;
-; 7.363 ; Part1FSM:FSM|CurrentState.F ; Part1FSM:FSM|CurrentState.F ; SystemClock  ; SystemClock ; 10.000       ; -0.048     ; 1.607      ;
-; 7.668 ; Part1FSM:FSM|CurrentState.B ; Part1FSM:FSM|CurrentState.C ; SystemClock  ; SystemClock ; 10.000       ; -0.048     ; 1.302      ;
-; 7.670 ; Part1FSM:FSM|CurrentState.G ; Part1FSM:FSM|CurrentState.H ; SystemClock  ; SystemClock ; 10.000       ; -0.048     ; 1.300      ;
-; 7.794 ; Part1FSM:FSM|CurrentState.D ; Part1FSM:FSM|CurrentState.E ; SystemClock  ; SystemClock ; 10.000       ; -0.048     ; 1.176      ;
-; 7.802 ; Part1FSM:FSM|CurrentState.C ; Part1FSM:FSM|CurrentState.D ; SystemClock  ; SystemClock ; 10.000       ; -0.048     ; 1.168      ;
-; 7.860 ; Part1FSM:FSM|CurrentState.H ; Part1FSM:FSM|CurrentState.I ; SystemClock  ; SystemClock ; 10.000       ; -0.048     ; 1.110      ;
-; 7.980 ; Part1FSM:FSM|CurrentState.F ; Part1FSM:FSM|CurrentState.G ; SystemClock  ; SystemClock ; 10.000       ; -0.048     ; 0.990      ;
-; 8.137 ; Part1FSM:FSM|CurrentState.C ; Part1FSM:FSM|CurrentState.B ; SystemClock  ; SystemClock ; 10.000       ; -0.048     ; 0.833      ;
-; 8.146 ; Part1FSM:FSM|CurrentState.I ; Part1FSM:FSM|CurrentState.F ; SystemClock  ; SystemClock ; 10.000       ; -0.048     ; 0.824      ;
-; 8.241 ; Part1FSM:FSM|CurrentState.I ; Part1FSM:FSM|CurrentState.I ; SystemClock  ; SystemClock ; 10.000       ; -0.043     ; 0.734      ;
-; 8.241 ; Part1FSM:FSM|CurrentState.E ; Part1FSM:FSM|CurrentState.E ; SystemClock  ; SystemClock ; 10.000       ; -0.043     ; 0.734      ;
+; 5.075 ; Part1FSM:FSM|CurrentState~0 ; Part1FSM:FSM|CurrentState~1 ; SystemClock  ; SystemClock ; 10.000       ; -0.072     ; 3.871      ;
+; 5.100 ; Part1FSM:FSM|CurrentState~1 ; Part1FSM:FSM|CurrentState~0 ; SystemClock  ; SystemClock ; 10.000       ; -0.148     ; 3.770      ;
+; 5.180 ; Part1FSM:FSM|CurrentState~1 ; Part1FSM:FSM|y[3]           ; SystemClock  ; SystemClock ; 10.000       ; -0.148     ; 3.690      ;
+; 5.242 ; Part1FSM:FSM|CurrentState~8 ; Part1FSM:FSM|CurrentState~3 ; SystemClock  ; SystemClock ; 10.000       ; -0.148     ; 3.628      ;
+; 5.355 ; Part1FSM:FSM|CurrentState~8 ; Part1FSM:FSM|y[3]           ; SystemClock  ; SystemClock ; 10.000       ; -0.148     ; 3.515      ;
+; 5.394 ; Part1FSM:FSM|CurrentState~1 ; Part1FSM:FSM|CurrentState~3 ; SystemClock  ; SystemClock ; 10.000       ; -0.148     ; 3.476      ;
+; 5.429 ; Part1FSM:FSM|CurrentState~4 ; Part1FSM:FSM|CurrentState~5 ; SystemClock  ; SystemClock ; 10.000       ; -0.072     ; 3.517      ;
+; 5.470 ; Part1FSM:FSM|CurrentState~6 ; Part1FSM:FSM|CurrentState~3 ; SystemClock  ; SystemClock ; 10.000       ; -0.148     ; 3.400      ;
+; 5.505 ; Part1FSM:FSM|CurrentState~2 ; Part1FSM:FSM|y[3]           ; SystemClock  ; SystemClock ; 10.000       ; -0.148     ; 3.365      ;
+; 5.556 ; Part1FSM:FSM|CurrentState~5 ; Part1FSM:FSM|CurrentState~4 ; SystemClock  ; SystemClock ; 10.000       ; -0.148     ; 3.314      ;
+; 5.615 ; Part1FSM:FSM|CurrentState~5 ; Part1FSM:FSM|y[3]           ; SystemClock  ; SystemClock ; 10.000       ; -0.148     ; 3.255      ;
+; 5.615 ; Part1FSM:FSM|CurrentState~5 ; Part1FSM:FSM|CurrentState~3 ; SystemClock  ; SystemClock ; 10.000       ; -0.148     ; 3.255      ;
+; 5.867 ; Part1FSM:FSM|CurrentState~2 ; Part1FSM:FSM|CurrentState~0 ; SystemClock  ; SystemClock ; 10.000       ; -0.148     ; 3.003      ;
+; 5.982 ; Part1FSM:FSM|CurrentState~6 ; Part1FSM:FSM|CurrentState~4 ; SystemClock  ; SystemClock ; 10.000       ; -0.148     ; 2.888      ;
+; 7.138 ; Part1FSM:FSM|CurrentState~4 ; Part1FSM:FSM|CurrentState~4 ; SystemClock  ; SystemClock ; 10.000       ; -0.048     ; 1.832      ;
+; 7.197 ; Part1FSM:FSM|CurrentState~4 ; Part1FSM:FSM|y[3]           ; SystemClock  ; SystemClock ; 10.000       ; -0.048     ; 1.773      ;
+; 7.197 ; Part1FSM:FSM|CurrentState~4 ; Part1FSM:FSM|CurrentState~3 ; SystemClock  ; SystemClock ; 10.000       ; -0.048     ; 1.773      ;
+; 7.271 ; Part1FSM:FSM|y[3]           ; Part1FSM:FSM|CurrentState~3 ; SystemClock  ; SystemClock ; 10.000       ; -0.048     ; 1.699      ;
+; 7.348 ; Part1FSM:FSM|CurrentState~0 ; Part1FSM:FSM|CurrentState~0 ; SystemClock  ; SystemClock ; 10.000       ; -0.048     ; 1.622      ;
+; 7.428 ; Part1FSM:FSM|CurrentState~0 ; Part1FSM:FSM|y[3]           ; SystemClock  ; SystemClock ; 10.000       ; -0.048     ; 1.542      ;
+; 7.496 ; Part1FSM:FSM|CurrentState~3 ; Part1FSM:FSM|y[3]           ; SystemClock  ; SystemClock ; 10.000       ; -0.048     ; 1.474      ;
+; 7.642 ; Part1FSM:FSM|CurrentState~0 ; Part1FSM:FSM|CurrentState~3 ; SystemClock  ; SystemClock ; 10.000       ; -0.048     ; 1.328      ;
+; 7.804 ; Part1FSM:FSM|CurrentState~3 ; Part1FSM:FSM|CurrentState~0 ; SystemClock  ; SystemClock ; 10.000       ; -0.048     ; 1.166      ;
+; 7.813 ; Part1FSM:FSM|CurrentState~1 ; Part1FSM:FSM|CurrentState~2 ; SystemClock  ; SystemClock ; 10.000       ; -0.049     ; 1.156      ;
+; 7.875 ; Part1FSM:FSM|CurrentState~5 ; Part1FSM:FSM|CurrentState~6 ; SystemClock  ; SystemClock ; 10.000       ; -0.049     ; 1.094      ;
+; 8.085 ; Part1FSM:FSM|y[3]           ; Part1FSM:FSM|CurrentState~4 ; SystemClock  ; SystemClock ; 10.000       ; -0.048     ; 0.885      ;
 +-------+-----------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -213,22 +222,32 @@ No paths to report.
 +-------+-----------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                   ; To Node                     ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+-----------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
-; 0.440 ; Part1FSM:FSM|CurrentState.E ; Part1FSM:FSM|CurrentState.E ; SystemClock  ; SystemClock ; 0.000        ; 0.043      ; 0.669      ;
-; 0.440 ; Part1FSM:FSM|CurrentState.I ; Part1FSM:FSM|CurrentState.I ; SystemClock  ; SystemClock ; 0.000        ; 0.043      ; 0.669      ;
-; 0.477 ; Part1FSM:FSM|CurrentState.I ; Part1FSM:FSM|CurrentState.F ; SystemClock  ; SystemClock ; 0.000        ; 0.048      ; 0.711      ;
-; 0.482 ; Part1FSM:FSM|CurrentState.C ; Part1FSM:FSM|CurrentState.B ; SystemClock  ; SystemClock ; 0.000        ; 0.048      ; 0.716      ;
-; 0.617 ; Part1FSM:FSM|CurrentState.F ; Part1FSM:FSM|CurrentState.G ; SystemClock  ; SystemClock ; 0.000        ; 0.048      ; 0.851      ;
-; 0.702 ; Part1FSM:FSM|CurrentState.H ; Part1FSM:FSM|CurrentState.I ; SystemClock  ; SystemClock ; 0.000        ; 0.048      ; 0.936      ;
-; 0.747 ; Part1FSM:FSM|CurrentState.C ; Part1FSM:FSM|CurrentState.D ; SystemClock  ; SystemClock ; 0.000        ; 0.048      ; 0.981      ;
-; 0.755 ; Part1FSM:FSM|CurrentState.D ; Part1FSM:FSM|CurrentState.E ; SystemClock  ; SystemClock ; 0.000        ; 0.048      ; 0.989      ;
-; 0.964 ; Part1FSM:FSM|CurrentState.G ; Part1FSM:FSM|CurrentState.H ; SystemClock  ; SystemClock ; 0.000        ; 0.048      ; 1.198      ;
-; 0.972 ; Part1FSM:FSM|CurrentState.B ; Part1FSM:FSM|CurrentState.C ; SystemClock  ; SystemClock ; 0.000        ; 0.048      ; 1.206      ;
-; 1.232 ; Part1FSM:FSM|CurrentState.F ; Part1FSM:FSM|CurrentState.F ; SystemClock  ; SystemClock ; 0.000        ; 0.048      ; 1.466      ;
-; 1.352 ; Part1FSM:FSM|CurrentState.H ; Part1FSM:FSM|CurrentState.F ; SystemClock  ; SystemClock ; 0.000        ; 0.048      ; 1.586      ;
-; 1.393 ; Part1FSM:FSM|CurrentState.E ; Part1FSM:FSM|CurrentState.B ; SystemClock  ; SystemClock ; 0.000        ; 0.048      ; 1.627      ;
-; 1.400 ; Part1FSM:FSM|CurrentState.D ; Part1FSM:FSM|CurrentState.B ; SystemClock  ; SystemClock ; 0.000        ; 0.048      ; 1.634      ;
-; 1.596 ; Part1FSM:FSM|CurrentState.B ; Part1FSM:FSM|CurrentState.B ; SystemClock  ; SystemClock ; 0.000        ; 0.048      ; 1.830      ;
-; 1.687 ; Part1FSM:FSM|CurrentState.G ; Part1FSM:FSM|CurrentState.F ; SystemClock  ; SystemClock ; 0.000        ; 0.048      ; 1.921      ;
+; 0.514 ; Part1FSM:FSM|y[3]           ; Part1FSM:FSM|CurrentState~4 ; SystemClock  ; SystemClock ; 0.000        ; 0.048      ; 0.748      ;
+; 0.691 ; Part1FSM:FSM|CurrentState~5 ; Part1FSM:FSM|CurrentState~6 ; SystemClock  ; SystemClock ; 0.000        ; 0.049      ; 0.926      ;
+; 0.737 ; Part1FSM:FSM|CurrentState~1 ; Part1FSM:FSM|CurrentState~2 ; SystemClock  ; SystemClock ; 0.000        ; 0.049      ; 0.972      ;
+; 0.798 ; Part1FSM:FSM|CurrentState~3 ; Part1FSM:FSM|CurrentState~0 ; SystemClock  ; SystemClock ; 0.000        ; 0.048      ; 1.032      ;
+; 0.970 ; Part1FSM:FSM|CurrentState~0 ; Part1FSM:FSM|CurrentState~3 ; SystemClock  ; SystemClock ; 0.000        ; 0.048      ; 1.204      ;
+; 1.063 ; Part1FSM:FSM|CurrentState~3 ; Part1FSM:FSM|y[3]           ; SystemClock  ; SystemClock ; 0.000        ; 0.048      ; 1.297      ;
+; 1.232 ; Part1FSM:FSM|CurrentState~0 ; Part1FSM:FSM|y[3]           ; SystemClock  ; SystemClock ; 0.000        ; 0.048      ; 1.466      ;
+; 1.256 ; Part1FSM:FSM|y[3]           ; Part1FSM:FSM|CurrentState~3 ; SystemClock  ; SystemClock ; 0.000        ; 0.048      ; 1.490      ;
+; 1.283 ; Part1FSM:FSM|CurrentState~0 ; Part1FSM:FSM|CurrentState~0 ; SystemClock  ; SystemClock ; 0.000        ; 0.048      ; 1.517      ;
+; 1.397 ; Part1FSM:FSM|CurrentState~4 ; Part1FSM:FSM|y[3]           ; SystemClock  ; SystemClock ; 0.000        ; 0.048      ; 1.631      ;
+; 1.407 ; Part1FSM:FSM|CurrentState~4 ; Part1FSM:FSM|CurrentState~3 ; SystemClock  ; SystemClock ; 0.000        ; 0.048      ; 1.641      ;
+; 1.472 ; Part1FSM:FSM|CurrentState~4 ; Part1FSM:FSM|CurrentState~4 ; SystemClock  ; SystemClock ; 0.000        ; 0.048      ; 1.706      ;
+; 2.405 ; Part1FSM:FSM|CurrentState~6 ; Part1FSM:FSM|CurrentState~4 ; SystemClock  ; SystemClock ; 0.000        ; 0.072      ; 2.663      ;
+; 2.554 ; Part1FSM:FSM|CurrentState~2 ; Part1FSM:FSM|CurrentState~0 ; SystemClock  ; SystemClock ; 0.000        ; 0.072      ; 2.812      ;
+; 2.820 ; Part1FSM:FSM|CurrentState~5 ; Part1FSM:FSM|y[3]           ; SystemClock  ; SystemClock ; 0.000        ; 0.072      ; 3.078      ;
+; 2.830 ; Part1FSM:FSM|CurrentState~5 ; Part1FSM:FSM|CurrentState~3 ; SystemClock  ; SystemClock ; 0.000        ; 0.072      ; 3.088      ;
+; 2.878 ; Part1FSM:FSM|CurrentState~6 ; Part1FSM:FSM|CurrentState~3 ; SystemClock  ; SystemClock ; 0.000        ; 0.072      ; 3.136      ;
+; 2.895 ; Part1FSM:FSM|CurrentState~5 ; Part1FSM:FSM|CurrentState~4 ; SystemClock  ; SystemClock ; 0.000        ; 0.072      ; 3.153      ;
+; 2.900 ; Part1FSM:FSM|CurrentState~2 ; Part1FSM:FSM|y[3]           ; SystemClock  ; SystemClock ; 0.000        ; 0.072      ; 3.158      ;
+; 2.979 ; Part1FSM:FSM|CurrentState~1 ; Part1FSM:FSM|CurrentState~3 ; SystemClock  ; SystemClock ; 0.000        ; 0.072      ; 3.237      ;
+; 3.024 ; Part1FSM:FSM|CurrentState~4 ; Part1FSM:FSM|CurrentState~5 ; SystemClock  ; SystemClock ; 0.000        ; 0.148      ; 3.358      ;
+; 3.091 ; Part1FSM:FSM|CurrentState~8 ; Part1FSM:FSM|y[3]           ; SystemClock  ; SystemClock ; 0.000        ; 0.072      ; 3.349      ;
+; 3.173 ; Part1FSM:FSM|CurrentState~8 ; Part1FSM:FSM|CurrentState~3 ; SystemClock  ; SystemClock ; 0.000        ; 0.072      ; 3.431      ;
+; 3.241 ; Part1FSM:FSM|CurrentState~1 ; Part1FSM:FSM|y[3]           ; SystemClock  ; SystemClock ; 0.000        ; 0.072      ; 3.499      ;
+; 3.292 ; Part1FSM:FSM|CurrentState~1 ; Part1FSM:FSM|CurrentState~0 ; SystemClock  ; SystemClock ; 0.000        ; 0.072      ; 3.550      ;
+; 3.344 ; Part1FSM:FSM|CurrentState~0 ; Part1FSM:FSM|CurrentState~1 ; SystemClock  ; SystemClock ; 0.000        ; 0.148      ; 3.678      ;
 +-------+-----------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -238,13 +257,13 @@ No paths to report.
 No synchronizer chains to report.
 
 
-+-----------------------------------------------------------------------------------------------------------+
-; Slow 1200mV 0C Model Fmax Summary                                                                         ;
-+-----------+-----------------+-------------+---------------------------------------------------------------+
-; Fmax      ; Restricted Fmax ; Clock Name  ; Note                                                          ;
-+-----------+-----------------+-------------+---------------------------------------------------------------+
-; 340.6 MHz ; 250.0 MHz       ; SystemClock ; limit due to minimum period restriction (max I/O toggle rate) ;
-+-----------+-----------------+-------------+---------------------------------------------------------------+
++---------------------------------------------------+
+; Slow 1200mV 0C Model Fmax Summary                 ;
++------------+-----------------+-------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name  ; Note ;
++------------+-----------------+-------------+------+
+; 214.09 MHz ; 214.09 MHz      ; SystemClock ;      ;
++------------+-----------------+-------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
@@ -253,7 +272,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------------+-------+---------------+
 ; Clock       ; Slack ; End Point TNS ;
 +-------------+-------+---------------+
-; SystemClock ; 7.064 ; 0.000         ;
+; SystemClock ; 5.329 ; 0.000         ;
 +-------------+-------+---------------+
 
 
@@ -262,7 +281,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------------+-------+---------------+
 ; Clock       ; Slack ; End Point TNS ;
 +-------------+-------+---------------+
-; SystemClock ; 0.387 ; 0.000         ;
+; SystemClock ; 0.464 ; 0.000         ;
 +-------------+-------+---------------+
 
 
@@ -283,7 +302,7 @@ No paths to report.
 +-------------+-------+----------------------------+
 ; Clock       ; Slack ; End Point TNS              ;
 +-------------+-------+----------------------------+
-; SystemClock ; 4.777 ; 0.000                      ;
+; SystemClock ; 4.708 ; 0.000                      ;
 +-------------+-------+----------------------------+
 
 
@@ -292,22 +311,32 @@ No paths to report.
 +-------+-----------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                   ; To Node                     ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+-----------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
-; 7.064 ; Part1FSM:FSM|CurrentState.G ; Part1FSM:FSM|CurrentState.F ; SystemClock  ; SystemClock ; 10.000       ; -0.043     ; 1.912      ;
-; 7.168 ; Part1FSM:FSM|CurrentState.B ; Part1FSM:FSM|CurrentState.B ; SystemClock  ; SystemClock ; 10.000       ; -0.043     ; 1.808      ;
-; 7.312 ; Part1FSM:FSM|CurrentState.D ; Part1FSM:FSM|CurrentState.B ; SystemClock  ; SystemClock ; 10.000       ; -0.043     ; 1.664      ;
-; 7.328 ; Part1FSM:FSM|CurrentState.E ; Part1FSM:FSM|CurrentState.B ; SystemClock  ; SystemClock ; 10.000       ; -0.043     ; 1.648      ;
-; 7.394 ; Part1FSM:FSM|CurrentState.H ; Part1FSM:FSM|CurrentState.F ; SystemClock  ; SystemClock ; 10.000       ; -0.043     ; 1.582      ;
-; 7.507 ; Part1FSM:FSM|CurrentState.F ; Part1FSM:FSM|CurrentState.F ; SystemClock  ; SystemClock ; 10.000       ; -0.043     ; 1.469      ;
-; 7.795 ; Part1FSM:FSM|CurrentState.B ; Part1FSM:FSM|CurrentState.C ; SystemClock  ; SystemClock ; 10.000       ; -0.043     ; 1.181      ;
-; 7.803 ; Part1FSM:FSM|CurrentState.G ; Part1FSM:FSM|CurrentState.H ; SystemClock  ; SystemClock ; 10.000       ; -0.043     ; 1.173      ;
-; 7.921 ; Part1FSM:FSM|CurrentState.D ; Part1FSM:FSM|CurrentState.E ; SystemClock  ; SystemClock ; 10.000       ; -0.043     ; 1.055      ;
-; 7.928 ; Part1FSM:FSM|CurrentState.C ; Part1FSM:FSM|CurrentState.D ; SystemClock  ; SystemClock ; 10.000       ; -0.043     ; 1.048      ;
-; 7.980 ; Part1FSM:FSM|CurrentState.H ; Part1FSM:FSM|CurrentState.I ; SystemClock  ; SystemClock ; 10.000       ; -0.043     ; 0.996      ;
-; 8.083 ; Part1FSM:FSM|CurrentState.F ; Part1FSM:FSM|CurrentState.G ; SystemClock  ; SystemClock ; 10.000       ; -0.043     ; 0.893      ;
-; 8.220 ; Part1FSM:FSM|CurrentState.C ; Part1FSM:FSM|CurrentState.B ; SystemClock  ; SystemClock ; 10.000       ; -0.043     ; 0.756      ;
-; 8.228 ; Part1FSM:FSM|CurrentState.I ; Part1FSM:FSM|CurrentState.F ; SystemClock  ; SystemClock ; 10.000       ; -0.043     ; 0.748      ;
-; 8.321 ; Part1FSM:FSM|CurrentState.I ; Part1FSM:FSM|CurrentState.I ; SystemClock  ; SystemClock ; 10.000       ; -0.039     ; 0.659      ;
-; 8.321 ; Part1FSM:FSM|CurrentState.E ; Part1FSM:FSM|CurrentState.E ; SystemClock  ; SystemClock ; 10.000       ; -0.039     ; 0.659      ;
+; 5.329 ; Part1FSM:FSM|CurrentState~0 ; Part1FSM:FSM|CurrentState~1 ; SystemClock  ; SystemClock ; 10.000       ; -0.072     ; 3.618      ;
+; 5.451 ; Part1FSM:FSM|CurrentState~1 ; Part1FSM:FSM|CurrentState~0 ; SystemClock  ; SystemClock ; 10.000       ; -0.132     ; 3.436      ;
+; 5.500 ; Part1FSM:FSM|CurrentState~1 ; Part1FSM:FSM|y[3]           ; SystemClock  ; SystemClock ; 10.000       ; -0.132     ; 3.387      ;
+; 5.537 ; Part1FSM:FSM|CurrentState~8 ; Part1FSM:FSM|CurrentState~3 ; SystemClock  ; SystemClock ; 10.000       ; -0.132     ; 3.350      ;
+; 5.612 ; Part1FSM:FSM|CurrentState~8 ; Part1FSM:FSM|y[3]           ; SystemClock  ; SystemClock ; 10.000       ; -0.132     ; 3.275      ;
+; 5.661 ; Part1FSM:FSM|CurrentState~4 ; Part1FSM:FSM|CurrentState~5 ; SystemClock  ; SystemClock ; 10.000       ; -0.072     ; 3.286      ;
+; 5.740 ; Part1FSM:FSM|CurrentState~1 ; Part1FSM:FSM|CurrentState~3 ; SystemClock  ; SystemClock ; 10.000       ; -0.132     ; 3.147      ;
+; 5.823 ; Part1FSM:FSM|CurrentState~2 ; Part1FSM:FSM|y[3]           ; SystemClock  ; SystemClock ; 10.000       ; -0.132     ; 3.064      ;
+; 5.824 ; Part1FSM:FSM|CurrentState~6 ; Part1FSM:FSM|CurrentState~3 ; SystemClock  ; SystemClock ; 10.000       ; -0.132     ; 3.063      ;
+; 5.840 ; Part1FSM:FSM|CurrentState~5 ; Part1FSM:FSM|CurrentState~4 ; SystemClock  ; SystemClock ; 10.000       ; -0.132     ; 3.047      ;
+; 5.902 ; Part1FSM:FSM|CurrentState~5 ; Part1FSM:FSM|CurrentState~3 ; SystemClock  ; SystemClock ; 10.000       ; -0.132     ; 2.985      ;
+; 5.911 ; Part1FSM:FSM|CurrentState~5 ; Part1FSM:FSM|y[3]           ; SystemClock  ; SystemClock ; 10.000       ; -0.132     ; 2.976      ;
+; 6.147 ; Part1FSM:FSM|CurrentState~2 ; Part1FSM:FSM|CurrentState~0 ; SystemClock  ; SystemClock ; 10.000       ; -0.132     ; 2.740      ;
+; 6.287 ; Part1FSM:FSM|CurrentState~6 ; Part1FSM:FSM|CurrentState~4 ; SystemClock  ; SystemClock ; 10.000       ; -0.132     ; 2.600      ;
+; 7.319 ; Part1FSM:FSM|CurrentState~4 ; Part1FSM:FSM|CurrentState~4 ; SystemClock  ; SystemClock ; 10.000       ; -0.043     ; 1.657      ;
+; 7.371 ; Part1FSM:FSM|CurrentState~4 ; Part1FSM:FSM|CurrentState~3 ; SystemClock  ; SystemClock ; 10.000       ; -0.043     ; 1.605      ;
+; 7.372 ; Part1FSM:FSM|CurrentState~4 ; Part1FSM:FSM|y[3]           ; SystemClock  ; SystemClock ; 10.000       ; -0.043     ; 1.604      ;
+; 7.441 ; Part1FSM:FSM|y[3]           ; Part1FSM:FSM|CurrentState~3 ; SystemClock  ; SystemClock ; 10.000       ; -0.043     ; 1.535      ;
+; 7.492 ; Part1FSM:FSM|CurrentState~0 ; Part1FSM:FSM|CurrentState~0 ; SystemClock  ; SystemClock ; 10.000       ; -0.043     ; 1.484      ;
+; 7.567 ; Part1FSM:FSM|CurrentState~0 ; Part1FSM:FSM|y[3]           ; SystemClock  ; SystemClock ; 10.000       ; -0.043     ; 1.409      ;
+; 7.642 ; Part1FSM:FSM|CurrentState~3 ; Part1FSM:FSM|y[3]           ; SystemClock  ; SystemClock ; 10.000       ; -0.043     ; 1.334      ;
+; 7.758 ; Part1FSM:FSM|CurrentState~0 ; Part1FSM:FSM|CurrentState~3 ; SystemClock  ; SystemClock ; 10.000       ; -0.043     ; 1.218      ;
+; 7.927 ; Part1FSM:FSM|CurrentState~3 ; Part1FSM:FSM|CurrentState~0 ; SystemClock  ; SystemClock ; 10.000       ; -0.043     ; 1.049      ;
+; 7.936 ; Part1FSM:FSM|CurrentState~1 ; Part1FSM:FSM|CurrentState~2 ; SystemClock  ; SystemClock ; 10.000       ; -0.045     ; 1.038      ;
+; 7.993 ; Part1FSM:FSM|CurrentState~5 ; Part1FSM:FSM|CurrentState~6 ; SystemClock  ; SystemClock ; 10.000       ; -0.045     ; 0.981      ;
+; 8.176 ; Part1FSM:FSM|y[3]           ; Part1FSM:FSM|CurrentState~4 ; SystemClock  ; SystemClock ; 10.000       ; -0.043     ; 0.800      ;
 +-------+-----------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -316,22 +345,32 @@ No paths to report.
 +-------+-----------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                   ; To Node                     ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+-----------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
-; 0.387 ; Part1FSM:FSM|CurrentState.I ; Part1FSM:FSM|CurrentState.I ; SystemClock  ; SystemClock ; 0.000        ; 0.039      ; 0.597      ;
-; 0.387 ; Part1FSM:FSM|CurrentState.E ; Part1FSM:FSM|CurrentState.E ; SystemClock  ; SystemClock ; 0.000        ; 0.039      ; 0.597      ;
-; 0.432 ; Part1FSM:FSM|CurrentState.I ; Part1FSM:FSM|CurrentState.F ; SystemClock  ; SystemClock ; 0.000        ; 0.043      ; 0.646      ;
-; 0.436 ; Part1FSM:FSM|CurrentState.C ; Part1FSM:FSM|CurrentState.B ; SystemClock  ; SystemClock ; 0.000        ; 0.043      ; 0.650      ;
-; 0.565 ; Part1FSM:FSM|CurrentState.F ; Part1FSM:FSM|CurrentState.G ; SystemClock  ; SystemClock ; 0.000        ; 0.043      ; 0.779      ;
-; 0.641 ; Part1FSM:FSM|CurrentState.H ; Part1FSM:FSM|CurrentState.I ; SystemClock  ; SystemClock ; 0.000        ; 0.043      ; 0.855      ;
-; 0.681 ; Part1FSM:FSM|CurrentState.C ; Part1FSM:FSM|CurrentState.D ; SystemClock  ; SystemClock ; 0.000        ; 0.043      ; 0.895      ;
-; 0.688 ; Part1FSM:FSM|CurrentState.D ; Part1FSM:FSM|CurrentState.E ; SystemClock  ; SystemClock ; 0.000        ; 0.043      ; 0.902      ;
-; 0.889 ; Part1FSM:FSM|CurrentState.G ; Part1FSM:FSM|CurrentState.H ; SystemClock  ; SystemClock ; 0.000        ; 0.043      ; 1.103      ;
-; 0.892 ; Part1FSM:FSM|CurrentState.B ; Part1FSM:FSM|CurrentState.C ; SystemClock  ; SystemClock ; 0.000        ; 0.043      ; 1.106      ;
-; 1.110 ; Part1FSM:FSM|CurrentState.F ; Part1FSM:FSM|CurrentState.F ; SystemClock  ; SystemClock ; 0.000        ; 0.043      ; 1.324      ;
-; 1.225 ; Part1FSM:FSM|CurrentState.H ; Part1FSM:FSM|CurrentState.F ; SystemClock  ; SystemClock ; 0.000        ; 0.043      ; 1.439      ;
-; 1.277 ; Part1FSM:FSM|CurrentState.E ; Part1FSM:FSM|CurrentState.B ; SystemClock  ; SystemClock ; 0.000        ; 0.043      ; 1.491      ;
-; 1.284 ; Part1FSM:FSM|CurrentState.D ; Part1FSM:FSM|CurrentState.B ; SystemClock  ; SystemClock ; 0.000        ; 0.043      ; 1.498      ;
-; 1.460 ; Part1FSM:FSM|CurrentState.B ; Part1FSM:FSM|CurrentState.B ; SystemClock  ; SystemClock ; 0.000        ; 0.043      ; 1.674      ;
-; 1.515 ; Part1FSM:FSM|CurrentState.G ; Part1FSM:FSM|CurrentState.F ; SystemClock  ; SystemClock ; 0.000        ; 0.043      ; 1.729      ;
+; 0.464 ; Part1FSM:FSM|y[3]           ; Part1FSM:FSM|CurrentState~4 ; SystemClock  ; SystemClock ; 0.000        ; 0.043      ; 0.678      ;
+; 0.629 ; Part1FSM:FSM|CurrentState~5 ; Part1FSM:FSM|CurrentState~6 ; SystemClock  ; SystemClock ; 0.000        ; 0.045      ; 0.845      ;
+; 0.671 ; Part1FSM:FSM|CurrentState~1 ; Part1FSM:FSM|CurrentState~2 ; SystemClock  ; SystemClock ; 0.000        ; 0.045      ; 0.887      ;
+; 0.722 ; Part1FSM:FSM|CurrentState~3 ; Part1FSM:FSM|CurrentState~0 ; SystemClock  ; SystemClock ; 0.000        ; 0.043      ; 0.936      ;
+; 0.878 ; Part1FSM:FSM|CurrentState~0 ; Part1FSM:FSM|CurrentState~3 ; SystemClock  ; SystemClock ; 0.000        ; 0.043      ; 1.092      ;
+; 0.961 ; Part1FSM:FSM|CurrentState~3 ; Part1FSM:FSM|y[3]           ; SystemClock  ; SystemClock ; 0.000        ; 0.043      ; 1.175      ;
+; 1.109 ; Part1FSM:FSM|CurrentState~0 ; Part1FSM:FSM|y[3]           ; SystemClock  ; SystemClock ; 0.000        ; 0.043      ; 1.323      ;
+; 1.140 ; Part1FSM:FSM|y[3]           ; Part1FSM:FSM|CurrentState~3 ; SystemClock  ; SystemClock ; 0.000        ; 0.043      ; 1.354      ;
+; 1.156 ; Part1FSM:FSM|CurrentState~0 ; Part1FSM:FSM|CurrentState~0 ; SystemClock  ; SystemClock ; 0.000        ; 0.043      ; 1.370      ;
+; 1.263 ; Part1FSM:FSM|CurrentState~4 ; Part1FSM:FSM|y[3]           ; SystemClock  ; SystemClock ; 0.000        ; 0.043      ; 1.477      ;
+; 1.272 ; Part1FSM:FSM|CurrentState~4 ; Part1FSM:FSM|CurrentState~3 ; SystemClock  ; SystemClock ; 0.000        ; 0.043      ; 1.486      ;
+; 1.332 ; Part1FSM:FSM|CurrentState~4 ; Part1FSM:FSM|CurrentState~4 ; SystemClock  ; SystemClock ; 0.000        ; 0.043      ; 1.546      ;
+; 2.232 ; Part1FSM:FSM|CurrentState~6 ; Part1FSM:FSM|CurrentState~4 ; SystemClock  ; SystemClock ; 0.000        ; 0.072      ; 2.475      ;
+; 2.338 ; Part1FSM:FSM|CurrentState~2 ; Part1FSM:FSM|CurrentState~0 ; SystemClock  ; SystemClock ; 0.000        ; 0.072      ; 2.581      ;
+; 2.565 ; Part1FSM:FSM|CurrentState~5 ; Part1FSM:FSM|y[3]           ; SystemClock  ; SystemClock ; 0.000        ; 0.072      ; 2.808      ;
+; 2.566 ; Part1FSM:FSM|CurrentState~5 ; Part1FSM:FSM|CurrentState~3 ; SystemClock  ; SystemClock ; 0.000        ; 0.072      ; 2.809      ;
+; 2.616 ; Part1FSM:FSM|CurrentState~5 ; Part1FSM:FSM|CurrentState~4 ; SystemClock  ; SystemClock ; 0.000        ; 0.072      ; 2.859      ;
+; 2.661 ; Part1FSM:FSM|CurrentState~2 ; Part1FSM:FSM|y[3]           ; SystemClock  ; SystemClock ; 0.000        ; 0.072      ; 2.904      ;
+; 2.666 ; Part1FSM:FSM|CurrentState~6 ; Part1FSM:FSM|CurrentState~3 ; SystemClock  ; SystemClock ; 0.000        ; 0.072      ; 2.909      ;
+; 2.729 ; Part1FSM:FSM|CurrentState~4 ; Part1FSM:FSM|CurrentState~5 ; SystemClock  ; SystemClock ; 0.000        ; 0.132      ; 3.032      ;
+; 2.764 ; Part1FSM:FSM|CurrentState~1 ; Part1FSM:FSM|CurrentState~3 ; SystemClock  ; SystemClock ; 0.000        ; 0.072      ; 3.007      ;
+; 2.787 ; Part1FSM:FSM|CurrentState~8 ; Part1FSM:FSM|y[3]           ; SystemClock  ; SystemClock ; 0.000        ; 0.072      ; 3.030      ;
+; 2.878 ; Part1FSM:FSM|CurrentState~8 ; Part1FSM:FSM|CurrentState~3 ; SystemClock  ; SystemClock ; 0.000        ; 0.072      ; 3.121      ;
+; 2.946 ; Part1FSM:FSM|CurrentState~1 ; Part1FSM:FSM|y[3]           ; SystemClock  ; SystemClock ; 0.000        ; 0.072      ; 3.189      ;
+; 3.005 ; Part1FSM:FSM|CurrentState~0 ; Part1FSM:FSM|CurrentState~1 ; SystemClock  ; SystemClock ; 0.000        ; 0.132      ; 3.308      ;
+; 3.019 ; Part1FSM:FSM|CurrentState~1 ; Part1FSM:FSM|CurrentState~0 ; SystemClock  ; SystemClock ; 0.000        ; 0.072      ; 3.262      ;
 +-------+-----------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -346,7 +385,7 @@ No synchronizer chains to report.
 +-------------+-------+---------------+
 ; Clock       ; Slack ; End Point TNS ;
 +-------------+-------+---------------+
-; SystemClock ; 8.007 ; 0.000         ;
+; SystemClock ; 6.868 ; 0.000         ;
 +-------------+-------+---------------+
 
 
@@ -355,7 +394,7 @@ No synchronizer chains to report.
 +-------------+-------+---------------+
 ; Clock       ; Slack ; End Point TNS ;
 +-------------+-------+---------------+
-; SystemClock ; 0.201 ; 0.000         ;
+; SystemClock ; 0.245 ; 0.000         ;
 +-------------+-------+---------------+
 
 
@@ -376,7 +415,7 @@ No paths to report.
 +-------------+-------+----------------------------+
 ; Clock       ; Slack ; End Point TNS              ;
 +-------------+-------+----------------------------+
-; SystemClock ; 4.417 ; 0.000                      ;
+; SystemClock ; 4.324 ; 0.000                      ;
 +-------------+-------+----------------------------+
 
 
@@ -385,22 +424,32 @@ No paths to report.
 +-------+-----------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                   ; To Node                     ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+-----------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
-; 8.007 ; Part1FSM:FSM|CurrentState.G ; Part1FSM:FSM|CurrentState.F ; SystemClock  ; SystemClock ; 10.000       ; -0.025     ; 0.975      ;
-; 8.009 ; Part1FSM:FSM|CurrentState.B ; Part1FSM:FSM|CurrentState.B ; SystemClock  ; SystemClock ; 10.000       ; -0.025     ; 0.973      ;
-; 8.092 ; Part1FSM:FSM|CurrentState.D ; Part1FSM:FSM|CurrentState.B ; SystemClock  ; SystemClock ; 10.000       ; -0.025     ; 0.890      ;
-; 8.102 ; Part1FSM:FSM|CurrentState.E ; Part1FSM:FSM|CurrentState.B ; SystemClock  ; SystemClock ; 10.000       ; -0.025     ; 0.880      ;
-; 8.164 ; Part1FSM:FSM|CurrentState.H ; Part1FSM:FSM|CurrentState.F ; SystemClock  ; SystemClock ; 10.000       ; -0.025     ; 0.818      ;
-; 8.225 ; Part1FSM:FSM|CurrentState.F ; Part1FSM:FSM|CurrentState.F ; SystemClock  ; SystemClock ; 10.000       ; -0.025     ; 0.757      ;
-; 8.348 ; Part1FSM:FSM|CurrentState.B ; Part1FSM:FSM|CurrentState.C ; SystemClock  ; SystemClock ; 10.000       ; -0.025     ; 0.634      ;
-; 8.349 ; Part1FSM:FSM|CurrentState.G ; Part1FSM:FSM|CurrentState.H ; SystemClock  ; SystemClock ; 10.000       ; -0.025     ; 0.633      ;
-; 8.422 ; Part1FSM:FSM|CurrentState.D ; Part1FSM:FSM|CurrentState.E ; SystemClock  ; SystemClock ; 10.000       ; -0.025     ; 0.560      ;
-; 8.422 ; Part1FSM:FSM|CurrentState.C ; Part1FSM:FSM|CurrentState.D ; SystemClock  ; SystemClock ; 10.000       ; -0.025     ; 0.560      ;
-; 8.448 ; Part1FSM:FSM|CurrentState.H ; Part1FSM:FSM|CurrentState.I ; SystemClock  ; SystemClock ; 10.000       ; -0.025     ; 0.534      ;
-; 8.514 ; Part1FSM:FSM|CurrentState.F ; Part1FSM:FSM|CurrentState.G ; SystemClock  ; SystemClock ; 10.000       ; -0.025     ; 0.468      ;
-; 8.595 ; Part1FSM:FSM|CurrentState.C ; Part1FSM:FSM|CurrentState.B ; SystemClock  ; SystemClock ; 10.000       ; -0.025     ; 0.387      ;
-; 8.598 ; Part1FSM:FSM|CurrentState.I ; Part1FSM:FSM|CurrentState.F ; SystemClock  ; SystemClock ; 10.000       ; -0.025     ; 0.384      ;
-; 8.635 ; Part1FSM:FSM|CurrentState.I ; Part1FSM:FSM|CurrentState.I ; SystemClock  ; SystemClock ; 10.000       ; -0.022     ; 0.350      ;
-; 8.635 ; Part1FSM:FSM|CurrentState.E ; Part1FSM:FSM|CurrentState.E ; SystemClock  ; SystemClock ; 10.000       ; -0.022     ; 0.350      ;
+; 6.868 ; Part1FSM:FSM|CurrentState~0 ; Part1FSM:FSM|CurrentState~1 ; SystemClock  ; SystemClock ; 10.000       ; -0.046     ; 2.093      ;
+; 6.959 ; Part1FSM:FSM|CurrentState~1 ; Part1FSM:FSM|CurrentState~0 ; SystemClock  ; SystemClock ; 10.000       ; -0.062     ; 1.986      ;
+; 6.967 ; Part1FSM:FSM|CurrentState~8 ; Part1FSM:FSM|CurrentState~3 ; SystemClock  ; SystemClock ; 10.000       ; -0.062     ; 1.978      ;
+; 6.997 ; Part1FSM:FSM|CurrentState~1 ; Part1FSM:FSM|y[3]           ; SystemClock  ; SystemClock ; 10.000       ; -0.062     ; 1.948      ;
+; 7.028 ; Part1FSM:FSM|CurrentState~8 ; Part1FSM:FSM|y[3]           ; SystemClock  ; SystemClock ; 10.000       ; -0.062     ; 1.917      ;
+; 7.048 ; Part1FSM:FSM|CurrentState~4 ; Part1FSM:FSM|CurrentState~5 ; SystemClock  ; SystemClock ; 10.000       ; -0.046     ; 1.913      ;
+; 7.099 ; Part1FSM:FSM|CurrentState~1 ; Part1FSM:FSM|CurrentState~3 ; SystemClock  ; SystemClock ; 10.000       ; -0.062     ; 1.846      ;
+; 7.157 ; Part1FSM:FSM|CurrentState~6 ; Part1FSM:FSM|CurrentState~3 ; SystemClock  ; SystemClock ; 10.000       ; -0.062     ; 1.788      ;
+; 7.196 ; Part1FSM:FSM|CurrentState~2 ; Part1FSM:FSM|y[3]           ; SystemClock  ; SystemClock ; 10.000       ; -0.062     ; 1.749      ;
+; 7.235 ; Part1FSM:FSM|CurrentState~5 ; Part1FSM:FSM|CurrentState~4 ; SystemClock  ; SystemClock ; 10.000       ; -0.062     ; 1.710      ;
+; 7.264 ; Part1FSM:FSM|CurrentState~5 ; Part1FSM:FSM|CurrentState~3 ; SystemClock  ; SystemClock ; 10.000       ; -0.062     ; 1.681      ;
+; 7.266 ; Part1FSM:FSM|CurrentState~5 ; Part1FSM:FSM|y[3]           ; SystemClock  ; SystemClock ; 10.000       ; -0.062     ; 1.679      ;
+; 7.357 ; Part1FSM:FSM|CurrentState~2 ; Part1FSM:FSM|CurrentState~0 ; SystemClock  ; SystemClock ; 10.000       ; -0.062     ; 1.588      ;
+; 7.401 ; Part1FSM:FSM|CurrentState~6 ; Part1FSM:FSM|CurrentState~4 ; SystemClock  ; SystemClock ; 10.000       ; -0.062     ; 1.544      ;
+; 8.113 ; Part1FSM:FSM|CurrentState~4 ; Part1FSM:FSM|CurrentState~4 ; SystemClock  ; SystemClock ; 10.000       ; -0.024     ; 0.870      ;
+; 8.143 ; Part1FSM:FSM|CurrentState~4 ; Part1FSM:FSM|CurrentState~3 ; SystemClock  ; SystemClock ; 10.000       ; -0.024     ; 0.840      ;
+; 8.145 ; Part1FSM:FSM|CurrentState~4 ; Part1FSM:FSM|y[3]           ; SystemClock  ; SystemClock ; 10.000       ; -0.024     ; 0.838      ;
+; 8.174 ; Part1FSM:FSM|y[3]           ; Part1FSM:FSM|CurrentState~3 ; SystemClock  ; SystemClock ; 10.000       ; -0.024     ; 0.809      ;
+; 8.227 ; Part1FSM:FSM|CurrentState~0 ; Part1FSM:FSM|CurrentState~0 ; SystemClock  ; SystemClock ; 10.000       ; -0.024     ; 0.756      ;
+; 8.250 ; Part1FSM:FSM|CurrentState~0 ; Part1FSM:FSM|y[3]           ; SystemClock  ; SystemClock ; 10.000       ; -0.024     ; 0.733      ;
+; 8.291 ; Part1FSM:FSM|CurrentState~3 ; Part1FSM:FSM|y[3]           ; SystemClock  ; SystemClock ; 10.000       ; -0.024     ; 0.692      ;
+; 8.372 ; Part1FSM:FSM|CurrentState~0 ; Part1FSM:FSM|CurrentState~3 ; SystemClock  ; SystemClock ; 10.000       ; -0.024     ; 0.611      ;
+; 8.425 ; Part1FSM:FSM|CurrentState~3 ; Part1FSM:FSM|CurrentState~0 ; SystemClock  ; SystemClock ; 10.000       ; -0.024     ; 0.558      ;
+; 8.431 ; Part1FSM:FSM|CurrentState~1 ; Part1FSM:FSM|CurrentState~2 ; SystemClock  ; SystemClock ; 10.000       ; -0.024     ; 0.552      ;
+; 8.459 ; Part1FSM:FSM|CurrentState~5 ; Part1FSM:FSM|CurrentState~6 ; SystemClock  ; SystemClock ; 10.000       ; -0.024     ; 0.524      ;
+; 8.566 ; Part1FSM:FSM|y[3]           ; Part1FSM:FSM|CurrentState~4 ; SystemClock  ; SystemClock ; 10.000       ; -0.024     ; 0.417      ;
 +-------+-----------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -409,22 +458,32 @@ No paths to report.
 +-------+-----------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                   ; To Node                     ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+-----------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
-; 0.201 ; Part1FSM:FSM|CurrentState.E ; Part1FSM:FSM|CurrentState.E ; SystemClock  ; SystemClock ; 0.000        ; 0.022      ; 0.307      ;
-; 0.201 ; Part1FSM:FSM|CurrentState.I ; Part1FSM:FSM|CurrentState.I ; SystemClock  ; SystemClock ; 0.000        ; 0.022      ; 0.307      ;
-; 0.223 ; Part1FSM:FSM|CurrentState.I ; Part1FSM:FSM|CurrentState.F ; SystemClock  ; SystemClock ; 0.000        ; 0.025      ; 0.332      ;
-; 0.225 ; Part1FSM:FSM|CurrentState.C ; Part1FSM:FSM|CurrentState.B ; SystemClock  ; SystemClock ; 0.000        ; 0.025      ; 0.334      ;
-; 0.282 ; Part1FSM:FSM|CurrentState.F ; Part1FSM:FSM|CurrentState.G ; SystemClock  ; SystemClock ; 0.000        ; 0.025      ; 0.391      ;
-; 0.325 ; Part1FSM:FSM|CurrentState.H ; Part1FSM:FSM|CurrentState.I ; SystemClock  ; SystemClock ; 0.000        ; 0.025      ; 0.434      ;
-; 0.344 ; Part1FSM:FSM|CurrentState.C ; Part1FSM:FSM|CurrentState.D ; SystemClock  ; SystemClock ; 0.000        ; 0.025      ; 0.453      ;
-; 0.350 ; Part1FSM:FSM|CurrentState.D ; Part1FSM:FSM|CurrentState.E ; SystemClock  ; SystemClock ; 0.000        ; 0.025      ; 0.459      ;
-; 0.428 ; Part1FSM:FSM|CurrentState.G ; Part1FSM:FSM|CurrentState.H ; SystemClock  ; SystemClock ; 0.000        ; 0.025      ; 0.537      ;
-; 0.430 ; Part1FSM:FSM|CurrentState.B ; Part1FSM:FSM|CurrentState.C ; SystemClock  ; SystemClock ; 0.000        ; 0.025      ; 0.539      ;
-; 0.587 ; Part1FSM:FSM|CurrentState.F ; Part1FSM:FSM|CurrentState.F ; SystemClock  ; SystemClock ; 0.000        ; 0.025      ; 0.696      ;
-; 0.640 ; Part1FSM:FSM|CurrentState.H ; Part1FSM:FSM|CurrentState.F ; SystemClock  ; SystemClock ; 0.000        ; 0.025      ; 0.749      ;
-; 0.641 ; Part1FSM:FSM|CurrentState.E ; Part1FSM:FSM|CurrentState.B ; SystemClock  ; SystemClock ; 0.000        ; 0.025      ; 0.750      ;
-; 0.644 ; Part1FSM:FSM|CurrentState.D ; Part1FSM:FSM|CurrentState.B ; SystemClock  ; SystemClock ; 0.000        ; 0.025      ; 0.753      ;
-; 0.715 ; Part1FSM:FSM|CurrentState.B ; Part1FSM:FSM|CurrentState.B ; SystemClock  ; SystemClock ; 0.000        ; 0.025      ; 0.824      ;
-; 0.785 ; Part1FSM:FSM|CurrentState.G ; Part1FSM:FSM|CurrentState.F ; SystemClock  ; SystemClock ; 0.000        ; 0.025      ; 0.894      ;
+; 0.245 ; Part1FSM:FSM|y[3]           ; Part1FSM:FSM|CurrentState~4 ; SystemClock  ; SystemClock ; 0.000        ; 0.024      ; 0.353      ;
+; 0.318 ; Part1FSM:FSM|CurrentState~5 ; Part1FSM:FSM|CurrentState~6 ; SystemClock  ; SystemClock ; 0.000        ; 0.024      ; 0.426      ;
+; 0.340 ; Part1FSM:FSM|CurrentState~1 ; Part1FSM:FSM|CurrentState~2 ; SystemClock  ; SystemClock ; 0.000        ; 0.024      ; 0.448      ;
+; 0.372 ; Part1FSM:FSM|CurrentState~3 ; Part1FSM:FSM|CurrentState~0 ; SystemClock  ; SystemClock ; 0.000        ; 0.024      ; 0.480      ;
+; 0.461 ; Part1FSM:FSM|CurrentState~0 ; Part1FSM:FSM|CurrentState~3 ; SystemClock  ; SystemClock ; 0.000        ; 0.024      ; 0.569      ;
+; 0.499 ; Part1FSM:FSM|CurrentState~3 ; Part1FSM:FSM|y[3]           ; SystemClock  ; SystemClock ; 0.000        ; 0.024      ; 0.607      ;
+; 0.576 ; Part1FSM:FSM|CurrentState~0 ; Part1FSM:FSM|y[3]           ; SystemClock  ; SystemClock ; 0.000        ; 0.024      ; 0.684      ;
+; 0.585 ; Part1FSM:FSM|y[3]           ; Part1FSM:FSM|CurrentState~3 ; SystemClock  ; SystemClock ; 0.000        ; 0.024      ; 0.693      ;
+; 0.611 ; Part1FSM:FSM|CurrentState~0 ; Part1FSM:FSM|CurrentState~0 ; SystemClock  ; SystemClock ; 0.000        ; 0.024      ; 0.719      ;
+; 0.665 ; Part1FSM:FSM|CurrentState~4 ; Part1FSM:FSM|y[3]           ; SystemClock  ; SystemClock ; 0.000        ; 0.024      ; 0.773      ;
+; 0.671 ; Part1FSM:FSM|CurrentState~4 ; Part1FSM:FSM|CurrentState~3 ; SystemClock  ; SystemClock ; 0.000        ; 0.024      ; 0.779      ;
+; 0.699 ; Part1FSM:FSM|CurrentState~4 ; Part1FSM:FSM|CurrentState~4 ; SystemClock  ; SystemClock ; 0.000        ; 0.024      ; 0.807      ;
+; 1.164 ; Part1FSM:FSM|CurrentState~6 ; Part1FSM:FSM|CurrentState~4 ; SystemClock  ; SystemClock ; 0.000        ; 0.046      ; 1.294      ;
+; 1.218 ; Part1FSM:FSM|CurrentState~2 ; Part1FSM:FSM|CurrentState~0 ; SystemClock  ; SystemClock ; 0.000        ; 0.046      ; 1.348      ;
+; 1.353 ; Part1FSM:FSM|CurrentState~5 ; Part1FSM:FSM|y[3]           ; SystemClock  ; SystemClock ; 0.000        ; 0.046      ; 1.483      ;
+; 1.359 ; Part1FSM:FSM|CurrentState~5 ; Part1FSM:FSM|CurrentState~3 ; SystemClock  ; SystemClock ; 0.000        ; 0.046      ; 1.489      ;
+; 1.376 ; Part1FSM:FSM|CurrentState~6 ; Part1FSM:FSM|CurrentState~3 ; SystemClock  ; SystemClock ; 0.000        ; 0.046      ; 1.506      ;
+; 1.387 ; Part1FSM:FSM|CurrentState~5 ; Part1FSM:FSM|CurrentState~4 ; SystemClock  ; SystemClock ; 0.000        ; 0.046      ; 1.517      ;
+; 1.388 ; Part1FSM:FSM|CurrentState~2 ; Part1FSM:FSM|y[3]           ; SystemClock  ; SystemClock ; 0.000        ; 0.046      ; 1.518      ;
+; 1.460 ; Part1FSM:FSM|CurrentState~1 ; Part1FSM:FSM|CurrentState~3 ; SystemClock  ; SystemClock ; 0.000        ; 0.046      ; 1.590      ;
+; 1.495 ; Part1FSM:FSM|CurrentState~4 ; Part1FSM:FSM|CurrentState~5 ; SystemClock  ; SystemClock ; 0.000        ; 0.062      ; 1.641      ;
+; 1.502 ; Part1FSM:FSM|CurrentState~8 ; Part1FSM:FSM|y[3]           ; SystemClock  ; SystemClock ; 0.000        ; 0.046      ; 1.632      ;
+; 1.541 ; Part1FSM:FSM|CurrentState~8 ; Part1FSM:FSM|CurrentState~3 ; SystemClock  ; SystemClock ; 0.000        ; 0.046      ; 1.671      ;
+; 1.587 ; Part1FSM:FSM|CurrentState~1 ; Part1FSM:FSM|y[3]           ; SystemClock  ; SystemClock ; 0.000        ; 0.046      ; 1.717      ;
+; 1.610 ; Part1FSM:FSM|CurrentState~1 ; Part1FSM:FSM|CurrentState~0 ; SystemClock  ; SystemClock ; 0.000        ; 0.046      ; 1.740      ;
+; 1.639 ; Part1FSM:FSM|CurrentState~0 ; Part1FSM:FSM|CurrentState~1 ; SystemClock  ; SystemClock ; 0.000        ; 0.062      ; 1.785      ;
 +-------+-----------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -439,8 +498,8 @@ No synchronizer chains to report.
 +------------------+-------+-------+----------+---------+---------------------+
 ; Clock            ; Setup ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +------------------+-------+-------+----------+---------+---------------------+
-; Worst-case Slack ; 6.885 ; 0.201 ; N/A      ; N/A     ; 4.417               ;
-;  SystemClock     ; 6.885 ; 0.201 ; N/A      ; N/A     ; 4.417               ;
+; Worst-case Slack ; 5.075 ; 0.245 ; N/A      ; N/A     ; 4.324               ;
+;  SystemClock     ; 5.075 ; 0.245 ; N/A      ; N/A     ; 4.324               ;
 ; Design-wide TNS  ; 0.0   ; 0.0   ; 0.0      ; 0.0     ; 0.0                 ;
 ;  SystemClock     ; 0.000 ; 0.000 ; N/A      ; N/A     ; 0.000               ;
 +------------------+-------+-------+----------+---------+---------------------+
@@ -545,7 +604,7 @@ No synchronizer chains to report.
 +-------------+-------------+----------+----------+----------+----------+
 ; From Clock  ; To Clock    ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +-------------+-------------+----------+----------+----------+----------+
-; SystemClock ; SystemClock ; 16       ; 0        ; 0        ; 0        ;
+; SystemClock ; SystemClock ; 26       ; 0        ; 0        ; 0        ;
 +-------------+-------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -555,7 +614,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +-------------+-------------+----------+----------+----------+----------+
 ; From Clock  ; To Clock    ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +-------------+-------------+----------+----------+----------+----------+
-; SystemClock ; SystemClock ; 16       ; 0        ; 0        ; 0        ;
+; SystemClock ; SystemClock ; 26       ; 0        ; 0        ; 0        ;
 +-------------+-------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -580,9 +639,9 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 2     ; 2    ;
-; Unconstrained Input Port Paths  ; 18    ; 18   ;
+; Unconstrained Input Port Paths  ; 19    ; 19   ;
 ; Unconstrained Output Ports      ; 10    ; 10   ;
-; Unconstrained Output Port Paths ; 54    ; 54   ;
+; Unconstrained Output Port Paths ; 60    ; 60   ;
 +---------------------------------+-------+------+
 
 
@@ -657,7 +716,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Fri May 11 15:50:39 2018
+    Info: Processing started: Fri May 11 20:40:40 2018
 Info: Command: quartus_sta Part1 -c Part1
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -667,58 +726,58 @@ Info (21077): High junction temperature is 85 degrees C
 Info (332104): Reading SDC File: 'Part1.out.sdc'
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1200mV 85C Model
-Info (332146): Worst-case setup slack is 6.885
+Info (332146): Worst-case setup slack is 5.075
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     6.885               0.000 SystemClock 
-Info (332146): Worst-case hold slack is 0.440
+    Info (332119):     5.075               0.000 SystemClock 
+Info (332146): Worst-case hold slack is 0.514
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.440               0.000 SystemClock 
+    Info (332119):     0.514               0.000 SystemClock 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is 4.763
+Info (332146): Worst-case minimum pulse width slack is 4.737
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     4.763               0.000 SystemClock 
+    Info (332119):     4.737               0.000 SystemClock 
 Info: Analyzing Slow 1200mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (332146): Worst-case setup slack is 7.064
+Info (332146): Worst-case setup slack is 5.329
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     7.064               0.000 SystemClock 
-Info (332146): Worst-case hold slack is 0.387
+    Info (332119):     5.329               0.000 SystemClock 
+Info (332146): Worst-case hold slack is 0.464
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.387               0.000 SystemClock 
+    Info (332119):     0.464               0.000 SystemClock 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is 4.777
+Info (332146): Worst-case minimum pulse width slack is 4.708
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     4.777               0.000 SystemClock 
+    Info (332119):     4.708               0.000 SystemClock 
 Info: Analyzing Fast 1200mV 0C Model
-Info (332146): Worst-case setup slack is 8.007
+Info (332146): Worst-case setup slack is 6.868
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     8.007               0.000 SystemClock 
-Info (332146): Worst-case hold slack is 0.201
+    Info (332119):     6.868               0.000 SystemClock 
+Info (332146): Worst-case hold slack is 0.245
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.201               0.000 SystemClock 
+    Info (332119):     0.245               0.000 SystemClock 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is 4.417
+Info (332146): Worst-case minimum pulse width slack is 4.324
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     4.417               0.000 SystemClock 
+    Info (332119):     4.324               0.000 SystemClock 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 696 megabytes
-    Info: Processing ended: Fri May 11 15:50:42 2018
+    Info: Peak virtual memory: 697 megabytes
+    Info: Processing ended: Fri May 11 20:40:43 2018
     Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Total CPU time (on all processors): 00:00:03
 
 

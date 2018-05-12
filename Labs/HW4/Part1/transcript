@@ -861,3 +861,5 @@ do Part1FSM_runlab.do
 # ** Note: $stop    : ./Part1FSM.sv(103)
 #    Time: 136 ns  Iteration: 0  Instance: /Part1FSM_testbench
 # Break in Module Part1FSM_testbench at ./Part1FSM.sv line 103
+# End time: 18:58:07 on May 11,2018, Elapsed time: 5:00:30
+# Errors: 0, Warnings: 2

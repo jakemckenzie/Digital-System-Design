@@ -20,48 +20,39 @@ module Part1FSM(input logic Clock, w, Reset, output logic [3:0]y,output logic z)
         case (CurrentState)
             A: begin
                 z = 0;
-                if (!w) NextState = B;
-                else NextState = F;
+                NextState = !w ? B : F;
                 end
             B: begin
                 z = 0;
-                if (!w) NextState = C;
-                else NextState = F;
+                NextState = !w ? C : F;
                 end
             C: begin
                 z = 0;
-                if (!w) NextState = D;
-                else NextState = F;
+                NextState = !w ? D : F;
                end
             D: begin
                 z = 0;
-                if (!w) NextState = E;
-                else NextState = F;
+                NextState = !w ? E : F;
                end
             E: begin
                 z = 1;
-                if (!w) NextState = E;
-                else NextState = F;
+                NextState = !w ? E : F;
                end
             F: begin
                 z = 0;
-                if (w) NextState = G;
-                else NextState = B;
+                NextState = w ? G : B;
                end
             G: begin
                 z = 0;
-                if (w) NextState = H;
-                else NextState = B;
+                NextState = w ? H : B;
                end
             H: begin
                 z = 0;
-                if (w) NextState = I;
-                else NextState = B;
+                NextState = w ? I : B;
                end
             I: begin
                 z = 1;
-                if (w) NextState = I;
-                else NextState = B;
+                NextState = w ? I : B;
                end
             default: begin
                 z = 0; 
@@ -70,8 +61,7 @@ module Part1FSM(input logic Clock, w, Reset, output logic [3:0]y,output logic z)
         endcase                  
     end
     always_ff @(posedge Clock, posedge Reset) begin
-		if (Reset == 1)  CurrentState <= A;
-		else  CurrentState <= NextState;
+		CurrentState <= (Reset == 1) ? A : NextState;
     end
     assign y = CurrentState;
 endmodule
