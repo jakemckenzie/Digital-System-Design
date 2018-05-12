@@ -1,199 +1,29 @@
 # Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
 do moduloTenCounter_runlab.do
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:30:41 on May 11,2018
-# vlog -reportprogress 300 ./moduloTenCounter.sv 
-# -- Compiling module moduloTenCounter
-# ** Error: (vlog-13069) ./moduloTenCounter.sv(24): near "end": syntax error, unexpected end.
-# -- Compiling module moduloTenCounter_testbench
-# ** Error: (vlog-13069) ./moduloTenCounter.sv(40): near "moduloTenCounter": syntax error, unexpected IDENTIFIER, expecting ';' or ','.
-# ** Error: ./moduloTenCounter.sv(51): (vlog-2730) Undefined variable: 'z'.
-# ** Error: ./moduloTenCounter.sv(52): (vlog-2730) Undefined variable: 'y'.
-# ** Error: ./moduloTenCounter.sv(53): (vlog-2730) Undefined variable: 'w'.
-# End time: 18:30:41 on May 11,2018, Elapsed time: 0:00:00
-# Errors: 5, Warnings: 0
-# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./moduloTenCounter_runlab.do line 7
-# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog "./moduloTenCounter.sv""
-do moduloTenCounter_runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:34:24 on May 11,2018
-# vlog -reportprogress 300 ./moduloTenCounter.sv 
-# -- Compiling module moduloTenCounter
-# ** Error: (vlog-13069) ./moduloTenCounter.sv(24): near "end": syntax error, unexpected end.
-# -- Compiling module moduloTenCounter_testbench
-# ** Error: (vlog-13069) ./moduloTenCounter.sv(40): near "moduloTenCounter": syntax error, unexpected IDENTIFIER, expecting ';' or ','.
-# End time: 18:34:24 on May 11,2018, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./moduloTenCounter_runlab.do line 7
-# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog "./moduloTenCounter.sv""
-do moduloTenCounter_runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:34:57 on May 11,2018
-# vlog -reportprogress 300 ./moduloTenCounter.sv 
-# -- Compiling module moduloTenCounter
-# ** Error: ./moduloTenCounter.sv(28): (vlog-2730) Undefined variable: 'BaseState'.
-# -- Compiling module moduloTenCounter_testbench
-# ** Error: (vlog-13069) ./moduloTenCounter.sv(41): near "moduloTenCounter": syntax error, unexpected IDENTIFIER, expecting ';' or ','.
-# End time: 18:34:57 on May 11,2018, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./moduloTenCounter_runlab.do line 7
-# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog "./moduloTenCounter.sv""
-do moduloTenCounter_runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:35:33 on May 11,2018
-# vlog -reportprogress 300 ./moduloTenCounter.sv 
-# -- Compiling module moduloTenCounter
-# -- Compiling module moduloTenCounter_testbench
-# ** Error: (vlog-13069) ./moduloTenCounter.sv(41): near "moduloTenCounter": syntax error, unexpected IDENTIFIER, expecting ';' or ','.
-# End time: 18:35:33 on May 11,2018, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./moduloTenCounter_runlab.do line 7
-# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog "./moduloTenCounter.sv""
-do moduloTenCounter_runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:35:51 on May 11,2018
+# Start time: 21:22:53 on May 11,2018
 # vlog -reportprogress 300 ./moduloTenCounter.sv 
 # -- Compiling module moduloTenCounter
 # -- Compiling module moduloTenCounter_testbench
 # 
 # Top level modules:
 # 	moduloTenCounter_testbench
-# End time: 18:35:51 on May 11,2018, Elapsed time: 0:00:00
+# End time: 21:22:53 on May 11,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -voptargs=""+acc"" -t 1ps -lib work moduloTenCounter_testbench 
-# Start time: 18:35:51 on May 11,2018
+# Start time: 21:22:53 on May 11,2018
 # Loading sv_std.std
 # Loading work.moduloTenCounter_testbench
 # Loading work.moduloTenCounter
-# ** Warning: (vsim-3839) ./moduloTenCounter.sv(54): Variable '/moduloTenCounter_testbench/toDisplay', driven via a port connection, is multiply driven. See ./moduloTenCounter.sv(41).
-#    Time: 0 ps  Iteration: 0  Instance: /moduloTenCounter_testbench File: ./moduloTenCounter.sv
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Epimetheus  Hostname: EPIMETHEUS-PC  ProcessID: 138552
+#           Attempting to use alternate WLF file "./wlftmdjgqd".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftmdjgqd
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# ** Note: $stop    : ./moduloTenCounter.sv(64)
+# ** Note: $stop    : ./moduloTenCounter.sv(53)
 #    Time: 181 ns  Iteration: 0  Instance: /moduloTenCounter_testbench
-# Break in Module moduloTenCounter_testbench at ./moduloTenCounter.sv line 64
-do moduloTenCounter_runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:36:56 on May 11,2018
-# vlog -reportprogress 300 ./moduloTenCounter.sv 
-# -- Compiling module moduloTenCounter
-# -- Compiling module moduloTenCounter_testbench
-# 
-# Top level modules:
-# 	moduloTenCounter_testbench
-# End time: 18:36:57 on May 11,2018, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# End time: 18:36:58 on May 11,2018, Elapsed time: 0:01:07
-# Errors: 0, Warnings: 1
-# vsim -voptargs=""+acc"" -t 1ps -lib work moduloTenCounter_testbench 
-# Start time: 18:36:58 on May 11,2018
-# Loading sv_std.std
-# Loading work.moduloTenCounter_testbench
-# Loading work.moduloTenCounter
-# ** Warning: (vsim-3839) ./moduloTenCounter.sv(55): Variable '/moduloTenCounter_testbench/toDisplay', driven via a port connection, is multiply driven. See ./moduloTenCounter.sv(41).
-#    Time: 0 ps  Iteration: 0  Instance: /moduloTenCounter_testbench File: ./moduloTenCounter.sv
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# ** Note: $stop    : ./moduloTenCounter.sv(65)
-#    Time: 181 ns  Iteration: 0  Instance: /moduloTenCounter_testbench
-# Break in Module moduloTenCounter_testbench at ./moduloTenCounter.sv line 65
-do moduloTenCounter_runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:58:17 on May 11,2018
-# vlog -reportprogress 300 ./moduloTenCounter.sv 
-# -- Compiling module moduloTenCounter
-# -- Compiling module moduloTenCounter_testbench
-# 
-# Top level modules:
-# 	moduloTenCounter_testbench
-# End time: 18:58:17 on May 11,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 18:58:22 on May 11,2018, Elapsed time: 0:21:24
-# Errors: 0, Warnings: 1
-# vsim -voptargs=""+acc"" -t 1ps -lib work moduloTenCounter_testbench 
-# Start time: 18:58:22 on May 11,2018
-# Loading sv_std.std
-# Loading work.moduloTenCounter_testbench
-# Loading work.moduloTenCounter
-# ** Warning: (vsim-3839) ./moduloTenCounter.sv(55): Variable '/moduloTenCounter_testbench/toDisplay', driven via a port connection, is multiply driven. See ./moduloTenCounter.sv(41).
-#    Time: 0 ps  Iteration: 0  Instance: /moduloTenCounter_testbench File: ./moduloTenCounter.sv
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# ** Note: $stop    : ./moduloTenCounter.sv(65)
-#    Time: 181 ns  Iteration: 0  Instance: /moduloTenCounter_testbench
-# Break in Module moduloTenCounter_testbench at ./moduloTenCounter.sv line 65
-do moduloTenCounter_runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:01:07 on May 11,2018
-# vlog -reportprogress 300 ./moduloTenCounter.sv 
-# -- Compiling module moduloTenCounter
-# -- Compiling module moduloTenCounter_testbench
-# 
-# Top level modules:
-# 	moduloTenCounter_testbench
-# End time: 19:01:07 on May 11,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 19:01:14 on May 11,2018, Elapsed time: 0:02:52
-# Errors: 0, Warnings: 1
-# vsim -voptargs=""+acc"" -t 1ps -lib work moduloTenCounter_testbench 
-# Start time: 19:01:14 on May 11,2018
-# Loading sv_std.std
-# Loading work.moduloTenCounter_testbench
-# Loading work.moduloTenCounter
-# ** Warning: (vsim-3839) ./moduloTenCounter.sv(55): Variable '/moduloTenCounter_testbench/toDisplay', driven via a port connection, is multiply driven. See ./moduloTenCounter.sv(41).
-#    Time: 0 ps  Iteration: 0  Instance: /moduloTenCounter_testbench File: ./moduloTenCounter.sv
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# ** Note: $stop    : ./moduloTenCounter.sv(65)
-#    Time: 181 ns  Iteration: 0  Instance: /moduloTenCounter_testbench
-# Break in Module moduloTenCounter_testbench at ./moduloTenCounter.sv line 65
-do moduloTenCounter_runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:04:11 on May 11,2018
-# vlog -reportprogress 300 ./moduloTenCounter.sv 
-# -- Compiling module moduloTenCounter
-# -- Compiling module moduloTenCounter_testbench
-# 
-# Top level modules:
-# 	moduloTenCounter_testbench
-# End time: 19:04:11 on May 11,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 19:04:17 on May 11,2018, Elapsed time: 0:03:03
-# Errors: 0, Warnings: 1
-# vsim -voptargs=""+acc"" -t 1ps -lib work moduloTenCounter_testbench 
-# Start time: 19:04:17 on May 11,2018
-# Loading sv_std.std
-# Loading work.moduloTenCounter_testbench
-# Loading work.moduloTenCounter
-# ** Warning: (vsim-3839) ./moduloTenCounter.sv(45): Variable '/moduloTenCounter_testbench/toDisplay', driven via a port connection, is multiply driven. See ./moduloTenCounter.sv(31).
-#    Time: 0 ps  Iteration: 0  Instance: /moduloTenCounter_testbench File: ./moduloTenCounter.sv
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# ** Note: $stop    : ./moduloTenCounter.sv(55)
-#    Time: 181 ns  Iteration: 0  Instance: /moduloTenCounter_testbench
-# Break in Module moduloTenCounter_testbench at ./moduloTenCounter.sv line 55
+# Break in Module moduloTenCounter_testbench at ./moduloTenCounter.sv line 53

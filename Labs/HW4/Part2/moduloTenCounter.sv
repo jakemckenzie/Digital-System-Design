@@ -1,29 +1,30 @@
+//     Jake McKenzie     |     TCES 330 Friday Section
+// In this section I construct a state machine counter by way of multiplexers.
+// Essentially if reset is high the count goes to zero else it completes 3 different states
+// specified in the assigment instructions unless it is in the naught state where everything is set to zero.
+// I probably have superfulous states here but I don't think it matters.
 module moduloTenCounter(input logic Clock, Reset,input logic [1:0]Control, output logic [3:0]toDisplay);
-    logic [3:0]CurrentState,NextState,Sum;
+    logic [3:0]Sum;
     localparam naught = 2'h0,
                addOne = 2'h1,
                addTwo = 2'h2,
                subOne = 2'h3;
-    always_comb begin
+    always_ff @(posedge Clock) begin
         case(Control)
             naught: Sum <= 4'h0;
-            addOne: Sum <= Clock ? Sum + 4'h1 : Sum;
-            addTwo: Sum <= Clock ? Sum + 4'h2 : Sum;
-            subOne: Sum <= Clock ? Sum - 4'h1 : Sum;
+            addOne: Sum <= Reset ? 4'h0 : Sum + 4'h1;
+            addTwo: Sum <= Reset ? 4'h0 : Sum + 4'h2;
+            subOne: Sum <= Reset ? 4'h0 : Sum - 4'h1;
             default: Sum <= 4'h0;
         endcase
     end
     
-    always_ff @(posedge Clock, posedge Reset) begin
-        CurrentState <= (Reset == 1) ? 4'h0 : NextState;
-    end
-    
     assign toDisplay = Sum;
 endmodule
-
+//In this testbench I test each of the main states for 4 clock cycles.
+// It appears to be counting by 1, 2 and decrementing by 1 correctly.
 `timescale 1ns/1ns
 module moduloTenCounter_testbench();
-    //input logic Clock, Reset,input logic [1:0]Control output logic [3:0]toDisplay
     logic Clock,Reset;
     logic [1:0]Control;
     logic [3:0]toDisplay;
@@ -42,7 +43,6 @@ module moduloTenCounter_testbench();
         Clock = 0;
         Control = 2'h0;
         Reset = 0;
-        toDisplay = 4'h0;
         #21;
         Control = 2'h1;
         #40;
