@@ -1,0 +1,24 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+do hello_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:46:05 on May 12,2018
+# vlog -reportprogress 300 ./hello.sv 
+# -- Compiling module hello
+# -- Compiling module hello_testbench
+# 
+# Top level modules:
+# 	hello_testbench
+# End time: 13:46:05 on May 12,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work hello_testbench 
+# Start time: 13:46:05 on May 12,2018
+# Loading sv_std.std
+# Loading work.hello_testbench
+# Loading work.hello
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./hello.sv(47)
+#    Time: 110 ns  Iteration: 0  Instance: /hello_testbench
+# Break in Module hello_testbench at ./hello.sv line 47

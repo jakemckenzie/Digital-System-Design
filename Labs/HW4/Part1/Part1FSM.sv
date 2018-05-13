@@ -82,8 +82,6 @@ module Part1FSM_testbench();
 		Clock = 1;
 		#5;
 	end
-	
-	
     initial begin
         z = 0;
         y = 4'h0;
