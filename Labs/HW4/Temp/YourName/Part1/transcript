@@ -1,0 +1,865 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+do Part1FSM_runlab.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:58:50 on May 11,2018
+# vlog -reportprogress 300 ./Part1FSM.sv 
+# -- Compiling module Part1FSM
+# ** Error: ./Part1FSM.sv(98): (vlog-2730) Undefined variable: 'Reset'.
+# -- Compiling module Part1FSM_testbench
+# ** Error: ./Part1FSM.sv(124): (vlog-2730) Undefined variable: 'Reset'.
+# End time: 11:58:50 on May 11,2018, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./Part1FSM_runlab.do line 7
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./Part1FSM.sv""
+do Part1FSM_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:59:17 on May 11,2018
+# vlog -reportprogress 300 ./Part1FSM.sv 
+# -- Compiling module Part1FSM
+# -- Compiling module Part1FSM_testbench
+# 
+# Top level modules:
+# 	Part1FSM_testbench
+# End time: 11:59:17 on May 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work Part1FSM_testbench 
+# Start time: 11:59:17 on May 11,2018
+# Loading sv_std.std
+# Loading work.Part1FSM_testbench
+# Loading work.Part1FSM
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./Part1FSM.sv(132)
+#    Time: 131 ns  Iteration: 0  Instance: /Part1FSM_testbench
+# Break in Module Part1FSM_testbench at ./Part1FSM.sv line 132
+do Part1FSM_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:00:13 on May 11,2018
+# vlog -reportprogress 300 ./Part1FSM.sv 
+# -- Compiling module Part1FSM
+# -- Compiling module Part1FSM_testbench
+# ** Error: (vlog-13069) ./Part1FSM.sv(133): near "#": syntax error, unexpected '#', expecting ';'.
+# End time: 12:00:13 on May 11,2018, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./Part1FSM_runlab.do line 7
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./Part1FSM.sv""
+do Part1FSM_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:00:22 on May 11,2018
+# vlog -reportprogress 300 ./Part1FSM.sv 
+# -- Compiling module Part1FSM
+# -- Compiling module Part1FSM_testbench
+# 
+# Top level modules:
+# 	Part1FSM_testbench
+# End time: 12:00:22 on May 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:00:26 on May 11,2018, Elapsed time: 0:01:09
+# Errors: 4, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work Part1FSM_testbench 
+# Start time: 12:00:26 on May 11,2018
+# Loading sv_std.std
+# Loading work.Part1FSM_testbench
+# Loading work.Part1FSM
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./Part1FSM.sv(134)
+#    Time: 151 ns  Iteration: 0  Instance: /Part1FSM_testbench
+# Break in Module Part1FSM_testbench at ./Part1FSM.sv line 134
+do Part1FSM_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:02:07 on May 11,2018
+# vlog -reportprogress 300 ./Part1FSM.sv 
+# -- Compiling module Part1FSM
+# -- Compiling module Part1FSM_testbench
+# 
+# Top level modules:
+# 	Part1FSM_testbench
+# End time: 12:02:07 on May 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:02:11 on May 11,2018, Elapsed time: 0:01:45
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work Part1FSM_testbench 
+# Start time: 12:02:11 on May 11,2018
+# Loading sv_std.std
+# Loading work.Part1FSM_testbench
+# Loading work.Part1FSM
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./Part1FSM.sv(137)
+#    Time: 151 ns  Iteration: 0  Instance: /Part1FSM_testbench
+# Break in Module Part1FSM_testbench at ./Part1FSM.sv line 137
+do Part1FSM_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:05:13 on May 11,2018
+# vlog -reportprogress 300 ./Part1FSM.sv 
+# -- Compiling module Part1FSM
+# -- Compiling module Part1FSM_testbench
+# 
+# Top level modules:
+# 	Part1FSM_testbench
+# End time: 12:05:13 on May 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:05:17 on May 11,2018, Elapsed time: 0:03:06
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work Part1FSM_testbench 
+# Start time: 12:05:17 on May 11,2018
+# Loading sv_std.std
+# Loading work.Part1FSM_testbench
+# Loading work.Part1FSM
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./Part1FSM.sv(137)
+#    Time: 151 ns  Iteration: 0  Instance: /Part1FSM_testbench
+# Break in Module Part1FSM_testbench at ./Part1FSM.sv line 137
+do Part1FSM_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:10:10 on May 11,2018
+# vlog -reportprogress 300 ./Part1FSM.sv 
+# -- Compiling module Part1FSM
+# -- Compiling module Part1FSM_testbench
+# 
+# Top level modules:
+# 	Part1FSM_testbench
+# End time: 12:10:10 on May 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:10:11 on May 11,2018, Elapsed time: 0:04:54
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work Part1FSM_testbench 
+# Start time: 12:10:11 on May 11,2018
+# Loading sv_std.std
+# Loading work.Part1FSM_testbench
+# Loading work.Part1FSM
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./Part1FSM.sv(160)
+#    Time: 151 ns  Iteration: 0  Instance: /Part1FSM_testbench
+# Break in Module Part1FSM_testbench at ./Part1FSM.sv line 160
+do Part1FSM_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:13:02 on May 11,2018
+# vlog -reportprogress 300 ./Part1FSM.sv 
+# -- Compiling module Part1FSM
+# -- Compiling module Part1FSM_testbench
+# 
+# Top level modules:
+# 	Part1FSM_testbench
+# End time: 12:13:02 on May 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:13:08 on May 11,2018, Elapsed time: 0:02:57
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work Part1FSM_testbench 
+# Start time: 12:13:08 on May 11,2018
+# Loading sv_std.std
+# Loading work.Part1FSM_testbench
+# Loading work.Part1FSM
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./Part1FSM.sv(160)
+#    Time: 161 ns  Iteration: 0  Instance: /Part1FSM_testbench
+# Break in Module Part1FSM_testbench at ./Part1FSM.sv line 160
+do Part1FSM_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:14:22 on May 11,2018
+# vlog -reportprogress 300 ./Part1FSM.sv 
+# -- Compiling module Part1FSM
+# -- Compiling module Part1FSM_testbench
+# 
+# Top level modules:
+# 	Part1FSM_testbench
+# End time: 12:14:22 on May 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:14:28 on May 11,2018, Elapsed time: 0:01:20
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work Part1FSM_testbench 
+# Start time: 12:14:28 on May 11,2018
+# Loading sv_std.std
+# Loading work.Part1FSM_testbench
+# Loading work.Part1FSM
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./Part1FSM.sv(160)
+#    Time: 151 ns  Iteration: 0  Instance: /Part1FSM_testbench
+# Break in Module Part1FSM_testbench at ./Part1FSM.sv line 160
+do Part1FSM_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:15:00 on May 11,2018
+# vlog -reportprogress 300 ./Part1FSM.sv 
+# -- Compiling module Part1FSM
+# -- Compiling module Part1FSM_testbench
+# 
+# Top level modules:
+# 	Part1FSM_testbench
+# End time: 12:15:00 on May 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:15:04 on May 11,2018, Elapsed time: 0:00:36
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work Part1FSM_testbench 
+# Start time: 12:15:04 on May 11,2018
+# Loading sv_std.std
+# Loading work.Part1FSM_testbench
+# Loading work.Part1FSM
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./Part1FSM.sv(160)
+#    Time: 161 ns  Iteration: 0  Instance: /Part1FSM_testbench
+# Break in Module Part1FSM_testbench at ./Part1FSM.sv line 160
+do Part1FSM_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:15:26 on May 11,2018
+# vlog -reportprogress 300 ./Part1FSM.sv 
+# -- Compiling module Part1FSM
+# -- Compiling module Part1FSM_testbench
+# 
+# Top level modules:
+# 	Part1FSM_testbench
+# End time: 12:15:26 on May 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:15:30 on May 11,2018, Elapsed time: 0:00:26
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work Part1FSM_testbench 
+# Start time: 12:15:30 on May 11,2018
+# Loading sv_std.std
+# Loading work.Part1FSM_testbench
+# Loading work.Part1FSM
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./Part1FSM.sv(160)
+#    Time: 171 ns  Iteration: 0  Instance: /Part1FSM_testbench
+# Break in Module Part1FSM_testbench at ./Part1FSM.sv line 160
+do Part1FSM_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:15:55 on May 11,2018
+# vlog -reportprogress 300 ./Part1FSM.sv 
+# -- Compiling module Part1FSM
+# -- Compiling module Part1FSM_testbench
+# 
+# Top level modules:
+# 	Part1FSM_testbench
+# End time: 12:15:55 on May 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:15:59 on May 11,2018, Elapsed time: 0:00:29
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work Part1FSM_testbench 
+# Start time: 12:15:59 on May 11,2018
+# Loading sv_std.std
+# Loading work.Part1FSM_testbench
+# Loading work.Part1FSM
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./Part1FSM.sv(160)
+#    Time: 181 ns  Iteration: 0  Instance: /Part1FSM_testbench
+# Break in Module Part1FSM_testbench at ./Part1FSM.sv line 160
+do Part1FSM_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:16:24 on May 11,2018
+# vlog -reportprogress 300 ./Part1FSM.sv 
+# -- Compiling module Part1FSM
+# -- Compiling module Part1FSM_testbench
+# 
+# Top level modules:
+# 	Part1FSM_testbench
+# End time: 12:16:24 on May 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:16:34 on May 11,2018, Elapsed time: 0:00:35
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work Part1FSM_testbench 
+# Start time: 12:16:34 on May 11,2018
+# Loading sv_std.std
+# Loading work.Part1FSM_testbench
+# Loading work.Part1FSM
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./Part1FSM.sv(160)
+#    Time: 171 ns  Iteration: 0  Instance: /Part1FSM_testbench
+# Break in Module Part1FSM_testbench at ./Part1FSM.sv line 160
+do Part1FSM_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:17:55 on May 11,2018
+# vlog -reportprogress 300 ./Part1FSM.sv 
+# -- Compiling module Part1FSM
+# -- Compiling module Part1FSM_testbench
+# 
+# Top level modules:
+# 	Part1FSM_testbench
+# End time: 12:17:55 on May 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:18:00 on May 11,2018, Elapsed time: 0:01:26
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work Part1FSM_testbench 
+# Start time: 12:18:00 on May 11,2018
+# Loading sv_std.std
+# Loading work.Part1FSM_testbench
+# Loading work.Part1FSM
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./Part1FSM.sv(160)
+#    Time: 171 ns  Iteration: 0  Instance: /Part1FSM_testbench
+# Break in Module Part1FSM_testbench at ./Part1FSM.sv line 160
+do Part1FSM_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:18:35 on May 11,2018
+# vlog -reportprogress 300 ./Part1FSM.sv 
+# -- Compiling module Part1FSM
+# -- Compiling module Part1FSM_testbench
+# 
+# Top level modules:
+# 	Part1FSM_testbench
+# End time: 12:18:35 on May 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:18:40 on May 11,2018, Elapsed time: 0:00:40
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work Part1FSM_testbench 
+# Start time: 12:18:40 on May 11,2018
+# Loading sv_std.std
+# Loading work.Part1FSM_testbench
+# Loading work.Part1FSM
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./Part1FSM.sv(160)
+#    Time: 151 ns  Iteration: 0  Instance: /Part1FSM_testbench
+# Break in Module Part1FSM_testbench at ./Part1FSM.sv line 160
+do Part1FSM_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:19:06 on May 11,2018
+# vlog -reportprogress 300 ./Part1FSM.sv 
+# -- Compiling module Part1FSM
+# -- Compiling module Part1FSM_testbench
+# 
+# Top level modules:
+# 	Part1FSM_testbench
+# End time: 12:19:07 on May 11,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 12:19:10 on May 11,2018, Elapsed time: 0:00:30
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work Part1FSM_testbench 
+# Start time: 12:19:10 on May 11,2018
+# Loading sv_std.std
+# Loading work.Part1FSM_testbench
+# Loading work.Part1FSM
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./Part1FSM.sv(160)
+#    Time: 145 ns  Iteration: 0  Instance: /Part1FSM_testbench
+# Break in Module Part1FSM_testbench at ./Part1FSM.sv line 160
+do Part1FSM_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:19:47 on May 11,2018
+# vlog -reportprogress 300 ./Part1FSM.sv 
+# -- Compiling module Part1FSM
+# -- Compiling module Part1FSM_testbench
+# 
+# Top level modules:
+# 	Part1FSM_testbench
+# End time: 12:19:47 on May 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:19:55 on May 11,2018, Elapsed time: 0:00:45
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work Part1FSM_testbench 
+# Start time: 12:19:55 on May 11,2018
+# Loading sv_std.std
+# Loading work.Part1FSM_testbench
+# Loading work.Part1FSM
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./Part1FSM.sv(160)
+#    Time: 146 ns  Iteration: 0  Instance: /Part1FSM_testbench
+# Break in Module Part1FSM_testbench at ./Part1FSM.sv line 160
+do Part1FSM_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:34:56 on May 11,2018
+# vlog -reportprogress 300 ./Part1FSM.sv 
+# -- Compiling module Part1FSM
+# -- Compiling module Part1FSM_testbench
+# 
+# Top level modules:
+# 	Part1FSM_testbench
+# End time: 12:34:56 on May 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:35:01 on May 11,2018, Elapsed time: 0:15:06
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work Part1FSM_testbench 
+# Start time: 12:35:01 on May 11,2018
+# Loading sv_std.std
+# Loading work.Part1FSM_testbench
+# Loading work.Part1FSM
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./Part1FSM.sv(160)
+#    Time: 150 ns  Iteration: 0  Instance: /Part1FSM_testbench
+# Break in Module Part1FSM_testbench at ./Part1FSM.sv line 160
+do Part1FSM_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:39:32 on May 11,2018
+# vlog -reportprogress 300 ./Part1FSM.sv 
+# -- Compiling module Part1FSM
+# -- Compiling module Part1FSM_testbench
+# 
+# Top level modules:
+# 	Part1FSM_testbench
+# End time: 12:39:32 on May 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:39:35 on May 11,2018, Elapsed time: 0:04:34
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work Part1FSM_testbench 
+# Start time: 12:39:35 on May 11,2018
+# Loading sv_std.std
+# Loading work.Part1FSM_testbench
+# Loading work.Part1FSM
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./Part1FSM.sv(160)
+#    Time: 136 ns  Iteration: 0  Instance: /Part1FSM_testbench
+# Break in Module Part1FSM_testbench at ./Part1FSM.sv line 160
+do Part1FSM_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:43:42 on May 11,2018
+# vlog -reportprogress 300 ./Part1FSM.sv 
+# -- Compiling module Part1FSM
+# -- Compiling module Part1FSM_testbench
+# 
+# Top level modules:
+# 	Part1FSM_testbench
+# End time: 12:43:42 on May 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:43:47 on May 11,2018, Elapsed time: 0:04:12
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work Part1FSM_testbench 
+# Start time: 12:43:47 on May 11,2018
+# Loading sv_std.std
+# Loading work.Part1FSM_testbench
+# Loading work.Part1FSM
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./Part1FSM.sv(160)
+#    Time: 136 ns  Iteration: 0  Instance: /Part1FSM_testbench
+# Break in Module Part1FSM_testbench at ./Part1FSM.sv line 160
+do Part1FSM_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:52:41 on May 11,2018
+# vlog -reportprogress 300 ./Part1FSM.sv 
+# -- Compiling module Part1FSM
+# -- Compiling module Part1FSM_testbench
+# 
+# Top level modules:
+# 	Part1FSM_testbench
+# End time: 12:52:41 on May 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:52:44 on May 11,2018, Elapsed time: 0:08:57
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work Part1FSM_testbench 
+# Start time: 12:52:44 on May 11,2018
+# Loading sv_std.std
+# Loading work.Part1FSM_testbench
+# Loading work.Part1FSM
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./Part1FSM.sv(160)
+#    Time: 136 ns  Iteration: 0  Instance: /Part1FSM_testbench
+# Break in Module Part1FSM_testbench at ./Part1FSM.sv line 160
+do Part1FSM_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:58:32 on May 11,2018
+# vlog -reportprogress 300 ./Part1FSM.sv 
+# -- Compiling module Part1FSM
+# -- Compiling module Part1FSM_testbench
+# 
+# Top level modules:
+# 	Part1FSM_testbench
+# End time: 12:58:32 on May 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:58:37 on May 11,2018, Elapsed time: 0:05:53
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work Part1FSM_testbench 
+# Start time: 12:58:37 on May 11,2018
+# Loading sv_std.std
+# Loading work.Part1FSM_testbench
+# Loading work.Part1FSM
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./Part1FSM.sv(160)
+#    Time: 136 ns  Iteration: 0  Instance: /Part1FSM_testbench
+# Break in Module Part1FSM_testbench at ./Part1FSM.sv line 160
+do Part1FSM_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:18:34 on May 11,2018
+# vlog -reportprogress 300 ./Part1FSM.sv 
+# -- Compiling module Part1FSM
+# -- Compiling module Part1FSM_testbench
+# 
+# Top level modules:
+# 	Part1FSM_testbench
+# End time: 13:18:34 on May 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:18:36 on May 11,2018, Elapsed time: 0:19:59
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work Part1FSM_testbench 
+# Start time: 13:18:36 on May 11,2018
+# Loading sv_std.std
+# Loading work.Part1FSM_testbench
+# Loading work.Part1FSM
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./Part1FSM.sv(169)
+#    Time: 136 ns  Iteration: 0  Instance: /Part1FSM_testbench
+# Break in Module Part1FSM_testbench at ./Part1FSM.sv line 169
+do Part1FSM_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:25:03 on May 11,2018
+# vlog -reportprogress 300 ./Part1FSM.sv 
+# -- Compiling module Part1FSM
+# -- Compiling module Part1FSM_testbench
+# 
+# Top level modules:
+# 	Part1FSM_testbench
+# End time: 13:25:03 on May 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:25:08 on May 11,2018, Elapsed time: 0:06:32
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work Part1FSM_testbench 
+# Start time: 13:25:08 on May 11,2018
+# Loading sv_std.std
+# Loading work.Part1FSM_testbench
+# Loading work.Part1FSM
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./Part1FSM.sv(101)
+#    Time: 136 ns  Iteration: 0  Instance: /Part1FSM_testbench
+# Break in Module Part1FSM_testbench at ./Part1FSM.sv line 101
+do Part1FSM_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:29:13 on May 11,2018
+# vlog -reportprogress 300 ./Part1FSM.sv 
+# -- Compiling module Part1FSM
+# -- Compiling module Part1FSM_testbench
+# 
+# Top level modules:
+# 	Part1FSM_testbench
+# End time: 13:29:13 on May 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:29:15 on May 11,2018, Elapsed time: 0:04:07
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work Part1FSM_testbench 
+# Start time: 13:29:15 on May 11,2018
+# Loading sv_std.std
+# Loading work.Part1FSM_testbench
+# Loading work.Part1FSM
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./Part1FSM.sv(101)
+#    Time: 136 ns  Iteration: 0  Instance: /Part1FSM_testbench
+# Break in Module Part1FSM_testbench at ./Part1FSM.sv line 101
+do Part1FSM_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:33:15 on May 11,2018
+# vlog -reportprogress 300 ./Part1FSM.sv 
+# -- Compiling module Part1FSM
+# -- Compiling module Part1FSM_testbench
+# 
+# Top level modules:
+# 	Part1FSM_testbench
+# End time: 13:33:15 on May 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:33:22 on May 11,2018, Elapsed time: 0:04:07
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work Part1FSM_testbench 
+# Start time: 13:33:22 on May 11,2018
+# Loading sv_std.std
+# Loading work.Part1FSM_testbench
+# Loading work.Part1FSM
+# ** Warning: (vsim-3839) ./Part1FSM.sv(90): Variable '/Part1FSM_testbench/z', driven via a port connection, is multiply driven. See ./Part1FSM.sv(79).
+#    Time: 0 ps  Iteration: 0  Instance: /Part1FSM_testbench File: ./Part1FSM.sv
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./Part1FSM.sv(102)
+#    Time: 136 ns  Iteration: 0  Instance: /Part1FSM_testbench
+# Break in Module Part1FSM_testbench at ./Part1FSM.sv line 102
+do Part1FSM_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:33:56 on May 11,2018
+# vlog -reportprogress 300 ./Part1FSM.sv 
+# -- Compiling module Part1FSM
+# -- Compiling module Part1FSM_testbench
+# 
+# Top level modules:
+# 	Part1FSM_testbench
+# End time: 13:33:56 on May 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:34:10 on May 11,2018, Elapsed time: 0:00:48
+# Errors: 0, Warnings: 1
+# vsim -voptargs=""+acc"" -t 1ps -lib work Part1FSM_testbench 
+# Start time: 13:34:10 on May 11,2018
+# Loading sv_std.std
+# Loading work.Part1FSM_testbench
+# Loading work.Part1FSM
+# ** Warning: (vsim-3839) ./Part1FSM.sv(91): Variable '/Part1FSM_testbench/y', driven via a port connection, is multiply driven. See ./Part1FSM.sv(79).
+#    Time: 0 ps  Iteration: 0  Instance: /Part1FSM_testbench File: ./Part1FSM.sv
+# ** Warning: (vsim-3839) ./Part1FSM.sv(90): Variable '/Part1FSM_testbench/z', driven via a port connection, is multiply driven. See ./Part1FSM.sv(79).
+#    Time: 0 ps  Iteration: 0  Instance: /Part1FSM_testbench File: ./Part1FSM.sv
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./Part1FSM.sv(103)
+#    Time: 136 ns  Iteration: 0  Instance: /Part1FSM_testbench
+# Break in Module Part1FSM_testbench at ./Part1FSM.sv line 103
+do Part1FSM_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:35:30 on May 11,2018
+# vlog -reportprogress 300 ./Part1FSM.sv 
+# -- Compiling module Part1FSM
+# -- Compiling module Part1FSM_testbench
+# 
+# Top level modules:
+# 	Part1FSM_testbench
+# End time: 13:35:30 on May 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:35:32 on May 11,2018, Elapsed time: 0:01:22
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work Part1FSM_testbench 
+# Start time: 13:35:32 on May 11,2018
+# Loading sv_std.std
+# Loading work.Part1FSM_testbench
+# Loading work.Part1FSM
+# ** Warning: (vsim-3839) ./Part1FSM.sv(91): Variable '/Part1FSM_testbench/y', driven via a port connection, is multiply driven. See ./Part1FSM.sv(79).
+#    Time: 0 ps  Iteration: 0  Instance: /Part1FSM_testbench File: ./Part1FSM.sv
+# ** Warning: (vsim-3839) ./Part1FSM.sv(90): Variable '/Part1FSM_testbench/z', driven via a port connection, is multiply driven. See ./Part1FSM.sv(79).
+#    Time: 0 ps  Iteration: 0  Instance: /Part1FSM_testbench File: ./Part1FSM.sv
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./Part1FSM.sv(103)
+#    Time: 136 ns  Iteration: 0  Instance: /Part1FSM_testbench
+# Break in Module Part1FSM_testbench at ./Part1FSM.sv line 103
+do Part1FSM_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:35:57 on May 11,2018
+# vlog -reportprogress 300 ./Part1FSM.sv 
+# -- Compiling module Part1FSM
+# -- Compiling module Part1FSM_testbench
+# 
+# Top level modules:
+# 	Part1FSM_testbench
+# End time: 13:35:57 on May 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:36:05 on May 11,2018, Elapsed time: 0:00:33
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work Part1FSM_testbench 
+# Start time: 13:36:05 on May 11,2018
+# Loading sv_std.std
+# Loading work.Part1FSM_testbench
+# Loading work.Part1FSM
+# ** Warning: (vsim-3839) ./Part1FSM.sv(91): Variable '/Part1FSM_testbench/y', driven via a port connection, is multiply driven. See ./Part1FSM.sv(79).
+#    Time: 0 ps  Iteration: 0  Instance: /Part1FSM_testbench File: ./Part1FSM.sv
+# ** Warning: (vsim-3839) ./Part1FSM.sv(90): Variable '/Part1FSM_testbench/z', driven via a port connection, is multiply driven. See ./Part1FSM.sv(79).
+#    Time: 0 ps  Iteration: 0  Instance: /Part1FSM_testbench File: ./Part1FSM.sv
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./Part1FSM.sv(103)
+#    Time: 136 ns  Iteration: 0  Instance: /Part1FSM_testbench
+# Break in Module Part1FSM_testbench at ./Part1FSM.sv line 103
+do Part1FSM_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:39:09 on May 11,2018
+# vlog -reportprogress 300 ./Part1FSM.sv 
+# -- Compiling module Part1FSM
+# -- Compiling module Part1FSM_testbench
+# 
+# Top level modules:
+# 	Part1FSM_testbench
+# End time: 13:39:09 on May 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:39:13 on May 11,2018, Elapsed time: 0:03:08
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work Part1FSM_testbench 
+# Start time: 13:39:13 on May 11,2018
+# Loading sv_std.std
+# Loading work.Part1FSM_testbench
+# Loading work.Part1FSM
+# ** Warning: (vsim-3839) ./Part1FSM.sv(91): Variable '/Part1FSM_testbench/y', driven via a port connection, is multiply driven. See ./Part1FSM.sv(79).
+#    Time: 0 ps  Iteration: 0  Instance: /Part1FSM_testbench File: ./Part1FSM.sv
+# ** Warning: (vsim-3839) ./Part1FSM.sv(90): Variable '/Part1FSM_testbench/z', driven via a port connection, is multiply driven. See ./Part1FSM.sv(79).
+#    Time: 0 ps  Iteration: 0  Instance: /Part1FSM_testbench File: ./Part1FSM.sv
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./Part1FSM.sv(103)
+#    Time: 146 ns  Iteration: 0  Instance: /Part1FSM_testbench
+# Break in Module Part1FSM_testbench at ./Part1FSM.sv line 103
+do Part1FSM_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:39:30 on May 11,2018
+# vlog -reportprogress 300 ./Part1FSM.sv 
+# -- Compiling module Part1FSM
+# -- Compiling module Part1FSM_testbench
+# 
+# Top level modules:
+# 	Part1FSM_testbench
+# End time: 13:39:30 on May 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:39:34 on May 11,2018, Elapsed time: 0:00:21
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work Part1FSM_testbench 
+# Start time: 13:39:34 on May 11,2018
+# Loading sv_std.std
+# Loading work.Part1FSM_testbench
+# Loading work.Part1FSM
+# ** Warning: (vsim-3839) ./Part1FSM.sv(91): Variable '/Part1FSM_testbench/y', driven via a port connection, is multiply driven. See ./Part1FSM.sv(79).
+#    Time: 0 ps  Iteration: 0  Instance: /Part1FSM_testbench File: ./Part1FSM.sv
+# ** Warning: (vsim-3839) ./Part1FSM.sv(90): Variable '/Part1FSM_testbench/z', driven via a port connection, is multiply driven. See ./Part1FSM.sv(79).
+#    Time: 0 ps  Iteration: 0  Instance: /Part1FSM_testbench File: ./Part1FSM.sv
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./Part1FSM.sv(103)
+#    Time: 136 ns  Iteration: 0  Instance: /Part1FSM_testbench
+# Break in Module Part1FSM_testbench at ./Part1FSM.sv line 103
+do Part1FSM_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:41:32 on May 11,2018
+# vlog -reportprogress 300 ./Part1FSM.sv 
+# -- Compiling module Part1FSM
+# -- Compiling module Part1FSM_testbench
+# 
+# Top level modules:
+# 	Part1FSM_testbench
+# End time: 13:41:32 on May 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:41:33 on May 11,2018, Elapsed time: 0:01:59
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work Part1FSM_testbench 
+# Start time: 13:41:33 on May 11,2018
+# Loading sv_std.std
+# Loading work.Part1FSM_testbench
+# Loading work.Part1FSM
+# ** Warning: (vsim-3839) ./Part1FSM.sv(91): Variable '/Part1FSM_testbench/y', driven via a port connection, is multiply driven. See ./Part1FSM.sv(79).
+#    Time: 0 ps  Iteration: 0  Instance: /Part1FSM_testbench File: ./Part1FSM.sv
+# ** Warning: (vsim-3839) ./Part1FSM.sv(90): Variable '/Part1FSM_testbench/z', driven via a port connection, is multiply driven. See ./Part1FSM.sv(79).
+#    Time: 0 ps  Iteration: 0  Instance: /Part1FSM_testbench File: ./Part1FSM.sv
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./Part1FSM.sv(103)
+#    Time: 136 ns  Iteration: 0  Instance: /Part1FSM_testbench
+# Break in Module Part1FSM_testbench at ./Part1FSM.sv line 103
+do Part1FSM_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:42:21 on May 11,2018
+# vlog -reportprogress 300 ./Part1FSM.sv 
+# -- Compiling module Part1FSM
+# -- Compiling module Part1FSM_testbench
+# 
+# Top level modules:
+# 	Part1FSM_testbench
+# End time: 13:42:21 on May 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:42:25 on May 11,2018, Elapsed time: 0:00:52
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work Part1FSM_testbench 
+# Start time: 13:42:25 on May 11,2018
+# Loading sv_std.std
+# Loading work.Part1FSM_testbench
+# Loading work.Part1FSM
+# ** Warning: (vsim-3839) ./Part1FSM.sv(91): Variable '/Part1FSM_testbench/y', driven via a port connection, is multiply driven. See ./Part1FSM.sv(79).
+#    Time: 0 ps  Iteration: 0  Instance: /Part1FSM_testbench File: ./Part1FSM.sv
+# ** Warning: (vsim-3839) ./Part1FSM.sv(90): Variable '/Part1FSM_testbench/z', driven via a port connection, is multiply driven. See ./Part1FSM.sv(79).
+#    Time: 0 ps  Iteration: 0  Instance: /Part1FSM_testbench File: ./Part1FSM.sv
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./Part1FSM.sv(103)
+#    Time: 136 ns  Iteration: 0  Instance: /Part1FSM_testbench
+# Break in Module Part1FSM_testbench at ./Part1FSM.sv line 103
+do Part1FSM_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:57:32 on May 11,2018
+# vlog -reportprogress 300 ./Part1FSM.sv 
+# -- Compiling module Part1FSM
+# -- Compiling module Part1FSM_testbench
+# 
+# Top level modules:
+# 	Part1FSM_testbench
+# End time: 13:57:32 on May 11,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:57:37 on May 11,2018, Elapsed time: 0:15:12
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work Part1FSM_testbench 
+# Start time: 13:57:37 on May 11,2018
+# Loading sv_std.std
+# Loading work.Part1FSM_testbench
+# Loading work.Part1FSM
+# ** Warning: (vsim-3839) ./Part1FSM.sv(91): Variable '/Part1FSM_testbench/y', driven via a port connection, is multiply driven. See ./Part1FSM.sv(79).
+#    Time: 0 ps  Iteration: 0  Instance: /Part1FSM_testbench File: ./Part1FSM.sv
+# ** Warning: (vsim-3839) ./Part1FSM.sv(90): Variable '/Part1FSM_testbench/z', driven via a port connection, is multiply driven. See ./Part1FSM.sv(79).
+#    Time: 0 ps  Iteration: 0  Instance: /Part1FSM_testbench File: ./Part1FSM.sv
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./Part1FSM.sv(103)
+#    Time: 136 ns  Iteration: 0  Instance: /Part1FSM_testbench
+# Break in Module Part1FSM_testbench at ./Part1FSM.sv line 103
+# End time: 18:58:07 on May 11,2018, Elapsed time: 5:00:30
+# Errors: 0, Warnings: 2

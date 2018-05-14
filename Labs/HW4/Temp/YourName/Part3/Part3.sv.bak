@@ -1,0 +1,13 @@
+module Part3(input logic [0:0]KEY,SW, output logic [0:6]HEX7,HEX6,HEX5,HEX4,HEX3,HEX2,HEX1,HEX0);
+	logic [3:0]in0,in1,in2,in3,in4,in5,in6,in7,in8,out1,out2,out3,out4,out5,out6,out7,out8;
+	shiftRegister SR(in1,in2,in3,in4,in5,in6,in7,in8,[0:0]KEY,out1,out2,out3,out4,out5,out6,out7,out8);
+	hello H(in0,SW,in1);
+	hexDisplay HD0(out2,HEX0);
+	hexDisplay HD1(out3,HEX1);
+	hexDisplay HD2(out4,HEX2);
+	hexDisplay HD3(out5,HEX3);
+	hexDisplay HD4(out6,HEX4);
+	hexDisplay HD5(out7,HEX5);
+	hexDisplay HD6(out8,HEX6);
+	hexDisplay HD7(out1,HEX7);
+endmodule
