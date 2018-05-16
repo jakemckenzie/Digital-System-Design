@@ -6,7 +6,7 @@
 module Part3(input logic [0:0]KEY,SW, output logic [0:6]HEX7,HEX6,HEX5,HEX4,HEX3,HEX2,HEX1,HEX0);
 	logic [3:0]in1,in2,out1,out2,out3,out4,out5,out6,out7,out8;
 	shiftRegister SR(in1,KEY,SW,out2,out3,out4,out5,out6,out7,out8,out1);
-	hello H(KEY,SW,in2 % 8,in1);
+	hello H(KEY,SW,in2,in1);
 	moduloNineCounter M9C(KEY,SW,2'h1,in2);
 	hexDisplay HD0(out2,HEX0);
 	hexDisplay HD1(out3,HEX1);

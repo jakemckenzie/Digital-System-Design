@@ -5,5 +5,5 @@ module Part2(input logic KEY[0:0],input logic [2:0]SW,output logic [0:6]HEX0,out
     logic [3:0]foo;
 	assign LEDR = SW;
     moduloTenCounter CNT(KEY[0],SW[0],SW[2:1],foo);
-    hexDisplay HD(foo % 10,HEX0);
+    hexDisplay HD(foo,HEX0);
 endmodule

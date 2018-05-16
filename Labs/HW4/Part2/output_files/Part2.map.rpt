@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Part2
-Fri May 11 21:24:22 2018
+Tue May 15 22:43:13 2018
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -13,13 +13,12 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Multiplexer Restructuring Statistics (Restructuring Performed)
- 10. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod0
- 11. Port Connectivity Checks: "hexDisplay:HD"
- 12. Post-Synthesis Netlist Statistics for Top Partition
- 13. Elapsed Time Per Partition
- 14. Analysis & Synthesis Messages
+  8. State Machine - |Part2|moduloTenCounter:CNT|Sum
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
 
 
 
@@ -46,13 +45,13 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri May 11 21:24:22 2018       ;
+; Analysis & Synthesis Status        ; Successful - Tue May 15 22:43:13 2018       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; Part2                                       ;
 ; Top-level Entity Name              ; Part2                                       ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 26                                          ;
-;     Total combinational functions  ; 26                                          ;
+; Total logic elements               ; 21                                          ;
+;     Total combinational functions  ; 21                                          ;
 ;     Dedicated logic registers      ; 4                                           ;
 ; Total registers                    ; 4                                           ;
 ; Total pins                         ; 14                                          ;
@@ -166,24 +165,15 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                             ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                         ; Library ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------+---------+
-; moduloTenCounter.sv              ; yes             ; User SystemVerilog HDL File  ; C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW4/Part2/moduloTenCounter.sv        ;         ;
-; hexDisplay.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW4/Part2/hexDisplay.sv              ;         ;
-; Part2.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW4/Part2/Part2.sv                   ;         ;
-; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/lpm_divide.tdf                                ;         ;
-; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/abs_divider.inc                               ;         ;
-; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/sign_div_unsign.inc                           ;         ;
-; aglobal170.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/aglobal170.inc                                ;         ;
-; db/lpm_divide_i9m.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW4/Part2/db/lpm_divide_i9m.tdf      ;         ;
-; db/sign_div_unsign_7kh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW4/Part2/db/sign_div_unsign_7kh.tdf ;         ;
-; db/alt_u_div_24f.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW4/Part2/db/alt_u_div_24f.tdf       ;         ;
-; db/add_sub_7pc.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW4/Part2/db/add_sub_7pc.tdf         ;         ;
-; db/add_sub_8pc.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW4/Part2/db/add_sub_8pc.tdf         ;         ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                      ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                  ; Library ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------+---------+
+; moduloTenCounter.sv              ; yes             ; User SystemVerilog HDL File  ; C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW4/Part2/moduloTenCounter.sv ;         ;
+; hexDisplay.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW4/Part2/hexDisplay.sv       ;         ;
+; Part2.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW4/Part2/Part2.sv            ;         ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------------------------+
@@ -191,17 +181,17 @@ agreement for further details.
 +---------------------------------------------+-----------------------------+
 ; Resource                                    ; Usage                       ;
 +---------------------------------------------+-----------------------------+
-; Estimated Total logic elements              ; 26                          ;
+; Estimated Total logic elements              ; 21                          ;
 ;                                             ;                             ;
-; Total combinational functions               ; 26                          ;
+; Total combinational functions               ; 21                          ;
 ; Logic element usage by number of LUT inputs ;                             ;
-;     -- 4 input functions                    ; 15                          ;
-;     -- 3 input functions                    ; 6                           ;
-;     -- <=2 input functions                  ; 5                           ;
+;     -- 4 input functions                    ; 18                          ;
+;     -- 3 input functions                    ; 3                           ;
+;     -- <=2 input functions                  ; 0                           ;
 ;                                             ;                             ;
 ; Logic elements by mode                      ;                             ;
-;     -- normal mode                          ; 23                          ;
-;     -- arithmetic mode                      ; 3                           ;
+;     -- normal mode                          ; 21                          ;
+;     -- arithmetic mode                      ; 0                           ;
 ;                                             ;                             ;
 ; Total registers                             ; 4                           ;
 ;     -- Dedicated logic registers            ; 4                           ;
@@ -211,27 +201,42 @@ agreement for further details.
 ;                                             ;                             ;
 ; Embedded Multiplier 9-bit elements          ; 0                           ;
 ;                                             ;                             ;
-; Maximum fan-out node                        ; moduloTenCounter:CNT|Sum[0] ;
-; Maximum fan-out                             ; 14                          ;
-; Total fan-out                               ; 118                         ;
-; Average fan-out                             ; 2.03                        ;
+; Maximum fan-out node                        ; moduloTenCounter:CNT|Sum~13 ;
+; Maximum fan-out                             ; 16                          ;
+; Total fan-out                               ; 113                         ;
+; Average fan-out                             ; 2.13                        ;
 +---------------------------------------------+-----------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                             ;
-+----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; Compilation Hierarchy Node             ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                    ; Entity Name         ; Library Name ;
-+----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |Part2                                 ; 26 (0)              ; 4 (0)                     ; 0           ; 0            ; 0       ; 0         ; 14   ; 0            ; |Part2                                                                                                 ; Part2               ; work         ;
-;    |hexDisplay:HD|                     ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part2|hexDisplay:HD                                                                                   ; hexDisplay          ; work         ;
-;    |lpm_divide:Mod0|                   ; 7 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part2|lpm_divide:Mod0                                                                                 ; lpm_divide          ; work         ;
-;       |lpm_divide_i9m:auto_generated|  ; 7 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part2|lpm_divide:Mod0|lpm_divide_i9m:auto_generated                                                   ; lpm_divide_i9m      ; work         ;
-;          |sign_div_unsign_7kh:divider| ; 7 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part2|lpm_divide:Mod0|lpm_divide_i9m:auto_generated|sign_div_unsign_7kh:divider                       ; sign_div_unsign_7kh ; work         ;
-;             |alt_u_div_24f:divider|    ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part2|lpm_divide:Mod0|lpm_divide_i9m:auto_generated|sign_div_unsign_7kh:divider|alt_u_div_24f:divider ; alt_u_div_24f       ; work         ;
-;    |moduloTenCounter:CNT|              ; 12 (12)             ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part2|moduloTenCounter:CNT                                                                            ; moduloTenCounter    ; work         ;
-+----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------+---------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                   ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------+------------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name         ; Entity Name      ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------+------------------+--------------+
+; |Part2                     ; 21 (0)              ; 4 (0)                     ; 0           ; 0            ; 0       ; 0         ; 14   ; 0            ; |Part2                      ; Part2            ; work         ;
+;    |hexDisplay:HD|         ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part2|hexDisplay:HD        ; hexDisplay       ; work         ;
+;    |moduloTenCounter:CNT|  ; 14 (14)             ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part2|moduloTenCounter:CNT ; moduloTenCounter ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------+------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  User-Encoded
++-------------------------------------------------+
+; State Machine - |Part2|moduloTenCounter:CNT|Sum ;
++----------+--------+--------+--------+-----------+
+; Name     ; Sum~15 ; Sum~14 ; Sum~13 ; Sum~12    ;
++----------+--------+--------+--------+-----------+
+; Sum.0000 ; 0      ; 0      ; 0      ; 0         ;
+; Sum.0001 ; 0      ; 0      ; 0      ; 1         ;
+; Sum.0010 ; 0      ; 0      ; 1      ; 0         ;
+; Sum.0011 ; 0      ; 0      ; 1      ; 1         ;
+; Sum.0100 ; 0      ; 1      ; 0      ; 0         ;
+; Sum.0101 ; 0      ; 1      ; 0      ; 1         ;
+; Sum.0110 ; 0      ; 1      ; 1      ; 0         ;
+; Sum.0111 ; 0      ; 1      ; 1      ; 1         ;
+; Sum.1000 ; 1      ; 0      ; 0      ; 0         ;
+; Sum.1001 ; 1      ; 0      ; 0      ; 1         ;
++----------+--------+--------+--------+-----------+
 
 
 +------------------------------------------------------+
@@ -249,45 +254,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                   ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output         ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
-; 7:1                ; 3 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |Part2|moduloTenCounter:CNT|Sum[3] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
-
-
-+------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: lpm_divide:Mod0 ;
-+------------------------+----------------+------------------------+
-; Parameter Name         ; Value          ; Type                   ;
-+------------------------+----------------+------------------------+
-; LPM_WIDTHN             ; 4              ; Untyped                ;
-; LPM_WIDTHD             ; 4              ; Untyped                ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
-; LPM_PIPELINE           ; 0              ; Untyped                ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
-; CBXI_PARAMETER         ; lpm_divide_i9m ; Untyped                ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
-+------------------------+----------------+------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "hexDisplay:HD"                                                                                                                                                                    ;
-+------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                                                                                                                                            ;
-+------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; foo  ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-+------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
+; 5:1                ; 9 bits    ; 27 LEs        ; 18 LEs               ; 9 LEs                  ; No         ; |Part2|moduloTenCounter:CNT|Mux1 ;
+; 9:1                ; 2 bits    ; 12 LEs        ; 2 LEs                ; 10 LEs                 ; No         ; |Part2|moduloTenCounter:CNT|Sum  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
 
 
 +-----------------------------------------------------+
@@ -298,18 +272,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; boundary_port         ; 14                          ;
 ; cycloneiii_ff         ; 4                           ;
 ;     plain             ; 4                           ;
-; cycloneiii_lcell_comb ; 27                          ;
-;     arith             ; 3                           ;
-;         2 data inputs ; 3                           ;
-;     normal            ; 24                          ;
-;         0 data inputs ; 1                           ;
-;         1 data inputs ; 1                           ;
-;         2 data inputs ; 1                           ;
-;         3 data inputs ; 6                           ;
-;         4 data inputs ; 15                          ;
+; cycloneiii_lcell_comb ; 26                          ;
+;     normal            ; 26                          ;
+;         1 data inputs ; 5                           ;
+;         3 data inputs ; 3                           ;
+;         4 data inputs ; 18                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 4.30                        ;
-; Average LUT depth     ; 3.27                        ;
+; Max LUT depth         ; 3.00                        ;
+; Average LUT depth     ; 2.26                        ;
 +-----------------------+-----------------------------+
 
 
@@ -328,13 +298,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Fri May 11 21:24:07 2018
+    Info: Processing started: Tue May 15 22:42:59 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Part2 -c Part2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 2 entities, in source file modulotencounter.sv
-    Info (12023): Found entity 1: moduloTenCounter File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW4/Part2/moduloTenCounter.sv Line: 4
-    Info (12023): Found entity 2: moduloTenCounter_testbench File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW4/Part2/moduloTenCounter.sv Line: 24
+    Info (12023): Found entity 1: moduloTenCounter File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW4/Part2/moduloTenCounter.sv Line: 6
+    Info (12023): Found entity 2: moduloTenCounter_testbench File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW4/Part2/moduloTenCounter.sv Line: 27
 Info (12021): Found 2 design units, including 2 entities, in source file hexdisplay.sv
     Info (12023): Found entity 1: hexDisplay File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW4/Part2/hexDisplay.sv Line: 23
     Info (12023): Found entity 2: hexDisplay_testbench File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW4/Part2/hexDisplay.sv Line: 51
@@ -343,36 +313,17 @@ Info (12021): Found 1 design units, including 1 entities, in source file part2.s
 Info (12127): Elaborating entity "Part2" for the top level hierarchy
 Info (12128): Elaborating entity "moduloTenCounter" for hierarchy "moduloTenCounter:CNT" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW4/Part2/Part2.sv Line: 7
 Info (12128): Elaborating entity "hexDisplay" for hierarchy "hexDisplay:HD" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW4/Part2/Part2.sv Line: 8
-Info (278001): Inferred 1 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod0" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW4/Part2/Part2.sv Line: 8
-Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod0" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW4/Part2/Part2.sv Line: 8
-Info (12133): Instantiated megafunction "lpm_divide:Mod0" with the following parameter: File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW4/Part2/Part2.sv Line: 8
-    Info (12134): Parameter "LPM_WIDTHN" = "4"
-    Info (12134): Parameter "LPM_WIDTHD" = "4"
-    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_i9m.tdf
-    Info (12023): Found entity 1: lpm_divide_i9m File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW4/Part2/db/lpm_divide_i9m.tdf Line: 25
-Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_7kh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_7kh File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW4/Part2/db/sign_div_unsign_7kh.tdf Line: 25
-Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_24f.tdf
-    Info (12023): Found entity 1: alt_u_div_24f File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW4/Part2/db/alt_u_div_24f.tdf Line: 27
-Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_7pc.tdf
-    Info (12023): Found entity 1: add_sub_7pc File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW4/Part2/db/add_sub_7pc.tdf Line: 23
-Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_8pc.tdf
-    Info (12023): Found entity 1: add_sub_8pc File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW4/Part2/db/add_sub_8pc.tdf Line: 23
-Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 40 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 35 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 10 output pins
-    Info (21061): Implemented 26 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 640 megabytes
-    Info: Processing ended: Fri May 11 21:24:22 2018
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:33
+    Info (21061): Implemented 21 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 633 megabytes
+    Info: Processing ended: Tue May 15 22:43:13 2018
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:31
 
 

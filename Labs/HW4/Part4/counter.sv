@@ -11,11 +11,11 @@ module counter(input logic Clock, Reset,input logic [1:0]Control, output logic [
                subOne = 2'h3;
     always_ff @(posedge Clock) begin
         case(Control)
-            naught: Sum <= 4'h0;
-            addOne: Sum <= Reset ? 4'h0 : Sum + 4'h1;
-            addTwo: Sum <= Reset ? 4'h0 : Sum + 4'h2;
-            subOne: Sum <= Reset ? 4'h0 : Sum - 4'h1;
-            default: Sum <= 4'h0;
+            naught: Sum = Reset ? 4'h0 : Sum;
+            addOne: Sum = Reset ? 4'h0 : (Sum == 4'h0) ? 4'h1 : (Sum == 4'h1) ? 4'h2 : (Sum == 4'h2) ? 4'h3 : (Sum == 4'h3) ? 4'h4 : (Sum == 4'h4) ? 4'h5 : (Sum == 4'h5) ? 4'h6 : (Sum == 4'h6) ? 4'h7 : 4'h0;
+            addTwo: Sum = Reset ? 4'h0 : (Sum == 4'h0) ? 4'h2 : (Sum == 4'h1) ? 4'h3 : (Sum == 4'h2) ? 4'h4 : (Sum == 4'h3) ? 4'h5 : (Sum == 4'h4) ? 4'h6 : (Sum == 4'h5) ? 4'h7 : (Sum == 4'h6) ? 4'h8 : (Sum == 4'h7) ? 4'h9: (Sum == 4'h8) ? 4'h0 : 4'h1;
+            subOne: Sum = Reset ? 4'h0 : (Sum == 4'h0) ? 4'h9 : (Sum == 4'h1) ? 4'h0 : (Sum == 4'h2) ? 4'h1 : (Sum == 4'h3) ? 4'h2 : (Sum == 4'h4) ? 4'h3 : (Sum == 4'h5) ? 4'h4 : (Sum == 4'h6) ? 4'h5 : (Sum == 4'h7) ? 4'h6: (Sum == 4'h8) ? 4'h7 : 4'h8;
+            default: Sum = 4'h0;
         endcase
     end
     
@@ -43,7 +43,10 @@ module counter_testbench();
         Clock = 0;
         Control = 2'h0;
         Reset = 0;
+        #10;
+        Reset = 1;
         #21;
+        Reset = 0;
         Control = 2'h1;
         #40;
         Control = 2'h2;

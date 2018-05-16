@@ -10,7 +10,7 @@ cModel Technology
 Z0 dC:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW4/Part3
 vhello
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1526238394
+Z2 !s110 1526452205
 !i10b 1
 !s100 @>8c7=UGBGK[K<oI^:M770
 I8`eSz9M:l0@?RX[FCU@kF0
@@ -26,7 +26,7 @@ Z8 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z9 !s108 1526238394.000000
+Z9 !s108 1526452205.000000
 Z10 !s107 ./hello.sv|
 Z11 !s90 -reportprogress|300|./hello.sv|
 !i113 1
@@ -56,7 +56,7 @@ R11
 R12
 vshiftRegister
 R1
-Z13 !s110 1526239085
+Z13 !s110 1526452142
 !i10b 1
 !s100 ogPjOAM4fO4jV^AE[]V5K3
 IlS4:NaV`5ZU]3Yej>J2QL2
@@ -64,7 +64,7 @@ R3
 Z14 !s105 shiftRegister_sv_unit
 S1
 R0
-Z15 w1526238948
+Z15 w1526447566
 Z16 8./shiftRegister.sv
 Z17 F./shiftRegister.sv
 L0 5
@@ -72,7 +72,7 @@ R8
 r1
 !s85 0
 31
-Z18 !s108 1526239085.000000
+Z18 !s108 1526452142.000000
 Z19 !s107 ./shiftRegister.sv|
 Z20 !s90 -reportprogress|300|./shiftRegister.sv|
 !i113 1

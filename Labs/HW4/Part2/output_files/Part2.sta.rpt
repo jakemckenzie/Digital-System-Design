@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for Part2
-Fri May 11 21:24:47 2018
+Tue May 15 22:43:38 2018
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -105,9 +105,8 @@ agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.4%      ;
-;     Processor 3            ;   0.3%      ;
-;     Processor 4            ;   0.2%      ;
+;     Processor 2            ;   0.2%      ;
+;     Processors 3-4         ;   0.2%      ;
 +----------------------------+-------------+
 
 
@@ -116,7 +115,7 @@ agreement for further details.
 +---------------+--------+--------------------------+
 ; SDC File Path ; Status ; Read at                  ;
 +---------------+--------+--------------------------+
-; Part2.out.sdc ; OK     ; Fri May 11 21:24:46 2018 ;
+; Part2.out.sdc ; OK     ; Tue May 15 22:43:37 2018 ;
 +---------------+--------+--------------------------+
 
 
@@ -129,13 +128,13 @@ agreement for further details.
 +-------------+------+--------+-----------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------+
 
 
-+------------------------------------------------------------------------------------------------------------+
-; Slow 1200mV 85C Model Fmax Summary                                                                         ;
-+------------+-----------------+-------------+---------------------------------------------------------------+
-; Fmax       ; Restricted Fmax ; Clock Name  ; Note                                                          ;
-+------------+-----------------+-------------+---------------------------------------------------------------+
-; 307.98 MHz ; 250.0 MHz       ; SystemClock ; limit due to minimum period restriction (max I/O toggle rate) ;
-+------------+-----------------+-------------+---------------------------------------------------------------+
++---------------------------------------------------+
+; Slow 1200mV 85C Model Fmax Summary                ;
++------------+-----------------+-------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name  ; Note ;
++------------+-----------------+-------------+------+
+; 230.41 MHz ; 230.41 MHz      ; SystemClock ;      ;
++------------+-----------------+-------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
@@ -150,7 +149,7 @@ HTML report is unavailable in plain text report export.
 +-------------+-------+---------------+
 ; Clock       ; Slack ; End Point TNS ;
 +-------------+-------+---------------+
-; SystemClock ; 6.753 ; 0.000         ;
+; SystemClock ; 5.660 ; 0.000         ;
 +-------------+-------+---------------+
 
 
@@ -159,7 +158,7 @@ HTML report is unavailable in plain text report export.
 +-------------+-------+---------------+
 ; Clock       ; Slack ; End Point TNS ;
 +-------------+-------+---------------+
-; SystemClock ; 0.440 ; 0.000         ;
+; SystemClock ; 1.191 ; 0.000         ;
 +-------------+-------+---------------+
 
 
@@ -180,7 +179,7 @@ No paths to report.
 +-------------+-------+-----------------------------+
 ; Clock       ; Slack ; End Point TNS               ;
 +-------------+-------+-----------------------------+
-; SystemClock ; 4.768 ; 0.000                       ;
+; SystemClock ; 4.703 ; 0.000                       ;
 +-------------+-------+-----------------------------+
 
 
@@ -189,16 +188,19 @@ No paths to report.
 +-------+-----------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                   ; To Node                     ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+-----------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
-; 6.753 ; moduloTenCounter:CNT|Sum[1] ; moduloTenCounter:CNT|Sum[3] ; SystemClock  ; SystemClock ; 10.000       ; -0.050     ; 2.215      ;
-; 6.759 ; moduloTenCounter:CNT|Sum[2] ; moduloTenCounter:CNT|Sum[3] ; SystemClock  ; SystemClock ; 10.000       ; -0.050     ; 2.209      ;
-; 7.070 ; moduloTenCounter:CNT|Sum[0] ; moduloTenCounter:CNT|Sum[3] ; SystemClock  ; SystemClock ; 10.000       ; -0.050     ; 1.898      ;
-; 7.095 ; moduloTenCounter:CNT|Sum[1] ; moduloTenCounter:CNT|Sum[2] ; SystemClock  ; SystemClock ; 10.000       ; -0.050     ; 1.873      ;
-; 7.100 ; moduloTenCounter:CNT|Sum[2] ; moduloTenCounter:CNT|Sum[2] ; SystemClock  ; SystemClock ; 10.000       ; -0.050     ; 1.868      ;
-; 7.118 ; moduloTenCounter:CNT|Sum[1] ; moduloTenCounter:CNT|Sum[1] ; SystemClock  ; SystemClock ; 10.000       ; -0.043     ; 1.857      ;
-; 7.317 ; moduloTenCounter:CNT|Sum[3] ; moduloTenCounter:CNT|Sum[3] ; SystemClock  ; SystemClock ; 10.000       ; -0.050     ; 1.651      ;
-; 7.374 ; moduloTenCounter:CNT|Sum[0] ; moduloTenCounter:CNT|Sum[1] ; SystemClock  ; SystemClock ; 10.000       ; -0.050     ; 1.594      ;
-; 7.378 ; moduloTenCounter:CNT|Sum[0] ; moduloTenCounter:CNT|Sum[2] ; SystemClock  ; SystemClock ; 10.000       ; -0.050     ; 1.590      ;
-; 8.210 ; moduloTenCounter:CNT|Sum[0] ; moduloTenCounter:CNT|Sum[0] ; SystemClock  ; SystemClock ; 10.000       ; -0.043     ; 0.765      ;
+; 5.660 ; moduloTenCounter:CNT|Sum~12 ; moduloTenCounter:CNT|Sum~15 ; SystemClock  ; SystemClock ; 10.000       ; -0.047     ; 3.311      ;
+; 5.687 ; moduloTenCounter:CNT|Sum~15 ; moduloTenCounter:CNT|Sum~15 ; SystemClock  ; SystemClock ; 10.000       ; -0.047     ; 3.284      ;
+; 5.826 ; moduloTenCounter:CNT|Sum~13 ; moduloTenCounter:CNT|Sum~15 ; SystemClock  ; SystemClock ; 10.000       ; -0.047     ; 3.145      ;
+; 5.864 ; moduloTenCounter:CNT|Sum~12 ; moduloTenCounter:CNT|Sum~13 ; SystemClock  ; SystemClock ; 10.000       ; -0.047     ; 3.107      ;
+; 5.886 ; moduloTenCounter:CNT|Sum~15 ; moduloTenCounter:CNT|Sum~13 ; SystemClock  ; SystemClock ; 10.000       ; -0.047     ; 3.085      ;
+; 6.006 ; moduloTenCounter:CNT|Sum~14 ; moduloTenCounter:CNT|Sum~14 ; SystemClock  ; SystemClock ; 10.000       ; -0.047     ; 2.965      ;
+; 6.035 ; moduloTenCounter:CNT|Sum~13 ; moduloTenCounter:CNT|Sum~13 ; SystemClock  ; SystemClock ; 10.000       ; -0.047     ; 2.936      ;
+; 6.040 ; moduloTenCounter:CNT|Sum~12 ; moduloTenCounter:CNT|Sum~14 ; SystemClock  ; SystemClock ; 10.000       ; -0.047     ; 2.931      ;
+; 6.187 ; moduloTenCounter:CNT|Sum~14 ; moduloTenCounter:CNT|Sum~13 ; SystemClock  ; SystemClock ; 10.000       ; -0.047     ; 2.784      ;
+; 6.196 ; moduloTenCounter:CNT|Sum~13 ; moduloTenCounter:CNT|Sum~14 ; SystemClock  ; SystemClock ; 10.000       ; -0.047     ; 2.775      ;
+; 6.686 ; moduloTenCounter:CNT|Sum~14 ; moduloTenCounter:CNT|Sum~15 ; SystemClock  ; SystemClock ; 10.000       ; -0.047     ; 2.285      ;
+; 7.007 ; moduloTenCounter:CNT|Sum~15 ; moduloTenCounter:CNT|Sum~14 ; SystemClock  ; SystemClock ; 10.000       ; -0.047     ; 1.964      ;
+; 7.364 ; moduloTenCounter:CNT|Sum~12 ; moduloTenCounter:CNT|Sum~12 ; SystemClock  ; SystemClock ; 10.000       ; -0.047     ; 1.607      ;
 +-------+-----------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -207,16 +209,19 @@ No paths to report.
 +-------+-----------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                   ; To Node                     ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+-----------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
-; 0.440 ; moduloTenCounter:CNT|Sum[1] ; moduloTenCounter:CNT|Sum[1] ; SystemClock  ; SystemClock ; 0.000        ; 0.043      ; 0.669      ;
-; 0.440 ; moduloTenCounter:CNT|Sum[0] ; moduloTenCounter:CNT|Sum[0] ; SystemClock  ; SystemClock ; 0.000        ; 0.043      ; 0.669      ;
-; 0.527 ; moduloTenCounter:CNT|Sum[0] ; moduloTenCounter:CNT|Sum[1] ; SystemClock  ; SystemClock ; 0.000        ; 0.050      ; 0.763      ;
-; 1.020 ; moduloTenCounter:CNT|Sum[0] ; moduloTenCounter:CNT|Sum[3] ; SystemClock  ; SystemClock ; 0.000        ; 0.050      ; 1.256      ;
-; 1.055 ; moduloTenCounter:CNT|Sum[3] ; moduloTenCounter:CNT|Sum[3] ; SystemClock  ; SystemClock ; 0.000        ; 0.050      ; 1.291      ;
-; 1.098 ; moduloTenCounter:CNT|Sum[0] ; moduloTenCounter:CNT|Sum[2] ; SystemClock  ; SystemClock ; 0.000        ; 0.050      ; 1.334      ;
-; 1.188 ; moduloTenCounter:CNT|Sum[2] ; moduloTenCounter:CNT|Sum[3] ; SystemClock  ; SystemClock ; 0.000        ; 0.050      ; 1.424      ;
-; 1.200 ; moduloTenCounter:CNT|Sum[1] ; moduloTenCounter:CNT|Sum[3] ; SystemClock  ; SystemClock ; 0.000        ; 0.050      ; 1.436      ;
-; 1.287 ; moduloTenCounter:CNT|Sum[2] ; moduloTenCounter:CNT|Sum[2] ; SystemClock  ; SystemClock ; 0.000        ; 0.050      ; 1.523      ;
-; 1.296 ; moduloTenCounter:CNT|Sum[1] ; moduloTenCounter:CNT|Sum[2] ; SystemClock  ; SystemClock ; 0.000        ; 0.050      ; 1.532      ;
+; 1.191 ; moduloTenCounter:CNT|Sum~12 ; moduloTenCounter:CNT|Sum~12 ; SystemClock  ; SystemClock ; 0.000        ; 0.047      ; 1.424      ;
+; 1.542 ; moduloTenCounter:CNT|Sum~15 ; moduloTenCounter:CNT|Sum~14 ; SystemClock  ; SystemClock ; 0.000        ; 0.047      ; 1.775      ;
+; 1.571 ; moduloTenCounter:CNT|Sum~14 ; moduloTenCounter:CNT|Sum~13 ; SystemClock  ; SystemClock ; 0.000        ; 0.047      ; 1.804      ;
+; 1.598 ; moduloTenCounter:CNT|Sum~14 ; moduloTenCounter:CNT|Sum~15 ; SystemClock  ; SystemClock ; 0.000        ; 0.047      ; 1.831      ;
+; 1.651 ; moduloTenCounter:CNT|Sum~13 ; moduloTenCounter:CNT|Sum~13 ; SystemClock  ; SystemClock ; 0.000        ; 0.047      ; 1.884      ;
+; 1.724 ; moduloTenCounter:CNT|Sum~13 ; moduloTenCounter:CNT|Sum~15 ; SystemClock  ; SystemClock ; 0.000        ; 0.047      ; 1.957      ;
+; 1.827 ; moduloTenCounter:CNT|Sum~15 ; moduloTenCounter:CNT|Sum~15 ; SystemClock  ; SystemClock ; 0.000        ; 0.047      ; 2.060      ;
+; 1.851 ; moduloTenCounter:CNT|Sum~15 ; moduloTenCounter:CNT|Sum~13 ; SystemClock  ; SystemClock ; 0.000        ; 0.047      ; 2.084      ;
+; 2.013 ; moduloTenCounter:CNT|Sum~12 ; moduloTenCounter:CNT|Sum~13 ; SystemClock  ; SystemClock ; 0.000        ; 0.047      ; 2.246      ;
+; 2.068 ; moduloTenCounter:CNT|Sum~13 ; moduloTenCounter:CNT|Sum~14 ; SystemClock  ; SystemClock ; 0.000        ; 0.047      ; 2.301      ;
+; 2.196 ; moduloTenCounter:CNT|Sum~14 ; moduloTenCounter:CNT|Sum~14 ; SystemClock  ; SystemClock ; 0.000        ; 0.047      ; 2.429      ;
+; 2.381 ; moduloTenCounter:CNT|Sum~12 ; moduloTenCounter:CNT|Sum~14 ; SystemClock  ; SystemClock ; 0.000        ; 0.047      ; 2.614      ;
+; 2.592 ; moduloTenCounter:CNT|Sum~12 ; moduloTenCounter:CNT|Sum~15 ; SystemClock  ; SystemClock ; 0.000        ; 0.047      ; 2.825      ;
 +-------+-----------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -231,7 +236,7 @@ No synchronizer chains to report.
 +------------+-----------------+-------------+---------------------------------------------------------------+
 ; Fmax       ; Restricted Fmax ; Clock Name  ; Note                                                          ;
 +------------+-----------------+-------------+---------------------------------------------------------------+
-; 330.91 MHz ; 250.0 MHz       ; SystemClock ; limit due to minimum period restriction (max I/O toggle rate) ;
+; 250.88 MHz ; 250.0 MHz       ; SystemClock ; limit due to minimum period restriction (max I/O toggle rate) ;
 +------------+-----------------+-------------+---------------------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -241,7 +246,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------------+-------+---------------+
 ; Clock       ; Slack ; End Point TNS ;
 +-------------+-------+---------------+
-; SystemClock ; 6.978 ; 0.000         ;
+; SystemClock ; 6.014 ; 0.000         ;
 +-------------+-------+---------------+
 
 
@@ -250,7 +255,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------------+-------+---------------+
 ; Clock       ; Slack ; End Point TNS ;
 +-------------+-------+---------------+
-; SystemClock ; 0.387 ; 0.000         ;
+; SystemClock ; 1.083 ; 0.000         ;
 +-------------+-------+---------------+
 
 
@@ -271,7 +276,7 @@ No paths to report.
 +-------------+-------+----------------------------+
 ; Clock       ; Slack ; End Point TNS              ;
 +-------------+-------+----------------------------+
-; SystemClock ; 4.724 ; 0.000                      ;
+; SystemClock ; 4.779 ; 0.000                      ;
 +-------------+-------+----------------------------+
 
 
@@ -280,16 +285,19 @@ No paths to report.
 +-------+-----------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                   ; To Node                     ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+-----------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
-; 6.978 ; moduloTenCounter:CNT|Sum[2] ; moduloTenCounter:CNT|Sum[3] ; SystemClock  ; SystemClock ; 10.000       ; -0.045     ; 1.996      ;
-; 6.978 ; moduloTenCounter:CNT|Sum[1] ; moduloTenCounter:CNT|Sum[3] ; SystemClock  ; SystemClock ; 10.000       ; -0.045     ; 1.996      ;
-; 7.261 ; moduloTenCounter:CNT|Sum[0] ; moduloTenCounter:CNT|Sum[3] ; SystemClock  ; SystemClock ; 10.000       ; -0.045     ; 1.713      ;
-; 7.293 ; moduloTenCounter:CNT|Sum[1] ; moduloTenCounter:CNT|Sum[2] ; SystemClock  ; SystemClock ; 10.000       ; -0.045     ; 1.681      ;
-; 7.294 ; moduloTenCounter:CNT|Sum[2] ; moduloTenCounter:CNT|Sum[2] ; SystemClock  ; SystemClock ; 10.000       ; -0.045     ; 1.680      ;
-; 7.298 ; moduloTenCounter:CNT|Sum[1] ; moduloTenCounter:CNT|Sum[1] ; SystemClock  ; SystemClock ; 10.000       ; -0.039     ; 1.682      ;
-; 7.488 ; moduloTenCounter:CNT|Sum[3] ; moduloTenCounter:CNT|Sum[3] ; SystemClock  ; SystemClock ; 10.000       ; -0.045     ; 1.486      ;
-; 7.545 ; moduloTenCounter:CNT|Sum[0] ; moduloTenCounter:CNT|Sum[1] ; SystemClock  ; SystemClock ; 10.000       ; -0.045     ; 1.429      ;
-; 7.547 ; moduloTenCounter:CNT|Sum[0] ; moduloTenCounter:CNT|Sum[2] ; SystemClock  ; SystemClock ; 10.000       ; -0.045     ; 1.427      ;
-; 8.297 ; moduloTenCounter:CNT|Sum[0] ; moduloTenCounter:CNT|Sum[0] ; SystemClock  ; SystemClock ; 10.000       ; -0.039     ; 0.683      ;
+; 6.014 ; moduloTenCounter:CNT|Sum~12 ; moduloTenCounter:CNT|Sum~15 ; SystemClock  ; SystemClock ; 10.000       ; -0.042     ; 2.963      ;
+; 6.043 ; moduloTenCounter:CNT|Sum~15 ; moduloTenCounter:CNT|Sum~15 ; SystemClock  ; SystemClock ; 10.000       ; -0.042     ; 2.934      ;
+; 6.168 ; moduloTenCounter:CNT|Sum~13 ; moduloTenCounter:CNT|Sum~15 ; SystemClock  ; SystemClock ; 10.000       ; -0.042     ; 2.809      ;
+; 6.195 ; moduloTenCounter:CNT|Sum~12 ; moduloTenCounter:CNT|Sum~13 ; SystemClock  ; SystemClock ; 10.000       ; -0.042     ; 2.782      ;
+; 6.207 ; moduloTenCounter:CNT|Sum~15 ; moduloTenCounter:CNT|Sum~13 ; SystemClock  ; SystemClock ; 10.000       ; -0.042     ; 2.770      ;
+; 6.292 ; moduloTenCounter:CNT|Sum~14 ; moduloTenCounter:CNT|Sum~14 ; SystemClock  ; SystemClock ; 10.000       ; -0.042     ; 2.685      ;
+; 6.300 ; moduloTenCounter:CNT|Sum~12 ; moduloTenCounter:CNT|Sum~14 ; SystemClock  ; SystemClock ; 10.000       ; -0.042     ; 2.677      ;
+; 6.350 ; moduloTenCounter:CNT|Sum~13 ; moduloTenCounter:CNT|Sum~13 ; SystemClock  ; SystemClock ; 10.000       ; -0.042     ; 2.627      ;
+; 6.474 ; moduloTenCounter:CNT|Sum~13 ; moduloTenCounter:CNT|Sum~14 ; SystemClock  ; SystemClock ; 10.000       ; -0.042     ; 2.503      ;
+; 6.485 ; moduloTenCounter:CNT|Sum~14 ; moduloTenCounter:CNT|Sum~13 ; SystemClock  ; SystemClock ; 10.000       ; -0.042     ; 2.492      ;
+; 6.919 ; moduloTenCounter:CNT|Sum~14 ; moduloTenCounter:CNT|Sum~15 ; SystemClock  ; SystemClock ; 10.000       ; -0.042     ; 2.058      ;
+; 7.182 ; moduloTenCounter:CNT|Sum~15 ; moduloTenCounter:CNT|Sum~14 ; SystemClock  ; SystemClock ; 10.000       ; -0.042     ; 1.795      ;
+; 7.512 ; moduloTenCounter:CNT|Sum~12 ; moduloTenCounter:CNT|Sum~12 ; SystemClock  ; SystemClock ; 10.000       ; -0.042     ; 1.465      ;
 +-------+-----------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -298,16 +306,19 @@ No paths to report.
 +-------+-----------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                   ; To Node                     ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+-----------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
-; 0.387 ; moduloTenCounter:CNT|Sum[0] ; moduloTenCounter:CNT|Sum[0] ; SystemClock  ; SystemClock ; 0.000        ; 0.039      ; 0.597      ;
-; 0.387 ; moduloTenCounter:CNT|Sum[1] ; moduloTenCounter:CNT|Sum[1] ; SystemClock  ; SystemClock ; 0.000        ; 0.039      ; 0.597      ;
-; 0.475 ; moduloTenCounter:CNT|Sum[0] ; moduloTenCounter:CNT|Sum[1] ; SystemClock  ; SystemClock ; 0.000        ; 0.045      ; 0.691      ;
-; 0.936 ; moduloTenCounter:CNT|Sum[0] ; moduloTenCounter:CNT|Sum[3] ; SystemClock  ; SystemClock ; 0.000        ; 0.045      ; 1.152      ;
-; 0.965 ; moduloTenCounter:CNT|Sum[3] ; moduloTenCounter:CNT|Sum[3] ; SystemClock  ; SystemClock ; 0.000        ; 0.045      ; 1.181      ;
-; 0.995 ; moduloTenCounter:CNT|Sum[0] ; moduloTenCounter:CNT|Sum[2] ; SystemClock  ; SystemClock ; 0.000        ; 0.045      ; 1.211      ;
-; 1.090 ; moduloTenCounter:CNT|Sum[2] ; moduloTenCounter:CNT|Sum[3] ; SystemClock  ; SystemClock ; 0.000        ; 0.045      ; 1.306      ;
-; 1.098 ; moduloTenCounter:CNT|Sum[1] ; moduloTenCounter:CNT|Sum[3] ; SystemClock  ; SystemClock ; 0.000        ; 0.045      ; 1.314      ;
-; 1.183 ; moduloTenCounter:CNT|Sum[2] ; moduloTenCounter:CNT|Sum[2] ; SystemClock  ; SystemClock ; 0.000        ; 0.045      ; 1.399      ;
-; 1.186 ; moduloTenCounter:CNT|Sum[1] ; moduloTenCounter:CNT|Sum[2] ; SystemClock  ; SystemClock ; 0.000        ; 0.045      ; 1.402      ;
+; 1.083 ; moduloTenCounter:CNT|Sum~12 ; moduloTenCounter:CNT|Sum~12 ; SystemClock  ; SystemClock ; 0.000        ; 0.042      ; 1.296      ;
+; 1.396 ; moduloTenCounter:CNT|Sum~15 ; moduloTenCounter:CNT|Sum~14 ; SystemClock  ; SystemClock ; 0.000        ; 0.042      ; 1.609      ;
+; 1.410 ; moduloTenCounter:CNT|Sum~14 ; moduloTenCounter:CNT|Sum~13 ; SystemClock  ; SystemClock ; 0.000        ; 0.042      ; 1.623      ;
+; 1.432 ; moduloTenCounter:CNT|Sum~14 ; moduloTenCounter:CNT|Sum~15 ; SystemClock  ; SystemClock ; 0.000        ; 0.042      ; 1.645      ;
+; 1.496 ; moduloTenCounter:CNT|Sum~13 ; moduloTenCounter:CNT|Sum~13 ; SystemClock  ; SystemClock ; 0.000        ; 0.042      ; 1.709      ;
+; 1.573 ; moduloTenCounter:CNT|Sum~13 ; moduloTenCounter:CNT|Sum~15 ; SystemClock  ; SystemClock ; 0.000        ; 0.042      ; 1.786      ;
+; 1.623 ; moduloTenCounter:CNT|Sum~15 ; moduloTenCounter:CNT|Sum~15 ; SystemClock  ; SystemClock ; 0.000        ; 0.042      ; 1.836      ;
+; 1.682 ; moduloTenCounter:CNT|Sum~15 ; moduloTenCounter:CNT|Sum~13 ; SystemClock  ; SystemClock ; 0.000        ; 0.042      ; 1.895      ;
+; 1.860 ; moduloTenCounter:CNT|Sum~13 ; moduloTenCounter:CNT|Sum~14 ; SystemClock  ; SystemClock ; 0.000        ; 0.042      ; 2.073      ;
+; 1.865 ; moduloTenCounter:CNT|Sum~12 ; moduloTenCounter:CNT|Sum~13 ; SystemClock  ; SystemClock ; 0.000        ; 0.042      ; 2.078      ;
+; 1.979 ; moduloTenCounter:CNT|Sum~14 ; moduloTenCounter:CNT|Sum~14 ; SystemClock  ; SystemClock ; 0.000        ; 0.042      ; 2.192      ;
+; 2.165 ; moduloTenCounter:CNT|Sum~12 ; moduloTenCounter:CNT|Sum~14 ; SystemClock  ; SystemClock ; 0.000        ; 0.042      ; 2.378      ;
+; 2.396 ; moduloTenCounter:CNT|Sum~12 ; moduloTenCounter:CNT|Sum~15 ; SystemClock  ; SystemClock ; 0.000        ; 0.042      ; 2.609      ;
 +-------+-----------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -322,7 +333,7 @@ No synchronizer chains to report.
 +-------------+-------+---------------+
 ; Clock       ; Slack ; End Point TNS ;
 +-------------+-------+---------------+
-; SystemClock ; 7.926 ; 0.000         ;
+; SystemClock ; 7.354 ; 0.000         ;
 +-------------+-------+---------------+
 
 
@@ -331,7 +342,7 @@ No synchronizer chains to report.
 +-------------+-------+---------------+
 ; Clock       ; Slack ; End Point TNS ;
 +-------------+-------+---------------+
-; SystemClock ; 0.201 ; 0.000         ;
+; SystemClock ; 0.537 ; 0.000         ;
 +-------------+-------+---------------+
 
 
@@ -352,7 +363,7 @@ No paths to report.
 +-------------+-------+----------------------------+
 ; Clock       ; Slack ; End Point TNS              ;
 +-------------+-------+----------------------------+
-; SystemClock ; 4.357 ; 0.000                      ;
+; SystemClock ; 4.299 ; 0.000                      ;
 +-------------+-------+----------------------------+
 
 
@@ -361,16 +372,19 @@ No paths to report.
 +-------+-----------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                   ; To Node                     ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+-----------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
-; 7.926 ; moduloTenCounter:CNT|Sum[1] ; moduloTenCounter:CNT|Sum[3] ; SystemClock  ; SystemClock ; 10.000       ; -0.025     ; 1.056      ;
-; 7.932 ; moduloTenCounter:CNT|Sum[2] ; moduloTenCounter:CNT|Sum[3] ; SystemClock  ; SystemClock ; 10.000       ; -0.025     ; 1.050      ;
-; 8.078 ; moduloTenCounter:CNT|Sum[1] ; moduloTenCounter:CNT|Sum[2] ; SystemClock  ; SystemClock ; 10.000       ; -0.025     ; 0.904      ;
-; 8.079 ; moduloTenCounter:CNT|Sum[0] ; moduloTenCounter:CNT|Sum[3] ; SystemClock  ; SystemClock ; 10.000       ; -0.025     ; 0.903      ;
-; 8.080 ; moduloTenCounter:CNT|Sum[2] ; moduloTenCounter:CNT|Sum[2] ; SystemClock  ; SystemClock ; 10.000       ; -0.025     ; 0.902      ;
-; 8.099 ; moduloTenCounter:CNT|Sum[1] ; moduloTenCounter:CNT|Sum[1] ; SystemClock  ; SystemClock ; 10.000       ; -0.022     ; 0.886      ;
-; 8.189 ; moduloTenCounter:CNT|Sum[3] ; moduloTenCounter:CNT|Sum[3] ; SystemClock  ; SystemClock ; 10.000       ; -0.025     ; 0.793      ;
-; 8.210 ; moduloTenCounter:CNT|Sum[0] ; moduloTenCounter:CNT|Sum[2] ; SystemClock  ; SystemClock ; 10.000       ; -0.025     ; 0.772      ;
-; 8.210 ; moduloTenCounter:CNT|Sum[0] ; moduloTenCounter:CNT|Sum[1] ; SystemClock  ; SystemClock ; 10.000       ; -0.025     ; 0.772      ;
-; 8.626 ; moduloTenCounter:CNT|Sum[0] ; moduloTenCounter:CNT|Sum[0] ; SystemClock  ; SystemClock ; 10.000       ; -0.022     ; 0.359      ;
+; 7.354 ; moduloTenCounter:CNT|Sum~12 ; moduloTenCounter:CNT|Sum~15 ; SystemClock  ; SystemClock ; 10.000       ; -0.027     ; 1.626      ;
+; 7.373 ; moduloTenCounter:CNT|Sum~15 ; moduloTenCounter:CNT|Sum~15 ; SystemClock  ; SystemClock ; 10.000       ; -0.027     ; 1.607      ;
+; 7.436 ; moduloTenCounter:CNT|Sum~13 ; moduloTenCounter:CNT|Sum~15 ; SystemClock  ; SystemClock ; 10.000       ; -0.027     ; 1.544      ;
+; 7.464 ; moduloTenCounter:CNT|Sum~12 ; moduloTenCounter:CNT|Sum~13 ; SystemClock  ; SystemClock ; 10.000       ; -0.027     ; 1.516      ;
+; 7.475 ; moduloTenCounter:CNT|Sum~15 ; moduloTenCounter:CNT|Sum~13 ; SystemClock  ; SystemClock ; 10.000       ; -0.027     ; 1.505      ;
+; 7.520 ; moduloTenCounter:CNT|Sum~14 ; moduloTenCounter:CNT|Sum~14 ; SystemClock  ; SystemClock ; 10.000       ; -0.027     ; 1.460      ;
+; 7.547 ; moduloTenCounter:CNT|Sum~13 ; moduloTenCounter:CNT|Sum~13 ; SystemClock  ; SystemClock ; 10.000       ; -0.027     ; 1.433      ;
+; 7.553 ; moduloTenCounter:CNT|Sum~12 ; moduloTenCounter:CNT|Sum~14 ; SystemClock  ; SystemClock ; 10.000       ; -0.027     ; 1.427      ;
+; 7.615 ; moduloTenCounter:CNT|Sum~14 ; moduloTenCounter:CNT|Sum~13 ; SystemClock  ; SystemClock ; 10.000       ; -0.027     ; 1.365      ;
+; 7.621 ; moduloTenCounter:CNT|Sum~13 ; moduloTenCounter:CNT|Sum~14 ; SystemClock  ; SystemClock ; 10.000       ; -0.027     ; 1.359      ;
+; 7.855 ; moduloTenCounter:CNT|Sum~14 ; moduloTenCounter:CNT|Sum~15 ; SystemClock  ; SystemClock ; 10.000       ; -0.027     ; 1.125      ;
+; 8.035 ; moduloTenCounter:CNT|Sum~15 ; moduloTenCounter:CNT|Sum~14 ; SystemClock  ; SystemClock ; 10.000       ; -0.027     ; 0.945      ;
+; 8.208 ; moduloTenCounter:CNT|Sum~12 ; moduloTenCounter:CNT|Sum~12 ; SystemClock  ; SystemClock ; 10.000       ; -0.027     ; 0.772      ;
 +-------+-----------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -379,16 +393,19 @@ No paths to report.
 +-------+-----------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                   ; To Node                     ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+-----------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
-; 0.201 ; moduloTenCounter:CNT|Sum[1] ; moduloTenCounter:CNT|Sum[1] ; SystemClock  ; SystemClock ; 0.000        ; 0.022      ; 0.307      ;
-; 0.201 ; moduloTenCounter:CNT|Sum[0] ; moduloTenCounter:CNT|Sum[0] ; SystemClock  ; SystemClock ; 0.000        ; 0.022      ; 0.307      ;
-; 0.244 ; moduloTenCounter:CNT|Sum[0] ; moduloTenCounter:CNT|Sum[1] ; SystemClock  ; SystemClock ; 0.000        ; 0.025      ; 0.353      ;
-; 0.468 ; moduloTenCounter:CNT|Sum[0] ; moduloTenCounter:CNT|Sum[3] ; SystemClock  ; SystemClock ; 0.000        ; 0.025      ; 0.577      ;
-; 0.479 ; moduloTenCounter:CNT|Sum[3] ; moduloTenCounter:CNT|Sum[3] ; SystemClock  ; SystemClock ; 0.000        ; 0.025      ; 0.588      ;
-; 0.506 ; moduloTenCounter:CNT|Sum[0] ; moduloTenCounter:CNT|Sum[2] ; SystemClock  ; SystemClock ; 0.000        ; 0.025      ; 0.615      ;
-; 0.550 ; moduloTenCounter:CNT|Sum[2] ; moduloTenCounter:CNT|Sum[3] ; SystemClock  ; SystemClock ; 0.000        ; 0.025      ; 0.659      ;
-; 0.555 ; moduloTenCounter:CNT|Sum[1] ; moduloTenCounter:CNT|Sum[3] ; SystemClock  ; SystemClock ; 0.000        ; 0.025      ; 0.664      ;
-; 0.595 ; moduloTenCounter:CNT|Sum[2] ; moduloTenCounter:CNT|Sum[2] ; SystemClock  ; SystemClock ; 0.000        ; 0.025      ; 0.704      ;
-; 0.599 ; moduloTenCounter:CNT|Sum[1] ; moduloTenCounter:CNT|Sum[2] ; SystemClock  ; SystemClock ; 0.000        ; 0.025      ; 0.708      ;
+; 0.537 ; moduloTenCounter:CNT|Sum~12 ; moduloTenCounter:CNT|Sum~12 ; SystemClock  ; SystemClock ; 0.000        ; 0.027      ; 0.648      ;
+; 0.693 ; moduloTenCounter:CNT|Sum~14 ; moduloTenCounter:CNT|Sum~13 ; SystemClock  ; SystemClock ; 0.000        ; 0.027      ; 0.804      ;
+; 0.696 ; moduloTenCounter:CNT|Sum~15 ; moduloTenCounter:CNT|Sum~14 ; SystemClock  ; SystemClock ; 0.000        ; 0.027      ; 0.807      ;
+; 0.704 ; moduloTenCounter:CNT|Sum~14 ; moduloTenCounter:CNT|Sum~15 ; SystemClock  ; SystemClock ; 0.000        ; 0.027      ; 0.815      ;
+; 0.756 ; moduloTenCounter:CNT|Sum~13 ; moduloTenCounter:CNT|Sum~13 ; SystemClock  ; SystemClock ; 0.000        ; 0.027      ; 0.867      ;
+; 0.768 ; moduloTenCounter:CNT|Sum~13 ; moduloTenCounter:CNT|Sum~15 ; SystemClock  ; SystemClock ; 0.000        ; 0.027      ; 0.879      ;
+; 0.809 ; moduloTenCounter:CNT|Sum~15 ; moduloTenCounter:CNT|Sum~15 ; SystemClock  ; SystemClock ; 0.000        ; 0.027      ; 0.920      ;
+; 0.876 ; moduloTenCounter:CNT|Sum~15 ; moduloTenCounter:CNT|Sum~13 ; SystemClock  ; SystemClock ; 0.000        ; 0.027      ; 0.987      ;
+; 0.901 ; moduloTenCounter:CNT|Sum~12 ; moduloTenCounter:CNT|Sum~13 ; SystemClock  ; SystemClock ; 0.000        ; 0.027      ; 1.012      ;
+; 0.945 ; moduloTenCounter:CNT|Sum~13 ; moduloTenCounter:CNT|Sum~14 ; SystemClock  ; SystemClock ; 0.000        ; 0.027      ; 1.056      ;
+; 0.986 ; moduloTenCounter:CNT|Sum~14 ; moduloTenCounter:CNT|Sum~14 ; SystemClock  ; SystemClock ; 0.000        ; 0.027      ; 1.097      ;
+; 1.059 ; moduloTenCounter:CNT|Sum~12 ; moduloTenCounter:CNT|Sum~14 ; SystemClock  ; SystemClock ; 0.000        ; 0.027      ; 1.170      ;
+; 1.162 ; moduloTenCounter:CNT|Sum~12 ; moduloTenCounter:CNT|Sum~15 ; SystemClock  ; SystemClock ; 0.000        ; 0.027      ; 1.273      ;
 +-------+-----------------------------+-----------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -403,8 +420,8 @@ No synchronizer chains to report.
 +------------------+-------+-------+----------+---------+---------------------+
 ; Clock            ; Setup ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +------------------+-------+-------+----------+---------+---------------------+
-; Worst-case Slack ; 6.753 ; 0.201 ; N/A      ; N/A     ; 4.357               ;
-;  SystemClock     ; 6.753 ; 0.201 ; N/A      ; N/A     ; 4.357               ;
+; Worst-case Slack ; 5.660 ; 0.537 ; N/A      ; N/A     ; 4.299               ;
+;  SystemClock     ; 5.660 ; 0.537 ; N/A      ; N/A     ; 4.299               ;
 ; Design-wide TNS  ; 0.0   ; 0.0   ; 0.0      ; 0.0     ; 0.0                 ;
 ;  SystemClock     ; 0.000 ; 0.000 ; N/A      ; N/A     ; 0.000               ;
 +------------------+-------+-------+----------+---------+---------------------+
@@ -510,7 +527,7 @@ No synchronizer chains to report.
 +-------------+-------------+----------+----------+----------+----------+
 ; From Clock  ; To Clock    ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +-------------+-------------+----------+----------+----------+----------+
-; SystemClock ; SystemClock ; 19       ; 0        ; 0        ; 0        ;
+; SystemClock ; SystemClock ; 27       ; 0        ; 0        ; 0        ;
 +-------------+-------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -520,7 +537,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +-------------+-------------+----------+----------+----------+----------+
 ; From Clock  ; To Clock    ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +-------------+-------------+----------+----------+----------+----------+
-; SystemClock ; SystemClock ; 19       ; 0        ; 0        ; 0        ;
+; SystemClock ; SystemClock ; 27       ; 0        ; 0        ; 0        ;
 +-------------+-------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -545,7 +562,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 3     ; 3    ;
-; Unconstrained Input Port Paths  ; 15    ; 15   ;
+; Unconstrained Input Port Paths  ; 14    ; 14   ;
 ; Unconstrained Output Ports      ; 10    ; 10   ;
 ; Unconstrained Output Port Paths ; 31    ; 31   ;
 +---------------------------------+-------+------+
@@ -624,7 +641,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Fri May 11 21:24:44 2018
+    Info: Processing started: Tue May 15 22:43:35 2018
 Info: Command: quartus_sta Part2 -c Part2
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -634,57 +651,57 @@ Info (21077): High junction temperature is 85 degrees C
 Info (332104): Reading SDC File: 'Part2.out.sdc'
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1200mV 85C Model
-Info (332146): Worst-case setup slack is 6.753
+Info (332146): Worst-case setup slack is 5.660
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     6.753               0.000 SystemClock 
-Info (332146): Worst-case hold slack is 0.440
+    Info (332119):     5.660               0.000 SystemClock 
+Info (332146): Worst-case hold slack is 1.191
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.440               0.000 SystemClock 
+    Info (332119):     1.191               0.000 SystemClock 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is 4.768
+Info (332146): Worst-case minimum pulse width slack is 4.703
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     4.768               0.000 SystemClock 
+    Info (332119):     4.703               0.000 SystemClock 
 Info: Analyzing Slow 1200mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (332146): Worst-case setup slack is 6.978
+Info (332146): Worst-case setup slack is 6.014
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     6.978               0.000 SystemClock 
-Info (332146): Worst-case hold slack is 0.387
+    Info (332119):     6.014               0.000 SystemClock 
+Info (332146): Worst-case hold slack is 1.083
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.387               0.000 SystemClock 
+    Info (332119):     1.083               0.000 SystemClock 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is 4.724
+Info (332146): Worst-case minimum pulse width slack is 4.779
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     4.724               0.000 SystemClock 
+    Info (332119):     4.779               0.000 SystemClock 
 Info: Analyzing Fast 1200mV 0C Model
-Info (332146): Worst-case setup slack is 7.926
+Info (332146): Worst-case setup slack is 7.354
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     7.926               0.000 SystemClock 
-Info (332146): Worst-case hold slack is 0.201
+    Info (332119):     7.354               0.000 SystemClock 
+Info (332146): Worst-case hold slack is 0.537
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.201               0.000 SystemClock 
+    Info (332119):     0.537               0.000 SystemClock 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Info (332146): Worst-case minimum pulse width slack is 4.357
+Info (332146): Worst-case minimum pulse width slack is 4.299
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     4.357               0.000 SystemClock 
+    Info (332119):     4.299               0.000 SystemClock 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 697 megabytes
-    Info: Processing ended: Fri May 11 21:24:47 2018
+    Info: Peak virtual memory: 692 megabytes
+    Info: Processing ended: Tue May 15 22:43:38 2018
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 

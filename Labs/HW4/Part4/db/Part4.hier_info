@@ -221,10 +221,18 @@ NextState[3] <= <GND>
 
 
 |Part4|counter:C
-Clock => Sum[0].CLK
-Clock => Sum[1].CLK
-Clock => Sum[2].CLK
-Clock => Sum[3].CLK
+Clock => Sum~11.DATAIN
+Reset => Sum.OUTPUTSELECT
+Reset => Sum.OUTPUTSELECT
+Reset => Sum.OUTPUTSELECT
+Reset => Sum.OUTPUTSELECT
+Reset => Sum.OUTPUTSELECT
+Reset => Sum.OUTPUTSELECT
+Reset => Sum.OUTPUTSELECT
+Reset => Sum.OUTPUTSELECT
+Reset => Sum.OUTPUTSELECT
+Reset => Sum.OUTPUTSELECT
+Reset => Sum.OUTPUTSELECT
 Reset => Sum.OUTPUTSELECT
 Reset => Sum.OUTPUTSELECT
 Reset => Sum.OUTPUTSELECT
@@ -241,14 +249,26 @@ Control[0] => Mux0.IN5
 Control[0] => Mux1.IN5
 Control[0] => Mux2.IN5
 Control[0] => Mux3.IN5
+Control[0] => Mux4.IN5
+Control[0] => Mux5.IN5
+Control[0] => Mux6.IN5
+Control[0] => Mux7.IN5
+Control[0] => Mux8.IN5
+Control[0] => Mux9.IN5
 Control[1] => Mux0.IN4
 Control[1] => Mux1.IN4
 Control[1] => Mux2.IN4
 Control[1] => Mux3.IN4
-toDisplay[0] <= Sum[0].DB_MAX_OUTPUT_PORT_TYPE
-toDisplay[1] <= Sum[1].DB_MAX_OUTPUT_PORT_TYPE
-toDisplay[2] <= Sum[2].DB_MAX_OUTPUT_PORT_TYPE
-toDisplay[3] <= Sum[3].DB_MAX_OUTPUT_PORT_TYPE
+Control[1] => Mux4.IN4
+Control[1] => Mux5.IN4
+Control[1] => Mux6.IN4
+Control[1] => Mux7.IN4
+Control[1] => Mux8.IN4
+Control[1] => Mux9.IN4
+toDisplay[0] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+toDisplay[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+toDisplay[2] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+toDisplay[3] <= toDisplay.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Part4|hexDisplay:HD0

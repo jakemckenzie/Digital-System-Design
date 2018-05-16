@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Part3
-Sun May 13 12:29:04 2018
+Tue May 15 22:18:46 2018
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -13,15 +13,16 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. Removed Registers Triggering Further Register Optimizations
- 10. General Register Statistics
- 11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Port Connectivity Checks: "moduloNineCounter:M9C"
- 13. Port Connectivity Checks: "hello:H"
+  8. State Machine - |Part3|moduloNineCounter:M9C|Sum
+  9. Registers Removed During Synthesis
+ 10. Removed Registers Triggering Further Register Optimizations
+ 11. General Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Port Connectivity Checks: "moduloNineCounter:M9C"
  14. Post-Synthesis Netlist Statistics for Top Partition
  15. Elapsed Time Per Partition
  16. Analysis & Synthesis Messages
+ 17. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -48,7 +49,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun May 13 12:29:04 2018       ;
+; Analysis & Synthesis Status        ; Successful - Tue May 15 22:18:45 2018       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; Part3                                       ;
 ; Top-level Entity Name              ; Part3                                       ;
@@ -164,8 +165,7 @@ agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-;     Processors 3-4         ;   0.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -191,9 +191,9 @@ agreement for further details.
 ;                                             ;             ;
 ; Total combinational functions               ; 67          ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 3           ;
+;     -- 4 input functions                    ; 4           ;
 ;     -- 3 input functions                    ; 41          ;
-;     -- <=2 input functions                  ; 23          ;
+;     -- <=2 input functions                  ; 22          ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
 ;     -- normal mode                          ; 67          ;
@@ -235,6 +235,25 @@ agreement for further details.
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
+Encoding Type:  User-Encoded
++--------------------------------------------------+
+; State Machine - |Part3|moduloNineCounter:M9C|Sum ;
++----------+--------+--------+--------+------------+
+; Name     ; Sum~15 ; Sum~14 ; Sum~13 ; Sum~12     ;
++----------+--------+--------+--------+------------+
+; Sum.0000 ; 0      ; 0      ; 0      ; 0          ;
+; Sum.0001 ; 0      ; 0      ; 0      ; 1          ;
+; Sum.0010 ; 0      ; 0      ; 1      ; 0          ;
+; Sum.0011 ; 0      ; 0      ; 1      ; 1          ;
+; Sum.0100 ; 0      ; 1      ; 0      ; 0          ;
+; Sum.0101 ; 0      ; 1      ; 0      ; 1          ;
+; Sum.0110 ; 0      ; 1      ; 1      ; 0          ;
+; Sum.0111 ; 0      ; 1      ; 1      ; 1          ;
+; Sum.1000 ; 1      ; 0      ; 0      ; 0          ;
+; Sum.1001 ; 1      ; 0      ; 0      ; 1          ;
++----------+--------+--------+--------+------------+
+
+
 +--------------------------------------------------------------------------------+
 ; Registers Removed During Synthesis                                             ;
 +---------------------------------------+----------------------------------------+
@@ -248,7 +267,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; shiftRegister:SR|out7[3]              ; Stuck at GND due to stuck port data_in ;
 ; shiftRegister:SR|out8[3]              ; Stuck at GND due to stuck port data_in ;
 ; shiftRegister:SR|out1[3]              ; Stuck at GND due to stuck port data_in ;
-; moduloNineCounter:M9C|Sum[3]          ; Lost fanout                            ;
+; moduloNineCounter:M9C|Sum~15          ; Stuck at GND due to stuck port data_in ;
 ; Total Number of Removed Registers = 9 ;                                        ;
 +---------------------------------------+----------------------------------------+
 
@@ -270,7 +289,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
 ; Total registers                              ; 27    ;
-; Number of registers using Synchronous Clear  ; 5     ;
+; Number of registers using Synchronous Clear  ; 3     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
@@ -279,34 +298,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output      ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------+
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |Part3|shiftRegister:SR|out2[1] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |Part3|shiftRegister:SR|out2[0]  ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 4 LEs                ; 6 LEs                  ; No         ; |Part3|moduloNineCounter:M9C|Sum ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "moduloNineCounter:M9C"                                                                      ;
-+--------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port         ; Type   ; Severity ; Details                                                                             ;
-+--------------+--------+----------+-------------------------------------------------------------------------------------+
-; Control[1]   ; Input  ; Info     ; Stuck at GND                                                                        ;
-; Control[0]   ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; toDisplay[3] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "hello:H"                                                                                                                                                                                ;
-+------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port       ; Type  ; Severity ; Details                                                                                                                                                                            ;
-+------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Control    ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; Control[3] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
-+------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++---------------------------------------------------+
+; Port Connectivity Checks: "moduloNineCounter:M9C" ;
++------------+-------+----------+-------------------+
+; Port       ; Type  ; Severity ; Details           ;
++------------+-------+----------+-------------------+
+; Control[1] ; Input ; Info     ; Stuck at GND      ;
+; Control[0] ; Input ; Info     ; Stuck at VCC      ;
++------------+-------+----------+-------------------+
 
 
 +-----------------------------------------------------+
@@ -316,14 +325,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; boundary_port         ; 58                          ;
 ; cycloneiii_ff         ; 27                          ;
-;     SCLR              ; 5                           ;
-;     plain             ; 22                          ;
+;     SCLR              ; 3                           ;
+;     plain             ; 24                          ;
 ; cycloneiii_lcell_comb ; 91                          ;
 ;     normal            ; 91                          ;
 ;         1 data inputs ; 24                          ;
-;         2 data inputs ; 23                          ;
+;         2 data inputs ; 22                          ;
 ;         3 data inputs ; 41                          ;
-;         4 data inputs ; 3                           ;
+;         4 data inputs ; 4                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 2.00                        ;
 ; Average LUT depth     ; 1.59                        ;
@@ -345,7 +354,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Sun May 13 12:28:51 2018
+    Info: Processing started: Tue May 15 22:18:32 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Part3 -c Part3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -368,19 +377,24 @@ Info (12128): Elaborating entity "shiftRegister" for hierarchy "shiftRegister:SR
 Info (12128): Elaborating entity "hello" for hierarchy "hello:H" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW4/Part3/Part3.sv Line: 9
 Info (12128): Elaborating entity "moduloNineCounter" for hierarchy "moduloNineCounter:M9C" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW4/Part3/Part3.sv Line: 10
 Info (12128): Elaborating entity "hexDisplay" for hierarchy "hexDisplay:HD0" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW4/Part3/Part3.sv Line: 11
-Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 1 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW4/Part3/output_files/Part3.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Info (21057): Implemented 125 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 56 output pins
     Info (21061): Implemented 67 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 652 megabytes
-    Info: Processing ended: Sun May 13 12:29:04 2018
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:29
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 633 megabytes
+    Info: Processing ended: Tue May 15 22:18:46 2018
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:30
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW4/Part3/output_files/Part3.map.smsg.
 
 
