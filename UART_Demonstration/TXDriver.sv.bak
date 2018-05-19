@@ -6,7 +6,6 @@ module TXDriver(input logic Clock, Reset, TxEmpty, output logic XMitGo, output l
     logic [2:0]CurrentState = TX_INIT;
     logic [7:0]SV_MALLOC [0:255] /* synthesis ram_init_file = " sanity_test.mif" */;
     assign TxData = SV_MALLOC;
-    //^:TODO learn how to assign unpacked arrays to packed arrays properly.
     localparam TX_INIT          = 3'h0,
                TX_START         = 3'h1,
                TX_PROCESS_DATA  = 3'h2,
@@ -43,7 +42,7 @@ module TXDriver(input logic Clock, Reset, TxEmpty, output logic XMitGo, output l
                 TX_SEND_DATA: begin
                     CurrentState        <= TX_PROCESS_DATA;
                     XMitGo              <= 0;
-                    //SV_MALLOC            = SV_MALLOC + 1; :TODO fix this logic
+                    SV_MALLOC            = SV_MALLOC + 1;
                 end
                 TX_IDLE: begin
                     if (Counter != ROLLOVER) begin
