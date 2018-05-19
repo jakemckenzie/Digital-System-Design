@@ -4,7 +4,7 @@ module TXDriver(input logic Clock, Reset, TxEmpty, output logic XMitGo, output l
 
     logic [9:0]Counter = 0;
     logic [2:0]CurrentState = TX_INIT;
-    logic [7:0] SV_MALLOC[0:255] /* synthesis ram_init_file = " .mif" */;
+    logic [7:0] SV_MALLOC[0:255] /* synthesis ram_init_file = " data.mif" */;
     assign TxData = SV_MALLOC;
     localparam TX_INIT          = 3'h0,
                TX_START         = 3'h1,
@@ -23,15 +23,15 @@ module TXDriver(input logic Clock, Reset, TxEmpty, output logic XMitGo, output l
         end else begin
             case(CurrentState)
                 TX_INIT: begin
-                    CurrentState    <= TX_START;
-                    XMitGo          <= 0;
-                    SV_MALLOC       <= 0;
+                    CurrentState        <= TX_START;
+                    XMitGo              <= 0;
+                    SV_MALLOC           <= 0;
                 end
                 TX_START: begin
-                    CurrentState <= TxEmpty ? TX_PROCESS_DATA : TX_START;
+                    CurrentState        <= TxEmpty ? TX_PROCESS_DATA : TX_START;
                 end
                 TX_PROCESS_DATA: begin
-                    if (!TxEmpty && MIF_EOF_LENGTH != SV_MALLOC) begin
+                    if (!TxEmpty | MIF_EOF_LENGTH != SV_MALLOC) begin
                         XMitGo          <= 1;
                         CurrentState    <= TX_SEND_DATA;
                     end else begin
@@ -40,10 +40,16 @@ module TXDriver(input logic Clock, Reset, TxEmpty, output logic XMitGo, output l
                     end
                 end
                 TX_SEND_DATA: begin
-                    
+                    CurrentState        <= TX_PROCESS_DATA;
+                    XMitGo              <= 0;
+                    SV_MALLOC            = SV_MALLOC + 1;
                 end
                 TX_IDLE: begin
-
+                    if (Counter != ROLLOVER) begin
+                        Counter          = Counter + 1;
+                    end else begin
+                        CurrentState    <= TX_INIT;
+                    end
                 end
             endcase
         end
