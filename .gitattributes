@@ -1,0 +1,5 @@
+# these are text files
+*.sv  text
+*.do  text
+*.qpf text
+*.qsf text
