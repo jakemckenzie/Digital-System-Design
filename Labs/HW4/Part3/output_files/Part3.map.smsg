@@ -1,1 +1,0 @@
-Warning (10268): Verilog HDL information at moduloNineCounter.sv(12): always construct contains both blocking and non-blocking assignments File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW4/Part3/moduloNineCounter.sv Line: 12

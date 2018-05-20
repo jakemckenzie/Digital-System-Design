@@ -1,6 +1,0 @@
-module Part1(input logic KEY[0:0],input logic [1:0]SW,output logic LEDG[0:0],output logic [6:0]HEX0);
-    logic [3:0]foo;
-    //input logic Clock, w, Reset, output logic [3:0]y,output logic z
-    Part1FSM FSM(KEY[0],SW[1],SW[0],foo,LEDG[0]);
-    hexDisplay HD(foo,HEX0);
-endmodule

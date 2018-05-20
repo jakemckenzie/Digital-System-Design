@@ -1,5 +1,0 @@
-module Light(F, X1, X2);
-	input X1, X2;
-	output F;
-	assign F = (X1 & ~X2) | (~X1 & X2);
-endmodule	
