@@ -1,7 +1,5 @@
 //TODO: make the special .do files, instructions on canvas
 //TODO: make sdc files
-//TODO: Warning (10229): Verilog HDL Expression warning at Counter.sv(6): truncated literal to match 10 bits
-//TODO: Warning (10236): Verilog HDL Implicit Net warning at TXDriver.sv(18): created implicit net for "TXData"
 //TODO: Warning (10230): Verilog HDL assignment warning at TXDriver.sv(18): truncated value with size 8 to match size of target (1)
 //TODO: Warning (10230): Verilog HDL assignment warning at TXDriver.sv(46): truncated value with size 32 to match size of target (8)
 //TODO: Warning (10230): Verilog HDL assignment warning at TXDriver.sv(50): truncated value with size 32 to match size of target (26)
