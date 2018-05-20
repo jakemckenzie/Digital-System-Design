@@ -1,0 +1,40 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+do hello_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:30:05 on May 15,2018
+# vlog -reportprogress 300 ./hello.sv 
+# -- Compiling module hello
+# -- Compiling module hello_testbench
+# 
+# Top level modules:
+# 	hello_testbench
+# End time: 23:30:05 on May 15,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work hello_testbench 
+# Start time: 23:30:05 on May 15,2018
+# Loading sv_std.std
+# Loading work.hello_testbench
+# Loading work.hello
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Epimetheus  Hostname: EPIMETHEUS-PC  ProcessID: 12692
+#           Attempting to use alternate WLF file "./wlftyqg1a5".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftyqg1a5
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Control    NextState
+# 0        	1
+# 1        	2
+# 2        	3
+# 3        	3
+# 4        	4
+# 5        	0
+# 6        	0
+# 7        	0
+# ** Note: $stop    : ./hello.sv(50)
+#    Time: 80 ns  Iteration: 0  Instance: /hello_testbench
+# Break in Module hello_testbench at ./hello.sv line 50
+# End time: 23:30:37 on May 15,2018, Elapsed time: 0:00:32
+# Errors: 0, Warnings: 2

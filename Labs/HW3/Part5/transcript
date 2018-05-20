@@ -1,0 +1,46 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+do runlab.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:57:34 on May 05,2018
+# vlog -reportprogress 300 ./cntFourBit.sv 
+# -- Compiling module cntFourBit
+# -- Compiling module cntFourBit_testbench
+# 
+# Top level modules:
+# 	cntFourBit_testbench
+# End time: 14:57:35 on May 05,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work cntFourBit_testbench 
+# Start time: 14:57:35 on May 05,2018
+# Loading sv_std.std
+# Loading work.cntFourBit_testbench
+# Loading work.cntFourBit
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+do MHzCLock_runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:57:50 on May 05,2018
+# vlog -reportprogress 300 ./MHzCLock.sv 
+# -- Compiling module MHzCLock
+# -- Compiling module MHzCLock_testbench
+# 
+# Top level modules:
+# 	MHzCLock_testbench
+# End time: 14:57:50 on May 05,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 14:57:51 on May 05,2018, Elapsed time: 0:00:16
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work MHzCLock_testbench 
+# Start time: 14:57:51 on May 05,2018
+# Loading sv_std.std
+# Loading work.MHzCLock_testbench
+# Loading work.MHzCLock
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break key hit
+# Break in Module MHzCLock_testbench at ./MHzCLock.sv line 39
+# End time: 14:58:01 on May 05,2018, Elapsed time: 0:00:10
+# Errors: 0, Warnings: 0

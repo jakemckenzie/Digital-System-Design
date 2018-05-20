@@ -1,0 +1,106 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/Labs/HW2/Part4
+vBCD_Adder
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1524804271
+!i10b 1
+!s100 I2Dmem[[QhlGQihCH3GhH0
+IY=Yez^9VcTmECnV_MKFz_2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 BCD_Adder_sv_unit
+S1
+R0
+Z5 w1524800862
+Z6 8./BCD_Adder.sv
+Z7 F./BCD_Adder.sv
+L0 6
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1524804271.000000
+Z10 !s107 ./BCD_Adder.sv|
+Z11 !s90 -reportprogress|300|./BCD_Adder.sv|
+!i113 1
+Z12 tCvgOpt 0
+n@b@c@d_@adder
+vBCD_Adder_testbench
+R1
+R2
+!i10b 1
+!s100 ?3AKDRjJ7aDRIG?8bV4@f2
+IzcTGL2MfCdHmRc9bYmKf60
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 13
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+n@b@c@d_@adder_testbench
+vBCD_FourBitAdder
+R1
+Z13 !s110 1524800182
+!i10b 1
+!s100 =K6N3^@HFIz]<cQIdB?Z42
+I_<LUa=;i6W_mM1Mm:DfAa0
+R3
+Z14 !s105 BCD_FourBitAdder_sv_unit
+S1
+R0
+Z15 w1524695731
+Z16 8./BCD_FourBitAdder.sv
+Z17 F./BCD_FourBitAdder.sv
+L0 2
+R8
+r1
+!s85 0
+31
+Z18 !s108 1524800181.000000
+Z19 !s107 ./BCD_FourBitAdder.sv|
+Z20 !s90 -reportprogress|300|./BCD_FourBitAdder.sv|
+!i113 1
+R12
+n@b@c@d_@four@bit@adder
+vBCD_FourBitAdder_testbench
+R1
+R13
+!i10b 1
+!s100 63@Y`0Ik0U`ho5FI]`mWG2
+IIBDKc1`HeN[RifKldT9?k1
+R3
+R14
+S1
+R0
+R15
+R16
+R17
+L0 12
+R8
+r1
+!s85 0
+31
+R18
+R19
+R20
+!i113 1
+R12
+n@b@c@d_@four@bit@adder_testbench

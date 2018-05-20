@@ -1,0 +1,73 @@
+// TCES 330, Spring 2017
+// Updated for SystemVerilg
+// R. Gutmann
+// 4/15/2017
+//
+// This module implements a simple Toggle Flip Flop (TFF).
+// Note: Quartus won't let us call the TFF because it has a built-in TFF
+// so we call it TFFx.
+
+
+
+module TestTFF( T, Clk, ClrN, Q, QN );
+  
+	input T;    // toggle signal
+	
+	input Clk;  // system clock
+	
+	input ClrN; // synchronous (not) clear signal
+	
+  	output logic Q = 0;   // the output
+  
+
+	output QN;  // inverted output
+  
+  
+	assign QN = ~Q; // the inverted output
+  
+  
+
+	always @( posedge Clk ) begin
+    
+		if ( ~ClrN ) begin
+      
+			Q <= 0;
+    
+		end // not enabled
+    
+		else begin  // enabled
+      
+			if ( T ) 
+        
+			  Q <= ~Q;
+      
+			else 
+        
+			  Q <= Q;
+    
+		end  // enabled
+  
+	end  // always
+
+ 
+  
+
+/*
+	
+// if we use the built-in TFF, we will have trouble simulating in ModelSim
+  
+// change output Q to a wire
+  
+	wire PrN = 1'b1;
+  
+	tff tff0 ( .t(T), .clk(Clk), .clrn(ClrN), .prn(PrN), .q(Q) );
+  
+//tff tff0 ( .t(T), .clk(Clk), .clrn(ClrN), .q(Q) ); 
+  
+
+*/
+
+
+endmodule 
+
+

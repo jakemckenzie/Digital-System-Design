@@ -1,0 +1,120 @@
+|Part3
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => SW[2].IN1
+SW[3] => SW[3].IN1
+SW[4] => SW[4].IN1
+SW[5] => SW[5].IN1
+SW[6] => SW[6].IN1
+SW[7] => SW[7].IN1
+SW[8] => SW[8].IN1
+HEX1[6] << Decoder_part2:Decoder_for_display1.port1
+HEX1[5] << Decoder_part2:Decoder_for_display1.port1
+HEX1[4] << Decoder_part2:Decoder_for_display1.port1
+HEX1[3] << Decoder_part2:Decoder_for_display1.port1
+HEX1[2] << Decoder_part2:Decoder_for_display1.port1
+HEX1[1] << Decoder_part2:Decoder_for_display1.port1
+HEX1[0] << Decoder_part2:Decoder_for_display1.port1
+HEX0[6] << Decoder_part2:Decoder_for_display2.port1
+HEX0[5] << Decoder_part2:Decoder_for_display2.port1
+HEX0[4] << Decoder_part2:Decoder_for_display2.port1
+HEX0[3] << Decoder_part2:Decoder_for_display2.port1
+HEX0[2] << Decoder_part2:Decoder_for_display2.port1
+HEX0[1] << Decoder_part2:Decoder_for_display2.port1
+HEX0[0] << Decoder_part2:Decoder_for_display2.port1
+LEDR[0] << SW[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] << SW[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] << SW[2].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[3] << SW[3].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[4] << SW[4].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[5] << SW[5].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[6] << SW[6].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[7] << SW[7].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[8] << SW[8].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part3|FourBitAdder:FBA
+ci => ci.IN1
+vec_in_b[0] => vec_in_b[0].IN1
+vec_in_b[1] => vec_in_b[1].IN1
+vec_in_b[2] => vec_in_b[2].IN1
+vec_in_b[3] => vec_in_b[3].IN1
+vec_in_a[0] => vec_in_a[0].IN1
+vec_in_a[1] => vec_in_a[1].IN1
+vec_in_a[2] => vec_in_a[2].IN1
+vec_in_a[3] => vec_in_a[3].IN1
+vec_out_s[0] <= FullAdder:FA1.port3
+vec_out_s[1] <= FullAdder:FA2.port3
+vec_out_s[2] <= FullAdder:FA3.port3
+vec_out_s[3] <= FullAdder:FA4.port3
+c_out <= FullAdder:FA4.port4
+
+
+|Part3|FourBitAdder:FBA|FullAdder:FA1
+ci => s.IN1
+ci => c0.DATAB
+b => s.IN0
+b => c0.DATAA
+a => s.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c0 <= c0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part3|FourBitAdder:FBA|FullAdder:FA2
+ci => s.IN1
+ci => c0.DATAB
+b => s.IN0
+b => c0.DATAA
+a => s.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c0 <= c0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part3|FourBitAdder:FBA|FullAdder:FA3
+ci => s.IN1
+ci => c0.DATAB
+b => s.IN0
+b => c0.DATAA
+a => s.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c0 <= c0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part3|FourBitAdder:FBA|FullAdder:FA4
+ci => s.IN1
+ci => c0.DATAB
+b => s.IN0
+b => c0.DATAA
+a => s.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c0 <= c0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part3|Decoder_part2:Decoder_for_display1
+foo[0] => Decoder0.IN3
+foo[1] => Decoder0.IN2
+foo[2] => Decoder0.IN1
+foo[3] => Decoder0.IN0
+lambda[6] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+lambda[5] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+lambda[4] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+lambda[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+lambda[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+lambda[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+lambda[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part3|Decoder_part2:Decoder_for_display2
+foo[0] => Decoder0.IN3
+foo[1] => Decoder0.IN2
+foo[2] => Decoder0.IN1
+foo[3] => Decoder0.IN0
+lambda[6] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+lambda[5] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+lambda[4] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+lambda[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+lambda[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+lambda[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+lambda[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

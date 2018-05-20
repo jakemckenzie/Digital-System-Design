@@ -1,0 +1,13 @@
+|Light
+x1 => A.IN0
+x1 => B.IN1
+x1 => C.IN0
+x2 => C.IN1
+x2 => B.IN0
+x2 => A.IN1
+x3 => A.IN1
+x3 => C.IN1
+x3 => B.IN1
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+

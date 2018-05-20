@@ -1,0 +1,8 @@
+|Light
+F << F.DB_MAX_OUTPUT_PORT_TYPE
+X1 => F.IN0
+X1 => F.IN0
+X2 => F.IN1
+X2 => F.IN1
+
+
