@@ -1,1 +1,1 @@
-Warning (10268): Verilog HDL information at TXDriver.sv(20): always construct contains both blocking and non-blocking assignments File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/TXDriver.sv Line: 20
+Warning (10268): Verilog HDL information at TXDriver.sv(30): always construct contains both blocking and non-blocking assignments File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/TXDriver.sv Line: 30
