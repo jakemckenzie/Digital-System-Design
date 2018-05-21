@@ -6,8 +6,7 @@
 module UART_TX #(parameter WIDTH)( // WIDTH is the width of the data word
 	input clk, reset, send,
 	input[WIDTH-1:0] dataIn,
-	output dataOut, ready,
-	output [WIDTH+1:0] test
+	output dataOut, ready
 );
 	// the internal state requires space for a start and stop bit
 	localparam MAX_IDX = WIDTH+1;
@@ -17,12 +16,10 @@ module UART_TX #(parameter WIDTH)( // WIDTH is the width of the data word
 	logic [$clog2(MAX_IDX):0] count;
 	
 	
-	
-	
 	assign register[MAX_IDX] = 1'b1; // the stop bit
 	assign dataOut = register[0];
 	
-	assign test = register;
+	//assign test = register;
 	
 	assign ready = reset & (count == 0);
 	
@@ -42,7 +39,8 @@ module UART_TX #(parameter WIDTH)( // WIDTH is the width of the data word
 	end
 	
 	
-	generate for(genvar i=0; i<WIDTH; i++) begin: regs
+	genvar i;
+	generate for(i=0; i<WIDTH; i++) begin: regs
 		always_ff @(posedge clk) begin
 			if(reset) begin
 				if(ready & send) begin
@@ -67,19 +65,24 @@ module UART_TX_tb;
 	logic clk, reset, send;
 	logic[WIDTH-1:0] dataIn;
 	logic dataOut, ready;
-	logic [WIDTH+1:0] test;
+	//logic [WIDTH+1:0] test;
 	
-	UART_TX #(WIDTH) DUT(clk, reset, send, dataIn, dataOut, ready, test);
+	UART_TX #(WIDTH) DUT(clk, reset, send, dataIn, dataOut, ready);
 	
-	assign send = ready;
+	//assign send = ready;
 	
 	initial begin
 		dataIn = 8'h77;
 		reset=0;
+		send=0;
+		
 		clk=0; #10; clk=1; #10;
 		reset=1;
 		clk=0; #10; clk=1; #10;
-		
+		clk=0; #10; clk=1; #10;
+		send=1;
+		clk=0; #10; clk=1; #10;
+		send=0;
 		
 		for(int i =0; i<20; i++) begin clk=0; #10; clk=1; #10; end
 		
