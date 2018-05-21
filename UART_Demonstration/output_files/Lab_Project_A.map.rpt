@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab_Project_A
-Sat May 19 15:58:19 2018
+Mon May 21 16:21:18 2018
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -18,16 +18,14 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
  10. Registers Removed During Synthesis
  11. Removed Registers Triggering Further Register Optimizations
  12. General Register Statistics
- 13. Source assignments for TXDriver:TXD|ROM_Memory:RM|altsyncram:altsyncram_component|altsyncram_ika1:auto_generated
+ 13. Source assignments for TXDriver:TXD|ROM_Memory:RM|altsyncram:altsyncram_component|altsyncram_lr91:auto_generated
  14. Parameter Settings for User Entity Instance: TXDriver:TXD
  15. Parameter Settings for User Entity Instance: TXDriver:TXD|ROM_Memory:RM|altsyncram:altsyncram_component
  16. altsyncram Parameter Settings by Entity Instance
- 17. Port Connectivity Checks: "TXDriver:TXD|ROM_Memory:RM"
- 18. Port Connectivity Checks: "TXDriver:TXD"
- 19. Post-Synthesis Netlist Statistics for Top Partition
- 20. Elapsed Time Per Partition
- 21. Analysis & Synthesis Messages
- 22. Analysis & Synthesis Suppressed Messages
+ 17. Port Connectivity Checks: "TXDriver:TXD"
+ 18. Post-Synthesis Netlist Statistics for Top Partition
+ 19. Elapsed Time Per Partition
+ 20. Analysis & Synthesis Messages
 
 
 
@@ -54,7 +52,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat May 19 15:58:19 2018       ;
+; Analysis & Synthesis Status        ; Successful - Mon May 21 16:21:18 2018       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; Lab_Project_A                               ;
 ; Top-level Entity Name              ; Lab_Project_A                               ;
@@ -192,7 +190,7 @@ agreement for further details.
 ; altrom.inc                       ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altrom.inc                                    ;         ;
 ; altram.inc                       ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altram.inc                                    ;         ;
 ; altdpram.inc                     ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altdpram.inc                                  ;         ;
-; db/altsyncram_ika1.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/db/altsyncram_ika1.tdf ;         ;
+; db/altsyncram_lr91.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/db/altsyncram_lr91.tdf ;         ;
 +----------------------------------+-----------------+----------------------------------+------------------------------------------------------------------------------------------------------+---------+
 
 
@@ -280,9 +278,9 @@ Encoding Type:  User-Encoded
 +-------------------------+--------------------+-----------------------------------------------------------------------------------------+
 ; Register name           ; Reason for Removal ; Registers Removed due to This Register                                                  ;
 +-------------------------+--------------------+-----------------------------------------------------------------------------------------+
-; TXDriver:TXD|Counter[8] ; Lost Fanouts       ; TXDriver:TXD|Counter[7], TXDriver:TXD|Counter[6], TXDriver:TXD|Counter[5],              ;
-;                         ;                    ; TXDriver:TXD|Counter[4], TXDriver:TXD|Counter[3], TXDriver:TXD|Counter[2],              ;
-;                         ;                    ; TXDriver:TXD|Counter[1], TXDriver:TXD|Counter[0], TXDriver:TXD|Counter[9],              ;
+; TXDriver:TXD|Counter[4] ; Lost Fanouts       ; TXDriver:TXD|Counter[3], TXDriver:TXD|Counter[2], TXDriver:TXD|Counter[1],              ;
+;                         ;                    ; TXDriver:TXD|Counter[0], TXDriver:TXD|Counter[5], TXDriver:TXD|Counter[6],              ;
+;                         ;                    ; TXDriver:TXD|Counter[7], TXDriver:TXD|Counter[8], TXDriver:TXD|Counter[9],              ;
 ;                         ;                    ; TXDriver:TXD|Counter[10], TXDriver:TXD|Counter[11], TXDriver:TXD|Counter[12],           ;
 ;                         ;                    ; TXDriver:TXD|Counter[13], TXDriver:TXD|Counter[14], TXDriver:TXD|Counter[15],           ;
 ;                         ;                    ; TXDriver:TXD|Counter[16], TXDriver:TXD|Counter[17], TXDriver:TXD|Counter[18],           ;
@@ -311,7 +309,7 @@ Encoding Type:  User-Encoded
 
 
 +------------------------------------------------------------------------------------------------------------------+
-; Source assignments for TXDriver:TXD|ROM_Memory:RM|altsyncram:altsyncram_component|altsyncram_ika1:auto_generated ;
+; Source assignments for TXDriver:TXD|ROM_Memory:RM|altsyncram:altsyncram_component|altsyncram_lr91:auto_generated ;
 +---------------------------------+--------------------+------+----------------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                                 ;
 +---------------------------------+--------------------+------+----------------------------------------------------+
@@ -376,9 +374,9 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; INIT_FILE                          ; sanity_check.mif     ; Untyped                                     ;
 ; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                     ;
 ; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                     ;
-; CLOCK_ENABLE_INPUT_A               ; NORMAL               ; Untyped                                     ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                                     ;
 ; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                                     ;
-; CLOCK_ENABLE_OUTPUT_A              ; NORMAL               ; Untyped                                     ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                                     ;
 ; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                                     ;
 ; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                     ;
 ; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                     ;
@@ -386,7 +384,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                     ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                     ;
 ; DEVICE_FAMILY                      ; Cyclone IV E         ; Untyped                                     ;
-; CBXI_PARAMETER                     ; altsyncram_ika1      ; Untyped                                     ;
+; CBXI_PARAMETER                     ; altsyncram_lr91      ; Untyped                                     ;
 +------------------------------------+----------------------+---------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -409,18 +407,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     -- RAM_BLOCK_TYPE                     ; AUTO                                                       ;
 ;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                  ;
 +-------------------------------------------+------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "TXDriver:TXD|ROM_Memory:RM"                                                                                                                                                         ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                                                                                                                          ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; address ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (8 bits) it drives.  Extra input bit(s) "address[7..1]" will be connected to GND.                                  ;
-; clken   ; Input  ; Warning  ; Input port expression (8 bits) is wider than the input port (1 bits) it drives.  The 7 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; clock   ; Input  ; Warning  ; Input port expression (8 bits) is wider than the input port (1 bits) it drives.  The 7 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; q       ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                                                         ;
-+---------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------+
@@ -463,38 +449,34 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Sat May 19 15:58:05 2018
+    Info: Processing started: Mon May 21 16:21:06 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab_Project_A -c Lab_Project_A
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file lab_project_a.sv
     Info (12023): Found entity 1: Lab_Project_A File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/Lab_Project_A.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file txdriver.sv
-    Info (12023): Found entity 1: TXDriver File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/TXDriver.sv Line: 1
+    Info (12023): Found entity 1: TXDriver File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/TXDriver.sv Line: 11
 Info (12021): Found 1 design units, including 1 entities, in source file rom_memory.v
     Info (12023): Found entity 1: ROM_Memory File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/ROM_Memory.v Line: 40
 Warning (10229): Verilog HDL Expression warning at Counter.sv(6): truncated literal to match 10 bits File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/Counter.sv Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file counter.sv
     Info (12023): Found entity 1: Counter File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/Counter.sv Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at TXDriver.sv(18): created implicit net for "TXData" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/TXDriver.sv Line: 18
+Info (12021): Found 1 design units, including 1 entities, in source file txdriver_testbench.sv
+    Info (12023): Found entity 1: TXDriver_testbench File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/TXDriver_testbench.sv Line: 3
 Info (12127): Elaborating entity "Lab_Project_A" for the top level hierarchy
-Warning (10858): Verilog HDL warning at Lab_Project_A.sv(2): object TxOut used but never assigned File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/Lab_Project_A.sv Line: 2
-Warning (10030): Net "TxOut" at Lab_Project_A.sv(2) has no driver or initial value, using a default initial value '0' File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/Lab_Project_A.sv Line: 2
 Warning (10034): Output port "GPIO[0]" at Lab_Project_A.sv(1) has no driver File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/Lab_Project_A.sv Line: 1
 Info (12128): Elaborating entity "Counter" for hierarchy "Counter:C" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/Lab_Project_A.sv Line: 9
 Info (12128): Elaborating entity "TXDriver" for hierarchy "TXDriver:TXD" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/Lab_Project_A.sv Line: 10
-Warning (10036): Verilog HDL or VHDL warning at TXDriver.sv(18): object "TXData" assigned a value but never read File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/TXDriver.sv Line: 18
-Warning (10230): Verilog HDL assignment warning at TXDriver.sv(18): truncated value with size 8 to match size of target (1) File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/TXDriver.sv Line: 18
-Warning (10230): Verilog HDL assignment warning at TXDriver.sv(46): truncated value with size 32 to match size of target (8) File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/TXDriver.sv Line: 46
-Warning (10230): Verilog HDL assignment warning at TXDriver.sv(50): truncated value with size 32 to match size of target (26) File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/TXDriver.sv Line: 50
-Warning (10034): Output port "TxData" at TXDriver.sv(1) has no driver File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/TXDriver.sv Line: 1
-Info (12128): Elaborating entity "ROM_Memory" for hierarchy "TXDriver:TXD|ROM_Memory:RM" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/TXDriver.sv Line: 10
-Info (12128): Elaborating entity "altsyncram" for hierarchy "TXDriver:TXD|ROM_Memory:RM|altsyncram:altsyncram_component" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/ROM_Memory.v Line: 85
-Info (12130): Elaborated megafunction instantiation "TXDriver:TXD|ROM_Memory:RM|altsyncram:altsyncram_component" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/ROM_Memory.v Line: 85
-Info (12133): Instantiated megafunction "TXDriver:TXD|ROM_Memory:RM|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/ROM_Memory.v Line: 85
+Warning (10230): Verilog HDL assignment warning at TXDriver.sv(59): truncated value with size 32 to match size of target (8) File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/TXDriver.sv Line: 59
+Warning (10230): Verilog HDL assignment warning at TXDriver.sv(63): truncated value with size 32 to match size of target (26) File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/TXDriver.sv Line: 63
+Info (12128): Elaborating entity "ROM_Memory" for hierarchy "TXDriver:TXD|ROM_Memory:RM" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/TXDriver.sv Line: 26
+Info (12128): Elaborating entity "altsyncram" for hierarchy "TXDriver:TXD|ROM_Memory:RM|altsyncram:altsyncram_component" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/ROM_Memory.v Line: 82
+Info (12130): Elaborated megafunction instantiation "TXDriver:TXD|ROM_Memory:RM|altsyncram:altsyncram_component" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/ROM_Memory.v Line: 82
+Info (12133): Instantiated megafunction "TXDriver:TXD|ROM_Memory:RM|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/ROM_Memory.v Line: 82
     Info (12134): Parameter "address_aclr_a" = "NONE"
-    Info (12134): Parameter "clock_enable_input_a" = "NORMAL"
-    Info (12134): Parameter "clock_enable_output_a" = "NORMAL"
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
     Info (12134): Parameter "init_file" = "sanity_check.mif"
     Info (12134): Parameter "intended_device_family" = "Cyclone IV E"
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
@@ -506,25 +488,23 @@ Info (12133): Instantiated megafunction "TXDriver:TXD|ROM_Memory:RM|altsyncram:a
     Info (12134): Parameter "widthad_a" = "8"
     Info (12134): Parameter "width_a" = "8"
     Info (12134): Parameter "width_byteena_a" = "1"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_ika1.tdf
-    Info (12023): Found entity 1: altsyncram_ika1 File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/db/altsyncram_ika1.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_ika1" for hierarchy "TXDriver:TXD|ROM_Memory:RM|altsyncram:altsyncram_component|altsyncram_ika1:auto_generated" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_lr91.tdf
+    Info (12023): Found entity 1: altsyncram_lr91 File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/db/altsyncram_lr91.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_lr91" for hierarchy "TXDriver:TXD|ROM_Memory:RM|altsyncram:altsyncram_component|altsyncram_lr91:auto_generated" File: c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following RAM node(s):
-        Warning (14320): Synthesized away node "TXDriver:TXD|ROM_Memory:RM|altsyncram:altsyncram_component|altsyncram_ika1:auto_generated|q_a[0]" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/db/altsyncram_ika1.tdf Line: 36
-        Warning (14320): Synthesized away node "TXDriver:TXD|ROM_Memory:RM|altsyncram:altsyncram_component|altsyncram_ika1:auto_generated|q_a[1]" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/db/altsyncram_ika1.tdf Line: 58
-        Warning (14320): Synthesized away node "TXDriver:TXD|ROM_Memory:RM|altsyncram:altsyncram_component|altsyncram_ika1:auto_generated|q_a[2]" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/db/altsyncram_ika1.tdf Line: 80
-        Warning (14320): Synthesized away node "TXDriver:TXD|ROM_Memory:RM|altsyncram:altsyncram_component|altsyncram_ika1:auto_generated|q_a[3]" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/db/altsyncram_ika1.tdf Line: 102
-        Warning (14320): Synthesized away node "TXDriver:TXD|ROM_Memory:RM|altsyncram:altsyncram_component|altsyncram_ika1:auto_generated|q_a[4]" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/db/altsyncram_ika1.tdf Line: 124
-        Warning (14320): Synthesized away node "TXDriver:TXD|ROM_Memory:RM|altsyncram:altsyncram_component|altsyncram_ika1:auto_generated|q_a[5]" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/db/altsyncram_ika1.tdf Line: 146
-        Warning (14320): Synthesized away node "TXDriver:TXD|ROM_Memory:RM|altsyncram:altsyncram_component|altsyncram_ika1:auto_generated|q_a[6]" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/db/altsyncram_ika1.tdf Line: 168
-        Warning (14320): Synthesized away node "TXDriver:TXD|ROM_Memory:RM|altsyncram:altsyncram_component|altsyncram_ika1:auto_generated|q_a[7]" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/db/altsyncram_ika1.tdf Line: 190
-Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+        Warning (14320): Synthesized away node "TXDriver:TXD|ROM_Memory:RM|altsyncram:altsyncram_component|altsyncram_lr91:auto_generated|q_a[0]" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/db/altsyncram_lr91.tdf Line: 35
+        Warning (14320): Synthesized away node "TXDriver:TXD|ROM_Memory:RM|altsyncram:altsyncram_component|altsyncram_lr91:auto_generated|q_a[1]" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/db/altsyncram_lr91.tdf Line: 57
+        Warning (14320): Synthesized away node "TXDriver:TXD|ROM_Memory:RM|altsyncram:altsyncram_component|altsyncram_lr91:auto_generated|q_a[2]" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/db/altsyncram_lr91.tdf Line: 79
+        Warning (14320): Synthesized away node "TXDriver:TXD|ROM_Memory:RM|altsyncram:altsyncram_component|altsyncram_lr91:auto_generated|q_a[3]" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/db/altsyncram_lr91.tdf Line: 101
+        Warning (14320): Synthesized away node "TXDriver:TXD|ROM_Memory:RM|altsyncram:altsyncram_component|altsyncram_lr91:auto_generated|q_a[4]" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/db/altsyncram_lr91.tdf Line: 123
+        Warning (14320): Synthesized away node "TXDriver:TXD|ROM_Memory:RM|altsyncram:altsyncram_component|altsyncram_lr91:auto_generated|q_a[5]" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/db/altsyncram_lr91.tdf Line: 145
+        Warning (14320): Synthesized away node "TXDriver:TXD|ROM_Memory:RM|altsyncram:altsyncram_component|altsyncram_lr91:auto_generated|q_a[6]" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/db/altsyncram_lr91.tdf Line: 167
+        Warning (14320): Synthesized away node "TXDriver:TXD|ROM_Memory:RM|altsyncram:altsyncram_component|altsyncram_lr91:auto_generated|q_a[7]" File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/db/altsyncram_lr91.tdf Line: 189
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "GPIO[0]" is stuck at GND File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/Lab_Project_A.sv Line: 1
     Warning (13410): Pin "GPIO[1]" is stuck at GND File: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/Lab_Project_A.sv Line: 1
 Info (17049): 47 registers lost all their fanouts during netlist optimizations.
-Info (144001): Generated suppressed messages file C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/output_files/Lab_Project_A.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 2 input pin(s) that do not drive logic
@@ -533,16 +513,10 @@ Warning (21074): Design contains 2 input pin(s) that do not drive logic
 Info (21057): Implemented 4 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 2 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 28 warnings
-    Info: Peak virtual memory: 617 megabytes
-    Info: Processing ended: Sat May 19 15:58:19 2018
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:30
-
-
-+------------------------------------------+
-; Analysis & Synthesis Suppressed Messages ;
-+------------------------------------------+
-The suppressed messages can be found in C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/output_files/Lab_Project_A.map.smsg.
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 21 warnings
+    Info: Peak virtual memory: 606 megabytes
+    Info: Processing ended: Mon May 21 16:21:18 2018
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:28
 
 

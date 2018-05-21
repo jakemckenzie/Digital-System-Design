@@ -1,5 +1,5 @@
 module Lab_Project_A(input logic CLOCK_50,input logic [0:0]KEY,output logic [1:0]GPIO);
-    logic Clock,Reset,Enable,TxEmpty,XMitGo,TxOut;
+    logic Clock,Reset,Enable,TxEmpty,XMitGo,TxOut = 0;
     logic [7:0]TxData;
     
     assign Clock    = CLOCK_50;

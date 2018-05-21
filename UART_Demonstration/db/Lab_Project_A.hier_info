@@ -1,8 +1,8 @@
 |Lab_Project_A
 CLOCK_50 => Clock.IN1
 KEY[0] => Reset.IN1
-GPIO[0] <= <GND>
-GPIO[1] <= <GND>
+GPIO[0] << <GND>
+GPIO[1] << <GND>
 
 
 |Lab_Project_A|Counter:C
@@ -35,15 +35,15 @@ Reset => CurrentState.OUTPUTSELECT
 Reset => CurrentState.OUTPUTSELECT
 Reset => CurrentState.OUTPUTSELECT
 Reset => CurrentState.OUTPUTSELECT
-Reset => Counter[8].ENA
-Reset => Counter[7].ENA
-Reset => Counter[6].ENA
-Reset => Counter[5].ENA
 Reset => Counter[4].ENA
 Reset => Counter[3].ENA
 Reset => Counter[2].ENA
 Reset => Counter[1].ENA
 Reset => Counter[0].ENA
+Reset => Counter[5].ENA
+Reset => Counter[6].ENA
+Reset => Counter[7].ENA
+Reset => Counter[8].ENA
 Reset => Counter[9].ENA
 Reset => Counter[10].ENA
 Reset => Counter[11].ENA
@@ -65,14 +65,14 @@ TxEmpty => Selector1.IN4
 TxEmpty => always0.IN1
 TxEmpty => Selector0.IN2
 XMitGo <= XMitGo~reg0.DB_MAX_OUTPUT_PORT_TYPE
-TxData[0] <= <GND>
-TxData[1] <= <GND>
-TxData[2] <= <GND>
-TxData[3] <= <GND>
-TxData[4] <= <GND>
-TxData[5] <= <GND>
-TxData[6] <= <GND>
-TxData[7] <= <GND>
+TxData[0] <= ROM_Memory:RM.port2
+TxData[1] <= ROM_Memory:RM.port2
+TxData[2] <= ROM_Memory:RM.port2
+TxData[3] <= ROM_Memory:RM.port2
+TxData[4] <= ROM_Memory:RM.port2
+TxData[5] <= ROM_Memory:RM.port2
+TxData[6] <= ROM_Memory:RM.port2
+TxData[7] <= ROM_Memory:RM.port2
 
 
 |Lab_Project_A|TXDriver:TXD|ROM_Memory:RM
@@ -84,7 +84,6 @@ address[4] => address[4].IN1
 address[5] => address[5].IN1
 address[6] => address[6].IN1
 address[7] => address[7].IN1
-clken => clken.IN1
 clock => clock.IN1
 q[0] <= altsyncram:altsyncram_component.q_a
 q[1] <= altsyncram:altsyncram_component.q_a
@@ -110,20 +109,20 @@ data_a[5] => ~NO_FANOUT~
 data_a[6] => ~NO_FANOUT~
 data_a[7] => ~NO_FANOUT~
 data_b[0] => ~NO_FANOUT~
-address_a[0] => altsyncram_ika1:auto_generated.address_a[0]
-address_a[1] => altsyncram_ika1:auto_generated.address_a[1]
-address_a[2] => altsyncram_ika1:auto_generated.address_a[2]
-address_a[3] => altsyncram_ika1:auto_generated.address_a[3]
-address_a[4] => altsyncram_ika1:auto_generated.address_a[4]
-address_a[5] => altsyncram_ika1:auto_generated.address_a[5]
-address_a[6] => altsyncram_ika1:auto_generated.address_a[6]
-address_a[7] => altsyncram_ika1:auto_generated.address_a[7]
+address_a[0] => altsyncram_lr91:auto_generated.address_a[0]
+address_a[1] => altsyncram_lr91:auto_generated.address_a[1]
+address_a[2] => altsyncram_lr91:auto_generated.address_a[2]
+address_a[3] => altsyncram_lr91:auto_generated.address_a[3]
+address_a[4] => altsyncram_lr91:auto_generated.address_a[4]
+address_a[5] => altsyncram_lr91:auto_generated.address_a[5]
+address_a[6] => altsyncram_lr91:auto_generated.address_a[6]
+address_a[7] => altsyncram_lr91:auto_generated.address_a[7]
 address_b[0] => ~NO_FANOUT~
 addressstall_a => ~NO_FANOUT~
 addressstall_b => ~NO_FANOUT~
-clock0 => altsyncram_ika1:auto_generated.clock0
+clock0 => altsyncram_lr91:auto_generated.clock0
 clock1 => ~NO_FANOUT~
-clocken0 => altsyncram_ika1:auto_generated.clocken0
+clocken0 => ~NO_FANOUT~
 clocken1 => ~NO_FANOUT~
 clocken2 => ~NO_FANOUT~
 clocken3 => ~NO_FANOUT~
@@ -131,21 +130,21 @@ aclr0 => ~NO_FANOUT~
 aclr1 => ~NO_FANOUT~
 byteena_a[0] => ~NO_FANOUT~
 byteena_b[0] => ~NO_FANOUT~
-q_a[0] <= altsyncram_ika1:auto_generated.q_a[0]
-q_a[1] <= altsyncram_ika1:auto_generated.q_a[1]
-q_a[2] <= altsyncram_ika1:auto_generated.q_a[2]
-q_a[3] <= altsyncram_ika1:auto_generated.q_a[3]
-q_a[4] <= altsyncram_ika1:auto_generated.q_a[4]
-q_a[5] <= altsyncram_ika1:auto_generated.q_a[5]
-q_a[6] <= altsyncram_ika1:auto_generated.q_a[6]
-q_a[7] <= altsyncram_ika1:auto_generated.q_a[7]
+q_a[0] <= altsyncram_lr91:auto_generated.q_a[0]
+q_a[1] <= altsyncram_lr91:auto_generated.q_a[1]
+q_a[2] <= altsyncram_lr91:auto_generated.q_a[2]
+q_a[3] <= altsyncram_lr91:auto_generated.q_a[3]
+q_a[4] <= altsyncram_lr91:auto_generated.q_a[4]
+q_a[5] <= altsyncram_lr91:auto_generated.q_a[5]
+q_a[6] <= altsyncram_lr91:auto_generated.q_a[6]
+q_a[7] <= altsyncram_lr91:auto_generated.q_a[7]
 q_b[0] <= <GND>
 eccstatus[0] <= <GND>
 eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|Lab_Project_A|TXDriver:TXD|ROM_Memory:RM|altsyncram:altsyncram_component|altsyncram_ika1:auto_generated
+|Lab_Project_A|TXDriver:TXD|ROM_Memory:RM|altsyncram:altsyncram_component|altsyncram_lr91:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -218,14 +217,6 @@ clock0 => ram_block1a4.CLK0
 clock0 => ram_block1a5.CLK0
 clock0 => ram_block1a6.CLK0
 clock0 => ram_block1a7.CLK0
-clocken0 => ram_block1a0.ENA0
-clocken0 => ram_block1a1.ENA0
-clocken0 => ram_block1a2.ENA0
-clocken0 => ram_block1a3.ENA0
-clocken0 => ram_block1a4.ENA0
-clocken0 => ram_block1a5.ENA0
-clocken0 => ram_block1a6.ENA0
-clocken0 => ram_block1a7.ENA0
 q_a[0] <= ram_block1a0.PORTADATAOUT
 q_a[1] <= ram_block1a1.PORTADATAOUT
 q_a[2] <= ram_block1a2.PORTADATAOUT

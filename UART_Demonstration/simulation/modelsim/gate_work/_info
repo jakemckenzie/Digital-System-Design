@@ -1,0 +1,162 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/simulation/modelsim
+vCounter
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1526944930
+!i10b 1
+!s100 7]86k5A3f;omUb]loF3V`2
+IY<M15MOGS_E]H;5;k09mI1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 Counter_sv_unit
+S1
+R0
+w1526943196
+8C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/Counter.sv
+FC:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/Counter.sv
+L0 1
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1526944930.000000
+!s107 C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/Counter.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration|C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/Counter.sv|
+!i113 1
+Z6 o-sv -work work
+Z7 !s92 -sv -work work +incdir+C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration
+Z8 tCvgOpt 0
+n@counter
+vhard_block
+R1
+R2
+!i10b 1
+!s100 j0>O4<`LSaWhIeOTX^<W00
+Igkzn8IT=z3>4jPLRAWgjY3
+R3
+Z9 !s105 Lab_Project_A_7_1200mv_85c_slow_svo_unit
+S1
+R0
+Z10 w1526944904
+Z11 8Lab_Project_A_7_1200mv_85c_slow.svo
+Z12 FLab_Project_A_7_1200mv_85c_slow.svo
+L0 125
+R4
+r1
+!s85 0
+31
+R5
+Z13 !s107 Lab_Project_A_7_1200mv_85c_slow.svo|
+Z14 !s90 -reportprogress|300|-sv|-work|work|+incdir+.|Lab_Project_A_7_1200mv_85c_slow.svo|
+!i113 1
+R6
+Z15 !s92 -sv -work work +incdir+.
+R8
+vLab_Project_A
+R1
+R2
+!i10b 1
+!s100 2oaO9ER=e0lCZNP?kCPQl2
+I>Z9azERPGT8B5@=S`foL@1
+R3
+R9
+S1
+R0
+R10
+R11
+R12
+L0 32
+R4
+r1
+!s85 0
+31
+R5
+R13
+R14
+!i113 1
+R6
+R15
+R8
+n@lab_@project_@a
+vROM_Memory
+!s110 1526944931
+!i10b 1
+!s100 mi;eTO^?Ba6MmK_VlB`io1
+IO1Kj=UXQ`Xd6]7G@:aH^h1
+R3
+R0
+w1526939382
+8C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/ROM_Memory_bb.v
+FC:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/ROM_Memory_bb.v
+L0 35
+R4
+r1
+!s85 0
+31
+!s108 1526944931.000000
+!s107 C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/ROM_Memory_bb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration|C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/ROM_Memory_bb.v|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration
+R8
+n@r@o@m_@memory
+vTXDriver
+R1
+R2
+!i10b 1
+!s100 W=MGO]1aE=Iiia=dH0NfM2
+ICO``GJ^6;ll=NZomPi:1_3
+R3
+!s105 TXDriver_sv_unit
+S1
+R0
+w1526944688
+8C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/TXDriver.sv
+FC:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/TXDriver.sv
+L0 11
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/TXDriver.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration|C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/TXDriver.sv|
+!i113 1
+R6
+R7
+R8
+n@t@x@driver
+vTXDriver_testbench
+R1
+R2
+!i10b 1
+!s100 >6ERaL7ea[>gGWfYmNFc>1
+Iz1Om:Mn[J3Rgc:H7F8[I]2
+R3
+!s105 TXDriver_testbench_sv_unit
+S1
+R0
+w1526937154
+8C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/TXDriver_testbench.sv
+FC:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/TXDriver_testbench.sv
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/TXDriver_testbench.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration|C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/TXDriver_testbench.sv|
+!i113 1
+R6
+R7
+R8
+n@t@x@driver_testbench

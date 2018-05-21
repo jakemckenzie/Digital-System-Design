@@ -1,0 +1,59 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/simulation/modelsim
+vLab_Project_A
+DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z1 !s110 1526941136
+!i10b 1
+!s100 j6]eaelO[QYc_fjAFoAiL0
+I_k88iLJH:fBzVFY4UOjGC3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s105 Lab_Project_A_sv_unit
+S1
+R0
+w1526862306
+8C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/Lab_Project_A.sv
+FC:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/Lab_Project_A.sv
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1526941136.000000
+!s107 C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/Lab_Project_A.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration|C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/Lab_Project_A.sv|
+!i113 1
+o-sv -work work
+!s92 -sv -work work +incdir+C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration
+Z5 tCvgOpt 0
+n@lab_@project_@a
+vROM_Memory
+R1
+!i10b 1
+!s100 CZLW1QG3;Pf@MLR[o79BF3
+I>cI8>MS=B31Q97?ezQj7?1
+R2
+R0
+w1526939382
+8C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/ROM_Memory.v
+FC:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/ROM_Memory.v
+L0 40
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/ROM_Memory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration|C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/ROM_Memory.v|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration
+R5
+n@r@o@m_@memory

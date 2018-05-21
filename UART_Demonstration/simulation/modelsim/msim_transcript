@@ -1,0 +1,172 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+# do Lab_Project_A_run_msim_gate_systemverilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work gate_work 
+# Copying C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+. {Lab_Project_A_7_1200mv_85c_slow.svo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:05:28 on May 21,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+." Lab_Project_A_7_1200mv_85c_slow.svo 
+# -- Compiling module Lab_Project_A
+# -- Compiling module hard_block
+# 
+# Top level modules:
+# 	Lab_Project_A
+# End time: 16:05:28 on May 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration {C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/TXDriver_testbench.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:05:28 on May 21,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration" C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/TXDriver_testbench.sv 
+# -- Compiling module TXDriver_testbench
+# 
+# Top level modules:
+# 	TXDriver_testbench
+# End time: 16:05:28 on May 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration {C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/Counter.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:05:28 on May 21,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration" C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/Counter.sv 
+# -- Compiling module Counter
+# 
+# Top level modules:
+# 	Counter
+# End time: 16:05:28 on May 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration {C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/TXDriver.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:05:29 on May 21,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration" C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/TXDriver.sv 
+# -- Compiling module TXDriver
+# 
+# Top level modules:
+# 	TXDriver
+# End time: 16:05:29 on May 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration {C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/ROM_Memory.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:05:29 on May 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration" C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/ROM_Memory.v 
+# -- Compiling module ROM_Memory
+# 
+# Top level modules:
+# 	ROM_Memory
+# End time: 16:05:29 on May 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration {C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/ROM_Memory_bb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:05:29 on May 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration" C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/ROM_Memory_bb.v 
+# -- Compiling module ROM_Memory
+# 
+# Top level modules:
+# 	ROM_Memory
+# End time: 16:05:29 on May 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration {C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/ROM_Memory_inst.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:05:29 on May 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration" C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/ROM_Memory_inst.v 
+# ** Error: (vlog-13069) C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/ROM_Memory_inst.v(1): near "ROM_Memory_inst": syntax error, unexpected IDENTIFIER.
+# ** Error: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/ROM_Memory_inst.v(1): (vlog-13205) Syntax error found in the scope following 'ROM_Memory'. Is there a missing '::'?
+# End time: 16:05:29 on May 21,2018, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./Lab_Project_A_run_msim_gate_systemverilog.do line 15
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -vlog01compat -work work +incdir+C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration {C:/Users/Epimetheus/Documents/Git..."
+do Lab_Project_A_run_msim_gate_systemverilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work gate_work 
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+. {Lab_Project_A_7_1200mv_85c_slow.svo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:22:10 on May 21,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+." Lab_Project_A_7_1200mv_85c_slow.svo 
+# -- Compiling module Lab_Project_A
+# -- Compiling module hard_block
+# 
+# Top level modules:
+# 	Lab_Project_A
+# End time: 16:22:10 on May 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration {C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/TXDriver_testbench.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:22:10 on May 21,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration" C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/TXDriver_testbench.sv 
+# -- Compiling module TXDriver_testbench
+# 
+# Top level modules:
+# 	TXDriver_testbench
+# End time: 16:22:10 on May 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration {C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/Counter.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:22:10 on May 21,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration" C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/Counter.sv 
+# -- Compiling module Counter
+# 
+# Top level modules:
+# 	Counter
+# End time: 16:22:10 on May 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration {C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/TXDriver.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:22:10 on May 21,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration" C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/TXDriver.sv 
+# -- Compiling module TXDriver
+# 
+# Top level modules:
+# 	TXDriver
+# End time: 16:22:10 on May 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration {C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/ROM_Memory.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:22:10 on May 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration" C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/ROM_Memory.v 
+# -- Compiling module ROM_Memory
+# 
+# Top level modules:
+# 	ROM_Memory
+# End time: 16:22:11 on May 21,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration {C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/ROM_Memory_bb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:22:11 on May 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration" C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/ROM_Memory_bb.v 
+# -- Compiling module ROM_Memory
+# 
+# Top level modules:
+# 	ROM_Memory
+# End time: 16:22:11 on May 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration {C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/ROM_Memory_inst.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:22:11 on May 21,2018
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration" C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/ROM_Memory_inst.v 
+# ** Error: (vlog-13069) C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/ROM_Memory_inst.v(1): near "ROM_Memory_inst": syntax error, unexpected IDENTIFIER.
+# ** Error: C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration/ROM_Memory_inst.v(1): (vlog-13205) Syntax error found in the scope following 'ROM_Memory'. Is there a missing '::'?
+# End time: 16:22:11 on May 21,2018, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./Lab_Project_A_run_msim_gate_systemverilog.do line 15
+# C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -vlog01compat -work work +incdir+C:/Users/Epimetheus/Documents/GitHub/Digital-System-Design/UART_Demonstration {C:/Users/Epimetheus/Documents/Git..."
