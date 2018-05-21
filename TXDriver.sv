@@ -1,7 +1,5 @@
 //TODO: make the special .do files, instructions on canvas
 //TODO: make sdc files
-//TODO: Warning (10229): Verilog HDL Expression warning at Counter.sv(6): truncated literal to match 10 bits
-//TODO: Warning (10236): Verilog HDL Implicit Net warning at TXDriver.sv(18): created implicit net for "TXData"
 //TODO: Warning (10230): Verilog HDL assignment warning at TXDriver.sv(18): truncated value with size 8 to match size of target (1)
 //TODO: Warning (10230): Verilog HDL assignment warning at TXDriver.sv(46): truncated value with size 32 to match size of target (8)
 //TODO: Warning (10230): Verilog HDL assignment warning at TXDriver.sv(50): truncated value with size 32 to match size of target (26)
@@ -19,20 +17,19 @@ module TXDriver(input logic Enable, Reset, TxEmpty, output logic XMitGo, output 
     //logic [7:0]SV_MALLOC [0:255] /* synthesis ram_init_file = " sanity_test.mif" */;
     ROM_Memory RM(Enable,Address,SV_MALLOC);//Rom memory.
 
-    localparam TX_INIT          = 3'h0,
-               TX_START         = 3'h1,
-               TX_PROCESS_DATA  = 3'h2,
-               TX_SEND_DATA     = 3'h3,
-               TX_IDLE          = 3'h4;
+    localparam TX_INIT                   = 3'h0,
+               TX_START                  = 3'h1,
+               TX_PROCESS_DATA           = 3'h2,
+               TX_SEND_DATA              = 3'h3,
+               TX_IDLE                   = 3'h4;
 
-    assign TXData = SV_MALLOC;
+    assign TXData                        = SV_MALLOC;
                                                             //Got the idea for this moore machine from this
     always_ff @(posedge Enable) begin                       //http://web.mit.edu/6.111/www/f2017/handouts/L06.pdf
         if (Reset) begin
-            CurrentState                <= TX_INIT;
             XMitGo                      <= 0;
             Address                     <= 0;
-            Counter                     <= 0;
+            CurrentState                <= TX_INIT; 
         end else begin
             case(CurrentState)
                 TX_INIT: begin                              //In the initial state is for setting indexes to zero and going to start
@@ -95,7 +92,7 @@ module TXDriver_testbench();
         #100;
         Reset = 0;
         TxEmpty = 1;
-        $monitor("      %d|      %d|     %b|     %d|     %d|     %c ", State, Address, Reset, XMitGo, TxEmpty, TxData);
+        $monitor("      %d      %d,     %b,     %d,     %d,     %c ", State, Address, Reset, XMitGo, TxEmpty, TxData);
 	    #2708368;//((26.042*10^(-6))*(13*8))/(10^(-9))
 	    $stop;
     end
