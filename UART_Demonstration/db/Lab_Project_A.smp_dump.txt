@@ -1,8 +1,0 @@
-
-State Machine - |Lab_Project_A|TXDriver:TXD|CurrentState
-Name CurrentState~9 CurrentState~8 CurrentState~7 
-CurrentState.TX_INIT 0 0 0 
-CurrentState.TX_START 0 0 1 
-CurrentState.TX_PROCESS_DATA 0 1 0 
-CurrentState.TX_SEND_DATA 0 1 1 
-CurrentState.TX_IDLE 1 0 0 
