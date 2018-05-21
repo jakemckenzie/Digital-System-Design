@@ -4,7 +4,6 @@ vlib work
 # Compile Verilog
 #     All Verilog files that are part of this design should have
 #     their own "vlog" line below.
-vlog "./ShiftRegister_PtoS.sv"
 vlog "./UART_TX.sv"
 
 

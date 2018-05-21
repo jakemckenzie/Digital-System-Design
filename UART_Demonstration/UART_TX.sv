@@ -65,24 +65,18 @@ module UART_TX_tb;
 	logic clk, reset, send;
 	logic[WIDTH-1:0] dataIn;
 	logic dataOut, ready;
-	//logic [WIDTH+1:0] test;
 	
 	UART_TX #(WIDTH) DUT(clk, reset, send, dataIn, dataOut, ready);
 	
-	//assign send = ready;
+	assign send = ready;
 	
 	initial begin
-		dataIn = 8'h77;
+		dataIn = 8'h8a;
 		reset=0;
-		send=0;
 		
 		clk=0; #10; clk=1; #10;
 		reset=1;
 		clk=0; #10; clk=1; #10;
-		clk=0; #10; clk=1; #10;
-		send=1;
-		clk=0; #10; clk=1; #10;
-		send=0;
 		
 		for(int i =0; i<20; i++) begin clk=0; #10; clk=1; #10; end
 		
