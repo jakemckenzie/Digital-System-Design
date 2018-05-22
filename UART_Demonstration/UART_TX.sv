@@ -10,10 +10,11 @@ module UART_TX #(parameter WIDTH)( // WIDTH is the width of the data word
 );
 	// the internal state requires space for a start and stop bit
 	localparam MAX_IDX = WIDTH+1;
+	localparam CNT_SZ  = $clog2(WIDTH+1);
 	
 	logic[MAX_IDX:0] register;
 	
-	logic [$clog2(MAX_IDX):0] count;
+	logic [CNT_SZ-1:0] count;
 	
 	
 	assign register[MAX_IDX] = 1'b1; // the stop bit
@@ -24,10 +25,10 @@ module UART_TX #(parameter WIDTH)( // WIDTH is the width of the data word
 	assign ready = reset & (count == 0);
 	
 	always_ff @(posedge clk) begin
-		if(reset) begin
+		if(!reset) begin
 			if(ready & send) begin
 				register[0] = 1'b0; // start bit
-				count = WIDTH+1;
+				count = CNT_SZ'(WIDTH+1);
 			end else if(!ready) begin
 				count--;
 				register[0] = register[1];
@@ -42,7 +43,7 @@ module UART_TX #(parameter WIDTH)( // WIDTH is the width of the data word
 	genvar i;
 	generate for(i=0; i<WIDTH; i++) begin: regs
 		always_ff @(posedge clk) begin
-			if(reset) begin
+			if(!reset) begin
 				if(ready & send) begin
 					register[i+1] = dataIn[i];
 				end else if(!ready) begin
