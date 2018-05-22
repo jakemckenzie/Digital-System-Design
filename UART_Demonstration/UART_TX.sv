@@ -22,7 +22,7 @@ module UART_TX #(parameter WIDTH)( // WIDTH is the width of the data word
 	
 	//assign test = register;
 	
-	assign ready = reset & (count == 0);
+	assign ready = !reset & (count == 0);
 	
 	always_ff @(posedge clk) begin
 		if(!reset) begin
@@ -70,10 +70,10 @@ module UART_TX_tb;
 	
 	initial begin
 		dataIn = 8'h8a;
-		reset=0;
+		reset=1;
 		
 		clk=0; #10; clk=1; #10;
-		reset=1;
+		reset=0;
 		clk=0; #10; clk=1; #10;
 		
 		for(int i =0; i<20; i++) begin clk=0; #10; clk=1; #10; end
