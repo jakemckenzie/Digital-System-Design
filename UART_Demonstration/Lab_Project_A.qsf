@@ -1117,13 +1117,21 @@ set_location_assignment PIN_V24 -to HSMC_CLKOUT_N2
 set_instance_assignment -name IO_STANDARD LVDS -to HSMC_CLKOUT_N2
 set_location_assignment PIN_G24 -to HSMC_CLKOUT_N1
 set_instance_assignment -name IO_STANDARD LVDS -to HSMC_CLKOUT_N1
+
 set_global_assignment -name EDA_TEST_BENCH_FILE TXDriver_testbench.sv -section_id TXDriver_testbench
 set_global_assignment -name EDA_TEST_BENCH_FILE TXDriver.sv -section_id TXDriver_testbench
 set_global_assignment -name EDA_TEST_BENCH_FILE Pulser.sv -section_id TXDriver_testbench
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+
 set_global_assignment -name SDC_FILE Lab_Project_A.out.sdc
 set_global_assignment -name SYSTEMVERILOG_FILE Lab_Project_A.sv
 set_global_assignment -name SYSTEMVERILOG_FILE Pulser.sv
 set_global_assignment -name SYSTEMVERILOG_FILE UART_TX.sv
 set_global_assignment -name SYSTEMVERILOG_FILE TXDriver.sv
 set_global_assignment -name SYSTEMVERILOG_FILE TXDriver_testbench.sv
+
+
+
+
+
+
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
