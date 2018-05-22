@@ -13,16 +13,22 @@ module TXDriver_testbench();
         Enable = !Enable;
         #10;
     end
+    
+    assign TxEmpty = !XMitGo;
+    
     initial begin
-        $display("State   |   Address   |   Reset   |   TxEmpty   |   XMitGo    |   TxData");
+        //$display("State   |   Address   |   Reset   |   TxEmpty   |   XMitGo    |   TxData");
+        $display("Reset   |   XMitGo   |   TxEmpty   |   TxData");
     end
+    
     initial begin
         Reset = 1;
-        TxEmpty = 0;
+        //TxEmpty = 0;
         #100;
         Reset = 0;
-        TxEmpty = 1;
-        $monitor("      %d|      %d|     %b|     %d|     %d|     %c", State, Address, Reset, XMitGo, TxEmpty, TxData);
+        //TxEmpty = 1;
+        //$monitor("      %d|      %d|     %b|     %d|     %d|     %c", State, Address, Reset, XMitGo, TxEmpty, TxData);
+        $monitor("     %b|     %d|     %d|     %c", Reset, XMitGo, TxEmpty, TxData);
 	    #2708368;//((26.042*10^(-6))*(13*8))/(10^(-9))
 	    $stop;
     end

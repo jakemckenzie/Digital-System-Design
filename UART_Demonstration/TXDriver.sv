@@ -13,49 +13,64 @@
 module TXDriver(
 	input        Clock, Reset, TxEmpty,
 	output logic XMitGo,
-	output [7:0] TxData
+	output logic[7:0] TxData
+	//output [7:0]mem [0:255]
 );
-    //parameter ROLLOVER = 38_399;        //rollover for the counter.
-    parameter MIF_EOF_LENGTH = 16;      //File lengths are done in 8 bit chunks.
+    parameter MEM_MAX = 12;      //File lengths are done in 8 bit chunks.
 	
 	// these are our states
 	localparam TX_INIT          = 3'h0,
-               //TX_START         = 3'h1,
-               //TX_PROCESS_DATA  = 3'h2,
                TX_SEND_DATA     = 3'h1,
                TX_DATA_SENT     = 3'h2,
                TX_IDLE          = 3'h3; // waiting for next second
-	 
-    logic [7:0]Address,SV_MALLOC;        //Bus for SV_Malloc and Memory
-    //logic [25:0]Counter = 0;            //Counter for internal clock of TXDriver 
-    logic [2:0]CurrentState = TX_INIT;  //Current State for construction of FSM
-    //logic [7:0]SV_MALLOC [0:255] /* synthesis ram_init_file = " sanity_test.mif" */;
+	
+	logic Enable;
+    logic [7:0]Address; //SV_MALLOC;   //Bus for SV_Malloc and Memory
+    logic [2:0]CurrentState = TX_INIT; //Current State for construction of FSM
+    
+//    (* ram_init_file = "ROM.mif" *)
+//    logic [7:0]SV_MALLOC [0:255]; // /* synthesis ram_init_file = "ROM.mif" */;
+    
+    //logic [0:255][7:0]SV_MALLOC  /* synthesis ram_init_file = "ROM.mif" */;
     
     //ROM_Memory RM(Address,Clock,SV_MALLOC);//Rom memory.
-    //assign TxData = SV_MALLOC;
+    //assign mem = SV_MALLOC;
     
-    assign TxData = 8'h58;
-
-	// enable once per second
-	logic Enable;
-	//Pulser #(50_000_000) pulse(Clock, Enable);
+    //assign addr = Address;
+    
+    //assign TxData = 8'h58;
+	
+	
+	logic [0:12][7:0] mem ={ 8'd72,8'd101,8'd108,8'd111,8'd32,8'd87,
+	8'd111,8'd114,8'd108,8'd100,8'd33,8'd10};
+	
+//	initial begin
+//		mem[0]  = 8'd72;
+//		mem[1]  = 8'd101;
+//		mem[2]  = 8'd108;
+//		mem[3]  = 8'd108;
+//		mem[4]  = 8'd111;
+//		mem[5]  = 8'd32;
+//		mem[6]  = 8'd87;
+//		mem[7]  = 8'd111;
+//		mem[8]  = 8'd114;
+//		mem[9]  = 8'd108;
+//		mem[10] = 8'd100;
+//		mem[11] = 8'd33;
+//		mem[12] = 8'd10;
+//	end
+	
+	//Pulser #(50_000_000) pulse(Clock, Enable); // enable once per second
 	
 	Pulser #(50) pulse(Clock, Enable);
 	
-	//assign test = CurrentState;
-	
-//	always_ff @(posedge Enable)
-//		if(CurrentState == TX_IDLE) 
-	
-	
-
     
                                                             //Got the idea for this moore machine from this
     always_ff @(posedge Clock) begin                       //http://web.mit.edu/6.111/www/f2017/handouts/L06.pdf
+        TxData <= mem[Address];
+        
         if (Reset) begin
             CurrentState                <= TX_INIT;
-//            XMitGo                      <= 0;
-//            Address                     <= 0;
         end else begin
             case(CurrentState)
             TX_INIT: begin //Initalize The driver
@@ -74,7 +89,7 @@ module TXDriver(
             
             TX_DATA_SENT: begin // reset XMitGo. increment Address
             	XMitGo       <= 0;
-            	if(Address == MIF_EOF_LENGTH) begin
+            	if(Address == MEM_MAX) begin
             		CurrentState <= TX_INIT;
             	end else begin
             		Address++;
@@ -108,8 +123,6 @@ module TXDriver(
 //                        CurrentState    <= TX_INIT;
 //                    end
 //                end
-
-                
             endcase
         end
     end
@@ -118,22 +131,24 @@ endmodule
 
 
 module TXDriver_tb;
-	logic      clk, reset, empty, go;
+	logic      clk, reset, ready_in, send_out;
 	logic[7:0] data;
+	logic[7:0] mem[0:255];
 	//logic[2:0] state;
 	
-	TXDriver DUT(clk, reset, empty, go, data);
+	TXDriver DUT(clk, reset, ready_in, send_out, data);
 	
-	
+	assign ready_in = !send_out;
 	
 	initial begin
 		reset=0;
-		empty=0;
+		//ready_in=0;
 		clk=0; #10; clk=1; #10;
 		
-		$monitor("go: %b", go);
+		$monitor("send (XMitGo): %b", send_out);
+		//$monitor("Addr: %h", addr);
 		
-		assert(go==0);
+		assert(send_out==0);
 		reset=1;
 		clk=0; #10; clk=1; #10;
 		
@@ -142,11 +157,11 @@ module TXDriver_tb;
 		
 //		empty=0;
 //		clk=0; #10; clk=1; #10;
-		empty=1;
-		for(int i=0; i<200; i++) begin
+		//ready_in=1;
+		for(int i=0; i<2000; i++) begin
 			clk=0; #10; clk=1; #10;
 			
-			if(go) empty =0;
+			//if(send_out) ready_in =0;
 			
 		end
 		

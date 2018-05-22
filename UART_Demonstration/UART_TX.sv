@@ -54,9 +54,6 @@ module UART_TX #(parameter WIDTH)( // WIDTH is the width of the data word
 			end
 		end
 	end endgenerate
-	
-	
-	
 endmodule
 
 
