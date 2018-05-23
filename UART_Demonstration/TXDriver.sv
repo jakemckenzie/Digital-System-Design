@@ -6,7 +6,7 @@ module TXDriver #(parameter DIVISOR)(
 	output logic XMitGo,
 	output logic[7:0] TxData
 );
-	parameter MEM_MAX = 12;      //File lengths are done in 8 bit chunks.
+	localparam MEM_MAX = 12;      //File lengths are done in 8 bit chunks.
 	
 	// these are our states
 	localparam TX_INIT      = 3'h0, // initialize this module
@@ -31,8 +31,8 @@ module TXDriver #(parameter DIVISOR)(
 	
 	/******************************* END MEMORY *******************************/
 	
-	//Pulser #(50_000_000) pulse(Clock, Enable); // enable once per second
-	Pulser #(DIVISOR) pulse(Clock, Enable);
+	// produce the Enable signal
+	Pulser #(DIVISOR) Enable_pulse(Clock, Enable);
 	
 	assign TxData = mem[Address];
 	

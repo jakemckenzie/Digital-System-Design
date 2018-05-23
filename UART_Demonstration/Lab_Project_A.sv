@@ -6,11 +6,9 @@ module Lab_Project_A(input CLOCK_50,input [0:0]KEY,output [1:1]GPIO);
 	assign GPIO[1]  = TxOut;
 	
 	// produce 38_400 baud signal
-	Pulser #(1302) clock(CLOCK_50, Clock);
-	//Counter C(Clock,Enable);
+	Pulser #(1302) UART_clock(CLOCK_50, Clock);
 	
 	UART_TX #(8) xmit(Clock, Reset, XMitGo, TxData, TxOut, TxEmpty);
 	
-	
-	TXDriver TXD(CLOCK_50,Reset,TxEmpty,XMitGo,TxData);
+	TXDriver #(50_000_000) TXD(CLOCK_50,Reset,TxEmpty,XMitGo,TxData);
 endmodule
