@@ -28,14 +28,14 @@ module UART_TX #(parameter WIDTH)( // WIDTH is the width of the data word
 		if(!reset) begin
 			if(ready & send) begin
 				register[0] = 1'b0; // start bit
-				count = CNT_SZ'(WIDTH+1);
+				count = CNT_SZ'(WIDTH + 1);
 			end else if(!ready) begin
 				count--;
 				register[0] = register[1];
 			end
 		end else begin
-			count =0;
-			register[0] =1'b1;
+			count = 0;
+			register[0] = 1'b1;
 		end
 	end
 	
@@ -45,12 +45,12 @@ module UART_TX #(parameter WIDTH)( // WIDTH is the width of the data word
 		always_ff @(posedge clk) begin
 			if(!reset) begin
 				if(ready & send) begin
-					register[i+1] = dataIn[i];
+					register[i + 1] = dataIn[i];
 				end else if(!ready) begin
-					register[i+1] = register[i+2];
+					register[i + 1] = register[i+2];
 				end
 			end else begin
-				register[i+1] = 1'b1;
+				register[i + 1] = 1'b1;
 			end
 		end
 	end endgenerate

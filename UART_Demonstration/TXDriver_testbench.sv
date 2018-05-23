@@ -29,7 +29,7 @@ module TXDriver_testbench();
         //TxEmpty = 1;
         //$monitor("      %d|      %d|     %b|     %d|     %d|     %c", State, Address, Reset, XMitGo, TxEmpty, TxData);
         $monitor("     %b|     %d|     %d|     %c", Reset, XMitGo, TxEmpty, TxData);
-	    #2708368;//((26.042*10^(-6))*(13*8))/(10^(-9))
+	    #2708334;//((26.042*10^(-6))*(13*8))/(10^(-9))
 	    $stop;
     end
 endmodule
