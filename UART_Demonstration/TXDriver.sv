@@ -25,22 +25,17 @@ module TXDriver #(parameter DIVISOR)(
 	
 	logic[7:0] mem[0:255] /* synthesis ram_init_file = "ROM.mif" */;
 	
-	
-	// one way to do it
-	//logic [7:0] mem[0:12] ={ 8'd72, 8'd101 ,8'd108, 8'd108, 8'd111, 8'd32, 8'd87, 8'd111, 8'd114, 8'd108, 8'd100, 8'd33, 8'd10};
+	assign TxData = mem[Address];
 	
 	/******************************* END MEMORY *******************************/
 	
 	// produce the Enable signal
 	Pulser #(DIVISOR) Enable_pulse(Clock, Enable);
 	
-	assign TxData = mem[Address];
 	
 	// Got the idea for this moore machine from this
 	// http://web.mit.edu/6.111/www/f2017/handouts/L06.pdf
 	always_ff @(posedge Clock) begin 
-		
-		
 		if (Reset) begin
 			CurrentState <= TX_INIT;
 		end else begin
@@ -81,7 +76,6 @@ module TXDriver_tb;
 	logic      clk, reset, ready_in, send_out;
 	logic[7:0] data;
 	logic[7:0] mem[0:255];
-	//logic[2:0] state;
 	
 	TXDriver #(50) DUT(clk, reset, ready_in, send_out, data);
 	
@@ -103,9 +97,8 @@ module TXDriver_tb;
 		reset=0;
 		clk=0; #10; clk=1; #10;
 		
-		for(int i=0; i<2000; i++) begin clk=0; #10; clk=1; #10; end
+		for(int i=0; i<1000; i++) begin clk=0; #10; clk=1; #10; end
 	end
-	
 endmodule
 
 
