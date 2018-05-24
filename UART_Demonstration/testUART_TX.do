@@ -17,11 +17,6 @@ vsim -voptargs="+acc" -t 1ps -lib work UART_TX_tb
 #     the module you are testing.
 do wave_UART_TX.do
 
-# Set the window types
-#view wave
-#view structure
-#view signals
-
 # Run the simulation
 run -all
 

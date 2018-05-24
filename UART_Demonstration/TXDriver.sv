@@ -12,8 +12,9 @@ module TXDriver #(parameter DIVISOR)(
 	localparam TX_INIT      = 3'h0, // initialize this module
 	           TX_IDLE      = 3'h1, // waiting for next second
 	           TX_SEND_DATA = 3'h2, // set XMitGo high
-	           TX_DATA_SENT = 3'h3; // set XMitGo low, increment address
-	           
+	           TX_WAIT      = 3'h3, // wait until UART is ready for next byte
+	           TX_DATA_SENT = 3'h4; // set XMitGo low, increment address
+	
 	
 	logic Enable;
 	logic [7:0]Address; //SV_MALLOC;   //Bus for SV_Malloc and Memory
@@ -21,7 +22,11 @@ module TXDriver #(parameter DIVISOR)(
 	
 	/********************************* MEMORY *********************************/
 	
-	//ROM_Memory RM(Address,Clock,SV_MALLOC);//Rom memory.
+//	ROM	ROM_inst (
+//	.address ( Address ),
+//	.clock ( Clock ),
+//	.q ( TxData )
+//	);
 	
 	logic[7:0] mem[0:255] /* synthesis ram_init_file = "ROM.mif" */;
 	
@@ -37,8 +42,6 @@ module TXDriver #(parameter DIVISOR)(
 	// http://web.mit.edu/6.111/www/f2017/handouts/L06.pdf
 	always_ff @(posedge Clock) begin 
 		if (Reset) begin
-			CurrentState <= TX_INIT;
-		end else begin
 			case(CurrentState)
 			TX_INIT: begin //Initalize The driver
 				CurrentState <= TX_IDLE;
@@ -48,6 +51,7 @@ module TXDriver #(parameter DIVISOR)(
 			
 			// wait for enable, and the UART being ready
 			TX_IDLE: if(Enable & TxEmpty) CurrentState <= TX_SEND_DATA;
+			
 			
 			TX_SEND_DATA: begin // assert XMitGo until UART acknowleges
 				XMitGo              <= 1;
@@ -60,17 +64,22 @@ module TXDriver #(parameter DIVISOR)(
 					CurrentState <= TX_INIT;
 				end else begin
 					Address++;
-					CurrentState <= TX_IDLE;
+					CurrentState <= TX_WAIT;
 				end
+			end
+			
+			TX_WAIT: begin
+				if(TxEmpty) CurrentState <= TX_SEND_DATA;
 			end
 			
 			default: CurrentState   <= TX_INIT; // Reset just-in-case
 			endcase
-		end
+		end else CurrentState <= TX_INIT;
 	end
 endmodule
 
 
+`timescale 1 ps / 1 ps
 
 module TXDriver_tb;
 	logic      clk, reset, ready_in, send_out;
@@ -84,20 +93,20 @@ module TXDriver_tb;
 	
 	initial begin
 		$readmemh("ROM.txt", DUT.mem);
-		reset=0;
+		reset=1;
 		clk=0; #10; clk=1; #10;
 		
 		$display("Address | State | Output");
 		$monitor("%h        %d       %c", DUT.Address, DUT.CurrentState, data);
 		
 		assert(send_out==0);
-		reset=1;
-		clk=0; #10; clk=1; #10;
-		
 		reset=0;
 		clk=0; #10; clk=1; #10;
 		
-		for(int i=0; i<1000; i++) begin clk=0; #10; clk=1; #10; end
+		reset=1;
+		clk=0; #10; clk=1; #10;
+		
+		for(int i=0; i<200; i++) begin clk=0; #10; clk=1; #10; end
 	end
 endmodule
 
