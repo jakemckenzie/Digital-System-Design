@@ -1,4 +1,4 @@
-`timescale 1ns/1ns
+`timescale 1s/1s
 
 module TXDriver_testbench();
 	logic Enable, Reset, TxEmpty, XMitGo;
