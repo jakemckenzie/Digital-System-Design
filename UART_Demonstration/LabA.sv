@@ -1,3 +1,21 @@
+/* Authors:		Ammon Dodson & Jake McKenzie
+ * Date:		May 25, 2018
+ * Title:		UART LABORATORY ASSIGNMENT
+ * Introduction:The most ubiquitous serial port adapters found within microcontrollers 
+ *				today are universal asynchronous receiver transmitters (UART). UART traces
+ *				it’s roots back to Gordon Bell who developed it for the PDP series of 
+ *				computers. In this laboratory assignment we will demonstrate this serial
+ *				communication, both by sending and receiving, between two Altera DE2-115
+ *				8-N-1, a common shorthand for a serial port setting in which there are 
+ *				eight data bits, no parity bits and one stop bit. The primary objective
+ *				of this laboratory report is to gain experience with UART’s and these other
+ *				common techniques associated with UART. The primary problem associated with
+ *				UART is to ensure synchronization of an asynchronous signal.
+ *
+ *Description:	In this module we instantiate two modules. Feeding them the needed clock
+ *				which was asked of us in the assignment specifcations.
+ */
+
 module LabA(input CLOCK_50,input [0:0]KEY,output [1:1]GPIO);
 	logic Clock,Reset,Enable,TxEmpty,XMitGo,TxOut;
 	logic [7:0]TxData;
