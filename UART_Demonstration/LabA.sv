@@ -12,7 +12,7 @@
  *				common techniques associated with UART. The primary problem associated with
  *				UART is to ensure synchronization of an asynchronous signal.
  *
- *This module:	In this module we instantiate two modules. Feeding them the needed clock
+ *Description:	In this module we instantiate two modules. Feeding them the needed clock
  *				which was asked of us in the assignment specifcations.
  */
 

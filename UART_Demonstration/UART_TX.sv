@@ -1,6 +1,8 @@
-/**	A generic UART transmitter
- *	All functions are syncronous
- *	Ammon Dodson
+/* Authors:		Ammon Dodson & Jake McKenzie
+ * Date:		May 25, 2018
+ * Title:		UART LABORATORY ASSIGNMENT
+ * Description:	In this module we created a shift register which converted
+ *				parellel data to serial data. 
  */
 
 module UART_TX #(parameter WIDTH)( // WIDTH is the width of the data word
