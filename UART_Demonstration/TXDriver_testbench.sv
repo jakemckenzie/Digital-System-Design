@@ -18,7 +18,7 @@ module TXDriver_testbench();
 	initial begin
 		$display("Reset   |   XMitGo   |   TxEmpty   |   TxData");
 
-		$readmemh("ROM.txt", DUT.mem);
+		//$readmemh("ROM.hex", DUT.mem);
 		Reset = 0;
 		
 		#100;

@@ -1,15 +1,16 @@
 
 
 # no point in tracking Quartus & modsim output
-UART_Demonstration/db
-UART_Demonstration/output_files
-UART_Demonstration/work
-UART_Demonstration/simulation
-UART_Demonstration/incremental_db
-UART_Demonstration/greybox_tmp
+**/db
+**/output_files
+**/work
+**/incremental_db
+**/greybox_tmp
+**/gate_work
 
 *.wlf
 *.rpt
-*.bak
+*.bak*
 *.qws
+*.ver
 

@@ -22,15 +22,15 @@ module TXDriver #(parameter DIVISOR)(
 	
 	/********************************* MEMORY *********************************/
 	
-//	ROM	ROM_inst (
-//	.address ( Address ),
-//	.clock ( Clock ),
-//	.q ( TxData )
-//	);
+	ROM	ROM_inst (
+	.address ( Address ),
+	.clock ( Clock ),
+	.q ( TxData )
+	);
 	
-	logic[7:0] mem[0:255] /* synthesis ram_init_file = "ROM.mif" */;
+	//logic[7:0] mem[0:255] /* synthesis ram_init_file = "ROM.mif" */;
 	
-	assign TxData = mem[Address];
+	//assign TxData = mem[Address];
 	
 	/******************************* END MEMORY *******************************/
 	
@@ -92,7 +92,7 @@ module TXDriver_tb;
 	assign ready_in = !send_out;
 	
 	initial begin
-		$readmemh("ROM.txt", DUT.mem);
+		//$readmemh("ROM.hex", DUT.mem);
 		reset=1;
 		clk=0; #10; clk=1; #10;
 		
