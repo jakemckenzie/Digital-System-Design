@@ -6,6 +6,7 @@ UART_Demonstration/output_files
 UART_Demonstration/work
 UART_Demonstration/simulation
 UART_Demonstration/incremental_db
+UART_Demonstration/greybox_tmp
 
 *.wlf
 *.rpt
