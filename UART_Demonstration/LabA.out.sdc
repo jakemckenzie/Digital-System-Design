@@ -1,4 +1,4 @@
-## Generated SDC file "Lab_Project_A.out.sdc"
+## Generated SDC file "LabA.out.sdc"
 
 ## Copyright (C) 2017  Intel Corporation. All rights reserved.
 ## Your use of Intel Corporation's design tools, logic functions 
@@ -20,7 +20,7 @@
 ## PROGRAM "Quartus Prime"
 ## VERSION "Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition"
 
-## DATE    "Mon May 21 19:24:57 2018"
+## DATE    "Wed May 23 19:27:58 2018"
 
 ##
 ## DEVICE  "EP4CE115F29C7"
@@ -39,7 +39,8 @@ set_time_format -unit ns -decimal_places 3
 # Create Clock
 #**************************************************************
 
-create_clock -name {Clock} -period 20.000 -waveform { 0.000 10.000 } [get_ports {CLOCK_50}]
+create_clock -name {altera_reserved_tck} -period 100.000 -waveform { 0.000 50.000 } [get_ports {altera_reserved_tck}]
+create_clock -name {systemClock} -period 20.000 -waveform { 0.000 10.000 } [get_ports {CLOCK_50}]
 
 
 #**************************************************************
@@ -58,10 +59,14 @@ create_clock -name {Clock} -period 20.000 -waveform { 0.000 10.000 } [get_ports 
 # Set Clock Uncertainty
 #**************************************************************
 
-set_clock_uncertainty -rise_from [get_clocks {Clock}] -rise_to [get_clocks {Clock}]  1.000  
-set_clock_uncertainty -rise_from [get_clocks {Clock}] -fall_to [get_clocks {Clock}]  1.000  
-set_clock_uncertainty -fall_from [get_clocks {Clock}] -rise_to [get_clocks {Clock}]  1.000  
-set_clock_uncertainty -fall_from [get_clocks {Clock}] -fall_to [get_clocks {Clock}]  1.000  
+set_clock_uncertainty -rise_from [get_clocks {systemClock}] -rise_to [get_clocks {systemClock}]  1.000  
+set_clock_uncertainty -rise_from [get_clocks {systemClock}] -fall_to [get_clocks {systemClock}]  1.000  
+set_clock_uncertainty -fall_from [get_clocks {systemClock}] -rise_to [get_clocks {systemClock}]  1.000  
+set_clock_uncertainty -fall_from [get_clocks {systemClock}] -fall_to [get_clocks {systemClock}]  1.000  
+set_clock_uncertainty -rise_from [get_clocks {altera_reserved_tck}] -rise_to [get_clocks {altera_reserved_tck}]  1.000  
+set_clock_uncertainty -rise_from [get_clocks {altera_reserved_tck}] -fall_to [get_clocks {altera_reserved_tck}]  1.000  
+set_clock_uncertainty -fall_from [get_clocks {altera_reserved_tck}] -rise_to [get_clocks {altera_reserved_tck}]  1.000  
+set_clock_uncertainty -fall_from [get_clocks {altera_reserved_tck}] -fall_to [get_clocks {altera_reserved_tck}]  1.000  
 
 
 #**************************************************************
@@ -80,6 +85,7 @@ set_clock_uncertainty -fall_from [get_clocks {Clock}] -fall_to [get_clocks {Cloc
 # Set Clock Groups
 #**************************************************************
 
+set_clock_groups -asynchronous -group [get_clocks {altera_reserved_tck}] 
 
 
 #**************************************************************
