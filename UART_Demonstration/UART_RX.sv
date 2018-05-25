@@ -1,6 +1,8 @@
-
-/**	A generic UART revceiver
- *	@param SAMPLES should be a power of 2
+/* Authors:		Ammon Dodson & Jake McKenzie
+ * Date:		May 25, 2018
+ * Title:		UART LABORATORY ASSIGNMENT
+ * Description:	A generic UART revceiver
+ *				@param SAMPLES should be a power of 2
  */
 module UART_RX #(parameter WIDTH, PARITY, SAMPLES, BUF_ADDR_SZ)(
 	input clk, TxIn,

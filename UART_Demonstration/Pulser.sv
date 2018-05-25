@@ -1,4 +1,8 @@
-// A generic clock divider
+/* Authors:		Ammon Dodson & Jake McKenzie
+ * Date:		May 25, 2018
+ * Title:		UART LABORATORY ASSIGNMENT
+ * Description:	A generic clock divider.
+ */
 module Pulser #(parameter DIVISOR) (
 	input Clk,
 	output reg pulse

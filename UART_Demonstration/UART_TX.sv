@@ -3,6 +3,7 @@
  * Title:		UART LABORATORY ASSIGNMENT
  * Description:	In this module we created a shift register which converted
  *				parellel data to serial data. 
+ *				All functions are syncronous
  */
 
 module UART_TX #(parameter WIDTH)( // WIDTH is the width of the data word
