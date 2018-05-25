@@ -25,7 +25,7 @@ module UART_RX #(parameter WIDTH, PARITY, SAMPLES, BUF_ADDR_SZ)(
 	//localparam HIGH_CUT = (SAMPLES/2)+1, LOW_CUT = (SAMPLES/2)-1;
 	
 	always_ff @(posedge clk) begin
-		if(TsIn) begin
+		if(TxIn) begin
 			if(sampleSum<SAMPLES-1) sampleSum++;
 		end else begin
 			if(sampleSum>0) sampleSum--;
@@ -34,14 +34,11 @@ module UART_RX #(parameter WIDTH, PARITY, SAMPLES, BUF_ADDR_SZ)(
 		else                    sample =0;
 	end
 	
-	
 	/** WORD BUFFER **/
 	
 	localparam WORD_BUF_W = WIDTH + PARITY; // +1 for startbit
 	logic[WORD_BUF_W-1:0] bitBuf;
 	logic[$clog2(WORD_BUF_W)-1:0] pos;
-	
-	
 	
 	/** STATE MACHINE **/
 	
@@ -71,18 +68,20 @@ module UART_RX #(parameter WIDTH, PARITY, SAMPLES, BUF_ADDR_SZ)(
 		DATA: if(counter == SAMPLES) writeBitBuf;
 		      else                   counter++;
 		
-		END: // wait for stop bit
-		
+		END: if(counter == SAMPLES) begin
+			if(sample) writeBitBuf;
+			else state = IDLE; // we're desyncronized
+		end else counter++;
 		default: state = INIT; // complain
-	end
+	endcase
+	
 	
 	task writeBitBuf;
-		wordBuffer[pos] = sample;
-		count = 0;
+		bitBuf[pos] = sample;
+		counter = 0;
 		
 		if(pos == WORD_BUF_W-1) state = END;
 		else pos++;
-		
 	endtask
 	
 	
@@ -93,14 +92,14 @@ endmodule
 
 
 module UART_RX_tb;
-	parameter WIDTH=8, PARITY=0, STOP=1;
+	parameter WIDTH=8, PARITY=0;
 	parameter SAMPLES=16, BUF_ADDR_SZ=4;
 	
-	logic clk, TxIn,
-	logic [(2**BUF_ADDR_SZ)-1:0][WIDTH-1:0] Buffer,
-	logic [BUF_ADDR_SZ-1:0] writeAddr
+	logic clk, TxIn;
+	logic [(2**BUF_ADDR_SZ)-1:0][WIDTH-1:0] Buffer;
+	logic [BUF_ADDR_SZ-1:0] writeAddr;
 	
-	UART_RX #(WIDTH, PARITY, STOP, SAMPLES, BUF_ADDR_SZ)
+	UART_RX #(WIDTH, PARITY, SAMPLES, BUF_ADDR_SZ)
 		DUT(clock, TxIn, Buffer, writeAddr);
 	
 	initial begin
