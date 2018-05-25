@@ -1,11 +1,4 @@
-/* Authors:		Ammon Dodson & Jake McKenzie
- * Date:		May 25, 2018
- * Title:		UART LABORATORY ASSIGNMENT
- * Description:	The UART Driver. This module creates a
- *				finite state machine with 5 states,
- * 				Each state is geared around making a
- *				tight control flow and waits for the UART
- *				instead of a counter to synchronize the signal.
+/** The UART Driver
  */
 
 module TXDriver #(parameter DIVISOR)(

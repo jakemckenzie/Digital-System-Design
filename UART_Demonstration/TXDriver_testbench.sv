@@ -1,11 +1,3 @@
-/* Authors:		Ammon Dodson & Jake McKenzie
- * Date:		May 25, 2018
- * Title:		UART LABORATORY ASSIGNMENT
- * Description:	This testbench just runs the driver for the
- *				transmitter. Because the driver is meant for
- *				transmitting, one need but run it to test it.
- */
-
 `timescale 1s/1s
 
 module TXDriver_testbench();
