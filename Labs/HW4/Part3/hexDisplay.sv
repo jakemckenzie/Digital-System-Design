@@ -24,11 +24,11 @@ module hexDisplay(input logic [3:0]foo, output logic [0:6]lambda);
     always_comb
     begin
         case(foo)
-            4'h0: lambda = 7'h7F; // ' '
-            4'h1: lambda = 7'h48; // 'H'
-            4'h2: lambda = 7'h30; // 'E'
-            4'h3: lambda = 7'h71; // 'L'
-            4'h4: lambda = 7'h01; // 'O'
+            8'h20: lambda = 7'h7F; // ' '
+            8'h48: lambda = 7'h48; // 'H'
+            8'h65: lambda = 7'h30; // 'e'
+            8'h6c: lambda = 7'h71; // 'l'
+            8'h6f: lambda = 7'h01; // 'o'
             default: lambda = 7'h7F;//default signal is no display
         endcase    
     end

@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition"
 
-// DATE "05/25/2018 22:39:55"
+// DATE "05/26/2018 13:43:23"
 
 // 
 // Device: Altera EP4CE115F29C7 Package FBGA780
@@ -195,7 +195,7 @@ wire \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_sh
 wire \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_shift_cntr_reg[0]~2_combout ;
 wire \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_shift_cntr_reg[2]~1_combout ;
 wire \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_incr_addr~2_combout ;
-wire \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[7]~10_combout ;
+wire \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[5]~10_combout ;
 wire \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[2]~14 ;
 wire \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[3]~15_combout ;
 wire \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[3]~16 ;
@@ -228,11 +228,11 @@ wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag
 wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[3]~15_combout ;
 wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|Equal0~2_combout ;
 wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|virtual_dr_scan_reg~q ;
-wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[1]~12_combout ;
+wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[4]~12_combout ;
 wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[3]~16 ;
 wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[4]~17_combout ;
-wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[1]~11_combout ;
-wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[1]~19_combout ;
+wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[4]~11_combout ;
+wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[4]~19_combout ;
 wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[0]~8 ;
 wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[1]~9_combout ;
 wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[1]~10 ;
@@ -247,8 +247,8 @@ wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag
 wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|identity_contrib_shift_reg[0]~feeder_combout ;
 wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric_ident_writedata[0]~feeder_combout ;
 wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric_ident_writedata[0]~0_combout ;
-wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[1]~6_combout ;
-wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[1]~7_combout ;
+wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[0]~6_combout ;
+wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[0]~7_combout ;
 wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[0]~0_combout ;
 wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg~8_combout ;
 wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg~9_combout ;
@@ -272,10 +272,10 @@ wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag
 wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_minor_ver_reg~1_combout ;
 wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_minor_ver_reg~0_combout ;
 wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[0]~11_combout ;
-wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[0]~13_combout ;
-wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[0]~22_combout ;
+wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[1]~13_combout ;
+wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[1]~22_combout ;
 wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|clear_signal~combout ;
-wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[0]~23_combout ;
+wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[1]~23_combout ;
 wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[0]~12 ;
 wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[1]~14_combout ;
 wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[1]~15 ;
@@ -288,7 +288,7 @@ wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag
 wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|WORD_SR~9_combout ;
 wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|WORD_SR~10_combout ;
 wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|WORD_SR~11_combout ;
-wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|WORD_SR[1]~12_combout ;
+wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|WORD_SR[0]~12_combout ;
 wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|WORD_SR~8_combout ;
 wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|WORD_SR~7_combout ;
 wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|WORD_SR~4_combout ;
@@ -297,11 +297,11 @@ wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag
 wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|tdo_mux_out~7_combout ;
 wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|tdo_mux_out~8_combout ;
 wire \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[0]~7_combout ;
-wire \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[3]~17_combout ;
-wire \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[3]~19_combout ;
+wire \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[0]~17_combout ;
+wire \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[0]~19_combout ;
 wire \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_incr_addr~0_combout ;
 wire \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|clear_signal~combout ;
-wire \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[3]~18_combout ;
+wire \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[0]~18_combout ;
 wire \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[0]~8 ;
 wire \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[1]~9_combout ;
 wire \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[1]~10 ;
@@ -314,7 +314,7 @@ wire \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_g
 wire \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR~11_combout ;
 wire \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR~12_combout ;
 wire \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR~13_combout ;
-wire \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[3]~3_combout ;
+wire \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[1]~3_combout ;
 wire \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR~4_combout ;
 wire \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR~7_combout ;
 wire \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR~9_combout ;
@@ -326,10 +326,10 @@ wire \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_g
 wire \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR~2_combout ;
 wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|irf_reg[1][5]~feeder_combout ;
 wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|irf_reg[1][5]~q ;
-wire \xmit|count~1_combout ;
-wire \xmit|count[0]~0_combout ;
 wire \xmit|count~2_combout ;
+wire \xmit|count[0]~1_combout ;
 wire \xmit|count~3_combout ;
+wire \xmit|count~4_combout ;
 wire \xmit|ready~0_combout ;
 wire \xmit|ready~1_combout ;
 wire \TXD|CurrentState~17_combout ;
@@ -439,10 +439,10 @@ wire \TXD|CurrentState~15_combout ;
 wire \TXD|CurrentState.TX_SEND_DATA~q ;
 wire \TXD|Selector5~0_combout ;
 wire \TXD|XMitGo~q ;
-wire \xmit|register[0]~2_combout ;
+wire \xmit|count[3]~0_combout ;
 wire \xmit|Add0~0_combout ;
 wire \xmit|always0~0_combout ;
-wire \xmit|count[3]~4_combout ;
+wire \xmit|count[3]~5_combout ;
 wire \TXD|CurrentState~19_combout ;
 wire \TXD|CurrentState.TX_DATA_SENT~q ;
 wire \TXD|CurrentState~16_combout ;
@@ -450,7 +450,7 @@ wire \TXD|Add0~0_combout ;
 wire \TXD|Selector13~0_combout ;
 wire \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|process_0~2_combout ;
 wire \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg~8_combout ;
-wire \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg[7]~1_combout ;
+wire \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg[0]~1_combout ;
 wire \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg~7_combout ;
 wire \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg~6_combout ;
 wire \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg~5_combout ;
@@ -478,45 +478,45 @@ wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag
 wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|node_ena~2_combout ;
 wire \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|node_ena~3_combout ;
 wire \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|enable_write~0_combout ;
-wire \xmit|register~11_combout ;
-wire \xmit|register~12_combout ;
 wire \xmit|register~10_combout ;
+wire \xmit|register~11_combout ;
 wire \xmit|register~9_combout ;
 wire \xmit|register~8_combout ;
 wire \xmit|register~7_combout ;
 wire \xmit|register~6_combout ;
 wire \xmit|register~5_combout ;
 wire \xmit|register~4_combout ;
-wire \xmit|register[0]~13_combout ;
-wire \xmit|register[0]~3_combout ;
+wire \xmit|register~3_combout ;
+wire \xmit|register[0]~12_combout ;
+wire \xmit|register[0]~2_combout ;
 wire \altera_internal_jtag~TDO ;
-wire [9:0] \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|jtag_ir_reg ;
-wire [3:0] \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_shift_cntr_reg ;
-wire [3:0] \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR ;
-wire [3:0] \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_minor_ver_reg ;
-wire [3:0] \xmit|count ;
-wire [3:0] \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|identity_contrib_shift_reg ;
-wire [6:0] \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ir_loaded_address_reg ;
-wire [3:0] \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|WORD_SR ;
+wire [8:0] \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|irsr_reg ;
 wire [7:0] \TXD|ROM_inst|altsyncram_component|auto_generated|altsyncram1|q_a ;
 wire [4:0] \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter ;
-wire [15:0] \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|shadow_jsm|state ;
-wire [7:0] \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg ;
-wire [2:0] \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_mode_reg ;
 wire [9:0] \xmit|register ;
-wire [4:0] \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter ;
+wire [7:0] \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg ;
+wire [9:0] \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|jtag_ir_reg ;
 wire [7:0] \TXD|ROM_inst|altsyncram_component|auto_generated|altsyncram1|q_b ;
-wire [7:0] \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg ;
-wire [8:0] \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|irsr_reg ;
-wire [10:0] \UART_clock|count ;
+wire [4:0] \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter ;
 wire [7:0] \TXD|Address ;
-wire [0:0] \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|virtual_ir_tdo_sel_reg ;
+wire [6:0] \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ir_loaded_address_reg ;
+wire [3:0] \xmit|count ;
+wire [3:0] \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR ;
+wire [7:0] \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg ;
+wire [3:0] \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_shift_cntr_reg ;
+wire [10:0] \UART_clock|count ;
 wire [25:0] \TXD|Enable_pulse|count ;
+wire [15:0] \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|shadow_jsm|state ;
 wire [3:0] \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg ;
-wire [3:0] \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric_ident_writedata ;
 wire [2:0] \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|shadow_jsm|tms_cnt ;
 wire [4:0] \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal ;
 wire [30:0] \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|splitter_nodes_receive_0 ;
+wire [3:0] \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|WORD_SR ;
+wire [3:0] \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_minor_ver_reg ;
+wire [0:0] \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|virtual_ir_tdo_sel_reg ;
+wire [2:0] \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_mode_reg ;
+wire [3:0] \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric_ident_writedata ;
+wire [3:0] \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|identity_contrib_shift_reg ;
 
 wire [17:0] \TXD|ROM_inst|altsyncram_component|auto_generated|altsyncram1|ram_block3a0_PORTADATAOUT_bus ;
 wire [17:0] \TXD|ROM_inst|altsyncram_component|auto_generated|altsyncram1|ram_block3a0_PORTBDATAOUT_bus ;
@@ -2972,17 +2972,17 @@ defparam \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_inc
 // synopsys translate_on
 
 // Location: LCCOMB_X67_Y38_N4
-cycloneive_lcell_comb \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[7]~10 (
+cycloneive_lcell_comb \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[5]~10 (
 	.dataa(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_incr_addr~1_combout ),
 	.datab(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|process_0~4_combout ),
 	.datac(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_incr_addr~2_combout ),
 	.datad(gnd),
 	.cin(gnd),
-	.combout(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[7]~10_combout ),
+	.combout(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[5]~10_combout ),
 	.cout());
 // synopsys translate_off
-defparam \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[7]~10 .lut_mask = 16'hFEFE;
-defparam \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[7]~10 .sum_lutc_input = "datac";
+defparam \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[5]~10 .lut_mask = 16'hFEFE;
+defparam \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[5]~10 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: FF_X67_Y38_N15
@@ -2994,7 +2994,7 @@ dffeas \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|process_0~4_combout ),
-	.ena(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[7]~10_combout ),
+	.ena(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[5]~10_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg [2]),
@@ -3083,7 +3083,7 @@ dffeas \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|process_0~4_combout ),
-	.ena(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[7]~10_combout ),
+	.ena(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[5]~10_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg [7]),
@@ -3102,7 +3102,7 @@ dffeas \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|process_0~4_combout ),
-	.ena(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[7]~10_combout ),
+	.ena(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[5]~10_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg [6]),
@@ -3121,7 +3121,7 @@ dffeas \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|process_0~4_combout ),
-	.ena(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[7]~10_combout ),
+	.ena(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[5]~10_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg [5]),
@@ -3140,7 +3140,7 @@ dffeas \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|process_0~4_combout ),
-	.ena(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[7]~10_combout ),
+	.ena(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[5]~10_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg [4]),
@@ -3159,7 +3159,7 @@ dffeas \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|process_0~4_combout ),
-	.ena(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[7]~10_combout ),
+	.ena(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[5]~10_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg [3]),
@@ -3584,7 +3584,7 @@ dffeas \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|process_0~4_combout ),
-	.ena(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[7]~10_combout ),
+	.ena(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[5]~10_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg [0]),
@@ -3603,7 +3603,7 @@ dffeas \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|process_0~4_combout ),
-	.ena(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[7]~10_combout ),
+	.ena(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg[5]~10_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_addr_reg [1]),
@@ -3755,17 +3755,17 @@ defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_
 // synopsys translate_on
 
 // Location: LCCOMB_X56_Y40_N4
-cycloneive_lcell_comb \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[1]~12 (
+cycloneive_lcell_comb \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[4]~12 (
 	.dataa(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|shadow_jsm|state [3]),
 	.datab(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|virtual_ir_scan_reg~q ),
 	.datac(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|shadow_jsm|state [8]),
 	.datad(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|virtual_dr_scan_reg~q ),
 	.cin(gnd),
-	.combout(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[1]~12_combout ),
+	.combout(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[4]~12_combout ),
 	.cout());
 // synopsys translate_off
-defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[1]~12 .lut_mask = 16'hEAC0;
-defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[1]~12 .sum_lutc_input = "datac";
+defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[4]~12 .lut_mask = 16'hEAC0;
+defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[4]~12 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: FF_X58_Y40_N21
@@ -3776,8 +3776,8 @@ dffeas \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jt
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
-	.sload(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[1]~19_combout ),
-	.ena(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[1]~12_combout ),
+	.sload(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[4]~19_combout ),
+	.ena(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[4]~12_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal [3]),
@@ -3809,8 +3809,8 @@ dffeas \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jt
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
-	.sload(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[1]~19_combout ),
-	.ena(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[1]~12_combout ),
+	.sload(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[4]~19_combout ),
+	.ena(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[4]~12_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal [4]),
@@ -3821,31 +3821,31 @@ defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_
 // synopsys translate_on
 
 // Location: LCCOMB_X58_Y40_N6
-cycloneive_lcell_comb \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[1]~11 (
+cycloneive_lcell_comb \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[4]~11 (
 	.dataa(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal [2]),
 	.datab(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal [3]),
 	.datac(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal [0]),
 	.datad(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal [1]),
 	.cin(gnd),
-	.combout(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[1]~11_combout ),
+	.combout(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[4]~11_combout ),
 	.cout());
 // synopsys translate_off
-defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[1]~11 .lut_mask = 16'hFFFE;
-defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[1]~11 .sum_lutc_input = "datac";
+defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[4]~11 .lut_mask = 16'hFFFE;
+defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[4]~11 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X58_Y40_N28
-cycloneive_lcell_comb \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[1]~19 (
+cycloneive_lcell_comb \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[4]~19 (
 	.dataa(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|virtual_ir_scan_reg~q ),
 	.datab(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|shadow_jsm|state [8]),
 	.datac(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal [4]),
-	.datad(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[1]~11_combout ),
+	.datad(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[4]~11_combout ),
 	.cin(gnd),
-	.combout(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[1]~19_combout ),
+	.combout(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[4]~19_combout ),
 	.cout());
 // synopsys translate_off
-defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[1]~19 .lut_mask = 16'h888F;
-defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[1]~19 .sum_lutc_input = "datac";
+defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[4]~19 .lut_mask = 16'h888F;
+defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[4]~19 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: FF_X58_Y40_N15
@@ -3856,8 +3856,8 @@ dffeas \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jt
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
-	.sload(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[1]~19_combout ),
-	.ena(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[1]~12_combout ),
+	.sload(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[4]~19_combout ),
+	.ena(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[4]~12_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal [0]),
@@ -3889,8 +3889,8 @@ dffeas \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jt
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
-	.sload(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[1]~19_combout ),
-	.ena(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[1]~12_combout ),
+	.sload(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[4]~19_combout ),
+	.ena(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[4]~12_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal [1]),
@@ -3908,8 +3908,8 @@ dffeas \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jt
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
-	.sload(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[1]~19_combout ),
-	.ena(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[1]~12_combout ),
+	.sload(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[4]~19_combout ),
+	.ena(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[4]~12_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal [2]),
@@ -4155,31 +4155,31 @@ defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_
 // synopsys translate_on
 
 // Location: LCCOMB_X58_Y40_N12
-cycloneive_lcell_comb \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[1]~6 (
+cycloneive_lcell_comb \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[0]~6 (
 	.dataa(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal [4]),
 	.datab(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal [3]),
 	.datac(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal [0]),
 	.datad(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal [1]),
 	.cin(gnd),
-	.combout(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[1]~6_combout ),
+	.combout(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[0]~6_combout ),
 	.cout());
 // synopsys translate_off
-defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[1]~6 .lut_mask = 16'h8000;
-defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[1]~6 .sum_lutc_input = "datac";
+defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[0]~6 .lut_mask = 16'h8000;
+defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[0]~6 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X59_Y40_N12
-cycloneive_lcell_comb \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[1]~7 (
+cycloneive_lcell_comb \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[0]~7 (
 	.dataa(gnd),
 	.datab(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal [2]),
 	.datac(gnd),
-	.datad(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[1]~6_combout ),
+	.datad(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[0]~6_combout ),
 	.cin(gnd),
-	.combout(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[1]~7_combout ),
+	.combout(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[0]~7_combout ),
 	.cout());
 // synopsys translate_off
-defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[1]~7 .lut_mask = 16'hCC00;
-defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[1]~7 .sum_lutc_input = "datac";
+defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[0]~7 .lut_mask = 16'hCC00;
+defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[0]~7 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X59_Y41_N28
@@ -4187,7 +4187,7 @@ cycloneive_lcell_comb \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_
 	.dataa(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg~5_combout ),
 	.datab(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric_ident_writedata [0]),
 	.datac(gnd),
-	.datad(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[1]~7_combout ),
+	.datad(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[0]~7_combout ),
 	.cin(gnd),
 	.combout(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[0]~0_combout ),
 	.cout());
@@ -4259,7 +4259,7 @@ defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_
 
 // Location: LCCOMB_X59_Y41_N22
 cycloneive_lcell_comb \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[1]~1 (
-	.dataa(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[1]~7_combout ),
+	.dataa(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[0]~7_combout ),
 	.datab(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg~9_combout ),
 	.datac(gnd),
 	.datad(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric_ident_writedata [1]),
@@ -4334,7 +4334,7 @@ defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_
 
 // Location: LCCOMB_X59_Y41_N26
 cycloneive_lcell_comb \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[2]~2 (
-	.dataa(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[1]~7_combout ),
+	.dataa(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[0]~7_combout ),
 	.datab(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg~13_combout ),
 	.datac(gnd),
 	.datad(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric_ident_writedata [2]),
@@ -4412,7 +4412,7 @@ cycloneive_lcell_comb \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_
 	.dataa(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg~11_combout ),
 	.datab(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric_ident_writedata [3]),
 	.datac(gnd),
-	.datad(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[1]~7_combout ),
+	.datad(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[0]~7_combout ),
 	.cin(gnd),
 	.combout(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[3]~3_combout ),
 	.cout());
@@ -4714,31 +4714,31 @@ defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_
 // synopsys translate_on
 
 // Location: LCCOMB_X59_Y40_N6
-cycloneive_lcell_comb \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[0]~13 (
+cycloneive_lcell_comb \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[1]~13 (
 	.dataa(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter [4]),
 	.datab(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter [2]),
 	.datac(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter [3]),
 	.datad(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter [0]),
 	.cin(gnd),
-	.combout(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[0]~13_combout ),
+	.combout(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[1]~13_combout ),
 	.cout());
 // synopsys translate_off
-defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[0]~13 .lut_mask = 16'hFFFD;
-defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[0]~13 .sum_lutc_input = "datac";
+defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[1]~13 .lut_mask = 16'hFFFD;
+defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[1]~13 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X59_Y40_N18
-cycloneive_lcell_comb \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[0]~22 (
+cycloneive_lcell_comb \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[1]~22 (
 	.dataa(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter [1]),
 	.datab(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|virtual_ir_scan_reg~q ),
 	.datac(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|shadow_jsm|state [8]),
-	.datad(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[0]~13_combout ),
+	.datad(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[1]~13_combout ),
 	.cin(gnd),
-	.combout(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[0]~22_combout ),
+	.combout(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[1]~22_combout ),
 	.cout());
 // synopsys translate_off
-defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[0]~22 .lut_mask = 16'hC0D5;
-defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[0]~22 .sum_lutc_input = "datac";
+defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[1]~22 .lut_mask = 16'hC0D5;
+defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[1]~22 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X61_Y40_N4
@@ -4756,17 +4756,17 @@ defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_
 // synopsys translate_on
 
 // Location: LCCOMB_X59_Y40_N14
-cycloneive_lcell_comb \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[0]~23 (
+cycloneive_lcell_comb \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[1]~23 (
 	.dataa(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|shadow_jsm|state [3]),
 	.datab(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|virtual_dr_scan_reg~q ),
 	.datac(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|shadow_jsm|state [4]),
 	.datad(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|clear_signal~combout ),
 	.cin(gnd),
-	.combout(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[0]~23_combout ),
+	.combout(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[1]~23_combout ),
 	.cout());
 // synopsys translate_off
-defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[0]~23 .lut_mask = 16'hFF08;
-defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[0]~23 .sum_lutc_input = "datac";
+defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[1]~23 .lut_mask = 16'hFF08;
+defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[1]~23 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: FF_X59_Y40_N21
@@ -4776,9 +4776,9 @@ dffeas \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jt
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
-	.sclr(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[0]~22_combout ),
+	.sclr(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[1]~22_combout ),
 	.sload(gnd),
-	.ena(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[0]~23_combout ),
+	.ena(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[1]~23_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter [0]),
@@ -4809,9 +4809,9 @@ dffeas \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jt
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
-	.sclr(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[0]~22_combout ),
+	.sclr(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[1]~22_combout ),
 	.sload(gnd),
-	.ena(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[0]~23_combout ),
+	.ena(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[1]~23_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter [1]),
@@ -4842,9 +4842,9 @@ dffeas \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jt
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
-	.sclr(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[0]~22_combout ),
+	.sclr(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[1]~22_combout ),
 	.sload(gnd),
-	.ena(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[0]~23_combout ),
+	.ena(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[1]~23_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter [2]),
@@ -4875,9 +4875,9 @@ dffeas \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jt
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
-	.sclr(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[0]~22_combout ),
+	.sclr(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[1]~22_combout ),
 	.sload(gnd),
-	.ena(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[0]~23_combout ),
+	.ena(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[1]~23_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter [3]),
@@ -4908,9 +4908,9 @@ dffeas \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jt
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
-	.sclr(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[0]~22_combout ),
+	.sclr(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[1]~22_combout ),
 	.sload(gnd),
-	.ena(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[0]~23_combout ),
+	.ena(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter[1]~23_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|word_counter [4]),
@@ -4977,17 +4977,17 @@ defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_
 // synopsys translate_on
 
 // Location: LCCOMB_X60_Y40_N18
-cycloneive_lcell_comb \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|WORD_SR[1]~12 (
+cycloneive_lcell_comb \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|WORD_SR[0]~12 (
 	.dataa(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|shadow_jsm|state [3]),
 	.datab(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|shadow_jsm|state [4]),
 	.datac(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|virtual_dr_scan_reg~q ),
 	.datad(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|clear_signal~combout ),
 	.cin(gnd),
-	.combout(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|WORD_SR[1]~12_combout ),
+	.combout(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|WORD_SR[0]~12_combout ),
 	.cout());
 // synopsys translate_off
-defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|WORD_SR[1]~12 .lut_mask = 16'hFFE0;
-defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|WORD_SR[1]~12 .sum_lutc_input = "datac";
+defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|WORD_SR[0]~12 .lut_mask = 16'hFFE0;
+defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|WORD_SR[0]~12 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: FF_X59_Y40_N5
@@ -4999,7 +4999,7 @@ dffeas \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jt
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|WORD_SR[1]~12_combout ),
+	.ena(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|WORD_SR[0]~12_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|WORD_SR [3]),
@@ -5032,7 +5032,7 @@ dffeas \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jt
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|WORD_SR[1]~12_combout ),
+	.ena(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|WORD_SR[0]~12_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|WORD_SR [2]),
@@ -5065,7 +5065,7 @@ dffeas \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jt
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|WORD_SR[1]~12_combout ),
+	.ena(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|WORD_SR[0]~12_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|WORD_SR [1]),
@@ -5112,7 +5112,7 @@ dffeas \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jt
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|WORD_SR[1]~12_combout ),
+	.ena(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|WORD_SR[0]~12_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|hub_info_reg|WORD_SR [0]),
@@ -5198,31 +5198,31 @@ defparam \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_log
 // synopsys translate_on
 
 // Location: LCCOMB_X56_Y44_N0
-cycloneive_lcell_comb \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[3]~17 (
+cycloneive_lcell_comb \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[0]~17 (
 	.dataa(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter [4]),
 	.datab(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter [0]),
 	.datac(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter [2]),
 	.datad(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter [3]),
 	.cin(gnd),
-	.combout(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[3]~17_combout ),
+	.combout(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[0]~17_combout ),
 	.cout());
 // synopsys translate_off
-defparam \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[3]~17 .lut_mask = 16'hFFDF;
-defparam \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[3]~17 .sum_lutc_input = "datac";
+defparam \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[0]~17 .lut_mask = 16'hFFDF;
+defparam \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[0]~17 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X56_Y44_N4
-cycloneive_lcell_comb \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[3]~19 (
-	.dataa(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[3]~17_combout ),
+cycloneive_lcell_comb \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[0]~19 (
+	.dataa(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[0]~17_combout ),
 	.datab(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter [1]),
 	.datac(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|virtual_ir_scan_reg~q ),
 	.datad(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|shadow_jsm|state [8]),
 	.cin(gnd),
-	.combout(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[3]~19_combout ),
+	.combout(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[0]~19_combout ),
 	.cout());
 // synopsys translate_off
-defparam \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[3]~19 .lut_mask = 16'hF444;
-defparam \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[3]~19 .sum_lutc_input = "datac";
+defparam \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[0]~19 .lut_mask = 16'hF444;
+defparam \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[0]~19 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X61_Y38_N6
@@ -5254,17 +5254,17 @@ defparam \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_log
 // synopsys translate_on
 
 // Location: LCCOMB_X61_Y38_N12
-cycloneive_lcell_comb \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[3]~18 (
+cycloneive_lcell_comb \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[0]~18 (
 	.dataa(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_incr_addr~0_combout ),
 	.datab(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|shadow_jsm|state [3]),
 	.datac(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|clear_signal~combout ),
 	.datad(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|shadow_jsm|state [4]),
 	.cin(gnd),
-	.combout(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[3]~18_combout ),
+	.combout(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[0]~18_combout ),
 	.cout());
 // synopsys translate_off
-defparam \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[3]~18 .lut_mask = 16'hF0F8;
-defparam \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[3]~18 .sum_lutc_input = "datac";
+defparam \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[0]~18 .lut_mask = 16'hF0F8;
+defparam \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[0]~18 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: FF_X56_Y44_N23
@@ -5274,9 +5274,9 @@ dffeas \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
-	.sclr(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[3]~19_combout ),
+	.sclr(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[0]~19_combout ),
 	.sload(gnd),
-	.ena(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[3]~18_combout ),
+	.ena(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[0]~18_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter [0]),
@@ -5307,9 +5307,9 @@ dffeas \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
-	.sclr(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[3]~19_combout ),
+	.sclr(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[0]~19_combout ),
 	.sload(gnd),
-	.ena(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[3]~18_combout ),
+	.ena(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[0]~18_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter [1]),
@@ -5340,9 +5340,9 @@ dffeas \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
-	.sclr(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[3]~19_combout ),
+	.sclr(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[0]~19_combout ),
 	.sload(gnd),
-	.ena(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[3]~18_combout ),
+	.ena(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[0]~18_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter [2]),
@@ -5373,9 +5373,9 @@ dffeas \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
-	.sclr(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[3]~19_combout ),
+	.sclr(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[0]~19_combout ),
 	.sload(gnd),
-	.ena(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[3]~18_combout ),
+	.ena(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[0]~18_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter [3]),
@@ -5406,9 +5406,9 @@ dffeas \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
-	.sclr(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[3]~19_combout ),
+	.sclr(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[0]~19_combout ),
 	.sload(gnd),
-	.ena(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[3]~18_combout ),
+	.ena(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[0]~18_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|word_counter [4]),
@@ -5475,17 +5475,17 @@ defparam \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_log
 // synopsys translate_on
 
 // Location: LCCOMB_X61_Y38_N8
-cycloneive_lcell_comb \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[3]~3 (
+cycloneive_lcell_comb \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[1]~3 (
 	.dataa(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_incr_addr~0_combout ),
 	.datab(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|shadow_jsm|state [3]),
 	.datac(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|clear_signal~combout ),
 	.datad(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|shadow_jsm|state [4]),
 	.cin(gnd),
-	.combout(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[3]~3_combout ),
+	.combout(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[1]~3_combout ),
 	.cout());
 // synopsys translate_off
-defparam \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[3]~3 .lut_mask = 16'hFAF8;
-defparam \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[3]~3 .sum_lutc_input = "datac";
+defparam \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[1]~3 .lut_mask = 16'hFAF8;
+defparam \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[1]~3 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: FF_X61_Y38_N23
@@ -5497,7 +5497,7 @@ dffeas \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[3]~3_combout ),
+	.ena(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[1]~3_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR [3]),
@@ -5572,7 +5572,7 @@ dffeas \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[3]~3_combout ),
+	.ena(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[1]~3_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR [2]),
@@ -5619,7 +5619,7 @@ dffeas \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[3]~3_combout ),
+	.ena(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[1]~3_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR [1]),
@@ -5680,7 +5680,7 @@ dffeas \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[3]~3_combout ),
+	.ena(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[1]~3_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR [0]),
@@ -5724,43 +5724,43 @@ defparam \auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_
 // synopsys translate_on
 
 // Location: LCCOMB_X82_Y36_N4
-cycloneive_lcell_comb \xmit|count~1 (
+cycloneive_lcell_comb \xmit|count~2 (
 // Equation(s):
-// \xmit|count~1_combout  = (\KEY[0]~input_o  & ((\xmit|count [3]) # (!\xmit|ready~0_combout )))
+// \xmit|count~2_combout  = (\KEY[0]~input_o  & ((\xmit|count [3]) # (!\xmit|ready~0_combout )))
 
 	.dataa(gnd),
 	.datab(\KEY[0]~input_o ),
 	.datac(\xmit|count [3]),
 	.datad(\xmit|ready~0_combout ),
 	.cin(gnd),
-	.combout(\xmit|count~1_combout ),
+	.combout(\xmit|count~2_combout ),
 	.cout());
 // synopsys translate_off
-defparam \xmit|count~1 .lut_mask = 16'hC0CC;
-defparam \xmit|count~1 .sum_lutc_input = "datac";
+defparam \xmit|count~2 .lut_mask = 16'hC0CC;
+defparam \xmit|count~2 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X81_Y36_N8
-cycloneive_lcell_comb \xmit|count[0]~0 (
+cycloneive_lcell_comb \xmit|count[0]~1 (
 // Equation(s):
-// \xmit|count[0]~0_combout  = (\xmit|register[0]~2_combout  & (!\xmit|count [0] & \KEY[0]~input_o ))
+// \xmit|count[0]~1_combout  = (\xmit|count[3]~0_combout  & (!\xmit|count [0] & \KEY[0]~input_o ))
 
 	.dataa(gnd),
-	.datab(\xmit|register[0]~2_combout ),
+	.datab(\xmit|count[3]~0_combout ),
 	.datac(\xmit|count [0]),
 	.datad(\KEY[0]~input_o ),
 	.cin(gnd),
-	.combout(\xmit|count[0]~0_combout ),
+	.combout(\xmit|count[0]~1_combout ),
 	.cout());
 // synopsys translate_off
-defparam \xmit|count[0]~0 .lut_mask = 16'h0C00;
-defparam \xmit|count[0]~0 .sum_lutc_input = "datac";
+defparam \xmit|count[0]~1 .lut_mask = 16'h0C00;
+defparam \xmit|count[0]~1 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: FF_X81_Y36_N9
 dffeas \xmit|count[0] (
 	.clk(\UART_clock|pulse~clkctrl_outclk ),
-	.d(\xmit|count[0]~0_combout ),
+	.d(\xmit|count[0]~1_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -5777,26 +5777,26 @@ defparam \xmit|count[0] .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X81_Y36_N18
-cycloneive_lcell_comb \xmit|count~2 (
+cycloneive_lcell_comb \xmit|count~3 (
 // Equation(s):
-// \xmit|count~2_combout  = (\xmit|count~1_combout  & (\xmit|count [0] $ (!\xmit|count [1])))
+// \xmit|count~3_combout  = (\xmit|count~2_combout  & (\xmit|count [0] $ (!\xmit|count [1])))
 
 	.dataa(gnd),
 	.datab(\xmit|count [0]),
 	.datac(\xmit|count [1]),
-	.datad(\xmit|count~1_combout ),
+	.datad(\xmit|count~2_combout ),
 	.cin(gnd),
-	.combout(\xmit|count~2_combout ),
+	.combout(\xmit|count~3_combout ),
 	.cout());
 // synopsys translate_off
-defparam \xmit|count~2 .lut_mask = 16'hC300;
-defparam \xmit|count~2 .sum_lutc_input = "datac";
+defparam \xmit|count~3 .lut_mask = 16'hC300;
+defparam \xmit|count~3 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: FF_X81_Y36_N19
 dffeas \xmit|count[1] (
 	.clk(\UART_clock|pulse~clkctrl_outclk ),
-	.d(\xmit|count~2_combout ),
+	.d(\xmit|count~3_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -5813,26 +5813,26 @@ defparam \xmit|count[1] .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X81_Y36_N20
-cycloneive_lcell_comb \xmit|count~3 (
+cycloneive_lcell_comb \xmit|count~4 (
 // Equation(s):
-// \xmit|count~3_combout  = (\xmit|count~1_combout  & (\xmit|count [2] $ (((!\xmit|count [0] & !\xmit|count [1])))))
+// \xmit|count~4_combout  = (\xmit|count~2_combout  & (\xmit|count [2] $ (((!\xmit|count [0] & !\xmit|count [1])))))
 
-	.dataa(\xmit|count~1_combout ),
+	.dataa(\xmit|count~2_combout ),
 	.datab(\xmit|count [0]),
 	.datac(\xmit|count [2]),
 	.datad(\xmit|count [1]),
 	.cin(gnd),
-	.combout(\xmit|count~3_combout ),
+	.combout(\xmit|count~4_combout ),
 	.cout());
 // synopsys translate_off
-defparam \xmit|count~3 .lut_mask = 16'hA082;
-defparam \xmit|count~3 .sum_lutc_input = "datac";
+defparam \xmit|count~4 .lut_mask = 16'hA082;
+defparam \xmit|count~4 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: FF_X81_Y36_N21
 dffeas \xmit|count[2] (
 	.clk(\UART_clock|pulse~clkctrl_outclk ),
-	.d(\xmit|count~3_combout ),
+	.d(\xmit|count~4_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -7843,20 +7843,20 @@ defparam \TXD|XMitGo .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X82_Y36_N24
-cycloneive_lcell_comb \xmit|register[0]~2 (
+cycloneive_lcell_comb \xmit|count[3]~0 (
 // Equation(s):
-// \xmit|register[0]~2_combout  = (\xmit|count [3]) # ((\TXD|XMitGo~q ) # (!\xmit|ready~0_combout ))
+// \xmit|count[3]~0_combout  = (\xmit|count [3]) # ((\TXD|XMitGo~q ) # (!\xmit|ready~0_combout ))
 
 	.dataa(\xmit|count [3]),
 	.datab(gnd),
 	.datac(\TXD|XMitGo~q ),
 	.datad(\xmit|ready~0_combout ),
 	.cin(gnd),
-	.combout(\xmit|register[0]~2_combout ),
+	.combout(\xmit|count[3]~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \xmit|register[0]~2 .lut_mask = 16'hFAFF;
-defparam \xmit|register[0]~2 .sum_lutc_input = "datac";
+defparam \xmit|count[3]~0 .lut_mask = 16'hFAFF;
+defparam \xmit|count[3]~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X81_Y36_N2
@@ -7894,26 +7894,26 @@ defparam \xmit|always0~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X81_Y36_N0
-cycloneive_lcell_comb \xmit|count[3]~4 (
+cycloneive_lcell_comb \xmit|count[3]~5 (
 // Equation(s):
-// \xmit|count[3]~4_combout  = (\KEY[0]~input_o  & (\xmit|register[0]~2_combout  & ((\xmit|always0~0_combout ) # (!\xmit|Add0~0_combout ))))
+// \xmit|count[3]~5_combout  = (\KEY[0]~input_o  & (\xmit|count[3]~0_combout  & ((\xmit|always0~0_combout ) # (!\xmit|Add0~0_combout ))))
 
 	.dataa(\KEY[0]~input_o ),
-	.datab(\xmit|register[0]~2_combout ),
+	.datab(\xmit|count[3]~0_combout ),
 	.datac(\xmit|Add0~0_combout ),
 	.datad(\xmit|always0~0_combout ),
 	.cin(gnd),
-	.combout(\xmit|count[3]~4_combout ),
+	.combout(\xmit|count[3]~5_combout ),
 	.cout());
 // synopsys translate_off
-defparam \xmit|count[3]~4 .lut_mask = 16'h8808;
-defparam \xmit|count[3]~4 .sum_lutc_input = "datac";
+defparam \xmit|count[3]~5 .lut_mask = 16'h8808;
+defparam \xmit|count[3]~5 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: FF_X81_Y36_N1
 dffeas \xmit|count[3] (
 	.clk(\UART_clock|pulse~clkctrl_outclk ),
-	.d(\xmit|count[3]~4_combout ),
+	.d(\xmit|count[3]~5_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -8118,17 +8118,17 @@ defparam \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_dat
 // synopsys translate_on
 
 // Location: LCCOMB_X75_Y36_N12
-cycloneive_lcell_comb \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg[7]~1 (
+cycloneive_lcell_comb \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg[0]~1 (
 	.dataa(gnd),
 	.datab(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|process_0~3_combout ),
 	.datac(\auto_hub|instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|instrumentation_fabric|alt_sld_fab|sldfabric|jtag_hub_gen:real_sld_jtag_hub|irf_reg[1][3]~q ),
 	.datad(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|process_0~2_combout ),
 	.cin(gnd),
-	.combout(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg[7]~1_combout ),
+	.combout(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg[0]~1_combout ),
 	.cout());
 // synopsys translate_off
-defparam \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg[7]~1 .lut_mask = 16'hFFF3;
-defparam \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg[7]~1 .sum_lutc_input = "datac";
+defparam \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg[0]~1 .lut_mask = 16'hFFF3;
+defparam \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg[0]~1 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: FF_X75_Y36_N27
@@ -8140,7 +8140,7 @@ dffeas \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg[7]~1_combout ),
+	.ena(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg[0]~1_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg [7]),
@@ -8173,7 +8173,7 @@ dffeas \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg[7]~1_combout ),
+	.ena(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg[0]~1_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg [6]),
@@ -8206,7 +8206,7 @@ dffeas \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg[7]~1_combout ),
+	.ena(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg[0]~1_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg [5]),
@@ -8239,7 +8239,7 @@ dffeas \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg[7]~1_combout ),
+	.ena(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg[0]~1_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg [4]),
@@ -8272,7 +8272,7 @@ dffeas \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg[7]~1_combout ),
+	.ena(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg[0]~1_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg [3]),
@@ -8305,7 +8305,7 @@ dffeas \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg[7]~1_combout ),
+	.ena(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg[0]~1_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg [2]),
@@ -8338,7 +8338,7 @@ dffeas \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg[7]~1_combout ),
+	.ena(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg[0]~1_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg [1]),
@@ -8371,7 +8371,7 @@ dffeas \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg[7]~1_combout ),
+	.ena(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg[0]~1_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|ram_rom_data_reg [0]),
@@ -8681,43 +8681,43 @@ defparam \TXD|ROM_inst|altsyncram_component|auto_generated|mgl_prim2|enable_writ
 // synopsys translate_on
 
 // Location: LCCOMB_X82_Y36_N6
-cycloneive_lcell_comb \xmit|register~11 (
+cycloneive_lcell_comb \xmit|register~10 (
 // Equation(s):
-// \xmit|register~11_combout  = (\TXD|XMitGo~q ) # (((\xmit|register [8]) # (!\KEY[0]~input_o )) # (!\xmit|ready~1_combout ))
+// \xmit|register~10_combout  = (\TXD|XMitGo~q ) # (((\xmit|register [8]) # (!\KEY[0]~input_o )) # (!\xmit|ready~1_combout ))
 
 	.dataa(\TXD|XMitGo~q ),
 	.datab(\xmit|ready~1_combout ),
 	.datac(\KEY[0]~input_o ),
 	.datad(\xmit|register [8]),
 	.cin(gnd),
-	.combout(\xmit|register~11_combout ),
+	.combout(\xmit|register~10_combout ),
 	.cout());
 // synopsys translate_off
-defparam \xmit|register~11 .lut_mask = 16'hFFBF;
-defparam \xmit|register~11 .sum_lutc_input = "datac";
+defparam \xmit|register~10 .lut_mask = 16'hFFBF;
+defparam \xmit|register~10 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X81_Y36_N12
-cycloneive_lcell_comb \xmit|register~12 (
+cycloneive_lcell_comb \xmit|register~11 (
 // Equation(s):
-// \xmit|register~12_combout  = (\xmit|register~11_combout  & ((\TXD|ROM_inst|altsyncram_component|auto_generated|altsyncram1|q_a [7]) # (!\xmit|always0~0_combout )))
+// \xmit|register~11_combout  = (\xmit|register~10_combout  & ((\TXD|ROM_inst|altsyncram_component|auto_generated|altsyncram1|q_a [7]) # (!\xmit|always0~0_combout )))
 
-	.dataa(\xmit|register~11_combout ),
+	.dataa(\xmit|register~10_combout ),
 	.datab(\TXD|ROM_inst|altsyncram_component|auto_generated|altsyncram1|q_a [7]),
 	.datac(gnd),
 	.datad(\xmit|always0~0_combout ),
 	.cin(gnd),
-	.combout(\xmit|register~12_combout ),
+	.combout(\xmit|register~11_combout ),
 	.cout());
 // synopsys translate_off
-defparam \xmit|register~12 .lut_mask = 16'h88AA;
-defparam \xmit|register~12 .sum_lutc_input = "datac";
+defparam \xmit|register~11 .lut_mask = 16'h88AA;
+defparam \xmit|register~11 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: FF_X81_Y36_N13
 dffeas \xmit|register[8] (
 	.clk(\UART_clock|pulse~clkctrl_outclk ),
-	.d(\xmit|register~12_combout ),
+	.d(\xmit|register~11_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -8734,32 +8734,32 @@ defparam \xmit|register[8] .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X81_Y36_N4
-cycloneive_lcell_comb \xmit|register~10 (
+cycloneive_lcell_comb \xmit|register~9 (
 // Equation(s):
-// \xmit|register~10_combout  = (\xmit|always0~0_combout  & ((\TXD|ROM_inst|altsyncram_component|auto_generated|altsyncram1|q_a [6]))) # (!\xmit|always0~0_combout  & (\xmit|register [8]))
+// \xmit|register~9_combout  = (\xmit|always0~0_combout  & ((\TXD|ROM_inst|altsyncram_component|auto_generated|altsyncram1|q_a [6]))) # (!\xmit|always0~0_combout  & (\xmit|register [8]))
 
 	.dataa(\xmit|register [8]),
 	.datab(\TXD|ROM_inst|altsyncram_component|auto_generated|altsyncram1|q_a [6]),
 	.datac(gnd),
 	.datad(\xmit|always0~0_combout ),
 	.cin(gnd),
-	.combout(\xmit|register~10_combout ),
+	.combout(\xmit|register~9_combout ),
 	.cout());
 // synopsys translate_off
-defparam \xmit|register~10 .lut_mask = 16'hCCAA;
-defparam \xmit|register~10 .sum_lutc_input = "datac";
+defparam \xmit|register~9 .lut_mask = 16'hCCAA;
+defparam \xmit|register~9 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: FF_X81_Y36_N5
 dffeas \xmit|register[7] (
 	.clk(\UART_clock|pulse~clkctrl_outclk ),
-	.d(\xmit|register~10_combout ),
+	.d(\xmit|register~9_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(!\KEY[0]~input_o ),
-	.ena(\xmit|register[0]~2_combout ),
+	.ena(\xmit|count[3]~0_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\xmit|register [7]),
@@ -8770,32 +8770,32 @@ defparam \xmit|register[7] .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X81_Y36_N10
-cycloneive_lcell_comb \xmit|register~9 (
+cycloneive_lcell_comb \xmit|register~8 (
 // Equation(s):
-// \xmit|register~9_combout  = (\xmit|always0~0_combout  & (\TXD|ROM_inst|altsyncram_component|auto_generated|altsyncram1|q_a [5])) # (!\xmit|always0~0_combout  & ((\xmit|register [7])))
+// \xmit|register~8_combout  = (\xmit|always0~0_combout  & (\TXD|ROM_inst|altsyncram_component|auto_generated|altsyncram1|q_a [5])) # (!\xmit|always0~0_combout  & ((\xmit|register [7])))
 
 	.dataa(\TXD|ROM_inst|altsyncram_component|auto_generated|altsyncram1|q_a [5]),
 	.datab(\xmit|register [7]),
 	.datac(gnd),
 	.datad(\xmit|always0~0_combout ),
 	.cin(gnd),
-	.combout(\xmit|register~9_combout ),
+	.combout(\xmit|register~8_combout ),
 	.cout());
 // synopsys translate_off
-defparam \xmit|register~9 .lut_mask = 16'hAACC;
-defparam \xmit|register~9 .sum_lutc_input = "datac";
+defparam \xmit|register~8 .lut_mask = 16'hAACC;
+defparam \xmit|register~8 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: FF_X81_Y36_N11
 dffeas \xmit|register[6] (
 	.clk(\UART_clock|pulse~clkctrl_outclk ),
-	.d(\xmit|register~9_combout ),
+	.d(\xmit|register~8_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(!\KEY[0]~input_o ),
-	.ena(\xmit|register[0]~2_combout ),
+	.ena(\xmit|count[3]~0_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\xmit|register [6]),
@@ -8806,32 +8806,32 @@ defparam \xmit|register[6] .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X81_Y36_N16
-cycloneive_lcell_comb \xmit|register~8 (
+cycloneive_lcell_comb \xmit|register~7 (
 // Equation(s):
-// \xmit|register~8_combout  = (\xmit|always0~0_combout  & ((\TXD|ROM_inst|altsyncram_component|auto_generated|altsyncram1|q_a [4]))) # (!\xmit|always0~0_combout  & (\xmit|register [6]))
+// \xmit|register~7_combout  = (\xmit|always0~0_combout  & ((\TXD|ROM_inst|altsyncram_component|auto_generated|altsyncram1|q_a [4]))) # (!\xmit|always0~0_combout  & (\xmit|register [6]))
 
 	.dataa(\xmit|register [6]),
 	.datab(\TXD|ROM_inst|altsyncram_component|auto_generated|altsyncram1|q_a [4]),
 	.datac(gnd),
 	.datad(\xmit|always0~0_combout ),
 	.cin(gnd),
-	.combout(\xmit|register~8_combout ),
+	.combout(\xmit|register~7_combout ),
 	.cout());
 // synopsys translate_off
-defparam \xmit|register~8 .lut_mask = 16'hCCAA;
-defparam \xmit|register~8 .sum_lutc_input = "datac";
+defparam \xmit|register~7 .lut_mask = 16'hCCAA;
+defparam \xmit|register~7 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: FF_X81_Y36_N17
 dffeas \xmit|register[5] (
 	.clk(\UART_clock|pulse~clkctrl_outclk ),
-	.d(\xmit|register~8_combout ),
+	.d(\xmit|register~7_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(!\KEY[0]~input_o ),
-	.ena(\xmit|register[0]~2_combout ),
+	.ena(\xmit|count[3]~0_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\xmit|register [5]),
@@ -8842,32 +8842,32 @@ defparam \xmit|register[5] .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X81_Y36_N30
-cycloneive_lcell_comb \xmit|register~7 (
+cycloneive_lcell_comb \xmit|register~6 (
 // Equation(s):
-// \xmit|register~7_combout  = (\xmit|always0~0_combout  & (\TXD|ROM_inst|altsyncram_component|auto_generated|altsyncram1|q_a [3])) # (!\xmit|always0~0_combout  & ((\xmit|register [5])))
+// \xmit|register~6_combout  = (\xmit|always0~0_combout  & (\TXD|ROM_inst|altsyncram_component|auto_generated|altsyncram1|q_a [3])) # (!\xmit|always0~0_combout  & ((\xmit|register [5])))
 
 	.dataa(\TXD|ROM_inst|altsyncram_component|auto_generated|altsyncram1|q_a [3]),
 	.datab(\xmit|register [5]),
 	.datac(gnd),
 	.datad(\xmit|always0~0_combout ),
 	.cin(gnd),
-	.combout(\xmit|register~7_combout ),
+	.combout(\xmit|register~6_combout ),
 	.cout());
 // synopsys translate_off
-defparam \xmit|register~7 .lut_mask = 16'hAACC;
-defparam \xmit|register~7 .sum_lutc_input = "datac";
+defparam \xmit|register~6 .lut_mask = 16'hAACC;
+defparam \xmit|register~6 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: FF_X81_Y36_N31
 dffeas \xmit|register[4] (
 	.clk(\UART_clock|pulse~clkctrl_outclk ),
-	.d(\xmit|register~7_combout ),
+	.d(\xmit|register~6_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(!\KEY[0]~input_o ),
-	.ena(\xmit|register[0]~2_combout ),
+	.ena(\xmit|count[3]~0_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\xmit|register [4]),
@@ -8878,32 +8878,32 @@ defparam \xmit|register[4] .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X81_Y36_N28
-cycloneive_lcell_comb \xmit|register~6 (
+cycloneive_lcell_comb \xmit|register~5 (
 // Equation(s):
-// \xmit|register~6_combout  = (\xmit|always0~0_combout  & ((\TXD|ROM_inst|altsyncram_component|auto_generated|altsyncram1|q_a [2]))) # (!\xmit|always0~0_combout  & (\xmit|register [4]))
+// \xmit|register~5_combout  = (\xmit|always0~0_combout  & ((\TXD|ROM_inst|altsyncram_component|auto_generated|altsyncram1|q_a [2]))) # (!\xmit|always0~0_combout  & (\xmit|register [4]))
 
 	.dataa(\xmit|register [4]),
 	.datab(\TXD|ROM_inst|altsyncram_component|auto_generated|altsyncram1|q_a [2]),
 	.datac(gnd),
 	.datad(\xmit|always0~0_combout ),
 	.cin(gnd),
-	.combout(\xmit|register~6_combout ),
+	.combout(\xmit|register~5_combout ),
 	.cout());
 // synopsys translate_off
-defparam \xmit|register~6 .lut_mask = 16'hCCAA;
-defparam \xmit|register~6 .sum_lutc_input = "datac";
+defparam \xmit|register~5 .lut_mask = 16'hCCAA;
+defparam \xmit|register~5 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: FF_X81_Y36_N29
 dffeas \xmit|register[3] (
 	.clk(\UART_clock|pulse~clkctrl_outclk ),
-	.d(\xmit|register~6_combout ),
+	.d(\xmit|register~5_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(!\KEY[0]~input_o ),
-	.ena(\xmit|register[0]~2_combout ),
+	.ena(\xmit|count[3]~0_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\xmit|register [3]),
@@ -8914,32 +8914,32 @@ defparam \xmit|register[3] .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X81_Y36_N26
-cycloneive_lcell_comb \xmit|register~5 (
+cycloneive_lcell_comb \xmit|register~4 (
 // Equation(s):
-// \xmit|register~5_combout  = (\xmit|always0~0_combout  & (\TXD|ROM_inst|altsyncram_component|auto_generated|altsyncram1|q_a [1])) # (!\xmit|always0~0_combout  & ((\xmit|register [3])))
+// \xmit|register~4_combout  = (\xmit|always0~0_combout  & (\TXD|ROM_inst|altsyncram_component|auto_generated|altsyncram1|q_a [1])) # (!\xmit|always0~0_combout  & ((\xmit|register [3])))
 
 	.dataa(\TXD|ROM_inst|altsyncram_component|auto_generated|altsyncram1|q_a [1]),
 	.datab(\xmit|register [3]),
 	.datac(gnd),
 	.datad(\xmit|always0~0_combout ),
 	.cin(gnd),
-	.combout(\xmit|register~5_combout ),
+	.combout(\xmit|register~4_combout ),
 	.cout());
 // synopsys translate_off
-defparam \xmit|register~5 .lut_mask = 16'hAACC;
-defparam \xmit|register~5 .sum_lutc_input = "datac";
+defparam \xmit|register~4 .lut_mask = 16'hAACC;
+defparam \xmit|register~4 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: FF_X81_Y36_N27
 dffeas \xmit|register[2] (
 	.clk(\UART_clock|pulse~clkctrl_outclk ),
-	.d(\xmit|register~5_combout ),
+	.d(\xmit|register~4_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(!\KEY[0]~input_o ),
-	.ena(\xmit|register[0]~2_combout ),
+	.ena(\xmit|count[3]~0_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\xmit|register [2]),
@@ -8950,32 +8950,32 @@ defparam \xmit|register[2] .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X81_Y36_N24
-cycloneive_lcell_comb \xmit|register~4 (
+cycloneive_lcell_comb \xmit|register~3 (
 // Equation(s):
-// \xmit|register~4_combout  = (\xmit|always0~0_combout  & ((\TXD|ROM_inst|altsyncram_component|auto_generated|altsyncram1|q_a [0]))) # (!\xmit|always0~0_combout  & (\xmit|register [2]))
+// \xmit|register~3_combout  = (\xmit|always0~0_combout  & ((\TXD|ROM_inst|altsyncram_component|auto_generated|altsyncram1|q_a [0]))) # (!\xmit|always0~0_combout  & (\xmit|register [2]))
 
 	.dataa(\xmit|register [2]),
 	.datab(\TXD|ROM_inst|altsyncram_component|auto_generated|altsyncram1|q_a [0]),
 	.datac(gnd),
 	.datad(\xmit|always0~0_combout ),
 	.cin(gnd),
-	.combout(\xmit|register~4_combout ),
+	.combout(\xmit|register~3_combout ),
 	.cout());
 // synopsys translate_off
-defparam \xmit|register~4 .lut_mask = 16'hCCAA;
-defparam \xmit|register~4 .sum_lutc_input = "datac";
+defparam \xmit|register~3 .lut_mask = 16'hCCAA;
+defparam \xmit|register~3 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: FF_X81_Y36_N25
 dffeas \xmit|register[1] (
 	.clk(\UART_clock|pulse~clkctrl_outclk ),
-	.d(\xmit|register~4_combout ),
+	.d(\xmit|register~3_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(!\KEY[0]~input_o ),
-	.ena(\xmit|register[0]~2_combout ),
+	.ena(\xmit|count[3]~0_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.q(\xmit|register [1]),
@@ -8986,43 +8986,43 @@ defparam \xmit|register[1] .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X81_Y36_N22
-cycloneive_lcell_comb \xmit|register[0]~13 (
+cycloneive_lcell_comb \xmit|register[0]~12 (
 // Equation(s):
-// \xmit|register[0]~13_combout  = (\KEY[0]~input_o  & (\xmit|register [1] & ((\xmit|count [3]) # (!\xmit|ready~0_combout ))))
+// \xmit|register[0]~12_combout  = (\KEY[0]~input_o  & (\xmit|register [1] & ((\xmit|count [3]) # (!\xmit|ready~0_combout ))))
 
 	.dataa(\KEY[0]~input_o ),
 	.datab(\xmit|register [1]),
 	.datac(\xmit|ready~0_combout ),
 	.datad(\xmit|count [3]),
 	.cin(gnd),
-	.combout(\xmit|register[0]~13_combout ),
+	.combout(\xmit|register[0]~12_combout ),
 	.cout());
 // synopsys translate_off
-defparam \xmit|register[0]~13 .lut_mask = 16'h8808;
-defparam \xmit|register[0]~13 .sum_lutc_input = "datac";
+defparam \xmit|register[0]~12 .lut_mask = 16'h8808;
+defparam \xmit|register[0]~12 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X81_Y36_N6
-cycloneive_lcell_comb \xmit|register[0]~3 (
+cycloneive_lcell_comb \xmit|register[0]~2 (
 // Equation(s):
-// \xmit|register[0]~3_combout  = (\xmit|register[0]~13_combout ) # (((!\xmit|register[0]~2_combout  & \xmit|register [0])) # (!\KEY[0]~input_o ))
+// \xmit|register[0]~2_combout  = (\xmit|register[0]~12_combout ) # (((!\xmit|count[3]~0_combout  & \xmit|register [0])) # (!\KEY[0]~input_o ))
 
-	.dataa(\xmit|register[0]~13_combout ),
-	.datab(\xmit|register[0]~2_combout ),
+	.dataa(\xmit|register[0]~12_combout ),
+	.datab(\xmit|count[3]~0_combout ),
 	.datac(\xmit|register [0]),
 	.datad(\KEY[0]~input_o ),
 	.cin(gnd),
-	.combout(\xmit|register[0]~3_combout ),
+	.combout(\xmit|register[0]~2_combout ),
 	.cout());
 // synopsys translate_off
-defparam \xmit|register[0]~3 .lut_mask = 16'hBAFF;
-defparam \xmit|register[0]~3 .sum_lutc_input = "datac";
+defparam \xmit|register[0]~2 .lut_mask = 16'hBAFF;
+defparam \xmit|register[0]~2 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: FF_X81_Y36_N7
 dffeas \xmit|register[0] (
 	.clk(\UART_clock|pulse~clkctrl_outclk ),
-	.d(\xmit|register[0]~3_combout ),
+	.d(\xmit|register[0]~2_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),

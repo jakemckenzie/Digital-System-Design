@@ -30,7 +30,7 @@
 (DELAYFILE
   (SDFVERSION "2.1")
   (DESIGN "LabA")
-  (DATE "05/25/2018 22:39:55")
+  (DATE "05/26/2018 13:43:23")
   (VENDOR "Altera")
   (PROGRAM "Quartus Prime")
   (VERSION "Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition")
@@ -2122,7 +2122,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE TXD\|ROM_inst\|altsyncram_component\|auto_generated\|mgl_prim2\|ram_rom_addr_reg\[7\]\~10)
+    (INSTANCE TXD\|ROM_inst\|altsyncram_component\|auto_generated\|mgl_prim2\|ram_rom_addr_reg\[5\]\~10)
     (DELAY
       (ABSOLUTE
         (PORT dataa (237:237:237) (277:277:277))
@@ -2904,7 +2904,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|mixer_addr_reg_internal\[1\]\~12)
+    (INSTANCE auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|mixer_addr_reg_internal\[4\]\~12)
     (DELAY
       (ABSOLUTE
         (PORT dataa (311:311:311) (401:401:401))
@@ -2969,7 +2969,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|mixer_addr_reg_internal\[1\]\~11)
+    (INSTANCE auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|mixer_addr_reg_internal\[4\]\~11)
     (DELAY
       (ABSOLUTE
         (PORT dataa (526:526:526) (611:611:611))
@@ -2985,7 +2985,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|mixer_addr_reg_internal\[1\]\~19)
+    (INSTANCE auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|mixer_addr_reg_internal\[4\]\~19)
     (DELAY
       (ABSOLUTE
         (PORT dataa (827:827:827) (876:876:876))
@@ -3278,7 +3278,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|design_hash_reg\[1\]\~6)
+    (INSTANCE auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|design_hash_reg\[0\]\~6)
     (DELAY
       (ABSOLUTE
         (PORT dataa (346:346:346) (467:467:467))
@@ -3294,7 +3294,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|design_hash_reg\[1\]\~7)
+    (INSTANCE auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|design_hash_reg\[0\]\~7)
     (DELAY
       (ABSOLUTE
         (PORT datab (479:479:479) (539:539:539))
@@ -3806,7 +3806,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|hub_info_reg\|word_counter\[0\]\~13)
+    (INSTANCE auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|hub_info_reg\|word_counter\[1\]\~13)
     (DELAY
       (ABSOLUTE
         (PORT dataa (497:497:497) (561:561:561))
@@ -3822,7 +3822,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|hub_info_reg\|word_counter\[0\]\~22)
+    (INSTANCE auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|hub_info_reg\|word_counter\[1\]\~22)
     (DELAY
       (ABSOLUTE
         (PORT dataa (314:314:314) (417:417:417))
@@ -3850,7 +3850,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|hub_info_reg\|word_counter\[0\]\~23)
+    (INSTANCE auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|hub_info_reg\|word_counter\[1\]\~23)
     (DELAY
       (ABSOLUTE
         (PORT dataa (814:814:814) (858:858:858))
@@ -4073,7 +4073,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|hub_info_reg\|WORD_SR\[1\]\~12)
+    (INSTANCE auto_hub\|instrumentation_fabric_with_node_gen\:fabric_gen_new_way\:with_jtag_input_gen\:instrumentation_fabric\|instrumentation_fabric\|alt_sld_fab\|sldfabric\|jtag_hub_gen\:real_sld_jtag_hub\|hub_info_reg\|WORD_SR\[0\]\~12)
     (DELAY
       (ABSOLUTE
         (PORT dataa (818:818:818) (863:863:863))
@@ -4292,7 +4292,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE TXD\|ROM_inst\|altsyncram_component\|auto_generated\|mgl_prim2\|ram_rom_logic_gen\:name_gen\:info_rom_sr\|word_counter\[3\]\~17)
+    (INSTANCE TXD\|ROM_inst\|altsyncram_component\|auto_generated\|mgl_prim2\|ram_rom_logic_gen\:name_gen\:info_rom_sr\|word_counter\[0\]\~17)
     (DELAY
       (ABSOLUTE
         (PORT dataa (350:350:350) (481:481:481))
@@ -4308,7 +4308,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE TXD\|ROM_inst\|altsyncram_component\|auto_generated\|mgl_prim2\|ram_rom_logic_gen\:name_gen\:info_rom_sr\|word_counter\[3\]\~19)
+    (INSTANCE TXD\|ROM_inst\|altsyncram_component\|auto_generated\|mgl_prim2\|ram_rom_logic_gen\:name_gen\:info_rom_sr\|word_counter\[0\]\~19)
     (DELAY
       (ABSOLUTE
         (PORT dataa (452:452:452) (457:457:457))
@@ -4348,7 +4348,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE TXD\|ROM_inst\|altsyncram_component\|auto_generated\|mgl_prim2\|ram_rom_logic_gen\:name_gen\:info_rom_sr\|word_counter\[3\]\~18)
+    (INSTANCE TXD\|ROM_inst\|altsyncram_component\|auto_generated\|mgl_prim2\|ram_rom_logic_gen\:name_gen\:info_rom_sr\|word_counter\[0\]\~18)
     (DELAY
       (ABSOLUTE
         (PORT dataa (245:245:245) (291:291:291))
@@ -4569,7 +4569,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE TXD\|ROM_inst\|altsyncram_component\|auto_generated\|mgl_prim2\|ram_rom_logic_gen\:name_gen\:info_rom_sr\|WORD_SR\[3\]\~3)
+    (INSTANCE TXD\|ROM_inst\|altsyncram_component\|auto_generated\|mgl_prim2\|ram_rom_logic_gen\:name_gen\:info_rom_sr\|WORD_SR\[1\]\~3)
     (DELAY
       (ABSOLUTE
         (PORT dataa (245:245:245) (291:291:291))
@@ -4813,7 +4813,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE xmit\|count\~1)
+    (INSTANCE xmit\|count\~2)
     (DELAY
       (ABSOLUTE
         (PORT datab (3898:3898:3898) (4198:4198:4198))
@@ -4827,7 +4827,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE xmit\|count\[0\]\~0)
+    (INSTANCE xmit\|count\[0\]\~1)
     (DELAY
       (ABSOLUTE
         (PORT datab (478:478:478) (493:493:493))
@@ -4854,7 +4854,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE xmit\|count\~2)
+    (INSTANCE xmit\|count\~3)
     (DELAY
       (ABSOLUTE
         (PORT datab (314:314:314) (409:409:409))
@@ -4881,7 +4881,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE xmit\|count\~3)
+    (INSTANCE xmit\|count\~4)
     (DELAY
       (ABSOLUTE
         (PORT dataa (467:467:467) (477:477:477))
@@ -6480,7 +6480,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE xmit\|register\[0\]\~2)
+    (INSTANCE xmit\|count\[3\]\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (556:556:556) (614:614:614))
@@ -6524,7 +6524,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE xmit\|count\[3\]\~4)
+    (INSTANCE xmit\|count\[3\]\~5)
     (DELAY
       (ABSOLUTE
         (PORT dataa (3837:3837:3837) (4148:4148:4148))
@@ -6832,7 +6832,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE TXD\|ROM_inst\|altsyncram_component\|auto_generated\|mgl_prim2\|ram_rom_data_reg\[7\]\~1)
+    (INSTANCE TXD\|ROM_inst\|altsyncram_component\|auto_generated\|mgl_prim2\|ram_rom_data_reg\[0\]\~1)
     (DELAY
       (ABSOLUTE
         (PORT datab (1241:1241:1241) (1207:1207:1207))
@@ -7380,7 +7380,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE xmit\|register\~11)
+    (INSTANCE xmit\|register\~10)
     (DELAY
       (ABSOLUTE
         (PORT dataa (307:307:307) (404:404:404))
@@ -7396,7 +7396,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE xmit\|register\~12)
+    (INSTANCE xmit\|register\~11)
     (DELAY
       (ABSOLUTE
         (PORT dataa (408:408:408) (433:433:433))
@@ -7424,7 +7424,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE xmit\|register\~10)
+    (INSTANCE xmit\|register\~9)
     (DELAY
       (ABSOLUTE
         (PORT dataa (313:313:313) (403:403:403))
@@ -7457,7 +7457,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE xmit\|register\~9)
+    (INSTANCE xmit\|register\~8)
     (DELAY
       (ABSOLUTE
         (PORT dataa (738:738:738) (733:733:733))
@@ -7490,7 +7490,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE xmit\|register\~8)
+    (INSTANCE xmit\|register\~7)
     (DELAY
       (ABSOLUTE
         (PORT dataa (290:290:290) (380:380:380))
@@ -7523,7 +7523,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE xmit\|register\~7)
+    (INSTANCE xmit\|register\~6)
     (DELAY
       (ABSOLUTE
         (PORT dataa (738:738:738) (732:732:732))
@@ -7556,7 +7556,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE xmit\|register\~6)
+    (INSTANCE xmit\|register\~5)
     (DELAY
       (ABSOLUTE
         (PORT dataa (288:288:288) (378:378:378))
@@ -7589,7 +7589,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE xmit\|register\~5)
+    (INSTANCE xmit\|register\~4)
     (DELAY
       (ABSOLUTE
         (PORT dataa (790:790:790) (777:777:777))
@@ -7622,7 +7622,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE xmit\|register\~4)
+    (INSTANCE xmit\|register\~3)
     (DELAY
       (ABSOLUTE
         (PORT dataa (289:289:289) (379:379:379))
@@ -7655,7 +7655,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE xmit\|register\[0\]\~13)
+    (INSTANCE xmit\|register\[0\]\~12)
     (DELAY
       (ABSOLUTE
         (PORT dataa (3840:3840:3840) (4151:4151:4151))
@@ -7671,7 +7671,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE xmit\|register\[0\]\~3)
+    (INSTANCE xmit\|register\[0\]\~2)
     (DELAY
       (ABSOLUTE
         (PORT dataa (240:240:240) (281:281:281))

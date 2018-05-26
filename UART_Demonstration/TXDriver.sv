@@ -1,4 +1,7 @@
-/** The UART Driver
+/* Authors:		Ammon Dodson & Jake McKenzie
+ * Date:			May 25, 2018
+ * Title:		UART LABORATORY ASSIGNMENT
+ * Description:The UART Driver 
  */
 
 module TXDriver #(parameter DIVISOR)(

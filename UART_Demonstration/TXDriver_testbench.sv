@@ -1,3 +1,8 @@
+/* Authors:		Ammon Dodson & Jake McKenzie
+ * Date:			May 25, 2018
+ * Title:		UART LABORATORY ASSIGNMENT
+ * Description:Driver for the  
+ */
 `timescale 1s/1s
 
 module TXDriver_testbench();
