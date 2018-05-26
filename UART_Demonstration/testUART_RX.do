@@ -3,6 +3,8 @@ vlib work
 
 # Compile Modules
 vlog "./UART_RX.sv"
+vlog "./UART_TX.sv"
+vlog "./Pulser.sv"
 
 
 # Call vsim to invoke simulator
@@ -21,7 +23,7 @@ configure wave -namecolwidth 200
 configure wave -valuecolwidth 100
 configure wave -justifyvalue left
 configure wave -signalnamewidth 0
-configure wave -snapdistance 10
+configure wave -snapdistance 1
 configure wave -datasetprefix 0
 configure wave -rowmargin 4
 configure wave -childrowmargin 2

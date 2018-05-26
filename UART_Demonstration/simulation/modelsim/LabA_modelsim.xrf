@@ -1,4 +1,5 @@
 vendor_name = ModelSim
+source_file = 1, /home/ammon/Desktop/TCES330/Digital-System-Design/UART_Demonstration/UART_RX.sv
 source_file = 1, /home/ammon/Desktop/TCES330/Digital-System-Design/UART_Demonstration/LabA.out.sdc
 source_file = 1, /home/ammon/Desktop/TCES330/Digital-System-Design/UART_Demonstration/LabA.sv
 source_file = 1, /home/ammon/Desktop/TCES330/Digital-System-Design/UART_Demonstration/TXDriver.sv

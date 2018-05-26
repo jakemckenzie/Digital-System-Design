@@ -2,108 +2,126 @@
 /**	A generic UART revceiver
  *	@param SAMPLES should be a power of 2
  */
-module UART_RX #(parameter WIDTH, PARITY, SAMPLES, BUF_ADDR_SZ)(
+module UART_RX #(parameter WIDTH, SAMPLES)(
 	input clk, TxIn,
-	output [(2**BUF_ADDR_SZ)-1:0][WIDTH-1:0] Buffer,
-	output [BUF_ADDR_SZ-1:0] writeAddr
+	
+	output logic write,
+	output logic [WIDTH-1:0] Data
 );
+	localparam INIT =3'h0,
+	           IDLE =3'h1,
+	           START=3'h2,
+	           DATA =3'h3,
+	           STOP =3'h4;
+	
+	logic[2:0] state;
+	logic[SAMPLES:0] counter;
+	logic[$clog2(WIDTH)-1:0] pos;
+	
 	
 	/** SAMPLING **/
 	
-//	localparam HALF_SAMPLE = SAMPLES/2;
-//	logic[SAMPLES-1:0]         sampleBuffer;
-//	logic[$clog2(SAMPLES)-1:0] sampleBufferIdx;
-//	logic[$clog2(SAMPLES):0]   sampleSum;
-//	
-//	always_ff @(posedge clk) begin
-//		sampleBuffer[sampleBufferIdx] = TxIn;
-//		sampleBufferIdx++;
-//	end
-	
 	logic sample;
 	logic[$clog2(SAMPLES)-1:0] sampleSum;
-	//localparam HIGH_CUT = (SAMPLES/2)+1, LOW_CUT = (SAMPLES/2)-1;
 	
 	always_ff @(posedge clk) begin
+		if(state == INIT) sampleSum = {$clog2(SAMPLES){1'b1}};
 		if(TxIn) begin
 			if(sampleSum<SAMPLES-1) sampleSum++;
 		end else begin
 			if(sampleSum>0) sampleSum--;
 		end
-		if(sampleSum>SAMPLES/2) sample =1;
+		if(sampleSum>=SAMPLES/2) sample =1;
 		else                    sample =0;
 	end
 	
-	/** WORD BUFFER **/
-	
-	localparam WORD_BUF_W = WIDTH + PARITY; // +1 for startbit
-	logic[WORD_BUF_W-1:0] bitBuf;
-	logic[$clog2(WORD_BUF_W)-1:0] pos;
-	
 	/** STATE MACHINE **/
-	
-	localparam INIT =3'h0,
-	           IDLE =3'h1,
-	           START=3'h2,
-	           DATA =3'h3,
-	           END  =3'h4;
-	
-	logic[1:0] state;
-	
-	logic[SAMPLES:0] counter;
 	
 	always_ff @(posedge clk) case(state)
 		INIT: begin
-			sample = 1;
-			pos    = 0;
+			write = 0;
 			state  = IDLE;
 		end
-		IDLE: if(sample==0) begin
-			state = START;
-			counter = 0;
+		
+		IDLE: begin
+			write=0;
+			if(sample==0) begin
+				state = START;
+				counter = 0;
+			end
 		end
-		START: if(counter == (SAMPLES + SAMPLES/2)) writeBitBuf;
-		       else                                 counter++;
 		
-		DATA: if(counter == SAMPLES) writeBitBuf;
-		      else                   counter++;
-		
-		END: if(counter == SAMPLES) begin
-			if(sample) writeBitBuf;
-			else state = IDLE; // we're desyncronized
+		START: if(counter == (SAMPLES + SAMPLES/2 -1)) begin
+			Data[0] = sample;
+			counter =0;
+			pos =1;
+			state = DATA;
 		end else counter++;
+		
+		DATA: if(counter == SAMPLES-1) begin
+			Data[pos] = sample;
+			counter =0;
+			if(pos == WIDTH-1) state = STOP;
+			else pos++;
+		end else counter++;
+		
+		STOP: if(counter == SAMPLES-1) begin
+			if(sample) write =1;
+			state = IDLE;
+		end else counter++;
+		
 		default: state = INIT; // complain
 	endcase
-	
-	
-	task writeBitBuf;
-		bitBuf[pos] = sample;
-		counter = 0;
-		
-		if(pos == WORD_BUF_W-1) state = END;
-		else pos++;
-	endtask
-	
-	
-	
-	
 endmodule
 
 
 
 module UART_RX_tb;
-	parameter WIDTH=8, PARITY=0;
-	parameter SAMPLES=16, BUF_ADDR_SZ=4;
+	parameter WIDTH=4, SAMPLES=4;
+	logic [WIDTH-1:0] TXdata, RXdata;
+	logic sampleClk, sendClk, line, sample;
+	logic TXreset, TXsend, TXready;
+	logic write;
 	
-	logic clk, TxIn;
-	logic [(2**BUF_ADDR_SZ)-1:0][WIDTH-1:0] Buffer;
-	logic [BUF_ADDR_SZ-1:0] writeAddr;
+	UART_RX #(WIDTH, SAMPLES) DUT(sampleClk, line, write, RXdata);
 	
-	UART_RX #(WIDTH, PARITY, SAMPLES, BUF_ADDR_SZ)
-		DUT(clock, TxIn, Buffer, writeAddr);
+	// Xmit
+	
+	
+	Pulser #(SAMPLES) pulser(sampleClk, sendClk);
+	UART_TX #(WIDTH) Xmit(sendClk, TXreset, TXsend, TXdata, line, TXready);
+	
+	assign sample = DUT.sample;
+	
+	always begin
+		sampleClk=0; #10; sampleClk=1; #10;
+	end
+	
+	
 	
 	initial begin
+		//$monitor($time, " st: %d smpl: %d sum: %d", DUT.state, DUT.sample, DUT.sampleSum);
 		
+		TXreset=0;
+		TXsend =0;
+		TXdata = 8'h0;
+		#(20*SAMPLES*(WIDTH+2)) TXreset=1;
+		
+		wait(TXready);
+		
+		while(TXdata !=(1<<WIDTH)-1) begin
+			TXsend=1;
+			wait(!TXready);
+			TXsend=0;
+			
+			wait(write);
+			assert(TXdata == RXdata);
+			#10 TXdata++;
+			wait(TXready);
+		end
+		
+		
+		$stop;
 	end
 endmodule
 
