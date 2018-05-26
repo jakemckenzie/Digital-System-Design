@@ -1,9 +1,9 @@
 /* Authors:		Ammon Dodson & Jake McKenzie
- * Date:		May 25, 2018
+ * Date:			May 25, 2018
  * Title:		UART LABORATORY ASSIGNMENT
- * Description:	In this module we created a shift register which converted
- *				parellel data to serial data. 
- *				All functions are syncronous
+ * Description:In this module we created a shift register which converted
+ *					parellel data to serial data. 
+ *					All functions are syncronous
  */
 
 module UART_TX #(parameter WIDTH)( // WIDTH is the width of the data word
